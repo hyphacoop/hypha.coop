@@ -30,6 +30,10 @@
 
 // Font Smoothing
 
+.aliased {
+  image-rendering: pixelated;
+}
+
 .antialiased {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
