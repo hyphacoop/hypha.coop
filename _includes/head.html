@@ -1,0 +1,21 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+
+  <meta property="og:title" content="{{ site.title | escape }}">
+  <meta name="description" content="{{ site.description }}">
+  <meta property="og:description" content="{{ site.description }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' }}">
+  <meta property="og:url" content="{{ site.url }}">
+  <meta property="og:site_name" content="{{ site.title | escape }}">
+  <meta property="og:image" content="{{ "/assets/images/hypha-social.png" | relative_url }}">
+  <meta name="twitter:title" content="{{ site.title | escape }}">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@HyphaCoop">
+  <meta name="twitter:creator" content="@HyphaCoop">
+  <meta name="twitter:image" content="{{ "/assets/images/hypha-social.png" | relative_url }}">
+  <meta name="theme-color" content="#9900FC">
+
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}?{{ site.time | date: '%s%N' }}">
+</head>

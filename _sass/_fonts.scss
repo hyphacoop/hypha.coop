@@ -1,0 +1,15 @@
+@font-face {
+  font-family: WorkSans;
+  font-weight: normal;
+  src: url('../fonts/WorkSans-Regular.woff2') format('woff2'),
+    url('../fonts/WorkSans-Regular.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: WorkSans;
+  font-weight: 700;
+  src: url('../fonts/WorkSans-Black.woff2') format('woff2'),
+    url('../fonts/WorkSans-Black.woff') format('woff');
+  font-display: swap;
+}

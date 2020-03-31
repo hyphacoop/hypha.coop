@@ -1,0 +1,36 @@
+// Hypha brand colour classes
+
+.accent {
+  color: $accent-color;
+}
+
+.bg-accent {
+  background-color: $accent-color;
+}
+
+.b--accent {
+  border-color: $accent-color;
+}
+
+.hover-bg-accent:hover,
+.hover-bg-accent:focus {
+  background-color: $accent-color;
+}
+
+.hover-accent:hover,
+.hover-accent:focus {
+  color: $accent-color;
+}
+
+// Hypha brand font classes
+
+.worksans {
+  font-family: 'WorkSans', helvetica, sans-serif;
+}
+
+// Font Smoothing
+
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
