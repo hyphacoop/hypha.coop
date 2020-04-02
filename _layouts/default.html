@@ -5,13 +5,13 @@
 
   <body class="sans-serif antialiased">
 
-    <main aria-label="Content">
-      <div class="mw9 center">
-        {{ content }}
-      </div>
+    {%- include sections.html tag="header" path="header.html" class="pt4 flex items-baseline mw9 center" -%}
+
+    <main class="mw9 center">
+      {{ content }}
     </main>
 
-    {%- include footer.html -%}
+    {%- include sections.html tag="footer" path="footer.html" class="ph3-m ph5-ns mw9 center mv5" -%}
 
   </body>
 

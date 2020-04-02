@@ -1,3 +1,3 @@
-<section class="ph3-m ph5-ns {{ include.class }}" id="{{ include.path | replace:'.html','' }}">
+<{{ include.tag | default: 'section' }} class="ph3-m ph5-ns {{ include.class }}" id="{{ include.path | replace:'.html','' }}">
   {%- include sections/{{ include.path }} -%}
-</section>
+</{{ include.tag | default: 'section' }}>
