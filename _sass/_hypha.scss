@@ -39,3 +39,11 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+// Addiitonal viewport width helpers
+
+.vw-70-l {
+  @media screen and (min-width: 60em) {
+    width: 70vw;
+  }
+}
