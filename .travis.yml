@@ -3,6 +3,10 @@ rvm:
   - 2.7.0
 
 before_install:
+  # Here, we decrypt a passwordless ssh key for acting as a user on the server named "travis"
+  #   # See: https://docs.travis-ci.com/user/encrypting-files/#Automated-Encryption
+  - if [ "$TRAVIS_SECURE_ENV_VARS" == true ]; then openssl aes-256-cbc -K $encrypted_3a24d53b15ee_key -iv $encrypted_3a24d53b15ee_iv -in scripts/id_rsa.enc -out scripts/id_rsa -d; fi
+  - if [ "$TRAVIS_SECURE_ENV_VARS" == true ]; then chmod 400 scripts/id_rsa; fi
   # Bundler 2.0 support
   # See: https://docs.travis-ci.com/user/languages/ruby/#bundler-20
   - gem update --system
@@ -15,6 +19,16 @@ before_script:
 cache: bundler
 
 script: travis_retry bundle exec htmlproofer --check-html --allow-hash-href ./_site
+
+deploy:
+  # Cleanup removes keys and build artefacts.
+  # See: https://docs.travis-ci.com/user/deployment/#Uploading-Files-and-skip_cleanup
+  skip_cleanup: true
+  provider: script
+  script: bash scripts/deploy.sh deploy scripts/id_rsa webserv.hypha.coop 10025
+  on:
+    branch:
+      - master
 
 notifications:
   email: false
