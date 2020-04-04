@@ -2,3 +2,4 @@
 _site
 .sass-cache
 .jekyll-metadata
+**/id_rsa
