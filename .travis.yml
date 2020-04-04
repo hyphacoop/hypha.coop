@@ -25,7 +25,7 @@ deploy:
   # See: https://docs.travis-ci.com/user/deployment/#Uploading-Files-and-skip_cleanup
   skip_cleanup: true
   provider: script
-  script: bash scripts/deploy.sh deploy _scripts/id_rsa webserv.hypha.coop 10025
+  script: bash _scripts/deploy.sh deploy _scripts/id_rsa webserv.hypha.coop 10025
   on:
     branch:
       - master
