@@ -8,7 +8,7 @@
 #
 #
 USER="${1:-hyphacoop}"
-IDENTITY_FILE="${2:-scripts/id_rsa}"
+IDENTITY_FILE="${2:-_scripts/id_rsa}"
 SERVER="${3:-hypha.coop}"
 PORT="${4:-22}"
 SITE_DIR="/var/www/html"
