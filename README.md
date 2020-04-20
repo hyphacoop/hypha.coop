@@ -25,7 +25,7 @@ We auto-deploy `master` branch to [hypha.coop][website] via Travis CI. (See [`.t
 - `favicon.ico`: [Rorschach Test](https://thenounproject.com/nicky.humphreys/collection/repeat-pattern/?i=871159) by Nicky Knicky from the Noun Project
 - [Work Sans](https://github.com/weiweihuanghuang/Work-Sans) by Wei Huang
 
-## License & Copyright
+## 📃 License & Copyright
 
 Copyright (C) 2020 Hypha Worker Co-operative, Inc.
 
