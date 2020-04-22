@@ -27,7 +27,7 @@ We auto-deploy `master` branch to [hypha.coop][website] via Travis CI. (See [`.t
 
 ## 📃 License & Copyright
 
-Copyright (C) 2020 Hypha Worker Co-operative, Inc.
+Copyright © 2020 Hypha Worker Co-operative, Inc.
 
 hypha.coop **code** at [hyphacoop/hypha.coop](https://github.com/hyphacoop/hypha.coop) is licensed under a [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl.html). This program is free software: you can redistribute it and/or modify it under the terms of the [GNU General Public License](https://www.gnu.org/licenses/gpl.html) as published by the Free Software Foundation, version 3.0. A copy is distributed with the code at [`LICENSE`](./LICENSE).
 
