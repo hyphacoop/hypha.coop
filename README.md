@@ -1,6 +1,6 @@
 # hypha.coop
 
-[![Build Status](https://travis-ci.org/hyphacoop/hypha.coop.svg?branch=master)](https://travis-ci.org/hyphacoop/hypha.coop)
+[![Build Status](https://travis-ci.com/hyphacoop/hypha.coop.svg?branch=master)](https://travis-ci.com/hyphacoop/hypha.coop)
 
 ## 🛠️ Technologies Used
 
@@ -37,5 +37,5 @@ Unless otherwise indicated, hypha.coop **content and documentation** is licensed
    [website]: https://hypha.coop
    [jekyll]: https://jekyllrb.com
    [tachyons]: http://tachyons.io
-   [travis]: https://travis-ci.org/hyphacoop/hypha.coop
+   [travis]: https://travis-ci.com/hyphacoop/hypha.coop
    [ci-conf]: /.travis.yml
