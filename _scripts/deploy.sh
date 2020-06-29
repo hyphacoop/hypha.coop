@@ -19,4 +19,4 @@ SITE_DIR="${5:-/var/www/html}"
 rsync -v -r \
   --delete-after \
   -e "ssh -i $IDENTITY_FILE -o StrictHostKeyChecking=no -p $PORT" \
-  ./* $USER@$SERVER:$SITE_DIR
+  ./_site/* $USER@$SERVER:$SITE_DIR
