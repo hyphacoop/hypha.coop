@@ -27,7 +27,7 @@ deploy:
   # See: https://docs.travis-ci.com/user/deployment/#Uploading-Files-and-skip_cleanup
   skip_cleanup: true
   provider: script
-  script: - if [ "$TRAVIS_BRANCH" = "staging" ]; then echo "Deploying to staging"; bash -x .scripts/deploy.sh deploy .scripts/id_rsa-staging bw1.staging.hypha.coop 8003 /var/www/staging.hypha.coop; elif [ "$TRAVIS_BRANCH" = "master" ]; then echo "Deploying to production"; bash -x .scripts/deploy.sh deploy .scripts/id_rsa-production bw1.hypha.coop 1003 /var/www/hypha.coop; fi
+  script: if [ "$TRAVIS_BRANCH" = "staging" ]; then echo "Deploying to staging"; bash -x .scripts/deploy.sh deploy .scripts/id_rsa-staging bw1.staging.hypha.coop 8003 /var/www/staging.hypha.coop; elif [ "$TRAVIS_BRANCH" = "master" ]; then echo "Deploying to production"; bash -x .scripts/deploy.sh deploy .scripts/id_rsa-production bw1.hypha.coop 1003 /var/www/hypha.coop; fi
   on:
     branch:
       - master
