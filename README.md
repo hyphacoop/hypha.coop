@@ -20,6 +20,10 @@
 
 We auto-deploy `master` branch to [hypha.coop][website] via Travis CI. (See [`.travis.yml`][ci-conf])
 
+## 🚧 Staging
+
+We also auto-deploy `staging` branch to [staging.hypha.coop](https://staging.hypha.coop) on our staging server via Travis CI to test before commiting to `master` branch. 
+
 ## 📑 Attribution
 
 - `favicon.ico`: [Rorschach Test](https://thenounproject.com/nicky.humphreys/collection/repeat-pattern/?i=871159) by Nicky Knicky from the Noun Project
