@@ -2,10 +2,6 @@ language: ruby
 rvm:
   - 2.7.0
 
-env:
-  global:
-    - secure: "lqhy6T3eQlupJCTBI1b5aGAScrSo2jJL4TcOiB05vwWl5pEKTczvXA/GBjpaWxcJzYW6iXrXGO+7rJ/QjMiuKWbHxKEGCoMkTY7wxJWD96lPeQALNjjkP36Yz6UACKZNhDwAOZv5j7WehbZSYNU4uLIUTTvOzZ81hjxS7ZdiocXmk48csrSA6dsnM5aKAwq/zwfu5j7krL9E9tDIQY1p4apggLzokYpOxdknb/fDbMtxmHuO6mFZAgm2nwYNW/TMg/LLgLBjh8IQcR25TtL6/L8qWpoGAyqGuiz3AZ48Z6CIc5ftoFBWLqm97n5iwEbauxsm2n2C/UbDeuJh5G/086Sya5nKGcI1ekMBAPHne1IAYMs286gdvHC1STa5fT1MLtsqLeJfvP0rqDFtKUbZCQBFqfgHHr+EST4yyWGMhRhK6K0eDORZ5pMGFnBwXXyvBsAxUFgioVHQeW3+FioyPjoIc9W4h71MAz8kHCeuCcN0kBS8vVBg366K3CBcWW1tBqC65YAvojtHtEOa/j0ozxBA3VJFDOXm4XL750zDMRnUTuuuFOH1KYwhirEYqlZhRfvFgHs+qXmnlrbhQLxy008W1kivY58VqgSeFmrRcZ27Ka5/FXgeQGx5B64XPM89LbjpTLahjOh/6vvNnG2CToJmuNbb9N9VJMdZnAiTaEc="
-
 before_install:
   # Here, we decrypt a passwordless ssh key for acting as a user on the server named "travis"
   #   # See: https://docs.travis-ci.com/user/encrypting-files/#Automated-Encryption
@@ -38,7 +34,7 @@ deploy:
         - master
         - staging
   - provider: script
-    script: tar -czvf www.tar.gz -C _site . && bash -x _scripts/deploy-dweb.sh "$DISTRIBUTED_PRESS_API_KEY" _scripts/config-dweb.json www.tar.gz
+    script: tar -czvf www.tar.gz -C _site . && bash -x _scripts/deploy-dweb.sh $distributed_press_api_key _scripts/config-dweb.json www.tar.gz
     skip_cleanup: true
     on:
       branch:
