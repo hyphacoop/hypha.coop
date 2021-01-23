@@ -1,4 +1,11 @@
 language: ruby
+
+env:
+  global:
+    secure: f6fIRxDKbpYxU2VdYzy+aO1RM+oELnlKJS6cDkl408K7fZpLWhplyNetlSsEeVXYL3a4Bqa2rLBf+9uaL8qXkU8pqbiwWlRYM9DPi1RKLT1+lypmmdlKv2ry22hoXNbHf65hnDkk6BVbxPFc9QoXZfNoXnEJdY2b4mvrQRItWUzbCeVYxRKZBb4MUGpvY18ItMwVQX9Vs0EUfop19QiksaWXSRTCyK5CnC
+LoAZRMzQafVzIgwAMXjj4sp8GgtCohpW7DHXdJzzFvWe0jecU+k1Rugw+N4o/Blu7qVHFg7G0XjHe6tB4QnZj0H9gQuIHLwn1LvCXSD9Yw42GX2nSkr9AiuJPrTCjhWFpCsudmNYzkqjlNB5Ns6BrWAHHGTqJ7XvMjXgb4JH1uDkaqX1a8CUwXOnC0ZYBwnxDRcPeJDsogKAtOYmQCtT4Ye4TiReYUIgFMZnZnHv/Ldzjd
+br1UCVBnZRDl2lGCQwhdrGRbMDZubFF42wvk0z0TGF7TjrX1u6rfg6uf2koXYcfJnKHwKHRl91cweeRMt4nqH1DmYHE/O5G5vqAVUOL5nMUmSNza5q+Jw46mT35gKjy0WKKmAyMVaaw68LJHYiB52lmSpGkml/pYEETJpR/Wbq2/9+/4dYBFfSCQdkaf8r6mcs65R8xqqoJsbhC6cq8T8na2YX0=
+
 rvm:
   - 2.7.0
 
@@ -25,13 +32,19 @@ script: travis_retry bundle exec htmlproofer --check-html --allow-hash-href ./_s
 deploy:
   # Cleanup removes keys and build artefacts.
   # See: https://docs.travis-ci.com/user/deployment/#Uploading-Files-and-skip_cleanup
-  skip_cleanup: true
-  provider: script
-  script: if [ "$TRAVIS_BRANCH" = "staging" ]; then echo "Deploying to staging"; bash -x _scripts/deploy.sh deploy _scripts/id_rsa-staging bw1.staging.hypha.coop 8003 /var/www/staging.hypha.coop; elif [ "$TRAVIS_BRANCH" = "master" ]; then echo "Deploying to production"; bash -x _scripts/deploy.sh deploy _scripts/id_rsa-production bw1.hypha.coop 1003 /var/www/hypha.coop; fi
-  on:
-    branch:
-      - master
-      - staging
+  - provider: script
+    script: if [ "$TRAVIS_BRANCH" = "staging" ]; then echo "Deploying to staging"; bash -x _scripts/deploy.sh deploy _scripts/id_rsa-staging bw1.staging.hypha.coop 8003 /var/www/staging.hypha.coop; elif [ "$TRAVIS_BRANCH" = "master" ]; then echo "Deploying to production"; bash -x _scripts/deploy.sh deploy _scripts/id_rsa-production bw1.hypha.coop 1003 /var/www/hypha.coop; fi
+    skip_cleanup: true
+    on:
+      branch:
+        - master
+        - staging
+  - provider: script
+    script: tar -czvf www.tar.gz -C _site . && bash -x _scripts/deploy-dweb.sh "$DISTRIBUTED_PRESS_API_KEY" _scripts/config-dweb.json www.tar.gz
+    skip_cleanup: true
+    on:
+      branch:
+        - staging
 
 notifications:
   email: false
