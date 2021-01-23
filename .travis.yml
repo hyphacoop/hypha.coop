@@ -1,13 +1,10 @@
 language: ruby
+rvm:
+  - 2.7.0
 
 env:
   global:
-    secure: f6fIRxDKbpYxU2VdYzy+aO1RM+oELnlKJS6cDkl408K7fZpLWhplyNetlSsEeVXYL3a4Bqa2rLBf+9uaL8qXkU8pqbiwWlRYM9DPi1RKLT1+lypmmdlKv2ry22hoXNbHf65hnDkk6BVbxPFc9QoXZfNoXnEJdY2b4mvrQRItWUzbCeVYxRKZBb4MUGpvY18ItMwVQX9Vs0EUfop19QiksaWXSRTCyK5CnC
-LoAZRMzQafVzIgwAMXjj4sp8GgtCohpW7DHXdJzzFvWe0jecU+k1Rugw+N4o/Blu7qVHFg7G0XjHe6tB4QnZj0H9gQuIHLwn1LvCXSD9Yw42GX2nSkr9AiuJPrTCjhWFpCsudmNYzkqjlNB5Ns6BrWAHHGTqJ7XvMjXgb4JH1uDkaqX1a8CUwXOnC0ZYBwnxDRcPeJDsogKAtOYmQCtT4Ye4TiReYUIgFMZnZnHv/Ldzjd
-br1UCVBnZRDl2lGCQwhdrGRbMDZubFF42wvk0z0TGF7TjrX1u6rfg6uf2koXYcfJnKHwKHRl91cweeRMt4nqH1DmYHE/O5G5vqAVUOL5nMUmSNza5q+Jw46mT35gKjy0WKKmAyMVaaw68LJHYiB52lmSpGkml/pYEETJpR/Wbq2/9+/4dYBFfSCQdkaf8r6mcs65R8xqqoJsbhC6cq8T8na2YX0=
-
-rvm:
-  - 2.7.0
+    - secure: "lqhy6T3eQlupJCTBI1b5aGAScrSo2jJL4TcOiB05vwWl5pEKTczvXA/GBjpaWxcJzYW6iXrXGO+7rJ/QjMiuKWbHxKEGCoMkTY7wxJWD96lPeQALNjjkP36Yz6UACKZNhDwAOZv5j7WehbZSYNU4uLIUTTvOzZ81hjxS7ZdiocXmk48csrSA6dsnM5aKAwq/zwfu5j7krL9E9tDIQY1p4apggLzokYpOxdknb/fDbMtxmHuO6mFZAgm2nwYNW/TMg/LLgLBjh8IQcR25TtL6/L8qWpoGAyqGuiz3AZ48Z6CIc5ftoFBWLqm97n5iwEbauxsm2n2C/UbDeuJh5G/086Sya5nKGcI1ekMBAPHne1IAYMs286gdvHC1STa5fT1MLtsqLeJfvP0rqDFtKUbZCQBFqfgHHr+EST4yyWGMhRhK6K0eDORZ5pMGFnBwXXyvBsAxUFgioVHQeW3+FioyPjoIc9W4h71MAz8kHCeuCcN0kBS8vVBg366K3CBcWW1tBqC65YAvojtHtEOa/j0ozxBA3VJFDOXm4XL750zDMRnUTuuuFOH1KYwhirEYqlZhRfvFgHs+qXmnlrbhQLxy008W1kivY58VqgSeFmrRcZ27Ka5/FXgeQGx5B64XPM89LbjpTLahjOh/6vvNnG2CToJmuNbb9N9VJMdZnAiTaEc="
 
 before_install:
   # Here, we decrypt a passwordless ssh key for acting as a user on the server named "travis"
@@ -30,18 +27,16 @@ cache: bundler
 script: travis_retry bundle exec htmlproofer --check-html --allow-hash-href ./_site
 
 deploy:
-  # Cleanup removes keys and build artefacts.
-  # See: https://docs.travis-ci.com/user/deployment/#Uploading-Files-and-skip_cleanup
   - provider: script
     script: if [ "$TRAVIS_BRANCH" = "staging" ]; then echo "Deploying to staging"; bash -x _scripts/deploy.sh deploy _scripts/id_rsa-staging bw1.staging.hypha.coop 8003 /var/www/staging.hypha.coop; elif [ "$TRAVIS_BRANCH" = "master" ]; then echo "Deploying to production"; bash -x _scripts/deploy.sh deploy _scripts/id_rsa-production bw1.hypha.coop 1003 /var/www/hypha.coop; fi
-    skip_cleanup: true
+    cleanup: false
     on:
       branch:
         - master
         - staging
   - provider: script
     script: tar -czvf www.tar.gz -C _site . && bash -x _scripts/deploy-dweb.sh "$DISTRIBUTED_PRESS_API_KEY" _scripts/config-dweb.json www.tar.gz
-    skip_cleanup: true
+    cleanup: false
     on:
       branch:
         - staging
