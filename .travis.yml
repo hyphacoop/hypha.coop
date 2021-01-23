@@ -12,9 +12,11 @@ before_install:
   - if [ "$TRAVIS_SECURE_ENV_VARS" == true ] && [ "$TRAVIS_BRANCH" == "master" ]; then openssl aes-256-cbc -K $encrypted_ecd13b88eda4_key -iv $encrypted_ecd13b88eda4_iv -in _scripts/id_rsa-production.enc -out _scripts/id_rsa-production -d; fi
   - if [ "$TRAVIS_SECURE_ENV_VARS" == true ] && [ "$TRAVIS_BRANCH" == "master" ]; then chmod 400 _scripts/id_rsa-production; fi
   - if [ "$TRAVIS_SECURE_ENV_VARS" == true ] && [ "$TRAVIS_BRANCH" == "master" ]; then echo "Detected 'master' branch, decrypted 'production' credentials"; fi
-  - if [ "$TRAVIS_SECURE_ENV_VARS" == true ] && [ "$TRAVIS_BRANCH" == "staging" ]; then openssl aes-256-cbc -K $encrypted_d3974dc451dd_key -iv $encrypted_d3974dc451dd_iv -in _scripts/id_rsa-staging.enc -out _scripts/id_rsa-staging -d; fi
-  - if [ "$TRAVIS_SECURE_ENV_VARS" == true ] && [ "$TRAVIS_BRANCH" == "staging" ]; then chmod 400 _scripts/id_rsa-staging; fi
-  - if [ "$TRAVIS_SECURE_ENV_VARS" == true ] && [ "$TRAVIS_BRANCH" == "staging" ]; then echo "Detected 'staging' branch, decrypted 'staging' credentials"; fi
+  - openssl aes-256-cbc -K $encrypted_d3974dc451dd_key -iv $encrypted_d3974dc451dd_iv -in _scripts/id_rsa-staging.enc -out _scripts/id_rsa-staging -d
+  - chmod 400 _scripts/id_rsa-staging
+  - echo "Detected 'staging' branch, decrypted 'staging' credentials"
+  - echo "$TRAVIS_SECURE_ENV_VARS"
+  - echo "$TRAVIS_BRANCH"
   # Bundler 2.0 support
   # See: https://docs.travis-ci.com/user/languages/ruby/#bundler-20
   - gem update --system
