@@ -18,13 +18,14 @@ before_install:
   - gem update --system
   - gem install bundler
 
-before_script:
-  # Build Jekyll site
-  - bundle exec jekyll build
+#before_script:
+#  # Build Jekyll site
+#  - bundle exec jekyll build
 
-cache: bundler
+#cache: bundler
 
 #script: travis_retry bundle exec htmlproofer --check-html --allow-hash-href ./_site
+script: bundle exec jekyll build
 
 deploy:
   - provider: script
