@@ -24,7 +24,7 @@ before_script:
 
 cache: bundler
 
-script: travis_retry bundle exec htmlproofer --check-html --allow-hash-href ./_site
+#script: travis_retry bundle exec htmlproofer --check-html --allow-hash-href ./_site
 
 deploy:
   - provider: script
