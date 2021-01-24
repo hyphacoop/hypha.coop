@@ -10,7 +10,7 @@
   <meta property="og:title" content="{{ meta_title | escape }}">
   <meta name="description" content="{{ meta_description }}">
   <meta property="og:description" content="{{ site_description }}">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
   <meta property="og:url" content="{{ site.url }}">
   <meta property="og:site_name" content="{{ meta_title | escape }}">
   <meta property="og:image" content="{{ meta_image | relative_url }}">
