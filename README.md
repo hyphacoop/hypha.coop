@@ -18,7 +18,7 @@
 
 ## 🚀 Deployment
 
-We auto-deploy `master` branch to [hypha.coop][website] via Travis CI. (See [`.travis.yml`][ci-conf])
+We auto-deploy `master` branch to [hypha.coop][website] and to the decentralized web with the [Distributed Press][distributed-press]. (See [`.travis.yml`][ci-conf] for how we use Travis CI to auto-deploy.)
 
 ## 🚧 Staging
 
@@ -43,3 +43,4 @@ Unless otherwise indicated, hypha.coop **content and documentation** is licensed
    [tachyons]: http://tachyons.io
    [travis]: https://travis-ci.com/hyphacoop/hypha.coop
    [ci-conf]: /.travis.yml
+   [distributed-press]: https://github.com/hyphacoop/api.distributed.press/
