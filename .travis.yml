@@ -27,7 +27,7 @@ addons:
 
 cache: bundler
 
-script: travis_retry bundle exec htmlproofer --check-html --allow-hash-href ./_site
+script: travis_retry bundle exec htmlproofer --check-html --allow-hash-href --typhoeus-config '{"headers":{"User-Agent":"Mozilla/5.0 (X11; Linux i686; rv:84.0) Gecko/20100101 Firefox/84.0"}}' ./_site
 
 deploy:
   - provider: script
