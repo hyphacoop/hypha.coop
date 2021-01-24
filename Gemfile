@@ -12,5 +12,5 @@ gem "jekyll", "~> 3.8.5"
 gem "html-proofer"
 
 group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.12"
+  gem "jekyll-feed", git: "https://github.com/hyphacoop/jekyll-feed"
 end

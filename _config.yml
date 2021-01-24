@@ -35,3 +35,6 @@ defaults:
 
 plugins:
   - jekyll-feed
+
+feed:
+  title: Dripline
