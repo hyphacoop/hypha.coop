@@ -40,10 +40,20 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-// Addiitonal viewport width helpers
+// Additional viewport width helpers
 
 .vw-70-l {
   @media screen and (min-width: 60em) {
     width: 70vw;
   }
+}
+
+// Wrapper links color helper
+
+.links-accent a {
+  color: $accent-color;
+}
+
+.links-underline-hover a:hover {
+  text-decoration: none;
 }

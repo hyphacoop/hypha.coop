@@ -17,3 +17,24 @@ description: >-
 markdown: kramdown
 sass:
   style: compressed
+
+permalink: pretty
+
+collections:
+  posts:
+    permalink: /dripline/:title/
+
+date_format: '%B %-d, %Y'
+
+defaults:
+  -
+    scope:
+      type: posts
+    values:
+      layout: dripline/post
+
+plugins:
+  - jekyll-feed
+
+feed:
+  title: Dripline
