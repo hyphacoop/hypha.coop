@@ -20,10 +20,14 @@ before_install:
 #  # Build Jekyll site
 #  - bundle exec jekyll build
 
+addons:
+  apt:
+    packages:
+    - libcurl4-openssl-dev
+
 cache: bundler
 
-#script: travis_retry bundle exec htmlproofer --check-html --allow-hash-href ./_site
-script: bundle exec jekyll build
+script: travis_retry bundle exec htmlproofer --check-html --allow-hash-href ./_site
 
 deploy:
   - provider: script
