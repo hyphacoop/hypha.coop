@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Dripline
+menu_title: Dripline
+order: 2
 ---
 {% assign posts = site.posts %}
 
@@ -15,7 +17,7 @@ title: Dripline
 </div>
   </header>
   {%- if posts.size > 0 -%}
-    <ul class="list pl0 mv0">
+    <ul class="list pl0 mv0 flex">
       {%- assign date_format = site.date_format -%}
       {%- for post in posts -%}
       <li>

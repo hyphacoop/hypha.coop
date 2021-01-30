@@ -57,3 +57,16 @@
 .links-underline-hover a:hover {
   text-decoration: none;
 }
+
+// Menu interaction
+
+#menu:target {
+  display: flex;
+}
+
+#menu:target + .backdrop {
+  display: flex;
+  @media screen and (min-width: 60em) {
+    display: none;
+  }
+}
