@@ -1,3 +1,11 @@
 {
-  "domain": "hypha.coop"
+  "domain": "hypha.coop",
+  "publication": {
+    "protocol": {
+      "http": {
+          "enable": false,
+          "dnsupdate": false
+      }
+    }
+  }
 }
