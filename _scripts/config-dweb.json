@@ -3,8 +3,8 @@
   "publication": {
     "protocol": {
       "http": {
-          "enable": false,
-          "dnsupdate": false
+          "enabled": false,
+          "purgeIfDisabled": false
       }
     }
   }
