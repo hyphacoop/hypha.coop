@@ -81,7 +81,7 @@ member loans, and a couple support grants given to us by CWCF.
 <img
   src="{{ '/assets/images/posts/2021-01-23-coop-flowchart.png' | relative_url }}"
   alt="An elaborate flowchart showing the repercushions of choosing Ontario vs Canada, for-profit vs non-profit, and all the fundraising tools available to each."
->
+/>
 
 Our (esoteric) choice of being a non-profit worker co-op,
 a forgotten cousin in the family of business entities,
@@ -99,7 +99,7 @@ We’ve even [drafted an explainer][handbook-about] in our handbook to clarify o
 <img
   src="{{ '/assets/images/posts/2021-01-23-coop-npo-choice.png' | relative_url }}"
   alt="Comic superhero sweating as he chooses between pushing one of two labelled buttons: Non Profit Act versus Co-op Act."
->
+/>
 
 ## The memetic effect of principle six
 
