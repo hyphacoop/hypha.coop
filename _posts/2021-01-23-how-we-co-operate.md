@@ -23,7 +23,7 @@ We wanted a democratic organization with participatory leadership that would car
 Drawn to co-operative values and principles we began exploring co-op models seriously.
 (Check out our [playbook][] for the first planning retreat we held in 2018.)
 
-   [playbook]: https://github.com/hyphacoop/organizing/blob/master/_posts/2018-december-retreat/2018-11-28-retreat-playbook.md
+   [playbook]: https://link.hypha.coop/retreat-playbook
 
 
 ### [The seven co-operative principles][principles]
@@ -122,7 +122,7 @@ We’re grateful to [Fourth Pig][], [Anarres][] (RIP),
 and many others who’ve guided us along the way.
 
    [Fourth Pig]: https://www.fourthpig.org/
-   [Anarres]: http://anarres.ca/
+   [Anarres]: http://web.archive.org/web/20160618102349/https://anarres.ca/
    [Root Systems]: http://web.archive.org/web/20200122192017/https://www.rootsystems.nz/
    [Fiqus]: https://fiqus.coop/en/
    [Camba]: https://camba.coop/en/
@@ -166,8 +166,8 @@ Our email is: [dripline@hypha.coop][email]
 
 ---
 
-This site is published using [Distributed Press][],
-you can [use it to publish][] on the p2p and distributed web too.
+This site is published using [Distributed Press][], an initiative we host.
+You can [use it to publish][] on the p2p and distributed web too.
 
    [Distributed Press]: https://distributed.press/
    [use it to publish]: https://github.com/hyphacoop/api.distributed.press
