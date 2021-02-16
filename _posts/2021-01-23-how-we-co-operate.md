@@ -165,11 +165,3 @@ Reach out if there are topics you want to discuss or you think we should cover i
 Our email is: [dripline@hypha.coop][email]
 
    [email]: mailto:dripline@hypha.coop
-
----
-
-This site is published using [Distributed Press][], an initiative we host.
-You can [use it to publish][] on the p2p and distributed web too.
-
-   [Distributed Press]: https://distributed.press/
-   [use it to publish]: https://github.com/hyphacoop/api.distributed.press
