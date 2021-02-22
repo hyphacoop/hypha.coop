@@ -25,7 +25,7 @@ order: 2
       {%- assign date_format = site.date_format -%}
       {%- for post in posts -%}
       <li>
-        <a class="no-underline" href="{% base %}{{ post.url }}">
+        <a class="no-underline" href="{{ post.url | relative_url }}">
           <h3 class="f1 mt0 mb2 worksans accent link underline-hover">
             {{ post.title | escape }}
           </h3>
