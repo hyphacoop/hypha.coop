@@ -35,7 +35,11 @@ defaults:
       layout: dripline/post
 
 plugins:
-  - jekyll-feed
+  # Used for relativizing urls for dweb, which can be accessed with various levels of path nesting.
+  - jekyll-relative-urls
+  # TODO: Fix issue with conflict between dweb's requirement for relative urls and RSS's for absolute.
+  # See: https://github.com/hyphacoop/hypha.coop/issues/24
+  #- jekyll-feed
 
 feed:
   title: Dripline
