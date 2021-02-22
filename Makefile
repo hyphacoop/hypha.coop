@@ -20,7 +20,7 @@ build: ## Build for web
 build-web: build
 
 relativize: ## Relativize links in _site
-	(cd _site && npx all-relative)
+	(cd _site && npx github:patcon/all-relative#also-root)
 
 build-dweb: build relativize ## Build for dweb
 
