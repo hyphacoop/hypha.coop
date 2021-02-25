@@ -42,7 +42,7 @@ deploy:
     skip_cleanup: true
     on:
       branch:
-        - staging
+        - master
 
 notifications:
   email: false
