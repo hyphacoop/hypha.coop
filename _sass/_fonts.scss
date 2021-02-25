@@ -3,7 +3,7 @@
   font-weight: normal;
   src: url('../fonts/WorkSans-Regular.woff2') format('woff2'),
     url('../fonts/WorkSans-Regular.woff') format('woff');
-  font-display: auto;
+  font-display: optional;
 }
 
 @font-face {
@@ -11,5 +11,5 @@
   font-weight: 700;
   src: url('../fonts/WorkSans-Black.woff2') format('woff2'),
     url('../fonts/WorkSans-Black.woff') format('woff');
-  font-display: auto;
+  font-display: optional;
 }
