@@ -9,6 +9,7 @@ twitter: https://twitter.com/hyphacoop/
 handbook: https://link.hypha.coop/handbook
 # facebook: https://www.facebook.com/hyphacoop/
 # instagram: https://instagram.com/hyphacoop/
+url: "https://hypha.coop"
 footer: Hypha Worker Co-operative Inc.<br>Ontario Corporation No. 5019866
 
 description: >-
@@ -17,3 +18,26 @@ description: >-
 markdown: kramdown
 sass:
   style: compressed
+
+permalink: pretty
+
+collections:
+  posts:
+    permalink: /dripline/:title/
+
+date_format: '%B %-d, %Y'
+
+defaults:
+  -
+    scope:
+      type: posts
+    values:
+      layout: dripline/post
+
+plugins: []
+  # TODO: Fix issue with conflict between dweb's requirement for relative urls and RSS's for absolute.
+  # See: https://github.com/hyphacoop/hypha.coop/issues/24
+  #- jekyll-feed
+
+feed:
+  title: Dripline

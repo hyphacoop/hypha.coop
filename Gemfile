@@ -12,3 +12,7 @@ gem "jekyll", "~> 4.2.0"
 gem "html-proofer"
 
 gem "webrick", "~> 1.7"
+
+group :jekyll_plugins do
+  gem "jekyll-feed", git: "https://github.com/hyphacoop/jekyll-feed"
+end

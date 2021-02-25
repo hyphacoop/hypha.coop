@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<section class="mt4 ph3 ph5-l">
+  <div class="mb4">
+    <a class="worksans link underline-hover accent" title="Return to Dripline" href="{% link dripline.html %}">← Dripline</a>
+    <p class="worksans">
+      A dripline signifies the area under the outermost branches of a tree.
+      It’s this <a href="https://permacultureprinciples.com/principles/_11/" target="_blank" class="accent link underline-hover" rel="noopener">interface</a> between worlds where interesting and productive things happen.
+    </p>
+  </div>
+  <header class="mb4">
+    <h1 class="f1 f-subheadline-l worksans lh-solid mb3 mt0-l">{{ page.title }}</h1>
+    <h2 class="gray f6 f5-l lh-solid mt0">{{ page.date | date: site.date_format }}</h2>
+  </header>
+  <div class="lh-copy mw7 links-accent links-underline-hover">
+    {{ content }}
+  </div>
+  <footer class="mt5 bt bw2 b--light-gray">
+    <p><a class="link accent underline-hover" href="{% link dripline.html %}">← <span class="gray">Return to Dripline</span></a></p>
+  </footer>
+</section>

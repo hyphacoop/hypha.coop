@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/hyphacoop/jekyll-feed
+  revision: 4747e880073c01b4fb2dc1871916024481fb13af
+  specs:
+    jekyll-feed (0.15.1)
+      jekyll (>= 3.7, < 5.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -92,6 +99,7 @@ PLATFORMS
 DEPENDENCIES
   html-proofer
   jekyll (~> 4.2.0)
+  jekyll-feed!
   webrick (~> 1.7)
 
 BUNDLED WITH
