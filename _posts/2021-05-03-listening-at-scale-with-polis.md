@@ -15,11 +15,13 @@ Polis feels like a tool that has largely evaded the pull of these forces.
 Unlike other tech platforms, the conversations it generates are rich and nuanced. 
 And while founded as a US startup, Polis is now an open source tool stewarded by the non-profit [Computational Democracy Project](https://compdemocracy.org/). 
 
-We came across Polis in 2016, while following some civic developments that had spun out of Taiwan's popular student-led [Sunflower Movement](https://4am.tw/) two years prior. 
-At this time it was being used by the Taiwanese civic tech community to conduct a process of participatory democracy at scale as part of [vTaiwan](https://info.vtaiwan.tw/). 
-We were excited to see how a tool like Polis, when wrapped in a thoughtful process, 
+We came across Polis in 2016, while following some civic developments that had spun out of Taiwan's popular student-led 
+[Sunflower Movement](https://4am.tw/) two years prior. 
+At this time it was being used by the Taiwanese civic tech community to conduct a process of participatory democracy at scale as part of 
+[vTaiwan](https://info.vtaiwan.tw/). We were excited to see how a tool like Polis, when wrapped in a thoughtful process, 
 enabled a way for participants to navigate the complex social fabric of democracy in a small country and have real impact. 
-We won't duplicate the [writing](https://civichall.org/civicist/vtaiwan-democracy-frontier/) and [research](https://osf.io/preprints/socarxiv/xyhft/) 
+We won't duplicate the [writing](https://civichall.org/civicist/vtaiwan-democracy-frontier/) and 
+[research](https://osf.io/preprints/socarxiv/xyhft/) 
 ([including](https://docs.google.com/document/d/1GyjqKlSRUsHiiwZ9BnaYnPIITD1WkMblV5q-w8yaY_w/edit) by one of our members) on these processes and movements here.
 
 ### So what's it like to use?
@@ -32,22 +34,27 @@ Let's pretend you're a participant in a civic process that's using Polis. You ge
 You click the link and see a lot of text at the top, you mostly don't read it because you're a normal person. 
 Below that, you notice a statement and some buttons for agreement or disagreement.
 
-![](https://recordit.co/zRfpZa1Dyp)
+<img
+  src="{{ '/assets/images/posts/2021-05-03-polis.gif' | relative_url }}"
+  alt=""
+/>
 
 You press agree and another statement replaces it. You continue to agree to some statements, or disagree with others. 
 For those you don't feel strongly about, or don't understand, you pass. Maybe you submit a better-phrased version below.
 
-[GIF of pressing agree through some statements. Hitting a confusing statement, clicking pass. Submitting a new one.]
-
-![](https://recordit.co/lU5g41GCGP)
+<img
+  src="{{ '/assets/images/posts/2021-05-03-polis-1.gif' | relative_url }}"
+  alt=""
+/>
 
 After you respond to a few statements, 
 you notice a blue dot amongst some larger grey blobs in the visualization below the buttons you're clicking. 
 After each button-click the dot moves around a bit and slowly migrates into the middle of one of the blobs.
 
-[GIF of dot moving into blob]
-
-![](https://recordit.co/sbsb3bhVgi)
+<img
+  src="{{ '/assets/images/posts/2021-05-03-polis-2.gif' | relative_url }}"
+  alt=""
+/>
 
 You click the blob that the dot is within. It's highlighted and you see statements appear which you can flip through. 
 These statements have claims of high levels of agreement and disagreement and are all ones that match your own views. 
@@ -56,9 +63,10 @@ this is your blob!
 
 Clicking the other blobs, you understand these are other groups whose shared opinions you can explore.
 
-[GIF of flipping through groups and opinions, finding majority opinion]
-
-![](https://recordit.co/bEFA3GqmL4)
+<img
+  src="{{ '/assets/images/posts/2021-05-03-polis.gif' | relative_url }}"
+  alt=""
+/>
 
 Soon, you notice another button below the visualization: Majority Opinion. 
 You click it and are presented with more statements, but these are ones that everyone has high agreement and disagreement on. 
@@ -69,7 +77,11 @@ and something we'll discuss in future writing.
 
 For more on the initial participant experience, one of our members has created [an introductory video](https://www.youtube.com/playlist?list=PLSL_F7Lwul2dlI9J6-Nzz9_9Pz9AbcG2z) in collaboration with fellow Polis contributors.
 
-![]()
+<img
+  src="{{ '/assets/images/posts/2021-05-03-youtube-thumbnail.jpg' | relative_url }}"
+  alt=""
+  width="45%"
+/>
 
 ### No new facilitation under the sun
 
@@ -96,7 +108,8 @@ We'll touch more on the ways Polis can help with developing collective stories i
 
 One of the key elements of Polis embedded in processes is the way that it encourages consensus in seemingly divided publics, 
 or gives shape to unrecognized groups of people around topics. 
-These abilities are valuable especially when multiple parties are negotiating complicated issues based on closely held values and vastly different experiences. 
+These abilities are valuable especially when multiple parties are negotiating complicated issues, 
+based on closely held values and vastly different experiences. 
 Difficult deliberations can feel full of tension and finding an outcome that works for everyone can seem hopeless. 
 However, they also cannot last: at some point the situation has to come to an end whether there is a satisfying conclusion or not. 
 
@@ -107,7 +120,11 @@ Polis as a tool seems better able to provide the spaces to listen well and speak
 It's able to produce stories that all sides can accept and see themselves in. 
 We'll cover how the consensus-building mechanisms of Polis lead to forms of elegant simplicity that respond to complex issues in the future.
 
-![]()
+<img
+  src="{{ '/assets/images/posts/2021-05-03-simplicity.png' | relative_url }}"
+  alt=""
+  width="45%"
+/>
 
 ### What's next?
 
