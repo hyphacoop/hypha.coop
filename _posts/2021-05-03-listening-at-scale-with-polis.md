@@ -2,10 +2,10 @@
 title: 'Listening at Scale with Polis'
 author: Hypha
 date: 2021-05-03
-excerpt: ''
+excerpt: 'Exploring the decision-supporting tool that maps group opinions.'
 ---
 
-## 
+## {{ post.excerpt }}
 
 For the past few years Hypha members have been tracking and contributing to [Polis](https://pol.is/home). 
 Polis is a tool for gathering and displaying what groups of people think, 
@@ -44,7 +44,7 @@ For those you don't feel strongly about, or don't understand, you pass. Maybe yo
 
 <img
   src="{{ '/assets/images/posts/2021-05-03-polis-1.gif' | relative_url }}"
-  alt=""
+  alt="Animated gif of searching Google, visiting Twitter, and scrolling through a Polis page on #TransportNewNormal."
 />
 
 After you respond to a few statements, 
@@ -53,7 +53,7 @@ After each button-click the dot moves around a bit and slowly migrates into the 
 
 <img
   src="{{ '/assets/images/posts/2021-05-03-polis-2.gif' | relative_url }}"
-  alt=""
+  alt="Animated gif of a Polis page scrolling from voting on a statement down to a text box and typing a new statement to submit."
 />
 
 You click the blob that the dot is within. It's highlighted and you see statements appear which you can flip through. 
@@ -64,8 +64,8 @@ this is your blob!
 Clicking the other blobs, you understand these are other groups whose shared opinions you can explore.
 
 <img
-  src="{{ '/assets/images/posts/2021-05-03-polis.gif' | relative_url }}"
-  alt=""
+  src="{{ '/assets/images/posts/2021-05-03-polis-3.gif' | relative_url }}"
+  alt="Animated gif of a Polis page with a visual display of opinion groups with buttons to sort and categories statements."
 />
 
 Soon, you notice another button below the visualization: Majority Opinion. 
@@ -77,11 +77,11 @@ and something we'll discuss in future writing.
 
 For more on the initial participant experience, one of our members has created [an introductory video](https://www.youtube.com/playlist?list=PLSL_F7Lwul2dlI9J6-Nzz9_9Pz9AbcG2z) in collaboration with fellow Polis contributors.
 
-<img
+<a href="https://www.youtube.com/playlist?list=PLSL_F7Lwul2dlI9J6-Nzz9_9Pz9AbcG2z" rel="noopener"><img
   src="{{ '/assets/images/posts/2021-05-03-youtube-thumbnail.jpg' | relative_url }}"
-  alt=""
+  alt="Thumbnail of youtube video with three people on video and a screenshare of a Polis page."
   width="45%"
-/>
+/></a>
 
 ### No new facilitation under the sun
 
