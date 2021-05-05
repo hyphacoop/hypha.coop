@@ -36,7 +36,7 @@ Below that, you notice a statement and some buttons for agreement or disagreemen
 
 <img
   src="{{ '/assets/images/posts/2021-05-03-polis.gif' | relative_url }}"
-  alt=""
+  alt="Animated gif of searching Google, visiting Twitter, and scrolling through a Polis page on #TransportNewNormal."
 />
 
 You press **agree** and another statement replaces it. You continue to **agree** to some statements, or **disagree** with others. 
@@ -44,7 +44,7 @@ For those you don't feel strongly about, or don't understand, you **pass**. Mayb
 
 <img
   src="{{ '/assets/images/posts/2021-05-03-polis-1.gif' | relative_url }}"
-  alt="Animated gif of searching Google, visiting Twitter, and scrolling through a Polis page on #TransportNewNormal."
+  alt="Animated gif of a Polis page voting on a statement."
 />
 
 After you respond to a few statements, 
@@ -122,7 +122,7 @@ We'll cover how the consensus-building mechanisms of Polis lead to forms of eleg
 
 <img
   src="{{ '/assets/images/posts/2021-05-03-simplicity.png' | relative_url }}"
-  alt=""
+  alt="Black line drawing of messy circle with a single line leading out with lable simplicity."
   width="45%"
 />
 
