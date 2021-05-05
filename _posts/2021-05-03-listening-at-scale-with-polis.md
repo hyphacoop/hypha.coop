@@ -39,8 +39,8 @@ Below that, you notice a statement and some buttons for agreement or disagreemen
   alt=""
 />
 
-You press agree and another statement replaces it. You continue to agree to some statements, or disagree with others. 
-For those you don't feel strongly about, or don't understand, you pass. Maybe you submit a better-phrased version below.
+You press **agree** and another statement replaces it. You continue to **agree** to some statements, or **disagree** with others. 
+For those you don't feel strongly about, or don't understand, you **pass**. Maybe you **submit** a better-phrased version below.
 
 <img
   src="{{ '/assets/images/posts/2021-05-03-polis-1.gif' | relative_url }}"
@@ -48,17 +48,17 @@ For those you don't feel strongly about, or don't understand, you pass. Maybe yo
 />
 
 After you respond to a few statements, 
-you notice a blue dot amongst some larger grey blobs in the visualization below the buttons you're clicking. 
-After each button-click the dot moves around a bit and slowly migrates into the middle of one of the blobs.
+you notice a <mark><strong>blue dot</strong></mark> amongst some larger grey blobs in the visualization below the buttons you're clicking. 
+After each button-click <mark>the dot</mark> moves around a bit and slowly migrates into the middle of one of the blobs.
 
 <img
   src="{{ '/assets/images/posts/2021-05-03-polis-2.gif' | relative_url }}"
   alt="Animated gif of a Polis page scrolling from voting on a statement down to a text box and typing a new statement to submit."
 />
 
-You click the blob that the dot is within. It's highlighted and you see statements appear which you can flip through. 
+You click the blob that <mark>the dot</mark> is within. It's highlighted and you see statements appear which you can flip through. 
 These statements have claims of high levels of agreement and disagreement and are all ones that match your own views. 
-You realize that the dot represents you, and this blob is the group of people who predominantly share your opinions--
+You realize that <mark>the dot</mark> represents you, and this blob is the group of people who predominantly share your opinions:
 this is your blob!
 
 Clicking the other blobs, you understand these are other groups whose shared opinions you can explore.
