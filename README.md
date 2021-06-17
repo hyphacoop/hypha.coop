@@ -1,6 +1,8 @@
 # hypha.coop
 
-[![Build Status](https://travis-ci.com/hyphacoop/hypha.coop.svg?branch=master)](https://travis-ci.com/hyphacoop/hypha.coop)
+[![Build Status](https://img.shields.io/travis/com/hyphacoop/hypha.coop/master.svg?label=master)](https://travis-ci.com/github/hyphacoop/hypha.coop/branches)
+[![Build Status](https://img.shields.io/travis/com/hyphacoop/hypha.coop/staging.svg?label=staging)](https://travis-ci.com/github/hyphacoop/hypha.coop/branches)
+
 
 ## 🛠️ Technologies Used
 
