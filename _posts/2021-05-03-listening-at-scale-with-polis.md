@@ -20,7 +20,7 @@ We came across Polis in 2016, while following some civic developments that had s
 At this time it was being used by the Taiwanese civic tech community to conduct a process of participatory democracy at scale as part of 
 [vTaiwan](https://info.vtaiwan.tw/). We were excited to see how a tool like Polis, when wrapped in a thoughtful process, 
 enabled a way for participants to navigate the complex social fabric of democracy in a small country and have real impact. 
-We won't duplicate the [writing](https://civichall.org/civicist/vtaiwan-democracy-frontier/) and 
+We won't duplicate the [writing](https://web.archive.org/web/20210706100709/https://civichall.org/civicist/vtaiwan-democracy-frontier/) and 
 [research](https://osf.io/preprints/socarxiv/xyhft/) 
 ([including](https://docs.google.com/document/d/1GyjqKlSRUsHiiwZ9BnaYnPIITD1WkMblV5q-w8yaY_w/edit) by one of our members) on these processes and movements here.
 
