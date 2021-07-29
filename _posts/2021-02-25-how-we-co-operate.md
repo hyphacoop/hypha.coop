@@ -156,9 +156,7 @@ We’re excited to stand with others working to that end.
 
    [just recovery for all]: https://justrecoveryforall.ca/
 
-This is the inaugural post of Hypha’s new blog, Dripline. Through Dripline, we’re hoping to share our experiences and reflections as we learn and build technologies together. It’s also an invitation to our friends and neighbours: [come help us build][] the solidarity economy. Principle 6.
-
-   [come help us build]: https://www.eyemole.io/startacoop.html
+This is the inaugural post of Hypha’s new blog, Dripline. Through Dripline, we’re hoping to share our experiences and reflections as we learn and build technologies together. It’s also an invitation to our friends and neighbours: come help us build the solidarity economy. Principle 6.
 
 We’re excited to hear from you!
 Reach out if there are topics you want to discuss or you think we should cover in future posts.
