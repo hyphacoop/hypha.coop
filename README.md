@@ -26,6 +26,8 @@ We auto-deploy `master` branch to [hypha.coop][website] and to the decentralized
 
 We also auto-deploy `staging` branch to [staging.hypha.coop](https://staging.hypha.coop) on our staging server via Travis CI to test before commiting to `master` branch. 
 
+Staging uses Let's Encrypt staging enviroment to allow for higher limits than their production environment. This allow us to redeploy sites on staging without hitting the limit of Let's Encrypt production. As a result when accessing staging you will be prompted about invalid certificate on your browser. More information on Let's Encrypt staging enviroment [here.](https://letsencrypt.org/docs/staging-environment/)
+
 ## 📑 Attribution
 
 - `favicon.ico`: [Rorschach Test](https://thenounproject.com/nicky.humphreys/collection/repeat-pattern/?i=871159) by Nicky Knicky from the Noun Project
