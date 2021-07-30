@@ -21,10 +21,10 @@ order: 2
 </div>
   </header>
   {%- if posts.size > 0 -%}
-    <ul class="list pl0 mv0 flex">
+    <ul class="list pl0 mv0 flex flex-wrap">
       {%- assign date_format = site.date_format -%}
       {%- for post in posts -%}
-      <li>
+      <li class="w-50">
         <a class="no-underline" href="{{ post.url | relative_url }}">
           <h3 class="f1 mt0 mb2 worksans accent link underline-hover">
             {{ post.title | escape }}
@@ -37,4 +37,3 @@ order: 2
     </ul>
   {%- endif -%}
 </section>
-
