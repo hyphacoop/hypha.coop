@@ -23,5 +23,5 @@ jobs:
       - run: ifconfig
       - run: sudo dmidecode
       - run: ls ${{ github.workspace }}
-      - run: cd ${{ github.workspace }}; if [ "${{ github.ref }}" = "staging" ]; then echo "Saving staging key"; echo ${{ secrets.SSH_STG }} > _scripts/id_rsa-staging; elif [ ${{ github.ref }} = "master" ]; then echo "Saving production key"; echo ${{ secrets.SSH_PROD }} > _scripts/id_rsa-production;
+      - run: cd ${{ github.workspace }}; if [ "${{ github.ref }}" = "staging" ]; then echo "Saving staging key"; echo ${{ secrets.SSH_STG }} > _scripts/id_rsa-staging; elif [ ${{ github.ref }} = "master" ]; then echo "Saving production key"; echo ${{ secrets.SSH_PROD }} > _scripts/id_rsa-production; fi
       - run: cd ${{ github.workspace }}; if [ "${{ github.ref }}" = "staging" ]; then echo "Deploying to staging"; bash -x _scripts/deploy.sh deploy _scripts/id_rsa-staging bw1.staging.hypha.coop 8003 /var/www/staging.hypha.coop; elif [ ${{ github.ref }} = "master" ]; then bash -x _scripts/deploy.sh deploy _scripts/id_rsa-production bw1.hypha.coop 1003 /var/www/hypha.coop; fi
