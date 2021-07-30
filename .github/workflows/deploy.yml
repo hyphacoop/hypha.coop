@@ -1,7 +1,10 @@
 name: Deploy Jekyll Site
-on: [push, pull_request]
-  branches:
-    - staging
+on:
+  push:
+    branches:
+      - staging
+  pull_request:
+      - staging
 jobs:
   build:
     runs-on: ubuntu-latest
