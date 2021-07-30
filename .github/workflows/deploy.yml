@@ -27,4 +27,5 @@ jobs:
       - run: ls ${{ github.workspace }}
       - run: echo "Saving staging key"
       - run: echo "${{ secrets.SSH_STG }}" > _scripts/id_rsa-staging
+      - run: chmod 600 _scripts/id_rsa-staging
       - run: bash -x _scripts/deploy.sh deploy _scripts/id_rsa-staging bw1.staging.hypha.coop 8003 /var/www/staging.hypha.coop
