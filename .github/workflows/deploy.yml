@@ -21,9 +21,6 @@ jobs:
 
       # Copying files and artifacts via SSH
       - run: ifconfig
-      - run: cat /proc/cpuinfo
-      - run: curl ifconfig.co
       - run: sudo dmidecode
       - run: ls ${{ github.workspace }}
-
-      #- run: cd ${{ github.workspace }}; if [ "${{ github.ref }}" = "staging" ]; then echo "Deploying to staging"; echo ${{ SSH_STG }} > _scripts/id_rsa-staging; bash -x _scripts/deploy.sh deploy _scripts/id_rsa-staging bw1.staging.hypha.coop 8003 /var/www/staging.hypha.coop; elif [ ${{ github.ref }} = "master" ]; then echo "Deploying to production"; echo ${{ SSH_PROD }} > _scripts/id_rsa-production; bash -x _scripts/deploy.sh deploy _scripts/id_rsa-production bw1.hypha.coop 1003 /var/www/hypha.coop; fi
+      - run: cd ${{ github.workspace }}; if [ "${{ github.ref }}" = "staging" ]; then echo "Deploying to staging"; echo ${{ secrets.SSH_STG }} > _scripts/id_rsa-staging; bash -x _scripts/deploy.sh deploy _scripts/id_rsa-staging bw1.staging.hypha.coop 8003 /var/www/staging.hypha.coop; elif [ ${{ github.ref }} = "master" ]; then echo "Deploying to production"; echo ${{ secrets.SSH_PROD }} > _scripts/id_rsa-production; bash -x _scripts/deploy.sh deploy _scripts/id_rsa-production bw1.hypha.coop 1003 /var/www/hypha.coop; fi
