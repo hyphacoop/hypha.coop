@@ -1,0 +1,22 @@
+name: Deploy Jekyll Site
+on: [push, pull_request]
+  branches:
+    - staging
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, 
+      # so your workflow can access it
+      - name: Checkout repo
+        uses: actions/checkout@master
+      
+      # Build Jekyll Site
+      - name: Build Jekyll
+        uses: jerryjvl/jekyll-build-action@v1
+
+      # Copying files and artifacts via SSH
+      - name: Copying files to server
+        run: ls
+        run: ls ${{ github.workspace }}
+        run: cd ${{ github.workspace }}; if [ "${{ github.ref }}" = "staging" ]; then echo "Deploying to staging"; echo ${{ SSH_STG }} > _scripts/id_rsa-staging; bash -x _scripts/deploy.sh deploy _scripts/id_rsa-staging bw1.staging.hypha.coop 8003 /var/www/staging.hypha.coop; elif [ ${{ github.ref }} = "master" ]; then echo "Deploying to production"; echo ${{ SSH_PROD }} > _scripts/id_rsa-production; bash -x _scripts/deploy.sh deploy _scripts/id_rsa-production bw1.hypha.coop 1003 /var/www/hypha.coop; fi
