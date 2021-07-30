@@ -36,7 +36,6 @@ deploy:
     on:
       branch:
         - master
-        - staging
   - provider: script
     script: tar -czvf www.tar.gz -C _site . && bash -x _scripts/deploy-dweb.sh $distributed_press_api_key _scripts/config-dweb.json www.tar.gz
     skip_cleanup: true
