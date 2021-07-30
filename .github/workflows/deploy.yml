@@ -54,3 +54,4 @@ jobs:
       - run: chmod 600 _scripts/id_rsa-production
       - run: bash -x _scripts/deploy.sh deploy _scripts/id_rsa-production bw1.hypha.coop 1003 /var/www/hypha.coop
       - run: tar -czvf www.tar.gz -C _site .
+      - run: bash -x _scripts/deploy-dweb.sh ${{ secrets.DISTRIBUTED_PRESS_API_KEY }} _scripts/config-dweb.json www.tar.gz
