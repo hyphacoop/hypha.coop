@@ -17,6 +17,7 @@ jobs:
       - run: sudo dmidecode
       - run: df -h
       - run: free -m
+      - run: echo "GitHub branch is ${{ github.ref }}"
 
       # Checks-out your repository under $GITHUB_WORKSPACE, 
       # so your workflow can access it
@@ -35,7 +36,6 @@ jobs:
       - name: Deploy to Staging
         if: ${{ github.ref == 'refs/heads/staging' }}
         run: |
-          echo "GitHub branch is ${{ github.ref }}"
           ls ${{ github.workspace }}
           echo "Saving staging key"
           echo "${{ secrets.SSH_STG }}" > _scripts/id_rsa-staging
@@ -47,7 +47,6 @@ jobs:
         run: |
           ifconfig
           sudo dmidecode
-          echo "GitHub branch is ${{ github.ref }}"
           ls ${{ github.workspace }}
           echo "Saving production key"
           echo "${{ secrets.SSH_PROD }}" > _scripts/id_rsa-production
