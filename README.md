@@ -1,7 +1,7 @@
 # hypha.coop
-
-[![Build Status](https://github.com/hyphacoop/hypha.coop/actions/workflows/deploy.yml/badge.svg?branch=master)](https://github.com/hyphacoop/hypha.coop/actions)
-[![Build Status](https://github.com/hyphacoop/hypha.coop/actions/workflows/deploy.yml/badge.svg?branch=staging)](https://github.com/hyphacoop/hypha.coop/actions)
+| Master | Staging |
+| ------ | ------- |
+|[![Build Status](https://github.com/hyphacoop/hypha.coop/actions/workflows/deploy.yml/badge.svg?branch=master)](https://github.com/hyphacoop/hypha.coop/actions)|[![Build Status](https://github.com/hyphacoop/hypha.coop/actions/workflows/deploy.yml/badge.svg?branch=staging)](https://github.com/hyphacoop/hypha.coop/actions)|
 
 
 ## 🛠️ Technologies Used
