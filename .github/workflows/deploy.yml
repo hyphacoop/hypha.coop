@@ -33,25 +33,25 @@ jobs:
       - run: make check
 
       - name: Deploy to Staging
-      if: ${{ github.ref == 'refs/heads/staging' }}
-      run: |
-        echo "GitHub branch is ${{ github.ref }}"
-        ls ${{ github.workspace }}
-        echo "Saving staging key"
-        echo "${{ secrets.SSH_STG }}" > _scripts/id_rsa-staging
-        chmod 600 _scripts/id_rsa-staging
-        bash -x _scripts/deploy.sh deploy _scripts/id_rsa-staging bw1.staging.hypha.coop 8003 /var/www/staging.hypha.coop
+        if: ${{ github.ref == 'refs/heads/staging' }}
+        run: |
+          echo "GitHub branch is ${{ github.ref }}"
+          ls ${{ github.workspace }}
+          echo "Saving staging key"
+          echo "${{ secrets.SSH_STG }}" > _scripts/id_rsa-staging
+          chmod 600 _scripts/id_rsa-staging
+          bash -x _scripts/deploy.sh deploy _scripts/id_rsa-staging bw1.staging.hypha.coop 8003 /var/www/staging.hypha.coop
 
-    - name: Deploy to Production
-      if: ${{ github.ref == 'refs/heads/master' }}
-      run: |
-        ifconfig
-        sudo dmidecode
-        echo "GitHub branch is ${{ github.ref }}"
-        ls ${{ github.workspace }}
-        echo "Saving production key"
-        echo "${{ secrets.SSH_PROD }}" > _scripts/id_rsa-production
-        chmod 600 _scripts/id_rsa-production
-        bash -x _scripts/deploy.sh deploy _scripts/id_rsa-production bw1.hypha.coop 1003 /var/www/hypha.coop
-        tar -czvf www.tar.gz -C _site .
-        bash -x _scripts/deploy-dweb.sh ${{ secrets.DISTRIBUTED_PRESS_API_KEY }} _scripts/config-dweb.json www.tar.gz
+      - name: Deploy to Production
+        if: ${{ github.ref == 'refs/heads/master' }}
+        run: |
+          ifconfig
+          sudo dmidecode
+          echo "GitHub branch is ${{ github.ref }}"
+          ls ${{ github.workspace }}
+          echo "Saving production key"
+          echo "${{ secrets.SSH_PROD }}" > _scripts/id_rsa-production
+          chmod 600 _scripts/id_rsa-production
+          bash -x _scripts/deploy.sh deploy _scripts/id_rsa-production bw1.hypha.coop 1003 /var/www/hypha.coop
+          tar -czvf www.tar.gz -C _site .
+          bash -x _scripts/deploy-dweb.sh ${{ secrets.DISTRIBUTED_PRESS_API_KEY }} _scripts/config-dweb.json www.tar.gz
