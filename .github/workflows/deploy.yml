@@ -19,8 +19,12 @@ jobs:
         uses: actions/checkout@master
       
       # Build Jekyll Site
-      - name: Build Jekyll
-        uses: jerryjvl/jekyll-build-action@v1
+      #- name: Build Jekyll
+      #  uses: jerryjvl/jekyll-build-action@v1
+      - run: echo "Building Jekyll site"
+      - run: gem update --system
+      - run: gem install bundler
+      - run: make build-dweb
 
       # Copying files and artifacts via SSH
       - run: ifconfig
