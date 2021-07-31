@@ -36,24 +36,24 @@ jobs:
       - name: Deploy Staging
         if: ${{ github.ref == 'refs/heads/staging' }}
         # Copying files and artifacts via SSH
-        - run: echo "GitHub branch is ${{ github.ref }}"
-        - run: ls ${{ github.workspace }}
-        - run: echo "Saving staging key"
-        - run: echo "${{ secrets.SSH_STG }}" > _scripts/id_rsa-staging
-        - run: chmod 600 _scripts/id_rsa-staging
-        - run: bash -x _scripts/deploy.sh deploy _scripts/id_rsa-staging bw1.staging.hypha.coop 8003 /var/www/staging.hypha.coop
+        run: echo "GitHub branch is ${{ github.ref }}"
+        run: ls ${{ github.workspace }}
+        run: echo "Saving staging key"
+        run: echo "${{ secrets.SSH_STG }}" > _scripts/id_rsa-staging
+        run: chmod 600 _scripts/id_rsa-staging
+        run: bash -x _scripts/deploy.sh deploy _scripts/id_rsa-staging bw1.staging.hypha.coop 8003 /var/www/staging.hypha.coop
 
     steps:
       -name: Deploy Production
         if: ${{ github.ref == 'refs/heads/staging' }}
         # Copying files and artifacts via SSH
-        - run: ifconfig
-        - run: sudo dmidecode
-        - run: echo "GitHub branch is ${{ github.ref }}"
-        - run: ls ${{ github.workspace }}
-        - run: echo "Saving production key"
-        - run: echo "${{ secrets.SSH_PROD }}" > _scripts/id_rsa-production
-        - run: chmod 600 _scripts/id_rsa-production
-        - run: bash -x _scripts/deploy.sh deploy _scripts/id_rsa-production bw1.hypha.coop 1003 /var/www/hypha.coop
-        - run: tar -czvf www.tar.gz -C _site .
-        - run: bash -x _scripts/deploy-dweb.sh ${{ secrets.DISTRIBUTED_PRESS_API_KEY }} _scripts/config-dweb.json www.tar.gz
+        run: ifconfig
+        run: sudo dmidecode
+        run: echo "GitHub branch is ${{ github.ref }}"
+        run: ls ${{ github.workspace }}
+        run: echo "Saving production key"
+        run: echo "${{ secrets.SSH_PROD }}" > _scripts/id_rsa-production
+        run: chmod 600 _scripts/id_rsa-production
+        run: bash -x _scripts/deploy.sh deploy _scripts/id_rsa-production bw1.hypha.coop 1003 /var/www/hypha.coop
+        run: tar -czvf www.tar.gz -C _site .
+        run: bash -x _scripts/deploy-dweb.sh ${{ secrets.DISTRIBUTED_PRESS_API_KEY }} _scripts/config-dweb.json www.tar.gz
