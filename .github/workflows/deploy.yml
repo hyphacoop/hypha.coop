@@ -44,7 +44,7 @@ jobs:
         run: bash -x _scripts/deploy.sh deploy _scripts/id_rsa-staging bw1.staging.hypha.coop 8003 /var/www/staging.hypha.coop
 
     steps:
-      -name: Deploy Production
+      - name: Deploy Production
         if: ${{ github.ref == 'refs/heads/staging' }}
         # Copying files and artifacts via SSH
         run: ifconfig
