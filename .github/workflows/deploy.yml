@@ -45,8 +45,6 @@ jobs:
       - name: Deploy to Production
         if: ${{ github.ref == 'refs/heads/master' }}
         run: |
-          ifconfig
-          sudo dmidecode
           ls ${{ github.workspace }}
           echo "Saving production key"
           echo "${{ secrets.SSH_PROD }}" > _scripts/id_rsa-production
