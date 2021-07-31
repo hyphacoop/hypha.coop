@@ -16,6 +16,8 @@ jobs:
       # Get system info
       - run: ifconfig
       - run: sudo dmidecode
+      - run: df -h
+      - run: free -m
 
       # Checks-out your repository under $GITHUB_WORKSPACE, 
       # so your workflow can access it
@@ -23,8 +25,6 @@ jobs:
         uses: actions/checkout@master
 
       # Build Jekyll Site
-      #- name: Build Jekyll
-      #  uses: jerryjvl/jekyll-build-action@v1
       - run: echo "Building Jekyll site"
       - run: sudo gem update --system
       - run: sudo gem install bundler
