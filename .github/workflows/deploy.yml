@@ -16,7 +16,7 @@ jobs:
       # Get system info
       - run: ifconfig
       - run: sudo dmidecode
-      
+
       # Checks-out your repository under $GITHUB_WORKSPACE, 
       # so your workflow can access it
       - name: Checkout repo
@@ -31,6 +31,7 @@ jobs:
       - run: sudo gem install jekyll
       - run: bundle install
       - run: make build-dweb
+      - run: make check
 
       # Copying files and artifacts via SSH
       - run: echo "GitHub branch is ${{ github.ref }}"
