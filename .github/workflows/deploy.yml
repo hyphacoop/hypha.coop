@@ -9,49 +9,48 @@ on:
       - staging
       - master
 jobs:
-  build-staging:
-    if: ${{ github.ref == 'refs/heads/staging' }}
+  build:
     runs-on: ubuntu-latest
     steps:
+      # Get system info
+      - run: ifconfig
+      - run: sudo dmidecode
+      - run: df -h
+      - run: free -m
+      - run: echo "GitHub branch is ${{ github.ref }}"
+
       # Checks-out your repository under $GITHUB_WORKSPACE, 
       # so your workflow can access it
       - name: Checkout repo
         uses: actions/checkout@master
-      
-      # Build Jekyll Site
-      - name: Build Jekyll
-        uses: jerryjvl/jekyll-build-action@v1
 
-      # Copying files and artifacts via SSH
-      - run: ifconfig
-      - run: sudo dmidecode
-      - run: echo "GitHub branch is ${{ github.ref }}"
-      - run: ls ${{ github.workspace }}
-      - run: echo "Saving staging key"
-      - run: echo "${{ secrets.SSH_STG }}" > _scripts/id_rsa-staging
-      - run: chmod 600 _scripts/id_rsa-staging
-      - run: bash -x _scripts/deploy.sh deploy _scripts/id_rsa-staging bw1.staging.hypha.coop 8003 /var/www/staging.hypha.coop
-  build-production:
-    if: ${{ github.ref == 'refs/heads/master' }}
-    runs-on: ubuntu-latest
-    steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, 
-      # so your workflow can access it
-      - name: Checkout repo
-        uses: actions/checkout@master
-      
       # Build Jekyll Site
-      - name: Build Jekyll
-        uses: jerryjvl/jekyll-build-action@v1
+      - run: echo "Building Jekyll site"
+      - run: sudo gem update --system
+      - run: sudo gem install bundler
+      - run: sudo gem install jekyll
+      - run: bundle install
+      - run: make build-dweb
+      - run: make check
 
-      # Copying files and artifacts via SSH
-      - run: ifconfig
-      - run: sudo dmidecode
-      - run: echo "GitHub branch is ${{ github.ref }}"
-      - run: ls ${{ github.workspace }}
-      - run: echo "Saving production key"
-      - run: echo "${{ secrets.SSH_PROD }}" > _scripts/id_rsa-production
-      - run: chmod 600 _scripts/id_rsa-production
-      - run: bash -x _scripts/deploy.sh deploy _scripts/id_rsa-production bw1.hypha.coop 1003 /var/www/hypha.coop
-      - run: tar -czvf www.tar.gz -C _site .
-      - run: bash -x _scripts/deploy-dweb.sh ${{ secrets.DISTRIBUTED_PRESS_API_KEY }} _scripts/config-dweb.json www.tar.gz
+      - name: Deploy to Staging
+        if: ${{ github.ref == 'refs/heads/staging' }}
+        run: |
+          ls ${{ github.workspace }}
+          echo "Saving staging key"
+          echo "${{ secrets.SSH_STG }}" > _scripts/id_rsa-staging
+          chmod 600 _scripts/id_rsa-staging
+          bash -x _scripts/deploy.sh deploy _scripts/id_rsa-staging bw1.staging.hypha.coop 8003 /var/www/staging.hypha.coop
+
+      - name: Deploy to Production
+        if: ${{ github.ref == 'refs/heads/master' }}
+        run: |
+          ifconfig
+          sudo dmidecode
+          ls ${{ github.workspace }}
+          echo "Saving production key"
+          echo "${{ secrets.SSH_PROD }}" > _scripts/id_rsa-production
+          chmod 600 _scripts/id_rsa-production
+          bash -x _scripts/deploy.sh deploy _scripts/id_rsa-production bw1.hypha.coop 1003 /var/www/hypha.coop
+          tar -czvf www.tar.gz -C _site .
+          bash -x _scripts/deploy-dweb.sh ${{ secrets.DISTRIBUTED_PRESS_API_KEY }} _scripts/config-dweb.json www.tar.gz

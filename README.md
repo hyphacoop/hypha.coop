@@ -1,14 +1,14 @@
 # hypha.coop
-
-[![Build Status](https://img.shields.io/travis/com/hyphacoop/hypha.coop/master.svg?label=master)](https://travis-ci.com/github/hyphacoop/hypha.coop/branches)
-[![Build Status](https://img.shields.io/travis/com/hyphacoop/hypha.coop/staging.svg?label=staging)](https://travis-ci.com/github/hyphacoop/hypha.coop/branches)
+| Master | Staging |
+| ------ | ------- |
+|[![Build Status](https://github.com/hyphacoop/hypha.coop/actions/workflows/deploy.yml/badge.svg?branch=master)](https://github.com/hyphacoop/hypha.coop/actions)|[![Build Status](https://github.com/hyphacoop/hypha.coop/actions/workflows/deploy.yml/badge.svg?branch=staging)](https://github.com/hyphacoop/hypha.coop/actions)|
 
 
 ## 🛠️ Technologies Used
 
 - [**Tachyons.**][tachyons] Tachyons is a functional CSS library.
 - [**Jekyll.**][jekyll] A static website generator.
-- [**Travis CI**.][travis] Free cloud testing environment used for test and deploy.
+- [**GitHub Actions**.][gh-actions] GitHub CI automation.
 
 ## 💻 Development
 
@@ -20,11 +20,11 @@
 
 ## 🚀 Deployment
 
-We auto-deploy `master` branch to [hypha.coop][website] and to the decentralized web with the [Distributed Press][distributed-press]. (See [`.travis.yml`][ci-conf] for how we use Travis CI to auto-deploy.)
+We auto-deploy `master` branch to [hypha.coop][website] and to the decentralized web with the [Distributed Press][distributed-press]. (See [`deploy.yml`][actions-conf] for how we use GitHub Actions to auto-deploy.)
 
 ## 🚧 Staging
 
-We also auto-deploy `staging` branch to [staging.hypha.coop](https://staging.hypha.coop) on our staging server via Travis CI to test before commiting to `master` branch. 
+We also auto-deploy `staging` branch to [staging.hypha.coop](https://staging.hypha.coop) on our staging server via GitHub Actions to test before commiting to `master` branch. 
 
 Staging uses Let's Encrypt staging enviroment to allow for higher limits than their production environment. This allow us to redeploy sites on staging without hitting the limit of Let's Encrypt production. As a result when accessing staging you will be prompted about invalid certificate on your browser. More information on Let's Encrypt staging enviroment [here.](https://letsencrypt.org/docs/staging-environment/)
 
@@ -45,6 +45,6 @@ Unless otherwise indicated, hypha.coop **content and documentation** is licensed
    [website]: https://hypha.coop
    [jekyll]: https://jekyllrb.com
    [tachyons]: http://tachyons.io
-   [travis]: https://travis-ci.com/hyphacoop/hypha.coop
-   [ci-conf]: /.travis.yml
+   [gh-actions]: https://docs.github.com/en/actions
+   [actions-conf]: /.github/workflows/deploy.yml
    [distributed-press]: https://github.com/hyphacoop/api.distributed.press/
