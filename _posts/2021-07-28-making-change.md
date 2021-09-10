@@ -2,7 +2,7 @@
 title: 'Making change with the decentralized web'
 author: Hypha
 date: 2021-07-28
-acknowledgement: With thanks to workshop participants who provided advice and feedback during the writing of this article.
+acknowledgement: 'With thanks to workshop participants who provided advice and feedback during the writing of this article.'
 excerpt: 'Reflections on MozFest session on social transformation and movement tactics'
 ---
 _{{page.acknowledgement}}_
