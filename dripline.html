@@ -13,7 +13,8 @@ order: 2
     <h3 class="measure-wide f2 f1-m f-subheadline-l measure-narrow lh-solid accent normal worksans">
       {{ page.title }}
     </h3>
-    <p class="f3 f3-l dark-gray">A place for our collective writing ranging from short posts, to interviews, design retrospectives, and essays. We aim to publish on a bimonthly schedule and draw inspiration and analogies from permaculture, forestry, gardening, and other natural concepts.</p>
+    <p class="f3 f3-l dark-gray">
+      A place for our collective writing ranging from short posts, to interviews, design retrospectives, and essays. We aim to publish on a bimonthly schedule and draw inspiration and analogies from permaculture, forestry, gardening, and other natural concepts.</p>
     <p class="worksans">
       A dripline signifies the area under the outermost branches of a tree.
       It’s this <a href="https://permacultureprinciples.com/principles/_11/" target="_blank" class="accent link underline-hover" rel="noopener">interface</a> between worlds where interesting and productive things happen.
@@ -22,17 +23,17 @@ order: 2
 </div>
   </header>
   {%- if posts.size > 0 -%}
-    <ul class="list pl0 mv0 flex flex-wrap">
+    <ul class="list pl0 mv0 flex-l flex-wrap">
       {%- assign date_format = site.date_format -%}
       {%- for post in posts -%}
-      <li class="w-50">
+      <li class="w-70 w-50-l">
         <a class="no-underline" href="{{ post.url | relative_url }}">
-          <h3 class="f1 mt0 mb2 worksans accent link underline-hover">
+          <h3 class="f2 f1-l mt0 mb2 worksans normal accent link underline-hover">
             {{ post.title | escape }}
           </h3>
-          <p class="lh-solid mv0 f3 f3-l dark-gray measure worksans">{{ post.excerpt }}</p>
+          <p class="lh-solid mv0 f3 f3-l dark-gray measure">{{ post.excerpt }}</p>
         </a>
-        <h4 class="f6 mt3 gray">{{ post.date | date: date_format }}</h4>
+        <h4 class="f6 mt3 gray">{%- if post.author != "Hypha" -%}{{ post.author }} 🞄 {%- endif -%}{{ post.date | date: date_format }}</h4>
       </li>
       {%- endfor -%}
     </ul>
