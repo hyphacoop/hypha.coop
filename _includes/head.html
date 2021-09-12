@@ -1,20 +1,21 @@
 {%- assign meta_title = page.title | default: site.title -%}
+{% if page.collection == "posts" %}{%- assign meta_section = "Dripline: " -%}{% endif %}
 {%- assign meta_description = page.excerpt | default: site.description -%}
 {%- assign meta_image = page.image | default: "/assets/images/hypha-social.png" | prepend: site.url -%}
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <title>{% if page.collection == "posts" %}Dripline: {% endif %}{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
 
-  <meta property="og:title" content="{{ meta_title | escape }}">
+  <meta property="og:title" content="{{ meta_section | escape }}{{ meta_title | escape }}">
   <meta name="description" content="{{ meta_description }}">
   <meta property="og:description" content="{{ meta_description }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
   <meta property="og:url" content="{{ site.url }}">
   <meta property="og:site_name" content="{{ meta_title | escape }}">
   <meta property="og:image" content="{{ meta_image | relative_url }}">
-  <meta name="twitter:title" content="{{ meta_title | escape }}">
+  <meta name="twitter:title" content="{{ meta_section | escape }}{{ meta_title | escape }}">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@HyphaCoop">
   <meta name="twitter:creator" content="@HyphaCoop">
