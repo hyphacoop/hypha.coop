@@ -23,7 +23,7 @@
 
 We auto-deploy `master` branch to [hypha.coop][website] and to the decentralized web with the [Distributed Press][distributed-press]. (See [`deploy.yml`][actions-conf] for how we use GitHub Actions to auto-deploy.)
 
-We use HTMLProofer to check the HTML output but it will also fail on links that are no longer exist, requires login, and on dweb. 
+We use HTMLProofer to check the HTML output, however it will also fail on links that no longer exist, require a login, or are on the dweb. 
 
 For links that no longer exists we link to an archive on [archive.org](https://archive.org), for links that requires login such as LinkedIn and those on dweb such as IPFS and Hypercore we add `data-proofer-ignore` inside the `<a>` tag to have HTMLProofer ignore checks to that link.
 
