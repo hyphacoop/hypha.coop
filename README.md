@@ -9,6 +9,7 @@
 - [**Tachyons.**][tachyons] Tachyons is a functional CSS library.
 - [**Jekyll.**][jekyll] A static website generator.
 - [**GitHub Actions**.][gh-actions] GitHub CI automation.
+- [**HTMLProofer.**][html-proofer] HTMLProofer is a set of tests to validate your HTML output.
 
 ## 💻 Development
 
@@ -21,6 +22,10 @@
 ## 🚀 Deployment
 
 We auto-deploy `master` branch to [hypha.coop][website] and to the decentralized web with the [Distributed Press][distributed-press]. (See [`deploy.yml`][actions-conf] for how we use GitHub Actions to auto-deploy.)
+
+We use HTMLProofer to check the HTML output, however it will also fail on links that no longer exist, require a login, or are on the dweb. 
+
+For links that no longer exist we update that link to an archived copy on [archive.org](https://archive.org), for links that require a login, such as LinkedIn, and those on the dweb, such as content on IPFS and Hypercore, we add `data-proofer-ignore` inside the `<a>` tag to have HTMLProofer ignore checks to that link.
 
 ## 🚧 Staging
 
@@ -48,3 +53,4 @@ Unless otherwise indicated, hypha.coop **content and documentation** is licensed
    [gh-actions]: https://docs.github.com/en/actions
    [actions-conf]: /.github/workflows/deploy.yml
    [distributed-press]: https://github.com/hyphacoop/api.distributed.press/
+   [html-proofer]: https://github.com/gjtorikian/html-proofer/
