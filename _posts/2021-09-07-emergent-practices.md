@@ -1,7 +1,7 @@
 ---
 title: 'Emergent Practices from the Decentralized Co-operative Web'
 author: Mai Ishikawa Sutton
-date: 2021-09-02
+date: 2021-09-30
 acknowledgement: Mai is the Co-founder and Lead Editor of [COMPOST Magazine](https://compost.digital). This is a  guest post that was originally published on the [Open Collective Blog](https://blog.opencollective.com/emergent-practices-from-the-decentralized-co-operative-web/) on May 27, 2021.
 excerpt: 'Building tools and practices that enable organizations to work more transparently, equitably, and collaboratively.'
 ---
@@ -71,7 +71,7 @@ The projects highlighted here are experimenting with this type of radical, pragm
 [libp2p]: https://libp2p.io/
 [ipfs]: https://ipfs.io/
 [commons-stack]: https://commonsstack.org/
-[daos]: https://wiki.p2pfoundation.net/Distributed_Autonomous_Organizations
+[daos]: https://web.archive.org/web/20170820040347/https://wiki.p2pfoundation.net/Distributed_Autonomous_Organizations
 [sourcecred]: https://sourcecred.io/
 [radicle]: https://radicle.xyz/
 [fundoss]: https://fundoss.org/
