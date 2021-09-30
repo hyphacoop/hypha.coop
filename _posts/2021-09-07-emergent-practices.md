@@ -2,10 +2,10 @@
 title: 'Emergent Practices from the Decentralized Co-operative Web'
 author: Mai Ishikawa Sutton
 date: 2021-09-02
-acknowledgement: By Mai Ishikawa Sutton, Co-founder and Lead Editor of [COMPOST Magazine][compost-mag]
+acknowledgement: Mai is the Co-founder and Lead Editor of [COMPOST Magazine][compost-mag]. This is a  guest post that was originally published on the [Open Collective Blog][open-collective-post] on May 27, 2021.
 excerpt: 'Building tools and practices that enable organizations to work more transparently, equitably, and collaboratively.'
 ---
-_{{page.acknowledgement}}_    
+_By {{ page.author }}, {{ page.acknowledgement }}_    
 
 Decentralization has become a buzzword the last several years, particularly in the realms of technology and grassroots organizing. From the promise of blockchain-based cryptocurrencies and smart contracts, to the natural metaphors inspired by fungal networks, organizers have been fascinated with de-centering power structures and building more resilient systems that are stronger than the sum of their parts.
 
@@ -46,13 +46,9 @@ We discussed how enabling people to secure a livelihood with their project does 
 ## Addressing the accessibility of tech tools
 Across the board, there was an agreement that many of the tools we build and use remain inaccessible to many. Scott acknowledged how there’s still a lot of work to be done in the cryptocurrency ecosystem, as well as in open source software where major technical contributors are prioritized over individual members of the community. We then discussed how with greater cooperation, tooling, and patterns of working together, that the tech side of projects could just be another specialization, as a role that could be designated to someone. This was part of a greater recognition that we need more diversity within projects to specialize in different aspects of an organization. Tools like Open Collective and organizations like Hypha Co-operative help remove the financial, legal, and administrative barriers for those trying to build their project or address frontline needs, by enabling them to outsource this work.
 
-~
-
 The strength of decentralized systems comes from the interdependence of its parts. This is especially true when it comes to the open and interoperable Web, but applies to any resilient social ecosystem. For groups to be both decentralized and interdependent, they need to be trust-full and honest about how they in fact practice what they preach. Financial transparency is one important place where this happens — to be open and communicative about where and how projects receive money, and how they are compensating people for their labor.
 
 The projects highlighted here are experimenting with this type of radical, pragmatic transparency. They’re the kinds of tools that will help people break out of the dominant economic logic that continues to perpetuate social inequities. I’m excited to see how these tools for economic solidarity will grow and lead to even more experimentation. Eventually, they may help us establish radically better practices on creating organizations that are truly, organizationally, decentralized and interdependent.
-
-*** 
 
 ## Additional Reading
 * [COMPOST Magazine][compost-mag]
@@ -62,32 +58,31 @@ The projects highlighted here are experimenting with this type of radical, pragm
 * [Decentralized Web Principles][dweb-principles]
 
 
-
-
-  [compost-mag]: https://compost.digital
-  [loomio]: https://www.loomio.org/
-  [co-budget]: https://cobudget.co/
-  [better-work-together]: https://www.betterworktogether.co/
-  [open-collective]: https://opencollective.com/
-  [open-source-collective]: https://opencollective.com/opensource
-  [platform-6]: https://opencollective.com/platform6-coop
-  [open-collective-foundation]: https://opencollective.com/foundation
-  [social-coop]: https://social.coop/
-  [quadratic-funding]: https://vitalik.ca/general/2019/12/07/quadratic.html
-  [secure-scuttlebutt]: https://scuttlebutt.nz/
-  [libp2p]: https://libp2p.io/
-  [ipfs]: https://ipfs.io/
-  [commons-stack]: https://commonsstack.org/
-  [daos]: https://wiki.p2pfoundation.net/Distributed_Autonomous_Organizations
-  [sourcecred]: https://sourcecred.io/
-  [radicle]: https://radicle.xyz/
-  [fundoss]: https://fundoss.org/
-  [disco]: https://disco.coop/
-  [disco-elements]: https://elements.disco.coop/
-  [hypha]: https://hypha.coop/
-  [hypha-handbook]: https://handbook.hypha.coop/
-  [emergent-strategy]: https://www.akpress.org/emergentstrategy.html
-  [dweb-principles]: https://getdweb.net/principles/
+[compost-mag]: https://compost.digital
+[loomio]: https://www.loomio.org/
+[co-budget]: https://cobudget.co/
+[better-work-together]: https://www.betterworktogether.co/
+[open-collective]: https://opencollective.com/
+[open-source-collective]: https://opencollective.com/opensource
+[platform-6]: https://opencollective.com/platform6-coop
+[open-collective-foundation]: https://opencollective.com/foundation
+[social-coop]: https://social.coop/
+[quadratic-funding]: https://vitalik.ca/general/2019/12/07/quadratic.html
+[secure-scuttlebutt]: https://scuttlebutt.nz/
+[libp2p]: https://libp2p.io/
+[ipfs]: https://ipfs.io/
+[commons-stack]: https://commonsstack.org/
+[daos]: https://wiki.p2pfoundation.net/Distributed_Autonomous_Organizations
+[sourcecred]: https://sourcecred.io/
+[radicle]: https://radicle.xyz/
+[fundoss]: https://fundoss.org/
+[disco]: https://disco.coop/
+[disco-elements]: https://elements.disco.coop/
+[hypha]: https://hypha.coop/
+[hypha-handbook]: https://handbook.hypha.coop/
+[emergent-strategy]: https://www.akpress.org/emergentstrategy.html
+[dweb-principles]: https://getdweb.net/principles/
+[open-collective-post]: https://blog.opencollective.com/emergent-practices-from-the-decentralized-co-operative-web/
 
 
 
