@@ -5,7 +5,6 @@ date: 2021-07-28
 acknowledgement: 'With thanks to workshop participants who provided advice and feedback during the writing of this article.'
 excerpt: 'Reflections on MozFest session on social transformation and movement tactics'
 ---
-_{{page.acknowledgement}}_
 ### {{ page.excerpt }}
 
 Mozfest is Mozilla’s annual public festival bringing together artists, technologists, designers and anyone interested in creating a better internet. Hypha member-workers led and participated in two sessions at [MozFest 2021](https://foundation.mozilla.org/en/blog/vital-time-mozfest/) this March. [This is what solidarity looks like](https://schedule.mozillafestival.org/session/3BE77L-1) led by [Mai Ishikawa Sutton](https://twitter.com/maira) a Hypha collaborator ([video](https://www.youtube.com/watch?v=eVLHAVg-g24&list=PLnRGhgZaGeBv4FyPOmMY3OOFQJAz8J0lb&index=184)) and [Achieving social transformation](https://schedule.mozillafestival.org/session/8RD8GQ-1) led by Dawn Walker (not recorded). 

@@ -15,6 +15,12 @@ layout: default
     <h2 class="gray f6 f5-l lh-solid mt0">{{ page.date | date: site.date_format }}</h2>
   </header>
   <div class="lh-copy mw7 links-accent links-underline-hover">
+    {% if page.author != "" or page.author != nil %}
+    <p><strong>{{ page.author | upcase }}</strong></p>
+    {% endif %}
+    {% if page.acknowledgement != "" or page.acknowledgement != nil %}
+    <p><em>{{ page.acknowledgement | markdownify }}</em></p>
+    {% endif %}
     {{ content }}
   </div>
   <footer class="mt5 bt bw2 b--light-gray">
