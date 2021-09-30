@@ -2,10 +2,9 @@
 title: 'Emergent Practices from the Decentralized Co-operative Web'
 author: Mai Ishikawa Sutton
 date: 2021-09-02
-acknowledgement: Mai is the Co-founder and Lead Editor of [COMPOST Magazine][compost-mag]. This is a  guest post that was originally published on the [Open Collective Blog][open-collective-post] on May 27, 2021.
+acknowledgement: Mai is the Co-founder and Lead Editor of [COMPOST Magazine](https://compost.digital). This is a  guest post that was originally published on the [Open Collective Blog](https://blog.opencollective.com/emergent-practices-from-the-decentralized-co-operative-web/) on May 27, 2021.
 excerpt: 'Building tools and practices that enable organizations to work more transparently, equitably, and collaboratively.'
 ---
-_By {{ page.author }}, {{ page.acknowledgement }}_    
 
 Decentralization has become a buzzword the last several years, particularly in the realms of technology and grassroots organizing. From the promise of blockchain-based cryptocurrencies and smart contracts, to the natural metaphors inspired by fungal networks, organizers have been fascinated with de-centering power structures and building more resilient systems that are stronger than the sum of their parts.
 

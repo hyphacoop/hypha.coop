@@ -33,7 +33,7 @@ order: 2
           </h3>
           <p class="lh-solid mv0 f3 f3-l dark-gray measure">{{ post.excerpt }}</p>
         </a>
-        <h4 class="f6 mt3 gray">{%- if post.author != "Hypha" -%}{{ post.author }} 🞄 {%- endif -%}{{ post.date | date: date_format }}</h4>
+        <h4 class="f6 mt3 gray">{%- if post.author != "Hypha" -%}{{ post.author }},&nbsp;{%- endif -%}{{ post.date | date: date_format }}</h4>
       </li>
       {%- endfor -%}
     </ul>
