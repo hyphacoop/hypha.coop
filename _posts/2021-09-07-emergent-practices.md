@@ -1,5 +1,5 @@
 ---
-title: 'Emergent Practices from the Decentralized Co-operative Web'
+title: 'Emergent practices from the decentralized co-operative web'
 author: Mai Ishikawa Sutton
 date: 2021-09-30
 acknowledgement: Mai is the Co-founder and Lead Editor of [COMPOST Magazine](https://compost.digital). This is a  guest post that was originally published on the [Open Collective Blog](https://blog.opencollective.com/emergent-practices-from-the-decentralized-co-operative-web/) on May 27, 2021.
