@@ -126,7 +126,7 @@ and many others who’ve guided us along the way.
    [Fourth Pig]: https://www.fourthpig.org/
    [Anarres]: http://web.archive.org/web/20160618102349/https://anarres.ca/
    [Root Systems]: http://web.archive.org/web/20200122192017/https://www.rootsystems.nz/
-   [Fiqus]: https://fiqus.coop/en/
+   [Fiqus]: https://web.archive.org/web/20210820151209/https://fiqus.coop/
    [Camba]: https://camba.coop/en/
    [FACTTIC]: https://facttic.org.ar/
    [CWCF]: https://canadianworker.coop/
