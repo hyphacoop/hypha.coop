@@ -25,6 +25,8 @@ We auto-deploy `master` branch to [hypha.coop][website] and to the decentralized
 
 We use HTMLProofer to check the HTML output for syntax errors but does not actively check external links.
 
+For links that no longer exist we update that link to an archived copy on [archive.org](https://archive.org)
+
 ## 🚧 Staging
 
 We also auto-deploy `staging` branch to [staging.hypha.coop](https://staging.hypha.coop) on our staging server via GitHub Actions to test before commiting to `master` branch. 
