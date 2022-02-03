@@ -7,6 +7,7 @@ check: ## Check with htmlproofer
 	$(RUN) htmlproofer ./_site \
 	  --check-html \
 	  --allow-hash-href \
+	  --disable_external \
 	  --typhoeus-config '{ "headers": { "User-Agent": "Mozilla/5.0 (X11; Linux i686; rv:84.0) Gecko/20100101 Firefox/84.0" } }' \
 	  --internal-domains hypha.coop
 
