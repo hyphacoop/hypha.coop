@@ -26,6 +26,7 @@ collections:
     permalink: /dripline/:title/
 
 date_format: '%B %-d, %Y'
+future: true
 
 defaults:
   -
