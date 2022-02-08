@@ -3,9 +3,8 @@ title: 'Decentralized Governance Requires Meaningful Participation'
 author: Hypha
 date: 2022-02-08
 acknowledgement: ''
+excerpt: 'Our proposal to renovate the Cosmos Hub Discourse Forum as a well-organized space for debate and deliberation'
 ---
-
-#### Our proposal to renovate the Cosmos Hub Discourse Forum as a well-organized space for debate and deliberation
 
 What makes the interchain unique is its vision for interoperable blockchains that enable a patchwork of self-governing communities with shared economies. The focus on self-governance is important here. Every blockchain has full autonomy over the chain’s treasury, block space, and underlying software. Every blockchain charts its own future, collectively decided by its own community. This promise, where stakeholders participate in bottom-up decision-making, is what makes interchain projects attractive.
 
@@ -34,3 +33,5 @@ We’re inspired by the Cosmos community and the potential of the interchain to 
 *We’ll provide more context behind this proposal, and what we hope to accomplish over the next six months.*
 
 *You can find us on Twitter at [@hyphacoop](https://twitter.com/HyphaCoop), or visit our website at https://hypha.coop/*
+
+
