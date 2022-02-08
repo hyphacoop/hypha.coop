@@ -30,7 +30,7 @@ We’re a worker cooperative based out of Toronto, Canada, and our members have 
 
 We’re inspired by the Cosmos community and the potential of the interchain to enable people to design interoperable, self-governing communities. Our hope is to apply our organizing experience to this network and help realize the vision of Cosmos as an accessible space for self-governing communities to own, control, and manage resources together.
 
-*Have questions about this effort? This Thursday, Feb 10 at 8:30am PT / 11:30am ET / 5:30pm CET, we’ll be hosting a conversation about it on Twitter Spaces with Daniel Hwang (Stakefish), Sam Hart (Interchain Foundation), Lauren Gallinaro (Cosmos Hub team), and Udit and Mai from Hypha.*
+*Have questions about this effort? On Thursday, Feb 10 2022, at 8:30am PT / 11:30am ET / 5:30pm CET, we’ll be hosting a conversation about it on [Twitter Spaces](https://twitter.com/HyphaCoop/status/1491115260899897344?s=20&t=gm5aOkPv8Ge0vrZt0-Z4PQ) with Daniel Hwang (Stakefish), Sam Hart (Interchain Foundation), Lauren Gallinaro (Cosmos Hub team), and Udit and Mai from Hypha.*
 
 *We’ll provide more context behind this proposal, and what we hope to accomplish over the next six months.*
 
