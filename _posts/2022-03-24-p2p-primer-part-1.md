@@ -31,6 +31,9 @@ This post is aimed at people wanting to use these protocols who have basic knowl
 | Performance          | 🇨          | 🇨                                | 🇦         | 🇩                       |
 | Implementations      | 🇦          | 🇦                                | 🇨         | 🇧                       |
 | Backups              | 🇦          | 🇦                                | 🇨         | 🇦                       |
+{:.mbtablestyle}
+
+Caption: Mauve grades protocols (don’t @ them if you disagree)
 
 ## Content
 
