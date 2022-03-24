@@ -82,3 +82,11 @@ mark {
 .scaling-3 {
   background-image: url(/assets/images/scaling-3.png);
 }
+
+.mbtablestyle {
+  border-collapse: collapse;
+  > table, td, th {
+      border: 1px solid black;
+  }
+}
+
