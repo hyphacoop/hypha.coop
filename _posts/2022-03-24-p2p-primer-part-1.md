@@ -20,7 +20,7 @@ This post compares several peer to peer protocols, looking at how they work and 
 
 This post is aimed at people wanting to use these protocols who have basic knowledge about how peer to peer systems work already. If you see a new term, click the links for further reading or [search about it online](https://duckduckgo.com/).
 
-|                      | BitTorrent | Interplanetary File System (IPFS) | Hypercore | Secure Scuttlebutt (SSB) |
+|                      | BitTorrent | Interplanetary</br>File System</br>(IPFS) | Hypercore | Secure</br>Scuttlebutt</br>(SSB) |
 | -------------------- | :--------: | :-------------------------------: | :-------: | :----------------------: |
 | Content              | 🇦          | 🇧                                | 🇩         | 🇦                       |
 | Links                | 🇨          | 🇦                                | 🇧         | 🇨                       |
@@ -33,7 +33,7 @@ This post is aimed at people wanting to use these protocols who have basic knowl
 | Backups              | 🇦          | 🇦                                | 🇨         | 🇦                       |
 {:.mbtablestyle}
 
-Caption: Mauve grades protocols (don’t @ them if you disagree)
+Mauve grades protocols (don’t @ them if you disagree)
 
 ## Content
 
