@@ -41,6 +41,8 @@ jobs:
           echo "${{ secrets.SSH_STG }}" > _scripts/id_rsa-staging
           chmod 600 _scripts/id_rsa-staging
           bash -x _scripts/deploy.sh deploy _scripts/id_rsa-staging bw1.staging.hypha.coop 8003 /var/www/staging.hypha.coop
+          tar -czvf www.tar.gz -C _site .
+          bash -x _scripts/deploy-dweb.sh ${{ secrets.DISTRIBUTED_PRESS_STG_API_KEY }} _scripts/config-stg-dweb.json www.tar.gz
 
       - name: Deploy to Production
         if: ${{ github.ref == 'refs/heads/master' }}

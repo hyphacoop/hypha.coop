@@ -1,0 +1,11 @@
+{
+  "domain": "staging.hypha.coop",
+  "publication": {
+    "protocol": {
+      "http": {
+          "enabled": false,
+          "purgeIfDisabled": false
+      }
+    }
+  }
+}
