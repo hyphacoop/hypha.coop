@@ -20,7 +20,7 @@ excerpt: 'Part 3 of our P2P Primer'
 </figure>
 
 
-**In the third part of our series on peer to peer (P2P) protocols, Mauve compares the peer discoverability and security of Bittorrent, Interplanetary Film System (IPFS), Hypercore and Secure Scuttlebutt (SSB). Read [part 1 here](https://hypha.coop/dripline/p2p-primer-part-1/), [part 2 here] (https://hypha.coop/dripline/p2p-primer-part-2/) and find the TL:DR [comparison chart here](https://hypha.coop/dripline/p2p-primer-part-1/).In the second part of our series on peer to peer (P2P) protocols, Mauve explores the data models and mutability of Bittorrent, Interplanetary Film System (IPFS), Hypercore and Secure Scuttlebutt (SSB). Read [part 1 here](https://hypha.coop/dripline/p2p-primer-part-1/), where you can also find the TL:DR [comparison chart and grading](https://hypha.coop/dripline/p2p-primer-part-1/).**
+**In the third part of our series on peer to peer (P2P) protocols, Mauve compares the peer discoverability and security of Bittorrent, Interplanetary Film System (IPFS), Hypercore and Secure Scuttlebutt (SSB). Read [part 1 here](https://hypha.coop/dripline/p2p-primer-part-1/), [part 2 here](https://hypha.coop/dripline/p2p-primer-part-2/) and find the TL:DR [comparison chart here](https://hypha.coop/dripline/p2p-primer-part-1/).In the second part of our series on peer to peer (P2P) protocols, Mauve explores the data models and mutability of Bittorrent, Interplanetary Film System (IPFS), Hypercore and Secure Scuttlebutt (SSB). Read [part 1 here](https://hypha.coop/dripline/p2p-primer-part-1/), where you can also find the TL:DR [comparison chart and grading](https://hypha.coop/dripline/p2p-primer-part-1/).**
 
 
 <figure>
