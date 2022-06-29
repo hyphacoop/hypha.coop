@@ -13,25 +13,32 @@ excerpt: 'Part 3 of our P2P Primer'
 <img
   src="{{ 'assets/images/posts/2022-06-29-sharing-offline-unsplash.jpg' | relative_url }}"
   alt="Take Sharing Offline. London Street art Shoreditch. Shot on film, Kodak Portra 800, Nikon FM2n"
-  width="75%"
 /> 
 <figcaption align = "center"><em>Photo by <a href="https://unsplash.com/@anniespratt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Annie Spratt</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></em></figcaption>
     
 </figure>
 
 
-**In the third part of our series on peer to peer (P2P) protocols, Mauve compares the peer discoverability and security of Bittorrent, Interplanetary Film System (IPFS), Hypercore and Secure Scuttlebutt (SSB). Read [part 1 here](https://hypha.coop/dripline/p2p-primer-part-1/), [part 2 here](https://hypha.coop/dripline/p2p-primer-part-2/) and find the TL:DR [comparison chart here](https://hypha.coop/dripline/p2p-primer-part-1/).In the second part of our series on peer to peer (P2P) protocols, Mauve explores the data models and mutability of Bittorrent, Interplanetary Film System (IPFS), Hypercore and Secure Scuttlebutt (SSB). Read [part 1 here](https://hypha.coop/dripline/p2p-primer-part-1/), where you can also find the TL:DR [comparison chart and grading](https://hypha.coop/dripline/p2p-primer-part-1/).**
+**In the third part of our series on peer to peer (P2P) protocols, Mauve compares the peer discoverability and security of Bittorrent, Interplanetary Film System (IPFS), Hypercore and Secure Scuttlebutt (SSB). Read [part 1 here](https://hypha.coop/dripline/p2p-primer-part-1/), [part 2 here](https://hypha.coop/dripline/p2p-primer-part-2/) and find the TL:DR [comparison chart here](https://hypha.coop/dripline/p2p-primer-part-1/).**
 
+## Peer discovery overview
+
+Content and data are all well and good, but in addition, you'll likely want to think about how peers connect to each other and actually load it. Important questions are whether you're okay with communities needing additional servers for reliability, whether [NAT hole punching](https://en.wikipedia.org/wiki/Hole_punching_(networking)) is necessary for things to work, and how much extra traffic you're okay with having for peer discovery. Because BitTorrent is more established than the other protocols discussed here, it’s used as a point of comparison throughout this section. 
+
+### Peer Discovery - BitTorrent
+
+BitTorrent has been around longer than all the other protocols in this list and as such has solved a lot of issues around content discovery. Initially, peers would be discovered using Tracker servers. Torrent files or magnet links would come with a set of servers to use for peer discovery along with built-in tracker servers that would come with some torrent clients. Peers that were looking for others around a given torrent file, would advertise themselves by sending their interest in a torrent to the tracker server, and peers searching for peers would ask the tracker for the list.
+
+This, however, made it easy to censor torrents and the network at large. If a given tracker could be blocked or taken down, then peer discovery could be broken. In order to avoid this point of centralization, the [Mainline Distributed Hash Table](https://en.wikipedia.org/wiki/Mainline_DHT) was made to decentralize the peer discovery mechanism. Instead of a central server being used for peer discovery, peers would spread the load of storing advertisements and serving them with others across all participants. The more popular the mainline becomes, the harder it is to censor all of it.
 
 <figure>
 
 <img
   src="{{ '/assets/images/posts/2022-06-29-DHT_en.svg' | relative_url }}"
   alt="Distributed hash tables"
-  width="65%"
 />
 
-<figcaption align = "center"><em>Image credit: [Wikipedia] (https://en.wikipedia.org/wiki/Distributed_hash_table)</em></figcaption>
+<figcaption align = "center"><em>Image credit: <a href="https://en.wikipedia.org/wiki/Distributed_hash_table">Wikipedia</a></em></figcaption>
     
 </figure>
 
@@ -54,7 +61,7 @@ Unlike BitTorrent's network connections, libp2p connections are general purpose 
 
 Since IPFS focuses on arbitrary data via CIDs, data exchange is done at the CID level and is a separate step from peer discovery. This means that if you're looking for a new chunk of data, you can ask your existing peers if they have it before needing to search the DHT. Outside of this, IPFS is actually very hungry with network bandwidth since it will do content discovery for each piece of content in the Merkle Tree that you're loading up. This means that even if you're traversing a single dataset, you can quickly overtake the amount of traffic a torrent client does for peer discovery for several torrents at once.
 
-Libp2p also hasn't had as much time to solve the NAT hole punching issue, so connecting two computers on home networks is typically not as reliable as BitTorrent. This has actually improved  recently as you can tell by [this announcement in March 2022](https://blog.ipfs.io/2022-01-20-libp2p-hole-punching/). Initially libp2p would try to rely on UPnP being available in order to open ports; the same as BitTorrent. More recently, they got first class support for NAT traversal via a combination of using [AutoNAT](https://github.com/libp2p/specs/blob/master/autonat/README.md) to determine if you are behind a NAT, and a [public relay node](https://docs.ipfs.io/concepts/glossary/#circuit-relay) to let the two peers talk to each other. This is close to what BitTorrent clients do, but using Libp2p features rather than extensions over torrent replication streams. As of  March 2022, you'll need to be explicitly enabled with the `Swarm.EnalbeHolePunching` configuration flag. Also note that NAT hole punching will only work with transports that use UDP, so TCP and WebRTC based connections will not benefit from this functionality. 
+Libp2p also hasn't had as much time to solve the NAT hole punching issue, so connecting two computers on home networks is typically not as reliable as BitTorrent. This has actually improved  recently as you can tell by [this announcement in March 2022](https://blog.ipfs.io/2022-01-20-libp2p-hole-punching/). Initially libp2p would try to rely on UPnP being available in order to open ports; the same as BitTorrent. More recently, they got first class support for NAT traversal via a combination of using [AutoNAT](https://github.com/libp2p/specs/blob/master/autonat/README.md) to determine if you are behind a NAT, and a [public relay node](https://docs.ipfs.io/concepts/glossary/#circuit-relay) to let the two peers talk to each other. This is close to what BitTorrent clients do, but using Libp2p features rather than extensions over torrent replication streams. As of  March 2022, you'll need to be explicitly enabled with the `Swarm.EnableHolePunching` configuration flag. Also note that NAT hole punching will only work with transports that use UDP, so TCP and WebRTC based connections will not benefit from this functionality. 
 
 Also similar to BitTorrent, a lot of the peer discovery relies on the libp2p DHT. It uses the same routing algorithm as Mainline (Kademlia), but it uses a different format for encoding data and has different constraints on how peers can advertise themselves. As well, libp2p supports local peer discovery via [Multicast DNS, Aka ZeroConf, Aka Bonjour](http://multicastdns.org/), which is like the BitTorrent LSD protocol in that it uses UDP multicast to discover other peers. Unlike BitTorrent LSD, some operating systems like MacOS may have existing daemons running on the machine which are binding to the MDNS port and can interfere with an application's peer discovery process. Finally, you can offload some of your connectivity to relay nodes within the network for cases where it's unrealistic for two nodes to connect themselves. Do note that since IPFS is more recent than BitTorrent there's more variation between clients and applications based on which versions of specs they support. The most reliable metric is probably the Golang implementation, but Rust and JavaScript seem to be close seconds.
 
@@ -86,7 +93,7 @@ SSB's peer discovery is useful in that it preserves privacy better than DHT base
 
 ## Security  and  Privacy
 
-The security and privacy implications of protocols is a key concern. This includes issues like whether an ISP or [Man In the Middle(MITM)](https://en.wikipedia.org/wiki/Man-in-the-middle_attack) can see or modify data that you're sending around; the metadata and data that you're leaking to the network when you share data; and whether content can be privately encrypted. One thing to note is that when considering [Information Theory](https://en.wikipedia.org/wiki/Information_theory) any data that you make available is hard to erase or recover once it's shared.
+The security and privacy implications of protocols is a key concern. This includes issues like whether an ISP or [Man In the Middle (MITM)](https://en.wikipedia.org/wiki/Man-in-the-middle_attack) can see or modify data that you're sending around; the metadata and data that you're leaking to the network when you share data; and whether content can be privately encrypted. One thing to note is that when considering [Information Theory](https://en.wikipedia.org/wiki/Information_theory) any data that you make available is hard to erase or recover once it's shared.
 
 ### Security - BitTorrent
 
@@ -100,9 +107,9 @@ Overall, you probably shouldn't use BitTorrent for storing anything you absolute
 
 ### Security - IPFS
 
-IPFS has a slightly better approach to transport encryption with libp2p by making use of [TLS 1.3](https://www.ietf.org/blog/tls13/) or [Noise](https://noiseprotocol.org/) as a standard for connections. This makes it harder for MITMs to analyze the contents of a libp2p connection and prevents tampering of the connection. However, IPFS has similar privacy guarantees to BitTorrent in that any content published on the network can be discovered by scouring the DHT and attempting to load it from other peers. This is doubly troubling in that individual files are advertised on the DHT rather than entire datasets, so it's easier to find every single computer in the world trying to load the pdf of [Riot Medicine](https://riotmedicine.net/,) for example.
+IPFS has a slightly better approach to transport encryption with libp2p by making use of [TLS 1.3](https://www.ietf.org/blog/tls13/) or [Noise](https://noiseprotocol.org/) as a standard for connections. This makes it harder for MITMs to analyze the contents of a libp2p connection and prevents tampering of the connection. However, IPFS has similar privacy guarantees to BitTorrent in that any content published on the network can be discovered by scouring the DHT and attempting to load it from other peers. This is doubly troubling in that individual files are advertised on the DHT rather than entire datasets, so it's easier to find every single computer in the world trying to load the pdf of [Riot Medicine](https://riotmedicine.net/) for example.
 
-You can take a similar approach to BitTorrent by encrypting individual files before sharing them (which is the approach taken by wrappers like [Textile.io](https://linktr.ee/textileio), but you then lose the ability to share peers between datasets and to deduplicate content on disk out of the box. Another downside is that you cannot use this encryption on IPLD data if you want to be able to backup your content on a pinning service, since the service would no longer be able to see the tree structure.
+You can take a similar approach to BitTorrent by encrypting individual files before sharing them (which is the approach taken by wrappers like [Textile.io](https://linktr.ee/textileio)), but you then lose the ability to share peers between datasets and to deduplicate content on disk out of the box. Another downside is that you cannot use this encryption on IPLD data if you want to be able to backup your content on a pinning service, since the service would no longer be able to see the tree structure.
 
 Similar to BitTorrent, you probably shouldn't be storing anything you want kept private, and doubly you might want to think twice about announcing your IP address if you're worried about your government or copyright holders taking interest. Also similar to BitTorrent, you cannot force peers that have a copy of your data to delete it. Support for hiding IP addresses in IPFS has been attempted by integrating [TOR](https://www.torproject.org/), but most implementations are still [works in progress](https://github.com/berty/go-libp2p-tor-transport).
 
@@ -124,7 +131,7 @@ As well, although Hypercore can support deleting content in a log, there is no w
 
 SSB has transport level encryption via the [Secret Handshake](http://scuttlebot.io/more/protocols/shs.pdf) protocol; this means that it protects against MITM attacks and keeps the connection between two peers encrypted. It has a similar approach to Hypercore where feeds are replicated only if both sides can prove that they already know what they are. This can be extended with additional verification of both peers so they also know where they sit in relation to their respective social graphs before deciding whether to replicate data.
 
-Although there is the risk of random [Pubs](https://medium.com/@miguelmota/getting-started-with-secure-scuttlebut-e6b7d4c5ecfd)in your SSB social graph getting access to your IP address, it's generally better protected than the DHT-based approaches. In particular, apps like Manyverse let users explicitly opt-into replicating with Pubs. As well, the lack of content-based peer discovery means that the content you're loading will not be discoverable unless a person is within your social graph. For additional privacy, members of the community have created plugins for SSB that enable [TOR](https://handbook.scuttlebutt.nz/faq/misc/tor); this  associates a hidden service address with your account so that other TOR SSB users can connect to you directly.
+Although there is the risk of random [Pubs](https://medium.com/@miguelmota/getting-started-with-secure-scuttlebut-e6b7d4c5ecfd) in your SSB social graph getting access to your IP address, it's generally better protected than the DHT-based approaches. In particular, apps like Manyverse let users explicitly opt-into replicating with Pubs. As well, the lack of content-based peer discovery means that the content you're loading will not be discoverable unless a person is within your social graph. For additional privacy, members of the community have created plugins for SSB that enable [TOR](https://handbook.scuttlebutt.nz/faq/misc/tor); this  associates a hidden service address with your account so that other TOR SSB users can connect to you directly.
 
 Another peer discovery mechanism has been standardized recently which takes a middle ground between DHTs, Pubs, and Trackers, called [Rooms](https://www.manyver.se/blog/announcing-ssb-rooms/) which acts similarly to a tracker where users need to be explicitly invited in order to participate in gossiping with each other while they are both online and connected to the room.
 
@@ -133,4 +140,4 @@ Similar to the other protocols, content that's published on SSB stays on SSB as 
 *Final grade: B*
 
 
-The last part of this series, focussing on performance, implementation, and backups is up coming next.
+The last part of this series, focussing on performance, implementations, and backups is up coming next.
