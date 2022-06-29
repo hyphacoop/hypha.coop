@@ -14,12 +14,12 @@ excerpt: 'Part 3 of our P2P Primer'
   src="{{ 'assets/images/posts/2022-06-29-sharing-offline-unsplash.jpg' | relative_url }}"
   alt="Take Sharing Offline. London Street art Shoreditch. Shot on film, Kodak Portra 800, Nikon FM2n"
 /> 
-<figcaption align = "center"><em>Photo by <a href="https://unsplash.com/@anniespratt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Annie Spratt</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></em></figcaption>
+<figcaption align = "left"><em>Photo by <a href="https://unsplash.com/@anniespratt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Annie Spratt</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></em></figcaption>
     
 </figure>
 
 
-**In the third part of our series on peer to peer (P2P) protocols, Mauve compares the peer discoverability and security of Bittorrent, Interplanetary Film System (IPFS), Hypercore and Secure Scuttlebutt (SSB). Read [part 1 here](https://hypha.coop/dripline/p2p-primer-part-1/), [part 2 here](https://hypha.coop/dripline/p2p-primer-part-2/) and find the TL:DR [comparison chart here](https://hypha.coop/dripline/p2p-primer-part-1/).**
+**In the third part of our series on peer to peer (P2P) protocols, Mauve compares the peer discoverability and security of BitTorrent, Interplanetary Film System (IPFS), Hypercore and Secure Scuttlebutt (SSB). Read [part 1 here](https://hypha.coop/dripline/p2p-primer-part-1/), [part 2 here](https://hypha.coop/dripline/p2p-primer-part-2/) and find the TL:DR [comparison chart here](https://hypha.coop/dripline/p2p-primer-part-1/).**
 
 ## Peer discovery overview
 
@@ -38,7 +38,7 @@ This, however, made it easy to censor torrents and the network at large. If a gi
   alt="Distributed hash tables"
 />
 
-<figcaption align = "center"><em>Image credit: <a href="https://en.wikipedia.org/wiki/Distributed_hash_table">Wikipedia</a></em></figcaption>
+<figcaption align = "left"><em>Image credit: <a href="https://en.wikipedia.org/wiki/Distributed_hash_table">Wikipedia</a></em></figcaption>
     
 </figure>
 
