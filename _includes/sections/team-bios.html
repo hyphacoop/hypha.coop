@@ -1,17 +1,20 @@
-    
 <div class="flex flex-wrap mb4 contain scaling-3">
+  {% for person in site.people %}
 <article class="mw6 center bg-white br0 pa3 pa4-ns mv3 ba b--black-10">
     <div class="tc">
-      <img src="https://boredhumans.b-cdn.net/faces2/105.jpg" class="br-100 h5 w5 dib" title="Photo of a kitty staring at you">
-      <h1 class="f4">Udit Vira</h1>
-      <h2 class="f5 fw4 gray mt0">(he/him)</h2>
+      <img src="{{ person.avatar }}"
+       class="br-100 h5 w5 dib" title="Photo of a kitty staring at you">
+      <h1 class="f4">
+        {{ person.name }}
+      </h1>
+      <h2 class="f5 fw4 gray mt0">
+ {{ person.pronouns }}
+    </h2>
       <hr class="mw3 bb bw1 b--black-10">
     </div>
-    <p class="lh-copy measure center f6 black-70">Udit is an engineer, strategist, and co-founding member of Hypha Worker Co-operative, where his focus is on the design and governance of various p2p and blockchain projects.
-</p><p class="lh-copy measure center f6 black-70">
-        Previously he co-founded foresight studio From Later, where he advised client partners such as Autodesk Foundation, Royal Bank of Canada, and H&M on futures of work, media, and climate change. Before that he worked as a hardware engineer in the semiconductor industry. His work on creative technology has appeared at venues including Radical Networks, Nesta, Intel, Toronto Public Library, Toronto’s Maker Festival, MIT Media Lab, and Lunares Simulated Space base. He studied Electrical Engineering and Physics at McGill University.
-        </p>
+  <p class="lh-copy measure center f6 black-70">{{ person.content | markdownify }}</p>
   </article>
+{% endfor %}
   <article class="mw6 center bg-white br0 pa3 pa4-ns mv3 ba b--black-10">
     <div class="tc">
       <img src="https://boredhumans.b-cdn.net/faces2/109.jpg" class="br-100 h5 w5 dib" title="Photo of a kitty staring at you">
