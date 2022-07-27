@@ -1,29 +1,26 @@
-<div class="flex-l items-center contain bg-left aliased bw2 pv4-m pv4-l bt b--accent scaling-3">
-  <div class="w-50-l">
+<div class="flex-l items-start contain bg-left aliased bw2 pv4-m pv4-l bt b--accent ">
+  <div class="w-50-l pr5 pl3">
     
     <h2 class="f1 f-subheadline-l worksans accent mb1-l mt0-l">Who we are</h2>
     
     <h3 class="mb0 accent normal f3 f2-l lh-solid  measure-wide bg-white ">
-     A team of technologists, designers, and community organizers who value working with mission-oriented partners. .
-
+     We are a team of technologists, designers, and community organizers who value working with mission-oriented partners.
+    </h3>
+    <h3 class="mb0 accent normal f3 f2-l lh-solid  measure-wide bg-white ">
+      Together, we have years of experience building open source technologies and sustainable communities.
     </h3>
 
 
 <div class="flex flex-wrap mb4">
     
-      <img src="https://boredhumans.b-cdn.net/faces2/105.jpg" class="br-100 h3 w3 pa3 pl0 dib" title="Photo of a kitty staring at you">
-      <img src="https://boredhumans.b-cdn.net/faces2/103.jpg" class="br-100 h3 w3 pa3 dib" title="Photo of a kitty staring at you">
-      <img src="https://boredhumans.b-cdn.net/faces2/107.jpg" class="br-100 h3 w3 pa3 dib" title="Photo of a kitty staring at you">
-      <img src="https://boredhumans.b-cdn.net/faces2/109.jpg" class="br-100 h3 w3 pa3 dib" title="Photo of a kitty staring at you">
-      <img src="https://boredhumans.b-cdn.net/faces2/145.jpg" class="br-100 h3 w3 pa3 dib" title="Photo of a kitty staring at you">
-      <img src="https://boredhumans.b-cdn.net/faces2/109.jpg" class="br-100 h3 w3 pa3 dib" title="Photo of a kitty staring at you">
-      <img src="https://boredhumans.b-cdn.net/faces2/103.jpg" class="br-100 h3 w3 pb2 pa3 dib" title="Photo of a kitty staring at you">
+  {% for person in site.people %}
+      <img src="{{person.avatar }}" class="br-100 h3 w3 pa3 pl0 dib" title="Photo of a kitty staring at you">
+  {% endfor %}
 </div>
      <p class="measure-wide f4 f3-l lh-copy dark-gray bg-white">
-      Together, we have years of experience building open source technologies and sustainable communities.
     </p> </div>
   <div class="w-50-l">
-    <figure class="relative mt0 ma4 ">
+    <figure class="ma0 relative">
       <img class="db" src="/assets/images/scaling-1.png" alt="Photo by Caleb George on Unsplash">
       <figcaption class="absolute bottom-2-l bottom-1 left-1 left-2-l f6-l f7 white">Photo by Caleb George on Unsplash</figcaption>
     </figure>
