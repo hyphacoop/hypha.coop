@@ -1,18 +1,19 @@
-<div class="flex flex-wrap mb4 contain scaling-3">
+<div class="flex flex-wrap mb4 contain ">
   {% for person in site.people %}
-<article class="mw6 center bg-white br0 pa3 pa4-ns mv3 ba b--black-10">
+<article class="mw6 center bg-black-20 br0 pa3 pa4-ns mv3 ba b--black-10">
     <div class="tc">
-      <img src="{{ person.avatar }}"
-       class="br-100 h5 w5 dib" title="Photo of a kitty staring at you">
-      <h1 class="f4">
+      <!-- <img src="{{ person.avatar }}" -->
+       <!-- class="br-100 h5 w5 dib" title="Photo of a kitty staring at you"> -->
+       <div class="bg-accent  h4 w-33 center"></div>
+      <h1 class="f3">
         {{ person.name }}
       </h1>
-      <h2 class="f5 fw4 gray mt0">
+      <h2 class="f4 fw4 mt0">
  {{ person.pronouns }}
     </h2>
       <hr class="mw3 bb bw1 b--black-10">
     </div>
-  <p class="lh-copy measure center f6 black-70">{{ person.content | markdownify }}</p>
+  <div class="lh-copy measure center f4 black-70">{{ person.content }}</div>
   </article>
 {% endfor %}
 </div>
