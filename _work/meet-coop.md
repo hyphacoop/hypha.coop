@@ -1,13 +1,13 @@
 ---
-title: Cosmos
+title: Online Meeting Co-operative 
 logo:
 work-type: 
-    - Blockchain development
-    - Community stewardship
-    - Decentralized ecosystems
-    - Deliberative governance
-    - Testnet infrastructure
-excerpt: 'Hypha is a [Cosmos Hub](https://hub.cosmos.network/main/hub-overview/overview.html) core team and Interchain Foundation grant recipient, focusing on governance and testnet management.'
-order: 1
+    - Co-operative governance 
+    - Open source development 
+    - Operational & financial infrastructure 
+    - Product strategy 
+    - Server management
+excerpt: Hypha is a core operational member of the [Online Meeting Co-operative](https://www.meet.coop/), which provides videoconferencing services as a multistakeholder co-operative
+order: 6
 ---
-Hypha is a [Cosmos Hub](https://hub.cosmos.network/main/hub-overview/overview.html) core team and Interchain Foundation grant recipient, focusing on governance and testnet management. Our governance goals are to improve deliberation among stakeholders by stewarding thoughtful and values-oriented decision making. We manage Cosmos Hub testnets where we run infrastructure and coordinate with validators, developers, and users to test software releases and build technical capacity in the ecosystem.
+Hypha is a core operational member of the [Online Meeting Co-operative](https://www.meet.coop/), which provides videoconferencing services as a multistakeholder co-operative. We work across several sociocracy circles, supporting both day-to-day operations and long-term strategies.

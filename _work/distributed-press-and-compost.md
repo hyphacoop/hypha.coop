@@ -1,13 +1,13 @@
 ---
-title: Cosmos
+title: Distributed Press and COMPOST
 logo:
 work-type: 
-    - Blockchain development
-    - Community stewardship
-    - Decentralized ecosystems
-    - Deliberative governance
-    - Testnet infrastructure
-excerpt: 'Hypha is a [Cosmos Hub](https://hub.cosmos.network/main/hub-overview/overview.html) core team and Interchain Foundation grant recipient, focusing on governance and testnet management.'
-order: 1
+    - Collective publishing 
+    - Community stewardship 
+    - Decentralized web protocols 
+    - New monetization models 
+    - Publishing infrastructure
+excerpt: Hypha incubated the [Distributed Press](https://distributed.press/), a publishing tool for the World Wide Web and Decentralized Web. Its sister project, [COMPOST magazine](https://two.compost.digital/), publishes issues of curated stories to IPFS and Hypercore using our digital press.
+order: 4
 ---
-Hypha is a [Cosmos Hub](https://hub.cosmos.network/main/hub-overview/overview.html) core team and Interchain Foundation grant recipient, focusing on governance and testnet management. Our governance goals are to improve deliberation among stakeholders by stewarding thoughtful and values-oriented decision making. We manage Cosmos Hub testnets where we run infrastructure and coordinate with validators, developers, and users to test software releases and build technical capacity in the ecosystem.
+Hypha incubated the [Distributed Press](https://distributed.press/), a publishing tool for the World Wide Web and Decentralized Web. Its sister project, [COMPOST magazine](https://two.compost.digital/), publishes issues of curated stories to IPFS and Hypercore using our digital press.

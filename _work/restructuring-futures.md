@@ -1,13 +1,13 @@
 ---
-title: Cosmos
+title: Restructuring Futures
 logo:
 work-type: 
-    - Blockchain development
-    - Community stewardship
-    - Decentralized ecosystems
-    - Deliberative governance
-    - Testnet infrastructure
-excerpt: 'Hypha is a [Cosmos Hub](https://hub.cosmos.network/main/hub-overview/overview.html) core team and Interchain Foundation grant recipient, focusing on governance and testnet management.'
-order: 1
+    - Alternative economies 
+    - Embodied creation 
+    - Operating models 
+    - Social purpose organizing 
+    - Virtual artistic collaboration
+excerpt: Restructuring Futures is a multi-stakeholder project seeking to reimagine embodied artistic and social collaboration in virtual spaces.
+order: 3
 ---
-Hypha is a [Cosmos Hub](https://hub.cosmos.network/main/hub-overview/overview.html) core team and Interchain Foundation grant recipient, focusing on governance and testnet management. Our governance goals are to improve deliberation among stakeholders by stewarding thoughtful and values-oriented decision making. We manage Cosmos Hub testnets where we run infrastructure and coordinate with validators, developers, and users to test software releases and build technical capacity in the ecosystem.
+Restructuring Futures is a multi-stakeholder project seeking to reimagine embodied artistic and social collaboration in virtual spaces. Through the use of prototypes, this Canada Council for the Arts-funded initiative demonstrates how artist-run organizations can create operational models that are outside of the status quo, and are consistent with their beliefs.

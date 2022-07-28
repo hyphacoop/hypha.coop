@@ -1,13 +1,13 @@
 ---
-title: Cosmos
+title: Sacred Stacks
 logo:
 work-type: 
-    - Blockchain development
-    - Community stewardship
-    - Decentralized ecosystems
-    - Deliberative governance
-    - Testnet infrastructure
-excerpt: 'Hypha is a [Cosmos Hub](https://hub.cosmos.network/main/hub-overview/overview.html) core team and Interchain Foundation grant recipient, focusing on governance and testnet management.'
-order: 1
----
-Hypha is a [Cosmos Hub](https://hub.cosmos.network/main/hub-overview/overview.html) core team and Interchain Foundation grant recipient, focusing on governance and testnet management. Our governance goals are to improve deliberation among stakeholders by stewarding thoughtful and values-oriented decision making. We manage Cosmos Hub testnets where we run infrastructure and coordinate with validators, developers, and users to test software releases and build technical capacity in the ecosystem.
+    - Decentralized tech literacy 
+    - p2p communications 
+    - Capacity building 
+    - Peer learning 
+    - Digital infrastructure strategy
+excerpt: [Sacred Stacks](https://www.colorado.edu/lab/medlab/sacred-stacks) introduces decentralized technology concepts to project partners, who represent a range of social justice, arts, and solidarity organizations.
+order: 5
+--- 
+[Sacred Stacks](https://www.colorado.edu/lab/medlab/sacred-stacks) introduces decentralized technology concepts to project partners, who represent a range of social justice, arts, and solidarity organizations. Hypha provides learning resources and technical consulting services to help partners meet their goals for using DWeb technologies. Sacred Stacks is a project of the Media Enterprise Design Lab and the Center for Media, Religion and Culture at the University of Colorado Boulder; Hypha is a technical consultant for this initiative. 
