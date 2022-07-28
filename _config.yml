@@ -25,6 +25,7 @@ collections:
   people:
   posts:
     permalink: /dripline/:title/
+  work:
 
 date_format: '%B %-d, %Y'
 future: true
