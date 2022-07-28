@@ -1,8 +1,8 @@
 ---
 title: 'Sense and Serendipity'
 author: Andi Argast
-date: 2022-07-27
-acknowledgement: 'Andi is the Strategy Lead at Hypha, and is a probationary member.'
+date: 2022-07-28
+acknowledgement: 'Andi is the Strategy Lead at Hypha, and is currently a Probationary Member.'
 excerpt: 'Checking in on the Restructuring Futures Project, a Hypha collaboration'
 ---
 
@@ -18,7 +18,7 @@ How do you create embodied artworks in virtual spaces? Are there alternative ope
 **Process:** administrative wrangling; desk research; virtual workshops; reading Bakhtin \
 **Outcomes:** project infrastructure; Miro board artefact; embodied understanding; thinking residencies* 
 
-Restructuring Futures is a collaboration between Hypha, the [Laboratory for Artistic Intelligence](https://artisticintelligence.com), and [Ukai Projects](https://ukaiprojects.com/), and is supported by a 2021-2022 grant from the Digital Strategies Fund at [Canada Council for the Arts](https://canadacouncil.ca). The paths of inquiry are to “[1] research and prototype tools, processes, and systems to [2] envision and operate a virtual artist-run centre within alternative digital economies and emergent cooperative frameworks.”  As the Ukai website notes, “Technical direction in this project is aimed at virtualizing embodied creation among artists, workshops, and events; the sharing of voices through decentralized means; the development of distinct currencies and alternatives to transactions, decision-making, ownership, and resourcing.” Following the two-related-but-distinct paths of inquiry, [From Later](https://fromlater.com/), a foresight studio and frequent Hypha collaborator, led the Discovery Phase of the work by conducting desk research and, along with Ukai Projects, hosting a series of ‘Thinking Residencies’ with key project informants to guide thinking and gather inputs.
+Restructuring Futures is a collaboration between Hypha, the [Laboratory for Artistic Intelligence](https://artisticintelligence.com), and [UKAI Projects](https://ukaiprojects.com/), and is supported by a 2021-2022 grant from the Digital Strategies Fund at [Canada Council for the Arts](https://canadacouncil.ca). The paths of inquiry are to “[1] research and prototype tools, processes, and systems to [2] envision and operate a virtual artist-run centre within alternative digital economies and emergent cooperative frameworks.” As the UKAI website notes, “Technical direction in this project is aimed at virtualizing embodied creation among artists, workshops, and events; the sharing of voices through decentralized means; the development of distinct currencies and alternatives to transactions, decision-making, ownership, and resourcing.” Following the two-related-but-distinct paths of inquiry, [From Later](https://fromlater.com/), a foresight studio and frequent Hypha collaborator, led the Discovery Phase of the work by conducting desk research and, along with UKAI Projects, hosting a series of ‘Thinking Residencies’ with key project informants to guide thinking and gather inputs.
 
 During the four residencies, held virtually in fall of 2021, UKAI Projects led the partners and invited artists through a tour of the collective research and invited responses to probes in four areas: space, body, access & inclusion, and alternative economies. A collaborative Miro board was used to capture participants’ inputs, and is a primary artefact from this phase of the work.
 
@@ -36,7 +36,7 @@ During the four residencies, held virtually in fall of 2021, UKAI Projects led t
 We also did site visits during the Discovery phase, interleaving a second understanding of embodied artistic creation. First, we toured the Buddies in Bad Times theatre space to get a sense of how people wayfind and sensemake inside a working studio space. 
 
 > When I go to a rehearsal, I have to physically transport myself there; if [I] take a cab I might review notes or finish off things so I don't have think about them when I get there; and when I get there I have to pass thru/walk thru the distillery district and storefronts and maybe artists that I know - and we say hi to each other and I say I gotta go, I've got rehearsal, and I arrive there but we're also not rushing b/c we know it's important to arrive = you have to land. So all these transitional spaces are important, and then I get to the front door, taking off my scarves and maybe pick up a tea, then walk to the box office and check if they saved seats/tickets for my friends; then walk into the door of the studio and someone may be talking and I'm quietly taking off my shoes and say hello to friends…  
-        > *(Workshop participant)*
+<div style="text-align: right"><em>- Workshop participant</em></div>
 
 Later in the spring of 2022, we had another site visit at Dancemaker’s much-loved dance studios in Toronto’s Distillery District. To experience the act of embodied artistic creation, this visit included making a short work based on an Indian style of music called Baul, and involved an object that held memory for the participant. Both these experiences helped frame art-making in physical spaces, offering avenues of exploration for the subsequent convergent stage of the project. The initial project discovery was also informed by formal and informal connections with hundreds of artists, social activists and collaborators; input was gathered from far and wide.  
 
@@ -45,10 +45,10 @@ Later in the spring of 2022, we had another site visit at Dancemaker’s much-lo
 **Processes:** virtual meetings; note-passing; thread following; Cormorant fishing techniques \
 **Outcomes:** workshop synthesis; Proof of Concept brief; colour, music, and a view; a path forward
 
-Following the residencies in autumn 2021, we met to discuss the affinities and themes that arose during the previous conversations. From Later presented seven key framings: memory and sensing; serendipity; affective atmosphere; liquidity without cash; interdependence, movement cues and rituals; and time and timing. (Check out this PDF of our Miro board to see more detail.) The themes that emerged from the residencies offered four ways to consider what the prototype might look like or how it might engage co-creators and participants. 
+Following the residencies in autumn 2021, we met to discuss the affinities and themes that arose during the previous conversations. From Later presented seven key framings: memory and sensing; serendipity; affective atmosphere; liquidity without cash; interdependence, movement cues and rituals; and time and timing. (Check out this [PDF of our Miro board](https://drive.google.com/file/d/1_BgK2SwPqwBo11Dkmyg-rgVBtf2MPfnA/view?usp=sharing) to see more detail.) The themes that emerged from the residencies offered four ways to consider what the prototype might look like or how it might engage co-creators and participants. 
  
 > But what other kinds of real-time interactions are possible? … What if we had simply a dot, linked to our breathing, that expanded and contracted – a way to cue us to the presence of others without overloading it with semantic content. This would be an ambient presence – what kinds of situations could that be used for (e.g. an artists' talk)?  
-            > *(From Later; Tool Exploration Area)*
+  <div style="text-align: right"><em>- From Later; Tool Exploration Area</em></div>
 
 The vast amount of material generated in the first phase of the project, plus the dual focus of the project made the convergence process challenging. There were many starting points and as a result the focus on the embodied creation (i.e. a space for artists to gather and create online) superseded the focus on alternative economies. 
 
@@ -65,6 +65,7 @@ As 2022 began, so too did a new stage of the project: the development of the pro
 
 The development team created a digital proof of concept aesthetically based on Persian miniatures. 
 
+<br>
 
 <figure>
 
@@ -77,6 +78,7 @@ The development team created a digital proof of concept aesthetically based on P
     
 </figure>
 
+<br> 
 
 <figure>
 
@@ -88,7 +90,7 @@ The development team created a digital proof of concept aesthetically based on P
 <figcaption align = "left"><em>Screen capture from the interior of the prototype, showing the video avatar</em></figcaption>
     
 </figure>
-
+<br>
 Participants’ video feeds appear as a moveable circle or avatar within the stylized two-story space. Inside the prototype, audio is presented spatially, so moving closer to a group of chatting people makes them sound louder.
 
 <figure>
@@ -101,7 +103,7 @@ Participants’ video feeds appear as a moveable circle or avatar within the sty
 <figcaption align = "left"><em>Moving upstairs to the Performance Studio</em></figcaption>
     
 </figure>
-
+<br>
 This feature means that conversations happening in the main space are left behind as participants move into, for instance, Performance Studio #1. The ‘door’ closes, and the sounds of the new space become dominant.
 
 <figure>
@@ -114,7 +116,7 @@ This feature means that conversations happening in the main space are left behin
 <figcaption align = "left"><em>Inside the Performance Space</em></figcaption>
     
 </figure>
-
+<br>
 The prototype was tested by Hypha and project partners in the week leading up to the second round of residencies, but like many bits of code before it, the prototype failed to perform as requested. Participants with older operating systems experienced intermittent video and audio connectivity, resulting in a ghost-like experience where voices could be heard after the avatars had left the space. In other cases, video feeds flickered in and out, wraith-like, as people navigated through the halls and rooms. 
 
 The prototype, current state, is mostly context for conversation, rather than a functioning space for artistic creation; simply an outline to be coloured in by the participants in the Thinking Residencies. 
@@ -124,7 +126,7 @@ The prototype, current state, is mostly context for conversation, rather than a 
 **Processes:** learning/unlearning, time zones, algorithmic extremes, spawning points \
 **Outcomes:**  feedback and frustrations, organic AI theories, linear vs circular phenomenologies of time, ruminations on Water Hyacinth  
 
-Two more Thinking Residencies took place in late April and early May; the first with a group of people involved with the [Maitri Platform](https://www.maitriplatform.org/) and the second with artists and mentors involved in [BEING Studio](https://beingstudio.ca/); both residencies were facilitated by Ukai Projects. The first session of each residency focused on experimenting with the prototype and gathering thoughts and perspectives on how it functioned and what future affordances would be welcomed. Given a host of access and connectivity issues with testing out the platform – several of the residents were joining from China, Uganda and Kenya – much of this discussion was speculative. But the session still elicited some fun and thought-provoking ideas; such as the Seed AI, imagined below as an AI ‘planted’ inside the virtual space that learns and grows alongside the community:
+Two more Thinking Residencies took place in late April and early May; the first with a group of people involved with the [Maitri Platform](https://www.maitriplatform.org/) and the second with artists and mentors involved in [BEING Studio](https://beingstudio.ca/); both residencies were facilitated by UKAI Projects. The first session of each residency focused on experimenting with the prototype and gathering thoughts and perspectives on how it functioned and what future affordances would be welcomed. Given a host of access and connectivity issues with testing out the platform – several of the residents were joining from China, Uganda and Kenya – much of this discussion was speculative. But the session still elicited some fun and thought-provoking ideas; such as the Seed AI, imagined below as an AI ‘planted’ inside the virtual space that learns and grows alongside the community:
 
 <figure>
 
