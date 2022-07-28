@@ -1,0 +1,10 @@
+<div class="flex flex-wrap mb4 pv4">
+    {% assign works = site.work %}
+    {% for work in works %}
+        <div class="measure-narrow flex-column justify-center items-center mr4 mb4 tc pa3 bg-black-30">
+            <div class="pb3">Logo</div>
+            <div class="pb3">{{ work.title }}</div>
+            <div class="pb3">{{ work.excerpt | markdownify }}</div>
+        </div>
+    {% endfor %}
+</div>
