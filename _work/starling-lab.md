@@ -10,4 +10,6 @@ work-type:
 excerpt: 'Alongside experts in news media, historical preservation, and legal accountability, Hypha members work within [Starling Lab for Data Integrity](https://www.starlinglab.org/) to build truthful digital ecosystems.'
 order: 1
 ---
-Alongside experts in news media, historical preservation, and legal accountability, Hypha members work within [Starling Lab for Data Integrity](https://www.starlinglab.org/) to build truthful digital ecosystems.
+Alongside experts in news media, historical preservation, and legal accountability, Hypha members work within 
+<a class="link accent" href="www.three.com">Labs</a>
+to build truthful digital ecosystems.
