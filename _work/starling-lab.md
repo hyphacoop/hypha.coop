@@ -1,6 +1,7 @@
 ---
 title: Starling Lab
 logo:
+preview: true
 work-type: 
     - Applied cryptography 
     - Blockchains & NFTs 

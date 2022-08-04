@@ -1,6 +1,7 @@
 ---
 title: Restructuring Futures
 logo:
+preview: true
 work-type: 
     - Alternative economies 
     - Embodied creation 
