@@ -1,15 +1,18 @@
 ---
-title: System Administrator 
+title: Systems Administrator 
 compensation: Hourly rate of $38/hr
 is-full-time: yes
 hours-per-week: 32
 location: Toronto
+is-open: yes
 start-date: 2022-10-01
 end-date: 
 prepared-on-date: 2022-08-05
+excerpt_separator: <!-- more -->
 ---
 
-Hypha Worker Co-operative (Hypha) is looking for a Junior Web Designer to redesign and
+Hypha Worker Co-operative (Hypha) is looking for a Systems Admininistrator.
+<!-- more -->
 develop Hypha’s website (hypha.coop). There is also the possibility of assisting on external
 client projects. This is an ideal position for anyone just starting out in tech and interested in
 working with a non-profit co-operative. The candidate must possess solid design sensibilities

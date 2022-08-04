@@ -4,13 +4,15 @@ compensation: Hourly rate of $28/hr
 is-full-time: yes
 hours-per-week: 32
 location: remote
+is-open: yes
 start-date: 2022-09-01
 end-date: 2022-12-01
 prepared-on-date: 2022-08-15
+excerpt_separator: <!-- more -->
 ---
-
-Hypha Worker Co-operative (Hypha) is looking for a Junior Web Designer to redesign and
-develop Hypha’s website (hypha.coop). There is also the possibility of assisting on external
+Hypha is looking for a junior web designer to assist with the redesign of Hypha's website.
+<!-- more -->
+There is also the possibility of assisting on external
 client projects. This is an ideal position for anyone just starting out in tech and interested in
 working with a non-profit co-operative. The candidate must possess solid design sensibilities
 and have excellent front-end development skills. You should bring creativity and technical
