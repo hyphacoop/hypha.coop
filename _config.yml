@@ -22,6 +22,7 @@ sass:
 permalink: pretty
 
 collections:
+  openings:
   people:
   posts:
     permalink: /dripline/:title/
