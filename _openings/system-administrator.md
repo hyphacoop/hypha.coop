@@ -11,7 +11,7 @@ prepared-on-date: 2022-08-05
 excerpt_separator: <!-- more -->
 ---
 
-Hypha Worker Co-operative (Hypha) is looking for a Systems Admininistrator.
+Hypha is looking for a Systems Admininistrator to administer several systems.
 <!-- more -->
 develop Hypha’s website (hypha.coop). There is also the possibility of assisting on external
 client projects. This is an ideal position for anyone just starting out in tech and interested in

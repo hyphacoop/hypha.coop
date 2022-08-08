@@ -1,4 +1,4 @@
-<div class="flex-l items-center mv2 ">
+<div id="openings" class="flex-l items-center mv2 ">
   <div class="w-100-l">
     <h2 class="f1 f-subheadline-l worksans accent mb1">Join the team</h2>
 
@@ -7,9 +7,9 @@
     <h3 class="mb3 mt0 f3">View our job openings</h3>
     <div class="w-100 flex flex-wrap mb4">
     {% for opening in site.openings %}
-    <div class="measure pr5">
-      <p class="accent link f3 mv3"> {{ opening.title }} </p>
-      <div class="f4 lh-copy "> {{ opening.excerpt }} </div>
+    <div class="measure pr5 ">
+      <div class="accent link f3 mb0 mt3"> {{ opening.title }} </div>
+      <div class="f4 lh-copy mv0"> {{ opening.excerpt }} </div>
       <p class="f5"><i> Posted on {{ opening.prepared-on-date }} </i></p>
     </div>
     {% endfor %}
@@ -17,7 +17,6 @@
 
     <h3 class="mb3 mt0 f3">Read our membership policies</h3>
       <p class="ml0 f3 pv2"><a class="accent f3 link underline-hover" href="mailto:{{ site.email-hidden }}">Handbook</a></p>
-    <h4 class="f4 f3-l normal"><span class="accent">⚑</span> Hypha is rooted in Tkaronto (Toronto), Canada.</h4>
   </div>
 
 </div>
