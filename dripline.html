@@ -7,7 +7,7 @@ order: 4
 ---
 {% assign posts = site.posts %}
 
-<section class="mt4 ph3 ph5-l">
+<section class="mt4 ph3 pl5-l">
   <header>
 <div class="flex-l items-center mv2">
   <div class="w-100-l mb6">
@@ -29,7 +29,7 @@ order: 4
     <div class="flex flex-wrap pl0">
       {%- assign date_format = site.date_format -%}
       {%- for post in posts -%}
-      <div class="w-33 pr5 mr0-s mb4">
+      <div class="measure mr5 mr0-s mb4">
         <a class="no-underline" href="{{ post.url | relative_url }}">
           <h3 class="f2 mt0 mb3 worksans normal accent link underline-hover lh-title">
             {{ post.title | escape }}

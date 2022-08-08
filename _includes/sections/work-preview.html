@@ -1,6 +1,6 @@
 <div class="mb4 pv4">
     <h2 class="f-subheadline ma0 pv4 accent worksans ">Selected work</h2>
-    <p class="f3 ">A full list of our works may be found on our <a class="accent link">Work page.</a></p>
+    <p class="f3 ">A full list of our works may be found on our <a class="accent link" href="/work/">Work page.</a></p>
     <div class="flex flex-between">
         {% assign works = site.work | where: 'preview', 'true' | sort: 'order' %}
         {% for work in works | where: 'preview', 'true' %}
