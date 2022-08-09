@@ -12,7 +12,7 @@ order: 4
 <div class="flex-l items-center mv2">
   <div class="w-100-l mb6">
     
-    <h3 class=" f2 f1-m f-subheadline-l accent normal worksans mb4 lh-solid">
+    <h3 class=" f2 f1-m f-subheadline-l accent normal sans-serif mb4 lh-solid">
       {{ page.title }}
     </h3>
     <div class="f3 measure-wide dark-gray lh-copy mb0">
@@ -31,7 +31,7 @@ order: 4
       {%- for post in posts -%}
       <div class="measure mr5 mr0-s mb4">
         <a class="no-underline" href="{{ post.url | relative_url }}">
-          <h3 class="f2 mt0 mb3 worksans normal accent link underline-hover lh-title">
+          <h3 class="f2 mt0 mb3 sans-serif normal accent link underline-hover lh-title">
             {{ post.title | escape }}
           </h3>
           <p class="mt0 f3 mb3 dark-gray measure lh-copy">{{ post.excerpt }}</p>

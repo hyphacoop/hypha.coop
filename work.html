@@ -11,7 +11,7 @@ order: 3
 <div class="flex-l items-center mv2 ">
   <div class="w-100-l">
     
-    <h3 class=" f2 f1-m f-subheadline-l accent normal worksans mb4 lh-solid">
+    <h3 class=" f2 f1-m f-subheadline-l accent normal sans-serif mb4 lh-solid">
       {{ page.title }}
     </h3>
     <p class="f3 measure-wide dark-gray lh-copy mb5">
@@ -25,7 +25,7 @@ order: 3
     {% for work in works %}
         <div class="w-33-l w-50-m w-100-s flex-column justify-left items-left pr5 mb4 tl pa3 pl0">
             <div class="w-100 h4 pv3 tl pl3 white bg-accent">Image</div>
-            <h2 class="f2 worksans accent">{{ work.title }}</h2>
+            <h2 class="f2 sans-serif accent">{{ work.title }}</h2>
             <div class="pb3 f4  lh-copy">{{ work.content | markdownify }}</div>
             <!-- <div class="">
               {% for work-type in work.work-type %}
