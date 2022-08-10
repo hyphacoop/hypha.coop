@@ -25,8 +25,8 @@ order: 3
     {% for work in works %}
         <div class="w-33-l w-50-m w-100-s flex-column justify-left items-left pr5 mb4 tl pa3 pl0">
             <div class="w-100 h4 pv3 tl pl3 white bg-accent">Image</div>
-            <h2 class="f2 sans-serif accent">{{ work.title }}</h2>
-            <div class="pb3 f4  lh-copy">{{ work.content | markdownify }}</div>
+            <h2 class="f3 sans-serif accent">{{ work.title }}</h2>
+            <div class="pb3 f5 lh-copy">{{ work.content | markdownify }}</div>
             <!-- <div class="">
               {% for work-type in work.work-type %}
               <p class="accent bw0  b--accent ba ph1 pv1 mv1 mh1 lh-solid br-pill"> 
