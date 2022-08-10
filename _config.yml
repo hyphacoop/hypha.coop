@@ -23,6 +23,8 @@ permalink: pretty
 
 collections:
   openings:
+    permalink: /openings/:title/
+    output: true
   people:
   posts:
     permalink: /dripline/:title/

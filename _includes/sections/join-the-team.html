@@ -8,10 +8,12 @@
     <div class="w-100 flex flex-wrap mb4">
     {% for opening in site.openings %}
     <div class="measure pr5 ">
+      <a class="no-underline" href="{{ opening.url | relative_url }}">
       <div class="accent link f3 mb0 mt3"> {{ opening.title }} </div>
       <div class="f4 lh-copy mv0"> {{ opening.excerpt }} </div>
       <p class="f5"><i> Posted on {{ opening.prepared-on-date }} </i></p>
     </div>
+  </a>
     {% endfor %}
   </div>
 
