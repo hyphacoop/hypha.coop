@@ -1,15 +1,13 @@
 @font-face {
   font-family: WorkSans;
-  font-weight: normal;
-  src: url('../fonts/WorkSans-Regular.woff2') format('woff2'),
-    url('../fonts/WorkSans-Regular.woff') format('woff');
+  font-style: normal;
+  src: url('../fonts/WorkSans-VariableFont_wght.woff2') format('woff2');
   font-display: optional;
 }
 
 @font-face {
   font-family: WorkSans;
-  font-weight: 700;
-  src: url('../fonts/WorkSans-Black.woff2') format('woff2'),
-    url('../fonts/WorkSans-Black.woff') format('woff');
+  font-style: italic;
+  src: url('../fonts/WorkSans-Italic-VariableFont_wght.woff2') format('woff2');
   font-display: optional;
 }
