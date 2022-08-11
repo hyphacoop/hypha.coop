@@ -4,21 +4,21 @@
 
     <h3 class="f3 mb5 f2-l normal lh-solid measure-narrow dark-gray sans-serif">Find out more about open positions and pathways to membership</h3>
     
-    <h3 class="mb3 mt0 f3">View our job openings</h3>
+    <h3 class="mb4 mt0 f3">View our job openings</h3>
     <div class="w-100 flex flex-wrap mb4">
     {% for opening in site.openings %}
-    <div class="measure pr5 ">
+    <div class="measure pr5 mb3">
       <a class="no-underline" href="{{ opening.url | relative_url }}">
-      <div class="accent link f3 mb0 mt3"> {{ opening.title }} </div>
-      <div class="f4 lh-copy mv0"> {{ opening.excerpt }} </div>
-      <p class="f5"><i> Posted on {{ opening.prepared-on-date }} </i></p>
+      <h4 class="f3 mt0 mb2 sans-serif normal accent link underline-hover lh-title"> {{ opening.title }} </h4>
+      </a>
+      <div class="mt0 f5 mb3 dark-gray measure lh-copy"> {{ opening.excerpt }} </div>
+      <p class="f5 fw6 gray mt0">Posted on {{ opening.prepared-on-date }}</p>
     </div>
-  </a>
     {% endfor %}
   </div>
 
     <h3 class="mb3 mt0 f3">Read our membership policies</h3>
-      <p class="ml0 f3 pv2"><a class="accent f3 link underline-hover" href="mailto:{{ site.email-hidden }}">Handbook</a></p>
+      <p class="ml0 mt0 f3 pv2"><a class="accent f3 link underline-hover" href="mailto:{{ site.email-hidden }}">Handbook</a></p>
   </div>
 
 </div>
