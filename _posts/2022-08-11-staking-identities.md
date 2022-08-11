@@ -8,13 +8,25 @@ excerpt: 'Can DAOs meet the requirements of the 7 Cooperative Principles?'
 
 ### {{ page.excerpt }}
 
+<figure>
+
+<img
+  src="{{ '/assets/images/posts/2022-08-11-dao-coop.png' | relative_url }}"
+  alt="Decorative image that superimposes an early twentieth-century barn raising with a template DAO whitepaper"
+/>
+
+<figcaption align = "left"><em>1909 southern Ontario barn raising (<a href="https://digitalarchiveontario.ca/objects/214420/barn-raising-highland-creek?ctx=c2e4bfaa534f2e566b5759b9fe8201aaff7d87c7&idx=6">Digital Archives Ontario</a>; Public domain)
+<br/>
+DAO whitepaper (<a href="https://github.com/blockchainsllc/DAO">blockchainsllc</a>; Open source - LGPL)</em></figcaption>
+    
+</figure>
 What would it take for a DAO (Decentralized Autonomous Organization) to transition into a cooperative? In this article, I explore the practicalities of such a transformation and consider the challenges and the benefits that could be realized. Interested in learning more about the relationship between cooperatives and DAOs? Read on!
 
 DAOs are a hot topic right now, especially at the intersection of decentralized technologies, cooperatives, and social justice causes. There is a lot of excitement around the potential of DAOs to offer a new and improved cooperative model that can better support environmental and social justice causes. (In fact, this article was inspired partly by discussion in the [Platform Cooperatives Now!](https://platform.coop/blog/%F0%9F%93%9A-3-courses-for-the-co-op-curious/) course, and partly by the [Next Now series of webinars](https://www.next-now.org/dweb-learning-collaborative) sponsored by Ashoka and the Mutualist Society).[^1] While there is still much speculation in this area, there are some practical implications of the 'DAO as a co-op' discussion that are worth considering. For example, DAOs could offer a more democratic form of decision-making, as well as greater transparency and accountability. Additionally, DAOs could provide opportunities for people to pool resources and work together toward shared social justice goals in a more efficient and effective way. Conversely, DAOs thrive in an anonymous or pseudonymous space, while co-ops have traditionally supported local, face-to-face interactions. Ultimately, the success of DAOs as a cooperative model will depend on how well they are able to meet the needs of those they aim to serve, whether or not these individuals are known to each other. But there is potential here, and the conversation about the cooperative merits of DAOs is worth continuing. Two good starting points for comparisons include recent writing by [Austin Robey](https://www.fwb.help/wip/what-co-ops-and-daos-can-learn-from-each-other)[^2] and [Kelsie Nabben](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3979223).[^3]
 
 To examine the relationship between DAOs and co-ops, I use the International Cooperative Association (ICA)’s [seven Cooperative Principles](https://www.ica.coop/en/cooperatives/cooperative-identity)[^4] as a framework; this is largely because DAOs have myriad definitions and are still emerging as an organizing structure, while there is considerable social and legal agreement about what constitutes a co-op. It’s also important to note that there are many organizing assemblages that straddle or blur the DAO/co-op dichotomy, including collectives and DisCOs; the point here is not to get into the semantics of labeling organizations, but to look at some of the practical challenges of blending the DAO/coop models.
 
-The ICA, a global stewarding body for the co-operative movement, offers a Statement on Cooperative Identity that includes a co-operative definition, values, and seven principles; the latter of which we’ll explore in detail below. [According to the ICA](https://www.ica.coop/en/cooperatives/cooperative-identity), a cooperative is defined as “an ‘autonomous association of persons united voluntarily to meet their common economic, social and cultural needs and aspirations through a jointly owned and democratically-controlled enterprise.’”[^5] This widely accepted definition of a co-op stands in contrast to the numerous definitions of DAOs, which vary in their specificity. Starting with a technical framing, the [Coalition of Automated Legal Applications](https://blockchaingov.eu/model-law-for-daos/) (COALA) posits that DAO “refers to smart contracts (i.e. blockchain-based software) deployed on a public Permissionless Blockchain, which implements specific decision-making or governance rules enabling a multiplicity of actors to coordinate themselves in a decentralized fashion. These governance rules must be technically, although not necessarily operationally, decentralized.”[^6] Elsewhere, [Kelsie Nabbin suggests](https://platform.coop/blog/dao-design-patterns/) that DAOs are “relational, co-constructive entities, composed of human and machine components, functioning towards a shared objective.”[^7] And a still more concise explanation of DAOs is that they are simply “an incentivised coordination tool for communities.”[^8] These DAO definitions lack agreement in a number of respects, but most centre ‘permissionless’ technology, rather than people; this can be contrasted to the ICA definition, which clearly puts ‘persons’ at the heart of a cooperative enterprise. 
+The ICA, a global stewarding body for the co-operative movement, offers a Statement on Cooperative Identity that includes a co-operative definition, values, and seven principles; the latter of which I’ll explore in detail below. [According to the ICA](https://www.ica.coop/en/cooperatives/cooperative-identity), a cooperative is defined as “an ‘autonomous association of persons united voluntarily to meet their common economic, social and cultural needs and aspirations through a jointly owned and democratically-controlled enterprise.’”[^5] This widely accepted definition of a co-op stands in contrast to the numerous definitions of DAOs, which vary in their specificity. Starting with a technical framing, the [Coalition of Automated Legal Applications](https://blockchaingov.eu/model-law-for-daos/) (COALA) posits that DAO “refers to smart contracts (i.e. blockchain-based software) deployed on a public Permissionless Blockchain, which implements specific decision-making or governance rules enabling a multiplicity of actors to coordinate themselves in a decentralized fashion. These governance rules must be technically, although not necessarily operationally, decentralized.”[^6] Elsewhere, [Kelsie Nabbin suggests](https://platform.coop/blog/dao-design-patterns/) that DAOs are “relational, co-constructive entities, composed of human and machine components, functioning towards a shared objective.”[^7] And a still more concise explanation of DAOs is that they are simply “an incentivised coordination tool for communities.”[^8] These DAO definitions lack agreement in a number of respects, but most centre ‘permissionless’ technology, rather than people; this can be contrasted to the ICA definition, which clearly puts ‘persons’ at the heart of a cooperative enterprise. 
 
 Working in conjunction with their membership, the ICA offers [seven cooperative principles](https://www.ica.coop/en/cooperatives/cooperative-identity) as “guidelines by which cooperatives put their values into practice.”[^9] In the following sections, I note the principle, and then consider whether a prototypical DAO could in practice centre this principle in its work. Given the multitude of DAOs that exist, this article-as-a-thought exercise runs to generalizations; there are exceptions to every rule.
 
@@ -69,7 +81,7 @@ DAOs are still in their early days, and it is too soon to say whether or not the
 
 [^26]: Breadchain Cooperative. “Collaboration at Scale: Blockchain and Mutual Aid.” breadchaincooperative.mirror.xyz. Accessed June 29, 2022. https://breadchain.mirror.xyz/dcFRgCaNZCna1PYJ85dQ8_9s3r41Lxh0WfMrpRsgGNs.
 
-[^18]: Bud Hennekes. “The 8 Most Important Types of DAOs You Need to Know.” Alchemy.com, April 6, 2022. https://www.alchemy.com//blog/types-of-daos, https://www.alchemy.com/, https://blog.alchemy.com/blog/types-of-daos.
+[^18]: Hennekes, Bud. “The 8 Most Important Types of DAOs You Need to Know.” Alchemy.com, April 6, 2022. https://www.alchemy.com//blog/types-of-daos, https://www.alchemy.com/, https://blog.alchemy.com/blog/types-of-daos.
 
 [^17]: “ConstitutionDAO.” Accessed June 28, 2022. https://www.constitutiondao.com/.
 
@@ -83,26 +95,23 @@ DAOs are still in their early days, and it is too soon to say whether or not the
 
 [^20]: ethereum.org. “Decentralized Autonomous Organizations (DAOs).” Accessed June 28, 2022. https://ethereum.org.
 
-[^28]: Divya Siddarth, Danielle Allen, and E. Glen Weyl. “The Web3 Decentralization Debate Is Focused on the Wrong Question.” Wired, May 12, 2022. https://www.wired.com/story/web3-blockchain-decentralization-governance/.
+[^28]: Siddarth, Divya; Allen, Danielle; and Weyl, E. Glen. “The Web3 Decentralization Debate Is Focused on the Wrong Question.” Wired, May 12, 2022. https://www.wired.com/story/web3-blockchain-decentralization-governance/.
 
 [^1]: “DWeb Learning Collaborative Next \| Now.” Accessed June 28, 2022. https://www.next-now.org/dweb-learning-collaborative.
-
-Elias Crim. “OM #30 \| Building Movement Infrastructure; Ellerman on EO and Private Equity; Bringing Up Cooperators,” June 28, 2022. https://ownershipmatters.net/newsletter-item/issue-30-building-movement-infrastructure-david-ellerman-private-equity-employee-owned-bringing-up-cooperators/.
-
 
 [^8]: Hwang, Daniel. “DWeb Learning Collaborative \| DAO Lab.” June 8, 2022.
 
 [^22]: Discord. “Join the Developer DAO Discord Server!” Accessed June 29, 2022. https://discord.com/invite/devdao.
 
-[^15]: Kei Kreutler. “A Prehistory of DAOs.” gnosis guild, July 21, 2021. https://gnosisguild.mirror.xyz/t4F5rItMw4-mlpLZf5JQhElbDfQ2JRVKAzEpanyxW1Q.
+[^15]: Kreutler, Kei. “A Prehistory of DAOs.” gnosis guild, July 21, 2021. https://gnosisguild.mirror.xyz/t4F5rItMw4-mlpLZf5JQhElbDfQ2JRVKAzEpanyxW1Q.
 
 [^27]: ibid 15.
 
 [^19]: ibid 15.
 
-[^14]: Kyle White. “Why One Member, One Vote?” Co-Operatives First (blog), January 24, 2020. https://cooperativesfirst.com/blog/2020/01/24/why-one-member-one-vote/.
+[^14]: White, Kyle. “Why One Member, One Vote?” Co-Operatives First (blog), January 24, 2020. https://cooperativesfirst.com/blog/2020/01/24/why-one-member-one-vote/.
 
-[^21]: Lucas Matney. “VC-Backed DAO Startups Are Racing to Define What DAOs Actually Are.” TechCrunch (blog), February 1, 2022. https://social.techcrunch.com/2022/02/01/vc-backed-dao-startups-are-racing-to-define-what-daos-actually-are/.
+[^21]: Matney, Lucas. “VC-Backed DAO Startups Are Racing to Define What DAOs Actually Are.” TechCrunch (blog), February 1, 2022. https://social.techcrunch.com/2022/02/01/vc-backed-dao-startups-are-racing-to-define-what-daos-actually-are/.
 
 [^10]: McDonald, Scott. “Web3 Has a User Experience Problem.” Medium, May 20, 2022. https://uxdesign.cc/web3-needs-an-elevator-pitch-569bc2781ab3.
 
@@ -120,11 +129,11 @@ Elias Crim. “OM #30 \| Building Movement Infrastructure; Ellerman on EO and Pr
 
 [^2]: Robey, Austin. “What Co-Ops and DAOs Can Learn From Each Other.” Friends With Benefits (blog), January 13, 2022. https://www.fwb.help/wip/what-co-ops-and-daos-can-learn-from-each-other.
 
-[^24]: Romain Dillet. “Blockchain Bridge Wormhole Confirms That Exploiter Stole $320 Million Worth of Crypto Assets.” TechCrunch, February 3, 2022. https://techcrunch.com/2022/02/03/blockchain-bridge-wormhole-confirms-that-exploiter-stole-320-million-worth-of-crypto-assets/.
+[^24]: Dillet, Romain. “Blockchain Bridge Wormhole Confirms That Exploiter Stole $320 Million Worth of Crypto Assets.” TechCrunch, February 3, 2022. https://techcrunch.com/2022/02/03/blockchain-bridge-wormhole-confirms-that-exploiter-stole-320-million-worth-of-crypto-assets/.
 
 
-[^29]: Tracy Wang. “FlamingoDAO’s NFT Portfolio Is Now Worth $1B.” Coindesk, February 10, 2022. https://www.coindesk.com/markets/2022/02/10/flamingodaos-nft-portfolio-is-now-worth-1b/.
+[^29]: Wang, Tracy. “FlamingoDAO’s NFT Portfolio Is Now Worth $1B.” Coindesk, February 10, 2022. https://www.coindesk.com/markets/2022/02/10/flamingodaos-nft-portfolio-is-now-worth-1b/.
 
-[^16]: Vitalik Buterin. “Soulbound.” Vitalik.ca, January 26, 2022. https://vitalik.ca/general/2022/01/26/soulbound.html.
+[^16]: Buterin, Vitalik. “Soulbound.” Vitalik.ca, January 26, 2022. https://vitalik.ca/general/2022/01/26/soulbound.html.
 
 [^12]: “Welcome to 1Hive.” Accessed June 28, 2022. https://wiki.1hive.org/.
