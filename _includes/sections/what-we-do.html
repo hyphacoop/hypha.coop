@@ -1,4 +1,43 @@
 <h2 class="f1 f-subheadline-l sans-serif accent ma0 mb4">What we do</h2>
+<div class="flex flex-wrap">
+  <p class="lh-copy f3 w-50 mt0">
+    We propagate community-led stewardship, grow technical capacity, and deliver concepts and products.
+  <br/>
+  <br/>
+    Our expertise spans ideation to infrastructure.
+  </p>
+  <div class="bg-accent w-50"></div>
+</div>
+<div class="flex flex-wrap">
+
+  <script>
+    function makeVisible(id) {
+      const visibleElement = document.getElementById(`${id}-description`)
+      const allValuesClass = visibleElement.className;
+      document.querySelectorAll(`.${allValuesClass}`).forEach(function(el) {
+        el.style.display = 'none';
+      });
+      visibleElement.style.display = "inherit";
+    } 
+  </script>
+
+  <ul class="measure-narrow f3 mr4">
+    {% for element in page.what_we_do %}
+    <li class="pa3 bg-accent white"><a  id="{{ element.title }}" onclick="makeVisible(this.id);" >{{ element.title }} </a></li>
+    {% endfor %}
+  </ul>
+    {% for element in page.what_we_do %}
+  <p id="{{ element.title }}-description" class="measure">
+  {{ element.description }}
+  </p>
+  {% endfor %}
+</div>
+
+
+<p class="mb3">old</p>
+<p class="mb3">old</p>
+<p class="mb3">old</p>
+<p class="mb3">old</p>
 <div class="bg-accent white pa4-l pa3 contain bg-right aliased  flex flex-column mb5">
   <div class="flex">
     <div class="w-50-l w-100">
