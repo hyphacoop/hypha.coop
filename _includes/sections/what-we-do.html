@@ -10,24 +10,15 @@
 </div>
 <div class="flex flex-wrap">
 
-  <script>
-    function makeVisible(id) {
-      const visibleElement = document.getElementById(`${id}-description`)
-      const allValuesClass = visibleElement.className;
-      document.querySelectorAll(`.${allValuesClass}`).forEach(function(el) {
-        el.style.display = 'none';
-      });
-      visibleElement.style.display = "inherit";
-    } 
-  </script>
+  
 
-  <ul class="measure-narrow f3 mr4">
+  <ul id="values" class="measure-narrow f3 mr4">
     {% for element in page.what_we_do %}
-    <li class="pa3 bg-accent white"><a  id="{{ element.title }}" onclick="makeVisible(this.id);" >{{ element.title }} </a></li>
+    <li class="pa3  {% if element == page.what_we_do[0] %} bg-accent white {% else %} accent {% endif %}  "><a  id="{{ element.title }}" onclick="makeVisible(this.id);" >{{ element.title }} </a></li>
     {% endfor %}
   </ul>
     {% for element in page.what_we_do %}
-  <p id="{{ element.title }}-description" class="measure">
+  <p id="{{ element.title }}-description" class="measure ">
   {{ element.description }}
   </p>
   {% endfor %}
@@ -62,3 +53,24 @@
 </p>
         <div class="w-50 bg-accent"></div>
   </div>
+
+
+  <script>
+    function makeVisible(id) {
+      const visibleElement = document.getElementById(`${id}-description`)
+      const allValuesClass = visibleElement.className;
+      document.querySelectorAll(`.${allValuesClass}`).forEach(function(el) {
+        el.style.display = 'none';
+      });
+      visibleElement.style.display = "inherit";
+    } 
+    const testing = " {{ page.what_we_do[0].title }} "
+    console.log(testing);
+    function initialState() {
+      //make only the first card visible initially
+      
+      console.log(document.getElementById("values"));
+    }
+
+    initialState()
+  </script>
