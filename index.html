@@ -30,3 +30,37 @@ values:
 {%- include sections.html path="who-we-are.html" class="" -%}
 {%- include sections.html path="our-values-independent.html" class="" -%}
 {%- include sections.html path="work-with-us.html" class="mv5" -%}
+
+  <script>
+    function makeVisible(id) {
+      const visibleElement = document.getElementById(`${id}-description`)
+      const allValuesClass = visibleElement.className;
+      document.querySelectorAll(`.${allValuesClass}`).forEach(function(el) {
+        el.style.display = 'none';
+      });
+      visibleElement.style.display = "inherit";
+
+    } 
+
+    function makePurple(id) {
+      const purpleElement = document.getElementById(`${id}`)
+      document.querySelectorAll("#values >  li").forEach(function(el) {
+        el.className = 'pa3 accent';
+      });
+      purpleElement.className = "pa3 bg-accent white";
+    } 
+
+    function selectValue(id) {
+      makeVisible(id);
+      makePurple(id);
+    };
+    function initialState() {
+      //make only the first card visible initially
+    const testing = "{{ page.what_we_do[0].title }}";
+    makeVisible(testing);
+    makePurple(testing);
+    }
+
+    initialState()
+
+  </script>
