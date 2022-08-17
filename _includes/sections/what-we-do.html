@@ -10,16 +10,16 @@
 </div>
 <div class="flex flex-wrap">
 
-  <ul id="values" class="measure-narrow f3 mr4">
+  <ul id="what" class="measure-narrow f3 mr4">
     {% for element in page.what_we_do %}
-      <li class="pa3  accent "  id="{{ element.title }}" onclick="selectValue(this.id);" >
+      <li class="pa3  accent "  id="{{ element.title }}" onclick="selectValue(this.id, 'what');" >
         {{ element.title }} 
       </li>
     {% endfor %}
   </ul>
-  <ul id="values-descriptions">
+  <ul id="what-descriptions">
   {% for element in page.what_we_do %}
-    <p id="{{ element.title }}-description" class="measure ">
+    <p id="{{ element.title }}-description" class="measure f3">
       {{ element.description }}
     </p>
   {% endfor %}
