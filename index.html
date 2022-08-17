@@ -63,13 +63,15 @@ values:
       makeVisible(id, section);
       makePurple(id, section);
     };
-    function initialState(section) {
+    function initialState() {
       //make only the first card visible initially
-    const first = "{{ page.what_we_do[0].title }}";
-    makeVisible(first, section);
-    makePurple(first, section);
+      //these must be hard coded because js cannot be passed to liquid
+    const firstWhat = "{{ page.what_we_do[0].title }}";
+    const firstValue = "{{ page.values[0].title }}";
+    selectValue(firstWhat, "what_we_do");
+    selectValue(firstValue, "values");
     }
 
-    initialState('what')
+    initialState()
 
   </script>

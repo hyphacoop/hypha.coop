@@ -34,11 +34,11 @@
 @import 'scss/variables';
 
 //  Debugging 
-@import 'scss/debug-children';
-@import 'scss/debug-grid';
+// @import 'scss/debug-children';
+// @import 'scss/debug-grid';
 
 //  Uncomment out the line below to help debug layout issues 
-//  @import 'scss/debug'; 
+ @import 'scss/debug'; 
 
  //  Modules 
  @import 'scss/box-sizing';
