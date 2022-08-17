@@ -14,7 +14,7 @@
 
   <ul id="values" class="measure-narrow f3 mr4">
     {% for element in page.what_we_do %}
-    <li class="pa3  {% if element == page.what_we_do[0] %} bg-accent white {% else %} accent {% endif %}  "><a  id="{{ element.title }}" onclick="makeVisible(this.id);" >{{ element.title }} </a></li>
+    <li class="pa3  accent "><a  id="{{ element.title }}" onclick="selectValue(this.id);" >{{ element.title }} </a></li>
     {% endfor %}
   </ul>
     {% for element in page.what_we_do %}
@@ -64,13 +64,31 @@
       });
       visibleElement.style.display = "inherit";
     } 
-    const testing = " {{ page.what_we_do[0].title }} "
-    console.log(testing);
+
     function initialState() {
       //make only the first card visible initially
-      
-      console.log(document.getElementById("values"));
+    const testing = "{{ page.what_we_do[0].title }}";
+    makeVisible(testing);
     }
 
     initialState()
+
+    function makePurple(id) {
+      const purpleElement = document.getElementById(`${id}`)
+      console.log(purpleElement);
+      const allValuesClass = purpleElement.className;
+      console.log(allValuesClass);
+      document.querySelectorAll(`.${allValuesClass}`).forEach(function(el) {
+        el.className = 'pa3 accent';
+      });
+      purpleElement.className = "pa3 bg-accent white";
+    } 
+
+    function selectValue(id) {
+      makeVisible(id);
+      makePurple(id);
+    };
+//find el
+
+
   </script>
