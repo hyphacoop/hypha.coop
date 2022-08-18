@@ -1,29 +1,33 @@
-<h2 class="f1 f-subheadline-l sans-serif accent ma0 mb4">What we do</h2>
-<div class="flex flex-wrap">
-  <p class="lh-copy f4 w-50 mt0">
-    We propagate community-led stewardship, grow technical capacity, and deliver concepts and products.
-  <br/>
-  <br/>
+<header>
+  <h2 class="">What we do</h2>
+</header>
+<div class="flex flex-wrap justify-between lh-copy f3">
+  <p class="lh-copy f4 measure mt0">
+    We propagate community-led stewardship, grow technical capacity, and deliver
+    concepts and products.
+    <br />
+    <br />
     Our expertise spans ideation to infrastructure.
   </p>
-  <div class="bg-accent w-50 white pa5">illustration</div>
+  <figure class="bg-accent br-100 white pa5">illustration</figure>
 </div>
 <div class="flex flex-wrap">
-
   <ul id="what_we_do" class="measure-narrow f4 mr4">
     {% for element in page.what_we_do %}
-      <li class="pa3  accent "  id="{{ element.title }}" onclick="selectValue(this.id, 'what_we_do');" >
-        {{ element.title }} 
-      </li>
+    <li
+      class="pa3 accent"
+      id="{{ element.title }}"
+      onclick="selectValue(this.id, 'what_we_do');"
+    >
+      {{ element.title }}
+    </li>
     {% endfor %}
   </ul>
   <ul id="what_we_do-descriptions">
-  {% for element in page.what_we_do %}
+    {% for element in page.what_we_do %}
     <p id="{{ element.title }}-description" class="measure f4 lh-copy">
       {{ element.description }}
     </p>
-  {% endfor %}
+    {% endfor %}
   </ul>
-
 </div>
-
