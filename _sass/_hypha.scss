@@ -116,6 +116,6 @@ p {
 }
 
 
-#what_we_do div.accent:hover {
+#what_we_do div.accent:hover, #values div.accent:hover {
   background-color: lighten($accent-color, 45%);
 }

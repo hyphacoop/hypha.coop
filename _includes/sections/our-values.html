@@ -1,25 +1,29 @@
+<div class="  contain flex-l justify-between mb4  pa3 pa4-l ph0 ph0-l">
+    <div>
     <h2 class="f1 f-subheadline-l sans-serif mb4 mt0 accent">Our values</h2>
-<div class="  contain flex-l mb4  pa3 pa4-l ph0 ph0-l">
     <p class="measure f4 lh-copy ">Our core values reflect our approach in cultivating respectful and democratic technology ecologies. <br><br> We bring this ethos to every project we undertake.</p>
-    <div class="w-100 bg-accent white pa5">illustration</div>
+    </div>
+    <figure class=" bg-accent white pa5 br-100">illustration</figure>
   </div>
 
 <div class="flex flex-wrap">
 
-  <ul id="values" class="measure-narrow f4 mr4">
+  <ul id="values" class="measure-narrow f4 mr4 pl0">
     {% for element in page.values %}
-      <li class="pa3  accent "  id="{{ element.title }}" onclick="selectValue(this.id, 'values');" >
+      <div class="pa3  accent "  id="{{ element.title }}" onclick="selectValue(this.id, 'values');" >
+        <li>
         {{ element.title }} 
       </li>
+    </div>
     {% endfor %}
   </ul>
-  <ul id="values-descriptions">
+  <div id="values-descriptions" class="">
   {% for element in page.values %}
     <p id="{{ element.title }}-description" class="measure f4 lh-copy">
       {{ element.description }}
     </p>
   {% endfor %}
-  </ul>
+  </div>
 
 </div>
 
