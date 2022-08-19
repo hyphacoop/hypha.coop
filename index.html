@@ -48,15 +48,15 @@ values:
 
     function makePurple(id, section) {
       const purpleElement = document.getElementById(`${id}`)
-      document.querySelectorAll(`#${section} >  li`).forEach(function(el) {
+      document.querySelectorAll(`#${section} >  div`).forEach(function(el) {
         //I don't like editing classnames in JS because it mixes design and function
         //but I can't access the $accent-color sass variables in js to edit the style directly
         //not sure how to do this otherwise
         //would be nice if liquid could handle the colour change with its conditional rendering, 
         //but i don't think that is how it works since it is set during build
-        el.className = 'pa3 accent';
+        el.className = "ph4 pv2 accent pointer";
       });
-      purpleElement.className = "pa3 bg-accent white";
+      purpleElement.className = "ph4 pv2 bg-accent white pointer";
     } 
 
     function selectValue(id, section) {
