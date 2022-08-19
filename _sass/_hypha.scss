@@ -115,3 +115,7 @@ p {
   // border: 1px dotted black;
 }
 
+
+#what_we_do div.accent:hover {
+  background-color: lighten($accent-color, 45%);
+}
