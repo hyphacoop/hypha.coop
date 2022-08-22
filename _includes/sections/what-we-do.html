@@ -1,36 +1,35 @@
-<div class="bg-accent white pa4-l pa3 contain bg-right aliased scaling-2">
-  <div class="w-75-l w-100-m">
-
-    <h2 class="f1 f-subheadline-l worksans ma0">What we do</h2>
-
-    <div class="measure-wide bg-accent">
-      <p class="lh-solid f3 f2-l">We propagate community-led stewardship, grow technical capacity, and deliver concepts and products. </p>
-
-        <p class="lh-solid f3 f2-l">Our expertise spans ideation to infrastructure.</p>
-    </div>
-
-    <div class="flex-l bt bw2 mt4 bg-accent">
-      <div class="w-third-l ph3 pr4-l">
-        <h3 class="f3 mb1">Decentralized web protocols</h3>
-        <ul class="lh-copy pl3">
-          <li>Peer-to-peer technologies</li>
-              <li>Distributed ledger and blockchain-based technologies</li>
-        </ul>
-      </div>
-
-      <div class="w-third-l ph3 pr4-l">
-        <h3 class="f3 mb1">Technical capacity development for <br> co-operatives and collectives</h3>
-       
-      </div>
-
-     <div class="w-third-l ph3 pr4-l">
-        <h3 class="f3 mb1">Governance of co-ops and decentralized digital communities</h3>
-        <ul class="lh-copy pl3">
-              <li>Community ownership strategy</li>
-        </ul>
-    
-        </ul>
-      </div>
-    </div>
+<div class="flex  justify-start lh-copy f3 mb4">
+  <div class="mr3">
+    <header>
+      <h2 class="">What we do</h2>
+    </header>
+    <p class="lh-copy f4 measure mt0">
+      We propagate community-led stewardship, grow technical capacity, and
+      deliver concepts and products.
+      <br />
+      <br />
+      Our expertise spans ideation to infrastructure.
+    </p>
   </div>
-</div> 
+  <figure class="scaling-3 w-50"></figure>
+</div>
+<div class="flex flex-wrap">
+  <ul id="what_we_do" class="measure-narrow f4 mr4 pl0">
+    {% for element in page.what_we_do %}
+    <div
+      class="ma3 accent pointer"
+      id="{{ element.title }}"
+      onclick="selectValue(this.id, 'what_we_do');"
+    >
+      <li>{{ element.title }}</li>
+    </div>
+    {% endfor %}
+  </ul>
+  <div id="what_we_do-descriptions">
+    {% for element in page.what_we_do %}
+    <p id="{{ element.title }}-description" class="measure f4 lh-copy">
+      {{ element.description }}
+    </p>
+    {% endfor %}
+  </div>
+</div>

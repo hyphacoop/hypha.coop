@@ -26,12 +26,6 @@ mark {
   background-color: $secondary-accent-color;
 }
 
-// Hypha brand font classes
-
-.worksans {
-  font-family: 'WorkSans', helvetica, sans-serif;
-}
-
 // Font Smoothing
 
 .aliased {
@@ -91,3 +85,45 @@ mark {
   }
 }
 
+// Section templates
+
+//for section headers 
+h1 {
+  @extend .f2;
+  @extend .f1-m;
+  @extend .f-subheadline-l;
+  @extend .accent;
+  @extend .normal;
+  @extend .sans-serif;
+  @extend .mb4;
+  @extend .lh-solid;
+}
+
+h2 {
+  @extend .f1;
+  @extend .f-subheadline-l;
+  @extend .sans-serif;
+  @extend .accent;
+  @extend .ma0;
+  @extend .mb4;
+  // border: 1px solid black;
+}
+
+p {
+  @extend .lh-copy;
+  @extend .f4;
+  // border: 1px dotted black;
+}
+
+a {
+  @extend .accent;
+  @extend .link;
+  @extend .underline-hover;
+}
+a.no-underline:hover {
+  @extend .no-underline;
+}
+
+#what_we_do div.accent:hover, #values div.accent:hover {
+  background-color: lighten($accent-color, 45%);
+}
