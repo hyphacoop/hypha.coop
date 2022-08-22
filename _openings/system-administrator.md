@@ -23,9 +23,12 @@ Hypha members and employees.
 Hypha is a co-operative, so we do things a little differently (and a little better, we like to think).
 Ideally, you are excited about participating in a co-operative, building the solidarity economy,
 and engaging in discussions on rethinking social structures and the politics of technologies.
+
 ## Here are some of the things you’ll do
+
 You will work with Hypha workers and employees to lead the redesign and development of
 our website. Your tasks could include:
+
 * Produce web design layout options using wireframes, flow diagrams or storyboards
 * Create a project plan for the redesign and development of hypha.coop
 * Collaborate with Hypha workers and employees to redesign the look and content for
@@ -51,37 +54,47 @@ conferencing software
 * Strong planning and problem-solving skills; ability to multitask and meet deadlines
 * Excellent time management skills and the ability to prioritize work
 * Clear and compassionate oral, written, and presentation skills
-* Demonstrated commitment to the principles of equity and diversity with alignment on
-Hypha’s mission and values
-Prepared on May 9, 2022 1/2
-HYPHA
+* Demonstrated commitment to the principles of equity and diversity with alignment on Hypha’s mission and values
+
 ## Location
+
 Remote position, with a preference for Toronto or GTA-based youth.
+
 ## Compensation
+
 Hourly rate of $28.00.
+
 ## Hours and term
+
 Work completed Monday to Friday, for a total of 32 hours per week. (Hypha maintains a 4-day
 work week.) This is a temporary position for 16 weeks starting immediately. This position is
 part of the Canada Summer Jobs program, and to qualify you must be aged 15﹘30 and legally
 entitled to work in Canada.
+
 ## More about us
+
 Hypha Worker Co-operative is a non-profit tech worker co-op based in Tkaronto (Toronto).
 You can read more about our mission, vision, and values, as well as ways we work together in
 our organizational handbook. Hypha collaborates with communities to build better
 relationships with technology. Our work includes:
+
 * decentralized web protocol (p2p and blockchain-based technologies) projects;
 * technical capacity development for co-operatives and collectives;
 * developing community ownership strategies, and;
 * insight on governance for co-ops and decentralized digital communities.
+
 As a remote-first organization that strives toward sustainable livelihoods for all our members,
 we accommodate flexible schedules and work arrangements. We are committed to the
 co-operative principles, which provide a pathway for all employees to permanent
 membership. We are looking to build long-term relationships with contractors who are
 potentially interested in joining our co-operative as a member in the future. If working openly
 on value-driven technology is your jam, let’s talk!
+
 ## Process to apply
+
 To be considered, please email us at hiring@hypha.coop with the following as soon as
 possible:
+
 * Resume or CV (ideally as a PDF)
 * Brief covering statement (in email body is fine) outlining why you are a fit for the
 position. This could include:
@@ -92,6 +105,7 @@ position. This could include:
 Applications will be reviewed on a rolling basis. We understand that no one person has all the
 qualifications listed here, so please apply if you have relevant experience and are interested
 in this role.
+
 Hypha acknowledges and strives to reduce barriers for members of equity-seeking groups
 through our hiring practices, in line with the equal rights and opportunities protected in the
 Ontario Human Rights Code and (Federal) Employment Equity Act

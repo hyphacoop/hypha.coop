@@ -21,7 +21,9 @@ layout: default
     {% if page.acknowledgement != "" or page.acknowledgement != nil %}
     <p><em>{{ page.acknowledgement | markdownify }}</em></p>
     {% endif %}
-    {{ content }}
+    <div class="hypha-textpost">
+      {{ content }}
+    </div>
   </div>
   <footer class="mt5 bt bw2 b--light-gray">
     <p><a class="link accent underline-hover" href="{% link dripline.html %}">← <span class="gray">Return to Dripline</span></a></p>
