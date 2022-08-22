@@ -1,29 +1,32 @@
-<div class="  contain flex-l justify-between mb4  pa3 pa4-l ph0 ph0-l">
-    <div class="measure-wide">
+<div class="contain flex-l justify-start  mb4 pa3 pa4-l ph0 ph0-l">
+  <div class="measure-wide mr5">
     <h2 class="f1 f-subheadline-l sans-serif mb4 mt0 accent">Our values</h2>
-    <p class="measure f4 lh-copy ">Our core values reflect our approach in cultivating respectful and democratic technology ecologies. <br><br> We bring this ethos to every project we undertake.</p>
-    </div>
-    <div class="w-50 scaling-3 " ></div>
+    <p class="measure f4 lh-copy">
+      Our core values reflect our approach in cultivating respectful and
+      democratic technology ecologies. <br /><br />
+      We bring this ethos to every project we undertake.
+    </p>
   </div>
+  <div class="w-50 scaling-3"></div>
+</div>
 
 <div class="flex flex-wrap">
-
   <ul id="values" class="measure-narrow f4 mr4 pl0">
     {% for element in page.values %}
-      <div class="pa3  accent "  id="{{ element.title }}" onclick="selectValue(this.id, 'values');" >
-        <li>
-        {{ element.title }} 
-      </li>
+    <div
+      class="pa3 accent"
+      id="{{ element.title }}"
+      onclick="selectValue(this.id, 'values');"
+    >
+      <li>{{ element.title }}</li>
     </div>
     {% endfor %}
   </ul>
   <div id="values-descriptions" class="">
-  {% for element in page.values %}
+    {% for element in page.values %}
     <p id="{{ element.title }}-description" class="measure f4 lh-copy">
       {{ element.description }}
     </p>
-  {% endfor %}
+    {% endfor %}
   </div>
-
 </div>
-

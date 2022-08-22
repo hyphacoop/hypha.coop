@@ -1,18 +1,17 @@
-
-<div class="flex flex-wrap justify-between lh-copy f3">
-<div><header>
-
-  <h2 class="">What we do</h2>
-</header>
-  <p class="lh-copy f4 measure mt0">
-    We propagate community-led stewardship, grow technical capacity, and deliver
-    concepts and products.
-    <br />
-    <br />
-    Our expertise spans ideation to infrastructure.
-  </p>
-</div>
-  <figure class="bg-accent br-100 white pa5">illustration</figure>
+<div class="flex  justify-start lh-copy f3 mb4">
+  <div class="mr3">
+    <header>
+      <h2 class="">What we do</h2>
+    </header>
+    <p class="lh-copy f4 measure mt0">
+      We propagate community-led stewardship, grow technical capacity, and
+      deliver concepts and products.
+      <br />
+      <br />
+      Our expertise spans ideation to infrastructure.
+    </p>
+  </div>
+  <figure class="scaling-3 w-50"></figure>
 </div>
 <div class="flex flex-wrap">
   <ul id="what_we_do" class="measure-narrow f4 mr4 pl0">
@@ -22,10 +21,8 @@
       id="{{ element.title }}"
       onclick="selectValue(this.id, 'what_we_do');"
     >
-    <li >
-      {{ element.title }}
-    </li>
-  </div>
+      <li>{{ element.title }}</li>
+    </div>
     {% endfor %}
   </ul>
   <div id="what_we_do-descriptions">

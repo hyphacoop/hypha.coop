@@ -120,6 +120,9 @@ a {
   @extend .link;
   @extend .underline-hover;
 }
+a.no-underline:hover {
+  @extend .no-underline;
+}
 
 #what_we_do div.accent:hover, #values div.accent:hover {
   background-color: lighten($accent-color, 45%);
