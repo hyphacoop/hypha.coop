@@ -1,14 +1,17 @@
-<div class="mb5 pv4">
-    <h2 class="f-subheadline ma0 pv4 accent sans-serif ">Selected work</h2>
-    <p class="f4 ">A full list of our works may be found on our <a class="accent link underline-hover" href="/work/">Work page.</a></p>
-    <div class="flex flex-between">
-        {% assign works = site.work | where: 'preview', 'true' | sort: 'order' %}
-        {% for work in works | where: 'preview', 'true' %}
-            <div class="w-33 flex-column justify-left items-left center pr4 pl4 mb2 tl">
-                <!-- <div class="w-100 h4 pv3 tl pl3 white bg-accent">Logo</div> -->
-                <h2 class="f3 sans-serif accent">{{ work.title }}</h2>
-                <div class="pb3 f4 lh-copy">{{ work.excerpt | markdownify }}</div>
-            </div>
-        {% endfor %}
+<div class="mb5 ">
+  <h2 class="">Selected work</h2>
+  <div class="flex flex-between">
+    {% assign works = site.work | where: 'preview', 'true' | sort: 'order' %} {%
+    for work in works | where: 'preview', 'true' %}
+    <div class="w-33 flex-column justify-left items-left center pr4 pl4 mb2 tl">
+      <!-- <div class="w-100 h4 pv3 tl pl3 white bg-accent">Logo</div> -->
+      <h2 class="f3 sans-serif accent">{{ work.title }}</h2>
+      <div class="pb3 f4 lh-copy">{{ work.excerpt | markdownify }}</div>
     </div>
+    {% endfor %}
+  </div>
+  <p class="f4">
+    A full list of our works may be found on our
+    <a class="accent link underline-hover" href="/work/">Work page.</a>
+  </p>
 </div>
