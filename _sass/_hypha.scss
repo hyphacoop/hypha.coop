@@ -77,6 +77,25 @@ mark {
   background-image: url(/assets/images/scaling-3.png);
 }
 
+.root {
+  background-image: url(/assets/images/root1.png);
+}
+.root-2 {
+  background-image: url(/assets/images/root2-crop.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 40%;
+}
+.block {
+  background-image: url(/assets/images/block1.png);
+}
+.block-3 {
+  background-image: url(/assets/images/block3.png);
+}
+.electric-lines {
+  background-image: url(/assets/images/footer1.png);
+}
+
 .mbtablestyle {
   border-collapse: collapse;
   > table, td, th {
