@@ -14,6 +14,10 @@
     </div>
     <div
       class="lh-copy measure center f5 pt3 {% unless person.excerpt == person.content %} pointer {% endunless %}"
+      data-excerpt="{{ person.excerpt }}"
+      data-content="{{ person.content }}"
+      id="{{ person.name }}"
+      onclick="toggleBio(this.id, this.dataset.excerpt, this.dataset.content);"
     >
       {{ person.excerpt | markdownify }}
     {% unless person.excerpt == person.content %}
@@ -23,3 +27,12 @@
   </article>
   {% endfor %}
 </div>
+<script>
+  function toggleBio(id, excerpt, content) {
+    const toggleable = excerpt == content;
+    if (!toggleable) {
+      // alert(`${toggleable}`);
+      alert(`${excerpt}`);
+    }
+  }
+</script>
