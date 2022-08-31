@@ -16,13 +16,14 @@
       class="lh-copy measure center f5 pt3 {% unless person.excerpt == person.content %} pointer {% endunless %}"
       data-excerpt="{{ person.excerpt }}"
       data-content="{{ person.content }}"
+      data-toggled="false"
       id="{{ person.name }}"
       onclick="toggleBio(this.id, this.dataset.excerpt, this.dataset.content);"
     >
-      {{ person.excerpt | markdownify }}
-    {% unless person.excerpt == person.content %}
-    <p class="mv0 link accent">... read more</p>
-    {% endunless %}
+      {{ person.excerpt | markdownify }} {% unless person.excerpt ==
+      person.content %}
+      <p class="mv0 link accent">[read more]</p>
+      {% endunless %}
     </div>
   </article>
   {% endfor %}
@@ -31,8 +32,15 @@
   function toggleBio(id, excerpt, content) {
     const toggleable = excerpt == content;
     if (!toggleable) {
-      // alert(`${toggleable}`);
-      alert(`${excerpt}`);
+      const el = document.getElementById(id);
+      let toggled = document.getElementById(id).dataset.toggled;
+      if (toggled == "true") {
+        el.innerHTML = excerpt + "<p class='mv0 link accent'> [read more] </p>";
+        el.dataset.toggled = false;
+      } else {
+        el.innerHTML = content + "<p class='mv0 link accent'> [read less] </p>";
+        el.dataset.toggled = true;
+      }
     }
   }
 </script>
