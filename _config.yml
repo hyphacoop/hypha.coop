@@ -41,6 +41,11 @@ defaults:
       layout: dripline/post
   -
     scope:
+      type: work
+    values:
+      logo: "/assets/images/logos/default-logo.png"
+  -
+    scope:
       type: openings
     values:
       layout: openings/opening

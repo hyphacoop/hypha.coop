@@ -9,8 +9,8 @@ order: 4
 {% assign posts = site.posts %}
 
 <section class="mt4 ph3 pl5-l">
-  <header class="h5 ma0 pa0">
-    <!-- <div class="flex-l items-center mv2">
+  <header class="">
+    <div class="flex-l items-center mv2">
       <div class="w-100-l mb6">
         <h3
           class="f2 f1-m f-subheadline-l accent normal sans-serif mb4 lh-solid"
@@ -38,10 +38,9 @@ order: 4
           </p>
         </div>
       </div>
-    </div> -->
-  <div class="canopy contain mw-100 mh-100 pa0 ma0"></div>
+    </div>
   </header>
-  <img src="/assets/images/canopy2.png" alt="canopy"></img>
+  <!-- <img src="/assets/images/canopy2.png" alt="canopy"></img> -->
   {%- if posts.size > 0 -%}
   <div class="flex flex-wrap justify-center">
     {%- assign date_format = site.date_format -%} {%- for post in posts -%}

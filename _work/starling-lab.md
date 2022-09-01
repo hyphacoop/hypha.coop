@@ -1,6 +1,6 @@
 ---
 title: Starling Lab
-logo:
+logo: /assets/images/logos/starling-logo.png
 preview: true
 work-type: 
     - Applied cryptography 

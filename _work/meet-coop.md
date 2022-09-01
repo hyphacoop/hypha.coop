@@ -1,6 +1,6 @@
 ---
 title: Online Meeting Co-operative 
-logo:
+logo: /assets/images/logos/meet-logo.png
 work-type: 
     - Co-operative governance 
     - Open source development 

@@ -80,11 +80,11 @@ mark {
 .root {
   background-image: url(/assets/images/root1.png);
 }
-.root-2 {
-  background-image: url(/assets/images/root2-crop.png);
-  background-repeat: no-repeat;
-  background-position: top right;
-  background-size: 40%;
+.root-and-lines {
+  background-image: url(/assets/images/root2-crop.png), url(/assets/images/footer1.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top right, bottom right;
+  background-size: 40%, 20%;
 }
 .block {
   background-image: url(/assets/images/block1.png);
@@ -94,6 +94,9 @@ mark {
 }
 .electric-lines {
   background-image: url(/assets/images/footer1.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 20%;
 }
 .canopy {
   background-image: url(/assets/images/canopy2.png);

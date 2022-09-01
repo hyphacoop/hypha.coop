@@ -1,6 +1,6 @@
 ---
 title: Distributed Press and COMPOST
-logo:
+logo: /assets/images/logos/compost-logo.png
 work-type: 
     - Collective publishing 
     - Community stewardship 
