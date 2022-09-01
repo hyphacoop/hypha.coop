@@ -3,35 +3,33 @@ menu_title: Home
 layout: default
 order: 1
 what_we_do:
-  - title: DWEB & Blockchain
-    description: DWEB Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-  - title: P2P Protocols
-    description: P2P Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  - title: Decentralized web projects
+    description: We build decentralized web protocols (see our <a href="https://distributed.press/">Distributed Press initiative</a>) and contribute to distributed ledger and blockchain-based projects. Hypha believes peer-to-peer technologies will transform traditional digital hierarchies.
   - title: Capacity Development
-    description: Community Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-  - title: Governance
-    description: Governance Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    description: "Capacity development is context dependent: we collaborate to understand where you are and where you need to go. If you’re a co-operative or a collective, Hypha has the lived experience and technical expertise to help you flourish."
+  - title: Governance guidance
+    description: We’re a co-op, so we know about the intricacies of working in a coordinated and democratic way. Hypha advises on decentralized governance challenges, and helps cultivate community ownership strategies.
 values:
   - title: Curiosity
-    description: Curiosity Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-  - title: Intersectionality
-    description: InterLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+    description: We embrace diverse perspectives, and approach our work with wonder and openness. We move thoughtfully and joyfully toward the futures we imagine.
   - title: Honesty
-    description: Honesty Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+    description: We strive to be clear and direct in our communication with each other and those with whom we collaborate. We endeavour to gracefully accept, and act on, feedback when it is given.
+  - title: Intersectionality
+    description: We recognize, and work across, differences. We acknowledge the ongoing history of oppression and marginalization in our society and workplaces, and strive for Hypha to be a safe harbour to all. 
   - title: Self-Agency
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+    description: We choose the projects we work on. We are committed to upholding the financial security of our members and collaborators by fairly valuing the work we do.
   - title: Solidarity
-    description: Solidarity Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    description: We serve our clients, members, neighbours, and the co-operative movement the world over. Hypha embodies the <a href="https://www.ica.coop/en/cooperatives/cooperative-identity">co-operative values</a> and seeks change that strengthens our communities and nurtures our planet.
 ---
-
 {%- include sections.html path="about.html" class="" -%}
 {%- include sections.html path="what-we-do.html" class="" -%}
 {%- include sections.html path="work-preview.html" class="" -%}
 {%- include sections.html path="who-we-are.html" class="" -%}
 {%- include sections.html path="our-values.html" class="" -%}
 {%- include sections.html path="work-with-us.html" class="mv5" -%}
-
+  <!-- <script src="{{ base.url | prepend: site.url }}/assets/js/index-items-list.js" defer></script> -->
   <script>
+    
     function makeVisible(id, section) {
       const visibleElement = document.getElementById(`${id}-description`)
       const allValuesClass = visibleElement.className;
@@ -74,4 +72,5 @@ values:
 
     initialState()
 
-  </script>
+  
+    </script>

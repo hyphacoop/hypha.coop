@@ -3,10 +3,9 @@
 
   {%- include head.html -%}
 
-  <body class="sans-serif antialiased debug">
+  <body class="sans-serif antialiased debug  {% unless page.title == 'Dripline' %} root-and-lines {% else %} electric-lines {% endunless %}">
 
     {%- include sections.html tag="header" path="header.html" class="pt4 flex items-baseline mw9 center justify-between" -%}
-
     <main class="mw9 center">
       {{ content }}
     </main>
@@ -14,5 +13,4 @@
     {%- include sections.html tag="footer" path="footer.html" class="mw9 center mv5" -%}
 
   </body>
-
 </html>

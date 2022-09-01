@@ -1,6 +1,6 @@
 ---
 title: Restructuring Futures
-logo:
+logo: /assets/images/logos/rsf-logo.png
 preview: true
 work-type: 
     - Alternative economies 
