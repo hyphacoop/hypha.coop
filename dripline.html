@@ -5,40 +5,61 @@ excerpt: "A dripline signifies the area under the outermost branches of a tree. 
 menu_title: Dripline
 order: 4
 ---
+
 {% assign posts = site.posts %}
 
 <section class="mt4 ph3 pl5-l">
-  <header>
-<div class="flex-l items-center mv2">
-  <div class="w-100-l mb6">
-    
-    <h3 class=" f2 f1-m f-subheadline-l accent normal sans-serif mb4 lh-solid">
-      {{ page.title }}
-    </h3>
-    <div class="f3 measure-wide  lh-copy mb0">
-       A place for our collective writing ranging from short posts, to interviews, design retrospectives, and essays. We publish on a monthly schedule and draw inspiration and analogies from permaculture, forestry, gardening, and other natural concepts. 
-      <p class="f4"><em>
-      A dripline signifies the area under the outermost branches of a tree.
-      It’s this <a href="https://permacultureprinciples.com/principles/_11/" target="_blank" class="accent link underline-hover" rel="noopener">interface</a> between worlds where interesting and productive things happen.
-      </em></p>
-  </div>
-  </div>
-</div>
-  </header>
-  {%- if posts.size > 0 -%}
-    <div class="flex flex-wrap justify-center">
-      {%- assign date_format = site.date_format -%}
-      {%- for post in posts -%}
-      <div class="measure pr4-l pl4-l pr0-s pl0-s center mb5 db">
-        <a class="no-underline" href="{{ post.url | relative_url }}">
-          <h3 class="f3 mt0 mb2 sans-serif normal accent link underline-hover lh-title">
-            {{ post.title | escape }}
-          </h3>
-        </a>
-          <h4 class="f5 fw6 gray mt0">{%- if post.author != "Hypha" -%}{{ post.author }},&nbsp;{%- endif -%}{{ post.date | date: date_format }}</h4>
-          <p class="mt0 f5 mb3  measure lh-copy">{{ post.excerpt }}</p>
+  <header class="h5 ma0 pa0">
+    <!-- <div class="flex-l items-center mv2">
+      <div class="w-100-l mb6">
+        <h3
+          class="f2 f1-m f-subheadline-l accent normal sans-serif mb4 lh-solid"
+        >
+          {{ page.title }}
+        </h3>
+        <div class="f3 measure-wide lh-copy mb0">
+          A place for our collective writing ranging from short posts, to
+          interviews, design retrospectives, and essays. We publish on a monthly
+          schedule and draw inspiration and analogies from permaculture,
+          forestry, gardening, and other natural concepts.
+          <p class="f4">
+            <em>
+              A dripline signifies the area under the outermost branches of a
+              tree. It’s this
+              <a
+                href="https://permacultureprinciples.com/principles/_11/"
+                target="_blank"
+                class="accent link underline-hover"
+                rel="noopener"
+                >interface</a
+              >
+              between worlds where interesting and productive things happen.
+            </em>
+          </p>
+        </div>
       </div>
-      {%- endfor -%}
+    </div> -->
+  <div class="canopy contain mw-100 mh-100 pa0 ma0"></div>
+  </header>
+  <img src="/assets/images/canopy2.png" alt="canopy"></img>
+  {%- if posts.size > 0 -%}
+  <div class="flex flex-wrap justify-center">
+    {%- assign date_format = site.date_format -%} {%- for post in posts -%}
+    <div class="measure pr4-l pl4-l pr0-s pl0-s center mb5 db">
+      <a class="no-underline" href="{{ post.url | relative_url }}">
+        <h3
+          class="f3 mt0 mb2 sans-serif normal accent link underline-hover lh-title"
+        >
+          {{ post.title | escape }}
+        </h3>
+      </a>
+      <h4 class="f5 fw6 gray mt0">
+        {%- if post.author != "Hypha" -%}{{ post.author }},&nbsp;{%- endif -%}{{
+        post.date | date: date_format }}
+      </h4>
+      <p class="mt0 f5 mb3 measure lh-copy">{{ post.excerpt }}</p>
     </div>
+    {%- endfor -%}
+  </div>
   {%- endif -%}
 </section>
