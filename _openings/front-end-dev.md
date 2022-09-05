@@ -12,13 +12,13 @@ excerpt_separator: <!-- more -->
 ---
 <a>Hypha Worker Co-operative</a> (Hypha) is looking for an <b>intermediate Front End Developer</b> to work on several exciting projects at the intersection of arts/culture and technology. <!-- more --> You will work as the lead developer on a small but dedicated team of strategists and designers to bring these projects to life. This full-time position is a contract to start, with the potential to become a permanent co-op member.
 
-Hypha is a tech co-operative, so we do things <a href="">a little differently</a> (and a little better, we like to think). Ideally, you are excited about participating in a co-operative, building the solidarity economy, and engaging in discussions on rethinking social structures and the politics of technologies.
+Hypha is a tech co-operative, so we do things <a href="https://hypha.coop/dripline/how-we-co-operate/">a little differently</a> (and a little better, we like to think). Ideally, you are excited about participating in a co-operative, building the solidarity economy, and engaging in discussions on rethinking social structures and the politics of technologies.
 ## Here are some of the things you’ll do
 As a Front End Developer, you will be working on several different, technologically diverse, projects. In this role, we’ll ask you to:  
 
 * Work closely with the UX lead and project team to design and code new features for our projects intersecting art, publishing, and decentralized technologies
 * Collaborate with the project team to determine how to extend features on a radical rethinking of an online meeting tool for artists and cultural workers (think: the anti-Zoom)
-* Work with designers to support the development of the next issue of <a>COMPOST</a>, a magazine about the digital commons, which is built on a static site generator and published onto the InterPlanetary File System (IPFS)
+* Work with designers to support the development of the next issue of <a href="https://two.compost.digital/about/">COMPOST</a>, a magazine about the digital commons, which is built on a static site generator and published onto the InterPlanetary File System (IPFS)
 * Contribute to various front end projects across decentralized technology and Web3 ecosystems
 * Lead code reviews, and conduct reviews of proposed technologies and tools to ensure best fit
 * Assist with creating various forms of technical documentation for these open source projects
@@ -45,12 +45,12 @@ Our technical stack includes:
 * Ability to work independently and collaborate in a distributed team environment
 * Strong planning and problem-solving skills with the ability to multitask and meet deadlines
 * Clear and compassionate oral, written, and public communication skills
-* Demonstrated commitment to the principles of equity and diversity with alignment on Hypha’s <a>mission and values</a>
+* Demonstrated commitment to the principles of equity and diversity with alignment on Hypha’s <a href="https://handbook.hypha.coop/vision.html">mission and values</a>
 
-We understand that no one person has all the qualifications listed here, so please apply if you have relevant experience and are interested in this role. To see more of the technologies we use and how we work together, check out our <a>GitHub organization</a>.
+We understand that no one person has all the qualifications listed here, so please apply if you have relevant experience and are interested in this role. To see more of the technologies we use and how we work together, check out our <a href="https://github.com/hyphacoop">GitHub organization</a>.
 
 ## More about us
-<a>Hypha Worker Co-operative</a> is a non-profit worker co-op based in Tkaronto (Toronto). We collaborate with communities to build better relationships with technology. Hypha’s work includes p2p and blockchain-based projects, and technical capacity development and governance consultation for co-operatives, collectives, and decentralized communities. You can read more about our mission, vision, and values, and how we work together in <a href="https://handbook.hypha.coop/">our organizational handbook</a>. 
+<a href="https://hypha.coop">Hypha Worker Co-operative</a> is a non-profit worker co-op based in Tkaronto (Toronto). We collaborate with communities to build better relationships with technology. Hypha’s work includes p2p and blockchain-based projects, and technical capacity development and governance consultation for co-operatives, collectives, and decentralized communities. You can read more about our mission, vision, and values, and how we work together in <a href="https://handbook.hypha.coop/">our organizational handbook</a>. 
 As a remote-first organization that strives toward sustainable livelihoods for all our members, we accommodate flexible schedules and work arrangements. We are committed to the <a href="https://www.ica.coop/en/cooperatives/cooperative-identity">co-operative principles</a>, which provide a pathway for all employees to permanent membership. We are looking to build long-term relationships with contractors who are potentially interested in joining our co-operative as a member in the future. <b>If working openly on value-driven technology is your jam, let’s talk!</b>
 
 ## Location
