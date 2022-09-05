@@ -1,7 +1,6 @@
 ---
 title: Restructuring Futures
-logo: /assets/images/logos/rsf-logo.png
-preview: true
+logo: /assets/images/logos/ccfa-logo.png
 work-type: 
     - Alternative economies 
     - Embodied creation 

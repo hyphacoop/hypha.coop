@@ -28,16 +28,22 @@ order: 3
     {% assign works = site.work | sort: 'order' %}
     {% for work in works %}
         <div class="w-33-l w-50-m w-100-s flex-column justify-left items-left center mb4 tl pl4-l pr4-l pl3-m pr3-m">
-            <img class="mw-100 pv0  tc f4   v-mid white  contain mb4" src="{{ work.logo }}" alt="logo"></img>
+            <div class="relative mb4">
+
+            <img class="relative" src="/assets/images/logos/logo-background.jpg" alt="logo"></img>
+            {% if work.logo %}
+             <img class="absolute top-0 left-0" src="{{ work.logo }}" alt="logo"></img>
+            {% endif %}
+            </div>
             <h2 class="f3 sans-serif accent">{{ work.title }}</h2>
-            <div class="pb3 f4 lh-copy">{{ work.content | markdownify }}</div>
-            <!-- <div class="">
+            <div class="mb2 f4 lh-copy">{{ work.content | markdownify }}</div>
+            <div class="">
               {% for work-type in work.work-type %}
-              <p class="accent bw0  b--accent ba ph1 pv1 mv1 mh1 lh-solid br-pill"> 
-              #{{ work-type }}
+              <p class="accent mv2">
+              {{ work-type }}
               </p>
               {% endfor %}
-            </div> -->
+            </div>
         </div>
     {% endfor %}
 </div>

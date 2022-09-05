@@ -1,6 +1,5 @@
 ---
 title: Sacred Stacks
-logo: 
 work-type: 
     - Decentralized tech literacy 
     - p2p communications 
