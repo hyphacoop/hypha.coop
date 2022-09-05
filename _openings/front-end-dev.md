@@ -51,6 +51,7 @@ We understand that no one person has all the qualifications listed here, so plea
 
 ## More about us
 <a href="https://hypha.coop">Hypha Worker Co-operative</a> is a non-profit worker co-op based in Tkaronto (Toronto). We collaborate with communities to build better relationships with technology. Hypha’s work includes p2p and blockchain-based projects, and technical capacity development and governance consultation for co-operatives, collectives, and decentralized communities. You can read more about our mission, vision, and values, and how we work together in <a href="https://handbook.hypha.coop/">our organizational handbook</a>. 
+
 As a remote-first organization that strives toward sustainable livelihoods for all our members, we accommodate flexible schedules and work arrangements. We are committed to the <a href="https://www.ica.coop/en/cooperatives/cooperative-identity">co-operative principles</a>, which provide a pathway for all employees to permanent membership. We are looking to build long-term relationships with contractors who are potentially interested in joining our co-operative as a member in the future. <b>If working openly on value-driven technology is your jam, let’s talk!</b>
 
 ## Location
