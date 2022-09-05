@@ -1,6 +1,7 @@
 ---
 title: Cosmos
 logo: /assets/images/logos/cosmos-logo.png
+preview: true
 work-type: 
     - Blockchain development
     - Community stewardship
