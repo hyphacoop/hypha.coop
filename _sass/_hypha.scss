@@ -86,6 +86,24 @@ mark {
   background-position: top right, bottom right;
   background-size: 40%, 20%;
 }
+.mushroom-and-lines {
+  background-image: url(/assets/images/work-1.png), url(/assets/images/footer1.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top right, bottom right;
+  background-size: 17%, 20%;
+}
+.network-and-lines {
+  background-image: url(/assets/images/default-2-alt.jpg), url(/assets/images/footer1.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top right, bottom right;
+  background-size: 30%, 20%;
+}
+.dripline-and-lines {
+  background-image: url(/assets/images/dripline-2.png), url(/assets/images/footer1.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top right, bottom right;
+  background-size: 30%, 20%;
+}
 .block {
   background-image: url(/assets/images/block1.png);
 }
