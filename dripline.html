@@ -18,10 +18,6 @@ order: 4
           {{ page.title }}
         </h3>
         <div class="f3 measure-wide lh-copy mb0">
-          A place for our collective writing ranging from short posts, to
-          interviews, design retrospectives, and essays. We publish on a monthly
-          schedule and draw inspiration and analogies from permaculture,
-          forestry, gardening, and other natural concepts.
           <p class="f4">
             <em>
               A dripline signifies the area under the outermost branches of a
@@ -35,7 +31,8 @@ order: 4
               >
               between worlds where interesting and productive things happen.
             </em>
-          </p>
+          </p>A place for our collective writing ranging from short posts, to
+          interviews, design retrospectives, and essays. 
         </div>
       </div>
     </div>
@@ -44,7 +41,7 @@ order: 4
   {%- if posts.size > 0 -%}
   <div class="flex flex-wrap justify-center">
     {%- assign date_format = site.date_format -%} {%- for post in posts -%}
-    <div class="measure pr4-l pl4-l pr0-s pl0-s center mb5 db">
+    <div class="bg-white measure pv3 pr6-l pl0-l pr0-s pl0-s center mb4 db">
       <a class="no-underline" href="{{ post.url | relative_url }}">
         <h3
           class="f3 mt0 mb2 sans-serif normal accent link underline-hover lh-title"
