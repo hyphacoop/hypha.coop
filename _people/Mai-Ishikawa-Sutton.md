@@ -1,7 +1,7 @@
 ---
 name: 'Mai Ishikawa Sutton'
 pronouns: '(they/them)'
-avatar: https://boredhumans.b-cdn.net/faces2/144.jpg
+avatar: avatar-2-primary-line.jpg
 ---
 Mai is a contributor to Hypha. They are an organizer and writer focused on the digital commons and other intersections between network technologies and the solidarity economy. 
 

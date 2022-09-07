@@ -1,15 +1,13 @@
 <div class="flex flex-wrap justify-start mb4 contain">
   {% for person in site.people %}
-  <article class="w-33-l pl4 pr4 mb6 center">
-    <div class="flex">
-      <!-- <img src="{{ person.avatar }}" -->
-      <!-- class="br-100 h5 w5 dib" title="Photo of a kitty staring at you"> -->
-      <div class="h4 w4 bg-accent tc white f3 v-mid pt4">avatar</div>
-      <div class="pl4 w-50 pt0 pt0-l">
+  <article class="w-33-l pl0 pr6  mb6 center">
+    <div class="flex items-end">
+      <img src="/assets/images/avatars/{{ person.avatar }}" alt="{{ person.name }}" class=" w4  tc white f3 v-mid h4"></img>
+      <div class="pl4 w-50 pt0 pt0-l v-btm pb0">
         <div class="f3 lw-5 accent pt0 pt0-l lh-title pb1">
           <b>{{ person.name }}</b>
         </div>
-        <h2 class="f4 fw4 mt0">{{ person.pronouns }}</h2>
+        <h2 class="f4 fw4 pb0 mb0 mt0">{{ person.pronouns }}</h2>
       </div>
     </div>
     <div

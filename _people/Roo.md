@@ -1,7 +1,7 @@
 ---
 name: 'Roo'
 pronouns: '(he/him)'
-avatar: https://boredhumans.b-cdn.net/faces2/155.jpg
+avatar: roo.png
 ---
 Roo was born on the 25th of February 2022 to the collective care of Hypha staff. At his inception he was a small purple sphere; as he grows he will surely adopt new colours as he figures out who he is!
 

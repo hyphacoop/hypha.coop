@@ -1,7 +1,7 @@
 ---
 name: 'Mauve'
 pronouns: '(they/them)'
-avatar: https://boredhumans.b-cdn.net/faces2/143.jpg
+avatar: avatar-2-primary-line.jpg
 ---
 Mauve is a decentralized software consultant who has been working on everything from setting up local mesh networks, local-first file transfer apps, a decentralized web browser, and to a peer to peer virtual reality.
 
