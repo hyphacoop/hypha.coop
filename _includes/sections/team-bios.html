@@ -1,5 +1,6 @@
 <div class="flex flex-wrap justify-start mb4 contain">
   {% for person in site.people %}
+  {% if person.hidden != true %}
   <article class="w-33-l pl0 pr6  mb6 center">
     <div class="flex items-end">
       <img src="/assets/images/avatars/{{ person.avatar }}" alt="{{ person.name }}" class=" w4  tc white f3 v-mid h4"></img>
@@ -24,6 +25,7 @@
       {% endunless %}
     </div>
   </article>
+  {% endif %}
   {% endfor %}
 </div>
 <script>

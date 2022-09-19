@@ -1,7 +1,7 @@
 ---
 name: 'Udit Vira'
 pronouns: '(he/him)'
-avatar: avatar-3-alt.jpg
+avatar: Udit.png
 ---
 Udit is an engineer, strategist, and co-founding member of Hypha Worker Co-operative, where his focus is on the design and governance of various p2p and blockchain projects.
 

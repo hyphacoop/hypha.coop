@@ -1,7 +1,7 @@
 ---
 name: 'Dante Armando Sanchez'
 pronouns: '(he/him)'
-avatar: avatar-2-primary.jpg
+avatar: Dante.png
 ---
 Dante is an engineer and probationary member of Hypha Worker Co-operative, where he is dedicated to planning and building tooling for peer-to-peer networks.
 

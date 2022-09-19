@@ -80,29 +80,35 @@ mark {
 .root {
   background-image: url(/assets/images/root1.png);
 }
-.root-and-lines {
-  background-image: url(/assets/images/root2-crop.png), url(/assets/images/footer1.png);
-  background-repeat: no-repeat, no-repeat;
-  background-position: top right, bottom right;
-  background-size: 40%, 20%;
-}
-.mushroom-and-lines {
-  background-image: url(/assets/images/work-1.png), url(/assets/images/footer1.png);
-  background-repeat: no-repeat, no-repeat;
-  background-position: top right, bottom right;
-  background-size: 17%, 20%;
-}
-.network-and-lines {
-  background-image: url(/assets/images/default-2-2.jpg), url(/assets/images/footer1.png);
-  background-repeat: no-repeat, no-repeat;
-  background-position: top right , bottom right;
-  background-size: 23%, 20%;
-}
-.dripline-and-lines {
-  background-image: url(/assets/images/dripline-2.png), url(/assets/images/footer1.png);
-  background-repeat: no-repeat, no-repeat;
-  background-position: top right, bottom right;
-  background-size: 30%, 20%;
+@media #{$breakpoint-large} {
+  .root-and-lines {
+    background-image: url(/assets/images/root2-crop.png),
+      url(/assets/images/footer1.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top right, bottom right;
+    background-size: 40%, 20%;
+  }
+  .mushroom-and-lines {
+    background-image: url(/assets/images/work-1.png),
+      url(/assets/images/footer1.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top right, bottom right;
+    background-size: 12%, 20%;
+  }
+  .network-and-lines {
+    background-image: url(/assets/images/default-2-2.jpg),
+      url(/assets/images/footer1.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top right, bottom right;
+    background-size: 23%, 20%;
+  }
+  .dripline-and-lines {
+    background-image: url(/assets/images/dripline-2.png),
+      url(/assets/images/footer1.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top right, bottom right;
+    background-size: 30%, 20%;
+  }
 }
 .block {
   background-image: url(/assets/images/block1.png);
@@ -125,15 +131,17 @@ mark {
 
 .mbtablestyle {
   border-collapse: collapse;
-  > table, td, th {
-      border: 1px solid black;
-      padding: 0.25em;
+  > table,
+  td,
+  th {
+    border: 1px solid black;
+    padding: 0.25em;
   }
 }
 
 // Section templates
 
-//for section headers 
+//for section headers
 h1 {
   @extend .f2;
   @extend .f1-m;
@@ -170,6 +178,7 @@ a.no-underline:hover {
   @extend .no-underline;
 }
 
-#what_we_do div.accent:hover, #values div.accent:hover {
+#what_we_do div.accent:hover,
+#values div.accent:hover {
   background-color: lighten($accent-color, 45%);
 }

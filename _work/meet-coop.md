@@ -7,7 +7,7 @@ work-type:
     - Operational & financial infrastructure 
     - Product strategy 
     - Server management
-excerpt: 'Hypha is a core operational member of the <a class="link accent" href="https://www.meet.coop/">Online Meeting Co-operative</a>, which provides videoconferencing services as a multistakeholder co-operative.'
+excerpt_separator: <!-- more -->
 order: 6
 ---
-Hypha is a core operational member of the <a class="link accent" href="https://www.meet.coop/">Online Meeting Co-operative</a>, which provides videoconferencing services as a multistakeholder co-operative. We work across several sociocracy circles, supporting both day-to-day operations and long-term strategies.
+Hypha is a core operational member of the <a class="link accent" href="https://www.meet.coop/">Online Meeting Co-operative</a>, which provides videoconferencing services as a multistakeholder co-operative.<!-- more --> We work across several sociocracy circles, supporting both day-to-day operations and long-term strategies.
