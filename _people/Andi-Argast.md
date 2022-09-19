@@ -1,7 +1,7 @@
 ---
 name: 'Andi Argast'
 pronouns: '(she/her)'
-avatar: avatar-1-line.jpg
+avatar: Andi.png
 excerpt_separator: <!-- more -->
 ---
 Andi is a strategist, researcher, and facilitator. She is currently a probationary member of Hypha Worker Co-operative.
