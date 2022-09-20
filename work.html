@@ -40,7 +40,7 @@ order: 3
               class="mb2 f4 lh-copy pointer"
               data-excerpt='{{ work.excerpt | markdownify }}'
               data-content='{{ work.content | markdownify }}'
-              data-types='<p>{% for type in work.work-type %}{{type}}; {% endfor %}</p>'
+              data-types='<p>Tags: <em>{% for type in work.work-type %}{{type}}; {% endfor %}</em></p>'
               data-toggled="false"
               id="{{ work.title }}"
               onclick="toggleBio(this.id, this.dataset.excerpt, this.dataset.content, this.dataset.types);"
