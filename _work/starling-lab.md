@@ -8,8 +8,7 @@ work-type:
     - Content authenticity 
     - Digital archives 
     - Distributed storage
-excerpt_separator: <!-- more -->
+# excerpt_separator: <!-- more -->
 order: 2
 ---
-Alongside experts in news media, historical preservation, and legal accountability, Hypha members work within 
-<a class="link accent" href="https://www.starlinglab.org/">Starling Lab for Data Integrity</a> to build truthful digital ecosystems.
+Alongside experts in news media, historical preservation, and legal accountability, Hypha members work within <a class="link accent" href="https://www.starlinglab.org/">Starling Lab for Data Integrity</a> to build truthful digital ecosystems.

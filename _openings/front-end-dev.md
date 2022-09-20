@@ -9,8 +9,9 @@ start-date: 2022-09-01
 end-date: 2022-12-01
 prepared-on-date: 2022-08-15
 excerpt_separator: <!-- more -->
+excerpt: "<p>Hypha Worker Co-operative (Hypha) is looking for an intermediate Front End Developer to work ons everal exciting projects at the intersection of arts/culture and technology.</p>"
 ---
-<a>Hypha Worker Co-operative</a> (Hypha) is looking for an <b>intermediate Front End Developer</b> to work on several exciting projects at the intersection of arts/culture and technology. <!-- more --> You will work as the lead developer on a small but dedicated team of strategists and designers to bring these projects to life. This full-time position is a contract to start, with the potential to become a permanent co-op member.
+<a href='https://hypha.coop'>Hypha Worker Co-operative</a> (Hypha) is looking for an <b>intermediate Front End Developer</b> to work on several exciting projects at the intersection of arts/culture and technology. <!-- more --> You will work as the lead developer on a small but dedicated team of strategists and designers to bring these projects to life. This full-time position is a contract to start, with the potential to become a permanent co-op member.
 
 Hypha is a tech co-operative, so we do things <a href="https://hypha.coop/dripline/how-we-co-operate/">a little differently</a> (and a little better, we like to think). Ideally, you are excited about participating in a co-operative, building the solidarity economy, and engaging in discussions on rethinking social structures and the politics of technologies.
 ## Here are some of the things you’ll do
