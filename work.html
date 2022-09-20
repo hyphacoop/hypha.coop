@@ -36,14 +36,24 @@ order: 3
             {% endif %}
             </div>
             <h2 class="f3 sans-serif accent">{{ work.title }}</h2>
-            <div class="mb2 f4 lh-copy">{{ work.content | markdownify }}</div>
-            <div class="">
+            <div 
+              class="mb2 f4 lh-copy {% unless work.excerpt == work.content %} pointer {% endunless %}"
+              data-excerpt='{{ work.excerpt | markdownify }}'
+              data-content='{{ work.content | markdownify }}'
+              data-toggled="false"
+              id="{{ work.title }}"
+              onclick="toggleBio(this.id, this.dataset.excerpt, this.dataset.content);"
+            >
+            {{ work.excerpt | markdownify }} {% unless work.excerpt == work.content %} <p class="mv0 link accent">[read more]</p>
+          {% endunless %}
+        </div>
+            <!-- <div class="">
               {% for work-type in work.work-type %}
               <p class="accent mv2">
               {{ work-type }}
               </p>
               {% endfor %}
-            </div>
+            </div> -->
         </div>
     {% endfor %}
 </div>
