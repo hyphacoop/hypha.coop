@@ -37,15 +37,18 @@ order: 3
             </div>
             <h2 class="f3 sans-serif accent">{{ work.title }}</h2>
             <div 
-              class="mb2 f4 lh-copy {% unless work.excerpt == work.content %} pointer {% endunless %}"
+              class="mb2 f4 lh-copy pointer"
               data-excerpt='{{ work.excerpt | markdownify }}'
               data-content='{{ work.content | markdownify }}'
+              data-types='<p>{% for type in work.work-type %}{{type}}; {% endfor %}</p>'
               data-toggled="false"
               id="{{ work.title }}"
-              onclick="toggleBio(this.id, this.dataset.excerpt, this.dataset.content);"
+              onclick="toggleBio(this.id, this.dataset.excerpt, this.dataset.content, this.dataset.types);"
             >
-            {{ work.excerpt | markdownify }} {% unless work.excerpt == work.content %} <p class="mv0 link accent">[read more]</p>
-          {% endunless %}
+            <p>
+            {{ work.excerpt | markdownify }}
+            </p>
+          <p class="mv0 link accent">[read more]</p>
         </div>
             <!-- <div class="">
               {% for work-type in work.work-type %}
@@ -59,16 +62,16 @@ order: 3
 </div>
 </section>
 <script>
-  function toggleBio(id, excerpt, content) {
+  function toggleBio(id, excerpt, content, types) {
     const toggleable = excerpt == content;
-    if (!toggleable) {
+    if (true) {
       const el = document.getElementById(id);
       let toggled = document.getElementById(id).dataset.toggled;
       if (toggled == "true") {
         el.innerHTML = excerpt + "<p class='mv0 link accent'> [read more] </p>";
         el.dataset.toggled = false;
       } else {
-        el.innerHTML = content + "<p class='mv0 link accent'> [read less] </p>";
+        el.innerHTML = content + types + "<p class='mv0 link accent'> [read less] </p>";
         el.dataset.toggled = true;
       }
     }
