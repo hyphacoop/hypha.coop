@@ -1,0 +1,11 @@
+#dripline {
+    h2 {
+        @extend .f2;
+    }
+    ul {
+        @extend .f4;
+    }
+    p {
+        @extend .lh-copy;
+    }
+}

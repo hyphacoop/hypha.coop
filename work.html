@@ -19,7 +19,7 @@ order: 3
       <em >Hypha is a word from Ancient Greek meaning 'web' (plural hyphae); referring to one of the threads that make up the mycelium of a fungus.</em> 
       </p>
       
-      In ecology, hyphae provide sustenance and communication between living organisms. Drawing inspiration from this infinitely adaptive, complex system, we bring these traits to our work: rooted in knowledge, yet boundless in imagination.
+      In ecology, hyphae provide sustenance and communication between living organisms. Drawing inspiration from this infinitely adaptive, complex structure, we bring these traits to our work: rooted in knowledge, yet boundless in imagination.
 
   </div>
 </div>
@@ -40,7 +40,7 @@ order: 3
               class="mb2 f4 lh-copy pointer"
               data-excerpt='{{ work.excerpt | markdownify }}'
               data-content='{{ work.content | markdownify }}'
-              data-types='<p>Tags: <em>{% for type in work.work-type %}{{type}}; {% endfor %}</em></p>'
+              data-types='<p>Keywords: <em>{% for type in work.work-type %}{{type}}; {% endfor %}</em></p>'
               data-toggled="false"
               id="{{ work.title }}"
               onclick="toggleBio(this.id, this.dataset.excerpt, this.dataset.content, this.dataset.types);"
