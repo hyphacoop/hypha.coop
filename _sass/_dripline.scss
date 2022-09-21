@@ -8,4 +8,11 @@
     p {
         @extend .lh-copy;
     }
+    figure {
+        // @extend .pa0;
+        @extend .ma0;
+    }
+    img {
+        @extend .w-100;
+    }
 }
