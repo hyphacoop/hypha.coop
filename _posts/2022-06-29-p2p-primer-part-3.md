@@ -1,6 +1,6 @@
 ---
 title: 'Finding friends and staying safe: comparing peer discoverability and security in p2p networks'
-author: MAUVE
+author: Mauve
 date: 2022-06-29
 acknowledgement: 'Mauve is a tech enthusiast with a passion for decentralization. Among their many projects, they are currently developing Agregore, a web browser that combines different peer to peer protocols.'
 excerpt: 'Part 3 of our P2P Primer'
