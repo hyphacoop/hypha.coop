@@ -1,0 +1,18 @@
+#dripline {
+    h2 {
+        @extend .f2;
+    }
+    ul {
+        @extend .f4;
+    }
+    p {
+        @extend .lh-copy;
+    }
+    figure {
+        // @extend .pa0;
+        @extend .ma0;
+    }
+    img {
+        @extend .w-100;
+    }
+}

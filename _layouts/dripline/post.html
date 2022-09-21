@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<section class="mt4 ph3 ph5-l">
+<section class="mt4 ph3 ph5-l" id="dripline">
   <div class="mb4">
     <a class="sans-serif link underline-hover accent" title="Return to Dripline" href="{% link dripline.html %}">← Dripline</a>
     <p class="sans-serif">
@@ -11,8 +11,8 @@ layout: default
     </p>
   </div>
   <header class="mb4">
-    <h1 class="f1 f-subheadline-l sans-serif lh-solid mb3 mt0-l">{{ page.title }}</h1>
-    <h2 class="gray f6 f5-l lh-solid mt0">{{ page.date | date: site.date_format }}</h2>
+    <h1 class="f1  sans-serif lh-solid mb3 mt0-l">{{ page.title }}</h1>
+    <h3 class="gray f6 f5-l lh-solid mt0">{{ page.date | date: site.date_format }}</h3>
   </header>
   <div class="lh-copy mw7 links-accent links-underline-hover">
     {% if page.author != "" or page.author != nil %}
