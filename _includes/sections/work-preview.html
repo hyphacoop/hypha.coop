@@ -1,9 +1,9 @@
 <div class="mb5 ">
   <h2 class="">Selected work</h2>
-  <div class="flex flex-between">
+  <div class="flex flex-between flex-wrap">
     {% assign works = site.work | where: 'preview', 'true' | sort: 'order' %} {%
     for work in works | where: 'preview', 'true' %}
-    <div class="w-33 flex-column justify-left items-left center pr4 pl4 mb2 tl">
+    <div class="w-33-l flex-column justify-left items-left center pr4 pl4 mb2 tl">
       <!-- <div class="w-100 h4 pv3 tl pl3 white bg-accent">Logo</div> -->
       <h2 class="f3 sans-serif accent">{{ work.title }}</h2>
       <div class="pb3 f4 lh-copy">{{ work.excerpt | markdownify }}</div>
