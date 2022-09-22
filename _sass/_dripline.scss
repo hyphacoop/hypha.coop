@@ -1,6 +1,7 @@
 #dripline {
     h2 {
-        @extend .f2;
+        @extend .f2-ns;
+        @extend .f3;
     }
     ul {
         @extend .f4;

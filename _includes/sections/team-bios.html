@@ -1,7 +1,7 @@
 <div class="flex flex-wrap justify-start mb4 contain">
   {% for person in site.people %}
   {% if person.hidden != true %}
-  <article class="w-33-l pl0 pr6  mb6 center">
+  <article class="w-33-l pl0 pr6-ns  mb6 center">
     <div class="flex items-end">
       <img src="/assets/images/avatars/{{ person.avatar }}" alt="{{ person.name }}" class=" w4  tc white f3 v-mid h4"></img>
       <div class="pl4 w-50 pt0 pt0-l v-btm pb0">
@@ -12,7 +12,7 @@
       </div>
     </div>
     <div
-      class="lh-copy measure center f5 pt3 {% unless person.excerpt == person.content %} pointer {% endunless %}"
+      class="lh-copy measure center f5 pt3 "
       data-excerpt="{{ person.excerpt }}"
       data-content="{{ person.content }}"
       data-toggled="false"
@@ -21,7 +21,7 @@
     >
       {{ person.excerpt | markdownify }} {% unless person.excerpt ==
       person.content %}
-      <p class="mv0 link accent">[read more]</p>
+      <p class="mv0 link accent {% unless person.excerpt == person.content %} pointer {% endunless %}">[read more]</p>
       {% endunless %}
     </div>
   </article>
@@ -35,10 +35,10 @@
       const el = document.getElementById(id);
       let toggled = document.getElementById(id).dataset.toggled;
       if (toggled == "true") {
-        el.innerHTML = excerpt + "<p class='mv0 link accent'> [read more] </p>";
+        el.innerHTML = excerpt + "<p class='mv0 link accent pointer'> [read more] </p>";
         el.dataset.toggled = false;
       } else {
-        el.innerHTML = content + "<p class='mv0 link accent'> [read less] </p>";
+        el.innerHTML = content + "<p class='mv0 link accent pointer '> [read less] </p>";
         el.dataset.toggled = true;
       }
     }
