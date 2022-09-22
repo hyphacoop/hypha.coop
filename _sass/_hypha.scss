@@ -108,8 +108,12 @@ mark {
     background-repeat: no-repeat, no-repeat;
     background-position: top right, bottom right;
     background-size: 30%, 20%;
-  }
+    @media screen and (min-width: 1600px) {
+      background-size: 25%, 20%;    
+    }
 }
+  }
+
 .block {
   background-image: url(/assets/images/block1.png);
 }
