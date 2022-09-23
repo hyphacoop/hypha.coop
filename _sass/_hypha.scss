@@ -77,10 +77,20 @@ mark {
   background-image: url(/assets/images/scaling-3.png);
 }
 
-.root {
-  background-image: url(/assets/images/root1.png);
-}
 @media #{$breakpoint-large} {
+  .work {
+    background-image: url(/assets/images/work-1.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-origin: revert;
+    background-size: 12%;
+  }
+  .footer {
+    background-image: url(/assets/images/footer1.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 20%;
+  }
   .root-and-lines {
     background-image: url(/assets/images/root2-crop.png),
       url(/assets/images/footer1.png);
