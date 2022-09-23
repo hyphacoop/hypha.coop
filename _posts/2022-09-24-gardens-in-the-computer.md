@@ -7,6 +7,10 @@ excerpt: 'The Digital Garden began with our initial seeds: references to publish
 ---
 
 ### {{ page.excerpt }}
+<figure>
+<img src='/assets/images/posts/2022-09-24-garden-01.jpg' />
+<figcaption>Ted Nelson’s Project Xanadu note opened in the Digital Garden <a href="https://digitalgarden.hypha.coop/xanadu">(source)</a></figcaption>
+</figure>
 In the Spring of 2021 Hypha was invited by From Later, friends and foresight studio in Toronto, to participate in a micro-residency as part of The Bentway’s Digital and/as Public Space initiative that included the creation of a mobile game to meander public spaces and a Field Guide. The micro-residency brought together six talented artists, researchers, and designers to examine tensions in navigating the possibilities of online and offline public spaces; an exploration of “the interaction between digital and physical space in order to re-examine public space, overcome access barriers, promote civic engagement, and support community resilience in online, offline, and hybrid contexts.”
 
 Where does one start? The previous year had been the founding of Hypha, and a sort of up-rooting experienced by many, and the invitation to participate in the micro-residency turned out to be a fitting prompt for reflecting on what gave us the motivation to work together and experiment in ways of producing research about the future and the past of networks, which is both legible and expressive.
@@ -18,3 +22,44 @@ Hypertext, RSS (RDF Site Summary or Really Simple Syndication), and publishing w
 ## On Digital Gardens
 
 At the start of the micro-residency we had a variety of references and concepts we wanted to capture. This could have easily taken the form of a document accessible only to those closest to the project. However, there was a definite affinity in making our process and notes public when we really considered the theme of the initiative. This is where the concept of a Digital Garden came to mind; a public notebook of loose thoughts and, in itself, a reference to how technologies like Hyper Text Markup Language (HTML) was originally introduced to transverse documents and allow for emergent connections that are unbounded by chronological order and bi-directional (a thought is structurally connected to another thought and vice versa. Everything is deeply intertwingled). One could transverse the garden via those inline links, or through  visualization nodes and edges representing those connections; a sort of knowledge graph.
+
+<figure>
+<img src='/assets/images/posts/2022-09-24-garden-02.png' />
+<figcaption>Ted Nelson’s Project Xanadu note opened in the Digital Garden <a href="https://digitalgarden.hypha.coop/xanadu">(source)</a></figcaption>
+</figure>
+Digital Gardens are not new concepts on the web, as described in Maggie Appleton’s “A Brief History & Ethos of the Digital Garden”; think wiki-based platforms, note-taking systems like Obsidian, and organizational platforms like Notion. Content and presentation is a consistent experience regardless of subject matter. In contrast to those examples, Digital Gardens have the possibility to be performative, expressive, and emergent. They can be public, and even cozy, spaces to experiment with novel design patterns by their gardeners. They channel intent that the space is shifting over time and prone to new paths. Drawing from Mark Bernstein's 1998 essay Hypertext Gardens:
+
+<p class="pl3"><em>Highways are judged by efficiency: distance, cost, safety, and time. Garden paths play a different role; they lead us through the best routes, not the shortest. They may bend to pace our journey, curving here to reveal a view, twisting there to lead us through a shady grove or a sunny clearing.</em></p>
+
+Through the Digital Garden we are speculating that organizations (offline, online, and somewhere in between) and individuals could be stewards of their own web-based research spaces where the raw notes and inquiry are made visible and available for adaptation. The metaphor of a garden is a starting point; a website could be a house, a stream, or both at once.
+
+In terms of design details in the Digital Garden, we made use of a typeface called Anthony, designed by Sun Young Oh inspired from artworks by British sculptor Anthony Caro. The pseudo-random construction of the characters complimented the sprawl of nodes and edges in the garden; its reference to a sculptor that made use of found industrial materials to construct assemblages feels like an analog to our approach of reanimating networks and protocols in the micro-residency!
+
+This feeling of assemblage is carried through with the visualization of the garden that changes as new connections and notes are added and connections between notes are highlighted. As we grew the garden, the visualization grew as well in fittingly unpredictable ways. It served as a way to not only explore different paths but also an expressive visual artifact explicating how we approached the micro-residency. The visualization was created with D3.js (specifically as a force-directed graph) based on the Digital garden Jekyll project by Maxime Vaillancourt, which our project implementation is based on.
+
+The Digital Garden is built on top of Jekyll, a static site tool that takes documents and creates websites from those files. Our notes are static markdown files that can be kept on a local filesystem or elsewhere such as GitHub. Links between notes are made using a double square bracket notation that looks something like [[name of note]], where “name of note” is the filename of the note being referenced. This pattern is similar to the note transclusion experience of Roam and Obsidian. This is enabled by a Jekyll plugin that constructs bi-directional links from the files. It also generates a JSON file which serves as the data source to draw the Digital Garden’s visualization.
+
+The source code for the garden is available under GNU General Public License for adaptation and reuse for those looking to grow their own gardens, or extend our micro-residency garden with more references and connections.
+
+## Seeds
+
+<figure>
+<img src="/assets/images/posts/2022-09-24-garden-03.png"/>
+<figcaption>Image: Display of connected notes in the Digital Garden <a href="https://digitalgarden.hypha.coop/graph/">(source)</a></figcaption>
+</figure>
+The Digital Garden began with our initial seeds: references to publishing, protocols, RSS, and an approach to “draw from the past to rethink the present through co-operative approaches.” These seeds would inform connections to other seeds in the garden over the course of the micro-residency weaving projects such as the peer-to-peer Beaker Browser to the Post-Digital Publishing Archive, an archive of projects in art and design that explore the relationships between publishing and digital technology.
+
+We considered Border Gateway Protocol (BGP), “the language spoken by routers on the Internet to determine how packets can be sent from one router to another to reach their final destination” and how its limits as a protocol contributed to the fragility of the internet we experience today. In a related way, the garden reflects on the afterlives of RSS and the receding vision of an internet that supports interoperable content publishing.
+<figure>
+<img src="/assets/images/posts/2022-09-24-garden-04.png"/>
+<figcaption>Image: Does the internet dream of…? note opened in the Digital Garden <a href="https://digitalgarden.hypha.coop/graph/">(source)</a></figcaption>
+</figure>
+The seeds in the garden informs a larger set of narratives that we crafted towards the end of the micro-residency and is the most intertwined node in the garden. The vignettes are of futures that have yet to arrive; glimpses of alternative experiences should  the concepts of maintenance and repair have extended to the ways we approached network infrastructure. What are the ways we can think about repurposing and adapting digital infrastructures to create equitable alternatives, with users as stewards and maintainers of protocols? Can we move beyond the impasse of internet futures based on exclusive, monetary driven, content platforms? What would a ‘resyndicatable’ internet look, or feel, like?
+
+A small look into the vignettes: The resyndicatable web, an unrealized future of rich, interoperable, content publishing on the internet that continues to exist well after its start in the early dot-com bubble. Internetworked communities, on the possibilities of BGP had it not contributed to the hyperscaling of the internet to the planetary proportions that it is today and instead skewed towards localizing, community-owned, connectivity. De-gentrifying the network, an experience of navigating a de-gentrified internet, where the protocol walled-gardens we are accustomed to collapses, giving way to new forms of digital place making, maintenance, and care.
+## After Gardening
+With the creation of the vignettes, the micro-residency was completed and, peripherally, the garden has grown to its edges for the time being. The intent from hereon is for the Digital Garden to be a starting point for others to consider what equitable, networked, futures could look and feel like for them and their communities. Sometimes these futures are almost reflections of the current status quo, other times they are pointing to emerging technologies and communities around them that have yet to be fully realized (or in our case reanimated).
+
+Our approach of a public notebook that charts rhizomatic connections between research topics is just one approach of many that could have been explored. In contrast to existing, managed, platforms we wanted to explore growing a garden that others could tend on their own at a scale that felt collectively engaging.
+
+Amongst the many paths this project could have taken, our interpretation of a Digital Garden is one that puts the intertwingled connections up-front and expresses the formation of insight and knowledge as a happenstance one could stumble on through something as simple as a link. Its handmade character, like Hypertext Gardens, and assemblage, like peer-to-peer, is an invitation to linger and create new connections: a quality that is vital in the network futures that have yet to come.
