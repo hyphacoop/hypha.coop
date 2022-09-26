@@ -8,8 +8,8 @@ excerpt: 'The Digital Garden began with our initial seeds: references to publish
 
 ### {{ page.excerpt }}
 <figure>
-<img src='/assets/images/posts/2022-09-24-garden-01.jpg' />
-<figcaption>Community Memory (<a href="https://www.computerhistory.org/collections/catalog/102680119" alt="a computer monitor in a field with a bouquet of flowers like a gravestone">source</a>). Courtesy of Gwen Bell, Computer History Museum</figcaption>
+<img src='/assets/images/posts/2022-09-24-garden-01.jpg' alt="a computer monitor in a field with a bouquet of flowers like a gravestone"/>
+<figcaption>Community Memory (<a href="https://www.computerhistory.org/collections/catalog/102680119">source</a>). Courtesy of Gwen Bell, Computer History Museum</figcaption>
 </figure>
 In the Spring of 2021 Hypha was invited by <a href="https://fromlater.com/">From Later</a>, friends and foresight studio in Toronto, to participate in a micro-residency as part of The Bentway’s <a href="https://www.thebentway.ca/stories/digital-and-as-public-space/"><em>Digital and/as Public Space</em></a> initiative that included the creation of a <a href="https://www.directionstonowhere.com/">mobile game</a> to meander public spaces and a <a href="https://www.thebentway.ca/stories/field-guide/">Field Guide</a>. The <a href="https://www.thebentway.ca/digital-and-as-public-space-micro-residencies/">micro-residency</a> brought together six talented artists, researchers, and designers to examine tensions in navigating the possibilities of online and offline public spaces; an exploration of “the interaction between digital and physical space in order to re-examine public space, overcome access barriers, promote civic engagement, and support community resilience in online, offline, and hybrid contexts.”
 
