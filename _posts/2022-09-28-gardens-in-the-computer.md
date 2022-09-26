@@ -3,7 +3,7 @@ title: 'Gardens in the Computer'
 author: Garry Ing
 date: 2022-09-24
 acknowledgement: 'Garry is a designer, researcher, and a founding member of Hypha. The Digital Garden was co-produced with Hypha founding member, Dawn Walker.'
-excerpt: 'The Digital Garden began with our initial seeds: references to publishing, protocols, RSS, and an approach to “draw from the past to rethink the present through co-operative approaches.”'
+excerpt: 'The Digital Garden is planted with our initial seeds: references to publishing, protocols, RSS, and co-operative approaches.'
 ---
 
 ### {{ page.excerpt }}
