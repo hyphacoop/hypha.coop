@@ -1,16 +1,18 @@
 ---
 title: Front End Developer 
-compensation: Hourly rate of $38/hr
-is-full-time: yes
-hours-per-week: 32
-location: remote
-is-open: yes
-start-date: 2022-09-01
-end-date: 2022-12-01
 prepared-on-date: 2022-08-15
 excerpt_separator: <!-- more -->
 excerpt: "<p>Hypha Worker Co-operative (Hypha) is looking for an intermediate Front End Developer to work ons everal exciting projects at the intersection of arts/culture and technology.</p>"
 ---
+
+## Overview
+
+<b>Location:</b> Remote<br/>
+<b>Compensation:</b> $90,000 - $109,000 CAD<br/>
+<b>Time commitment:</b> 32 hours/week<br/>
+<b>Application deadline:</b> Apply by October 7, 2022<br/>
+<b>Start date:</b> October 31, 2022<br/>
+
 <a href='https://hypha.coop'>Hypha Worker Co-operative</a> (Hypha) is looking for an <b>intermediate Front End Developer</b> to work on several exciting projects at the intersection of arts/culture and technology. <!-- more --> You will work as the lead developer on a small but dedicated team of strategists and designers to bring these projects to life. This full-time position is a contract to start, with the potential to become a permanent co-op member.
 
 Hypha is a tech co-operative, so we do things <a href="https://hypha.coop/dripline/how-we-co-operate/">a little differently</a> (and a little better, we like to think). Ideally, you are excited about participating in a co-operative, building the solidarity economy, and engaging in discussions on rethinking social structures and the politics of technologies.
@@ -59,13 +61,13 @@ As a remote-first organization that strives toward sustainable livelihoods for a
 Remote position, with a preference for Tkaronto-based contractors.
 
 ## Compensation
-Daily rate of $450 CAD.
+<b>$90,000 - $109,000 CAD.
 
 ## Hours and contract term
-<b>Full-time (contract) position for one year, starting October 1</b>. Work of up to 32 hours per week (Hypha maintains a 4 day work week). Possibility of offer of employment (and <a href="https://handbook.hypha.coop/bylaws.html#2-membership">path to membership</a>) after contract term.
+Full-time position for one year. Work of up to 32 hours per week (Hypha maintains a 4 day work week). Possibility of offer of employment (and <a href="https://handbook.hypha.coop/bylaws.html#2-membership">path to membership</a>) after contract term.
 
 ## Process to apply
-To be considered, please email us at <a href="mailto:hiring@hypha.coop">hiring@hypha.coop</a> with the following <b>before September 19th, 2022.</b>
+To be considered, please email us at <a href="mailto:hiring@hypha.coop">hiring@hypha.coop</a> with the following <b>before October 7, 2022.</b>
 * CV (ideally as a PDF)
 * Brief covering statement (in email body is fine) outlining why you are a fit for the position, this could include:
     * Description of a recent project
