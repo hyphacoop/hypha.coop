@@ -2,7 +2,7 @@
 title: Front End Developer 
 prepared-on-date: 2022-08-15
 excerpt_separator: <!-- more -->
-excerpt: "<p>Hypha Worker Co-operative (Hypha) is looking for an intermediate Front End Developer to work ons everal exciting projects at the intersection of arts/culture and technology.</p>"
+excerpt: "<p>Intermediate Front End Developer needed to work on projects that combine arts/culture and technology.</p>"
 ---
 
 ## Overview
@@ -61,7 +61,7 @@ As a remote-first organization that strives toward sustainable livelihoods for a
 Remote position, with a preference for Tkaronto-based contractors.
 
 ## Compensation
-<b>$90,000 - $109,000 CAD.
+$90,000 - $109,000 CAD.
 
 ## Hours and contract term
 Full-time position for one year. Work of up to 32 hours per week (Hypha maintains a 4 day work week). Possibility of offer of employment (and <a href="https://handbook.hypha.coop/bylaws.html#2-membership">path to membership</a>) after contract term.

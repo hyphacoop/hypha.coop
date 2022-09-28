@@ -2,12 +2,12 @@
 title: Part-Time Back End Developer
 prepared-on-date: 2022-09-27
 excerpt_separator: <!-- more -->
-excerpt: "<p>Hypha is looking for a part-time developer to work on back end software development for the Distributed Press API.</p>"
+excerpt: "<p>Part-time developer needed to work on back end software development for the Distributed Press API.</p>"
 ---
 
 ## Overview
 
-<b>Location:</b>Fully remote<br/>
+<b>Location:</b> Fully remote<br/>
 <b>Compensation:</b> $80.00 CAD / hour<br/>
 <b>Time commitment:</b> Up to 20 hours/week, with max. 560 hours over a 1-year contract term<br/>
 <b>Application deadline:</b> Apply by October 5, 2022<br/>
