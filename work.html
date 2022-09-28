@@ -32,7 +32,9 @@ order: 3
 
             <img class="relative" src="/assets/images/logos/logo-background.jpg" alt="logo"></img>
             {% if work.logo %}
-             <img class="absolute top-0 left-0" src="{{ work.logo }}" alt="logo"></img>
+             {{ if work.logo }}<img class="absolute top-0 left-0" src="{{ work.logo }}" alt="logo"></img>
+            {% else %}
+             <p class="absolute top-0 left-0 tc mt5 w-100 white f1 "><b>{{ work.title }}</b></p> 
             {% endif %}
             </div>
             <h2 class="f3 sans-serif accent">{{ work.title }}</h2>
