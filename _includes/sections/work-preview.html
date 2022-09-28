@@ -1,6 +1,10 @@
-<div class="mb5 ">
+<div class="mt6-ns mt5">
   <h2 class="">Selected work</h2>
-  <div class="flex flex-between flex-wrap">
+  <p class="f4">
+    A full list of our current projects can be found on our
+    <a class="accent link underline-hover" href="/work/">Work page.</a>
+  </p>
+  <div class="flex flex-between flex-wrap mt5-ns">
     {% assign works = site.work | where: 'preview', 'true' | sort: 'order' %} {%
     for work in works | where: 'preview', 'true' %}
     <div class="w-33-l measure flex-column justify-left items-left center-l pr4 pl4 mb2 tl">
@@ -9,8 +13,5 @@
     </div>
     {% endfor %}
   </div>
-  <p class="f4">
-    A full list of our current projects can be found on our
-    <a class="accent link underline-hover" href="/work/">Work page.</a>
-  </p>
+  
 </div>

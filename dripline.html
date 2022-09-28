@@ -17,7 +17,10 @@ order: 4
         >
           {{ page.title }}
         </h3>
-        <div class="f3 measure-wide lh-copy mb0">
+        <div class="f3 measure-wide dark-gray lh-copy mb0">
+          <p class="f3">
+          This is the place for our collective writing ranging from short posts, to interviews, design retrospectives, and essays. We publish on a (mostly) monthly schedule. 
+          </p>
           <p class="f4">
             <em>
               A dripline signifies the area under the outermost branches of a
@@ -32,16 +35,13 @@ order: 4
               between worlds where interesting and productive things happen.
             </em>
           </p>
-          <p>
-          This is the place for our collective writing ranging from short posts, to interviews, design retrospectives, and essays. We publish on a (mostly) monthly schedule. 
-          </p>
         </div>
       </div>
     </div>
   </header>
   <!-- <img src="/assets/images/canopy2.png" alt="canopy"></img> -->
   {%- if posts.size > 0 -%}
-  <div class="flex flex-wrap justify-center">
+  <article class="flex flex-wrap justify-center">
     {%- assign date_format = site.date_format -%} {%- for post in posts -%}
     <div class="bg-white measure pv3 pr6-l pl0-l pr0-s pl0-s center mb4 db">
       <a class="no-underline" href="{{ post.url | relative_url }}">
@@ -58,6 +58,6 @@ order: 4
       <p class="mt0 f5 mb3 measure lh-copy">{{ post.excerpt }}</p>
     </div>
     {%- endfor -%}
-  </div>
+  </article>
   {%- endif -%}
 </section>

@@ -2,27 +2,25 @@
 layout: default
 ---
 
-<section class="mt4 ph3 ph5-l" id="dripline">
-  <div class="mb4">
+<section class="mt4 ph3 ph5-l">
+  <div class="mb4 mt5">
     <a class="sans-serif link underline-hover accent" title="Return to Dripline" href="{% link dripline.html %}">← Dripline</a>
-    <p class="sans-serif">
-      A dripline signifies the area under the outermost branches of a tree.
-      It’s this <a href="https://permacultureprinciples.com/principles/_11/" target="_blank" class="accent link underline-hover" rel="noopener">interface</a> between worlds where interesting and productive things happen.
-    </p>
   </div>
-  <header class="mb4">
+  <header class="mt5 mb6 mw8 center">
     <h1 class="f1-ns f2 sans-serif lh-solid mb3 mt0-l">{{ page.title }}</h1>
-    <h3 class="gray f6 f5-l lh-solid mt0">{{ page.date | date: site.date_format }}</h3>
-  </header>
-  <div class="lh-copy mw7 links-accent links-underline-hover">
     {% if page.author != "" or page.author != nil %}
     <p><strong>{{ page.author | upcase }}</strong></p>
     {% endif %}
-    {% if page.acknowledgement != "" or page.acknowledgement != nil %}
-    <p><em>{{ page.acknowledgement | markdownify }}</em></p>
-    {% endif %}
+    <h3 class="gray f6 f5-l lh-solid mt0">{{ page.date | date: site.date_format }}</h3>
+    <div class="lh-copy mw7 mb4 links-accent links-underline-hover">
+      {% if page.acknowledgement != "" or page.acknowledgement != nil %}
+      <p><em>{{ page.acknowledgement | markdownify }}</em></p>
+      {% endif %}
+    </div>
+  </header>
+  <article id="dripline" class="mw8 center">
     {{ content }}
-  </div>
+  </article>
   <footer class="mt5 bt bw2 b--light-gray">
     <p><a class="link accent underline-hover" href="{% link dripline.html %}">← <span class="gray">Return to Dripline</span></a></p>
   </footer>

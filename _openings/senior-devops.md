@@ -2,7 +2,7 @@
 title: Senior DevOps Engineer 
 prepared-on-date: 2022-09-27
 excerpt_separator: <!-- more -->
-excerpt: "<p>Hypha is looking for a Senior DevOps Engineer to work on client projects related to the Decentralized Web.</p>"
+excerpt: "<p>Senior DevOps Engineer needed to work on client projects related to the Decentralized Web.</p>"
 ---
 
 ## Overview
