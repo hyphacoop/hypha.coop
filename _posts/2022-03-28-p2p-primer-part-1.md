@@ -1,6 +1,6 @@
 ---
 title: 'Taking the Mauve Pill: Exploring Alternatives to the Centralized Web'
-author: MAUVE
+author: Mauve
 date: 2022-03-28
 acknowledgement: 'Mauve is a tech enthusiast with a passion for decentralization. Among their many projects, they are currently developing Agregore, a web browser that combines different peer to peer protocols together.'
 excerpt: 'A Peer to Peer Primer: Comparing Protocols'

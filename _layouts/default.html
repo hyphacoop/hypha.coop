@@ -3,10 +3,9 @@
 
   {%- include head.html -%}
 
-  <body class="sans-serif antialiased">
+  <body class="sans-serif antialiased debug  {% if page.title == 'Dripline' %} dripline-and-lines {% elsif page.title == 'Work' %} network-and-lines {% elsif page.title == 'People' %} mushroom-and-lines {% elsif page.title == 'Home' %} root-and-lines {% else %} footer {% endif %}">
 
     {%- include sections.html tag="header" path="header.html" class="pt4 flex items-baseline mw9 center justify-between" -%}
-
     <main class="mw9 center">
       {{ content }}
     </main>
@@ -14,5 +13,4 @@
     {%- include sections.html tag="footer" path="footer.html" class="mw9 center mv5" -%}
 
   </body>
-
 </html>

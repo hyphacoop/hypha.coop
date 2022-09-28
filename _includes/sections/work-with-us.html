@@ -1,19 +1,34 @@
-<div class="flex-l items-center mv2">
+<div class="flex-l mt6-ns mt4 mb6-ns mb4">
   <div class="w-75-l">
-    <h2 class="f1 f-subheadline-l worksans accent mb1">Work with us</h2>
+    <h2 class="f1 f-subheadline-l sans-serif accent mb1">Work with us</h2>
 
-    <h3 class="f3 f2-l normal lh-solid measure dark-gray worksans">We would love to hear from you about new projects, partnerships, and collaborations.</h3>
-
+    <h3 class="f3 f3-l normal lh-solid measure  sans-serif">
+      We would love to hear from you about new projects, partnerships, and
+      collaborations.
+    </h3>
     <dl class="dib mr5">
-      <dt class="mb3 mt0 f4"><strong>Telephone</strong></dt>
-      <dd class="ml0"><a class="accent link underline-hover" href="tel:{{ site.phone | | remove: ' ' | remove: '-' }}">{{ site.phone }}</a></dd>
+      <dt class="mb3 mt0 f3"><strong>Telephone</strong></dt>
+      <dd class="ml0">
+        <a
+          class="accent f4 link underline-hover"
+          href="tel:{{ site.phone | | remove: ' ' | remove: '-' }}"
+          >{{ site.phone }}</a
+        >
+      </dd>
     </dl>
     <dl class="dib mr5">
-      <dt class="mb3 mt0 f4"><strong>Email</strong></dt>
-      <dd class="ml0"><a class="accent link underline-hover" href="mailto:{{ site.email-hidden }}">{{ site.email }}</a></dd>
+      <dt class="mb3 mt0 f3"><strong>Email</strong></dt>
+      <dd class="ml0">
+        <a
+          class="accent f4 link underline-hover"
+          href="mailto:{{ site.email-hidden }}"
+          >{{ site.email }}</a
+        >
+      </dd>
     </dl>
-
-    <h4 class="f4 f3-l normal"><span class="accent">⚑</span> Hypha is rooted in Tkaronto (Toronto), Canada.</h4>
   </div>
-
+  <div class="contain w-25-l mt5">
+    <img class ="mw-50 di-l dn" alt="server" src="/assets/images/block3.png">
+    <img alt="server" src="/assets/images/block3.png">
+  </div>
 </div>

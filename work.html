@@ -1,0 +1,81 @@
+---
+layout: default
+title: Work
+excerpt: "Hypha is a word from Ancient Greek meaning 'web' (plural hyphae); referring to one of the threads that make up the mycelium of a fungus."
+menu_title: Work
+order: 3
+---
+
+<section class="mt2 ph3 ph5-l">
+  <header>
+<div class="flex-l items-center mv2 ">
+  <div class="w-100-l">
+    
+    <h3 class=" f2 f1-m f-subheadline-l accent normal sans-serif mb4 lh-solid">
+      {{ page.title }}
+    </h3>
+    <div class="f3 measure-wide dark-gray lh-copy mb5">
+      <p class="f4">
+      <em >Hypha is a word from Ancient Greek meaning 'web' (plural hyphae); referring to one of the threads that make up the mycelium of a fungus.</em> 
+      </p>
+      
+      In ecology, hyphae provide sustenance and communication between living organisms. Drawing inspiration from this infinitely adaptive, complex structure, we bring these traits to our work: rooted in knowledge, yet boundless in imagination.
+
+  </div>
+</div>
+  </header>
+<div class="flex flex-wrap justify-left mb4 pv4">
+    {% assign works = site.work | sort: 'order' %}
+    {% for work in works %}
+        <div class="w-33-l w-50-m w-100-s flex-column justify-left items-left center mb4 tl  pr5-l pl3-m pr3-m">
+            <div class="relative mb4">
+
+            <img class="relative" src="/assets/images/logos/logo-background.jpg" alt="logo"></img>
+            {% if work.logo %}
+             {{ if work.logo }}<img class="absolute top-0 left-0" src="{{ work.logo }}" alt="logo"></img>
+            {% else %}
+             <p class="absolute top-0 left-0 tc mt5 w-100 white f1 "><b>{{ work.title }}</b></p> 
+            {% endif %}
+            </div>
+            <h2 class="f3 sans-serif accent">{{ work.title }}</h2>
+            <div 
+              class="mb2 f4 lh-copy "
+              data-excerpt='{{ work.excerpt | markdownify }}'
+              data-content='{{ work.content | markdownify }}'
+              data-types='<p>Keywords: <em>{% for type in work.work-type %}{{type}}; {% endfor %}</em></p>'
+              data-toggled="false"
+              id="{{ work.title }}"
+              onclick="toggleBio(this.id, this.dataset.excerpt, this.dataset.content, this.dataset.types);"
+            >
+            <p>
+            {{ work.excerpt | markdownify }}
+            </p>
+          <p class="mv0 link accent pointer">[read more]</p>
+        </div>
+            <!-- <div class="">
+              {% for work-type in work.work-type %}
+              <p class="accent mv2">
+              {{ work-type }}
+              </p>
+              {% endfor %}
+            </div> -->
+        </div>
+    {% endfor %}
+</div>
+</section>
+<script>
+  function toggleBio(id, excerpt, content, types) {
+    const toggleable = excerpt == content;
+    if (true) {
+      const el = document.getElementById(id);
+      let toggled = document.getElementById(id).dataset.toggled;
+      if (toggled == "true") {
+        el.innerHTML = excerpt + "<p class='mv0 link accent pointer'> [read more] </p>";
+        el.dataset.toggled = false;
+      } else {
+        el.innerHTML = content + types + "<p class='mv0 link accent pointer'> [read less] </p>";
+        el.dataset.toggled = true;
+      }
+    }
+  }
+</script>

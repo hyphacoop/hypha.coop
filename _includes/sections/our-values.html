@@ -1,27 +1,37 @@
-<div class="flex-l mb4">
-  <div class="w-50-l bg-accent white pa3 pa4-l">
-    <h2 class="f1 f-subheadline-l worksans mb1 mt0">Our values</h2>
-
-    <h3 class="measure-wide mb0 white normal f3 f2-l lh-solid">Curiosity · Intersectionality · Honesty · <br> Self-Agency · Solidarity
-</h3>
-
-    <p class="measure-wide f4 f3-l lh-copy white">Our core values reflect our approach in cultivating respectful and democratic technology ecologies. <br><br> We bring this ethos to every project we undertake.</p>
+<div class=" flex-ns justify-start mt4 mt6-ns mt4-l">
+  <div class="measure-wide-l measure-m mr5-l">
+    <h2 class="f1 f-subheadline-l sans-serif mb4 mt0 accent">Our values</h2>
+    <p class="measure f3 lh-copy">
+      Our core values reflect our approach in cultivating respectful and
+      democratic technology ecologies. <br /><br />
+      We bring this ethos to every project we undertake.
+    </p>
   </div>
+  <div class="dn db-l w-25 pt5">
+    <img  alt="computer chip" src="/assets/images/block1.png"/>
+  </div>
+  <div class="w-25-l w-50-m mw-100 pt5-ns pt1">
+    <img  alt="computer chip" src="/assets/images/block1.png"/>
+  </div>
+</div>
 
-  <div class="w-50-l pa3 pa4-l">
-    <div class="measure-wide">
-      <h5 class="f4 mb0 mt2">Build change that lasts</h5>
-      <p class="lh-copy">Disruptive growth has its costs. We seek change that strengthens our communities and nurtures our planet. We work thoughtfully and with care toward the futures we imagine..</p>
+<div class="flex flex-wrap">
+  <ul id="values" class="measure-narrow f4 mr4 pl0">
+    {% for element in page.values %}
+    <div
+      class="pa3 accent"
+      id="{{ element.title }}"
+      onclick="selectValue(this.id, 'values');"
+    >
+      <li>{{ element.title }}</li>
     </div>
-
-    <div class="measure-wide">
-      <h5 class="f4 mb0">Embody co-operative values</h5>
-      <p class="lh-copy">We serve our clients, members, neighbours, and the co-operative movement the world over. Hypha embodies the co-operative values of <strong>self-help, self-responsibility, democracy, equality, equity,</strong> and <strong>solidarity.</strong></p>
-    </div>
-
-    <div class="measure-wide">
-      <h5 class="f4 mb0">Provide safe harbour</h5>
-      <p class="lh-copy mb0">We acknowledge the sacred land we work on is the territory of many nations and was the subject of the Dish with One Spoon Wampum Belt Covenant, an agreement to peaceably share and care for the resources around the Great Lakes. Today it is still home to many First Nations, Inuit, and Métis peoples from across Turtle Island. We also recognize the ongoing history of oppression and marginalization in our society and workplaces. Hypha strives to be a safe harbour to all, regardless of race, class, gender identity and expression, sexual orientation, disability, physical appearance, body size, religion, or technical skill.</p>
-    </div>
+    {% endfor %}
+  </ul>
+  <div id="values-descriptions" class="">
+    {% for element in page.values %}
+    <p id="{{ element.title }}-description" class="measure f4 lh-copy">
+      {{ element.description }}
+    </p>
+    {% endfor %}
   </div>
 </div>

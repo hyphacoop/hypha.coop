@@ -22,8 +22,13 @@ sass:
 permalink: pretty
 
 collections:
+  openings:
+    permalink: /openings/:title/
+    output: true
+  people:
   posts:
     permalink: /dripline/:title/
+  work:
 
 date_format: '%B %-d, %Y'
 future: true
@@ -34,7 +39,16 @@ defaults:
       type: posts
     values:
       layout: dripline/post
-
+  -
+    scope:
+      type: openings
+    values:
+      layout: openings/opening
+  -
+    scope: 
+      type: people
+    values:
+      avatar: default.png
 plugins: []
   # TODO: Fix issue with conflict between dweb's requirement for relative urls and RSS's for absolute.
   # See: https://github.com/hyphacoop/hypha.coop/issues/24

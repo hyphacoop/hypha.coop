@@ -26,12 +26,6 @@ mark {
   background-color: $secondary-accent-color;
 }
 
-// Hypha brand font classes
-
-.worksans {
-  font-family: 'WorkSans', helvetica, sans-serif;
-}
-
 // Font Smoothing
 
 .aliased {
@@ -83,11 +77,128 @@ mark {
   background-image: url(/assets/images/scaling-3.png);
 }
 
+@media #{$breakpoint-large} {
+  .work {
+    background-image: url(/assets/images/work-1.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-origin: revert;
+    background-size: 12%;
+  }
+  .footer {
+    background-image: url(/assets/images/footer1.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 20%;
+  }
+  .root-and-lines {
+    background-image: url(/assets/images/root2-crop.png),
+      url(/assets/images/footer1.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top right, bottom right;
+    background-size: 40%, 20%;
+  }
+  .mushroom-and-lines {
+    background-image: url(/assets/images/work-1.png),
+      url(/assets/images/footer1.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top right, bottom right;
+    background-size: 12%, 20%;
+  }
+  .network-and-lines {
+    background-image: url(/assets/images/default-2-2.jpg),
+      url(/assets/images/footer1.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top right, bottom right;
+    background-size: 23%, 20%;
+  }
+  .dripline-and-lines {
+    background-image: url(/assets/images/dripline-2.png),
+      url(/assets/images/footer1.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top right, bottom right;
+    background-size: 30%, 20%;
+    @media screen and (min-width: 1600px) {
+      background-size: 25%, 20%;    
+    }
+}
+  }
+
+.block {
+  background-image: url(/assets/images/block1.png);
+}
+.block-3 {
+  background-image: url(/assets/images/block3.png);
+}
+.electric-lines {
+  background-image: url(/assets/images/footer1.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 20%;
+}
+.canopy {
+  background-image: url(/assets/images/canopy2.png);
+  // background-repeat: no-repeat;
+  // background-position: top right;
+  // background-size: 10%;
+}
+
 .mbtablestyle {
   border-collapse: collapse;
-  > table, td, th {
-      border: 1px solid black;
-      padding: 0.25em;
+  > table,
+  td,
+  th {
+    border: 1px solid black;
+    padding: 0.25em;
   }
 }
 
+// Section templates
+
+//for section headers
+h1 {
+  @extend .f2;
+  @extend .f1-m;
+  @extend .f-subheadline-l;
+  @extend .accent;
+  @extend .normal;
+  @extend .sans-serif;
+  @extend .mb4;
+  @extend .lh-solid;
+}
+
+h2 {
+  @extend .f1;
+  @extend .f-subheadline-l;
+  @extend .sans-serif;
+  @extend .accent;
+  @extend .ma0;
+  @extend .mb4;
+  // border: 1px solid black;
+}
+
+p {
+  @extend .lh-copy;
+  @extend .f4;
+  // border: 1px dotted black;
+}
+
+a {
+  @extend .accent;
+  @extend .link;
+  @extend .underline-hover;
+}
+a.no-underline:hover {
+  @extend .no-underline;
+}
+
+#what_we_do div.accent:hover,
+#values div.accent:hover {
+  background-color: lighten($accent-color, 45%);
+}
+
+// @import 'tachyons-sass/scss/variables';
+
+// @media #{$breakpoint-small} {
+  // .flex-wrap-s { flex-wrap: wrap;}
+  // }

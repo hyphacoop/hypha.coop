@@ -1,6 +1,6 @@
 ---
 title: 'Data Fast and Slow: Exploring Data Models and Mutability'
-author: MAUVE
+author: Mauve
 date: 2022-04-26
 acknowledgement: 'Mauve is a tech enthusiast with a passion for decentralization. Among their many projects, they are currently developing Agregore, a web browser that combines different peer to peer protocols.'
 excerpt: 'Part 2 of our P2P Primer'

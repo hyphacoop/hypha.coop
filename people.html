@@ -1,0 +1,27 @@
+---
+layout: default
+title: People
+excerpt: "As a non-profit worker co-operative, Hypha strives to cultivate collective growth and meaningful livelihoods through learning and building digital technologies together."
+menu_title: People
+order: 2
+---
+{% assign posts = site.posts %}
+
+<section class="mt2 ph3 ph5-l">
+  <header>
+<div class="flex-l items-center mv2">
+  <div class="w-100-l">
+    
+    <h3 class=" f2 f1-m f-subheadline-l accent normal sans-serif mb4 lh-solid">
+      {{ page.title }}
+    </h3>
+    <p class="f3 measure-wide dark-gray lh-copy mb5">
+    As a non-profit worker co-operative, Hypha strives to cultivate collective growth and meaningful livelihoods through learning and building digital technologies together.
+    </p>
+  </div>
+</div>
+  </header>
+
+</section>
+{%- include sections.html path="team-bios.html" class="" -%}
+{%- include sections.html path="join-the-team.html" class="" -%}
