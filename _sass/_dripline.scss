@@ -2,17 +2,41 @@
     h2 {
         @extend .f2-ns;
         @extend .f3;
+        @extend .mt5;
     }
+
+    h3 {
+        @extend .f3;
+    }
+
     ul {
         @extend .f4;
     }
+
     p {
         @extend .lh-copy;
+        word-wrap: break-word;
     }
+
     figure {
         // @extend .pa0;
         @extend .ma0;
     }
+
+    figcaption {
+        @extend .tc;
+        @extend .mt4;
+        @extend .pr4;
+        @extend .pl4;
+    }
+
+    blockquote {
+        @extend .bl;
+        @extend .bw2;
+        @extend .pl3;
+        border-color: $accent-color;
+    }
+
     img {
         @extend .w-100;
     }

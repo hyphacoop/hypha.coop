@@ -41,7 +41,7 @@ order: 4
   </header>
   <!-- <img src="/assets/images/canopy2.png" alt="canopy"></img> -->
   {%- if posts.size > 0 -%}
-  <div class="flex flex-wrap justify-center">
+  <article class="flex flex-wrap justify-center">
     {%- assign date_format = site.date_format -%} {%- for post in posts -%}
     <div class="bg-white measure pv3 pr6-l pl0-l pr0-s pl0-s center mb4 db">
       <a class="no-underline" href="{{ post.url | relative_url }}">
@@ -58,6 +58,6 @@ order: 4
       <p class="mt0 f5 mb3 measure lh-copy">{{ post.excerpt }}</p>
     </div>
     {%- endfor -%}
-  </div>
+  </article>
   {%- endif -%}
 </section>
