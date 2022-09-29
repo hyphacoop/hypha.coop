@@ -16,7 +16,7 @@
 1. Clone repository: `git clone https://github.com/hyphacoop/hypha.coop.git && cd hypha.coop`
 2. Install Bundler gem: `gem install bundler`
 3. Install dependancies: `bundle install`
-4. Run locally: `bundle exec jekyll serve`
+4. Run locally: `bundle exec jekyll serve --livereload`
 5. Visit your `localhost` on port `4000`: http://localhost:4000 or http://127.0.0.1:4000
 
 ## 🚀 Deployment
