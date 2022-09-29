@@ -15,12 +15,13 @@ order: 3
       {{ page.title }}
     </h3>
     <div class="f3 measure-wide dark-gray lh-copy mb5">
-      <p class="f4">
+      
+     <p class="f3"> 
+      In ecology, hyphae provide sustenance and communication between living organisms. Drawing inspiration from this infinitely adaptive, complex structure, we bring these traits to our work: rooted in knowledge, yet boundless in imagination.
+     </p>
+<p class="f4">
       <em >Hypha is a word from Ancient Greek meaning 'web' (plural hyphae); referring to one of the threads that make up the mycelium of a fungus.</em> 
       </p>
-      
-      In ecology, hyphae provide sustenance and communication between living organisms. Drawing inspiration from this infinitely adaptive, complex structure, we bring these traits to our work: rooted in knowledge, yet boundless in imagination.
-
   </div>
 </div>
   </header>
@@ -32,7 +33,7 @@ order: 3
 
             <img class="relative" src="/assets/images/logos/logo-background.jpg" alt="logo"></img>
             {% if work.logo %}
-             {{ if work.logo }}<img class="absolute top-0 left-0" src="{{ work.logo }}" alt="logo"></img>
+            <img class="absolute top-0 left-0" src="{{ work.logo }}" alt="logo"></img>
             {% else %}
              <p class="absolute top-0 left-0 tc mt5 w-100 white f1 "><b>{{ work.title }}</b></p> 
             {% endif %}
