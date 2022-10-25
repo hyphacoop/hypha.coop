@@ -1,10 +1,9 @@
-# p2p post 4
 ---
 title: 'Check the specs: final thoughts on p2p options'
 author: Mauve
-date: 2022-10-20
+date: 2022-10-25
 acknowledgement: 'Mauve is a tech enthusiast with a passion for decentralization. Among their many projects, they are currently developing Agregore, a web browser that combines different peer to peer protocols.'
-excerpt: 'Part 4 of our P2P Primer'
+excerpt: 'Part 4 of our P2p Primer'
 ---
 
 ### {{ page.excerpt }}
