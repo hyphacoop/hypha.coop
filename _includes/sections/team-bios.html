@@ -1,7 +1,7 @@
 <div class="flex flex-wrap justify-start mb4 contain">
   {% for person in site.people %}
   {% if person.hidden != true %}
-  <article class="w-33-l pa5-ns mb4 center">
+  <article class="w-33-l pv3-ns ph5-ns mb4 center-m ml0-l">
     <div class="flex items-end">
       <img src="/assets/images/avatars/{{ person.avatar }}" alt="{{ person.name }}" class=" w4  tc white f3 v-mid h4"></img>
       <div class="pl4 w-50 pt0 pt0-l v-btm pb0">
@@ -12,17 +12,25 @@
       </div>
     </div>
     <div
-      class="lh-copy measure center f5 pt3 "
+      class="lh-copy measure center f5 pt3"
+
+      {% unless person.link and person.excerpt == person.content %}
       data-excerpt="{{ person.excerpt }}"
       data-content="{{ person.content }}"
+      {% endunless %}
+      
       data-toggled="false"
       id="{{ person.name }}"
       onclick="toggleBio(this.id, this.dataset.excerpt, this.dataset.content);"
     >
-      {{ person.excerpt | markdownify }} {% unless person.excerpt ==
-      person.content %}
+      {{ person.excerpt | markdownify }}
+
+      {% unless person.excerpt == person.content %}
+
       <p class="mv0 link accent {% unless person.excerpt == person.content %} pointer {% endunless %}">[read more]</p>
       {% endunless %}
+
+
     </div>
   </article>
   {% endif %}
