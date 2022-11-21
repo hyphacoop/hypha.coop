@@ -13,12 +13,8 @@
     </div>
     <div
       class="lh-copy measure center f5 pt3"
-
-      {% unless person.link and person.excerpt == person.content %}
-      data-excerpt="{{ person.excerpt }}"
-      data-content="{{ person.content }}"
-      {% endunless %}
-      
+      data-excerpt="{{ person.excerpt | escape }}"
+      data-content="{{ person.content | escape }}"
       data-toggled="false"
       id="{{ person.name }}"
       onclick="toggleBio(this.id, this.dataset.excerpt, this.dataset.content);"
@@ -26,11 +22,8 @@
       {{ person.excerpt | markdownify }}
 
       {% unless person.excerpt == person.content %}
-
-      <p class="mv0 link accent {% unless person.excerpt == person.content %} pointer {% endunless %}">[read more]</p>
+        <p class="mv0 link accent pointer">[read more]</p>
       {% endunless %}
-
-
     </div>
   </article>
   {% endif %}
