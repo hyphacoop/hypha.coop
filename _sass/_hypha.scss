@@ -58,8 +58,13 @@ mark {
 
 // Menu interaction
 
-#menu:target {
+#menu:target,
+#menu:target +#white-space  {
   display: flex;
+}
+
+#menu:target +#white-space {
+  height:100vh;
 }
 
 #menu:target + .backdrop {
