@@ -26,7 +26,6 @@ jobs:
 
       # Build Jekyll Site
       - run: echo "Building Jekyll site"
-      - run: sudo gem update --system
       - run: sudo gem install bundler
       - run: sudo gem install jekyll
       - run: bundle install
