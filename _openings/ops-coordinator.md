@@ -8,7 +8,7 @@ excerpt: "<p>Operations Coordinator who is part administrative magician, part fi
 ## Overview
 
 <b>Location:</b> Remote<br/>
-<b>Compensation:</b> $25,000 annually<br/>
+<b>Compensation:</b> $25,000 CAD annually<br/>
 <b>Time commitment:</b> 2 days/week<br/>
 <b>Application deadline:</b> March 3, 2023<br/>
 <b>Start date:</b> March 20, 2023<br/>
@@ -59,7 +59,7 @@ Remote position, with a preference for Tkaronto-based people.
 
 ## Compensation
 
-Annual rate of $25,000, with basic benefits. <a href="https://handbook.hypha.coop/compensation-benefits.html">See our Handbook</a> for an explanation of the benefits provided to part-time employees.
+Annual rate of $25,000 CAD, with basic benefits. <a href="https://handbook.hypha.coop/compensation-benefits.html">See our Handbook</a> for an explanation of the benefits provided to part-time employees.
 
 ## Hours and contract term
 
