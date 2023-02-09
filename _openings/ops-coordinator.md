@@ -70,7 +70,7 @@ This is a part-time employee position. The initial contract is for 12 months, wi
 
 ## Process to apply
 
-To be considered, please email us at <a href="mailto:hyiring@hypha.coop">hiring@hypha.coop</a> with the following before February 24, 2023:
+To be considered, please email us at <a href="mailto:hiring@hypha.coop">hiring@hypha.coop</a> with the following before March 3, 2023:
 
 * CV (ideally as a PDF)
 * Brief covering statement (in email body is fine) outlining why you are a fit for the position, this could include:
