@@ -9,6 +9,7 @@ updates:
     directory: "/" 
     schedule:
       interval: "daily"
+    target-branch: "staging"
     # Apply default reviewer to created pull requests
     assignees:
       - "ASoTNetworks"
