@@ -103,9 +103,7 @@ Potential corrections to the vulnerabilities of the Web3-public goods discourse 
 Engaging in the public goods dialogue also offers co-operatives an opportunity to connect more concretely to conversations happening about social well-being, the equal provision of public goods, and "commons activism."[^40] This is essential for co-ops if they wish to engage in "broader currents of social change"[^41] and help shift the public goods discourse from an economic problem to solve to an indicator of our general societal wellbeing. 
 
 ## References
-
 [^1]: Reiss, Julian. 'Stanford Encyclopedia of Philosophy'. In The Stanford Encyclopedia of Philosophy, edited by Edward N. Zalta, Fall 2021. Metaphysics Research Lab, Stanford University, 2021. https://plato.stanford.edu/archives/fall2021/entries/public-goods/.
-
 
 [^2]: Sabzalieva, Emma, and José Antonio Quinteiro. 'Public Goods, Common Goods and Global Common Goods: A Brief Explanation'. UNESCO-IESALC, April 2022. https://www.iesalc.unesco.org/en/2022/04/10/public-goods-common-goods-and-global-common-goods-a-brief-explanation/.
 
@@ -163,7 +161,6 @@ Engaging in the public goods dialogue also offers co-operatives an opportunity t
 [^28]: ibid 20.
 
 [^29]: GitCoin - Notion. 'Public Goods Starter Pack', 13 February 2023. https://www.notion.so.
-Reiss, Julian. 'Stanford Encyclopedia of Philosophy'. In The Stanford Encyclopedia of Philosophy, edited by Edward N. Zalta, Fall 2021. Metaphysics Research Lab, Stanford University, 2021. https://plato.stanford.edu/archives/fall2021/entries/public-goods/.
 
 [^30]: Zhu, Henry. 'Illich Reading Club'. HackMD, 13 February 2023. https://hackmd.io/@hzoo/BJAic-DHq#Async-Discussion.
 
@@ -188,4 +185,4 @@ Reiss, Julian. 'Stanford Encyclopedia of Philosophy'. In The Stanford Encycloped
 
 [^40]: Peuter, Greig de, and Nick Dyer-Witheford. 'Commons and Cooperatives'. Communication Studies Faculty Publications, 1 July 2010. https://scholars.wlu.ca/coms_faculty/15.
 
-[^41]: ibid 42.
+[^41]: ibid 40.
