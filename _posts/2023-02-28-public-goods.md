@@ -1,9 +1,9 @@
 ---
-title: 'Cyber-visions of altruism: exploring the entanglement of Web3 and public goods'
+title: 'Cyber-visions of altruism'
 author: Andi Argast
 date: 2023-02-28
 acknowledgement: 'Andi is the Strategy Lead at Hypha, and is a probationary member.'
-excerpt: 'Considering public goods in the context of open source development projects and connecting this older discourse to more recent Web3 + public good conversations.'
+excerpt: 'Exploring the entanglement of Web3 and public goods'
 ---
 
 ### {{ page.excerpt }}
@@ -35,12 +35,12 @@ The idea of public goods can be traced as far back as John Stuart Mill[^1], thus
   </thead>
   <tbody>
     <tr>
-      <td>Rivalrous</td>
+      <td><b>Rivalrous</b></td>
       <td style="text-align: left">Private Goods (e.g. cars, domain names)</td>
       <td style="text-align: left">Commons (e.g. forests, online privacy)</td>
     </tr>
     <tr>
-      <td>Non-rivalrous</td>
+      <td><b>Non-rivalrous</b></td>
       <td style="text-align: left">Club Goods (e.g. cable, subscriptions like Netflix or Spotify)</td>
       <td style="text-align: left">Public Goods (e.g. air, open source code)</td>
     </tr>
@@ -52,13 +52,13 @@ The idea of public goods can be traced as far back as John Stuart Mill[^1], thus
 *Credit: Nadia Egbahl, via [Jacky Zhao](https://jzhao.xyz/thoughts/Making-and-Maintenance-of-OSS/#commons-based-peer-production)* 
 
   
-In the context of the Internet, public goods are often recast as digital public goods, which can be anything from software to datasets to web-based content.[^4] In Web3 circles, digital public goods typically refers to open source code, which Nadia Eghbal frames as the "digital infrastructure"[^5] underpinning many of the platforms and websites we use every day. This free, publicly available code is maintained by (often unpaid) communities of developers who work in distributed, loosely coordinated teams.[^6] (For more on the issue of open source code and remuneration, see this [post by Hypha collaborator Jacky Zhao](https://jzhao.xyz/posts/paid-open-source/)[^7].)  
+In the context of the Internet, public goods are often recast as digital public goods, which can be anything from software to datasets to web-based content.[^4] In Web3 circles, digital public goods typically refers to open source code, which Nadia Eghbal frames as the "digital infrastructure"[^5] underpinning many of the platforms and websites we use every day. This free, publicly available code is maintained by (often unpaid) communities of developers who work in distributed, loosely coordinated teams.[^6] (For more on the issue of open source code and remuneration, see this [post by Hypha collaborator Jacky Zhao](https://jzhao.xyz/posts/paid-open-source/).[^7])  
 
 > "Distributed open source code is a miracle in human coordination. How does a group of people, not defined by race, religion, gender, or geography, come together to contribute time and money to a reimagined reality that only exists on the open internet? It is an emergent phenomenon that would have been unimaginable not so long ago." 
 – [Alisha.eth](https://alisha.mirror.xyz/PxK8PtWDxon0uBH25-ACLSH1nHa89MFj--XAe_wkR6g)  
 
 <br>
-How did it come to pass that much of the Internet that we use today relies on free and open source software? In [her excellent report](https://www.fordfoundation.org/work/learning/research-reports/roads-and-bridges-the-unseen-labor-behind-our-digital-infrastructure/) on the state of open source software, Eghbal traces two foundational stories: the first concerns Richard Stallman, the now infamous MIT programmer, who launched the GNU operating systems in 1983 as a response to the rise of proprietary software –a sort of enclosure of the digital commons. This led to the creation of the free or libre software movement (free as in freedom; not free as in price). Eghbal notes that this was a movement "deeply rooted in social advocacy."[^8]  The second story concerns *open source software*. By the late 1990s, the increasing ubiquity of networked home computing led technologists to realize that there was a practical benefit to allowing a large number of programmers to work on and improve code.[^9] The open source movement and free software both favour permissive licensing versus proprietary code but they have sprung from very different roots; the former being grounded in a pragmatic drive to make software better and more widely available, and the latter seeing itself as a social movement.[^10]  
+How did it come to pass that much of the Internet that we use today relies on free and open source software? In [her excellent report](https://www.fordfoundation.org/work/learning/research-reports/roads-and-bridges-the-unseen-labor-behind-our-digital-infrastructure/) on the state of open source software, Eghbal traces two foundational stories: the first concerns Richard Stallman, the now infamous MIT programmer, who launched the GNU operating systems in 1983 as a response to the rise of proprietary software—a sort of enclosure of the digital commons. This led to the creation of the free or libre software movement (free as in freedom; not free as in price). Eghbal notes that this was a movement "deeply rooted in social advocacy."[^8]  The second story concerns *open source software*. By the late 1990s, the increasing ubiquity of networked home computing led technologists to realize that there was a practical benefit to allowing a large number of programmers to work on and improve code.[^9] The open source movement and free software both favour permissive licensing versus proprietary code but they have sprung from very different roots; the former being grounded in a pragmatic drive to make software better and more widely available, and the latter seeing itself as a social movement.[^10]  
 
 > For the free software movement, free software is an ethical imperative, essential respect for the users' freedom. By contrast, the philosophy of open source considers issues in terms of how to make software "better"—in a practical sense only. It says that nonfree software is an inferior solution to the practical problem at hand.
 – [Richard Stallman](https://www.gnu.org/philosophy/open-source-misses-the-point.html)
