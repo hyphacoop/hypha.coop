@@ -12,7 +12,7 @@ excerpt: 'Exploring the entanglement of Web3 and public goods'
 <figure>
 
 <img
-  src="{{ 'assets/images/posts/2023-02-28-public-goods.jpg' | relative_url }}"
+  src="{{ 'assets/images/posts/2023-03-01-public-goods.jpg' | relative_url }}"
   alt="Network rack"
 />
 
