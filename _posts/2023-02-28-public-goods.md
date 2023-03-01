@@ -1,7 +1,7 @@
 ---
 title: 'Cyber-visions of altruism'
 author: Andi Argast
-date: 2023-02-28
+date: 2023-03-01
 acknowledgement: 'Andi is the Strategy Lead at Hypha, and is a probationary member.'
 excerpt: 'Exploring the entanglement of Web3 and public goods'
 ---
