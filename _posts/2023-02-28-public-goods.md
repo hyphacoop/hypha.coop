@@ -163,7 +163,7 @@ Engaging in the public goods dialogue also offers co-operatives an opportunity t
 
 [^30]: ibid 29.
 
-[^31]: Alisha.eth (last). 'Reimagining Public Goods Funding in Web3'. Alisha.Mirror.Xyz (blog), 29 July 2021. https://alisha.mirror.xyz/PxK8PtWDxon0uBH25-ACLSH1nHa89MFj--XAe_wkR6g.
+[^31]: Alisha.eth. 'Reimagining Public Goods Funding in Web3'. Alisha.Mirror.Xyz (blog), 29 July 2021. https://alisha.mirror.xyz/PxK8PtWDxon0uBH25-ACLSH1nHa89MFj--XAe_wkR6g.
 
 [^32]: It should also be noted that the open source community's relationship to funding is complex, with some developer communities rejecting external funding for a variety of reasons. Eghbal covers this in Roads and Bridges.
 
