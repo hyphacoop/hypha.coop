@@ -38,7 +38,7 @@ jobs:
         uses: hyphacoop/actions-distributed-press@v1.1.0
         with:
           publish_dir: _site
-          dp_url: https://api.distributed.press
+          dp_url: https://dp.chanterelle.xyz
           refresh_token: ${{ secrets.DISTRIBUTED_PRESS_STAGING_TOKEN }}
           site_url: staging.hypha.coop
 
