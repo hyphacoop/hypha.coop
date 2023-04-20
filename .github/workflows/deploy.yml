@@ -4,6 +4,7 @@ on:
     branches:
       - staging
       - master
+      - dp-v1-prod
   pull_request:
     branches:
       - staging
@@ -32,24 +33,20 @@ jobs:
       - run: make build-dweb
       - run: make check
 
-      - name: Deploy to Staging
+      - name: Publish to Distributed Press Staging
         if: ${{ github.ref == 'refs/heads/staging' }}
-        run: |
-          ls ${{ github.workspace }}
-          echo "Saving staging key"
-          echo "${{ secrets.SSH_STG }}" > _scripts/id_rsa-staging
-          chmod 600 _scripts/id_rsa-staging
-          bash -x _scripts/deploy.sh deploy _scripts/id_rsa-staging bw1.staging.hypha.coop 8003 /var/www/staging.hypha.coop
-          tar -czvf www.tar.gz -C _site .
-          bash -x _scripts/deploy-dweb.sh ${{ secrets.DISTRIBUTED_PRESS_STG_API_KEY }} _scripts/config-stg-dweb.json www.tar.gz
+        uses: hyphacoop/actions-distributed-press@v1.1.0
+        with:
+          publish_dir: _site
+          dp_url: https://srv2.distributed.press
+          refresh_token: ${{ secrets.DISTRIBUTED_PRESS_STAGING_TOKEN }}
+          site_url: staging.hypha.coop
 
-      - name: Deploy to Production
+      - name: Publish to Distributed Press Production
         if: ${{ github.ref == 'refs/heads/master' }}
-        run: |
-          ls ${{ github.workspace }}
-          echo "Saving production key"
-          echo "${{ secrets.SSH_PROD }}" > _scripts/id_rsa-production
-          chmod 600 _scripts/id_rsa-production
-          bash -x _scripts/deploy.sh deploy _scripts/id_rsa-production bw1.hypha.coop 1003 /var/www/hypha.coop
-          tar -czvf www.tar.gz -C _site .
-          bash -x _scripts/deploy-dweb.sh ${{ secrets.DISTRIBUTED_PRESS_API_KEY }} _scripts/config-dweb.json www.tar.gz
+        uses: hyphacoop/actions-distributed-press@v1.1.0
+        with:
+          publish_dir: _site
+          dp_url: https://srv2.distributed.press
+          refresh_token: ${{ secrets.DISTRIBUTED_PRESS_PRODUCTION_TOKEN}}
+          site_url: hypha.coop
