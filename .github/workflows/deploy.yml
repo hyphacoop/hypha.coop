@@ -38,7 +38,7 @@ jobs:
         uses: hyphacoop/actions-distributed-press@v1.1.0
         with:
           publish_dir: _site
-          dp_url: https://srv2.distributed.press
+          dp_url: https://api.distributed.press
           refresh_token: ${{ secrets.DISTRIBUTED_PRESS_STAGING_TOKEN }}
           site_url: staging.hypha.coop
 
@@ -47,6 +47,6 @@ jobs:
         uses: hyphacoop/actions-distributed-press@v1.1.0
         with:
           publish_dir: _site
-          dp_url: https://srv2.distributed.press
+          dp_url: https://api.distributed.press
           refresh_token: ${{ secrets.DISTRIBUTED_PRESS_PRODUCTION_TOKEN}}
           site_url: hypha.coop
