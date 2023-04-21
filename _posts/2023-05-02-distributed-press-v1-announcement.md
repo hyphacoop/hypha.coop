@@ -10,15 +10,15 @@ Thanks to a grant and support from the [Filecoin Foundation for the Decentralize
 
 ## What is it?
 
-For those that aren't in the loop, [distributed.press](https://distributed.press/) is a tool developed at Hypha that makes it easy to publish static websites to the [Distributed Web](https://getdweb.net/). Specifically, it gives you an HTTP API to send <a href="https://en.wikipedia.org/wiki/Tar_(computing)">tar archive files</a> which it will then extract and publish onto [IPFS](https://ipfs.tech/) and [Holepunch](https://holepunch.to/) (formerly hypercore-protocol). It also comes with a custom DNS server which makes it easier to set up custom domain names for your sites.
+For those who aren't in the loop, [distributed.press](https://distributed.press/) is a tool developed at Hypha that makes it easy to publish static websites to the [Distributed Web](https://getdweb.net/). Specifically, it gives you an HTTP API to send <a href="https://en.wikipedia.org/wiki/Tar_(computing)">tar archive files</a>, which it will then extract and publish onto [IPFS](https://ipfs.tech/) and [Holepunch](https://holepunch.to/) (formerly hypercore-protocol). It also comes with a custom DNS server, making it easier to set up custom domain names for your sites.
 
 ## Project Overhaul
 
 This has involved a [major rewrite](https://github.com/hyphacoop/api.distributed.press/pull/48) in how Distributed Press works under the hood.
 
-It's now easier to set up DNS records accross all our supported protocols via the [DNSLink](https://www.dnslink.io/) specification and Distributed.Press's newly built-in DNS server. 
+It's now easier to set up DNS records across all our supported protocols via the [DNSLink](https://www.dnslink.io/) specification and Distributed.Press's newly built-in DNS server. 
 
-We've also reworked how peer-to-peer (P2P) protocols are integrated so that we can easily new ones like BitTorrent or Earthstar. We have also reworked the way we publish to [IPFS](https://www.ipfs.tech/) so that new updates can pe published to the network almost instantaneously without needing to wait for DNS updates. We have also upgraded our [Hypercore](https://github.com/hypercore-protocol) integration to use the newly rebranded [Holepunch](https://holepunch.to/) libraries which adds significant performance and reliability improvements.
+We've changed how peer-to-peer (P2P) protocols are integrated so that we can easily add new ones like BitTorrent or Earthstar. We have also reworked the way we publish to [IPFS](https://www.ipfs.tech/) so that new updates can pe published to the network almost instantaneously without needing to wait for DNS updates. And we have upgraded our [Hypercore](https://github.com/hypercore-protocol) integration to use the newly rebranded [Holepunch](https://holepunch.to/) libraries which adds significant performance and reliability improvements.
 
 If you're part of a community that does P2P file transfer and would like to see your protocol integrated, open up an issue on [our GitHub repo](https://github.com/hyphacoop/api.distributed.press/issues/new?assignees=&labels=&template=support_new_protocol.md&title=Support+new+protocol%3A+) with information about your protocol and we can chat about integration from there.
 
@@ -26,13 +26,13 @@ If you're part of a community that does P2P file transfer and would like to see 
 
 As part of this effort we have been working with [Sutty](https://sutty.nl/en/) on integrating Distributed.Press into their Content Management System (CMS) and using it to have a graphical front-end for editing sites.
 
-Sutty generates [static web sites](https://en.wikipedia.org/wiki/Static_web_page) using [Jekyll themes](https://jekyllrb.com/) and a dynamically generated front end for themes. With the Sutty CMS, you can use a graphical, user-friendly interface to author posts and customize your site, and then enable their Distributed.Press integration to have Sutty publish your site to IPFS and Hypercore in addition to the HTTP version.
+Sutty generates [static web sites](https://en.wikipedia.org/wiki/Static_web_page) using [Jekyll themes](https://jekyllrb.com/) and a dynamically generated front-end for themes. With the Sutty CMS, you can use a graphical, user-friendly interface to author posts and customize your site, and then enable their Distributed.Press integration to have Sutty publish your site to IPFS and Hypercore in addition to the HTTP version.
 
-We have a small walkthrough on how to publish a site with Sutty in our [documentation](https://docs.distributed.press/deployment/sutty). We encourage groups seeking more customized themes to reach out to them directly.
+We have a small walk-through on how to publish a site with Sutty in our [documentation](https://docs.distributed.press/deployment/sutty). We encourage groups seeking more customized themes to reach out to them directly.
 
 ## GitHub Publishing
 
-In addition to Sutty, you can also add Distributed.Press to your existing [GitHub Actions](https://docs.github.com/en/actions) publishing flow. This works great if you're already publishing a static website in a continuous integration to HTTP or even if you've been publishing to a single protocol like IPFS. In order to "DWeb-ify" your site, you just need a Distributed.Press instance and take an [extra step](https://github.com/marketplace/actions/publish-to-distributed-press) which to upload your static site folder over HTTPS.
+In addition to Sutty, you can also add Distributed.Press to your existing [GitHub Actions](https://docs.github.com/en/actions) publishing flow. This works well if you're already publishing a static website in a continuous integration to HTTP or even if you've been publishing to a single protocol like IPFS. In order to "DWeb-ify" your site, you just need a Distributed.Press instance and to take an [extra step](https://github.com/marketplace/actions/publish-to-distributed-press) to upload your static site folder over HTTPS.
 
 You can find more detailed documentation on [our new docs website](https://docs.github.com/en/actions).
 
