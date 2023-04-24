@@ -1,11 +1,11 @@
 ---
 title: 'Distributed Press v1 Announcement'
 author: Mauve
-date: 2023-05-02
+date: 2023-04-25
 acknowledgement: 'Mauve is a tech enthusiast with a passion for decentralization. They work on Distributed Press, as well as Agregore, a web browser that combines different peer to peer protocols.'
-excerpt: 'Distributed Press, a tool developed by Hypha, has undergone a major rewrite. We're excited to share the latest version.'
+excerpt: 'Distributed Press, a tool developed by Hypha, has undergone a major rewrite. We are excited to share the latest version.'
 ---
-
+### {{ page.excerpt }}
 Thanks to a grant and support from the [Filecoin Foundation for the Decentralized Web](https://www.ffdweb.org/) and after months of working away on v1 of Distributed.Press, we're happy to announce that it's ready to be tried and tested!
 
 ## What is it?
@@ -26,7 +26,16 @@ If you're part of a community that does P2P file transfer and would like to see 
 
 As part of this effort we have been working with [Sutty](https://sutty.nl/en/) on integrating Distributed.Press into their Content Management System (CMS) and using it to have a graphical front-end for editing sites.
 
-![Screenshot of "Publish to DWeb" toggle in the Sutty CMS](https://github.com/hyphacoop/hypha.coop/blob/master/assets/images/dp-publish-to-dweb-toggle.png)
+<figure>
+
+<img
+  src="{{ 'assets/images/posts/2023-04-25-dp-publish-to-dweb-toggle.png' | relative_url }}"
+  alt="publish toggle screencap"
+/>
+
+<figcaption align = "left"><em>Screenshot of "Publish to DWeb" toggle in the Sutty CMS</em></figcaption>
+    
+</figure>
 
 Sutty generates [static web sites](https://en.wikipedia.org/wiki/Static_web_page) using [Jekyll themes](https://jekyllrb.com/) and a dynamically generated front-end for themes. With the Sutty CMS, you can use a graphical, user-friendly interface to author posts and customize your site, and then enable their Distributed.Press integration to have Sutty publish your site to IPFS and Hypercore in addition to the HTTP version.
 
@@ -38,7 +47,7 @@ In addition to Sutty, you can also add Distributed.Press to your existing [GitHu
 
 You can find more detailed documentation on [our new docs website](https://docs.github.com/en/actions).
 
-If you'd like to integrate Distributed.Press into other continuous integration environments or are having trouble setting it up yourself, you can reach out to us by email (`hello [at] distributed.press`) or open an issue on Github [<<Link].
+If you'd like to integrate Distributed.Press into other continuous integration environments or are having trouble setting it up yourself, you can reach out to us by [email](mailto: hello@distributed.press) or open an issue on [Github](https://github.com/hyphacoop/distributed.press).
 
 You can also check out the [auto-generated swagger interface](https://api.distributed.press/v1/docs/static/index.html). 
 
@@ -52,7 +61,16 @@ This initial release is coming out as we finalize our third issue of COMPOST Mag
 
 Make sure to subscribe to [the COMPOST mailing list](https://lists.hypha.coop/cgi-bin/mailman/listinfo/compost) as well as follow [COMPOST on Twitter](https://twitter.com/COMPOSTmag) and [the Fediverse](https://social.coop/@compost) to get notified as soon as it's out. 
 
-If you have any questions or want to explore collaborations, feel free to reach out to us at `hello [at] distributed.press`.
+If you have any questions or want to explore collaborations, feel free to [reach out to us](hello@ distributed.press).
 
-![List of partner and supporter organizations](https://github.com/hyphacoop/hypha.coop/blob/master/assets/images/supporters.png)
+<figure>
+
+<img
+  src="{{ 'assets/images/posts/2023-04-25-supporters.png' | relative_url }}"
+  alt="Distributed Press supporter list"
+/>
+
+<figcaption align = "left"><em>Our partners and supporters</em></figcaption>
+    
+</figure>
 
