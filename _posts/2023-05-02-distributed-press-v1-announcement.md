@@ -2,8 +2,8 @@
 title: 'Distributed Press v1 Announcement'
 author: Mauve
 date: 2023-05-02
-acknowledgement: 'TODO'
-excerpt: 'TODO'
+acknowledgement: 'Mauve is a tech enthusiast with a passion for decentralization. They work on Distributed Press, as well as Agregore, a web browser that combines different peer to peer protocols.'
+excerpt: 'Distributed Press, a tool developed by Hypha, has undergone a major rewrite. We're excited to share the latest version.'
 ---
 
 Thanks to a grant and support from the [Filecoin Foundation for the Decentralized Web](https://www.ffdweb.org/) and after months of working away on v1 of Distributed.Press, we're happy to announce that it's ready to be tried and tested!
