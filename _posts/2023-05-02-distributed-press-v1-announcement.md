@@ -53,3 +53,6 @@ This initial release is coming out as we finalize our third issue of COMPOST Mag
 Make sure to subscribe to [the COMPOST mailing list](https://lists.hypha.coop/cgi-bin/mailman/listinfo/compost) as well as follow [COMPOST on Twitter](https://twitter.com/COMPOSTmag) and [the Fediverse](https://social.coop/@compost) to get notified as soon as it's out. 
 
 If you have any questions or want to explore collaborations, feel free to reach out to us at `hello [at] distributed.press`.
+
+![List of partner and supporter organizations](https://github.com/hyphacoop/hypha.coop/blob/master/assets/images/supporters.png)
+
