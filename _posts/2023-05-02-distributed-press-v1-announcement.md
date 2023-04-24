@@ -26,6 +26,8 @@ If you're part of a community that does P2P file transfer and would like to see 
 
 As part of this effort we have been working with [Sutty](https://sutty.nl/en/) on integrating Distributed.Press into their Content Management System (CMS) and using it to have a graphical front-end for editing sites.
 
+![Screenshot of "Publish to DWeb" toggle in the Sutty CMS](https://github.com/hyphacoop/hypha.coop/blob/master/assets/images/dp-publish-to-dweb-toggle.png)
+
 Sutty generates [static web sites](https://en.wikipedia.org/wiki/Static_web_page) using [Jekyll themes](https://jekyllrb.com/) and a dynamically generated front-end for themes. With the Sutty CMS, you can use a graphical, user-friendly interface to author posts and customize your site, and then enable their Distributed.Press integration to have Sutty publish your site to IPFS and Hypercore in addition to the HTTP version.
 
 We have a small walk-through on how to publish a site with Sutty in our [documentation](https://docs.distributed.press/deployment/sutty). We encourage groups seeking more customized themes to reach out to them directly.
