@@ -96,7 +96,7 @@ but that doesn’t transfer easily to questions we have as a non-share capital c
 (in our experience, non profit act intuitions have proven less applicable in most contexts).
 We’ve even [drafted an explainer][handbook-about] in our handbook to clarify our own understanding!
 
-   [handbook-about]: https://handbook.hypha.coop/co-operative.html#about-us
+   [handbook-about]: https://handbook.hypha.coop/Hypha-Worker-Co-operative/co-operative.html#about-us
 
 <img
   src="{{ '/assets/images/posts/2021-01-23-coop-npo-choice.png' | relative_url }}"
