@@ -45,7 +45,7 @@ We have a small walk-through on how to publish a site with Sutty in our [documen
 
 In addition to Sutty, you can also add Distributed.Press to your existing [GitHub Actions](https://docs.github.com/en/actions) publishing flow. This works well if you're already publishing a static website in a continuous integration to HTTP or even if you've been publishing to a single protocol like IPFS. In order to "DWeb-ify" your site, you just need a Distributed.Press instance and to take an [extra step](https://github.com/marketplace/actions/publish-to-distributed-press) to upload your static site folder over HTTPS.
 
-You can find more detailed documentation on [our new docs website](https://docs.github.com/en/actions).
+You can find more detailed documentation on [our new docs website](https://docs.distributed.press).
 
 If you'd like to integrate Distributed.Press into other continuous integration environments or are having trouble setting it up yourself, you can reach out to us by [email](mailto: hello@distributed.press) or open an issue on [Github](https://github.com/hyphacoop/distributed.press).
 
