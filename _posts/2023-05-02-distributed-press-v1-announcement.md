@@ -26,7 +26,7 @@ This has involved a [major rewrite](https://github.com/hyphacoop/api.distributed
 
 It's now easier to set up DNS records across all our supported protocols via the [DNSLink](https://www.dnslink.io/) specification and Distributed.Press's newly built-in DNS server. 
 
-We've changed how peer-to-peer (P2P) protocols are integrated so that we can easily add new ones like BitTorrent or Earthstar. We have also reworked the way we publish to [IPFS](https://www.ipfs.tech/) so that new updates can pe published to the network almost instantaneously without needing to wait for DNS updates. And we have upgraded our [Hypercore](https://github.com/hypercore-protocol) integration to use the newly rebranded [Holepunch](https://holepunch.to/) libraries which adds significant performance and reliability improvements.
+We've changed how peer-to-peer (P2P) protocols are integrated so that we can easily add new ones like BitTorrent or Earthstar. We have also reworked the way we publish to [IPFS](https://www.ipfs.tech/) so that new updates can be published to the network almost instantaneously without needing to wait for DNS updates. And we have upgraded our [Hypercore](https://github.com/hypercore-protocol) integration to use the newly rebranded [Holepunch](https://holepunch.to/) libraries which adds significant performance and reliability improvements.
 
 If you're part of a community that does P2P file transfer and would like to see your protocol integrated, open up an issue on [our GitHub repo](https://github.com/hyphacoop/api.distributed.press/issues/new?assignees=&labels=&template=support_new_protocol.md&title=Support+new+protocol%3A+) with information about your protocol and we can chat about integration from there.
 
