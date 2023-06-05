@@ -1,7 +1,7 @@
 ---
 title: 'Strategy is ___________.'
 author: Hypha
-date: 2023-05-31
+date: 2023-06-05
 acknowledgement: 
 excerpt: 'Updates on the strategic planning process'
 ---
@@ -10,7 +10,8 @@ excerpt: 'Updates on the strategic planning process'
 <img style="padding-bottom: 2rem;"
   src="{{ 'assets/images/posts/2023-05-31-chess-strategy.jpg' | relative_url }}"
   alt="Chess Abstract Image"
-/>   
+/> 
+  <figcaption>Image by Evgeniy Shvets via Stocksy</figcaption>  
 </figure>
 
 ### {{ page.excerpt }}
