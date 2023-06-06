@@ -34,8 +34,8 @@ Hypha has been a contributor to the Cosmos ecosystem since 2021. We currently ma
 The value that Hypha brings to this ecosystem is our blend of skills in both the technical and social aspects of running blockchains. If you view blockchains as complex socio-technical systems, it’s apparent that actors who not only understand the technology, but its social dynamics, are better equipped to shape the system. This is the reason why Hypha has excelled at coordinating the testnet program: we know how to work with bleeding edge technology and coordinate the developer and validator teams to run blockchains. While we are currently managing testnets, our value proposition is that we are experts in any form of program management or stakeholder relationship management in highly technical contexts.
 
 In 2023 our strategy is to diversify the Cosmos team’s project work. We understand this in two ways:
-Bring our existing expertise to new Cosmos projects
-Grow our expertise in areas that may be important to Cosmos in the near future
+1. Bring our existing expertise to new Cosmos projects
+2. Grow our expertise in areas that may be important to Cosmos in the near future
 
 The first is more straightforward: we are actively working with new teams to help them design their own testnet programs. The second is far more interesting because it challenges us to think about what the future holds for Cosmos. We are particularly excited about tools for cross-chain coordination, on-chain privacy, private DAOs, and notions of citizenship.
 
