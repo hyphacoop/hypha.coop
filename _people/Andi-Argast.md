@@ -4,7 +4,7 @@ pronouns: '(she/her)'
 avatar: Andi.png
 excerpt_separator: <!-- more -->
 ---
-Andi is a strategist, researcher, and facilitator. She is currently a probationary member of Hypha Worker Co-operative.
+Andi is a strategist, researcher, and facilitator. She is currently a member of Hypha Worker Co-operative.
 <!-- more -->
 
 Andi has consistently worked at the intersection of digital technologies and the social good sector, with design, strategy, and insight experience at Girl Guides of Canada, the Framework Foundation, and a variety of arts organizations. 
