@@ -1,6 +1,6 @@
 ---
 name: 'Mauve'
-pronouns: '(they/them)'
+pronouns: '(they/it)'
 avatar: Mauve.png
 ---
 Mauve is a decentralized software consultant who has been working on everything from setting up local mesh networks, local-first file transfer apps, a decentralized web browser, and to a peer to peer virtual reality.
