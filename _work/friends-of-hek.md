@@ -4,8 +4,8 @@ logo: /assets/images/logos/friends-of-hek-logo.png
 work-type: 
     - Blockchain development
     - Community stewardship
-    - Decentralized ecosystems
-    - Deliberative governance
+    - Tokenized membership
+    - Decentralized culture
 excerpt_separator: <!-- more -->
 order: 6
 ---
