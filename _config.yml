@@ -63,4 +63,9 @@ plugins: []
   #- jekyll-feed
 
 feed:
-  title: Dripline
+  title: "Hypha Worker Co-operative | Dripline"
+  path: "feed.xml"
+  collections:
+    cosmos:
+      path: "cosmos.xml"
+      title: "Hypha Does Cosmos"
