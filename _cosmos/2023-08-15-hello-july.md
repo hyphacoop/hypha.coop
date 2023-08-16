@@ -9,7 +9,7 @@ excerpt: 'Hello World from the Interchain! Hypha works on the Cosmos Hub Testnet
 
 Hello, world! We're a small team of engineers, researchers, program coordinators, and curious people working on [Cosmos Hub's Testnets Program](https://github.com/cosmos/testnets). This is our new blog where we'll be writing about our work and all things related to Cosmos that we find interesting.
 
-In an effort to bring increased transparency (and hype) to Hypha’s work on the Testnets Program, we’ll be publishing an OKR Report blog post every month. Our full OKRs statement for Q3 2023 is available at <a href="#">TBD</a>.
+In an effort to bring increased transparency (and hype) to Hypha’s work on the Testnets Program, we’ll be publishing an OKR Report blog post every month. Our full OKRs statement for Q3 2023 is available <a href="https://docs.google.com/document/d/14ryWCmbAHvGgzySfe1exhexaFUFwMZiWo5Pfctmlnvw/edit?usp=sharing">here</a>.
 
 <img
   src="{{ '/assets/images/posts/2023-08-15-testnet-wednesday.png' | relative_url }}"
