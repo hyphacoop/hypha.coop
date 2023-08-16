@@ -7,7 +7,7 @@ excerpt: 'Hello World from the Interchain! Hypha works on the Cosmos Hub Testnet
 
 ## Hello, July
 
-Hello, world! We're a small team of engineers, researchers, program coordinators, and curious people working on Cosmos Hub's Testnets Program. This is our new blog where we'll be writing about our work and all things related to Cosmos that we find interesting.
+Hello, world! We're a small team of engineers, researchers, program coordinators, and curious people working on [Cosmos Hub's Testnets Program](https://github.com/cosmos/testnets). This is our new blog where we'll be writing about our work and all things related to Cosmos that we find interesting.
 
 In an effort to bring increased transparency (and hype) to Hypha’s work on the Testnets Program, we’ll be publishing an OKR Report blog post every month. Our full OKRs statement for Q3 2023 is available at <a href="#">TBD</a>.
 
