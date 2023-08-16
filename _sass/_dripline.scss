@@ -1,4 +1,4 @@
-#dripline {
+#dripline, #cosmos {
     h2 {
         @extend .f2-ns;
         @extend .f3;
@@ -9,7 +9,7 @@
         @extend .f3;
     }
 
-    ul {
+    ul, ol {
         @extend .f4;
     }
 
