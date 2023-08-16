@@ -51,12 +51,12 @@ defaults:
     scope: 
       type: people
     values:
-      avatar: default.png`
+      avatar: default.png
   -
     scope:
       type: cosmos
     values:
-      layout: dripline/post
+      layout: cosmos/post
 plugins: []
   # TODO: Fix issue with conflict between dweb's requirement for relative urls and RSS's for absolute.
   # See: https://github.com/hyphacoop/hypha.coop/issues/24

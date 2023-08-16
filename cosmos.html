@@ -2,8 +2,7 @@
 layout: default
 title: Hypha Does Cosmos
 excerpt: Testing
-menu_title: Cosmos
-order: 6
+permalink: '/doescosmos'
 ---
 
 {% assign posts = site.cosmos %}
@@ -17,23 +16,12 @@ order: 6
                 </h3>
                 <div class="f3 measure-wide dark-gray lh-copy mb0">
                     <p class="f3">
-                        This is the place for our collective writing ranging from short posts, to interviews, design
-                        retrospectives, and essays. We publish on a (mostly) monthly schedule.
-                    </p>
-                    <p class="f4">
-                        <em>
-                            A dripline signifies the area under the outermost branches of a
-                            tree. It’s this
-                            <a href="https://permacultureprinciples.com/principles/_11/" target="_blank"
-                                class="accent link underline-hover" rel="noopener">interface</a>
-                            between worlds where interesting and productive things happen.
-                        </em>
+                        Hypha writes about our work in the Cosmos ecosystem
                     </p>
                 </div>
             </div>
         </div>
     </header>
-    <!-- <img src="/assets/images/canopy2.png" alt="canopy"></img> -->
     {%- if posts.size > 0 -%}
     <article class="flex flex-wrap justify-center">
         {%- assign date_format = site.date_format -%} {%- for post in posts -%}

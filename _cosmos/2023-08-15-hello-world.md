@@ -3,7 +3,7 @@ title: 'Hello world'
 author: Hypha
 date: 2023-08-15
 excerpt: 'hello'
-layout: dripline/post
+layout: cosmos/post
 ---
 
 ### Hello World
