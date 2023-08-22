@@ -13,8 +13,8 @@ excerpt: 'Ruminations on DWeb Camp 2023'
 > “I think, as a species, we have a desire to believe that we’re living at the climax of the story. It’s a kind of narcissism. We want to believe that we’re uniquely important, that we’re living at the end of history, that *now*, after all these millenia of false alarms, *now* is finally the worst it’s ever been, that we finally have reached the end of the world.
 > 
 > “But this raises an interesting question," Olive said. “What if it always *is* the end of the world? … Because we might reasonably think of the end of the world … as a continuous and never-ending process.” 
-                                                                                
-                                                         – *Sea of Tranquility*, Emily St. John Mandel  
+>                
+> <p class="tr"> – <i>Sea of Tranquility</i>, Emily St. John Mandel  </p>
 
 
 
