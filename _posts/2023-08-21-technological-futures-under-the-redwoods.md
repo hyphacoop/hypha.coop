@@ -9,6 +9,7 @@ excerpt: 'Ruminations on DWeb Camp 2023'
 
 ### {{ page.excerpt }}
 
+  
 
 > “I think, as a species, we have a desire to believe that we’re living at the climax of the story. It’s a kind of narcissism. We want to believe that we’re uniquely important, that we’re living at the end of history, that *now*, after all these millenia of false alarms, *now* is finally the worst it’s ever been, that we finally have reached the end of the world.
 > 
@@ -19,7 +20,7 @@ excerpt: 'Ruminations on DWeb Camp 2023'
 
 
 <figure>
-<img src="{{ '/assets/images/posts/2023-08-21-Redwood-canopy.webp' | relative_url }}" alt="Redwood Canopy at DWeb's Camp Navarro"/>
+<img class="mt5 pt1" src="{{ '/assets/images/posts/2023-08-21-Redwood-canopy.webp' | relative_url }}" alt="Redwood Canopy at DWeb's Camp Navarro"/>
 <figcaption>Looking up at DWeb's Camp Navarro</figcaption>
 </figure>
 
@@ -29,7 +30,7 @@ Hypha members and collaborators have been involved with DWeb Camp since its ince
 
 
 <figure>
-<img src="{{ '/assets/images/posts/2023-08-21-Hypha-sign-Dweb.webp' | relative_url }}" alt="A sign shows HYPHA's logo among DWeb's sponsors"/>
+<img class="mt2 pt2" src="{{ '/assets/images/posts/2023-08-21-Hypha-sign-Dweb.webp' | relative_url }}" alt="A sign shows HYPHA's logo among DWeb's sponsors"/>
 <figcaption>Hypha makes it onto the sign <3</figcaption>
 </figure>
 
@@ -39,7 +40,7 @@ DWeb Camp walks the line between hopeful and fretful, giving space to small sing
 Overall, the [sessions](https://dwebcamp2023.sched.com/) I attended were interesting–and many were genuinely fun. I spent much of my week in the Overflow Stack tent, which was the de facto home of governance-related conversations, talking about effective governance, data trusts, and of course, co-operatives. In other sessions, I learned about caring for mutable art, contemplated distributed design patterns, and listened to the tale of a brine shrimp during the [COMPOST Issue 03 Release](https://three.compost.digital/musselled_out/). DWeb Camp’s huge range of session topics made for an eclectic experience, and many of my favourite moments happened in the more random sessions (like trying to listen to the sap within the redwood trees via acoustic emissions). One wish I have for future events is to better promote the design track; UX and UI design are critical to the wider adoption of decentralized tools and giving these sessions more prominence–and having more of them–is a must.
 
 <figure>
-<img src="{{ '/assets/images/posts/2023-08-21-COMPOST-launch-Dweb.webp' | relative_url }}" alt="A group of people gathered under a tent for COMPOST Issue 3 release"/>
+<img class="mt2 pt2" src="{{ '/assets/images/posts/2023-08-21-COMPOST-launch-Dweb.webp' | relative_url }}" alt="A group of people gathered under a tent for COMPOST Issue 3 release"/>
 <figcaption>Mai leads the COMPOST Issue 3 release session</figcaption>
 </figure>
 
@@ -49,7 +50,7 @@ Alongside friends from a number of other co-operatives, Hypha held an emergent c
 
 
 <figure>
-<img src="{{ '/assets/images/posts/2023-08-21-schedule.webp' | relative_url }}" alt="A whiteboard full of post-it under the title 'Forcibly displaced - Help Fix your sessions'"/>
+<img class="mt2 pt2" src="{{ '/assets/images/posts/2023-08-21-schedule.webp' | relative_url }}" alt="A whiteboard full of post-it under the title 'Forcibly displaced - Help Fix your sessions'"/>
 <figcaption>Ad-hoc scheduling fixes for some sessions (not ours!) during TOMORROW</figcaption>
 </figure>
 
