@@ -11,4 +11,4 @@ work-type:
 excerpt_separator: <!-- more -->
 order: 3
 ---
-Restructuring Futures is a multi-stakeholder project seeking to reimagine artistic and social collaboration in virtual spaces, under conditions of low Internet connectivity.<!-- more --> Prototyping with distributed offline-first protocols, this Canada Council for the Arts-funded initiative also demonstrates how artist-run organizations can build collaborative technology that not extractive and is consistent with their beliefs.
+Restructuring Futures is a multi-stakeholder project seeking to reimagine artistic and social collaboration in virtual spaces, under conditions of low Internet connectivity.<!-- more --> Prototyping with distributed offline-first protocols, this Canada Council for the Arts-funded initiative also demonstrates how artist-run organizations can build collaborative technology that is not extractive and is consistent with their beliefs.
