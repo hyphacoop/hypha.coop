@@ -10,4 +10,4 @@ work-type:
 excerpt_separator: <!-- more -->
 order: 9
 ---
-Hypha is a core operational member of the <a class="link accent" href="https://www.meet.coop/">Online Meeting Co-operative</a>, which provides videoconferencing services as a multistakeholder co-operative.<!-- more --> We work across several sociocracy circles, supporting both day-to-day operations and long-term strategies.
+Hypha was a core operational member of the <a class="link accent" href="https://www.meet.coop/">Online Meeting Co-operative</a>, which provides videoconferencing services as a multistakeholder co-operative.<!-- more --> We worked across several sociocracy circles, supporting both day-to-day operations and long-term strategies.
