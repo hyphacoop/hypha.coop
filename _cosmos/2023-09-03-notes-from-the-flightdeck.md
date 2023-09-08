@@ -73,11 +73,3 @@ New consumer chains, particularly sovereign chains that require high uptime, wil
 --- 
 
 If you participate in the [Cosmos Hub testnets](https://github.com/cosmos/testnets/blob/master/replicated-security/VALIDATOR_JOINING_GUIDE.md) (or don’t!) and have feedback about your experiences, we’d love to hear from you. You can always contact Lexa ([lexa@hypha.coop](mailto:lexa@hypha.coop), @lexaMichaelides on Discord, TG, and ~~Twitter~~ X) or Denise ([denise@hypha.coop](mailto:denise@hypha.coop)).
-
-
-
-### About the Author: 
-
-Denise works for Hypha Worker Co-operative as a software engineer and program manager for the Cosmos Hub Testnets program. She speaks extensively at conferences all over the world on a wide range of interests, ranging from psychological safety on teams to distributed computing. She will travel anywhere for food. You can see her writing, speaking, and art portfolio at deniseyu.io. 
-
-[Hypha Worker Co-operative](hypha.coop) is based in Tkaronto (Toronto), Canada. Hypha contributes to several web protocols and believes that peer-to-peer technologies will transform digital collaboration. You can stay up-to-date on Hypha’s Cosmos work by following the [Hypha Does Cosmos](https://hypha.coop/doescosmos/) blog.
