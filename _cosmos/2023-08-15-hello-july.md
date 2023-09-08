@@ -12,7 +12,7 @@ Hello, world! We're a small team of engineers, researchers, program coordinators
 In an effort to bring increased transparency (and hype) to Hypha’s work on the Testnets Program, we’ll be publishing an OKR Report blog post every month. Our full OKRs statement for Q3 2023 is available <a href="https://docs.google.com/document/d/14ryWCmbAHvGgzySfe1exhexaFUFwMZiWo5Pfctmlnvw/edit?usp=sharing">here</a>.
 
 <img
-  src="{{ '/assets/images/posts/2023-08-15-testnet-wednesday.png' | relative_url }}"
+  src="{{ '/assets/images/posts/cosmos/2023-08-15-testnet-wednesday.png' | relative_url }}"
   alt="Comic visualizing the Testnet Wednesday program: scheduling, technical preparation, communications strategy, and launch day."
 />
 
