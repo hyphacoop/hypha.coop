@@ -17,14 +17,14 @@ On August 2, no events were scheduled. On August 9, no synchronous event was req
 
 The Replicated Security faucet has been set up in Discord, and the incantation to request faucet tokens has been modified to take an additional argument indicating the chain ID. This allowed us to reuse the existing faucet channel:
 
-<img style="width: 600px; text-align: center;" 
+<img style="width: 600px; display: block; margin-left: auto; margin-right: auto;" 
   src="{{ '/assets/images/posts/cosmos/2023-09-15-faucet-screenshot.png' | relative_url }}"
   alt="Screenshot of Discord chat with updated commands, 'request theta-testnet-001 wallet-address' and 'request provider wallet-address'."
 />
 
 In August, there were a total of 83 faucet requests for the Replicated Security testnet. This is up from 72 in the previous month. We are looking into ways to make the faucet requests channel more accessible to non-validators, so everyone can get those testnet tokens.
 
-<img style="width: 600px;" src="https://lh4.googleusercontent.com/1PAuUD6eGRDuRF99CpEpQKA3nMncuwdiLQi6S_owLc0kCHqL-Ws_2qXkhZiZUKeCKs4R2fQjnVKNeDi7TEVr2r1UYX2VulUNlPrHiyeU6eDawpebRhWRjipSBbzm86d6rjhgkqDkjHfxvRMlq8pXe-o" 
+<img class='pb4' style="width: 600px; display: block; margin-left: auto; margin-right: auto;" src="{{ '/assets/images/posts/cosmos/2023-09-15-dollar-bills-raining.gif' | relative_url }}" 
 alt="GIF of people dancing while dollar bills rain down"/>
 
 ### O2: We continued growing the Testnet Working Group.
