@@ -63,9 +63,13 @@ plugins: []
   #- jekyll-feed
 
 feed:
-  title: "Hypha Worker Co-operative | Dripline"
-  path: "feed.xml"
+  title: "Hypha Worker Co-operative"
   collections:
+    posts:
+      path: "feed.xml"
+      name: "Dripline"
+      description: "This is the place for our collective writing ranging from short posts, to interviews, design retrospectives, and essays. We publish on a (mostly) monthly schedule."
     cosmos:
       path: "cosmos.xml"
-      title: "Hypha Does Cosmos"
+      name: "Hypha Does Cosmos"
+      description: "Hypha writes about our work in the Cosmos ecosystem"
