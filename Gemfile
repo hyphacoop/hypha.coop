@@ -16,5 +16,5 @@ gem "webrick", "~> 1.8"
 group :jekyll_plugins do
   gem "jekyll-feed", 
       git: "https://github.com/hyphacoop/jekyll-feed", 
-      ref: "a7c018943a31186abaa6d9852677d6817cab956c"
+      ref: "8837225f79a4464cc3b936a1365130aa6db65180"
 end
