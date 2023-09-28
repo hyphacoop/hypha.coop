@@ -7,7 +7,7 @@ github: https://github.com/hyphacoop
 linkedin: https://www.linkedin.com/company/hyphacoop/
 twitter: https://twitter.com/hyphacoop/
 handbook: https://link.hypha.coop/handbook
-rss: /feed.xml
+rss: "/feed.xml"
 # facebook: https://www.facebook.com/hyphacoop/
 # instagram: https://instagram.com/hyphacoop/
 url: "https://hypha.coop"
@@ -64,4 +64,13 @@ plugins: []
   #- jekyll-feed
 
 feed:
-  title: Dripline
+  title: "Hypha Worker Co-operative"
+  collections:
+    posts:
+      path: "feed.xml"
+      name: "Dripline"
+      description: "This is the place for our collective writing ranging from short posts, to interviews, design retrospectives, and essays. We publish on a (mostly) monthly schedule."
+    cosmos:
+      path: "cosmos.xml"
+      name: "Hypha Does Cosmos"
+      description: "Hypha writes about our work in the Cosmos ecosystem"
