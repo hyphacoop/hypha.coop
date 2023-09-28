@@ -32,8 +32,6 @@ collections:
   people:
   posts:
     permalink: /dripline/:title/
-    output: true
-
   work:
 
 date_format: '%B %-d, %Y'
