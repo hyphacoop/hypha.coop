@@ -69,7 +69,7 @@ feed:
     posts:
       path: "feed.xml"
       name: "Dripline"
-      description: "This is the place for our collective writing ranging from short posts, to interviews, design retrospectives, and essays. We publish on a (mostly) monthly schedule."
+      description: "Our collective writing ranging from short posts, to interviews, design retrospectives, and essays. Published on a (mostly) monthly schedule."
     cosmos:
       path: "cosmos.xml"
       name: "Hypha Does Cosmos"
