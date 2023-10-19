@@ -12,8 +12,8 @@ check: ## Check with htmlproofer
 	  --internal-domains hypha.coop
 
 build: ## Build for web
-	 @if [ -z "$(DP_AP_KEY)" ]; then echo "DP_AP_KEY is not set"; exit 1; fi
-    bundle exec jekyll build --key $(DP_AP_KEY)
+	@if [ -z "$(DP_AP_KEY)" ]; then echo "DP_AP_KEY is not set"; exit 1; fi
+	bundle exec jekyll build --key $(DP_AP_KEY)
 
 build-web: build
 
