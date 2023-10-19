@@ -30,7 +30,16 @@ jobs:
       - run: sudo gem install bundler
       - run: sudo gem install jekyll
       - run: sudo bundle install
+
+      - name: Set URL based on branch
+        run: |
+          if [[ "${{ github.ref }}" == "refs/heads/staging" ]]; then
+            sed -i 's|url: "https://hypha.coop"|url: "https://staging.hypha.coop"|' _config.yml
+          fi
+
       - run: make build-dweb
+        env:
+          DP_AP_KEY:  ${{ secrets.DP_AP_KEY }}
       - run: make check
 
       - name: Publish to Distributed Press Staging
