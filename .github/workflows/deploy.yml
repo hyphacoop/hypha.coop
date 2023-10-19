@@ -39,7 +39,7 @@ jobs:
 
       - run: make build-dweb
         env:
-          DP_AP_KEY:  ${{ secrets.DP_AP_KEY }}
+          DP_AP_KEY:  ${{ secrets.ENCODED_DP_AP_KEY_STAGING }}
       - run: make check
 
       - name: Publish to Distributed Press Staging
