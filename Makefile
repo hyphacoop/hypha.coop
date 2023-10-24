@@ -12,8 +12,7 @@ check: ## Check with htmlproofer
 	  --internal-domains hypha.coop
 
 build: ## Build for web
-	KEY=$(echo $(ENCODED_DP_AP_KEY_STAGING) | base64 --decode)
-	bundle exec jekyll build --key "$KEY"
+	bundle exec jekyll build --key /tmp/secret.txt
 
 build-web: build
 
