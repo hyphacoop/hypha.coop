@@ -74,3 +74,11 @@ feed:
       path: "cosmos.xml"
       name: "Hypha Does Cosmos"
       description: "Hypha writes about our work in the Cosmos ecosystem"
+
+defaults:
+- scope:
+    type: posts
+  values:
+    activity: false
+activity_pub:
+  url: https://social.dp.chanterelle.xyz
