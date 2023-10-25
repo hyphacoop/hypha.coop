@@ -58,7 +58,9 @@ defaults:
       type: cosmos
     values:
       layout: cosmos/post
-plugins: []
+plugins: [
+  jekyll-activity-pub,
+]
   # TODO: Fix issue with conflict between dweb's requirement for relative urls and RSS's for absolute.
   # See: https://github.com/hyphacoop/hypha.coop/issues/24
   #- jekyll-feed
