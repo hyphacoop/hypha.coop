@@ -30,7 +30,16 @@ jobs:
       - run: sudo gem install bundler
       - run: sudo gem install jekyll
       - run: sudo bundle install
+
+      - name: Set URL based on branch
+        run: |
+          if [[ "${{ github.ref }}" == "refs/heads/staging" ]]; then
+            sed -i 's|url: "https://hypha.coop"|url: "https://staging.hypha.coop"|' _config.yml
+          fi
+
+      - run: echo ${{ secrets.ENCODED_DP_AP_KEY_STAGING }} | base64 --decode > /tmp/secret.txt
       - run: make build-dweb
+
       - run: make check
 
       - name: Publish to Distributed Press Staging
@@ -50,3 +59,15 @@ jobs:
           dp_url: https://api.distributed.press
           refresh_token: ${{ secrets.DISTRIBUTED_PRESS_PRODUCTION_TOKEN}}
           site_url: hypha.coop
+
+      - name: Notify AP
+        run: bundle exec jekyll notify --key /tmp/secret.txt --verbose
+
+      - name: Commit ActivityPub Data
+        uses: EndBug/add-and-commit@v9 
+        with:
+          add: '_data/activity_pub.yml'
+          default_author: github_actions
+          fetch: true
+
+

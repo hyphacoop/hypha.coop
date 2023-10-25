@@ -12,9 +12,9 @@ check: ## Check with htmlproofer
 	  --internal-domains hypha.coop
 
 build: ## Build for web
-	$(RUN) jekyll build --key ${{ secrets.DP_AP_KEY }}
+	bundle exec jekyll build --key /tmp/secret.txt --verbose
 
-build-web: build --key ${{ secrets.DP_AP_KEY }}
+build-web: build
 
 relativize: ## Relativize links in _site
 	(cd _site && npx github:patcon/all-relative#also-root)
