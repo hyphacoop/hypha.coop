@@ -81,7 +81,7 @@ defaults:
 - scope:
     type: posts
   values:
-    activity: false
+    activity: true
 activity_pub:
   url: https://social.dp.chanterelle.xyz
-  username: "dripline"
+  username: "HyphaCoop"
