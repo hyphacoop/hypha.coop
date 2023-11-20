@@ -3,7 +3,7 @@ title: 'Non-Fungible Treasures Shaping Autonomous Worlds'
 author: Vincent Charlebois
 date: 2023-11-20
 acknowledgement: 
-excerpt: 'An Artist’s Perspective on Blockchain's Creative Potential'
+excerpt: "An Artist's Perspective on Blockchain's Creative Potential"
 ---
 
 ### {{ page.excerpt }}
