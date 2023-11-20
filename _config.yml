@@ -43,6 +43,7 @@ defaults:
       type: posts
     values:
       layout: dripline/post
+      activity: true
   -
     scope:
       type: openings
@@ -77,11 +78,6 @@ feed:
       name: "Hypha Does Cosmos"
       description: "Hypha writes about our work in the Cosmos ecosystem"
 
-defaults:
-- scope:
-    type: posts
-  values:
-    activity: true
 activity_pub:
   url: https://social.dp.chanterelle.xyz
   username: "HyphaCoop"
