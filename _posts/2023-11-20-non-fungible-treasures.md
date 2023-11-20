@@ -6,6 +6,11 @@ acknowledgement:
 excerpt: "An Artist's Perspective on Blockchain's Creative Potential"
 ---
 
+<figure class="pb4">
+    <img class="mt5 pt1" src="{{ '/assets/images/posts/2023-11-20-hr-final.gif' | relative_url }}" alt="Hawking Radiation's smart contract ASCII art animated"/>
+    <figcaption>Hawking Radiation's smart contract ASCII art animated</figcaption>
+</figure>
+
 ### {{ page.excerpt }}
 
 As an artist immersed in the realms of blockchain and smart contract exploration, my time in early October in New Orleans at an event hosted by Wild.xyz, presented a unique opportunity. There, amidst a diverse assembly of artists and thinkers, I engaged in rich dialogues about the nuances of smart contract art, a field where I have been actively contributing. This experience served not just as a great party and wonderful networking occasion but as a fertile ground for exchanging groundbreaking ideas, further fueling my creative and technological pursuits.
