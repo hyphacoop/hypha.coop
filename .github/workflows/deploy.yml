@@ -37,7 +37,15 @@ jobs:
             sed -i 's|url: "https://staging.hypha.coop"|url: "https://hypha.coop"|' _config.yml
           fi
 
-      - run: echo ${{ secrets.ENCODED_DP_AP_KEY_STAGING }} | base64 --decode > /tmp/secret.txt
+      # Decode the correct key based on the branch
+      - name: Decode Staging Key
+        if: github.ref == 'refs/heads/staging'
+        run: echo ${{ secrets.ENCODED_DP_AP_KEY_STAGING }} | base64 --decode > /tmp/secret.txt
+
+      - name: Decode Production Key
+        if: github.ref == 'refs/heads/master'
+        run: echo ${{ secrets.ENCODED_DP_AP_KEY_PRODUCTION }} | base64 --decode > /tmp/secret.txt
+
       - run: make build-dweb
 
       - run: make check
