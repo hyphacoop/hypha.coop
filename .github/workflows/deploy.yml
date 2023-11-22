@@ -39,16 +39,16 @@ jobs:
 
       # Decode the correct key based on the branch
       - name: Decode Staging Key
-      if: >
-        github.ref == 'refs/heads/staging' ||
-        (github.event_name == 'pull_request' && github.base_ref == 'staging')
-      run: echo ${{ secrets.ENCODED_DP_AP_KEY_STAGING }} | base64 --decode > /tmp/secret.txt
+        if: >
+          github.ref == 'refs/heads/staging' ||
+          (github.event_name == 'pull_request' && github.base_ref == 'staging')
+        run: echo ${{ secrets.ENCODED_DP_AP_KEY_STAGING }} | base64 --decode > /tmp/secret.txt
 
-    - name: Decode Production Key
-      if: >
-        github.ref == 'refs/heads/master' ||
-        (github.event_name == 'pull_request' && github.base_ref == 'master')
-      run: echo ${{ secrets.ENCODED_DP_AP_KEY_PRODUCTION }} | base64 --decode > /tmp/secret.txt
+      - name: Decode Production Key
+        if: >
+          github.ref == 'refs/heads/master' ||
+          (github.event_name == 'pull_request' && github.base_ref == 'master')
+        run: echo ${{ secrets.ENCODED_DP_AP_KEY_PRODUCTION }} | base64 --decode > /tmp/secret.txt
 
       - run: make build-dweb
 
