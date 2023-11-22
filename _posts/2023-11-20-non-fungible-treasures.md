@@ -30,7 +30,7 @@ Among the innovative NFT projects that caught my attention this year was the [Bl
 </figure>
 
 
-Fascinated by this project, I ventured to create the [Hawking Radiation](https://etherscan.io/address/0x9dCEaa80E2500B519090a6d8a1FfeDfe224Ceb8D#code), a smart contract enabling a collective approach to interacting with the Blackhole. This initiative allowed participants to burn their tokens via the Hawking Radiation mechanism, turning the individualistic experience into a cooperative mission. The goal was to socialize the experiment, fostering a community-driven effort to 'play' the Black Hole in a cooperative mode. This shift not only added a layer of social dynamics to the experience but also highlighted the potential of blockchain for creating collaborative and shared art experiences.  
+Fascinated by this project, I ventured to create the [Hawking Radiation](https://etherscan.io/address/0x9dCEaa80E2500B519090a6d8a1FfeDfe224Ceb8D#code), a smart contract enabling a collective approach to interacting with the Blackhole. This initiative allowed participants to burn their tokens via the Hawking Radiation mechanism, turning the individualistic experience into a cooperative mission. The goal was to socialize the experiment, fostering a community-driven effort to 'play' the Blackhole in a cooperative mode. This shift not only added a layer of social dynamics to the experience but also highlighted the potential of blockchain for creating collaborative and shared art experiences.  
 
 "NFTs are worthless!"—this statement, frequently used as a click-bait headline— casually dismisses the possibilities enabled by distributed databases such as blockchains. Such statements, other than showing a definitive lack of nuance, serve as a reminder of the misconception towards the affordances of such decentralized technologies. As an artist committed to technological explorations, my curiosity tends to lead me towards the potentialities opened up by a specific medium. I see NFTs as a medium that can explore the social, financial, and technical ramifications of blockchains, offering a distinct material for creativity. My interest in distributed ledgers as a vehicle for creativity has led me to take part in season 2 of [Wild](https://wild.xyz)'s residency.  
 
@@ -38,7 +38,13 @@ Wild is a platform celebrating art and creativity in the digital age. Their prim
 
 WILD x NOLA brought together brilliant minds that creatively shape the art & blockchain ecosystem. I witnessed spontaneous exchanges, collaborations, and a deep dive into the creative possibilities of digital art. The event was a testament to Wild's mission of magnifying art and building uncharted worlds.  
 
-These events offer opportunities to have unmediated discussions about a variety of online projects. One of my NFT-based projects that I discussed in New Orleans is the [Infinite Canvas](https://vncnt.xyz/infinite-canvas), a collective experiment made of an ever expanding collection of colours. This artwork on Ethereum is a testament to the collaborative spirit of onchain permisionessless. Here's how it works: Anyone can mint a token, and each token buyer chooses its token's color. Owners have the freedom to change that color of their token as often as they wish. Collectively, these tokens form the infinite canvas. This project with its unlimited supply allows for an ever-evolving artwork where the community actively participates in its creation. Think [r/place](https://en.wikipedia.org/wiki/R/place) meets the [Million Token Website](https://milliontokenwebsite.com/) but with an added *infinity* factor.  
+These events offer opportunities to have unmediated discussions about a variety of online projects. One of my NFT-based projects that I discussed in New Orleans is the [Infinite Canvas](https://vncnt.xyz/infinite-canvas), a collective experiment made of an ever expanding collection of colours. This artwork on Ethereum is a testament to the collaborative spirit of onchain permisionessless. Here's how it works:  
+- Anyone can mint a token
+- Each token buyer chooses its token's colour  
+- Owners have the freedom to change the colour of their token as often as they wish.  
+- Collectively, these tokens form the infinite canvas.  
+
+This project with its unlimited supply allows for an ever-evolving artwork where the community actively participates in its creation. Think [r/place](https://en.wikipedia.org/wiki/R/place) meets the [Million Token Website](https://milliontokenwebsite.com/) but with an added *infinity* factor.  
 
 <figure>
 <img class="mt2 pt2" src="{{ '/assets/images/posts/2023-11-20-infinite-canvas.png' | relative_url }}" alt="A series of colours as NFTs layed out in a grid as seen on the project's website"/>
