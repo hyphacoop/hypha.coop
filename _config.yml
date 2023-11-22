@@ -81,3 +81,5 @@ feed:
 activity_pub:
   url: https://social.dp.chanterelle.xyz
   username: "HyphaCoop"
+  icons:
+  - "assets/images/hypha-social.png"
