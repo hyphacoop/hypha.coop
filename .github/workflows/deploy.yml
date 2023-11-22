@@ -24,6 +24,8 @@ jobs:
       # so your workflow can access it
       - name: Checkout repo
         uses: actions/checkout@master
+        with:
+          ref: ${{ github.head_ref || github.ref }}
 
       # Build Jekyll Site
       - run: echo "Building Jekyll site"
