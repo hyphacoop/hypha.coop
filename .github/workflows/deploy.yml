@@ -33,8 +33,8 @@ jobs:
 
       - name: Set URL based on branch
         run: |
-          if [[ "${{ github.ref }}" == "refs/heads/staging" ]]; then
-            sed -i 's|url: "https://hypha.coop"|url: "https://staging.hypha.coop"|' _config.yml
+          if [[ "${{ github.ref }}" == "refs/heads/master" ]]; then
+            sed -i 's|url: "https://staging.hypha.coop"|url: "https://hypha.coop"|' _config.yml
           fi
 
       - run: echo ${{ secrets.ENCODED_DP_AP_KEY_STAGING }} | base64 --decode > /tmp/secret.txt
