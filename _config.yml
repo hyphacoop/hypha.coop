@@ -10,7 +10,7 @@ handbook: https://link.hypha.coop/handbook
 rss: "/feed.xml"
 # facebook: https://www.facebook.com/hyphacoop/
 # instagram: https://instagram.com/hyphacoop/
-url: "https://hypha.coop"
+url: "https://staging.hypha.coop"
 footer: Hypha Worker Co-operative Inc.<br>Ontario Corporation No. 5019866
 
 description: >-
@@ -43,6 +43,7 @@ defaults:
       type: posts
     values:
       layout: dripline/post
+      activity: true
   -
     scope:
       type: openings
@@ -58,7 +59,9 @@ defaults:
       type: cosmos
     values:
       layout: cosmos/post
-plugins: []
+plugins: [
+  jekyll-activity-pub,
+]
   # TODO: Fix issue with conflict between dweb's requirement for relative urls and RSS's for absolute.
   # See: https://github.com/hyphacoop/hypha.coop/issues/24
   #- jekyll-feed
@@ -74,3 +77,9 @@ feed:
       path: "cosmos.xml"
       name: "Hypha Does Cosmos"
       description: "Hypha writes about our work in the Cosmos ecosystem"
+
+activity_pub:
+  url: https://social.dp.chanterelle.xyz
+  username: "HyphaCoop"
+  icons:
+  - "assets/images/hypha-social.png"

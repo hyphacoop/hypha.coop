@@ -30,7 +30,37 @@ jobs:
       - run: sudo gem install bundler
       - run: sudo gem install jekyll
       - run: sudo bundle install
+
+      - name: Set Site URL based on branch
+        run: |
+          if [[ "${{ github.ref }}" == "refs/heads/master" ]] || [[ "${{ github.event_name }}" == "pull_request" && "${{ github.base_ref }}" == "master" ]]; then
+            sed -i 's|url: "https://staging.hypha.coop"|url: "https://hypha.coop"|' _config.yml
+          fi
+
+      - name: Set DP Social URL based on branch
+        run: |
+          if [[ "${{ github.ref }}" == "refs/heads/master" ]] || [[ "${{ github.event_name }}" == "pull_request" && "${{ github.base_ref }}" == "master" ]]; then
+            sed -i 's|url: "https://social.dp.chanterelle.xyz"|url: ${{ secrets.SOCIAL_DP_PROD }}|' _config.yml
+          elif [[ "${{ github.ref }}" == "refs/heads/staging" ]] || [[ "${{ github.event_name }}" == "pull_request" && "${{ github.base_ref }}" == "staging" ]]; then
+            # Replace with staging URL for activity_pub (SOCIAL_DP_STAGING)
+            sed -i 's|url: "https://social.dp.chanterelle.xyz"|url: ${{ secrets.SOCIAL_DP_STAGING }}|' _config.yml
+          fi
+
+      # Decode the correct key based on the branch
+      - name: Decode Staging Key
+        if: >
+          github.ref == 'refs/heads/staging' ||
+          (github.event_name == 'pull_request' && github.base_ref == 'staging')
+        run: echo ${{ secrets.ENCODED_DP_AP_KEY_STAGING }} | base64 --decode > /tmp/secret.txt
+
+      - name: Decode Production Key
+        if: >
+          github.ref == 'refs/heads/master' ||
+          (github.event_name == 'pull_request' && github.base_ref == 'master')
+        run: echo ${{ secrets.ENCODED_DP_AP_KEY_PRODUCTION }} | base64 --decode > /tmp/secret.txt
+
       - run: make build-dweb
+
       - run: make check
 
       - name: Publish to Distributed Press Staging
@@ -50,3 +80,15 @@ jobs:
           dp_url: https://api.distributed.press
           refresh_token: ${{ secrets.DISTRIBUTED_PRESS_PRODUCTION_TOKEN}}
           site_url: hypha.coop
+
+      - name: Notify AP
+        run: bundle exec jekyll notify --key /tmp/secret.txt --verbose
+
+      - name: Commit ActivityPub Data
+        uses: EndBug/add-and-commit@v9 
+        with:
+          add: '_data/activity_pub.yml'
+          default_author: github_actions
+          fetch: true
+
+
