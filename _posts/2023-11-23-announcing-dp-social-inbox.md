@@ -56,7 +56,7 @@ If you aren't able or interested in coding your way to creating a static website
 
 All of Sutty's templates are compatible with the Social Inbox, in addition to the Magazine template, which is based on the layout of COMPOST magazine, our sister project. For a step-by-step guide on how to use the Social Inbox with Sutty, check out this [LINK:demo video].
 
-[LINK WHEN AVAILABLE: You can see how it looks by checking out our Dripline account on the Fediverse: @dripline@hypha.coop]
+[LINK WHEN AVAILABLE: You can see how it looks by checking out our account on the Fediverse: @HyphaCoop@hypha.coop]
 
 ## Getting Started
 
