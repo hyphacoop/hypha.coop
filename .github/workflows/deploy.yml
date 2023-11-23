@@ -31,10 +31,19 @@ jobs:
       - run: sudo gem install jekyll
       - run: sudo bundle install
 
-      - name: Set URL based on branch
+      - name: Set Site URL based on branch
         run: |
-          if [[ "${{ github.ref }}" == "refs/heads/master" ]]; then
+          if [[ "${{ github.ref }}" == "refs/heads/master" ]] || [[ "${{ github.event_name }}" == "pull_request" && "${{ github.base_ref }}" == "master" ]]; then
             sed -i 's|url: "https://staging.hypha.coop"|url: "https://hypha.coop"|' _config.yml
+          fi
+
+      - name: Set DP Social URL based on branch
+        run: |
+          if [[ "${{ github.ref }}" == "refs/heads/master" ]] || [[ "${{ github.event_name }}" == "pull_request" && "${{ github.base_ref }}" == "master" ]]; then
+            sed -i 's|url: "https://social.dp.chanterelle.xyz"|url: ${{ secrets.SOCIAL_DP_PROD }}|' _config.yml
+          elif [[ "${{ github.ref }}" == "refs/heads/staging" ]] || [[ "${{ github.event_name }}" == "pull_request" && "${{ github.base_ref }}" == "staging" ]]; then
+            # Replace with staging URL for activity_pub (SOCIAL_DP_STAGING)
+            sed -i 's|url: "https://social.dp.chanterelle.xyz"|url: ${{ secrets.SOCIAL_DP_STAGING }}|' _config.yml
           fi
 
       # Decode the correct key based on the branch
