@@ -85,3 +85,5 @@ activity_pub:
   username: "dripline"
   icons:
   - "assets/images/hypha-social.png"
+  images:
+  - "assets/images/social-banner.png"
