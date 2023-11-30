@@ -70,9 +70,9 @@ There are a few ways to try out the Social Inbox:
 
 ## What's Next
 
-Our next area of focus is to make it easier for people to discover websites and blogs on the dweb easier. Essentially, we're developing automation on top of Distributed Press that will announce newly published accounts in a format that can be subscribed to on the Fediverse. 
+Our next area of focus is to make it easier for people to discover websites and blogs on the DWeb. Essentially, we're developing automation on top of Distributed Press that will announce newly published accounts in a format that can be subscribed to on the Fediverse. 
 
-We also see the Social Inbox, but particular the Inbox Server, as a stepping stone towards further decentralization. We hope to make publishing and social media local-first and peer-to-peer by creating paths to data storage that puts the data closer to the end-user. For example, all the data related to your website and its social interactions could be hosted on your own computer, or another local server of your choosing. One of our next steps in this direction is going to be able to create a p2p-enabled Fediverse client and a specification for loading ActivityPub content from p2p protocols.
+We also see the Social Inbox, particularly the Inbox Server, as a stepping stone towards further decentralization. We hope to make publishing and social media local-first and peer-to-peer(p2p) by creating paths to data storage that puts the data closer to the end user. For example, all the data related to your website and its social interactions could be hosted on your own computer, or another local server of your choosing. One of our next steps in this direction will be to create a p2p-enabled Fediverse client and a specification for loading ActivityPub content from p2p protocols.
 
 Also, if you're a developer on another static site generator (that isn't Jekyll), [please reach out](mailto:hello@distributed.press) if you're interested in building a similar plug-in to integrate ActivityPub into your publishing workflow.
 
