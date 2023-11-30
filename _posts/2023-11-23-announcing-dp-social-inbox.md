@@ -22,7 +22,7 @@ Their intrusive practices extend into the timeline itself, by manipulating what 
 
 ## ActivityPub: A Decentralized Alternative
 
-In the face of the failures of existing social media platforms, there have been many attempts to build viable alternatives. Out of these, one of the most thriving networks is what is collectively called the Fediverse — an ecosystem of social media platforms that rely on the ActivityPub social data standard. 
+In the face of the failures of existing social media platforms, there have been many attempts to build viable alternatives. Out of these, one of the most thriving networks is what is collectively called the Fediverse — an ecosystem of social media platforms that rely on the [ActivityPub social data standard](https://www.w3.org/TR/activitypub/). 
 
 Instead of having a platform contain all the accounts, messages, and interactions all concentrated on one website, ActivityPub allows users with accounts on different websites to communicate with each other. Email works similarly in that you can send an email to someone else regardless of what email service they use. By enabling anyone to set up their own "instance" or social media server, ActivityPub allows people to decide who has control over all their data. They can decide to host their own instance, or choose to go with any of the many others who offer hosting services. The standard allows data to be hosted across thousands of different instances, while still being able to follow and send messages between them. 
 
