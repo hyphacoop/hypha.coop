@@ -36,7 +36,7 @@ From its inception, Distributed.Press has aimed to incorporate existing decentra
 
 Through our existing suite of tools, it's already possible to publish static [Jekyll](https://jekyllrb.com/) websites to the DWeb. With static websites, code and content are delivered to the browser as simple HTML/CSS files, without having to access an external server to load content. The benefit of static websites is that they load faster, do not use plug-ins that require constant updates, and tend to be more secure overall. We realized that we could lean on these features, while incorporating social interactions into websites using ActivityPub. 
 
-So over the course of this year, we built the **Social Inbox**, which allows people to integrate their website with the Fediverse and engage with readers there. [You can read more about the technical details of how the Social Inbox works here](https://blog.mauve.moe/posts/distributed-press-social-inbox#how-the-inbox-works). 
+So over the course of this year, we built the **Social Inbox**, which allows people to integrate their website with the Fediverse and to engage with readers there. [You can read more about the technical details of how the Social Inbox works here](https://blog.mauve.moe/posts/distributed-press-social-inbox#how-the-inbox-works). 
 
 With the Social Inbox enabled on your site, you can:
 
