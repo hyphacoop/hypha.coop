@@ -1,6 +1,6 @@
 ---
 title: 'Announcing Distributed.Press Social Inbox 1.0'
-author: Hypha
+author: Hypha & Sutty
 date: 2023-11-23
 acknowledgement: 
 excerpt: 'Our new feature brings social interactions to static websites on the decentralized web.'
