@@ -59,6 +59,8 @@ defaults:
       type: cosmos
     values:
       layout: cosmos/post
+      activity: false
+
 plugins: [
   jekyll-activity-pub,
 ]
