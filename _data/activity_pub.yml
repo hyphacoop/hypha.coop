@@ -97,5 +97,5 @@ notifications:
     id: https://hypha.coop/dripline/technological-futures-under-the-redwoods/
     created_at: 1699548047
 actor_url: https://hypha.coop/about.jsonld
-actor: "@dripline@hypha.coop
+actor: "@dripline@hypha.coop"
 public_key_url: https://hypha.coop/about.jsonld#main-key
