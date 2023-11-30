@@ -8,9 +8,6 @@ excerpt: 'Our new feature brings social interactions to static websites on the d
 
   
 ### {{ page.excerpt }}
-  
-
-## Press Release
 
 Hypha and [Sutty](https://sutty.nl/) are thrilled to announce the release of the Social Inbox, a new feature of [Distributed.Press](https://distributed.press/) that integrates a website's comment section with federated social media platforms like Mastodon. With the Social Inbox enabled, websites obtain their own account on the Fediverse, allowing it to automatically send out new posts to followers at the time of publication. When other users reply to posts, you can approve them to be published to the site as comments. The Social Inbox allows readers to directly engage with your posts where they already are, and gives publishers the ability to incorporate public dialogue into their websites.
 
@@ -56,7 +53,7 @@ If you aren't able or interested in coding your way to creating a static website
 
 All of Sutty's templates are compatible with the Social Inbox, in addition to the Magazine template, which is based on the layout of COMPOST magazine, our sister project. For a step-by-step guide on how to use the Social Inbox with Sutty, check out this [LINK:demo video].
 
-[LINK WHEN AVAILABLE: You can see how it looks by checking out our account on the Fediverse: @HyphaCoop@hypha.coop]
+You can see how it looks by checking out this blog's account on the Fediverse — you will need to have an account on the Fediverse to look up this account with your client (Mastodon, Pixelfed, etc): @dripline@hypha.coop
 
 ## Getting Started
 
