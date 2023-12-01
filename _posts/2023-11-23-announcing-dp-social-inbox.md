@@ -47,13 +47,15 @@ With the Social Inbox enabled on your site, you can:
 
 To see which Fediverse clients are compatible with the Social Inbox, you can follow this [Github issue](https://github.com/hyphacoop/social.distributed.press/issues/24).
 
+For Mastodon users: Please note that when you follow an account for the first time from your instance, you will be receiving new posts as they're published. However, you will not see any previous posts due to Mastodon not preemptively fetching the full lists of posts from our outbox. If this something you'd like to be addressed, comment on the [Mastodon issue tracker](https://github.com/mastodon/mastodon/issues/34), or work with us in [our issue tracker](???) to see what you can do to help.
+
 ## Sutty Integration
 
 If you aren't able or interested in coding your way to creating a static website or implementing the Social Inbox yourself, we have also integrated it into [Sutty](https://sutty.nl/en), a content management system for static Jekyll websites. All you need to do is set up a website on their platform and enable the Social Inbox in the configuration panel. Then, you will see a panel that will allow you to approve/deny replies as comments to your posts.
 
 All of Sutty's templates are compatible with the Social Inbox, in addition to the Magazine template, which is based on the layout of COMPOST magazine, our sister project. For a step-by-step guide on how to use the Social Inbox with Sutty, check out this [LINK:demo video].
 
-You can see how it looks by checking out this blog's account on the Fediverse — you will need to have an account on the Fediverse to look up this account with your client (Mastodon, Pixelfed, etc): @dripline@hypha.coop
+If you're already on the Fediverse, you can search @dripline@hypha.coop from your instance and follow our posts! 
 
 ## Getting Started
 
