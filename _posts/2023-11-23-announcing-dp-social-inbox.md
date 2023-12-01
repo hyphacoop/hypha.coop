@@ -79,7 +79,7 @@ Stay tuned and thanks for reading!
 
 ## Support Us!
 
-Love what we do and want to help sustain this project? **[You can support us on Open Collective with a one-time gift or monthly donation.](https://opencollective.com/compost) **
+Love what we do and want to help sustain this project? **[You can support us on Open Collective with a one-time gift or monthly donation.](https://opencollective.com/distributed-press) **
 
 *~*~*~*~*
 
