@@ -83,8 +83,6 @@ Stay tuned and thanks for reading!
 
 Love what we do and want to help sustain this project? **[You can support us on Open Collective with a one-time gift or monthly donation.](https://opencollective.com/distributed-press)**
 
-*~*~*~*~*
-
 ### About this project
 Distributed.Press is a joint collaboration between two tech worker co-operatives, Hypha Worker Co-operative based in Toronto, Canada and Sutty based in Buenos Aires, Argentina.
 
