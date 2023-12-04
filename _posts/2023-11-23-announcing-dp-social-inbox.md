@@ -53,7 +53,7 @@ For Mastodon and Pixelfed users: Please note that when you follow an account for
 
 If you aren't able or interested in coding your way to creating a static website or implementing the Social Inbox yourself, we have also integrated it into [Sutty](https://sutty.nl/en), a content management system for static Jekyll websites. All you need to do is set up a website on their platform and enable the Social Inbox in the configuration panel. Then, you will see a panel that will allow you to approve/deny replies as comments to your posts.
 
-All of Sutty's templates are compatible with the Social Inbox, in addition to the Magazine template, which is based on the layout of COMPOST magazine, our sister project. For a step-by-step guide on how to use the Social Inbox with Sutty, check out this [LINK:demo video].
+All of Sutty's templates are compatible with the Social Inbox, in addition to the Magazine template, which is based on the layout of COMPOST magazine, our sister project. For a step-by-step guide on how to use the Social Inbox with Sutty, check out this [demo video](https://youtu.be/ntTdIuC0bbM).
 
 If you're already on the Fediverse, you can search @dripline@hypha.coop from your instance and follow our posts! 
 
