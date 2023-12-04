@@ -47,7 +47,7 @@ With the Social Inbox enabled on your site, you can:
 
 To see which Fediverse clients are compatible with the Social Inbox, you can follow this [Github issue](https://github.com/hyphacoop/social.distributed.press/issues/24).
 
-For Mastodon users: Please note that when you follow an account for the first time from your instance, you will be receiving new posts as they're published. However, you will not see any previous posts due to Mastodon not preemptively fetching the full lists of posts from our outbox. If this something you'd like to be addressed, comment on the [Mastodon issue tracker](https://github.com/mastodon/mastodon/issues/34), or work with us in [our issue tracker](https://github.com/hyphacoop/social.distributed.press/issues/24) to see what you can do to help.
+For Mastodon and Pixelfed users: Please note that when you follow an account for the first time from your instance, you will be receiving new posts as they're published. However, you will not see any previous posts due to Mastodon not preemptively fetching the full lists of posts from our outbox. If this something you'd like to be addressed, you can comment on the [Mastodon issue tracker](https://github.com/mastodon/mastodon/issues/34), or work with us in [our issue tracker](https://github.com/hyphacoop/social.distributed.press/issues/24) to see what you can do to help.
 
 ## Sutty Integration
 
