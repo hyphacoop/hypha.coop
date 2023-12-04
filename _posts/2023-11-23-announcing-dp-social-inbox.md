@@ -1,7 +1,7 @@
 ---
 title: 'Announcing Distributed.Press Social Inbox 1.0'
 author: Hypha & Sutty
-date: 2023-11-23
+date: 2023-12-05
 acknowledgement: 
 excerpt: 'Our new feature brings social interactions to static websites on the decentralized web.'
 ---
@@ -13,7 +13,7 @@ Hypha and [Sutty](https://sutty.nl/) are thrilled to announce the release of the
 
 ## Failures of Existing Social Media
 
-Big social media services, like X/Twitter and Instagram, centralize all control over the data, content, and interactions on their platforms. They moderate messages on their platforms with little transparency or accountability, leading to posts and entire accounts being censored with no explanation. Additionally, corporate social media platforms have an insatiable hunger for data. They surveil every aspect of our interactions - from what we post, what we "like", who we follow, to minute details of where our attention lingers. This data is used to feed their algorithms in order to maximize the influence, and therefore profitability, of the ads they show to their users. 
+Big social media services, like X/Twitter and Instagram, centralize all control over the data, content, and interactions on their platforms. They moderate messages on their platforms with little transparency or accountability, leading to posts and entire accounts being censored with no explanation. Additionally, corporate social media platforms have an insatiable hunger for data. They surveil every aspect of our interactions — from what we post, what we "like", who we follow, to minute details of where our attention lingers. This data is used to feed their algorithms in order to maximize the influence, and therefore profitability, of the ads they show to their users. 
 
 Their intrusive practices extend into the timeline itself, by manipulating what posts appear and inserting "suggested" content that we never ask to see. Major social media platforms regularly comply with government requests to hand over personal data without a court warrant. And we have witnessed how an entire social media network can be sold to a billionaire with no regard for the impact this would have on global public discourse. 
 
@@ -29,11 +29,11 @@ As a result, the Fediverse continues to grow in its potential as a diversified n
 
 ## Social Inbox for the Decentralized Web
 
-From its inception, Distributed.Press has aimed to incorporate existing decentralized web protocols to expand the possibilities of web publishing. It is important for us to incorporate ActivityPub into Distributed.Press given its flexibility and popular use as a social media protocol. 
+From its inception, Distributed.Press has incorporated existing decentralized web protocols to expand the possibilities of web publishing. It is important for us to incorporate ActivityPub into Distributed.Press given its flexibility and popular use as a social media protocol. 
 
 Through our existing suite of tools, it's already possible to publish static [Jekyll](https://jekyllrb.com/) websites to the DWeb. With static websites, code and content are delivered to the browser as simple HTML/CSS files, without having to access an external server to load content. The benefit of static websites is that they load faster, do not use plug-ins that require constant updates, and tend to be more secure overall. We realized that we could lean on these features, while incorporating social interactions into websites using ActivityPub. 
 
-So over the course of this year, we built the **Social Inbox**, which allows people to integrate their website with the Fediverse and to engage with readers there. [You can read more about the technical details of how the Social Inbox works here](https://blog.mauve.moe/posts/distributed-press-social-inbox#how-the-inbox-works). 
+So over the course of this year, we built the **Social Inbox**, which allows people to integrate their website with the Fediverse and to engage with readers there. [You can read more about the technical details of how the Social Inbox works](https://blog.mauve.moe/posts/distributed-press-social-inbox#how-the-inbox-works). 
 
 With the Social Inbox enabled on your site, you can:
 
@@ -47,13 +47,15 @@ With the Social Inbox enabled on your site, you can:
 
 To see which Fediverse clients are compatible with the Social Inbox, you can follow this [Github issue](https://github.com/hyphacoop/social.distributed.press/issues/24).
 
-For Mastodon and Pixelfed users: Please note that when you follow an account for the first time from your instance, you will be receiving new posts as they're published. However, you will not see any previous posts due to Mastodon not preemptively fetching the full lists of posts from our outbox. If this something you'd like to be addressed, you can comment on the [Mastodon issue tracker](https://github.com/mastodon/mastodon/issues/34), or work with us in [our issue tracker](https://github.com/hyphacoop/social.distributed.press/issues/24) to see what you can do to help.
+For Mastodon and Pixelfed users: Please note that when someone follows your website's Fediverse account for the first time, they will receive new posts as they're published. That also means that they will not see any *previous* posts due to Mastodon not preemptively fetching the full lists of posts from our outbox. If this something you'd like to be addressed, you can comment on the [Mastodon issue tracker](https://github.com/mastodon/mastodon/issues/34), or work with us by chiming into [our issue tracker](https://github.com/hyphacoop/social.distributed.press/issues/24) to see what you can do to help.
 
 ## Sutty Integration
 
 If you aren't able or interested in coding your way to creating a static website or implementing the Social Inbox yourself, we have also integrated it into [Sutty](https://sutty.nl/en), a content management system for static Jekyll websites. All you need to do is set up a website on their platform and enable the Social Inbox in the configuration panel. Then, you will see a panel that will allow you to approve/deny replies as comments to your posts.
 
-All of Sutty's templates are compatible with the Social Inbox, in addition to the Magazine template, which is based on the layout of COMPOST magazine, our sister project. For a step-by-step guide on how to use the Social Inbox with Sutty, check out this [demo video](https://youtu.be/ntTdIuC0bbM).
+All of Sutty's templates are compatible with the Social Inbox, in addition to the Magazine template, which is based on the layout of COMPOST magazine, our sister project. 
+
+**For a step-by-step guide on how to use the Social Inbox with Sutty, check out this [demo video](https://youtu.be/ntTdIuC0bbM).**
 
 If you're already on the Fediverse, you can search @dripline@hypha.coop from your instance and follow our posts! 
 
@@ -79,7 +81,7 @@ Stay tuned and thanks for reading!
 
 ## Support Us!
 
-Love what we do and want to help sustain this project? **[You can support us on Open Collective with a one-time gift or monthly donation.](https://opencollective.com/distributed-press) **
+Love what we do and want to help sustain this project? **[You can support us on Open Collective with a one-time gift or monthly donation.](https://opencollective.com/distributed-press)**
 
 *~*~*~*~*
 
