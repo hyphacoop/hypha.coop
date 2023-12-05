@@ -86,11 +86,11 @@ If you're already on the Fediverse, you can search @dripline@hypha.coop from you
 
 There are a few ways to try out the Social Inbox:
 
-* **Sutty**: Create a static website on Sutty and use the Social Inbox panel on their platform admin panel: https://sutty.nl/en/
+* **Sutty**: Create a static website on Sutty and use the Social Inbox panel on their platform admin panel: [https://sutty.nl/en/](https://sutty.nl/en/)
 
-* **Do it yourself**: Check out our documentation to see how you can set up the Social Inbox on your existing (or future) static website: https://docs.distributed.press/
+* **Do it yourself**: Check out our documentation to see how you can set up the Social Inbox on your existing (or future) static website: [https://docs.distributed.press/](https://docs.distributed.press/)
 
-* **Hire us to help**: If you already have a static website publishing pipeline, but want to publish to IPFS and Hypercore and implement the Social Inbox, get in touch with us at hello@distributed.press and we can help you out. :)
+* **Hire us to help**: If you already have a static website publishing pipeline, but want to publish to IPFS and Hypercore and implement the Social Inbox, get in touch with us at [hello@distributed.press](mailto:hello@distributed.press) and we can help you out. :)
 
 ## What's Next
 
