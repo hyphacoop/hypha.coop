@@ -96,6 +96,7 @@ jobs:
         with:
           add: '_data/activity_pub.yml'
           default_author: github_actions
+          message: 'Commit ActivityPub Data'
           fetch: true
 
 
