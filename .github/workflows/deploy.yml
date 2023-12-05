@@ -20,9 +20,16 @@ jobs:
       - run: free -m
       - run: echo "GitHub branch is ${{ github.ref }}"
 
-      # Checks-out your repository under $GITHUB_WORKSPACE, 
-      # so your workflow can access it
+      # Conditional checkout for PRs
+      - name: Checkout PR branch
+        if: github.event_name == 'pull_request'
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+
+      # Standard checkout for non-PR events
       - name: Checkout repo
+        if: github.event_name != 'pull_request'
         uses: actions/checkout@master
 
       # Build Jekyll Site
