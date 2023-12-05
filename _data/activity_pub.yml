@@ -96,6 +96,10 @@ notifications:
     action: done
     id: https://hypha.coop/dripline/technological-futures-under-the-redwoods/
     created_at: 1699548047
+  dripline/announcing-dp-social-inbox.jsonld:
+    action: done
+    id: https://hypha.coop/dripline/announcing-dp-social-inbox/
+    created_at: 1701786255
 actor_url: https://hypha.coop/about.jsonld
 actor: "@dripline@hypha.coop"
 public_key_url: https://hypha.coop/about.jsonld#main-key
