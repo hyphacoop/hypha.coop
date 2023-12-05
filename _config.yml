@@ -59,6 +59,8 @@ defaults:
       type: cosmos
     values:
       layout: cosmos/post
+      activity: false
+
 plugins: [
   jekyll-activity-pub,
 ]
@@ -79,7 +81,9 @@ feed:
       description: "Hypha writes about our work in the Cosmos ecosystem"
 
 activity_pub:
-  url: https://social.dp.chanterelle.xyz
-  username: "HyphaCoop"
+  url: "https://social.dp.chanterelle.xyz"
+  username: "dripline"
   icons:
   - "assets/images/hypha-social.png"
+  images:
+  - "assets/images/social-banner.png"
