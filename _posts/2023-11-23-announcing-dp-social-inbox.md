@@ -47,6 +47,13 @@ As a result, the Fediverse continues to grow in its potential as a diversified n
 
 From its inception, Distributed.Press has incorporated existing decentralized web protocols to expand the possibilities of web publishing. It is important for us to incorporate ActivityPub into Distributed.Press given its flexibility and popular use as a social media protocol. 
 
+<figure>
+    <img class="mt5 pt1" src="{{ 'assets/images/posts/2023-12-05-social-inbox-flow.png' | relative_url }}" alt="Graph visualization for the Social Inbox Flow."/>
+    <figcaption>
+        Social Inbox Flowchart
+    </figcaption>  
+</figure>
+
 Through our existing suite of tools, it's already possible to publish static [Jekyll](https://jekyllrb.com/) websites to the DWeb. With static websites, code and content are delivered to the browser as simple HTML/CSS files, without having to access an external server to load content. The benefit of static websites is that they load faster, do not use plug-ins that require constant updates, and tend to be more secure overall. We realized that we could lean on these features, while incorporating social interactions into websites using ActivityPub. 
 
 So over the course of this year, we built the **Social Inbox**, which allows people to integrate their website with the Fediverse and to engage with readers there. [You can read more about the technical details of how the Social Inbox works](https://blog.mauve.moe/posts/distributed-press-social-inbox#how-the-inbox-works). 
