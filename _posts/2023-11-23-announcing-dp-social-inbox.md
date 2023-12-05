@@ -8,6 +8,19 @@ excerpt: 'Our new feature brings social interactions to static websites on the d
 
 <figure class="pb4">
 <img class="mt5 pt1" src="{{ 'assets/images/posts/2023-12-05-people-network-stocksy.jpg' | relative_url }}" alt="Illustration of multicolored head silhouettes connected by light blue lines, symbolizing a social network made of a diverse community."/>
+<figcaption>
+    <i>
+        People Network
+    </i> 
+    by 
+    <a href="https://www.stocksy.com/thelaundryroom">
+        The Laundry Room
+    </a>
+    via 
+    <a href="https://www.stocksy.com/">
+        Stocksy
+    </a>
+    </figcaption>  
 </figure>
 
 ### {{ page.excerpt }}
