@@ -19,7 +19,7 @@ excerpt: "<p>Duties include risk assessment, co-operative law compliance, talent
 This is a new full-time position, and the work is currently being executed by a Finance Working Group and an Operations Working Group. You will assume the leadership of these groups and will be responsible for ensuring continuous improvements and strategic alignment in both these areas. As a small organization, project and group leads are responsible both for guiding the direction of their areas as well as actively doing the work itself.  
 
 
-Hypha is a co-operative, so we do things [a little differently](https://hypha.coop/dripline/how-we-co-operate/"). Ideally, you are excited about participating in a co-operative, building the solidarity economy, and engaging in discussions on rethinking social structures and the politics of technologies.  
+Hypha is a co-operative, so we do things [a little differently](https://hypha.coop/dripline/how-we-co-operate/). Ideally, you are excited about participating in a co-operative, building the solidarity economy, and engaging in discussions on rethinking social structures and the politics of technologies.  
 
 
 Given our unique form (worker-managed consultancy) and the domains we work in (emerging technologies), you'll play a central role in improving the structure of our organization. Duties include risk assessment, co-operative law compliance, talent acquisition, incentive programs, treasury management, decision-making efficiency, and accountability systems. Your active involvement will contribute to shaping Hypha as an "organization in beta."  
