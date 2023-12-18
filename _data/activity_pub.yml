@@ -104,6 +104,6 @@ notifications:
     action: done
     id: https://staging.hypha.coop/openings/senior-ops-finance/
     created_at: 1702587961
-actor_url: https://staging.hypha.coop/about.jsonld
-actor: "@dripline@staging.hypha.coop"
-public_key_url: https://staging.hypha.coop/about.jsonld#main-key
+actor_url: https://hypha.coop/about.jsonld
+actor: "@dripline@hypha.coop"
+public_key_url: https://hypha.coop/about.jsonld#main-key
