@@ -1,6 +1,7 @@
 ---
 title: FRIENDS OF HEK
 logo: /assets/images/logos/friends-of-hek-logo.png
+preview: true
 work-type: 
     - Blockchain development
     - Community stewardship
