@@ -87,7 +87,7 @@ Remote position, with a preference for Eastern time zone and Tkaronto-based cand
 
 ## Compensation
 
-Annual salary 84,396 - 109,647 CAD commensurate with experience. Three weeks’ vacation + paid time off between Dec 25 and Jan 1 (total of four weeks)
+Annual salary $84,396 - $109,647 CAD commensurate with experience. Three weeks’ vacation + paid time off between Dec 25 and Jan 1 (total of four weeks)
 
 Working for a worker co-operative has additional non-salary benefits:
 
