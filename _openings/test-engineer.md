@@ -8,15 +8,11 @@ excerpt: "<p> This is a software engineering position requiring 3-5 years of rel
 
 ## Overview
 
-**Location:** Remote
-
-**Compensation:** 84,396 - 109,647 CAD
-
-**Time commitment:** 4 days/week
-
-**Application deadline:** January 22, 2024
-
-**Start date:** February 12, 2024
+**Location:** Remote  
+**Compensation:** 84,396 - 109,647 CAD  
+**Time commitment:** 4 days/week  
+**Application deadline:** January 22, 2024  
+**Start date:** February 12, 2024  
 
 [Hypha Worker Co-operative](https://hypha.coop/) (Hypha) is looking for a **mid-level software engineer** with experience (or interest) in test automation to join the Cosmos Hub Team. This team stewards the Cosmos Hub’s Testnets Program – a public testnet where app developers, chain builders, and validators can take things for a spin before they hit production. Don’t worry if you don’t know what all those words mean – we don’t require specialized knowledge in Cosmos, any specific blockchain, or blockchain technologies in general. You’ll stand out if you’re interested in learning about this domain, though. 
 
