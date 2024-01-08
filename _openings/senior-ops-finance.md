@@ -1,8 +1,8 @@
 ---
 title: Senior Operations & Finance Lead 
-prepared-on-date: 2023-12-14
+prepared-on-date: 2023-12-18
 excerpt_separator: <!-- more -->
-excerpt: "<p>Duties include risk assessment, co-operative law compliance, talent acquisition, incentive programs, treasury management, decision-making efficiency, and accountability systems.</p>"
+excerpt: "<p> This is a management-level position requiring 8-10 years of relevant work experience. We're looking for someone well-versed in leading all aspects of a small organization’s financial matters and internal operations processes.</p>"
 ---
 
 ## Overview
@@ -37,7 +37,7 @@ You will work with the Operations and Finance Working Groups and project leads t
 * Lead the Operations Working Group and improve talent acquisition and retention by developing better hiring practices and HR policies  
 * Support various project teams in their financial and operational needs while you become more familiar with how our co-operative functions. This work involves understanding the technology and process work that Hypha offers as a consultancy, and familiarizing yourself with decentralized web technologies that make up the core of our business
 * Iterate on current initiatives that help build up our organizational culture  
-* Organize key in person events including our annual retreat and member meetings  
+* Organize key in-person events including our annual retreat and member meetings  
 
 
 ## Qualifications and skills we are looking for
@@ -61,7 +61,7 @@ You will work with the Operations and Finance Working Groups and project leads t
 
 [Hypha Worker Co-operative](https://hypha.coop/) is a non-profit worker co-op based in Tkaronto (Toronto). We collaborate with communities to build better relationships with technology. Hypha specializes in applied cryptography, peer-to-peer technologies, distributed network operation and governance. We work on local-first software, interoperable blockchain projects, data provenance, technical capacity development and governance strategies for decentralized communities. You can read more about our mission, vision, and values, and how we work together in [our organizational handbook](https://handbook.hypha.coop/) and on our [GitHub organization](https://github.com/hyphacoop). 
 
-As a remote-first organization that strives toward sustainable livelihoods for all our members, we accommodate flexible schedules and work arrangements. We are committed to [the co-operative principles](https://www.ica.coop/en/cooperatives/cooperative-identity), which provide a pathway for all employees to permanent membership. We are looking to build long-term relationships with contractors who are potentially interested in joining our co-operative as a member in the future. **If working openly on value-driven technology is your jam, let’s talk!**
+As a remote-first organization that strives toward sustainable livelihoods for all our members, we accommodate flexible schedules and work arrangements. We are committed to [the co-operative principles](https://www.ica.coop/en/cooperatives/cooperative-identity), which provide a pathway for all employees to permanent membership. We are also looking to build long-term relationships with contractors who are potentially interested in joining our co-operative as a member in the future. **If working openly on value-driven technology is your jam, let’s talk!**
 
 ## Location
 
