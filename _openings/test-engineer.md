@@ -9,7 +9,7 @@ excerpt: "<p> This is a software engineering position requiring 3-5 years of rel
 ## Overview
 
 **Location:** Remote  
-**Compensation:** 84,396 - 109,647 CAD  
+**Compensation:** $84,396 - $109,647 CAD  
 **Time commitment:** 4 days/week  
 **Application deadline:** January 22, 2024  
 **Start date:** February 12, 2024  
