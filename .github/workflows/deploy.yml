@@ -58,7 +58,7 @@ jobs:
         if: >
           github.ref == 'refs/heads/staging' ||
           (github.event_name == 'pull_request' && github.base_ref == 'staging')
-        run: echo ${{ secrets.ENCODED_DP_AP_KEY_STAGING }} | base64 --decode > /tmp/secret.txt
+        run: echo ${{ secrets.ENCODED_DP_AP_KEY_STAGING }} | base64 --decode > /tmp/secret.key
 
       - name: Decode Production Key
         if: >
