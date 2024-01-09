@@ -2,7 +2,7 @@
 title: Test Automation Software Engineer 
 prepared-on-date: 2024-01-08
 excerpt_separator: <!-- more -->
-excerpt: "<p> This is a software engineering position requiring 3-5 years of relevant work experience. We're looking for a test engineer with great teamwork and communication skills.</p>"
+excerpt: "This is a software engineering position requiring 3-5 years of relevant work experience. We're looking for a test engineer with great teamwork and communication skills."
 ---
 
 
