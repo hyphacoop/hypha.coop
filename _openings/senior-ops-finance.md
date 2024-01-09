@@ -2,7 +2,7 @@
 title: Senior Operations & Finance Lead 
 prepared-on-date: 2023-12-18
 excerpt_separator: <!-- more -->
-excerpt: "<p> This is a management-level position requiring 8-10 years of relevant work experience. We're looking for someone well-versed in leading all aspects of a small organization’s financial matters and internal operations processes.</p>"
+excerpt: "This is a management-level position requiring 8-10 years of relevant work experience. We're looking for someone well-versed in leading all aspects of a small organization’s financial matters and internal operations processes."
 ---
 
 ## Overview
