@@ -5,6 +5,7 @@ phone: +1 437-887-6936
 address: Toronto, ON
 github: https://github.com/hyphacoop
 linkedin: https://www.linkedin.com/company/hyphacoop/
+mastodon: https://cosocial.ca/@hyphacoop
 twitter: https://twitter.com/hyphacoop/
 handbook: https://link.hypha.coop/handbook
 rss: "/feed.xml"
@@ -59,6 +60,8 @@ defaults:
       type: cosmos
     values:
       layout: cosmos/post
+      activity: false
+
 plugins: [
   jekyll-activity-pub,
 ]
@@ -79,5 +82,9 @@ feed:
       description: "Hypha writes about our work in the Cosmos ecosystem"
 
 activity_pub:
-  url: https://social.dp.chanterelle.xyz
-  username: "HyphaCoop"
+  url: "https://social.dp.chanterelle.xyz"
+  username: "dripline"
+  icons:
+  - "assets/images/hypha-social.png"
+  images:
+  - "assets/images/social-banner.png"

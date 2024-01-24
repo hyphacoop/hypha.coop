@@ -20,9 +20,16 @@ jobs:
       - run: free -m
       - run: echo "GitHub branch is ${{ github.ref }}"
 
-      # Checks-out your repository under $GITHUB_WORKSPACE, 
-      # so your workflow can access it
+      # Conditional checkout for PRs
+      - name: Checkout PR branch
+        if: github.event_name == 'pull_request'
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+
+      # Standard checkout for non-PR events
       - name: Checkout repo
+        if: github.event_name != 'pull_request'
         uses: actions/checkout@master
         with:
           ref: ${{ github.head_ref || github.ref }}
@@ -33,13 +40,34 @@ jobs:
       - run: sudo gem install jekyll
       - run: sudo bundle install
 
-      - name: Set URL based on branch
+      - name: Set Site URL based on branch
         run: |
-          if [[ "${{ github.ref }}" == "refs/heads/master" ]]; then
+          if [[ "${{ github.ref }}" == "refs/heads/master" ]] || [[ "${{ github.event_name }}" == "pull_request" && "${{ github.base_ref }}" == "master" ]]; then
             sed -i 's|url: "https://staging.hypha.coop"|url: "https://hypha.coop"|' _config.yml
           fi
 
-      - run: echo ${{ secrets.ENCODED_DP_AP_KEY_STAGING }} | base64 --decode > /tmp/secret.txt
+      - name: Set DP Social URL based on branch
+        run: |
+          if [[ "${{ github.ref }}" == "refs/heads/master" ]] || [[ "${{ github.event_name }}" == "pull_request" && "${{ github.base_ref }}" == "master" ]]; then
+            sed -i 's|url: "https://social.dp.chanterelle.xyz"|url: "${{ vars.SOCIAL_DP_PROD }}"|' _config.yml
+          elif [[ "${{ github.ref }}" == "refs/heads/staging" ]] || [[ "${{ github.event_name }}" == "pull_request" && "${{ github.base_ref }}" == "staging" ]]; then
+            # Replace with staging URL for activity_pub (SOCIAL_DP_STAGING)
+            sed -i 's|url: "https://social.dp.chanterelle.xyz"|url: "${{ vars.SOCIAL_DP_STAGING }}"|' _config.yml
+          fi
+
+      # Decode the correct key based on the branch
+      - name: Decode Staging Key
+        if: >
+          github.ref == 'refs/heads/staging' ||
+          (github.event_name == 'pull_request' && github.base_ref == 'staging')
+        run: echo ${{ secrets.ENCODED_DP_AP_KEY_STAGING }} | base64 --decode > /tmp/secret.txt
+
+      - name: Decode Production Key
+        if: >
+          github.ref == 'refs/heads/master' ||
+          (github.event_name == 'pull_request' && github.base_ref == 'master')
+        run: echo ${{ secrets.ENCODED_DP_AP_KEY_PRODUCTION }} | base64 --decode > /tmp/secret.txt
+
       - run: make build-dweb
 
       - run: make check
@@ -70,6 +98,7 @@ jobs:
         with:
           add: '_data/activity_pub.yml'
           default_author: github_actions
+          message: 'Commit ActivityPub Data'
           fetch: true
 
 
