@@ -1,9 +1,9 @@
 ---
-title: 'Non-Fungible Treasures Shaping Autonomous Worlds'
+title: 'Beyond Tokens: Non-Fungible Treasures for Decentralized Worldbuilding'
 author: Vincent Charlebois
 date: 2024-01-30
 acknowledgement: 
-excerpt: "An exploration of the Carrier Bag Theory of Infrastructure"
+excerpt: "Introducing 'Boolean Art' as a tool for the exploration of the  Carrier Bag Theory of Infrastructure"
 ---
 
 <figure class="pb4">
