@@ -3,7 +3,7 @@ title: 'Beyond Tokens: Non-Fungible Treasures for Decentralized Worldbuilding'
 author: Vincent Charlebois
 date: 2024-01-30
 acknowledgement: 
-excerpt: "Introducing 'Boolean Art' as a tool for the exploration of the  Carrier Bag Theory of Infrastructure"
+excerpt: "Introducing 'Boolean Art' as a tool for the exploration of the Carrier Bag Theory of Infrastructure"
 ---
 
 <figure class="pb4">
@@ -15,7 +15,7 @@ excerpt: "Introducing 'Boolean Art' as a tool for the exploration of the  Carrie
 
 ### {{ page.excerpt }}
 
-As an artist immersed in the realms of blockchain and smart contract art, I had the pleasure in early October to attend an event hosted by Wild in New Orleans. There, amidst a diverse assembly of artists and thinkers, I engaged in rich dialogues about the affordances of decentralised technologies. This experience served not just as a great party and networking occasion but as a fertile ground for exchanging ideas on NFTs, further enriching my perspective on their untapped potential.
+As an artist immersed in the realm of blockchain and smart contract art, I had the pleasure of attending an event hosted by Wild in New Orleans last October. There, amidst a diverse assembly of artists and thinkers, I found rich dialogue about the affordances of decentralised technologies. This experience served not just as a great party and networking occasion but as a fertile ground for exchanging ideas on NFTs, further enriching my perspective on their untapped potential.
 
 Wild is a platform celebrating art and creativity in the digital age. Their primary objective is to empower artists with tools for growth, to provide space for creativity, and to introduce their art to a wider audience. My involvement in the residency came with an invitation to attend WILD x NOLA. It was definitely a great party. But as most know, good parties foster a sense of community with the potential of leading to novel ideas and projects. Beyond a tool for marketing or creating cultural capital, such events allow to build genuine connections. Yet, despite the positive momentum, misconceptions about NFTs persist.  
 
