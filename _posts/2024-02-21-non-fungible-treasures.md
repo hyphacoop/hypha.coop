@@ -3,7 +3,7 @@ title: 'Beyond Tokens: Non-Fungible Treasures for Decentralized Worldbuilding'
 author: Vincent Charlebois
 date: 2024-02-21
 acknowledgement: 
-excerpt: "Introducing 'Boolean Art' as a tool for the exploration of the Carrier Bag Theory of Infrastructure"
+excerpt: "Shaping Collaborative Futures: Art, Technology, and Collective Storytelling in the Blockchain Era"
 ---
 
 <figure class="pb4">
