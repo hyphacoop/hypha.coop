@@ -31,6 +31,8 @@ jobs:
       - name: Checkout repo
         if: github.event_name != 'pull_request'
         uses: actions/checkout@master
+        with:
+          ref: ${{ github.head_ref || github.ref }}
 
       # Build Jekyll Site
       - run: echo "Building Jekyll site"
