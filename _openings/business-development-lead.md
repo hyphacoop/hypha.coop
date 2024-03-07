@@ -2,7 +2,7 @@
 title: "Business Development Lead Contract: Distributed Press" 
 prepared-on-date: 2024-03-06
 excerpt_separator: <!-- more -->
-excerpt: "This is a contract position for a Business Development Lead who will clarify Distributed Press' product offering. We're looking for someone who can foster strong relationships between the team and external stakeholders."
+excerpt: "This is a contract position requiring business development and lead generation experience. We're looking for someone who can foster strong relationships between the team and external stakeholders."
 ---
 
 ## Overview
