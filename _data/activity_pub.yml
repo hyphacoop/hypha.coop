@@ -2,103 +2,103 @@
 notifications:
   doescosmos/hello-july.jsonld:
     action: done
-    id: https://hypha.coop/doescosmos/hello-july/
+    id: https://staging.hypha.coop/doescosmos/hello-july/
     created_at: 1699527538
   doescosmos/notes-from-the-flightdeck.jsonld:
     action: done
-    id: https://hypha.coop/doescosmos/notes-from-the-flightdeck/
+    id: https://staging.hypha.coop/doescosmos/notes-from-the-flightdeck/
     created_at: 1699527538
   doescosmos/august-okrs.jsonld:
     action: done
-    id: https://hypha.coop/doescosmos/august-okrs/
+    id: https://staging.hypha.coop/doescosmos/august-okrs/
     created_at: 1699527538
   dripline/how-we-co-operate.jsonld:
     action: done
-    id: https://hypha.coop/dripline/how-we-co-operate/
+    id: https://staging.hypha.coop/dripline/how-we-co-operate/
     created_at: 1699548044
   dripline/listening-at-scale-with-polis.jsonld:
     action: done
-    id: https://hypha.coop/dripline/listening-at-scale-with-polis/
+    id: https://staging.hypha.coop/dripline/listening-at-scale-with-polis/
     created_at: 1699548045
   dripline/making-change.jsonld:
     action: done
-    id: https://hypha.coop/dripline/making-change/
+    id: https://staging.hypha.coop/dripline/making-change/
     created_at: 1699548045
   dripline/emergent-practices.jsonld:
     action: done
-    id: https://hypha.coop/dripline/emergent-practices/
+    id: https://staging.hypha.coop/dripline/emergent-practices/
     created_at: 1699548045
   dripline/data-lost-and-found.jsonld:
     action: done
-    id: https://hypha.coop/dripline/data-lost-and-found/
+    id: https://staging.hypha.coop/dripline/data-lost-and-found/
     created_at: 1699548045
   dripline/decentralized-governance-cosmos.jsonld:
     action: done
-    id: https://hypha.coop/dripline/decentralized-governance-cosmos/
+    id: https://staging.hypha.coop/dripline/decentralized-governance-cosmos/
     created_at: 1699548045
   dripline/p2p-primer-part-1.jsonld:
     action: done
-    id: https://hypha.coop/dripline/p2p-primer-part-1/
+    id: https://staging.hypha.coop/dripline/p2p-primer-part-1/
     created_at: 1699548045
   dripline/p2p-primer-part-2.jsonld:
     action: done
-    id: https://hypha.coop/dripline/p2p-primer-part-2/
+    id: https://staging.hypha.coop/dripline/p2p-primer-part-2/
     created_at: 1699548045
   dripline/debate-over-dweb-vs-web3.jsonld:
     action: done
-    id: https://hypha.coop/dripline/debate-over-dweb-vs-web3/
+    id: https://staging.hypha.coop/dripline/debate-over-dweb-vs-web3/
     created_at: 1699548045
   dripline/p2p-primer-part-3.jsonld:
     action: done
-    id: https://hypha.coop/dripline/p2p-primer-part-3/
+    id: https://staging.hypha.coop/dripline/p2p-primer-part-3/
     created_at: 1699548045
   dripline/sense-serendipity.jsonld:
     action: done
-    id: https://hypha.coop/dripline/sense-serendipity/
+    id: https://staging.hypha.coop/dripline/sense-serendipity/
     created_at: 1699548046
   dripline/staking-identities.jsonld:
     action: done
-    id: https://hypha.coop/dripline/staking-identities/
+    id: https://staging.hypha.coop/dripline/staking-identities/
     created_at: 1699548046
   dripline/gardens-in-the-computer.jsonld:
     action: done
-    id: https://hypha.coop/dripline/gardens-in-the-computer/
+    id: https://staging.hypha.coop/dripline/gardens-in-the-computer/
     created_at: 1699548046
   dripline/signal-call-iran-proxy.jsonld:
     action: done
-    id: https://hypha.coop/dripline/signal-call-iran-proxy/
+    id: https://staging.hypha.coop/dripline/signal-call-iran-proxy/
     created_at: 1699548046
   dripline/p2p-primer-part-4.jsonld:
     action: done
-    id: https://hypha.coop/dripline/p2p-primer-part-4/
+    id: https://staging.hypha.coop/dripline/p2p-primer-part-4/
     created_at: 1699548046
   dripline/hypha-reads.jsonld:
     action: done
-    id: https://hypha.coop/dripline/hypha-reads/
+    id: https://staging.hypha.coop/dripline/hypha-reads/
     created_at: 1699548046
   dripline/hypha-at-starling-lab.jsonld:
     action: done
-    id: https://hypha.coop/dripline/hypha-at-starling-lab/
+    id: https://staging.hypha.coop/dripline/hypha-at-starling-lab/
     created_at: 1699548046
   dripline/public-goods.jsonld:
     action: done
-    id: https://hypha.coop/dripline/public-goods/
+    id: https://staging.hypha.coop/dripline/public-goods/
     created_at: 1699548046
   dripline/distributed-press-v1-announcement.jsonld:
     action: done
-    id: https://hypha.coop/dripline/distributed-press-v1-announcement/
+    id: https://staging.hypha.coop/dripline/distributed-press-v1-announcement/
     created_at: 1699548046
   dripline/strategy-is.jsonld:
     action: done
-    id: https://hypha.coop/dripline/strategy-is/
+    id: https://staging.hypha.coop/dripline/strategy-is/
     created_at: 1699548046
   dripline/technological-futures-under-the-redwoods.jsonld:
     action: done
-    id: https://hypha.coop/dripline/technological-futures-under-the-redwoods/
+    id: https://staging.hypha.coop/dripline/technological-futures-under-the-redwoods/
     created_at: 1699548047
   dripline/announcing-dp-social-inbox.jsonld:
     action: done
-    id: https://hypha.coop/dripline/announcing-dp-social-inbox/
+    id: https://staging.hypha.coop/dripline/announcing-dp-social-inbox/
     created_at: 1701786255
   openings/senior-ops-finance.jsonld:
     action: done
@@ -106,7 +106,7 @@ notifications:
     created_at: 1702587961
   openings/test-engineer.jsonld:
     action: done
-    id: https://hypha.coop/openings/test-engineer/
+    id: https://staging.hypha.coop/openings/test-engineer/
     created_at: 1704749005
   dripline/non-fungible-treasures.jsonld:
     action: done
@@ -116,6 +116,6 @@ notifications:
     action: done
     id: https://staging.hypha.coop/openings/business-development-lead/
     created_at: 1709779993
-actor_url: https://hypha.coop/about.jsonld
-actor: "@dripline@hypha.coop"
-public_key_url: https://hypha.coop/about.jsonld#main-key
+actor_url: https://staging.hypha.coop/about.jsonld
+actor: "@dripline@staging.hypha.coop"
+public_key_url: https://staging.hypha.coop/about.jsonld#main-key
