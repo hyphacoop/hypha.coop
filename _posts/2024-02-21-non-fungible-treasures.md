@@ -66,5 +66,5 @@ Riffing on Le Guin's "Carrier Bag Theory of Fiction," I've been playing with the
 
 *Post-script*
 
-Lots has happened since I originally wrote this post. The “Hawking Radiation” managed to dissolve the Blackhole. I expanded the Infinite Canvas by deploying it to new chains and created Acclivities, a smart contract that interfaces and expands upon the Canvas on Ethereum's mainnet. There is still a lot that remains unsaid about these non-fungible treasures and you can rest assured that a follow-up post will be forthcoming.
+A lot has happened since I originally wrote this post. The “Hawking Radiation” managed to dissolve the Blackhole. I expanded the Infinite Canvas by deploying it to new chains and created Acclivities, a smart contract that interfaces and expands upon the Canvas on Ethereum's mainnet. There is still a lot that remains unsaid about these non-fungible treasures and you can rest assured that a follow-up post will be forthcoming.
 
