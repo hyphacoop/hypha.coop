@@ -110,11 +110,11 @@ notifications:
     created_at: 1704749005
   dripline/non-fungible-treasures.jsonld:
     action: done
-    id: https://staging.hypha.coop/dripline/non-fungible-treasures/
+    id: https://hypha.coop/dripline/non-fungible-treasures/
     created_at: 1708476823
   openings/business-development-lead.jsonld:
     action: done
-    id: https://staging.hypha.coop/openings/business-development-lead/
+    id: https://hypha.coop/openings/business-development-lead/
     created_at: 1709779993
 actor_url: https://hypha.coop/about.jsonld
 actor: "@dripline@hypha.coop"
