@@ -30,7 +30,7 @@ jobs:
       # Standard checkout for non-PR events
       - name: Checkout repo
         if: github.event_name != 'pull_request'
-        uses: actions/checkout@master
+        uses: actions/checkout@v4
 
       # Build Jekyll Site
       - run: echo "Building Jekyll site"
@@ -58,13 +58,13 @@ jobs:
         if: >
           github.ref == 'refs/heads/staging' ||
           (github.event_name == 'pull_request' && github.base_ref == 'staging')
-        run: echo ${{ secrets.ENCODED_DP_AP_KEY_STAGING }} | base64 --decode > /tmp/secret.txt
+        run: echo ${{ secrets.ENCODED_DP_AP_KEY_STAGING }} | base64 --decode > /tmp/secret.key
 
       - name: Decode Production Key
         if: >
           github.ref == 'refs/heads/master' ||
           (github.event_name == 'pull_request' && github.base_ref == 'master')
-        run: echo ${{ secrets.ENCODED_DP_AP_KEY_PRODUCTION }} | base64 --decode > /tmp/secret.txt
+        run: echo ${{ secrets.ENCODED_DP_AP_KEY_PRODUCTION }} | base64 --decode > /tmp/secret.key
 
       - run: make build-dweb
 
@@ -89,7 +89,7 @@ jobs:
           site_url: hypha.coop
 
       - name: Notify AP
-        run: bundle exec jekyll notify --key /tmp/secret.txt --verbose
+        run: bundle exec jekyll notify --key /tmp/secret.key --verbose
 
       - name: Commit ActivityPub Data
         uses: EndBug/add-and-commit@v9 
