@@ -93,7 +93,7 @@ GEM
       safe_yaml (~> 1.0)
       terminal-table (>= 1.8, < 4.0)
       webrick (~> 1.7)
-    jekyll-activity-pub (0.2.1)
+    jekyll-activity-pub (0.2.2)
       distributed-press-api-client (~> 0.4.0)
       jekyll (~> 4)
       marcel (~> 1)
