@@ -10,6 +10,7 @@ source "https://rubygems.org"
 # Happy Jekylling!
 gem "jekyll", "~> 4.3.3"
 gem "html-proofer"
+gem 'nokogiri'
 
 gem "webrick", "~> 1.8"
 
