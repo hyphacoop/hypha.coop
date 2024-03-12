@@ -30,7 +30,7 @@ jobs:
       # Standard checkout for non-PR events
       - name: Checkout repo
         if: github.event_name != 'pull_request'
-        uses: actions/checkout@master
+        uses: actions/checkout@v4
 
       # Build Jekyll Site
       - run: echo "Building Jekyll site"
