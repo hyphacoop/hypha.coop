@@ -60,7 +60,7 @@ This is a contract position. Exact timing and hours to be discussed with candida
 
 ## Process to apply
 
-To be considered, please email us at [hiring@hypha.coop](mailto:hiring@hypha.coop) with the following **before** March 21, 2024:
+To be considered, please email us at [hiring@hypha.coop](mailto:hiring@hypha.coop) with the following **before** March 28, 2024:
 
 * Brief covering statement (in email body is fine) outlining why you are a fit for the position, this could include:
     * A proposal outlining the approach and/or deliverables for meeting the business development goals  
