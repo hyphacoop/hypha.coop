@@ -10,7 +10,7 @@ excerpt: "This is a contract position requiring business development and lead ge
 **Location:** Remote  
 **Compensation:** USD$20,000   
 **Time commitment:** Contract  
-**Application deadline:**  March 21, 2024  
+**Application deadline:**  March 28, 2024  
 **Start date:** Beginning April 2024
 
 [Hypha Worker Co-operative](https://hypha.coop) (Hypha) and [Sutty.nl](https://sutty.nl/) are looking for a Business Development Lead to join the Distributed Press team on a contract basis. The ideal candidate will work closely with our team to clarify Distributed Press’ product offering, and to identify and target valuable partners in the decentralized web, peer-to-peer, and Web3 space. We’re seeking someone who can foster strong relationships between the team and external stakeholders to align business goals and strategies.  
