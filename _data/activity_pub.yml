@@ -118,6 +118,6 @@ notifications:
     id: https://hypha.coop/openings/business-development-lead/
     created_at: 1709779993
     last_modified_at: 1710251436
-actor_url: https://staging.hypha.coop/about.jsonld
-actor: "@dripline@staging.hypha.coop"
-public_key_url: https://staging.hypha.coop/about.jsonld#main-key
+actor_url: https://hypha.coop/about.jsonld
+actor: "@dripline@hypha.coop"
+public_key_url: https://hypha.coop/about.jsonld#main-key
