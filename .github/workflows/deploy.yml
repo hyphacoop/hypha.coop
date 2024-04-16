@@ -89,7 +89,7 @@ jobs:
           site_url: hypha.coop
 
       - name: Notify AP
-        run: bundle exec jekyll notify --key /tmp/secret.key --verbose
+        run: bundle exec jekyll notify --key /tmp/secret.key --verbose --trace
 
       - name: Commit ActivityPub Data
         uses: EndBug/add-and-commit@v9 
