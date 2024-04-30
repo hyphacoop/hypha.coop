@@ -6,18 +6,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% if page.collection == "posts" %}Dripline: {% endif %}{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <title>{{ meta_section }}{{ meta_title }}</title>
   <script defer data-domain="hypha.coop" src="https://analytics.hypha.coop/js/script.js"></script>
 
-  <meta property="og:title" content="{{ meta_section | escape }}{{ meta_title | escape }}">
+  <meta property="og:title" content="{{ page.title | escape }}">
   <meta name="description" content="{{ meta_description }}">
   <meta property="og:description" content="{{ meta_description }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
   <meta property="og:url" content="{{ page.url | prepend: site.url }}">
-  <meta property="og:site_name" content="{{ meta_title | escape }}">
+  <meta property="og:site_name" content="{{ site.title }}">
   <meta property="og:image" content="{{ meta_image | relative_url }}">
   <meta name="twitter:title" content="{{ meta_section | escape }}{{ meta_title | escape }}">
-  <meta name="twitter:card" content="summary">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@HyphaCoop">
   <meta name="twitter:creator" content="@HyphaCoop">
   <meta name="twitter:description" content="{{ meta_description }}">
