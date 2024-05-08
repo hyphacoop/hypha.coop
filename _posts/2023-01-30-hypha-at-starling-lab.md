@@ -1,4 +1,5 @@
 ---
+image: "/assets/images/social/dripline/2023-01-30-hypha-at-starling-lab.webp"
 title: 'Hypha at the Starling Lab: Murmurations and peregrinations in trustful digital ecosystems'
 author: Hypha
 date: 2023-01-30

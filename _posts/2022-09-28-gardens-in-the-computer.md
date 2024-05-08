@@ -1,4 +1,5 @@
 ---
+image: "/assets/images/social/dripline/2022-09-28-gardens-in-the-computer.webp"
 title: 'Gardens in the Computer'
 author: Garry Ing
 date: 2022-09-24
