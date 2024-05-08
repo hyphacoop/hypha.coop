@@ -1,4 +1,5 @@
 ---
+image: "/assets/images/social/dripline/2022-11-30-hypha-reads.webp"
 title: 'Hypha Reads'
 author: Hypha
 date: 2022-11-30

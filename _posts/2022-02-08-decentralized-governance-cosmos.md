@@ -1,4 +1,5 @@
 ---
+image: "/assets/images/social/dripline/2022-02-08-decentralized-governance-cosmos.webp"
 title: 'Decentralized Governance Requires Meaningful Participation'
 author: Hypha
 date: 2022-02-08

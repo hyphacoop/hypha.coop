@@ -1,4 +1,5 @@
 ---
+image: "/assets/images/social/dripline/2022-03-28-p2p-primer-part-1.webp"
 title: 'Taking the Mauve Pill: Exploring Alternatives to the Centralized Web'
 author: Mauve
 date: 2022-03-28

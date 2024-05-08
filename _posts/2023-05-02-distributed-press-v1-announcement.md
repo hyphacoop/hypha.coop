@@ -1,4 +1,5 @@
 ---
+image: "/assets/images/social/dripline/2023-05-02-distributed-press-v1-announcement.webp"
 title: 'Distributed Press v1 Announcement'
 author: Mauve
 date: 2023-04-25

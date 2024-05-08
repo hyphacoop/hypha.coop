@@ -1,4 +1,5 @@
 ---
+image: "/assets/images/social/dripline/2021-07-28-making-change.webp"
 title: 'Making change with the decentralized web'
 author: Hypha
 date: 2021-07-28
@@ -58,6 +59,7 @@ At Hypha we’ve been working on articulating what our own decentralized future 
 We see lots of possibilities to think more about solidarity as a way to inform our tactics: see ourselves in an ecosystem and success in that context. Why don’t you join us to build (eco) (just) (oceanic) decentralized futures together 👐🏼 
 
 ---
+image: "/assets/images/social/dripline/2021-07-28-making-change.webp"
 **Footnotes**
 
 [^1]: A Google doc with those tactics described with examples was [available](https://docs.google.com/document/d/1OyP4o-0iPWNjD0n_glXzRdkmPOQaOnkCyR8CmZ72_GY/edit) for participants.

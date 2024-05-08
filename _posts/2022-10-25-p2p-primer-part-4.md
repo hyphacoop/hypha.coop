@@ -1,4 +1,5 @@
 ---
+image: "/assets/images/social/dripline/2022-10-25-p2p-primer-part-4.webp"
 title: 'Check the specs: final thoughts on p2p options'
 author: Mauve
 date: 2022-10-25

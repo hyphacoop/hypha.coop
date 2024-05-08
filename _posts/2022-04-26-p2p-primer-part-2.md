@@ -1,4 +1,5 @@
 ---
+image: "/assets/images/social/dripline/2022-04-26-p2p-primer-part-2.webp"
 title: 'Data Fast and Slow: Exploring Data Models and Mutability'
 author: Mauve
 date: 2022-04-26
