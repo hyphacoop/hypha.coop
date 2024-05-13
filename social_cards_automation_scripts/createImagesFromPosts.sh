@@ -64,12 +64,10 @@ adjust_text() {
 for post in "$POSTS_DIR"/*.md; do
     # Extract the title, excerpt, and author
     title=$(awk '/^title:/{gsub(/^title: /,""); gsub(/'"'"'/,""); print; exit}' "$post")
-    excerpt=$(awk '/^excerpt:/{gsub(/^excerpt: /,""); gsub(/'"'"'/,""); print; exit}' "$post")
     author=$(awk '/^author:/{gsub(/^author: /,""); gsub(/'"'"'/,""); print; exit}' "$post")
 
     # Adjust title and excerpt to prevent overflow
-    adjusted_title=$(adjust_text "$title")
-    adjusted_excerpt=$(adjust_text "$excerpt")
+    adjusted_title=$(adjust_text "$title" 275 "$FONTS_DIR" "/Work_Sans/WorkSans-VariableFont_wght.ttf")
 
     # Create an image with the title, excerpt, and branding
     jpg_file="$IMAGES_DIR/$(basename "$post" .md).jpg"
@@ -77,16 +75,14 @@ for post in "$POSTS_DIR"/*.md; do
 
     # Create an image with the title, excerpt, and branding
     convert -size 1200x627 xc:"#9900FC" \
-            \( -size 900x400 -background none -fill white -font "$FONTS_DIR/Work_Sans/WorkSans-VariableFont_wght.ttf" -pointsize 44 \
-               label:"$adjusted_title" -gravity north -geometry +0+100 \) -composite \
-            \( -size 900x600 -background none -fill white -font "$FONTS_DIR/Work_Sans/WorkSans-VariableFont_wght.ttf" -pointsize 36 \
-               label:"$adjusted_excerpt" -gravity center -geometry +0+280 \) -composite \
+            \( -size 900x500 -background none -fill white -font "$FONTS_DIR/Work_Sans/WorkSans-VariableFont_wght.ttf" -pointsize 64 \
+               label:"$adjusted_title" -gravity center \) -geometry +0+60  -composite \
             -font "$FONTS_DIR/Work_Sans/WorkSans-VariableFont_wght.ttf" -pointsize 34 -fill white \
             -gravity southeast -annotate +30+30 "$author" \
             "$IMAGES_DIR/$(basename "$post" .md).jpg"
 
     # Convert JPG to WebP
-    cwebp -q 80 "$jpg_file" -o "$webp_file"
+    cwebp -q 100 "$jpg_file" -o "$webp_file"
 
 done
 
