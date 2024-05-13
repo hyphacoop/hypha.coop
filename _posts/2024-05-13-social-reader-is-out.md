@@ -4,7 +4,7 @@ title: 'Social Reader is out!'
 author: Hypha & Sutty
 date: 2024-05-13
 acknowledgement: 
-excerpt: "The Social Reader is a privacy-first personal reader for subscribing to content published on federated social media. It's ideal whether it's your first step into the Fediverse, and you want to browse without creating an account, or you just prefer to use tools that are private-by-design."
+excerpt: "The Social Reader is a privacy-first personal reader for subscribing to content published on federated social media."
 ---
 
 _The Social Reader is a privacy-first personal reader for subscribing to content published on federated social media. It's ideal whether it's your first step into the Fediverse, and you want to browse without creating an account, or you just prefer to use tools that are private-by-design._
