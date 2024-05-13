@@ -118,6 +118,10 @@ notifications:
     id: https://hypha.coop/openings/business-development-lead/
     created_at: 1709779993
     last_modified_at: 1710251436
+  dripline/social-reader-is-out.jsonld:
+    action: done
+    id: https://staging.hypha.coop/dripline/social-reader-is-out.jsonld
+    created_at: 1715607046
 actor_url: https://staging.hypha.coop/about.jsonld
 actor: "@dripline@staging.hypha.coop"
 public_key_url: https://staging.hypha.coop/about.jsonld#main-key
