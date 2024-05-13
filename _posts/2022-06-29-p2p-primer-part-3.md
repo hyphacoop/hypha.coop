@@ -1,4 +1,5 @@
 ---
+image: "/assets/images/social/dripline/2022-06-29-p2p-primer-part-3.webp"
 title: 'Finding friends and staying safe: comparing peer discoverability and security in p2p networks'
 author: Mauve
 date: 2022-06-29

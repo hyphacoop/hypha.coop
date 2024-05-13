@@ -1,4 +1,5 @@
 ---
+image: "/assets/images/social/dripline/2023-05-31-strategy-is.webp"
 title: 'Strategy is ___________.'
 author: Hypha
 date: 2023-06-05

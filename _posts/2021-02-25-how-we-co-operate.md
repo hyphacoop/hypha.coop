@@ -1,4 +1,5 @@
 ---
+image: "/assets/images/social/dripline/2021-02-25-how-we-co-operate.webp"
 title: 'How we co-operate'
 author: Hypha
 date: 2021-02-25
