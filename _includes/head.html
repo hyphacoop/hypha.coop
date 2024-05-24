@@ -24,23 +24,23 @@
   <meta name="twitter:image" content="{{ meta_image | relative_url }}">
 
   <meta property="fc:frame" content="vNext" />
-  <meta name="fc:frame:image" content="{{ meta_image | relative_url }}" />
-  <meta name="fc:frame:button:1" content="{{ page.title }}" />
-  <meta name="fc:frame:button:1:action" content="link" />
-  <meta name="fc:frame:button:1:target" content="{{ page.url }}" />
-  
+  <meta property="fc:frame:image" content="{{ meta_image | relative_url }}" />
+  <meta property="fc:frame:button:1" content="{{ page.title }}" />
+  <meta property="fc:frame:button:1:action" content="link" />
+  <meta property="fc:frame:button:1:target" content="{{ page.url }}" />
+
   {% if page.title == 'Home' %}
-    <meta name="fc:frame:button:2" content="People" />
-    <meta name="fc:frame:button:2:action" content="link" />
-    <meta name="fc:frame:button:2:target" content="/people/" />
+    <meta property="fc:frame:button:2" content="People" />
+    <meta property="fc:frame:button:2:action" content="link" />
+    <meta property="fc:frame:button:2:target" content="/people/" />
 
-    <meta name="fc:frame:button:3" content="Work" />
-    <meta name="fc:frame:button:3:action" content="link" />
-    <meta name="fc:frame:button:3:target" content="/work/" />
+    <meta property="fc:frame:button:3" content="Work" />
+    <meta property="fc:frame:button:3:action" content="link" />
+    <meta property="fc:frame:button:3:target" content="/work/" />
 
-    <meta name="fc:frame:button:4" content="Dripline" />
-    <meta name="fc:frame:button:4:action" content="link" />
-    <meta name="fc:frame:button:4:target" content="/dripline/" />
+    <meta property="fc:frame:button:4" content="Dripline" />
+    <meta property="fc:frame:button:4:action" content="link" />
+    <meta property="fc:frame:button:4:target" content="/dripline/" />
   {% endif %}
   
   <meta name="theme-color" content="#9900FC">
