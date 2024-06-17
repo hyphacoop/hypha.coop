@@ -13,3 +13,4 @@ updates:
     # Apply default reviewer to created pull requests
     assignees:
       - "ASoTNetworks"
+      - "tripledoublev"
