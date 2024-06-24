@@ -13,7 +13,9 @@ excerpt: "Insert blurb"
     logo and bird by <a href='https://twitter.com/badkidsart/'>@badkidsart</a>
   </figcaption>
 </figure>
+We're almost half way through the year, and already Hypha has packed more new projects into the last 6 months than we have in the past 2 years (give or take). We want to be more intentional about sharing our work with the world, and so this post is dedicated to [Timewave](https://timewave.computer/), a very exciting project that Hypha co-founder Udit Vira has been working on since the end of 2023. In this short interview, Udit gives an overview of what Timewave is all about. 
 
+We recorded this conversation outside on a warm sunny day in Toronto, so you'll hear a house sparrow or two as we talk. Consider it part of the ambiance.
 
 <figure class='flex flex-column'>
   <figcaption 
