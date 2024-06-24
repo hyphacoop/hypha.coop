@@ -1,11 +1,19 @@
 ---
-image: "/assets/images/social/dripline/add-image-here!!!!!!!!!!.webp"
+image: "/assets/images/social/dripline/2024-06-24-timewave-interview-with-udit.webp"
 title: 'Timewave with Udit Vira'
 author: Andi & Udit
 date: 2024-06-24
 acknowledgement: 
 excerpt: "Insert blurb"
 ---
+
+<figure class='flex flex-column pb6'>
+  <img src="/assets/images/posts/2024-06-24-timewave-with-udit.webp" alt="Timewave interview with Udit Vira" class="w-100 w-50-l br2 pb2">
+  <figcaption>
+    logo and bird by <a href='https://twitter.com/badkidsart/'>@badkidsart</a>
+  </figcaption>
+</figure>
+
 
 <figure class='flex flex-column'>
   <figcaption 
