@@ -1,0 +1,17 @@
+<div class="mt6-ns mt5">
+  <h2 class="">Our services</h2>
+  <p class="lh-copy f3 measure mt0">
+    We provide embedded, end-to-end partnership at the executive level
+  </p>
+  <div class="flex flex-between flex-wrap mt5-ns">
+    {% assign element = page.our_services%} {%
+      for element in page.our_services %}
+      <div class="w-33-l measure flex-column justify-left items-left center-l mb2 tl pr4">
+        <h2 class="f3">{{ element.title }}</h2>
+        <p class="pb3 f3 lh-copy">{{ element.description }}</p>
+      </div>
+    {% endfor %}
+  </div>
+  
+  
+</div>

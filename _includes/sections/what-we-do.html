@@ -2,32 +2,20 @@
   <div class="mr3">
       <h2 class="">What we do</h2>
     <p class="lh-copy f3 measure mt0">
-      We propagate community-led stewardship, grow technical capacities, and
-      deliver concepts and products.
-      <br />
-      <br />
-      Our expertise spans ideation to infrastructure.
+      We’re a diverse team of expert creatives, builders, and organizers who collaborate closely with clients to advance their missions through tech
     </p>
   </div>
-  <!-- <figure class="scaling-3 w-50"></figure> -->
+
 </div>
-<div class="flex flex-wrap">
-  <ul id="what_we_do" class="measure-narrow f4 mr4 pl0">
-    {% for element in page.what_we_do %}
-    <div
-      class="ma3 accent pointer"
-      id="{{ element.title }}"
-      onclick="selectValue(this.id, 'what_we_do');"
-    >
-      <li>{{ element.title }}</li>
+<h3 class="f2 accent">
+  Our practice areas
+</h3>
+<div class="flex flex-between flex-wrap mt5-ns">
+  {% assign element = page.what_we_do%} {%
+    for element in page.what_we_do %}
+    <div class="w-33-l measure flex-column justify-left items-left center-l mb2 tl pr4">
+      <h2 class="f3">{{ element.title }}</h2>
+      <p class="pb3 f3 lh-copy">{{ element.description }}</p>
     </div>
-    {% endfor %}
-  </ul>
-  <div id="what_we_do-descriptions">
-    {% for element in page.what_we_do %}
-    <p id="{{ element.title }}-description" class="measure-wide f4 lh-copy">
-      {{ element.description }}
-    </p>
-    {% endfor %}
-  </div>
+  {% endfor %}
 </div>
