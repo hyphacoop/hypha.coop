@@ -8,7 +8,7 @@ excerpt: A quick dive into internet-native organizations and cross-chain protoco
 ---
 
 <figure class='flex flex-column pb6'>
-  <img src="/assets/images/posts/2024-06-24-timewave-with-udit.webp" alt="Timewave interview with Udit Vira" class="w-100 w-50-l br2 pb2">
+  <img src="/assets/images/posts/2024-06-24-timewave-with-udit.webp" alt="Two birds on each side of the Timewave logo, a blue clock drawn by @badkidsart" class="w-100 w-50-l br2 pb2"> 
   <figcaption>
     logo and bird by <a href='https://twitter.com/badkidsart/'>@badkidsart</a>
   </figcaption>
@@ -27,7 +27,7 @@ We recorded this conversation outside on a warm sunny day in Toronto, so you'll 
 </figure>
 
   
-*Transcript*
+### Transcript
 
 **Andi:** I'm here today with Udit Vira to talk about Timewave, his newest enterprise. Udit, can you explain what Timewave is in under two minutes?  
   
