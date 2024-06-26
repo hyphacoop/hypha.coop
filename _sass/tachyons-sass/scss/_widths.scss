@@ -72,6 +72,7 @@
 .w-third { width: calc(100% / 3); }
 .w-two-thirds { width: calc(100% / 1.5); }
 .w-auto { width: auto; }
+.w-fit { width: fit-content; }
 
 @media #{$breakpoint-not-small} {
   .w1-ns {  width: $width-1; }
