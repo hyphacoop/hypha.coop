@@ -94,10 +94,11 @@ order: 3
     const contentDiv = containerEl.querySelector('.project-content');
     const excerpt = contentDiv.dataset.excerpt;
     const content = contentDiv.dataset.content;
+    const types = contentDiv.dataset.types;
 
     let toggled = contentDiv.dataset.toggled === "true";
     if (!toggled) {
-      contentDiv.innerHTML = content;
+      contentDiv.innerHTML = content + types;
       toggleEl.innerHTML = "[read less]";
       contentDiv.dataset.toggled = "true";
       toggleEl.setAttribute("aria-expanded", "true");
