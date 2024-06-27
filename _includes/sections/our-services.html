@@ -7,7 +7,7 @@
     {% assign element = page.our_services%} {%
       for element in page.our_services %}
       <div class="w-33-l measure flex-column justify-left items-left center-l mb2 tl pr4">
-        <h2 class="f3">{{ element.title }}</h2>
+        <h3 class="f3 accent">{{ element.title }}</h3>
         <p class="pb3 f3 lh-copy">{{ element.description }}</p>
       </div>
     {% endfor %}
