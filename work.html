@@ -87,19 +87,32 @@ order: 3
   {% endfor %}
 </div>
 </section>
+
 <script>
-  function toggleBio(id, excerpt, content, types) {
-    const toggleable = excerpt == content;
-    if (true) {
-      const el = document.getElementById(id);
-      let toggled = document.getElementById(id).dataset.toggled;
-      if (toggled == "true") {
-        el.innerHTML = excerpt + "<p class='mv0 link accent pointer'> [read more] </p>";
-        el.dataset.toggled = false;
-      } else {
-        el.innerHTML = content + types + "<p class='mv0 link accent pointer'> [read less] </p>";
-        el.dataset.toggled = true;
-      }
+  function expandContent(toggleEl) {
+    const containerEl = toggleEl.parentElement;
+    const contentDiv = containerEl.querySelector('.project-content');
+    const excerpt = contentDiv.dataset.excerpt;
+    const content = contentDiv.dataset.content;
+
+    let toggled = contentDiv.dataset.toggled === "true";
+    if (!toggled) {
+      contentDiv.innerHTML = content;
+      toggleEl.innerHTML = "[read less]";
+      contentDiv.dataset.toggled = "true";
+      toggleEl.setAttribute("aria-expanded", "true");
+    } else {
+      contentDiv.innerHTML = excerpt;
+      toggleEl.innerHTML = "[read more]";
+      contentDiv.dataset.toggled = "false";
+      toggleEl.setAttribute("aria-expanded", "false");
+    }
+  }
+
+  function handleKeydown(event, el) {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      expandContent(el);
     }
   }
 </script>
