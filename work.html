@@ -8,23 +8,24 @@ order: 3
 ---
 
 <section class="mt2 ph3 ph5-l">
-  <header>
-<div class="flex-l items-center mv2 ">
-  <div class="w-100-l">
-    
-    <h3 class=" f2 f1-m f-subheadline-l accent normal sans-serif mb4 lh-solid">
-      {{ page.title }}
-    </h3>
-    <div class="f3 measure-wide dark-gray lh-copy mb5">
-      <p class="f4">
-      <em >Hypha is a word from Ancient Greek meaning 'web' (plural hyphae); referring to one of the threads that make up the mycelium of a fungus.</em> 
-      </p>
+<header>
+  <div class="flex-l items-center mv2 ">
+    <div class="w-100-l">
       
-      In ecology, hyphae provide sustenance and communication between living organisms. Drawing inspiration from this infinitely adaptive, complex structure, we bring these traits to our work: rooted in knowledge, yet boundless in imagination.
-
+      <h3 class="f2 f1-m f-subheadline-l accent normal sans-serif mb4 lh-solid">
+        {{ page.title }}
+      </h3>
+      <div class="f3 measure-wide dark-gray lh-copy mb5">
+        <p class="f4">
+          <em>
+            Hypha is a word from Ancient Greek meaning 'web' (plural hyphae); referring to one of the threads that make up the mycelium of a fungus.
+          </em> 
+        </p>
+        In ecology, hyphae provide sustenance and communication between living organisms. Drawing inspiration from this infinitely adaptive, complex structure, we bring these traits to our work: rooted in knowledge, yet boundless in imagination.
+      </div>
+    </div>
   </div>
-</div>
-  </header>
+</header>
 <div class="flex flex-wrap justify-left mb4 pv4">
   {% assign index_page = site.pages | where: "title", "Home" | first %}
   {% assign what_we_do = index_page.what_we_do | sort: 'order' %}
