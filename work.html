@@ -26,9 +26,21 @@ order: 3
 </div>
   </header>
 <div class="flex flex-wrap justify-left mb4 pv4">
-    {% assign works = site.work | sort: 'order' %}
-    {% for work in works %}
-        <div class="w-33-l w-50-m w-100-s flex-column justify-left items-left mb4 tl pr5-l pl3-m pr3-m">
+  {% assign index_page = site.pages | where: "title", "Home" | first %}
+  {% assign what_we_do = index_page.what_we_do | sort: 'order' %}
+  {% assign works_by_practice_area = site.work | group_by: 'practice_area' %}
+  {% for practice in what_we_do %}
+    {% assign practice_area = practice.title %}
+    {% assign matching_practice_area = works_by_practice_area | where: 'name', practice_area %}
+    {% if matching_practice_area.size > 0 %}
+      <div class="flex flex-column">
+        <h2 class="f2 sans-serif accent mb1 mt4">
+          {{ practice.title }}
+        </h2>
+        <p class="measure-wide mb4">
+          {{ practice.description }}
+        </p>
+      </div>
             <div class="relative mb4">
 
             <img class="relative" src="/assets/images/logos/logo-background.jpg" alt="logo"></img>
