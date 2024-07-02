@@ -1,0 +1,7 @@
+.skip-link {
+    transform: translateY(-100%);
+}
+
+.skip-link:focus {
+    transform: translateY(0%);
+}
