@@ -126,6 +126,16 @@ mark {
     @media screen and (min-width: 1600px) {
       background-size: 25%, 20%;    
     }
+  }
+  .c-lab-and-lines {
+    background-image: url(/assets/images/c-lab.svg),
+      url(/assets/images/footer1.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top right, bottom right;
+    background-size: 30%, 20%;
+    @media screen and (min-width: 1600px) {
+      background-size: 40%, 20%;    
+    }
 }
   }
 
