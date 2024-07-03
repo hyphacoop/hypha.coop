@@ -15,7 +15,14 @@
     for element in page.what_we_do %}
     <div class="w-33-l measure flex-column justify-left items-left center-l mb2 tl pr4">
       <h3 class="f3 accent">{{ element.title }}</h3>
-      <p class="pb3 f3 lh-copy">{{ element.description }}</p>
+      <p class="pb3 f3 lh-copy">
+        {{ element.description }}
+      
+        {% if element.slug %}
+          <a href="/{{ element.slug }}/" class="accent link underline-hover">Read more</a>
+        {% endif %}
+
+      </p>
     </div>
   {% endfor %}
 </div>
