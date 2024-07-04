@@ -2,7 +2,7 @@
 image: "/assets/images/social/dripline/2024-06-24-timewave-interview-with-udit.webp"
 title: Talking Timewave with Udit Vira
 author: Andi & Udit
-date: 2024-06-24
+date: 2024-07-04
 acknowledgement: 
 excerpt: A quick dive into internet-native organizations and cross-chain protocols
 ---
