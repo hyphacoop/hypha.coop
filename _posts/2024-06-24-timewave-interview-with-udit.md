@@ -8,7 +8,7 @@ excerpt: A quick dive into internet-native organizations and cross-chain protoco
 ---
 
 <figure class='flex flex-column pb6'>
-  <img src="/assets/images/posts/2024-06-24-timewave-with-udit.webp" alt="Two birds on each side of the Timewave logo, a blue clock drawn by @badkidsart" class="w-100 w-50-l br2 pb2"> 
+  <img src="{{ '/assets/images/posts/2024-06-24-timewave-with-udit.webp' | relative_url }}" alt="Two birds on each side of the Timewave logo, a blue clock drawn by @badkidsart" class="w-100 w-50-l br2 pb2">   
   <figcaption>
     logo and bird by <a href='https://twitter.com/badkidsart/'>@badkidsart</a>
   </figcaption>
@@ -23,7 +23,7 @@ We recorded this conversation outside on a warm sunny day in Toronto, so you'll 
   class="pb2">Listen to the interview:</figcaption>
   <br>
   <audio class='w-100 w-50-l br2 pb2' controls src="/assets/images/posts/andi-interviews-udit-about-timewave.mp3"></audio>
-  <a href="/assets/images/posts/andi-interviews-udit-about-timewave.mp3"> Download audio </a>
+  <a href="{{ '/assets/images/posts/andi-interviews-udit-about-timewave.mp3' | relative_url }}"> Download audio </a>
 </figure>
 
   
