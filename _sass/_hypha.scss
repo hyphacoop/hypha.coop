@@ -67,13 +67,36 @@ mark {
   height:100vh;
 }
 
-#menu:target + .backdrop {
+.backdrop {
+  transform: translateX(-100%);
+  transition: all 0.15s ease-in-out;
+  animation: moveX 0.15s forwards;
+}
+
+@keyframes moveX {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+#menu:target .backdrop {
   display: flex;
-  @media screen and (min-width: 60em) {
+  background-image: url(/assets/images/roots-menu.webp);
+  background-position: top right;
+  background-repeat: no-repeat;
+  transition: translateX 5s ease-in-out, 0.15s ease-in-out;
+  @media #{$breakpoint-large} {
     display: none;
   }
 }
 
+#menu:target .backdrop:hover {
+  background-position: top left;
+  transition: all 0.15s ease-in-out;
+  width: 33%;
+}
 .scaling-2 {
   background-image: url(/assets/images/scaling-2.png);
 }
