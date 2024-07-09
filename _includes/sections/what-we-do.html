@@ -11,8 +11,8 @@
   Our practice areas
 </h2>
 <div class="flex flex-between flex-wrap mt5-ns">
-  {% assign element = page.what_we_do%} {%
-    for element in page.what_we_do %}
+  {% assign sorted_elements = page.what_we_do | sort: 'order' %}
+  {% for element in sorted_elements %}
     <div class="w-33-l measure flex-column justify-left items-left center-l mb2 tl pr4">
       <h3 class="f3 accent">{{ element.title }}</h3>
       <p class="pb3 f3 lh-copy">{{ element.description }}</p>
