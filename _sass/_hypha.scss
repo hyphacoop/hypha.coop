@@ -84,7 +84,7 @@ mark {
 #menu:target .backdrop {
   display: flex;
   background-image: url(/assets/images/roots-menu.webp);
-  background-position: top right;
+  background-position: right 0 top 33%; 
   background-repeat: no-repeat;
   transition: translateX 5s ease-in-out, 0.15s ease-in-out;
   @media #{$breakpoint-large} {
@@ -93,7 +93,7 @@ mark {
 }
 
 #menu:target .backdrop:hover {
-  background-position: top left;
+  background-position: left 0 top 33%; 
   transition: all 0.15s ease-in-out;
   width: 33%;
 }
