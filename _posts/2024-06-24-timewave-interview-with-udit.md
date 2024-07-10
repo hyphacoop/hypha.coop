@@ -22,7 +22,7 @@ We recorded this conversation outside on a warm sunny day in Toronto, so you'll 
   style="text-align:left !important; padding-left: 0 !important;"
   class="pb2">Listen to the interview:</figcaption>
   <br>
-  <audio class='w-100 w-50-l br2 pb2' controls src="/assets/images/posts/andi-interviews-udit-about-timewave.mp3"></audio>
+  <audio class='w-100 w-50-l br2 pb2' controls src="{{ '/assets/images/posts/andi-interviews-udit-about-timewave.mp3' | relative_url }}"></audio>
   <a href="{{ '/assets/images/posts/andi-interviews-udit-about-timewave.mp3' | relative_url }}"> Download audio </a>
 </figure>
 
