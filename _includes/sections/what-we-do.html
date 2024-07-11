@@ -1,19 +1,19 @@
-<div class="flex  justify-start lh-copy f3 mt6 mb4">
+<div class="flex justify-start lh-copy f3 mt6-ns mt5 mb4">
   <div class="mr3">
-      <h2 class="">What we do</h2>
+      <h2>What we do</h2>
     <p class="lh-copy f3 measure mt0">
       We’re a diverse team of expert creatives, builders, and organizers who collaborate closely with clients to advance their missions through tech. Read more about
       <a class="accent link underline-hover" href="/work/">our work</a>.
     </p>
   </div>
 </div>
-<h2 class="f2 accent">
+<h2 class="f2 accent mb2">
   Our practice areas
 </h2>
-<div class="flex flex-between flex-wrap mt5-ns">
+<div class="flex flex-between flex-wrap">
   {% assign sorted_elements = page.what_we_do | sort: 'order' %}
   {% for element in sorted_elements %}
-    <div class="w-33-l measure flex-column justify-left items-left center-l mb2 tl pr4">
+    <div class="w-33-l measure flex-column justify-left items-left center-l tl pr4">
       <h3 class="f3 accent">{{ element.title }}</h3>
       <p class="pb3 f3 lh-copy">{{ element.description }}</p>
     </div>
