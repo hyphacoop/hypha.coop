@@ -46,7 +46,7 @@ order: 3
         </p>
       </div>
       <div class="flex flex-wrap">
-        {% assign works = matching_practice_area.first.items | sort: 'order' %}
+        {% assign works = matching_practice_area.first.items %}
         {% for work in works %}
        
           <div class="w-33-l w-50-m w-100-s flex-column justify-left items-left mb4 tl pr5-l pl3-m pr3-m">
