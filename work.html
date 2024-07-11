@@ -71,28 +71,31 @@ order: 3
                 >
                 {{ work.excerpt | markdownify }}
               </div>
-              {% if work.case_study %}
-                {% assign practice_slug = '' %}
-                {% for practice in index_page.what_we_do %}
-                  {% if practice.title == work.practice_area %}
-                    {% assign practice_slug = practice.slug %}
-                  {% endif %}
-                {% endfor %}
-                {% if practice_slug %}
-                  <a href="/{{ practice_slug }}/{{ work.case_study }}/" class="accent link underline-hover">Read the case study</a>
-                {% endif %}
-              {% endif %}
               {% if work.content contains "<!-- more -->" %}
-                  <p class="mv0 link accent pointer underline-hover w-fit"
-                    tabindex="0"
-                    role="button"
-                    aria-expanded="false"
-                    onclick="expandContent(this)"
-                    onkeydown="handleKeydown(event, this)"
-                  >
-                    [read more]
-                  </p>
+              <span class="mv0 link accent pointer underline-hover w-fit"
+                tabindex="0"
+                role="button"
+                aria-expanded="false"
+                onclick="expandContent(this)"
+                onkeydown="handleKeydown(event, this)"
+              >
+                [expand]
+              </span>
+            {% endif %}
+            {% if work.content contains "<!-- more -->" and work.case_study %}
+              &mdash;
+            {% endif %}
+            {% if work.case_study %}
+              {% assign practice_slug = '' %}
+              {% for practice in index_page.what_we_do %}
+                {% if practice.title == work.practice_area %}
+                  {% assign practice_slug = practice.slug %}
                 {% endif %}
+              {% endfor %}
+              {% if practice_slug %}
+                <a href="/{{ practice_slug }}/{{ work.case_study }}/" class="accent link underline-hover case-study-link">Read the case study</a>
+              {% endif %}
+            {% endif %}
               </div>
             </div>
         {% endfor %}
@@ -112,12 +115,12 @@ order: 3
     let toggled = contentDiv.dataset.toggled === "true";
     if (!toggled) {
       contentDiv.innerHTML = content;
-      toggleEl.innerHTML = "[read less]";
+      toggleEl.innerHTML = "[collapse]";
       contentDiv.dataset.toggled = "true";
       toggleEl.setAttribute("aria-expanded", "true");
     } else {
       contentDiv.innerHTML = excerpt;
-      toggleEl.innerHTML = "[read more]";
+      toggleEl.innerHTML = "[expand]";
       contentDiv.dataset.toggled = "false";
       toggleEl.setAttribute("aria-expanded", "false");
     }
