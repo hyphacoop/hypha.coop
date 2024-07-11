@@ -126,6 +126,10 @@ notifications:
     action: done
     id: https://staging.hypha.coop/dripline/timewave-interview-with-udit.jsonld
     created_at: 1719249190
+  dripline/co-creation-lab-vision-essay.jsonld:
+    action: done
+    id: https://staging.hypha.coop/dripline/co-creation-lab-vision-essay.jsonld
+    created_at: 1720707614
 actor_url: https://staging.hypha.coop/about.jsonld
 actor: "@dripline@staging.hypha.coop"
 public_key_url: https://staging.hypha.coop/about.jsonld#main-key
