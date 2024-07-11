@@ -71,7 +71,18 @@ order: 3
                 >
                 {{ work.excerpt | markdownify }}
               </div>
-
+              {% if work.case_study %}
+                {% assign practice_slug = '' %}
+                {% for practice in index_page.what_we_do %}
+                  {% if practice.title == work.practice_area %}
+                    {% assign practice_slug = practice.slug %}
+                  {% endif %}
+                {% endfor %}
+                {% if practice_slug %}
+                  <a href="/{{ practice_slug }}/{{ work.case_study }}/" class="accent link underline-hover">Read the case study</a>
+                {% endif %}
+              {% endif %}
+              {% if work.content contains "<!-- more -->" %}
                   <p class="mv0 link accent pointer underline-hover w-fit"
                     tabindex="0"
                     role="button"
@@ -81,7 +92,7 @@ order: 3
                   >
                     [read more]
                   </p>
-
+                {% endif %}
               </div>
             </div>
         {% endfor %}
@@ -97,11 +108,10 @@ order: 3
     const contentDiv = containerEl.querySelector('.project-content');
     const excerpt = contentDiv.dataset.excerpt;
     const content = contentDiv.dataset.content;
-    const types = contentDiv.dataset.types;
 
     let toggled = contentDiv.dataset.toggled === "true";
     if (!toggled) {
-      contentDiv.innerHTML = content + types;
+      contentDiv.innerHTML = content;
       toggleEl.innerHTML = "[read less]";
       contentDiv.dataset.toggled = "true";
       toggleEl.setAttribute("aria-expanded", "true");
