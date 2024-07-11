@@ -67,7 +67,6 @@ order: 3
                 class="project-content"
                 data-excerpt="{{ work.excerpt | escape }}"
                 data-content="{{ work.content | escape }}"
-                data-types='<p>Keywords: <em>{% for type in work.work-type %}{{type}}; {% endfor %}</em></p>'
                 data-toggled="false"
                 >
                 {{ work.excerpt | markdownify }}
