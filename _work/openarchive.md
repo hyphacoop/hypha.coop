@@ -4,5 +4,5 @@ logo: /assets/images/logos/openarchive.png
 excerpt_separator: <!-- more -->
 practice_area: Co-Creation Lab
 ---
-Insert description here
+Hypha collaborates with OpenArchive to implement decentralize storage solutions in their Save app.
 
