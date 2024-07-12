@@ -35,3 +35,5 @@ To us, technology on fairer terms starts with our belief that how something’s 
 <span class="f3 accent b">Sustainability</span> So much of today’s technology can be short-lived, with products and projects disappearing overnight. A lot of our work is experimental, done for boundary-pushing organizations, so it doesn’t need it to last forever to be considered a success. But the end of client tech projects should be up to our clients — not because it’s no longer working or they ran out of the resources to support it. For everything we build, maintenance and affordability are top priorities.
 
 Beyond being a fantasy, necessary evil, or outright enemy, technology can be a valuable tool for connection and positive change. But the way it’s made must be more inclusive and informed: no small feat. Co-Creation Lab was started to tackle this challenge. We aim to show the organizations whose work we admire most that tech can be empowering — helping them reach more people in deeper ways, reliably and for generations to come.
+
+<a href='../../co-creation-lab' class='button button-primary'>Learn more about Co-Creation Lab</a>
