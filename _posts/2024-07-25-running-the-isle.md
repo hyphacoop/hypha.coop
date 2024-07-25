@@ -16,6 +16,8 @@ excerpt: Testing blockchain software at scale
   </figcaption>
 </figure>
 
+### {{ page.excerpt }}
+
 Testing blockchain software can be challenging. A new version of, say, Gaia (which powers the [Cosmos Hub](https://hub.cosmos.network/main)) will be installed in a large array of environments, and needs to work on all of them regardless of how esoteric users' operations become. Blockchains are thus often tested by starting a secondary network, a testnet, that runs the same software as the main blockchain but treats its tokens as funny money with no value. This allows testnet coordinators to run operations on a testnet with low risk.  
 
 For a testnet to be useful, it should represent the environments of folks who'll run validators in the mainnet. The best way to do this is by inviting those validators into the testnet, and paying them mainnet tokens for their participation. This also means that the testing team can design exercises for the validators. If, for instance, the format of proposals has changed, we can ask all validators on the testnet to submit a dummy proposal and incentivize those who do.  
