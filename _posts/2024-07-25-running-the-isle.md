@@ -2,7 +2,7 @@
 image: "/assets/images/social/dripline/2024-06-24-timewave-interview-with-udit.webp"
 title: Running the Interchain Security Lightning Experiment
 author: Violet
-date: 2024-07-04
+date: 2024-07-24
 acknowledgement: Violet is a probationary member at Hypha Worker Coop, and a test engineer on the Interchain practice area.
 excerpt: Testing blockchain software at scale
 ---
