@@ -10,9 +10,9 @@ excerpt: Testing blockchain software at scale
 
 <!-- replace with relevant image -->
 <figure class='flex flex-column pb6'>
-  <img src="{{ '/assets/images/posts/2024-06-24-timewave-with-udit.webp' | relative_url }}" alt="Two birds on each side of the Timewave logo, a blue clock drawn by @badkidsart" class="w-100 w-50-l br2 pb2">   
+  <img src="{{ '/assets/images/posts/2024-07-25-running-the-isle.webp' | relative_url }}" alt="group of kayakers going on an adventure on a lake nestled between forested mountains on a nice summer's day" class="w-100 w-50-l br2 pb2">     
   <figcaption>
-    logo and bird by <a href='https://twitter.com/badkidsart/'>@badkidsart</a>
+    Photo by <a href='https://www.stocksy.com/RonComeau'>Ronnie Comeau</a> via Stocksy
   </figcaption>
 </figure>
 
