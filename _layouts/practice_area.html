@@ -62,17 +62,15 @@
               </div>
               <h2 class="f3 sans-serif accent">{{ project.title }}</h2>
               <div class="mb2 f4 lh-copy" id="{{ project.title }}">
-                <div class="project-content" data-excerpt="{{ project.excerpt | escape }}" data-content="{{ project.content | escape }}" data-toggled="false">
+                <div class="project-content" data-excerpt="{{ project.excerpt | escape }}" data-content="{% if project.content contains '<!-- more -->' %}{{ project.content | escape }}{% endif %}" data-case-study="{% if project.case_study %}{% assign practice_slug = '' %}{% for practice in index_page.what_we_do %}{% if practice.title == project.practice_area %}{% assign practice_slug = practice.slug %}{% endif %}{% endfor %}{% if practice_slug %}<a href='/{{ practice_slug }}/{{ project.case_study }}/' class='accent link underline-hover mb4'>Read the case study</a>{% endif %}{% endif %}" data-toggled="false">
                   {{ project.excerpt }}
                 </div>
                 {% if project.content contains "<!-- more -->" %}
-                  <span class="mv0 link accent pointer underline-hover w-fit" tabindex="0" role="button" aria-expanded="false" onclick="expandContent(this)" onkeydown="handleKeydown(event, this)">[expand]</span>
-                {% endif %}
-                {% if project.content contains "<!-- more -->" and project.case_study %}
-                  &mdash;
-                {% endif %}
-                {% if project.case_study %}
-                  <a href="/{{ practice_slug }}/{{ project.case_study }}/" class="accent link underline-hover case-study-link">Read the case study</a>
+                  <div class="mt2">
+                    <span class="mv0 link accent pointer underline-hover w-fit" tabindex="0" role="button" aria-expanded="false" onclick="expandContent(this)" onkeydown="handleKeydown(event, this)">
+                      [expand]
+                    </span>
+                  </div>
                 {% endif %}
               </div>
             </div>
@@ -84,14 +82,14 @@
     <script>
       function expandContent(toggleEl) {
         const containerEl = toggleEl.parentElement;
-        const contentDiv = containerEl.querySelector('.project-content');
+        const contentDiv = containerEl.previousElementSibling;
         const excerpt = contentDiv.dataset.excerpt;
         const content = contentDiv.dataset.content;
-        const caseStudyLink = containerEl.querySelector('.case-study-link');
-
+        const caseStudyLink = contentDiv.dataset.caseStudy;
+    
         let toggled = contentDiv.dataset.toggled === "true";
         if (!toggled) {
-          contentDiv.innerHTML = content;
+          contentDiv.innerHTML = content + caseStudyLink;
           toggleEl.innerHTML = "[collapse]";
           contentDiv.dataset.toggled = "true";
           toggleEl.setAttribute("aria-expanded", "true");
@@ -102,7 +100,7 @@
           toggleEl.setAttribute("aria-expanded", "false");
         }
       }
-
+    
       function handleKeydown(event, el) {
         if (event.key === "Enter" || event.key === " ") {
           event.preventDefault();
@@ -112,3 +110,4 @@
     </script>
   </body>
 </html>
+      
