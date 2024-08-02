@@ -124,12 +124,12 @@ notifications:
     created_at: 1715607046
   dripline/timewave-interview-with-udit.jsonld:
     action: done
-    id: https://staging.hypha.coop/dripline/timewave-interview-with-udit.jsonld
+    id: https://hypha.coop/dripline/timewave-interview-with-udit.jsonld
     created_at: 1719249190
-  dripline/co-creation-lab-vision-essay.jsonld:
+  dripline/running-the-isle.jsonld:
     action: done
-    id: https://staging.hypha.coop/dripline/co-creation-lab-vision-essay.jsonld
-    created_at: 1720734874
+    id: https://hypha.coop/dripline/running-the-isle.jsonld
+    created_at: 1721940512
 actor_url: https://staging.hypha.coop/about.jsonld
 actor: "@dripline@staging.hypha.coop"
 public_key_url: https://staging.hypha.coop/about.jsonld#main-key
