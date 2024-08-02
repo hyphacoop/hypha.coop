@@ -1,11 +1,11 @@
 ---
-name: 'Mauve'
+name: 'Mauve Signweaver'
 pronouns: '(they/it)'
 avatar: Mauve.png
 ---
-Mauve is a decentralized software consultant who has been working on everything from setting up local mesh networks, local-first file transfer apps, a decentralized web browser, and to a peer to peer virtual reality.
+Mauve Signweaver has been “poking computers” since they were a child — their first time on one predates their earliest memory.  
 
-Their focus at Hypha is on integrating peer to peer protocols and in particular making Distributed Press more reliable and feature complete.
-      
-Mauve is a local-first maximalist and values software working offline, on local networks, and without control and pressure from cloud-based corporations.
+
+Mauve’s obsession with technology outpaced their family’s means very soon, so they’ve long been intimate with working around resource constraints. What began as figuring out how to do things with less has now transformed into a mission to spread peer to peer and mesh technology based on its wider merits. This technology is not only more affordable, but more reliable, resilient, and self-governed than the cloud solutions that dominate the market today. Mauve regularly consults, speaks, and publishes on this topic on their [blog](https://blog.mauve.moe/) and at conferences like [Causal Islands](https://www.youtube.com/watch?v=rSvj_NQ5rho). 
+
       
