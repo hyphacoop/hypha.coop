@@ -2,12 +2,10 @@
 name: 'Andi Argast'
 pronouns: '(she/her)'
 avatar: Andi.png
-excerpt_separator: <!-- more -->
 ---
-Andi is a strategist, researcher and facilitator. Her current work weaves together the disparate threads of art, culture, data, and decentralized technologies.
-<!-- more -->
+Working in communications in the early 2000s, Andi Argast contributed to the rise of social media and has gone through many hype cycles since then.  
 
-Andi has applied her design, strategy, and insight experience at Girl Guides of Canada, the Framework Foundation, and a variety of arts organizations. She believes that digital and data literacy are key to an engaged and functioning society, and was a core member of the Toronto Node of the Open Data Institute. 
 
-A certified practitioner of human-centered design, Andi also holds a Master of Information from the University of Toronto, and a Bachelor of Journalism from Carleton University. She is a member of Hypha Worker Co-operative.
+As she’s built her mastery in applying emerging technologies, she’s always fed her curiosity about how to use technology’s growing power for good. Andi’s experiences span the nonprofit, library sciences, government, and education sectors, and have included leadership roles at Girl Guides of Canada, the Ontario Ministry of Research, Innovation and Science, and the Toronto Node of the Open Data Institute. An expert in raising digital literacy and building usable tech through [human-centered design](https://vimeo.com/106505300), Andi believes the key to doing good is understanding the toolset — something she helps her clients and team do every day as Hypha’s Strategy Lead.
+
       

@@ -3,10 +3,10 @@
 
   {%- include head.html -%}
 
-  <body class="sans-serif antialiased debug  {% if page.title == 'Dripline' %} dripline-and-lines {% elsif page.title == 'Work' %} network-and-lines {% elsif page.title == 'People' %} mushroom-and-lines {% elsif page.title == 'Home' %} root-and-lines {% else %} footer {% endif %}">
-
+  <body class="sans-serif antialiased debug {% if page.title == 'Dripline' %} dripline-and-lines {% elsif page.title == 'Work' %} network-and-lines {% elsif page.title == 'People' %} mushroom-and-lines {% elsif page.title == 'Home' %} root-and-lines {% elsif page.title == 'Co-Creation Lab' %} c-lab-and-lines {% elsif page.title == 'Friends of HEK' %} hek-and-lines {% elsif page.title == 'CultureStake' %} furtherfield-and-lines {% else %} footer {% endif %}">
+    <a href="#maincontent" class="skip-link absolute top-0 left-0 z-max pa2">Skip to main content</a>
     {%- include sections.html tag="header" path="header.html" class="pt4 flex items-baseline mw9 center justify-between" -%}
-    <main class="mw9 center">
+    <main id="maincontent" class="mw9 center">
       {{ content }}
     </main>
 
