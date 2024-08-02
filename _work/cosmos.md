@@ -2,13 +2,6 @@
 title: Cosmos
 logo: /assets/images/logos/cosmos-logo.png
 preview: true
-work-type: 
-    - Blockchain development
-    - Community stewardship
-    - Decentralized ecosystems
-    - Deliberative governance
-    - Testnet infrastructure
-order: 1
 excerpt_separator: <!-- more -->
 practice_area: Interchain
 ---
