@@ -3,7 +3,7 @@
   {% if person.hidden != true %}
   <article class="w-33-l pv3-ns ph5-ns mb4 center-m ml0-l">
     <div class="flex items-end">
-      <img src="/assets/images/avatars/{{ person.avatar }}" alt="{{ person.name }}" class=" w4  tc white f3 v-mid h4"></img>
+      <img src="/assets/images/avatars/{{ person.avatar }}" alt="{{ person.name }}" class="w4 tc white f3 v-mid h4">
       <div class="pl4 w-50 pt0 pt0-l v-btm pb0">
         <div class="f3 lw-5 accent pt0 pt0-l lh-title pb1">
           <b>{{ person.name }}</b>
@@ -13,35 +13,56 @@
     </div>
     <div
       class="lh-copy measure center f5 pt3"
-      data-excerpt="{{ person.excerpt | escape }}"
-      data-content="{{ person.content | escape }}"
-      data-toggled="false"
       id="{{ person.name }}"
-      onclick="toggleBio(this.id, this.dataset.excerpt, this.dataset.content);"
     >
-      {{ person.excerpt | markdownify }}
-
+      <div
+        class="bio-content"
+        data-excerpt="{{ person.excerpt | escape }}"
+        data-content="{{ person.content | escape }}"
+        data-toggled="false"
+      >
+        {{ person.excerpt | markdownify }}
+      </div>
       {% unless person.excerpt == person.content %}
-        <p class="mv0 link accent pointer">[read more]</p>
+        <p class="mv0 link accent pointer underline-hover w-fit"
+           tabindex="0"
+           role="button"
+           aria-expanded="false"
+           onclick="toggleBio(this)"
+           onkeydown="handleKeydown(event, this)"
+        >[read more]</p>
       {% endunless %}
     </div>
   </article>
   {% endif %}
   {% endfor %}
 </div>
+
 <script>
-  function toggleBio(id, excerpt, content) {
-    const toggleable = excerpt == content;
-    if (!toggleable) {
-      const el = document.getElementById(id);
-      let toggled = document.getElementById(id).dataset.toggled;
-      if (toggled == "true") {
-        el.innerHTML = excerpt + "<p class='mv0 link accent pointer'> [read more] </p>";
-        el.dataset.toggled = false;
-      } else {
-        el.innerHTML = content + "<p class='mv0 link accent pointer '> [read less] </p>";
-        el.dataset.toggled = true;
-      }
+  function toggleBio(toggleEl) {
+    const containerEl = toggleEl.parentElement;
+    const contentDiv = containerEl.querySelector('.bio-content');
+    const excerpt = contentDiv.dataset.excerpt;
+    const content = contentDiv.dataset.content;
+ 
+    let toggled = contentDiv.dataset.toggled === "true";
+    if (!toggled) {
+      contentDiv.innerHTML = content;
+      toggleEl.innerHTML = "[read less]";
+      contentDiv.dataset.toggled = "true";
+      toggleEl.setAttribute("aria-expanded", "true");
+    } else {
+      contentDiv.innerHTML = excerpt;
+      toggleEl.innerHTML = "[read more]";
+      contentDiv.dataset.toggled = "false";
+      toggleEl.setAttribute("aria-expanded", "false");
+    }
+  }
+
+  function handleKeydown(event, el) {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      toggleBio(el);
     }
   }
 </script>
