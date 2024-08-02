@@ -42,7 +42,7 @@ order: 3
           {{ practice.description }}
           {% if practice.slug %}
             <a href="/{{ practice.slug }}/" class="accent link underline-hover">Read more</a>
-        {% endif %}
+          {% endif %}
         </p>
       </div>
       <div class="flex flex-wrap">
@@ -67,37 +67,26 @@ order: 3
                 class="project-content"
                 data-excerpt="{{ work.excerpt | escape }}"
                 data-content="{{ work.content | escape }}"
+                data-case-study="{% if work.case_study %}{% assign practice_slug = '' %}{% for practice in index_page.what_we_do %}{% if practice.title == work.practice_area %}{% assign practice_slug = practice.slug %}{% endif %}{% endfor %}{% if practice_slug %}<a href='/{{ practice_slug }}/{{ work.case_study }}/' class='accent link underline-hover mb4'>Read the case study</a>{% endif %}{% endif %}"
                 data-toggled="false"
-                >
+              >
                 {{ work.excerpt | markdownify }}
               </div>
               {% if work.content contains "<!-- more -->" %}
-              <span class="mv0 link accent pointer underline-hover w-fit"
-                tabindex="0"
-                role="button"
-                aria-expanded="false"
-                onclick="expandContent(this)"
-                onkeydown="handleKeydown(event, this)"
-              >
-                [expand]
-              </span>
-            {% endif %}
-            {% if work.content contains "<!-- more -->" and work.case_study %}
-              &mdash;
-            {% endif %}
-            {% if work.case_study %}
-              {% assign practice_slug = '' %}
-              {% for practice in index_page.what_we_do %}
-                {% if practice.title == work.practice_area %}
-                  {% assign practice_slug = practice.slug %}
-                {% endif %}
-              {% endfor %}
-              {% if practice_slug %}
-                <a href="/{{ practice_slug }}/{{ work.case_study }}/" class="accent link underline-hover case-study-link">Read the case study</a>
+                <div class="mt2">
+                  <span class="mv0 link accent pointer underline-hover w-fit"
+                    tabindex="0"
+                    role="button"
+                    aria-expanded="false"
+                    onclick="expandContent(this)"
+                    onkeydown="handleKeydown(event, this)"
+                  >
+                    [expand]
+                  </span>
+                </div>
               {% endif %}
-            {% endif %}
-              </div>
             </div>
+          </div>
         {% endfor %}
       </div>
     {% endif %}
@@ -108,13 +97,14 @@ order: 3
 <script>
   function expandContent(toggleEl) {
     const containerEl = toggleEl.parentElement;
-    const contentDiv = containerEl.querySelector('.project-content');
+    const contentDiv = containerEl.previousElementSibling;
     const excerpt = contentDiv.dataset.excerpt;
     const content = contentDiv.dataset.content;
+    const caseStudyLink = contentDiv.dataset.caseStudy;
 
     let toggled = contentDiv.dataset.toggled === "true";
     if (!toggled) {
-      contentDiv.innerHTML = content;
+      contentDiv.innerHTML = content + caseStudyLink;
       toggleEl.innerHTML = "[collapse]";
       contentDiv.dataset.toggled = "true";
       toggleEl.setAttribute("aria-expanded", "true");
