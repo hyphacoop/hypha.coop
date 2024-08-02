@@ -81,7 +81,7 @@ order: 3
                     onclick="expandContent(this)"
                     onkeydown="handleKeydown(event, this)"
                   >
-                    [expand]
+                    [read more]
                   </span>
                 </div>
               {% endif %}
@@ -105,12 +105,12 @@ order: 3
     let toggled = contentDiv.dataset.toggled === "true";
     if (!toggled) {
       contentDiv.innerHTML = content + caseStudyLink;
-      toggleEl.innerHTML = "[collapse]";
+      toggleEl.innerHTML = "[read less]";
       contentDiv.dataset.toggled = "true";
       toggleEl.setAttribute("aria-expanded", "true");
     } else {
       contentDiv.innerHTML = excerpt;
-      toggleEl.innerHTML = "[expand]";
+      toggleEl.innerHTML = "[read more]";
       contentDiv.dataset.toggled = "false";
       toggleEl.setAttribute("aria-expanded", "false");
     }

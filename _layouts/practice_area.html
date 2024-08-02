@@ -68,7 +68,7 @@
                 {% if project.content contains "<!-- more -->" %}
                   <div class="mt2">
                     <span class="mv0 link accent pointer underline-hover w-fit" tabindex="0" role="button" aria-expanded="false" onclick="expandContent(this)" onkeydown="handleKeydown(event, this)">
-                      [expand]
+                      [read more]
                     </span>
                   </div>
                 {% endif %}
@@ -90,12 +90,12 @@
         let toggled = contentDiv.dataset.toggled === "true";
         if (!toggled) {
           contentDiv.innerHTML = content + caseStudyLink;
-          toggleEl.innerHTML = "[collapse]";
+          toggleEl.innerHTML = "[read less]";
           contentDiv.dataset.toggled = "true";
           toggleEl.setAttribute("aria-expanded", "true");
         } else {
           contentDiv.innerHTML = excerpt;
-          toggleEl.innerHTML = "[expand]";
+          toggleEl.innerHTML = "[read more]";
           contentDiv.dataset.toggled = "false";
           toggleEl.setAttribute("aria-expanded", "false");
         }
