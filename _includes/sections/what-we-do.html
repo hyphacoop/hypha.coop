@@ -10,12 +10,19 @@
 <h2 class="f2 accent mb2">
   Our practice areas
 </h2>
-<div class="flex flex-between flex-wrap">
+<div class="flex flex-between justify-between flex-wrap">
   {% assign sorted_elements = page.what_we_do | sort: 'order' %}
   {% for element in sorted_elements %}
-    <div class="w-33-l measure flex-column justify-left items-left center-l tl pr4">
+    <div class="w-30-l measure flex-column justify-left items-left tl pr4">
       <h3 class="f3 accent">{{ element.title }}</h3>
-      <p class="pb3 f3 lh-copy">{{ element.description }}</p>
+      <p class="pb3 f3 lh-copy">
+        {{ element.description }}
+      
+        {% if element.slug %}
+          <a href="/{{ element.slug }}/" class="accent link underline-hover">Read more</a>.
+        {% endif %}
+
+      </p>
     </div>
   {% endfor %}
 </div>
