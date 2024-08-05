@@ -13,13 +13,18 @@
             <div class="w-100-l mb2">
               <h3 class="f2 f1-m f-subheadline-l accent normal sans-serif mb4 lh-solid">{{ page.title }}</h3>
               <div class="f3 measure-wide dark-gray lh-copy mb0">
-                <h4 class="f3 measure-wide mb0">{{ page.excerpt }}</h4>
+                <p class="f3">{{ page.excerpt }}</p>
+                <p class="f4">
+                  <em>{{ page.tagline }}</em></p>
+                  {%if page.description %}
+                  <p class="pb3 f3 lh-copy measure-wide mb4">{{ page.description }}</p>
+                  {% endif %}
               </div>
             </div>
           </div>
         </header>
-        <p class="pb3 f3 lh-copy measure-wide mb4">{{ page.description }}</p>
-        <p class="pb3 f3 lh-copy measure-wide">{{ page.tagline }}</p>
+      </section>
+      <section class="mt4 ph3 pl5-l">
         <h3 class="f2 f1-m f-subheadline-l accent normal sans-serif mb2 lh-solid">Services</h3>
         <div class="w-100 flex flex-wrap mb4 justify-start">
           {% for service in page.services %}
@@ -39,7 +44,7 @@
           {% endfor %}
         </div>
       </section>
-      <section class="ph3 pl5-l">
+      <section class="mt4 ph3 pl5-l">
         <h3 class="f2 f1-m f-subheadline-l accent normal sans-serif mb2 lh-solid">Selected work</h3>
         <div class="flex flex-wrap justify-left mb4 pv4">
           {% assign index_page = site.pages | where: "title", "Home" | first %}
