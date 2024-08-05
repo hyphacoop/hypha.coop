@@ -34,16 +34,15 @@ order: 3
     {% assign practice_area = practice.title %}
     {% assign matching_practice_area = works_by_practice_area | where: 'name', practice_area %}
     {% if matching_practice_area.size > 0 %}
-      <div class="flex flex-column">
-        <h2 class="f2 sans-serif accent mb1 mt4">
+      <div class="flex flex-column mb3">
+        <h2 class="f2 sans-serif accent mb3 mt4">
           {{ practice.title }}
         </h2>
-        <p class="measure-wide mb4">
-          {{ practice.description }}
           {% if practice.slug %}
-            <a href="/{{ practice.slug }}/" class="accent link underline-hover">Read more</a>.
+          <p class="measure-wide mt2 mb2">
+            <a href="/{{ practice.slug }}/" class="accent link underline-hover">Read more</a>
+          </p>
           {% endif %}
-        </p>
       </div>
       <div class="flex flex-wrap">
         {% assign works = matching_practice_area.first.items %}
