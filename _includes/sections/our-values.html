@@ -1,10 +1,15 @@
-<div class=" flex-ns justify-start mt4 mt6-ns mt4-l">
+<div class="measure-m mt6-ns mt5 mb4 mr5-l">
+  <h2 class="f1 f-subheadline-l sans-serif mt0 accent">Technology you can believe in</h2>
+  </div>
+
+<div class="mb5 flex-ns justify-start mt0">
   <div class="measure-wide-l measure-m mr5-l">
-    <h2 class="f1 f-subheadline-l sans-serif mb4 mt0 accent">Our values</h2>
-    <p class="measure f3 lh-copy">
-      Our core values reflect our approach in cultivating respectful and
-      democratic technology ecologies. <br /><br />
-      We bring this ethos to every project we undertake.
+    <p class="measure f3 lh-copy mt0">
+      We believe richer futures are possible through technology that’s community-driven.
+      <br><br>
+      New technologies and practices like blockchain, peer-to-peer, open source, and decentralized governance are putting power back into the hands of people.
+      <br><br>
+      Hypha is dedicated to using its deep expertise in these areas to help communities leverage them accessibly and sustainably.
     </p>
   </div>
   <div class="dn db-l w-25 pt5">
@@ -12,26 +17,5 @@
   </div>
   <div class="w-25-l w-50-m mw-100 pt5-ns pt1">
     <img  alt="computer chip" src="/assets/images/block1.png"/>
-  </div>
-</div>
-
-<div class="flex flex-wrap">
-  <ul id="values" class="measure-narrow f4 mr4 pl0">
-    {% for element in page.values %}
-    <div
-      class="pa3 accent"
-      id="{{ element.title }}"
-      onclick="selectValue(this.id, 'values');"
-    >
-      <li>{{ element.title }}</li>
-    </div>
-    {% endfor %}
-  </ul>
-  <div id="values-descriptions" class="">
-    {% for element in page.values %}
-    <p id="{{ element.title }}-description" class="measure f4 lh-copy">
-      {{ element.description }}
-    </p>
-    {% endfor %}
   </div>
 </div>
