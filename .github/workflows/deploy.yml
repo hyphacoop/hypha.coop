@@ -38,11 +38,17 @@ jobs:
       - run: sudo gem install jekyll
       - run: sudo bundle install
 
+      - name: Check Config Before
+        run: cat _config.yml
+      
       - name: Set Site URL based on branch
         run: |
           if [[ "${{ github.ref }}" == "refs/heads/master" ]] || [[ "${{ github.event_name }}" == "pull_request" && "${{ github.base_ref }}" == "master" ]]; then
-            sed -i 's|url: "https://staging.hypha.coop"|url: "https://hypha.coop"|' _config.yml
+            sed -i 's|^url: "https://staging.hypha.coop"$|url: "https://hypha.coop"|' _config.yml
           fi
+      
+      - name: Check Config After
+        run: cat _config.yml
 
       - name: Set DP Social URL based on branch
         run: |
