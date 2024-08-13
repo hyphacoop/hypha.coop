@@ -15,10 +15,13 @@
               <div class="f3 measure-wide dark-gray lh-copy mb0">
                 <p class="f3">{{ page.excerpt }}</p>
                 <p class="f4">
-                  <em>{{ page.tagline }}</em></p>
-                  {%if page.description %}
-                  <p class="pb3 f3 lh-copy measure-wide mb4">{{ page.description }}</p>
-                  {% endif %}
+                  <em>{{ page.tagline }}</em>
+                </p>
+                {%if page.description %}
+                  <p class="pb3 f3 lh-copy measure-wide mb4">
+                    {{ page.description }}
+                  </p>
+                {% endif %}
               </div>
             </div>
           </div>
