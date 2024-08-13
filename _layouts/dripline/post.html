@@ -14,7 +14,7 @@ layout: default
     <h3 class="gray f6 f5-l lh-solid mt0">{{ page.date | date: site.date_format }}</h3>
     <div class="lh-copy mw7 mb4 links-accent links-underline-hover">
       {% if page.acknowledgement != "" or page.acknowledgement != nil %}
-      <p><em>{{ page.acknowledgement | markdownify }}</em></p>
+      <div><em>{{ page.acknowledgement | markdownify }}</em></div>
       {% endif %}
     </div>
   </header>
