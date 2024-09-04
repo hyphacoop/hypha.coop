@@ -63,7 +63,7 @@ You might think that, with points on the line, validators might consider stickin
 
 A relayer is a piece of software that relays transaction packets from a provider chain to a consumer chain and back. Crucially, this includes a packet where the consumer chain tells the provider chain "validator X has tried to do something malicious to me! Please punish them accordingly."  
 
-Relayers work the same way after PSS as they did before PSS, so imagine our surprise when we went to test a scenario with malicious validators, only to find that the evidence packets weren't being relayed! We certainly didn't expect the most serious bug we found to be in an unchanged component, but [Hermes 1.8.3}(https://github.com/informalsystems/hermes/releases/tag/v1.8.3) now properly relays these packets.
+Relayers work the same way after PSS as they did before PSS, so imagine our surprise when we went to test a scenario with malicious validators, only to find that the evidence packets weren't being relayed! We certainly didn't expect the most serious bug we found to be in an unchanged component, but [Hermes 1.8.3](https://github.com/informalsystems/hermes/releases/tag/v1.8.3) now properly relays these packets.
 
 ### IV: There's always at least one surprise
 
