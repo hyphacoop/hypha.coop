@@ -38,12 +38,6 @@ jobs:
       - run: sudo gem install jekyll
       - run: sudo bundle install
 
-      - name: Set Site URL based on branch
-        run: |
-          if [[ "${{ github.ref }}" == "refs/heads/master" ]] || [[ "${{ github.event_name }}" == "pull_request" && "${{ github.base_ref }}" == "master" ]]; then
-            sed -i 's|url: "https://staging.hypha.coop"|url: "https://hypha.coop"|' _config.yml
-          fi
-
       - name: Set DP Social URL based on branch
         run: |
           if [[ "${{ github.ref }}" == "refs/heads/master" ]] || [[ "${{ github.event_name }}" == "pull_request" && "${{ github.base_ref }}" == "master" ]]; then
