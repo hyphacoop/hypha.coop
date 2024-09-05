@@ -12,7 +12,7 @@ check: ## Check with htmlproofer
 	  --internal-domains hypha.coop
 
 build: ## Build for web
-	bundle exec jekyll build --key /tmp/secret.key
+	$(RUN) jekyll build --config _config.yml$(if $(JEKYLL_ENV),,_config_$(JEKYLL_ENV).yml) --key /tmp/secret.key
 
 build-web: build
 
