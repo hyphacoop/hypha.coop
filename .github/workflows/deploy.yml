@@ -60,7 +60,15 @@ jobs:
           (github.event_name == 'pull_request' && github.base_ref == 'master')
         run: echo ${{ secrets.ENCODED_DP_AP_KEY_PRODUCTION }} | base64 --decode > /tmp/secret.key
 
-      - run: make build-dweb
+      - name: Build Jekyll Site for Staging
+        if: github.ref == 'refs/heads/staging'
+        run: |
+          JEKYLL_ENV=staging make build-dweb
+      
+      - name: Build Jekyll Site for Production
+        if: github.ref == 'refs/heads/master'
+        run: |
+          make build-dweb
 
       - run: make check
 
