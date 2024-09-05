@@ -12,7 +12,11 @@ check: ## Check with htmlproofer
 	  --internal-domains hypha.coop
 
 build: ## Build for web
-	$(RUN) jekyll build --config _config.yml$(if $(JEKYLL_ENV),,_config_$(JEKYLL_ENV).yml) --key /tmp/secret.key
+	@if [ "$(JEKYLL_ENV)" = "staging" ]; then \
+		$(RUN) jekyll build --config _config.yml,_config_staging.yml --key /tmp/secret.key; \
+	else \
+		$(RUN) jekyll build --config _config.yml --key /tmp/secret.key; \
+	fi
 
 build-web: build
 
