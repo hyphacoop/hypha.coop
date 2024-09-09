@@ -1,0 +1,352 @@
+<svg
+   width="550pt"
+   height="449pt"
+   viewBox="0.00 0.00 549.59 449.00"
+   version="1.1"
+   id="svg15"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <rect
+       x="119.38401"
+       y="456.57548"
+       width="7.2906264"
+       height="39.187117"
+       id="rect17" />
+    <style
+       type="text/css"
+       id="style1">
+    @font-face {
+        font-family: 'WorkSans';
+        src: url('/assets/fonts/WorkSans-VariableFont_wght.woff2') format('woff2');
+    }
+    text {
+      font-family: 'WorkSans', sans-serif;
+    }
+  </style>
+  </defs>
+  <g
+     id="graph0"
+     class="graph"
+     transform="translate(47.725628,404.79206)">
+    <title
+       id="title1">Data Provenance</title>
+    <g
+       id="clust1"
+       class="cluster">
+      <title
+         id="title2">cluster_0</title>
+    </g>
+    <g
+       id="node7"
+       class="node">
+      <title
+         id="title4">Data Provenance</title>
+      <circle
+         fill="#9900fc"
+         stroke="#9900fc"
+         cx="221.0851"
+         cy="-164"
+         id="ellipse4"
+         r="76.403702" />
+      <text
+         text-anchor="middle"
+         x="221.0851"
+         y="-159.8"
+         font-family="WorkSans"
+         font-size="14px"
+         fill="#ffffff"
+         id="text4">Data Provenance</text>
+    </g>
+    <g
+       id="edge1"
+       class="edge"
+       transform="rotate(14.294317,209.49457,-165.40884)">
+      <title
+         id="title5">Verifiable Computing Connection</title>
+      <path
+         fill="none"
+         stroke="#000000"
+         d="m 81.100303,-237.46502 c 15.8289,8.3813 41.161397,21.13902 63.461797,32.94682"
+         id="path5" />
+      <polygon
+         fill="#000000"
+         stroke="#000000"
+         points="146.2108,-207.6056 153.4106,-199.8329 142.9352,-201.4192 "
+         id="polygon5" />
+    </g>
+    <g
+       id="node2"
+       class="node"
+       transform="translate(-0.68349621,7.5184583)">
+      <title
+         id="title6">Verifiable Computing</title>
+      <circle
+         fill="none"
+         stroke="#9900fc"
+         cx="49.113628"
+         cy="-173.17673"
+         id="ellipse6"
+         r="53.333183"
+         style="stroke-width:1" />
+      <text
+         text-anchor="middle"
+         x="49.352886"
+         y="-178.01999"
+         font-family="WorkSans"
+         font-size="14px"
+         fill="#9900fc"
+         id="text6"><tspan
+           id="tspan19"
+           x="49.352886"
+           y="-178.01999">Verifiable</tspan><tspan
+           id="tspan20"
+           x="49.352886"
+           y="-160.51999">Computing</tspan></text>
+    </g>
+    <g
+       id="edge2"
+       class="edge">
+      <title
+         id="title7">AI Lineage-&gt;Data Provenance</title>
+      <path
+         fill="none"
+         stroke="#000000"
+         d="m 102.4742,-165.4953 c 9.8388,0.124 20.7565,0.2617 31.8702,0.4018"
+         id="path7" />
+      <polygon
+         fill="#000000"
+         stroke="#000000"
+         points="134.5372,-161.5909 134.6256,-168.5904 144.5806,-164.9645 "
+         id="polygon7" />
+    </g>
+    <g
+       id="edge3"
+       class="edge">
+      <title
+         id="title9">AI Lineage-&gt;Data Provenance</title>
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 98.453838,-85.039926 C 112.46664,-94.049426 131.9487,-106.6896 147.8951,-116.9424"
+         id="path9" />
+      <polygon
+         fill="#000000"
+         stroke="#000000"
+         points="150.1849,-114.2536 146.3992,-120.1416 156.7035,-122.6058 "
+         id="polygon9" />
+    </g>
+    <g
+       id="node4"
+       class="node">
+      <title
+         id="title10">AI Lineage</title>
+      <ellipse
+         fill="none"
+         stroke="#9900fc"
+         cx="411.78983"
+         cy="-44.277328"
+         id="ellipse10"
+         style="stroke-width:0.999996"
+         rx="56.029602"
+         ry="55.499836" />
+      <text
+         text-anchor="middle"
+         x="412.04276"
+         y="-40.599594"
+         font-family="WorkSans"
+         font-size="14px"
+         fill="#9900fc"
+         id="text10">AI Lineage</text>
+    </g>
+    <g
+       id="node5"
+       class="node">
+      <title
+         id="title11">Verifiable Supply Chain</title>
+      <circle
+         fill="none"
+         stroke="#9900fc"
+         cx="397.4364"
+         cy="-163"
+         id="ellipse11"
+         r="52.192501" />
+      <text
+         text-anchor="middle"
+         x="397.68933"
+         y="-175.25342"
+         font-family="WorkSans"
+         font-size="14px"
+         fill="#9900fc"
+         id="text11"><tspan
+           id="tspan26"
+           x="397.68933"
+           y="-175.25342">Verifiable</tspan><tspan
+           id="tspan27"
+           x="397.68933"
+           y="-157.75342">Supply</tspan><tspan
+           x="397.68933"
+           y="-140.25342"
+           id="tspan28">Chain</tspan></text>
+    </g>
+    <g
+       id="node6"
+       class="node">
+      <title
+         id="title12">Data Integrity</title>
+      <circle
+         fill="none"
+         stroke="#9900fc"
+         cx="397.4364"
+         cy="-297"
+         id="ellipse12"
+         r="64.299797" />
+      <text
+         text-anchor="middle"
+         x="397.4364"
+         y="-292.79999"
+         font-family="WorkSans"
+         font-size="14px"
+         fill="#9900fc"
+         id="text12">Data Integrity</text>
+    </g>
+    <g
+       id="edge4"
+       class="edge">
+      <title
+         id="title13">Data Provenance-&gt;AI Lineage</title>
+      <path
+         fill="none"
+         stroke="#000000"
+         d="m 285.7504,-123.6647 c 23.3959,14.5933 49.174,30.6725 70.0642,43.7029"
+         id="path13" />
+      <polygon
+         fill="#000000"
+         stroke="#000000"
+         points="354.11,-76.9 357.8147,-82.8393 364.4471,-74.5772 "
+         id="polygon13" />
+    </g>
+    <g
+       id="edge5"
+       class="edge">
+      <title
+         id="title14">Data Provenance-&gt;Verifiable Supply Chain</title>
+      <path
+         fill="none"
+         stroke="#000000"
+         d="m 297.4097,-163.5672 c 12.3836,0.0702 25.0848,0.1422 37.1025,0.2104"
+         id="path14" />
+      <polygon
+         fill="#000000"
+         stroke="#000000"
+         points="334.8525,-159.8549 334.8922,-166.8548 344.8722,-163.2981 "
+         id="polygon14" />
+    </g>
+    <g
+       id="edge6"
+       class="edge">
+      <title
+         id="title15">Data Provenance-&gt;Data Integrity</title>
+      <path
+         fill="none"
+         stroke="#000000"
+         d="m 282.2693,-210.1437 c 18.0302,-13.598 37.7268,-28.4527 55.6507,-41.9704"
+         id="path15" />
+      <polygon
+         fill="#000000"
+         stroke="#000000"
+         points="340.1417,-249.4058 335.9267,-254.9946 346.0182,-258.2216 "
+         id="polygon15" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:9px;fill:#000000;stroke-width:0.75"
+       x="149.02249"
+       y="-45.96254"
+       id="text24"><tspan
+         id="tspan24"
+         style="stroke-width:0.75"
+         x="149.02249"
+         y="-45.96254" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:9px;fill:#000000;stroke-width:0.75"
+       x="269.31781"
+       y="-58.948975"
+       id="text25"><tspan
+         id="tspan25"
+         style="stroke-width:0.75"
+         x="269.31781"
+         y="-58.948975" /></text>
+  </g>
+  <g
+     id="node1"
+     class="node"
+     transform="translate(48.658488,404.48111)">
+    <title
+       id="title3">Digital Asset Authentication</title>
+    <circle
+       fill="none"
+       stroke="#9900fc"
+       cx="41.936913"
+       cy="-293.92725"
+       id="ellipse3"
+       r="65.506271"
+       style="stroke-width:1" />
+    <text
+       text-anchor="middle"
+       x="71.242744"
+       y="-34.839458"
+       font-family="WorkSans"
+       font-size="14px"
+       fill="#9900fc"
+       id="text3"><tspan
+         id="tspan21"
+         x="71.242744"
+         y="-34.839458">Decentralized</tspan><tspan
+         x="71.242744"
+         y="-17.339458"
+         id="tspan23">Preservation</tspan><tspan
+         id="tspan22"
+         x="71.242744"
+         y="0.1605422" /></text>
+  </g>
+  <g
+     id="node3"
+     class="node"
+     transform="translate(54.56059,404.79206)">
+    <title
+       id="title8">Decentralized Preservation</title>
+    <circle
+       fill="none"
+       stroke="#9900fc"
+       cx="65.391914"
+       cy="-31.61281"
+       id="ellipse8"
+       r="59.370026"
+       style="stroke-width:1" />
+    <text
+       text-anchor="middle"
+       x="36.550922"
+       y="-306.52579"
+       font-family="WorkSans"
+       font-size="14px"
+       fill="#9900fc"
+       id="text8"><tspan
+         id="tspan15"
+         x="36.550922"
+         y="-306.52579">Digital</tspan><tspan
+         id="tspan16"
+         x="36.550922"
+         y="-289.02579">Asset</tspan><tspan
+         x="36.550922"
+         y="-271.52579"
+         id="tspan17">Authentication</tspan></text>
+  </g>
+  <text
+     xml:space="preserve"
+     transform="matrix(0.74999997,0,0,0.74999997,-0.20498303,0)"
+     id="text17"
+     style="fill:#000000;white-space:pre;shape-inside:url(#rect17)" />
+</svg>
