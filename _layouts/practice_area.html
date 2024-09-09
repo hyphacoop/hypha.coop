@@ -14,6 +14,11 @@
               <h3 class="f2 f1-m f-subheadline-l accent normal sans-serif mb4 lh-solid">{{ page.title }}</h3>
               <div class="f3 measure-wide dark-gray lh-copy mb0">
                 <p class="f3">{{ page.excerpt }}</p>
+                {% if page.diagram %}
+                    <div class='flex items-center justify-center' style="width: 100%;">
+                        <img style='width:80%;' src="{{ page.diagram | relative_url }}" alt="{{ page.diagram_alt_text }}"/>
+                    </div>
+                {% endif %}
                 <p class="f4">
                   <em>{{ page.tagline }}</em>
                 </p>
