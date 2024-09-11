@@ -2,7 +2,7 @@
 image: "/assets/images/social/dripline/2024-09-08-co-creation-lab-vision-essay.webp"
 title: Announcing the Co-Creation Lab 
 author: Hypha
-date: 2024-09-09
+date: 2024-09-12
 acknowledgement: 
 excerpt: "A vision for reclaiming tech for the arts, culture, and activism through holistic co-creation"
 ---
