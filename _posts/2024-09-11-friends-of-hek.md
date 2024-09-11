@@ -1,6 +1,6 @@
 ---
 image: "/assets/images/posts/2024-09-11-friends-of-hek.webp"
-title: Friends of HEK
+title: Museum membership futures
 author: Hypha
 date: 2024-09-11
 acknowledgement: 
