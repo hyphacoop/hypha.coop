@@ -137,26 +137,6 @@ mark {
       background-size: 40%, 20%;    
     }
   }
-  .hek-and-lines {
-    background-image: url(/assets/images/trollius.webp),
-      url(/assets/images/footer1.png);
-    background-repeat: no-repeat, no-repeat;
-    background-position: top right, bottom right;
-    background-size: 30%, 20%;
-    @media screen and (min-width: 1600px) {
-      background-size: 25%, 20%;    
-    }
-  }
-  .furtherfield-and-lines {
-    background-image: url(/assets/images/new_canopy.webp),
-      url(/assets/images/footer1.png);
-    background-repeat: no-repeat, no-repeat;
-    background-position: top right, bottom right;
-    background-size: 30%, 20%;
-    @media screen and (min-width: 1600px) {
-      background-size: 22.5%, 20%;    
-    }
-  }
 }
 
 .block {
