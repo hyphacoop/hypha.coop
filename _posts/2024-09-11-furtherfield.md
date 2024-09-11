@@ -1,6 +1,6 @@
 ---
 image: "/assets/images/posts/2024-09-11-culturestake-logo.webp"
-title: CultureStake
+title: Cultural democracy & quadratic voting
 author: Hypha
 date: 2024-09-11
 acknowledgement: 
