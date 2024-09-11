@@ -30,7 +30,7 @@ making to the public.
 Formed in response to the celebrity and commercialization of [London’s
 YBA scene](https://www.tate.org.uk/art/art-terms/y/young-british-artists-ybas) in the 90’s, for almost three decades Furtherfield has embodied the grassroots DIY culture of the early internet for artists. Even though the pandemic was the catalyst for CultureStake, the team had been ready to make a change. “We had a growing feeling that bringing art from our international network into this public space was us bestowing ‘good culture’ on a locality, and we were becoming increasingly uncomfortable with it,” co-founder [Ruth Catlow](https://ruthcatlow.net/) explains. “We wanted to work more with the different communities that used this space to see how they might shape our programs and our organization, and realized we could ask them directly about what was important to them.”  
 
-≥ “We had a growing feeling that bringing work from our international
+> “We had a growing feeling that bringing work from our international
 network into this public space was us bestowing ‘good culture’ on a
 locality.”
 
