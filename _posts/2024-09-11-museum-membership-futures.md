@@ -1,5 +1,5 @@
 ---
-image: "/assets/images/posts/2024-09-11-friends-of-hek.webp"
+image: "/assets/images/social/dripline/2024-09-11-museum-membership-futures.webp"
 title: Museum membership futures
 author: Hypha
 date: 2024-09-11

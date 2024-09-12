@@ -1,5 +1,5 @@
 ---
-image: "/assets/images/posts/2024-09-11-culturestake-logo.webp"
+image: "/assets/images/social/dripline/2024-09-11-cultural-democracy-and-quadratic-voting.webp"
 title: Cultural democracy & quadratic voting
 author: Hypha
 date: 2024-09-11
