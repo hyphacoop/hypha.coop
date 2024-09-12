@@ -8,20 +8,14 @@
       {% endif %}
     </div>
     <h2 class="f3 sans-serif accent">{{ project.title }}</h2>
+    <div class="f4">
+      {% if project.dripline_post %}
+        <a href='/dripline/{{ project.dripline_post }}' class='accent link underline-hover mb4'>Read the Dripline post</a>
+      {% endif %}
+    </div>
     <div class="mb2 f4 lh-copy" id="{{ project.title }}">
-      <div class="project-content" data-excerpt="{{ project.excerpt | escape }}" data-content="{% if project.content contains '<!-- more -->' %}{{ project.content | escape }}{% endif %}" data-case-study="{% if project.case_study %}{% assign practice_slug = '' %}{% for practice in index_page.what_we_do %}{% if practice.title == project.practice_area %}{% assign practice_slug = practice.slug %}{% endif %}{% endfor %}{% if practice_slug %}<a href='/{{ practice_slug }}/{{ project.case_study }}/' class='accent link underline-hover mb4'>Read the case study</a>{% endif %}{% endif %}" data-dripline-post="{% if project.dripline_post %}<a href='/dripline/{{ project.dripline_post }}' class='accent link underline-hover mb4'>Read the Dripline post</a>{% endif %}" data-toggled="false">
+      <div class="project-content" data-excerpt="{{ project.excerpt | escape }}" data-content="{% if project.content contains '<!-- more -->' %}{{ project.content | escape }}{% endif %}" data-toggled="false">
         {{ project.excerpt }}
-  
-        {% unless project.content contains "<!-- more -->" %}
-          <div class="mt2">
-            {% if project.case_study %}
-              <a href='/{{ practice_slug }}/{{ project.case_study }}/' class='accent link underline-hover mb4'>Read the case study</a>
-            {% endif %}
-            {% if project.dripline_post %}
-              <a href='/dripline/{{ project.dripline_post }}' class='accent link underline-hover mb4'>Read the Dripline post</a>
-            {% endif %}
-          </div>
-        {% endunless %}
       </div>
       {% if project.content contains "<!-- more -->" %}
         <div class="mt2">
@@ -39,12 +33,10 @@
       const contentDiv = containerEl.previousElementSibling;
       const excerpt = contentDiv.dataset.excerpt;
       const content = contentDiv.dataset.content;
-      const caseStudyLink = contentDiv.dataset.caseStudy;
-      const driplineLink = contentDiv.dataset.driplinePost;
   
       let toggled = contentDiv.dataset.toggled === "true";
       if (!toggled) {
-        contentDiv.innerHTML = content + caseStudyLink + driplineLink;
+        contentDiv.innerHTML = content;
         toggleEl.innerHTML = "[read less]";
         contentDiv.dataset.toggled = "true";
         toggleEl.setAttribute("aria-expanded", "true");
