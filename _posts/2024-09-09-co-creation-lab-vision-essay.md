@@ -9,7 +9,7 @@ excerpt: "A vision for reclaiming tech for the arts, culture, and activism throu
 
 <figure class="pb4">
     <div class='flex items-center justify-center' style="width: 100%;">
-        <img style='width:80%;' src="{{ '/assets/images/posts/2024-07-10-c-lab-graph.svg' | relative_url }}" alt="A diagram illustrating the Co-Creation Lab's key focus areas and its connections to various elements. The central purple circle labeled 'Co-Creation Lab' has arrows pointing to three circles on the left: 'Art,' 'Culture,' and 'Activism,' and to three circles on the right: 'Sustainability,' 'Autonomy,' and 'Access.'"/>
+        <img style='width:80%;' src="{{ '/assets/images/posts/2024-07-10-c-lab-graph-inverted.svg' | relative_url }}" alt="A diagram illustrating the Co-Creation Lab's key focus areas and its connections to various elements. The central purple circle labeled 'Co-Creation Lab' has arrows pointing to three circles on the left: 'Art,' 'Culture,' and 'Activism,' and to three circles on the right: 'Sustainability,' 'Autonomy,' and 'Access.'"/>
     </div>
     <figcaption>Diagram of the Co-Creation Lab's focus areas and their interconnections</figcaption>
 </figure>
