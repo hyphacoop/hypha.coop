@@ -88,6 +88,13 @@ higher than ones made from outside it. That year, Furtherfield tripled
 its local engagement and heard feedback like, “I’ve been talking about
 this with my friends for months.”  
 
+<figure class="pb4">
+  <div class="aspect-ratio aspect-ratio--16x9">
+    <iframe src="https://player.vimeo.com/video/629028364" class="aspect-ratio--object" frameborder="0" allow="fullscreen; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <figcaption>The People's Park Plinth (2021) by Furtherfield</figcaption>
+</figure>
+
 When asked about her overall experience working with Hypha, Ruth
 responded, “I trusted them. I always felt like we were working with good
 people. Without Hypha, we would’ve been at the end of the road and had
