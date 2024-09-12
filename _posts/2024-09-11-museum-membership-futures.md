@@ -99,6 +99,16 @@ digital asset called an NFT, which are usually purchased using
 cryptocurrency. It was important to HEK, however, that members could
 still pay with “a good old credit card” in addition to Ethereum.  
   
+<figure class="pb4">
+    <div class='flex items-center justify-center' style="width: 100%;">
+        <img class="w-100" src="{{ 'assets/images/posts/2024-09-11-friends-of-hek-animation.gif' | relative_url }}" alt="Friends of HEK landing page. The main heading reads 'FRIENDS OF HEK' in bold, black letters, with the subheading below it: 'Tokenized membership and an extended circle of friends.' At the bottom, a green rectangle contains scrolling text that reads: 'community governance • exclusive discord access • artist talks • curate online.'"/>
+    </div>
+    <figcaption>
+        Animated capture from Friends of HEK's landing page
+    </figcaption>
+</figure>
+
+  
 There are many providers that enable the sale of NFTs via traditional payment methods, but none of them worked
 well with the payment systems HEK was already using. To find the most reliable way forward, Hypha presented
 different options while informing HEK about the tradeoffs they entailed so the HEK team could make the best choice.  
