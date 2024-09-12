@@ -35,57 +35,33 @@ order: 3
     {% assign matching_practice_area = works_by_practice_area | where: 'name', practice_area %}
     {% if matching_practice_area.size > 0 %}
       <div class="flex flex-column mb3">
+        {% if practice.slug %}
+          <a href="/{{ practice.slug }}/" class="underline-hover">
+        {% endif %}
         <h2 class="f2 sans-serif accent mb3 mt4">
           {{ practice.title }}
         </h2>
-          {% if practice.slug %}
-          <p class="measure-wide mt2 mb2">
+        {% if practice.slug %}
+          </a>
+        {% endif %}
+
+        {% if practice.slug %}
+          {% capture practice_page_path %}{{ practice.slug }}.html{% endcapture %}
+          {% assign practice_page = site.pages | where: "path", practice_page_path | first %}        
+          {% if practice_page %}
+            <p class="measure-wide mt2 mb2 f3">
+              {{ practice_page.excerpt }}
+            </p>
+          {% endif %}
+          <p class="measure-wide mt2 mb2 f3">
             <a href="/{{ practice.slug }}/" class="accent link underline-hover">Read more</a>
           </p>
           {% endif %}
       </div>
       <div class="flex flex-wrap">
         {% assign works = matching_practice_area.first.items %}
-        {% for work in works %}
-       
-          <div class="w-33-l w-50-m w-100-s flex-column justify-left items-left mb4 tl pr5-l pl3-m pr3-m">
-            <div class="relative mb4">
-              <img class="relative" src="/assets/images/logos/logo-background.jpg" alt="logo">
-              {% if work.logo %}
-                <img class="absolute top-0 left-0" src="{{ work.logo }}" alt="logo">
-              {% else %}
-                <p class="absolute top-0 left-0 tc mt5 w-100 white f1 v-mid"><b>{{ work.title }}</b></p>
-              {% endif %}
-            </div>
-            <h2 class="f3 sans-serif accent">{{ work.title }}</h2>
-            <div
-              class="mb2 f4 lh-copy"
-              id="{{ work.title }}"
-            >
-              <div 
-                class="project-content"
-                data-excerpt="{{ work.excerpt | escape }}"
-                data-content="{{ work.content | escape }}"
-                data-case-study="{% if work.case_study %}{% assign practice_slug = '' %}{% for practice in index_page.what_we_do %}{% if practice.title == work.practice_area %}{% assign practice_slug = practice.slug %}{% endif %}{% endfor %}{% if practice_slug %}<a href='/{{ practice_slug }}/{{ work.case_study }}/' class='accent link underline-hover mb4'>Read the case study</a>{% endif %}{% endif %}"
-                data-toggled="false"
-              >
-                {{ work.excerpt | markdownify }}
-              </div>
-              {% if work.content contains "<!-- more -->" %}
-                <div class="mt2">
-                  <span class="mv0 link accent pointer underline-hover w-fit"
-                    tabindex="0"
-                    role="button"
-                    aria-expanded="false"
-                    onclick="expandContent(this)"
-                    onkeydown="handleKeydown(event, this)"
-                  >
-                    [read more]
-                  </span>
-                </div>
-              {% endif %}
-            </div>
-          </div>
+        {% for project in works %}
+          {%- include sections/project.html project=project -%}
         {% endfor %}
       </div>
     {% endif %}

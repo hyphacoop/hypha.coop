@@ -1,0 +1,58 @@
+<div class="w-33-l w-50-m w-100-s flex-column justify-left items-left mb4 tl pr5-l pl3-m pr3-m">
+    <div class="relative mb4">
+      <img class="relative" src="/assets/images/logos/logo-background.jpg" alt="logo">
+      {% if project.logo %}
+        <img class="absolute top-0 left-0" src="{{ project.logo }}" alt="logo">
+      {% else %}
+        <p class="absolute top-0 left-0 tc mt5 w-100 white f1 v-mid"><b>{{ project.title }}</b></p>
+      {% endif %}
+    </div>
+    <h2 class="f3 sans-serif accent">{{ project.title }}</h2>
+    <div class="f4">
+      {% if project.dripline_post %}
+        <a href='/dripline/{{ project.dripline_post }}' class='accent link underline-hover mb4'>Read the Dripline post</a>
+      {% endif %}
+    </div>
+    <div class="mb2 f4 lh-copy" id="{{ project.title }}">
+      <div class="project-content" data-excerpt="{{ project.excerpt | escape }}" data-content="{% if project.content contains '<!-- more -->' %}{{ project.content | escape }}{% endif %}" data-toggled="false">
+        {{ project.excerpt }}
+      </div>
+      {% if project.content contains "<!-- more -->" %}
+        <div class="mt2">
+          <span class="mv0 link accent pointer underline-hover w-fit" tabindex="0" role="button" aria-expanded="false" onclick="expandContent(this)" onkeydown="handleKeydown(event, this)">
+            [read more]
+          </span>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+  
+  <script>
+    function expandContent(toggleEl) {
+      const containerEl = toggleEl.parentElement;
+      const contentDiv = containerEl.previousElementSibling;
+      const excerpt = contentDiv.dataset.excerpt;
+      const content = contentDiv.dataset.content;
+  
+      let toggled = contentDiv.dataset.toggled === "true";
+      if (!toggled) {
+        contentDiv.innerHTML = content;
+        toggleEl.innerHTML = "[read less]";
+        contentDiv.dataset.toggled = "true";
+        toggleEl.setAttribute("aria-expanded", "true");
+      } else {
+        contentDiv.innerHTML = excerpt;
+        toggleEl.innerHTML = "[read more]";
+        contentDiv.dataset.toggled = "false";
+        toggleEl.setAttribute("aria-expanded", "false");
+      }
+    }
+  
+    function handleKeydown(event, el) {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        expandContent(el);
+      }
+    }
+  </script>
+  
