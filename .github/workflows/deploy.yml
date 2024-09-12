@@ -92,8 +92,8 @@ jobs:
 
 #      - name: Notify AP
 #        run: bundle exec jekyll notify --key /tmp/secret.key --verbose --trace
-#
-#     - name: Commit ActivityPub Data
+
+#      - name: Commit ActivityPub Data
 #        uses: EndBug/add-and-commit@v9 
 #        with:
 #          add: '_data/activity_pub.yml'
