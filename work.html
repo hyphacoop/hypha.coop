@@ -35,9 +35,16 @@ order: 3
     {% assign matching_practice_area = works_by_practice_area | where: 'name', practice_area %}
     {% if matching_practice_area.size > 0 %}
       <div class="flex flex-column mb3">
+        {% if practice.slug %}
+          <a href="/{{ practice.slug }}/" class="underline-hover">
+        {% endif %}
         <h2 class="f2 sans-serif accent mb3 mt4">
           {{ practice.title }}
         </h2>
+        {% if practice.slug %}
+          </a>
+        {% endif %}
+
         {% if practice.slug %}
           {% capture practice_page_path %}{{ practice.slug }}.html{% endcapture %}
           {% assign practice_page = site.pages | where: "path", practice_page_path | first %}        
