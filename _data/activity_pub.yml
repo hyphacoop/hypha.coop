@@ -134,6 +134,14 @@ notifications:
     action: done
     id: https://hypha.coop/dripline/co-creation-lab-vision-essay.jsonld
     created_at: 1725823254
+  dripline/cultural-democracy-and-quadratic-voting.jsonld:
+    action: done
+    id: https://hypha.coop/dripline/cultural-democracy-and-quadratic-voting.jsonld
+    created_at: 1726242459
+  dripline/museum-membership-futures.jsonld:
+    action: done
+    id: https://hypha.coop/dripline/museum-membership-futures.jsonld
+    created_at: 1726242462
 actor_url: https://hypha.coop/about.jsonld
 actor: "@dripline@hypha.coop"
 public_key_url: https://hypha.coop/about.jsonld#main-key
