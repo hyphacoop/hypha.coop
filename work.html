@@ -75,11 +75,10 @@ order: 3
     const contentDiv = containerEl.previousElementSibling;
     const excerpt = contentDiv.dataset.excerpt;
     const content = contentDiv.dataset.content;
-    const caseStudyLink = contentDiv.dataset.caseStudy;
 
     let toggled = contentDiv.dataset.toggled === "true";
     if (!toggled) {
-      contentDiv.innerHTML = content + caseStudyLink;
+      contentDiv.innerHTML = content;
       toggleEl.innerHTML = "[read less]";
       contentDiv.dataset.toggled = "true";
       toggleEl.setAttribute("aria-expanded", "true");
