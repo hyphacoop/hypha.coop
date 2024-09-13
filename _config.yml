@@ -60,6 +60,13 @@ defaults:
       layout: cosmos/post
       activity: false
 
+plugins: [
+  jekyll-activity-pub,
+  jekyll-activity-pub-absolute-assets,
+  jekyll-activity-pub-link-iframes,
+  jekyll-activity-pub-assets-as-attachments,
+  jekyll-activity-pub-fep-fffd-distributed-press,
+]
 
   # TODO: Fix issue with conflict between dweb's requirement for relative urls and RSS's for absolute.
   # See: https://github.com/hyphacoop/hypha.coop/issues/24
