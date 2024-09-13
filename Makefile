@@ -13,9 +13,9 @@ check: ## Check with htmlproofer
 
 build: ## Build for web
 	@if [ "$(JEKYLL_ENV)" = "staging" ]; then \
-		$(RUN) jekyll build --config _config.yml,_config_staging.yml; \
+		$(RUN) jekyll build --config _config.yml,_config_staging.yml --key /tmp/secret.key; \
 	else \
-		$(RUN) jekyll build --config _config.yml; \
+		$(RUN) jekyll build --config _config.yml --key /tmp/secret.key; \
 	fi
 
 build-web: build
