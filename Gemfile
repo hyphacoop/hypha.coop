@@ -11,7 +11,7 @@ source "https://rubygems.org"
 gem "jekyll", "~> 4.3.3"
 gem "html-proofer"
 gem 'nokogiri'
-
+gem 'ruby-brs'
 gem "webrick", "~> 1.8"
 
 group :jekyll_plugins do
