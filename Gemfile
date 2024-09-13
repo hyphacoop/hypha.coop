@@ -11,12 +11,12 @@ source "https://rubygems.org"
 gem "jekyll", "~> 4.3.3"
 gem "html-proofer"
 gem 'nokogiri'
-
+gem 'ruby-brs'
 gem "webrick", "~> 1.8"
 
 group :jekyll_plugins do
   gem "jekyll-feed", 
       git: "https://github.com/hyphacoop/jekyll-feed", 
       ref: "8837225f79a4464cc3b936a1365130aa6db65180"
-# gem 'jekyll-activity-pub', require: 'jekyll/activity_pub/commands'
+  gem 'jekyll-activity-pub', require: 'jekyll/activity_pub/commands'
 end
