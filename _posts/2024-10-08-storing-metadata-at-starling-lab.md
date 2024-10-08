@@ -10,10 +10,10 @@ excerpt: "Rewriting our data pipeline to use Authenticated Attributes"
 <figure class="pb4">
     <div class='flex items-center justify-center' style="width: 100%;">
 
-        <img class="w-100" src="{{ 'assets/images/posts/2024-10-08-jan-antonin-kolar-lRoX0shwjUQ-unsplash.jpg' | relative_url }}" alt="A vintage wooden filing cabinet with multiple small drawers, each with a metal handle and a small label holder. The drawers are organized in rows, and most of the labels have text written on them, though the text is not fully legible. The cabinet has a rustic appearance, showing signs of age and use."/>
+        <img class="w-100" src="{{ 'assets/images/posts/2024-10-08_abandoned_filing_cabinet_by_helene_cyr.webp' | relative_url }}" alt="A rusty, abandoned filing cabinet with multiple drawers ajar, spilling out disorganized papers. The cabinet shows signs of significant wear and corrosion, with documents scattered on top and around it, showing signs of age and use."/>
     </div>
       <figcaption>
-            Photo by <a href="https://unsplash.com/@jankolar">Jan Antonin Kolar</a> on <a href="https://unsplash.com/photos/brown-wooden-drawer-lRoX0shwjUQ">Unsplash</a>
+            Photo by <a href="https://www.stocksy.com/helenecyr">Helene Cyr</a> obtained via <a href="https://www.stocksy.com/photo/4271317/abandoned-filing-cabinet">Stocksy</a>
     
         </figcaption>
 </figure>
