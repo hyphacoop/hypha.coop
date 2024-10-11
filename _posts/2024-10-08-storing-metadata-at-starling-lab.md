@@ -2,8 +2,8 @@
 image: "/assets/images/social/dripline/2024-10-08-storing-metadata-at-starling-lab.webp"
 title: "Hypha at the Starling Lab: storing metadata"
 author: Cole
-date: 2024-10-08
-acknowledgement: "Cole is a probationary member at Hypha Worker Coop, and a software developer on the Data Provenance practice area."
+date: 2024-10-10
+acknowledgement: "Cole is a probationary member at Hypha, and a software developer in the Data Provenance practice area."
 excerpt: "Rewriting our data pipeline to use Authenticated Attributes"
 ---
 
@@ -13,14 +13,14 @@ excerpt: "Rewriting our data pipeline to use Authenticated Attributes"
         <img class="w-100" src="{{ 'assets/images/posts/2024-10-08_abandoned_filing_cabinet_by_helene_cyr.webp' | relative_url }}" alt="A rusty, abandoned filing cabinet with multiple drawers ajar, spilling out disorganized papers. The cabinet shows signs of significant wear and corrosion, with documents scattered on top and around it, showing signs of age and use."/>
     </div>
       <figcaption>
-            Photo by <a href="https://www.stocksy.com/helenecyr">Helene Cyr</a> obtained via <a href="https://www.stocksy.com/photo/4271317/abandoned-filing-cabinet">Stocksy</a>
+            Photo by <a href="https://www.stocksy.com/helenecyr">Helene Cyr</a> via <a href="https://www.stocksy.com/photo/4271317/abandoned-filing-cabinet">Stocksy</a>
     
         </figcaption>
 </figure>
 
 ### {{ page.excerpt }}
 
-Hypha continues to work with [The Starling Lab](https://hypha.coop/dripline/hypha-at-starling-lab/), our partner since November 2022, to improve digital authenticity and data integrity in journalism, law, and history. One of the major tasks of the engineering team over the past summer has been to re-architect and build our data processing pipeline, to centre on our new metadata database: Authenticated Attributes.  
+Hypha has worked with [The Starling Lab](https://hypha.coop/dripline/hypha-at-starling-lab/) since November 2022 to improve digital authenticity and data integrity in journalism, law, and history. One of the major tasks of the engineering team over the past summer has been to re-architect and build our data processing pipeline, to centre on our new metadata database: Authenticated Attributes.  
 
 The previous data pipeline, termed *Starling Integrity*, had limited capabilities for retrieving authenticated information for public sharing, and did not support updating of archive metadata as new information emerged. For example, when an asset was registered on a blockchain or a related asset was archived, we wanted to make this new information linked to the original asset and discoverable. We found this difficult with Starling Integrity as it was an archiving pipeline that operated only on individual media assets, rather than collections or relationships. The system modeled archives as ZIP files containing well-defined JSON metadata, which while portable, quickly became too opaque and restrictive as we encountered new use cases since its initial development in early 2023.
 
