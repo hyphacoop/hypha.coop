@@ -91,5 +91,6 @@ activity_pub:
   - "assets/images/hypha-social.png"
   images:
   - "assets/images/social-banner.png"
+  updated: 2024-10-24 12:30:00
 
 include: [.well-known]
