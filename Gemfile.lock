@@ -11,6 +11,7 @@ GEM
   specs:
     addressable (2.8.7)
       public_suffix (>= 2.0.2, < 7.0)
+    adsp (1.0.10)
     bigdecimal (3.1.8)
     climate_control (1.2.0)
     colorator (1.1.0)
@@ -61,10 +62,10 @@ GEM
     ffi (1.17.0-x86_64-darwin)
     ffi (1.17.0-x86_64-linux-gnu)
     forwardable-extended (2.6.0)
-    google-protobuf (4.27.3-x86_64-darwin)
+    google-protobuf (4.27.5-x86_64-darwin)
       bigdecimal
       rake (>= 13)
-    google-protobuf (4.27.3-x86_64-linux)
+    google-protobuf (4.27.5-x86_64-linux)
       bigdecimal
       rake (>= 13)
     html-proofer (3.19.4)
@@ -140,6 +141,8 @@ GEM
     rexml (3.3.6)
       strscan
     rouge (4.3.0)
+    ruby-brs (1.3.3)
+      adsp (~> 1.0)
     safe_yaml (1.0.5)
     sass-embedded (1.77.8-x86_64-darwin)
       google-protobuf (~> 4.26)
@@ -165,6 +168,7 @@ DEPENDENCIES
   jekyll-activity-pub
   jekyll-feed!
   nokogiri
+  ruby-brs
   webrick (~> 1.8)
 
 BUNDLED WITH
