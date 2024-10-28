@@ -10,6 +10,7 @@ twitter: https://twitter.com/hyphacoop/
 handbook: https://link.hypha.coop/handbook
 rss: "/feed.xml"
 url: "https://hypha.coop"
+lang: "en"
 footer: Hypha Worker Co-operative Inc.<br>Ontario Corporation No. 5019866
 
 description: >-
@@ -91,5 +92,7 @@ activity_pub:
   - "assets/images/hypha-social.png"
   images:
   - "assets/images/social-banner.png"
+  published: 2024-01-01 11:11:11
+  updated: 2024-10-24 12:30:00
 
 include: [.well-known]
