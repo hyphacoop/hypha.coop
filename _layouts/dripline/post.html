@@ -21,6 +21,13 @@ layout: default
   <article id="dripline" class="mw8 center">
     {{ content }}
   </article>
+  {% if page.activity.inReplyTo %}
+    {% include activity_pub/replying_to.html activity=page.activity.inReplyTo %}
+  {% endif %}
+
+  {% if page.activity %}
+    {% include activity_pub/interactions.html activity=page.activity profile=site.actor %}
+  {% endif %}
   <footer class="mt5 bt bw2 b--light-gray">
     <p><a class="link accent underline-hover" href="{% link dripline.html %}">← <span class="gray">Return to Dripline</span></a></p>
   </footer>
