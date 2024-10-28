@@ -1,0 +1,22 @@
+{%- comment -%}
+  Un botón con link, por ejemplo para Support Us.  Si el link es externo,
+  agregar el parámetro de seguridad noopener.
+
+  @param :fa [String]
+  @param :header [Capture] el contenido del encabezado
+  @param :body [Capture] el contenido del cuerpo principal
+  @param :footer [Capture] el contenido del footer
+  @param :header_class [String] las clases que lleva el encabezado
+  @param :body_class [String] las clases que lleva el cuerpo principal
+  @param :footer_class [String] las clases que lleva el footer
+  @param :content_class [String] las clases que lleva todo el bloque de contenido
+  @param :button_class [String] las clases que lleva cada botón
+{%- endcomment -%}
+
+<div class="d-inline {{include.button_class}}" data-controller="modal">
+  <button class="btn btn-sm" data-action="click->modal#show">
+    {%- include fa.html icon=include.fa class="lead" description=include.description -%}
+  </button>
+
+  {% include activity_pub/generic_modal.html header=include.header body=include.body footer=include.footer header_class=include.header_class body_class=include.body_class footer_class=include.footer_class content_class=include.content_class %}
+</div>

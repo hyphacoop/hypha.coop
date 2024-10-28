@@ -1,0 +1,8 @@
+{%- comment -%}
+  Finds the URL
+
+  @param activity [ActivityDrop]
+{%- endcomment -%}
+
+{%- assign uri = include.activity.url | find: 'rel', 'canonical' -%}
+{{- uri.href | default: include.activity.url | default: include.activity.id | strip_html -}}

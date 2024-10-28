@@ -1,0 +1,27 @@
+{%- comment -%}
+  Modal con imagen
+
+  @param :image [Image] la imagen que queremos en el modal, contiene url y alt text
+{%- endcomment -%}
+
+{% assign extra = 'data-action="click->modal#show"' %}
+{% assign alt = include.image.name | strip_html | escape %}
+{% assign src = include.image.url | strip_html | uri_escape %}
+
+{% capture body %}
+    <img class="background-white mw-100" title="{{ alt }}" alt="{{ alt }}" src="{{ src }}">
+{% endcapture %}
+
+<div class="{{ include.extra }} px-1" data-controller="modal">
+  {%
+    include embed_responsive.html
+    x=16
+    y=9
+    src=src
+    alt=alt
+    extra=extra
+    width=300
+    img_class="cursor-pointer min-w-100px w-100 object-fit-cover"
+  %}
+  {% include activity_pub/generic_modal.html header_class="text-white" body=body body_class="d-flex justify-content-center" footer_class="d-none" content_class="background-transparent border-0" %}
+</div>

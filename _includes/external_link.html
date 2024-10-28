@@ -1,0 +1,16 @@
+{%- comment -%}
+
+Link externo.
+
+@param :href [String] La URL
+@param :class [String] Las clases del link
+@param :text [String] El texto que llevará el link
+{%- endcomment -%}
+
+<a
+	class="text-decoration-none {{ include.class }}"
+	href="{{ include.href | uri_escape }}"
+	{{ include.href | start_with: "https://" | value_if: 'rel="noopener" target="_blank"' }}
+	{{ include.href | start_with: "http://" | value_if: 'rel="noopener" target="_blank"' }}>
+	{{ include.text }}
+</a>

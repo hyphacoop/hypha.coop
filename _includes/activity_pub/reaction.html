@@ -1,0 +1,45 @@
+{%- comment -%}
+  Reacción
+
+  @param :activity [String] Reacción de le usuarie
+  @param :fa [String] nombre del ícono que usa fork-awesome
+  @param :actor [String] Usuarie
+{%- endcomment -%}
+
+{% assign published = include.activity.published | strip_html %}
+
+<div class="d-flex">
+  <div class="d-flex flex-column gray px-2 text-right">
+    {% include date.html date=published format=site.i18n.date.format %}
+    {% include date.html date=published format=site.i18n.time.format %}
+  </div>
+
+  <div class="flex-column px-2 flex-grow-1">
+    {% if include.previous.actor == include.activity.actor %}
+      <div class="d-flex">
+        <p class="transparent hover-transparent">
+          {% include activity_pub/actor.html actor=include.activity.actor %}
+        </p>
+      </div>
+      <div class="d-flex">
+        <p class="transparent hover-transparent">
+          {% include activity_pub/actor_mention.html actor=include.activity.actor without_link=true %}
+        </p>
+      </div>
+    {% else %}
+      <div class="d-flex">
+        <p class="">{% include activity_pub/actor.html actor=include.activity.actor %}</p>
+      </div>
+      <div class="d-flex">
+        {% include activity_pub/actor_mention.html actor=include.activity.actor %}
+      </div>
+    {% endif %}
+  </div>
+
+  <div class="flex-column align-self-center px-2 lead">
+    {% assign icon = include.activity.type | equals: 'Announce' | ternary: 'retweet', 'star-o' %}
+    {% assign description = site.i18n.activities[include.activity.type] %}
+
+    {%- include fa.html icon=icon class="lead" description=description -%}
+  </div>
+</div>

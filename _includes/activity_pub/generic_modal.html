@@ -1,0 +1,55 @@
+{%- comment -%}
+  Modal preparado para recibir contenido + header y footer
+
+  @param :header [Capture] contenido del header
+  @param :body [Capture] contenido del modal
+  @param :footer [Capture] contenido del footer
+  @param :header_class [String] clases del header
+  @param :body_class [String] clases del cuerpo principal
+  @param :footer_class [String] clases del header
+  @param :content_class [String] clases todo el bloque
+{%- endcomment -%}
+
+{% assign header = include.header %}
+{% assign header_class = include.header_class %}
+{% assign body = include.body %}
+{% assign body_class = include.body_class %}
+{% assign footer = include.footer %}
+{% assign footer_class = include.footer_class %}
+{% assign content_class = include.content_class %}
+
+<div
+  class="modal fade mw-100vw"
+  tabindex="-1"
+  aria-hidden="true"
+  data-modal-target="modal"
+  data-action="keydown->modal#hideWithEscape"
+>
+  <div class="modal-backdrop fade zindex-backdrop" data-modal-target="backdrop" data-action="click->modal#hide"></div>
+  <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg zindex-modal" role="document">
+    <div class="modal-content {{content_class}}">
+      {% if header %}
+        <div class="modal-header {{header_class}}">
+          {{ header }}
+        </div>
+      {% else %}
+        <div class="modal-header justify-content-end border-bottom-0 p-0 {{header_class}}">
+          <span class="px-3 py-2 m-0 h1 font-weight-bold" type="button" data-action="click->modal#hide">&times</span>
+          <span class="sr-only">{{ site.i18n.close }}</span>
+        </div>
+      {% endif %}
+
+      <div class="modal-body {{body_class}}">
+        {{ body }}
+      </div>
+
+      <div class="modal-footer flex-nowrap {{footer_class}}">
+        {% if footer %}
+          {{ footer }}
+        {% else %}
+          <button class="btn btn-secondary m-0" type="button" data-action="modal#hide">{{ site.i18n.close }}</button>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
