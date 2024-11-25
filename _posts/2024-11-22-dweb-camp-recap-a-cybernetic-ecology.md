@@ -22,7 +22,7 @@ excerpt: "Reflecting on DWeb Camp 2024"
         <img class="w-100" src="{{ 'assets/images/posts/2024-11-22-welcome.webp' | relative_url }}" alt="A set of 4 screens in an outdoor setting welcomes attendees to DWeb Camp 2024. The screen displays the text 'Welcome to DWeb Camp' in bold, black letters against a yellow background. Below the text is a circular compass graphic with the camp dates '7-11 AUG 2024' and the coordinates '39°10'12&quot;N, 123°33'53&quot;W.' The screen is surrounded by tall redwood trees."/>
     </div>
       <figcaption>
-            Welcome message in the Knowledge Amphitheater moments before the opening ceremony
+            Welcome message displayed in the Knowledge Amphitheater moments before the opening ceremony
         </figcaption>
 </figure>
 
