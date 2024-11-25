@@ -55,7 +55,7 @@ A key session was the 0xSalon discussion titled "[The Price of Anarchy](https://
         <img class="mt2 pt2 w-100" src="{{ 'assets/images/posts/2024-11-22-performance.webp' | relative_url }}" alt="A large outdoor screen displays a black-and-white image of Marina Abramović and Ulay performing 'Point of Contact.' The image shows the two artists in formal attire facing each other, reaching out with their hands nearly touching. The screen is divided into four panels, set against a backdrop of tall trees and greenery."/>
     </div>
       <figcaption>
-            A slide from Botao Amber Hu’s presentation on Speculative Spatial Computing at Dweb Camp
+            A slide from Botao Amber Hu’s presentation on Speculative Spatial Computing at DWeb Camp
         </figcaption>
 </figure>
 
