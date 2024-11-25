@@ -37,7 +37,7 @@ The theme of this year’s camp was Migration—Moving Together. Migration is al
 <figure class="pb4">
     <div class='flex items-center justify-center' style="width: 100%;">
 
-        <img class="w-100" src="{{ 'assets/images/posts/2024-11-22-camp_navarro.webp' | relative_url }}" alt="An outdoor gathering at DWeb Camp 2024 in a forested setting, surrounded by tall redwood trees. Attendees are seated at multiple tables. A large white canopy tent with open sides is set up on the left. To the right, a giant chess set is visible on a platform. Several people are walking around the open space and string lights hang between the trees."/>
+        <img class="mt2 pt2 w-100" src="{{ 'assets/images/posts/2024-11-22-camp_navarro.webp' | relative_url }}" alt="An outdoor gathering at DWeb Camp 2024 in a forested setting, surrounded by tall redwood trees. Attendees are seated at multiple tables. A large white canopy tent with open sides is set up on the left. To the right, a giant chess set is visible on a platform. Several people are walking around the open space and string lights hang between the trees."/>
     </div>
       <figcaption>
             View of the central location at Camp Navarro, known as the Blockchain Meadow
@@ -52,7 +52,7 @@ A key session was the 0xSalon discussion titled "[The Price of Anarchy](https://
 <figure class="pb4">
     <div class='flex items-center justify-center' style="width: 100%;">
 
-        <img class="w-100" src="{{ 'assets/images/posts/2024-11-22-performance.webp' | relative_url }}" alt="A large outdoor screen displays a black-and-white image of Marina Abramović and Ulay performing 'Point of Contact.' The image shows the two artists in formal attire facing each other, reaching out with their hands nearly touching. The screen is divided into four panels, set against a backdrop of tall trees and greenery."/>
+        <img class="mt2 pt2 w-100" src="{{ 'assets/images/posts/2024-11-22-performance.webp' | relative_url }}" alt="A large outdoor screen displays a black-and-white image of Marina Abramović and Ulay performing 'Point of Contact.' The image shows the two artists in formal attire facing each other, reaching out with their hands nearly touching. The screen is divided into four panels, set against a backdrop of tall trees and greenery."/>
     </div>
       <figcaption>
             A slide from Botao Amber Hu’s presentation on Speculative Spatial Computing at Dweb Camp
@@ -75,7 +75,7 @@ These explorations were enriched by our experiences in nature, using ecological 
 <figure class="pb4">
     <div class='flex items-center justify-center' style="width: 100%;">
 
-        <img class="w-100" src="{{ 'assets/images/posts/2024-11-22-redwoods.webp' | relative_url }}" alt="A split image showcasing towering redwood trees against a clear sky. On the left, the trees are bathed in bright sunlight with a vivid blue sky in the background. On the right, the trees are framed from a slightly different angle, with golden sunlight highlighting the tops of the canopy and patches of leaves against the sky."/>
+        <img class="mt2 pt2 w-100" src="{{ 'assets/images/posts/2024-11-22-redwoods.webp' | relative_url }}" alt="A split image showcasing towering redwood trees against a clear sky. On the left, the trees are bathed in bright sunlight with a vivid blue sky in the background. On the right, the trees are framed from a slightly different angle, with golden sunlight highlighting the tops of the canopy and patches of leaves against the sky."/>
     </div>
       <figcaption>
             2 Photos from the redwoods at Camp Navarro
