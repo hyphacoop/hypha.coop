@@ -146,6 +146,10 @@ notifications:
     action: done
     id: https://staging.hypha.coop/dripline/storing-metadata-at-starling-lab.jsonld
     created_at: 1728400393
-actor_url: https://hypha.coop/about.jsonld
-actor: "@dripline@hypha.coop"
-public_key_url: https://hypha.coop/about.jsonld#main-key
+  dripline/dweb-camp-recap-a-cybernetic-ecology.jsonld:
+    action: done
+    id: https://staging.hypha.coop/dripline/dweb-camp-recap-a-cybernetic-ecology.jsonld
+    created_at: 1732545569
+actor_url: https://staging.hypha.coop/about.jsonld
+actor: "@dripline@staging.hypha.coop"
+public_key_url: https://staging.hypha.coop/about.jsonld#main-key
