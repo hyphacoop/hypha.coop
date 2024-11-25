@@ -37,7 +37,7 @@ The theme of this year’s camp was Migration—Moving Together. Migration is al
 <figure class="pb4">
     <div class='flex items-center justify-center' style="width: 100%;">
 
-        <img class="w-100" src="{{ 'assets/images/posts/2024-11-22-camp-navarro.webp' | relative_url }}" alt="An outdoor gathering at DWeb Camp 2024 in a forested setting, surrounded by tall redwood trees. Attendees are seated at multiple tables. A large white canopy tent with open sides is set up on the left. To the right, a giant chess set is visible on a platform. Several people are walking around the open space and string lights hang between the trees."/>
+        <img class="w-100" src="{{ 'assets/images/posts/2024-11-22-camp_navarro.webp' | relative_url }}" alt="An outdoor gathering at DWeb Camp 2024 in a forested setting, surrounded by tall redwood trees. Attendees are seated at multiple tables. A large white canopy tent with open sides is set up on the left. To the right, a giant chess set is visible on a platform. Several people are walking around the open space and string lights hang between the trees."/>
     </div>
       <figcaption>
             View of the central location at Camp Navarro, known as the Blockchain Meadow
