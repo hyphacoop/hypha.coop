@@ -78,7 +78,7 @@ These explorations were enriched by our experiences in nature, using ecological 
         <img class="mt2 pt2 w-100" src="{{ 'assets/images/posts/2024-11-22-redwoods.webp' | relative_url }}" alt="A split image showcasing towering redwood trees against a clear sky. On the left, the trees are bathed in bright sunlight with a vivid blue sky in the background. On the right, the trees are framed from a slightly different angle, with golden sunlight highlighting the tops of the canopy and patches of leaves against the sky."/>
     </div>
       <figcaption>
-            2 Photos from the redwoods at Camp Navarro
+            Photos from the redwoods at Camp Navarro
         </figcaption>
 </figure>
 
