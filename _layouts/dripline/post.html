@@ -21,6 +21,15 @@ layout: default
   <article id="dripline" class="mw8 center">
     {{ content }}
   </article>
+  <div id="bluesky-comments"></div>
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/bluesky-comments@latest/dist/bluesky-comments.umd.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        initBlueskyComments('bluesky-comments', {author: 'hypha.coop'});
+    });
+  </script>
   <footer class="mt5 bt bw2 b--light-gray">
     <p><a class="link accent underline-hover" href="{% link dripline.html %}">← <span class="gray">Return to Dripline</span></a></p>
   </footer>
