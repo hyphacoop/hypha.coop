@@ -100,23 +100,10 @@ notifications:
     action: done
     id: https://hypha.coop/dripline/announcing-dp-social-inbox/
     created_at: 1701786255
-  openings/senior-ops-finance.jsonld:
-    action: done
-    id: https://hypha.coop/openings/senior-ops-finance/
-    created_at: 1702587961
-  openings/test-engineer.jsonld:
-    action: done
-    id: https://hypha.coop/openings/test-engineer/
-    created_at: 1704749005
   dripline/non-fungible-treasures.jsonld:
     action: done
     id: https://hypha.coop/dripline/non-fungible-treasures/
     created_at: 1708476823
-    last_modified_at: 1710251436
-  openings/business-development-lead.jsonld:
-    action: done
-    id: https://hypha.coop/openings/business-development-lead/
-    created_at: 1709779993
     last_modified_at: 1710251436
   dripline/social-reader-is-out.jsonld:
     action: done
@@ -144,12 +131,13 @@ notifications:
     created_at: 1726241977
   dripline/storing-metadata-at-starling-lab.jsonld:
     action: done
-    id: https://staging.hypha.coop/dripline/storing-metadata-at-starling-lab.jsonld
+    id: https://hypha.coop/dripline/storing-metadata-at-starling-lab.jsonld
     created_at: 1728400393
   dripline/dweb-camp-recap-a-cybernetic-ecology.jsonld:
     action: done
-    id: https://staging.hypha.coop/dripline/dweb-camp-recap-a-cybernetic-ecology.jsonld
+    id: https://hypha.coop/dripline/dweb-camp-recap-a-cybernetic-ecology.jsonld
     created_at: 1732545569
+    last_modified_at: 1732631737
 actor_url: https://staging.hypha.coop/about.jsonld
 actor: "@dripline@staging.hypha.coop"
 public_key_url: https://staging.hypha.coop/about.jsonld#main-key
