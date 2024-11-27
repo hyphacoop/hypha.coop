@@ -23,10 +23,18 @@
 {% assign all_interactions = activities | concat: reactions | sort: 'published' %}
 
 <div class="w-100" data-controller="tabs" data-tabs-hide-class="hide" data-tabs-show-class="show">
+  <!-- 
+
+  Disabling this section for now, as it's not working as expected.
+
   {% include activity_pub/button_bar.html uri=include.activity.id profile=include.profile %}
+
+      -->
 
   <hr>
 
+  <!-- 
+  
   <h3 class="text-uppercase">{{ site.i18n.ver_interacciones }}</h3>
 
   <div class="d-flex flex-row align-items-center mt-2 mb-5">
@@ -35,6 +43,8 @@
     {% assign text = site.i18n.help | markdownify | replace: '<a ', "<a target='_blank' rel='noopener' " %}
     {% include activity_pub/text_modal.html text=text fa="question-circle-o" %}
   </div>
+
+    -->
 
   <div class="w-100 d-none fade hide" data-tabs-target="tab" id="conversation">
     {% unless activities == empty %}
