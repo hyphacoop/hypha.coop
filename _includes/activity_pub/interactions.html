@@ -2,88 +2,72 @@
   @param activity [ActivityDrop]
 {% endcomment %}
 
+<!-- Initialize variables -->
 {% assign items = site.i18n.fediverse_interactions %}
 {% assign reactions = '' | split: ',' %}
-{% assign activities = reactions %}
+{% assign activities = '' | split: ',' %}
 
+<!-- Filter replies -->
 {% if page.activity.replies.available %}
-  {% assign activities = page.activity.replies.all_items | sort: 'published' %}
+  {% assign activities = page.activity.replies.all_items | where_exp: "item", "item.inReplyTo" | sort: 'published' %}
 {% endif %}
 
-{% if include.activity.likes.available %}
-  {% assign reactions = reactions | concat: include.activity.likes.all_items %}
-{% endif %}
-
-{% if include.activity.shares.available %}
-  {% assign reactions = reactions | concat: include.activity.shares.all_items %}
-{% endif %}
-
+<!-- Optional: Filter and sort reactions if needed -->
 {% assign reactions = reactions | sort: 'published' %}
 
-{% assign all_interactions = activities | concat: reactions | sort: 'published' %}
+<!-- Combine replies and reactions if necessary -->
+{% assign all_interactions = activities %}
 
+<!-- Render Replies -->
 {% unless activities == empty %}
 <div class="w-100" data-controller="tabs" data-tabs-hide-class="hide" data-tabs-show-class="show">
-  <!-- 
+  <hr/>
 
-  Disabling this section for now, as it's not working as expected.
-
-  {% include activity_pub/button_bar.html uri=include.activity.id profile=include.profile %}
-
-      -->
-
-  <hr>
-
-  <!-- 
-  
-  <h3 class="text-uppercase">{{ site.i18n.ver_interacciones }}</h3>
-
-  <div class="d-flex flex-row align-items-center mt-2 mb-5">
-    {% include activity_pub/fediverse_interactions.html %}
-
-    {% assign text = site.i18n.help | markdownify | replace: '<a ', "<a target='_blank' rel='noopener' " %}
-    {% include activity_pub/text_modal.html text=text fa="question-circle-o" %}
-  </div>
-
-    -->
-
-  <div class="w-100 d-none fade hide" data-tabs-target="tab" id="conversation">
+  <!-- Conversations (Replies Only) -->
+  <div class="w-100 dn" data-tabs-target="tab" id="conversation">
     {% unless activities == empty %}
       {% for activity in activities %}
-        {% include activity_pub/cards.html activity=activity profile=activity.attributedTo replies=activity.replies %}
+        <div class="activity-card">
+          <div class="activity-content">
+            {% include activity_pub/cards.html activity=activity profile=activity.attributedTo replies=activity.replies %}
+          </div>
+        </div>
       {% endfor %}
     {% else %}
-      <p class="h1">
+      <p class="f1 lh-title">
         {{ site.i18n.no_interactions_yet.conversation }}
-        <p>
+      </p>
     {% endunless %}
   </div>
 
-  <div class="w-100 d-none fade hide" data-tabs-target="tab" id="reactions">
+  <!-- Reactions Tab -->
+  <div class="w-100 dn dn" data-tabs-target="tab" id="reactions">
     {% unless reactions == empty %}
       {% include activity_pub/reactions.html reactions=reactions %}
     {% else %}
-      <p class="h1">
+      <p class="f1 lh-title">
         {{ site.i18n.no_interactions_yet.reactions }}
-        <p>
+      </p>
     {% endunless %}
   </div>
 
-  <div class="w-100 fade show" data-tabs-target="tab" id="both">
+  <!-- Combined Interactions (Replies Only) -->
+  <div class="w-100 show" data-tabs-target="tab" id="both">
+    <h2 class="mt2">
+      Replies from the Fediverse
+    </h2>
     {% unless all_interactions == empty %}
       {% for interaction in all_interactions %}
-        {% assign minus = forloop.index0 | minus: 1 %}
-        {% assign previous = all_interactions[minus] %}
-        {% if interaction.type == 'Announce' or interaction.type == 'Like' %}
-          {% include activity_pub/reaction.html activity=interaction previous=previous %}
-        {% else %}
-          {% include activity_pub/cards.html activity=interaction profile=interaction.attributedTo replies=interaction.replies %}
+        {% if interaction.inReplyTo %}
+          <div class="interaction-card">
+            {% include activity_pub/cards.html activity=interaction profile=interaction.attributedTo replies=interaction.replies %}
+          </div>
         {% endif %}
       {% endfor %}
     {% else %}
-      <p class="h1">
+      <p class="f1 lh-title">
         {{ site.i18n.no_interactions_yet.both }}
-        <p>
+      </p>
     {% endunless %}
   </div>
 </div>
