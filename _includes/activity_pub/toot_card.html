@@ -26,7 +26,7 @@
 <p>{% include activity_pub/actor_mention.html actor=include.profile %}</p>
 </div>
 </div>
-<div class="flex-auto w-100">
+<div class="flex-auto w-100 ml3">
     {% capture content %}
 			<div class="content mt0">
 				{{ include.activity.content | sanitize_html }}
@@ -56,7 +56,7 @@
         element_text=content
         summary_class="align-items-center btn-lg btn-secondary p-2 text-left f-16"
         component_class="my-3"
-        font_size="ml-3 lead"
+        font_size="ml3 lead"
       %}
     {% else %}
       {{ content }}
