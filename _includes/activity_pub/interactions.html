@@ -21,7 +21,6 @@
 <!-- Render Replies -->
 {% unless activities == empty %}
 <div class="w-100" data-controller="tabs" data-tabs-hide-class="hide" data-tabs-show-class="show">
-  <hr/>
 
   <!-- Conversations (Replies Only) -->
   <div class="w-100 dn" data-tabs-target="tab" id="conversation">
@@ -52,8 +51,8 @@
   </div>
 
   <!-- Combined Interactions (Replies Only) -->
-  <div class="w-100 show" data-tabs-target="tab" id="both">
-    <h2 class="mt2">
+  <div class="w-100 show bt bw2 b--light-gray mt5" data-tabs-target="tab" id="both">
+    <h2 style="font-size: 2.25rem; margin-top: 4rem;">
       Replies from the Fediverse
     </h2>
     {% unless all_interactions == empty %}
