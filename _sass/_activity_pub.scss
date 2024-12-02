@@ -1,0 +1,21 @@
+.h-100.object-fit-cover {
+    max-width: 20px;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  
+  .embed-responsive {
+    width: 25px;
+  }
+  
+  .embed-responsive img {
+    object-fit: cover; /* Ensures the image fills the square */
+    width: 100%;
+    height: 100%;
+  }
+
+  .interaction-card .content > p {
+    margin-top: 0;
+  }
+  
