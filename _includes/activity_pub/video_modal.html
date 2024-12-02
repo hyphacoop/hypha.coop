@@ -5,16 +5,12 @@
 {%- endcomment -%}
 
 {% capture body %}
-  <video src="{{include.video.url}}" controls></video>
+  <video controls="" src="{{include.video.url}}"></video>
 {% endcapture %}
 
-<div class="{{ include.extra }} px-1" data-controller="modal">
-  <div class="embed-responsive embed-responsive-16by9">
-    <video
-      class="cursor-pointer min-w-100px w-100 embed-responsive-item object-fit-cover"
-      src="{{include.video.url}}"
-      data-action="click->modal#show"
-    ></video>
-  </div>
+<div class="ph1" data-controller="modal">
+<div class="aspect-ratio aspect-ratio--16x9">
+<video class="pointer min-w-100 w-100 aspect-ratio--object cover" data-action="click-&gt;modal#show" src="{{include.video.url}}"></video>
+</div>
   {% include activity_pub/generic_modal.html header_class="text-white" body=body body_class="d-flex justify-content-center" footer_class="d-none" content_class="background-transparent border-0" %}
 </div>

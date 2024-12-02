@@ -13,8 +13,8 @@
   @param :button_class [String] las clases que lleva cada botón
 {%- endcomment -%}
 
-<div class="d-inline {{include.button_class}}" data-controller="modal">
-  <button class="btn btn-sm" data-action="click->modal#show">
+<div class="dib" data-controller="modal">
+<button class="pointer br2 ba f7" data-action="click-&gt;modal#show">
     {%- include fa.html icon=include.fa class="lead" description=include.description -%}
   </button>
 

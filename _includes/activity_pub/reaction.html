@@ -8,35 +8,32 @@
 
 {% assign published = include.activity.published | strip_html %}
 
-<div class="d-flex">
-  <div class="d-flex flex-column gray px-2 text-right">
+<div class="flex">
+<div class="flex flex flex-column gray ph2 tr">
     {% include date.html date=published format=site.i18n.date.format %}
-    {% include date.html date=published format=site.i18n.time.format %}
   </div>
-
-  <div class="flex-column px-2 flex-grow-1">
+<div class="flex flex-column ph2 flex-grow-1">
     {% if include.previous.actor == include.activity.actor %}
-      <div class="d-flex">
-        <p class="transparent hover-transparent">
+      <div class="flex">
+<p class="transparent hover-bg-transparent">
           {% include activity_pub/actor.html actor=include.activity.actor %}
         </p>
-      </div>
-      <div class="d-flex">
-        <p class="transparent hover-transparent">
+</div>
+<div class="flex">
+<p class="transparent hover-bg-transparent">
           {% include activity_pub/actor_mention.html actor=include.activity.actor without_link=true %}
         </p>
-      </div>
+</div>
     {% else %}
-      <div class="d-flex">
-        <p class="">{% include activity_pub/actor.html actor=include.activity.actor %}</p>
-      </div>
-      <div class="d-flex">
+      <div class="flex">
+<p class="">{% include activity_pub/actor.html actor=include.activity.actor %}</p>
+</div>
+<div class="flex">
         {% include activity_pub/actor_mention.html actor=include.activity.actor %}
       </div>
     {% endif %}
   </div>
-
-  <div class="flex-column align-self-center px-2 lead">
+<div class="flex flex-column self-center ph2 f4 lh-copy">
     {% assign icon = include.activity.type | equals: 'Announce' | ternary: 'retweet', 'star-o' %}
     {% assign description = site.i18n.activities[include.activity.type] %}
 

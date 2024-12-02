@@ -5,7 +5,7 @@
 {% endcomment %}
 
 {% if include.actor.available %}
-  <span class="break-wrap">{{ include.actor.name | strip_html }}</span>
+  <span class="word-wrap">{{ include.actor.name | strip_html }}</span>
 {% else %}
-  <span class="break-wrap">{{ include.actor }}</span>
+  <span class="word-wrap">{{ include.actor }}</span>
 {% endif %}

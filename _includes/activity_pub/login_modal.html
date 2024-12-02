@@ -15,51 +15,38 @@
 
 {% capture header %}
 
-  <div class="d-flex align-items-center h1 justify-content-center w-100">
-      <span class="d-flex responsive-header font-weight-bold text-center">
-          <i class="fa fa-{{fa}} text-primary mr-2"></i>
-          <span class="break-wrap">{{ site.i18n.login_modal[action.title].text | replace: "$usuarie", name }}</span>
-          <div>
-              <span class="px-3 py-2 m-0 h1" type="button" data-action="click->modal#hide">&times</span>
-              <span class="sr-only">{{ site.i18n.close }}</span>
-          </div>
-      </span>
-  </div>
+  <div class="flex items-center f1 lh-title justify-center w-100">
+<span class="flex flex items-center justify-between b tc">
+<i class="fa fa-{{fa}} blue mr2"></i>
+<span class="word-wrap">{{ site.i18n.login_modal[action.title].text | replace: "$usuarie", name }}</span>
+<div>
+<span class="ph3 pv2 ma0 f1 lh-title" data-action="click-&gt;modal#hide" type="button">×</span>
+<span class="clip">{{ site.i18n.close }}</span>
+</div>
+</span>
+</div>
 {% endcapture %}
 
 {% capture body %}
-  <p class="mb-2">{{site.i18n.login_modal.top_text | markdownify | replace: "$action", site.i18n.login_modal[action.title].title }}</p>
-  <div class="mt-3 mb-2 h5">{{site.i18n.login_modal.question | markdownify}}</div>
-  <div class="mb-3">
-    <form
-      class="needs-validation"
-      data-controller="authorize-interaction"
-      data-action="authorize-interaction#submit:prevent"
-      data-authorize-interaction-uri-value="{{ include.uri | strip_html | absolute_url | uri_escape }}"
-      >
-      <div class="form-row align-items-center border-lg border-lg-primary py-1">
-        <div class="col-12 col-lg mb-1 mb-lg-0">
-          <label class="sr-only">{{site.i18n.login_modal.placeholder}}</label>
-          <input
-            class="form-control border border-primary border-lg-0"
-            placeholder="{{site.i18n.login_modal.placeholder}}"
-            autocomplete="impp"
-            required
-            data-authorize-interaction-target="instance"
-            data-action="authorize-interaction#revalid"
-            type="search">
-          <div class="invalid-feedback">
+  <p class="mb2">{{site.i18n.login_modal.top_text | markdownify | replace: "$action", site.i18n.login_modal[action.title].title }}</p>
+<div class="mt3 mb2 f5 lh-title">{{site.i18n.login_modal.question | markdownify}}</div>
+<div class="mb3">
+<form class="ba b--red" data-action="authorize-interaction#submit:prevent" data-authorize-interaction-uri-value="{{ include.uri | strip_html | absolute_url | uri_escape }}" data-controller="authorize-interaction">
+<div class="form-row items-center ba bw2 ba bw2 b--blue pv1">
+<div class="w-100 flex-auto mb1 mb0-l">
+<label class="clip">{{site.i18n.login_modal.placeholder}}</label>
+<input autocomplete="impp" class="form-control ba b--blue ba bw0" data-action="authorize-interaction#revalid" data-authorize-interaction-target="instance" placeholder="{{site.i18n.login_modal.placeholder}}" required="" type="search"/>
+<div class="invalid-feedback">
             {{- site.i18n.login_modal.authorize_interaction_unsupported -}}
           </div>
-        </div>
-
-        <div class="col-12 col-lg-auto">
-          <button class="btn btn-primary btn-block py-btn-padding-y lh-btn-line-height f-16 font-weight-bold" type="submit">{{ site.i18n.take_me_home }}</button>
-        </div>
-      </div>
-    </form>
-  </div>
-<small class="d-block mb-2">{{site.i18n.login_modal.small_text}}</small>
+</div>
+<div class="w-100 flex-none">
+<button class="pointer br2 ba bg-blue white w-100 pv2 lh-solid f6 b" type="submit">{{ site.i18n.take_me_home }}</button>
+</div>
+</div>
+</form>
+</div>
+<small class="db mb2">{{site.i18n.login_modal.small_text}}</small>
 <span>{{site.i18n.login_modal.bottom_text | markdownify}}</span>
 {% endcapture %}
 

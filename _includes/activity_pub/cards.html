@@ -16,7 +16,7 @@
 {% if include.replies.available %}
   {% assign replies = include.replies.all_items | sort: 'published' %}
   {% for reply in replies %}
-    <blockquote class="border-left border-gray-light border-width-3 pl-3">
+    <blockquote class="bl b--moon-gray bw3 pl3">
       {%
         include activity_pub/cards.html
         profile=reply.attributedTo

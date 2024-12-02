@@ -8,8 +8,8 @@
 
 {% assign extra_class = include.activity.attachment | size | equals: 1 | ternary: 'col', 'col-6' %}
 
-<div class="d-flex flex-column media {{ include.component_class }}">
-  <div class="d-flex">
+<div class="flex flex flex-column flex">
+<div class="flex items-center">
     {%
       include embed_responsive.html
       x=1
@@ -17,24 +17,23 @@
       src=include.profile.icon.url
       alt=include.profile.icon.name
       width=40
-      embed_class="mr-2 align-self-center w-49px"
+      embed_class="mr-2 w-49px"
       img_class="h-100 object-fit-cover"
     %}
 
-    <div class="">
-      <p>{% include activity_pub/actor.html actor=include.profile %}</p>
-      <p>{% include activity_pub/actor_mention.html actor=include.profile %}</p>
-    </div>
-  </div>
-
-  <div class="media-body w-100">
+    <div class="flex flex-row">
+<p>{% include activity_pub/actor.html actor=include.profile %}</p>
+<p>{% include activity_pub/actor_mention.html actor=include.profile %}</p>
+</div>
+</div>
+<div class="flex-auto w-100">
     {% capture content %}
-			<div class="content mt-2">
+			<div class="content mt0">
 				{{ include.activity.content | sanitize_html }}
 			</div>
 
 			{% unless include.activity.attachment == empty %}
-				<div class="row no-gutters mt-2">
+				<div class="flex flex-wrap nl1 nr1 mt0">
 					{% for attachment in include.activity.attachment %}
 						{% if attachment.mediaType == "video/mp4" %}
 							{% include activity_pub/video_modal.html video=attachment extra=extra_class %}
@@ -63,7 +62,7 @@
       {{ content }}
     {% endif %}
 
-    <div class="d-flex gray justify-content-between my-2 align-items-center">
+    <div class="flex gray justify-between mv2 items-center">
       {%- assign timestamp_field = include.activity.updated | ternary: 'updated', 'published' -%}
       {%- assign timestamp = include.activity[timestamp_field] -%}
 

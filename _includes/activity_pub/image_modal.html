@@ -4,15 +4,15 @@
   @param :image [Image] la imagen que queremos en el modal, contiene url y alt text
 {%- endcomment -%}
 
-{% assign extra = 'data-action="click->modal#show"' %}
+{% assign extra = 'data-action="click-&gt;modal#show"' %}
 {% assign alt = include.image.name | strip_html | escape %}
 {% assign src = include.image.url | strip_html | uri_escape %}
 
 {% capture body %}
-    <img class="background-white mw-100" title="{{ alt }}" alt="{{ alt }}" src="{{ src }}">
+    <img alt="{{ alt }}" class="bg-white mw-100" src="{{ src }}" title="{{ alt }}"/>
 {% endcapture %}
 
-<div class="{{ include.extra }} px-1" data-controller="modal">
+<div class="ph1" data-controller="modal">
   {%
     include embed_responsive.html
     x=16
