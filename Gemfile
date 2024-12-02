@@ -12,7 +12,7 @@ gem "jekyll", "~> 4.3.4"
 gem "html-proofer"
 gem 'nokogiri'
 gem 'ruby-brs'
-gem "webrick", "~> 1.8"
+gem "webrick", "~> 1.9"
 
 group :jekyll_plugins do
   gem "jekyll-feed", 
