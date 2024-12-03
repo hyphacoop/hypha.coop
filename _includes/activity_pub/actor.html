@@ -1,0 +1,11 @@
+{% comment %}
+  Render actor's name if it's available, otherwise just return the link.
+
+  @param actor [ActivityDrop] Actor
+{% endcomment %}
+
+{% if include.actor.available %}
+  <span class="word-wrap">{{ include.actor.name | strip_html }}</span>
+{% else %}
+  <span class="word-wrap">{{ include.actor }}</span>
+{% endif %}

@@ -1,0 +1,16 @@
+{%- comment -%}
+  Modal con imagen
+
+  @param :image [Image] la imagen que queremos en el modal, contiene url y alt text
+{%- endcomment -%}
+
+{% capture body %}
+  <video controls="" src="{{include.video.url}}"></video>
+{% endcapture %}
+
+<div class="ph1" data-controller="modal">
+<div class="aspect-ratio aspect-ratio--16x9">
+<video class="pointer min-w-100 w-100 aspect-ratio--object cover" data-action="click-&gt;modal#show" src="{{include.video.url}}"></video>
+</div>
+  {% include activity_pub/generic_modal.html header_class="text-white" body=body body_class="d-flex justify-content-center" footer_class="d-none" content_class="background-transparent border-0" %}
+</div>
