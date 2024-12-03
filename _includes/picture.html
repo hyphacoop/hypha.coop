@@ -26,5 +26,5 @@ Image component
   <img
     class="{{ include.img_class }}"
     src="{{ include.src | thumbnail: include.width, include.height | uri_escape }}"
-    alt="{{ include.alt | escape_once }}" />
-</picture>
+    alt="{{ include.alt | default: 'Image from Mastodon' | escape_once }}" />
+  </picture>
