@@ -10,7 +10,9 @@ Link externo.
 <a
 	class="text-decoration-none {{ include.class }}"
 	href="{{ include.href | uri_escape }}"
-	{{ include.href | start_with: "https://" | value_if: 'rel="noopener" target="_blank"' }}
-	{{ include.href | start_with: "http://" | value_if: 'rel="noopener" target="_blank"' }}>
+	{% if include.href contains 'https://' or include.href contains 'http://' %}
+		rel="noopener" target="_blank"
+	{% endif %}
+>
 	{{ include.text }}
 </a>
