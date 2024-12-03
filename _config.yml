@@ -12,6 +12,7 @@ rss: "/feed.xml"
 url: "https://hypha.coop"
 lang: "en"
 footer: Hypha Worker Co-operative Inc.<br>Ontario Corporation No. 5019866
+locale: "en"
 
 description: >-
   We cultivate collective growth and meaningful livelihoods through learning and building technologies together.
