@@ -17,6 +17,13 @@ Following the talks there will be time for attendees to connect, share ideas, an
 [See the full agenda and register on Lu.ma →](https://lu.ma/2ul5uwdl)
 
 
+<figure class="pb4">
+    <div class='flex items-center justify-center' style="width: 100%;">
+
+        <img class="mt5 pt1" style="width:60%;" src="{{ 'assets/images/posts/2024-12-12-DWebYVRLoFiWKND.webp' | relative_url }}" alt="An abstract design split into four quadrants. The top-left quadrant features a stylized letter 'D' composed of black dots of varying sizes against a yellow background, with the word 'Web' in a black rectangular box at the bottom-right corner of the letter. The top-right quadrant has the text 'YVR' repeated three times vertically in gray against a blue-gray background. The bottom-left quadrant displays the word 'SPACE' in gray serif font with a large, transparent 'Z' overlapping the letters, set against the same blue-gray background. The bottom-right quadrant shows a geometric black symbol resembling interconnected nodes or a flower, also on a yellow background."/>
+    </div>
+</figure>
+
 ## What is LoFi software?
 
 Local-first software represents an alternative approach to app development focusing on:
