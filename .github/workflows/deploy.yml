@@ -25,12 +25,16 @@ jobs:
         if: github.event_name == 'pull_request'
         uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.pull_request.head.ref }}
+          ref: ${{ github.head_ref }}
 
       # Standard checkout for non-PR events
       - name: Checkout repo
         if: github.event_name != 'pull_request'
         uses: actions/checkout@v4
+
+      # Install Brotli development headers (Fix for ruby-brs gem)
+      - name: Install Brotli dependencies
+        run: sudo apt-get update && sudo apt-get install -y libbrotli-dev
 
       # Build Jekyll Site
       - run: echo "Building Jekyll site"
