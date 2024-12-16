@@ -32,6 +32,10 @@ jobs:
         if: github.event_name != 'pull_request'
         uses: actions/checkout@v4
 
+      # Install Brotli development headers (Fix for ruby-brs gem)
+      - name: Install Brotli dependencies
+        run: sudo apt-get update && sudo apt-get install -y libbrotli-dev
+
       # Build Jekyll Site
       - run: echo "Building Jekyll site"
       - run: sudo gem install bundler
