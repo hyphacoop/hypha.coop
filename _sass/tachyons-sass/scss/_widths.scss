@@ -71,6 +71,13 @@
 .w-90 {  width:  90%; }
 .w-100 { width: 100%; }
 
+.w-fill-available { 
+  width: 100%;
+  width: -moz-available;          
+  width: -webkit-fill-available; 
+  width: fill-available; 
+}
+
 .w-third { width: calc(100% / 3); }
 .w-two-thirds { width: calc(100% / 1.5); }
 .w-auto { width: auto; }
