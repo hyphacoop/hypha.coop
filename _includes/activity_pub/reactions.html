@@ -1,0 +1,17 @@
+{%- comment -%}
+  Reacciones
+
+  @param :reactions [Array] Reacciones
+  @param :actor [String] Usuarie
+{%- endcomment -%}
+
+{% for reaction in include.reactions %}
+  {% assign minus = forloop.index0 | minus: 1 %}
+  {% assign previous = include.reactions[minus] %}
+
+  {%
+    include activity_pub/reaction.html
+    activity=reaction
+    previous=previous
+  %}
+{% endfor %}

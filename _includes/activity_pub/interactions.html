@@ -1,0 +1,73 @@
+{% comment %}
+  @param activity [ActivityDrop]
+{% endcomment %}
+
+<!-- Initialize variables -->
+{% assign items = site.i18n.fediverse_interactions %}
+{% assign reactions = '' | split: ',' %}
+{% assign activities = '' | split: ',' %}
+
+<!-- Filter replies -->
+{% if page.activity.replies.available %}
+  {% assign activities = page.activity.replies.all_items | where_exp: "item", "item.inReplyTo" | sort: 'published' %}
+{% endif %}
+
+<!-- Optional: Filter and sort reactions if needed -->
+{% assign reactions = reactions | sort: 'published' %}
+
+<!-- Combine replies and reactions if necessary -->
+{% assign all_interactions = activities %}
+
+<!-- Render Replies -->
+{% unless activities == empty %}
+<div class="w-100" data-controller="tabs" data-tabs-hide-class="hide" data-tabs-show-class="show">
+
+  <!-- Conversations (Replies Only) -->
+  <div class="w-100 dn" data-tabs-target="tab" id="conversation">
+    {% unless activities == empty %}
+      {% for activity in activities %}
+        <div class="activity-card">
+          <div class="activity-content">
+            {% include activity_pub/cards.html activity=activity profile=activity.attributedTo replies=activity.replies %}
+          </div>
+        </div>
+      {% endfor %}
+    {% else %}
+      <p class="f1 lh-title">
+        {{ site.i18n.no_interactions_yet.conversation }}
+      </p>
+    {% endunless %}
+  </div>
+
+  <!-- Reactions Tab -->
+  <div class="w-100 dn dn" data-tabs-target="tab" id="reactions">
+    {% unless reactions == empty %}
+      {% include activity_pub/reactions.html reactions=reactions %}
+    {% else %}
+      <p class="f1 lh-title">
+        {{ site.i18n.no_interactions_yet.reactions }}
+      </p>
+    {% endunless %}
+  </div>
+
+  <!-- Combined Interactions (Replies Only) -->
+  <div class="w-100 show bt bw2 b--light-gray mt5" data-tabs-target="tab" id="both">
+    <h2 style="font-size: 2.25rem; margin-top: 4rem;">
+      Replies from the Fediverse
+    </h2>
+    {% unless all_interactions == empty %}
+      {% for interaction in all_interactions %}
+        {% if interaction.inReplyTo %}
+          <div class="interaction-card">
+            {% include activity_pub/cards.html activity=interaction profile=interaction.attributedTo replies=interaction.replies %}
+          </div>
+        {% endif %}
+      {% endfor %}
+    {% else %}
+      <p class="f1 lh-title">
+        {{ site.i18n.no_interactions_yet.both }}
+      </p>
+    {% endunless %}
+  </div>
+</div>
+{% endunless %}

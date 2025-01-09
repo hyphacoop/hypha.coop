@@ -1,0 +1,28 @@
+{%- comment -%}
+  Nested cards
+
+  @param :profile [ActivityDrop] Actor
+  @param :activity [ActivityDrop] Note
+  @param :replies [ActivityDrop] Collection
+{%- endcomment -%}
+
+{%
+  include activity_pub/toot_card.html
+  profile=include.profile
+  activity=include.activity
+  component_class="my-3"
+%}
+
+{% if include.replies.available %}
+  {% assign replies = include.replies.all_items | sort: 'published' %}
+  {% for reply in replies %}
+    <blockquote class="bl b--moon-gray bw3 pl3">
+      {%
+        include activity_pub/cards.html
+        profile=reply.attributedTo
+        activity=reply
+        replies=reply.replies
+      %}
+    </blockquote>
+  {% endfor %}
+{% endif %}

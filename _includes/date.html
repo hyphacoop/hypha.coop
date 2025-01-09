@@ -1,0 +1,12 @@
+{% comment %}
+  La fecha de un artículo
+
+  @param :date [String] La fecha con formato
+  @param :extra [String] Atributos extra
+{% endcomment %}
+
+<time
+	datetime="{{ include.date | date_to_xmlschema }}"
+	{{ include.extra }}>
+	{{- include.date | date_local: include.format -}}
+</time>

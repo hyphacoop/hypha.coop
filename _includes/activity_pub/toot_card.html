@@ -1,0 +1,94 @@
+{%- comment -%}
+  Toot card
+
+  @param :component_class [String] Las clases del componente
+  @param :profile [String]
+  @param :activity [String]
+{%- endcomment -%}
+
+{% assign extra_class = include.activity.attachment | size | equals: 1 | ternary: 'col', 'col-6' %}
+
+<div class="flex flex flex-column flex">
+<div class="flex items-center">
+    {%
+      include embed_responsive.html
+      x=1
+      y=1
+      src=include.profile.icon.url
+      alt=include.profile.icon.name
+      width=40
+      embed_class="mr-2 w-49px"
+      img_class="h-100 object-fit-cover"
+    %}
+
+    <div class="flex flex-row">
+<p>{% include activity_pub/actor.html actor=include.profile %}</p>
+<p>{% include activity_pub/actor_mention.html actor=include.profile %}</p>
+</div>
+</div>
+<div class="flex-auto w-100 ml3">
+    {% capture content %}
+			<div class="content mt0">
+				{{ include.activity.content | sanitize_html }}
+			</div>
+
+			{% unless include.activity.attachment == empty %}
+				<div class="flex flex-wrap nl1 nr1 mt0">
+					{% for attachment in include.activity.attachment %}
+						{% if attachment.mediaType == "video/mp4" %}
+							{% include activity_pub/video_modal.html video=attachment extra=extra_class %}
+						{% else %}
+							{% include activity_pub/image_modal.html image=attachment extra=extra_class %}
+						{% endif %}
+					{% endfor %}
+				</div>
+			{% endunless %}
+		{% endcapture %}
+
+    {% if include.activity.sensitive %}
+      {% capture summary_title %}
+        <strong>{{ site.i18n.sensitive }}:</strong> {{ include.activity.summary }}
+      {% endcapture %}
+
+      {%
+        include details.html
+        element_title=summary_title
+        element_text=content
+        summary_class="align-items-center btn-lg btn-secondary p-2 text-left f-16"
+        component_class="my-3"
+        font_size="ml3 lead"
+      %}
+    {% else %}
+      {{ content }}
+    {% endif %}
+
+    <div class="flex gray justify-between mv2 items-center">
+      {%- assign timestamp_field = include.activity.updated | ternary: 'updated', 'published' -%}
+      {%- assign timestamp = include.activity[timestamp_field] -%}
+
+      {%- capture timestamp -%}
+        {% include date.html date=timestamp format=site.i18n.date_time.format %}
+      {%- endcapture -%}
+
+      {%- capture uri -%}
+        {%- include activity_pub/url.html activity=include.activity -%}
+      {%- endcapture -%}
+
+      {% include external_link.html href=uri text=timestamp %}
+
+      <div>
+        {% if include.activity.shares.totalItems %}
+          {%- include fa.html icon="retweet" class="px-1" description=site.i18n.total_shares content=include.activity.shares.totalItems -%}
+        {% endif %}
+
+        {% if include.activity.likes.totalItems %}
+          {%- include fa.html icon="star-o" class="px-1" description=site.i18n.total_likes content=include.activity.likes.totalItems -%}
+        {% endif %}
+      </div>
+
+      {%- include fa.html icon="globe" description=site.i18n.globe -%}
+    </div>
+
+    {% include activity_pub/button_bar.html uri=include.activity.id profile=include.profile %}
+  </div>
+</div>

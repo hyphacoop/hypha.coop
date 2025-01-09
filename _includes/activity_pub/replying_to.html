@@ -1,0 +1,23 @@
+{%- comment -%}
+  Texto + enlace al post/artículo al cual se responde
+
+  @param :activity [ActivityDrop] Activity
+{%- endcomment -%}
+
+{% if include.activity.available %}
+  {%- capture uri -%}
+    {%- include activity_pub/url.html activity=include.activity -%}
+  {%- endcapture -%}
+
+  {% capture text %}
+    {{- include.activity.name | default: include.activity.summary | strip_html | default: site.i18n.reply.link_text -}}
+  {% endcapture %}
+
+  <div class="pv5 pr5">
+<span class="f2 lh-title">
+      {{- site.i18n.reply.text -}}
+    </span>
+
+    {% include external_link.html href=uri class="h2" text=text %}
+  </div>
+{% endif %}

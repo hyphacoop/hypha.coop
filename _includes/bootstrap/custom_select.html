@@ -1,0 +1,18 @@
+{% comment %}
+
+@param class [String] Extra classes
+@param extra [String] Extra attributes
+@param options [Array<Hash>] Options
+  @param selected [Boolean] Default option
+  @param extra [String] Extra attributes
+  @param value [String] Value
+  @param title [String] Title
+{% endcomment %}
+
+<select class="custom-select {{ include.class }}" {{ include.extra }}>
+  {% for options in include.options %}
+    <option {{ options.selected }} {{ options.extra }} value="{{ options.value | default: options.title | escape }}">
+      {{- options.title -}}
+    </option>
+  {% endfor %}
+</select>

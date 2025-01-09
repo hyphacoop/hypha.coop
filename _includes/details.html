@@ -1,0 +1,26 @@
+{%- comment -%}
+
+Details: elementos con dropdown
+
+@param :component_class [String] Las clases del componente
+@param :summary_class [String] Las clases del summary
+@param :element_title [String] El título del elemento (summary)
+@param :title_class [String] Las clases del título
+@param :font_size [String] El tamaño de los íconos de abrir y cerrar
+@param :element_text [String] El texto del elemento
+@param :text_class [String] Las clases del texto
+{%- endcomment -%}
+
+{%- assign class_close = "hide-when-open " | append: include.font_size -%}
+{%- assign class_open = "show-when-open " | append: include.font_size -%}
+
+<details class="{{ include.component_class }}">
+	<summary class="d-flex justify-content-between {{ include.summary_class }}">
+		<div class="{{ include.title_class }}">{{ include.element_title }}</div>
+		{%- include fa.html icon="angle-down" class=class_close description=site.i18n.details.open -%}
+		{%- include fa.html icon="angle-up" class=class_open description=site.i18n.details.close -%}
+	</summary>
+
+	<div class="{{ include.text_class }}">{{ include.element_text }}</div>
+	<hr/>
+</details>
