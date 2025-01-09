@@ -1,0 +1,28 @@
+{% comment %}
+  @param actor [ActivityDrop] Actor
+  @param without_link [Boolean] Don't link
+{% endcomment %}
+
+{% if include.actor.available %}
+  {% assign id = include.actor.id | strip_html %}
+  {% assign instance_hostname = id | split: '/' %}
+  {% assign instance_hostname = instance_hostname[2] %}
+
+  {% capture mention %}
+    @<span>{{- include.actor.preferredUsername | strip_html -}}@{{- instance_hostname -}}</span>
+  {% endcapture %}
+
+  {% capture mention %}
+    <span class="h-card word-wrap pl2" translate="no">
+      {% if include.without_link %}
+        <span class="mention">{{- mention -}}</span>
+      {% else %}
+        {% include external_link.html class="u-url mention" href=id text=mention %}
+      {% endif %}
+    </span>
+  {% endcapture %}
+
+  {{ mention | normalize_whitespace }}
+{% else %}
+  {{ include.actor }}
+{% endif %}

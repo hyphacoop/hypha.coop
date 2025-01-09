@@ -1,0 +1,21 @@
+{%- comment -%}
+
+Embed responsive
+
+@param :x [Integer]
+@param :y [Integer]
+@param :src [String]
+@param :alt [String]
+@param :width [Integer]
+@param :height [Integer]
+@param :embed_class [String]
+@param :img_class [String]
+{%- endcomment -%}
+
+<div class="embed-responsive embed-responsive-{{ include.x }}by{{ include.y }} {{ include.embed_class }}" {{ include.extra }}>
+  {% if include.src %}
+    {%- include picture.html class="embed-responsive-item" img_class=include.img_class src=include.src alt=include.alt width=include.width -%}
+  {% else %}
+    <div class="embed-responsive-item background-primary"></div>
+  {% endif %}
+</div>

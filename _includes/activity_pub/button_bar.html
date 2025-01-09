@@ -1,0 +1,16 @@
+{%- comment -%}
+  Botonera para botones de íconos.
+
+  @param :uri [String] La URL sobre la que se interactua
+  @param :profile [ActivityDrop] Actor
+{%- endcomment -%}
+
+{% assign uri = include.uri | default: include.url | default: 'YOU FORGOT THIS PARAM' | strip_html %}
+{% assign actions = site.data.actions.actions %}
+
+<div class="flex">
+  {% for action in actions %}
+    {% assign fa = action.icon %}
+    {% include activity_pub/login_modal.html action=action fa=fa uri=uri profile=include.profile description=action.title %}
+  {% endfor %}
+</div>
