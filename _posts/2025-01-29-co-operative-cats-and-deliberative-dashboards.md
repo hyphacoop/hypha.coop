@@ -10,10 +10,10 @@ excerpt: A review of recent governance-related projects including interoperable 
 <figure class="pb4">
     <div class='flex flex-column items-center justify-center' style="width: 100%;">
 
-    <iframe style="border-radius: 1.5rem; margin-top: 2rem;" src="https://hyphacoop.github.io/governance-experiment/timeline/" height="700px" width="100%" scrolling="no" frameborder="0"></iframe>
+    <iframe style="border-radius: 1.5rem;" src="https://hyphacoop.github.io/governance-experiment/timeline/?theme=dark" height="700px" width="100%" scrolling="no" frameborder="0"></iframe>
 
  <figcaption>
-            <a href="https://hyphacoop.github.io/governance-dashboard/timeline/?theme=dark" target="_blank">
+            <a href="https://hyphacoop.github.io/governance-dashboard/timeline" target="_blank">
                 Timeline
             </a> artefact from Hypha's 'Governance Experiment'
         </figcaption>
