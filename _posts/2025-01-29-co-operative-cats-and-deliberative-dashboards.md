@@ -4,7 +4,7 @@ title: Co-operative cats and deliberative dashboards
 author: Andi Argast
 date: 2025-01-29
 acknowledgement: 
-excerpt: A review of recent governance-related projects including interoperable infrastructure and contributions to a new zine
+excerpt: A review of recent governance-related projects
 ---
 
 <figure class="pb4">
