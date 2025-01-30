@@ -1,8 +1,8 @@
 ---
-image: "/assets/images/social/dripline/2025-01-29-co-operative-cats-and-deliberative-dashboards.webp"
+image: "/assets/images/social/dripline/2025-01-30-co-operative-cats-and-deliberative-dashboards.webp"
 title: Co-operative cats and deliberative dashboards 
 author: Andi Argast
-date: 2025-01-29
+date: 2025-01-30
 acknowledgement: 
 excerpt: A review of recent governance-related projects
 ---
@@ -39,7 +39,7 @@ First up, much of Hypha’s work is done with open source tools and technology, 
 <figure class="pb4">
     <div class='flex items-center justify-center' style="width: 100%;">
 
-        <img class="mt5 pt1" style="width:100%;" src="{{ 'assets/images/posts/2025-01-09-mapping-nodes-and-edges.gif' | relative_url }}" alt="The diagram on a beige background illustrates an ecosystem with nodes and edges. On the left, four overlapping orange circles with diagonal stripes, connected by black lines in a grid, represent 'Individuals directly affiliated with the ecosystem.' A black line extends to the right, branching into six beige hexagons, symbolizing 'Individuals/organizations external to the ecosystem.' The black lines denote 'Lines of communication.' The design emphasizes connections and relationships within and outside the ecosystem."/>
+        <img class="mt5 pt1" style="width:100%;" src="{{ 'assets/images/posts/2025-01-30-mapping-nodes-and-edges.gif' | relative_url }}" alt="The diagram on a beige background illustrates an ecosystem with nodes and edges. On the left, four overlapping orange circles with diagonal stripes, connected by black lines in a grid, represent 'Individuals directly affiliated with the ecosystem.' A black line extends to the right, branching into six beige hexagons, symbolizing 'Individuals/organizations external to the ecosystem.' The black lines denote 'Lines of communication.' The design emphasizes connections and relationships within and outside the ecosystem."/>
 
     </div>
     <figcaption>
@@ -57,7 +57,7 @@ Shifting from open-source communities to real-world mutualism, the research shar
 <figure class="pb4">
     <div class='flex items-center justify-center' style="width: 100%;">
 
-        <img class="mt5" style="width:100%; border-radius: 1.5rem; box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.25), 0 4px 6px -4px rgb(0 0 0 / 0.25)" src="{{ 'assets/images/posts/2025-01-29-governance-dashboard-voting-results.png' | relative_url }}" alt="A dashboard-style interface displaying results of a voting process. At the top left, a bar chart titled 'Results' shows five categories (A, B, C, D, E) with purple bars representing votes, ranging from 4 to 7. To the right, under 'Participants,' it states '7 / 12' in bold. Below, a table titled 'Proposals' lists five labeled proposals (A–E) with descriptions and corresponding vote counts. Examples include Proposal A: '2018: We architected a retreat playbook...' with 6 votes, and Proposal D: '2020: We published resources and held open office hours...' with 7 votes. The design uses a clean, modern layout with light gray backgrounds and purple highlights.."/>
+        <img class="mt5" style="width:100%; border-radius: 1.5rem; box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.25), 0 4px 6px -4px rgb(0 0 0 / 0.25)" src="{{ 'assets/images/posts/2025-01-30-governance-dashboard-voting-results.png' | relative_url }}" alt="A dashboard-style interface displaying results of a voting process. At the top left, a bar chart titled 'Results' shows five categories (A, B, C, D, E) with purple bars representing votes, ranging from 4 to 7. To the right, under 'Participants,' it states '7 / 12' in bold. Below, a table titled 'Proposals' lists five labeled proposals (A–E) with descriptions and corresponding vote counts. Examples include Proposal A: '2018: We architected a retreat playbook...' with 6 votes, and Proposal D: '2020: We published resources and held open office hours...' with 7 votes. The design uses a clean, modern layout with light gray backgrounds and purple highlights.."/>
     </div>
      <figcaption>
             A screenshot of voting results shown on the Governance Dashboard.
