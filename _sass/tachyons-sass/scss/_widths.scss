@@ -50,6 +50,7 @@
 
 .w1 {    width: $width-1; }
 .w2 {    width: $width-2; }
+.w2-5 {  width: $width-2-5; }
 .w3 {    width: $width-3; }
 .w4 {    width: $width-4; }
 .w5 {    width: $width-5; }
@@ -86,6 +87,7 @@
 @media #{$breakpoint-not-small} {
   .w1-ns {  width: $width-1; }
   .w2-ns {  width: $width-2; }
+  .w2-5-ns { width: $width-2-5; }
   .w3-ns {  width: $width-3; }
   .w4-ns {  width: $width-4; }
   .w5-ns {  width: $width-5; }

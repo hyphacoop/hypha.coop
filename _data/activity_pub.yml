@@ -142,6 +142,10 @@ notifications:
     action: done
     id: https://hypha.coop/dripline/dweb-local-first-software-weekend.jsonld
     created_at: 1734036129
-actor_url: https://hypha.coop/about.jsonld
-actor: "@dripline@hypha.coop"
-public_key_url: https://hypha.coop/about.jsonld#main-key
+  dripline/co-operative-cats-and-deliberative-dashboards.jsonld:
+    action: done
+    id: https://hypha.coop/dripline/co-operative-cats-and-deliberative-dashboards.jsonld
+    created_at: 1738164141
+actor_url: https://staging.hypha.coop/about.jsonld
+actor: "@dripline@staging.hypha.coop"
+public_key_url: https://staging.hypha.coop/about.jsonld#main-key
