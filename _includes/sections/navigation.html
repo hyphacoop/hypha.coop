@@ -1,5 +1,4 @@
 <a class="f4 f3-ns accent link underline-hover db dn-l" href="#" aria-label="Close menu">Close menu</a>
-
 <h2 id="menu-heading" class="clip">Menu</h2>
 <ul aria-labelledby="menu-heading" class="list mv4 mv0-l pa0 f3 ml3-l pl3-l flex flex-column flex-row-l items-end">
   {% assign pages = site.pages | sort: 'order' %}
@@ -7,14 +6,97 @@
   {% assign current_page_slug = page.url | split: '/' %}
   {%- for page in pages -%}
     {% if page.menu_title %}
-      <li>
-        <a class="pa3 pv0-l db link underline-hover hover-accent mid-gray {% if page.url contains current_page_slug[1] or page.url == current_page %}accent underline{% endif %}" href="{{ page.url | relative_url }}">{{ page.menu_title }}</a>
-      </li>
+      {% if page.menu_title == "Work" %}
+        <li class="dropdown-container relative">
+          <a class="pa3 pv0-l db link underline-hover hover-accent mid-gray {% if current_page_slug[1] == 'work' %}accent underline{% endif %}" 
+             href="{{ page.url | relative_url }}" 
+             aria-haspopup="true">
+            {{ page.menu_title }}&#9662;
+          </a>
+          <ul class="dropdown-menu absolute bg-white br2 shadow-5 list pa0 mt1 dn flex-column z-1" aria-label="Work submenu">
+            <li><a class="pa3 db link underline-hover hover-accent mid-gray {% if current_page contains 'co-creation-lab' %}accent underline{% endif %}" href="/co-creation-lab">Co-Creation Lab</a></li>
+            <li><a class="pa3 db link underline-hover hover-accent mid-gray {% if current_page contains 'data-provenance' %}accent underline{% endif %}" href="/data-provenance">Data Provenance</a></li>
+            <li><a class="pa3 db link underline-hover hover-accent mid-gray {% if current_page contains 'interchain-operations' %}accent underline{% endif %}" href="/interchain-operations">Interchain Operations</a></li>
+          </ul>
+        </li>
+      {% else %}
+        <li>
+          <a class="pa3 pv0-l db link underline-hover hover-accent mid-gray {% if page.url contains current_page_slug[1] or page.url == current_page %}accent underline{% endif %}" 
+             href="{{ page.url | relative_url }}">
+            {{ page.menu_title }}
+          </a>
+        </li>
+      {% endif %}
     {% endif %}
   {%- endfor -%}
-      <li>
-        <a class="pa3 pv0-l db link underline-hover hover-accent mid-gray " href="/people#openings">Openings</a>
-      </li>
+  {% if site.openings != empty %}
+    <li>
+      <a class="pa3 pv0-l db link underline-hover hover-accent mid-gray " href="/people#openings">Openings</a>
+    </li>
+  {% endif %}
 </ul>
+<p class="gray b sans-serif db dn-l"><span class="dib mr2">Email</span><a class="accent link underline-hover dib sans dn-l normal" href="mailto:{{ site.email-hidden }}">{{ site.email }}</a></p>
 
-<p class="gray b sans-serif db dn-l "><span class="dib mr2">Email</span><a class="accent link underline-hover dib sans dn-l normal" href="mailto:{{ site.email-hidden }}">{{ site.email }}</a></p>
+<!-- CSS for dropdown functionality -->
+<style>
+  /* Desktop dropdown behavior */
+  @media screen and (min-width: 60em) {
+    .dropdown-container {
+      position: relative;
+    }
+    
+    .dropdown-container:hover .dropdown-menu {
+      display: flex;
+    }
+    
+    .dropdown-menu {
+      min-width: 300px;
+      top: 100%;
+      left: 0;
+      margin-top: 0;
+      padding-top: 0.5rem;
+    }
+  }
+  
+  /* Mobile dropdown behavior */
+  @media screen and (max-width: 60em) {
+    .dropdown-container {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+    }
+
+    .dropdown-container.active .dropdown-menu {
+      display: flex;
+    }
+    
+    .dropdown-menu {
+      position: static;
+      box-shadow: none;
+      border-left: 2px solid #ccc;
+      margin-left: 1rem;
+      border-radius: 0;
+    }
+    
+    .dropdown-menu a {
+      padding-left: 1.5rem;
+    }
+  }
+</style>
+
+<!-- JavaScript for mobile dropdown toggle -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const dropdownToggle = document.querySelector('.dropdown-container > a');
+    
+    if (dropdownToggle) {
+      dropdownToggle.addEventListener('click', function(e) {
+        // Only prevent default on mobile
+        if (window.innerWidth < 960) {
+          e.preventDefault();
+          this.parentElement.classList.toggle('active');
+        }
+      });
+    }
+  });
+</script>
