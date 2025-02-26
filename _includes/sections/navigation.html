@@ -46,7 +46,7 @@
 <!-- CSS for dropdown functionality -->
 <style>
   /* Desktop dropdown behavior */
-  @media screen and (min-width: 60em) {
+  @media screen and (min-width: 75em) {
     .dropdown-container {
       position: relative;
     }
@@ -65,7 +65,7 @@
   }
   
   /* Mobile dropdown behavior */
-  @media screen and (max-width: 60em) {
+  @media screen and (max-width: 75em) {
     .dropdown-container {
       display: flex;
       flex-direction: column;
@@ -98,7 +98,7 @@
     if (dropdownToggle) {
       dropdownToggle.addEventListener('click', function(e) {
         // Only prevent default on mobile
-        if (window.innerWidth < 960) {
+        if (window.innerWidth < 1200) {
           e.preventDefault();
           this.parentElement.classList.toggle('active');
         }
