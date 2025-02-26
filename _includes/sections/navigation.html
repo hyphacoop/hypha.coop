@@ -14,9 +14,15 @@
             {{ page.menu_title }}&nbsp;&#9662;
           </a>
           <ul class="dropdown-menu absolute bg-white br2 shadow-5 list pa0 mt1 dn flex-column z-1" aria-label="Work submenu">
-            <li><a class="pa3 db link underline-hover hover-accent mid-gray {% if current_page contains 'co-creation-lab' %}accent underline{% endif %}" href="/co-creation-lab">Co-Creation Lab</a></li>
-            <li><a class="pa3 db link underline-hover hover-accent mid-gray {% if current_page contains 'data-provenance' %}accent underline{% endif %}" href="/data-provenance">Data Provenance</a></li>
-            <li><a class="pa3 db link underline-hover hover-accent mid-gray {% if current_page contains 'interchain-operations' %}accent underline{% endif %}" href="/interchain-operations">Interchain Operations</a></li>
+            {%- for page in pages -%}
+              {% if page.work_menu_title %}
+                <li>
+                  <a class="pa3 db link underline-hover hover-accent mid-gray {% if current_page contains page.url %}accent underline{% endif %}" href="{{ page.url | relative_url }}">
+                    {{ page.title }}
+                  </a>
+                </li>
+              {% endif %}
+            {%- endfor -%}
           </ul>
         </li>
       {% else %}
