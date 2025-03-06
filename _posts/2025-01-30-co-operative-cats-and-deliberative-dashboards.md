@@ -13,7 +13,7 @@ excerpt: A review of recent governance-related projects
     <iframe style="border-radius: 1.5rem;" src="https://hyphacoop.github.io/governance-experiment/timeline/?theme=dark" height="700px" width="100%" scrolling="no" frameborder="0"></iframe>
 
  <figcaption>
-            <a href="https://hyphacoop.github.io/governance-dashboard/timeline" target="_blank">
+            <a href="https://hyphacoop.github.io/governance-experiment/timeline" target="_blank">
                 Timeline
             </a> artefact from Hypha's 'Governance Experiment'
         </figcaption>
