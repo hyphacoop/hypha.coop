@@ -1,3 +1,5 @@
+@use "tachyons-sass/scss/imports" as *;
+
 #opening {
     h2 {
         @extend .f2;

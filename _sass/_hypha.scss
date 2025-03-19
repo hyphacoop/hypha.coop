@@ -1,4 +1,7 @@
 // Hypha brand colour classes
+@use "variables" as *;
+@use "tachyons-sass/scss/imports" as *;
+@use "sass:color";
 
 .accent {
   color: $accent-color;
