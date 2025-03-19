@@ -1,8 +1,10 @@
 ---
-title: Cosmos
+title: Cosmos Hub Testnets Program
 logo: /assets/images/logos/cosmos-logo.png
 preview: true
 excerpt_separator: <!-- more -->
-practice_area: Interchain
+practice_area: Interchain Operations
 ---
-Hypha is a  <a class="link accent" href="https://hub.cosmos.network/main/hub-overview/overview.html">Cosmos Hub</a> core team and Interchain Foundation grant recipient, focusing on testnet management. <a href="/doescosmos">Read about our work</a>.<!-- more --> We manage Cosmos Hub testnets where we run infrastructure and coordinate with validators, developers, and users to test software releases and build technical capacity in the ecosystem. 
+
+From 2021 to 2025, we have managed three persistent <a class="link accent" href="https://github.com/cosmos/testnets/" target="_blank">testnets</a>, several devnets, and multiple short-lived networks, providing a robust platform for validators, developers, and integrators to onboard the Cosmos Hub, test infrastructure, and prepare for new features.
+
