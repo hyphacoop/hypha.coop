@@ -1,4 +1,7 @@
 // Hypha brand colour classes
+@use "variables" as *;
+@use "tachyons-sass/scss/imports" as *;
+@use "sass:color";
 
 .accent {
   color: $accent-color;
@@ -209,10 +212,10 @@ a.no-underline:hover {
 
 #what_we_do div.accent:hover,
 #values div.accent:hover {
-  background-color: lighten($accent-color, 45%);
+  background-color: color.adjust($accent-color, $lightness: 45%);
 }
 
-// @import 'tachyons-sass/scss/variables';
+// @use 'tachyons-sass/scss/variables';
 
 // @media #{$breakpoint-small} {
   // .flex-wrap-s { flex-wrap: wrap;}

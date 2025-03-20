@@ -25,70 +25,65 @@
 
 
  //  External Library Includes 
- @import 'scss/normalize';
+ @use 'scss/normalize';
 
-
-//  Variables 
-//  Importing here will allow you to override any variables in the modules 
-
-@import 'scss/variables';
 
 //  Debugging 
-// @import 'scss/debug-children';
-// @import 'scss/debug-grid';
+// @use 'scss/debug-children';
+// @use 'scss/debug-grid';
 
 //  Uncomment out the line below to help debug layout issues 
-//  @import 'scss/debug'; 
+//  @use 'scss/debug'; 
 
  //  Modules 
- @import 'scss/box-sizing';
- @import 'scss/aspect-ratios';
- @import 'scss/images';
- @import 'scss/background-size';
- @import 'scss/background-position';
- @import 'scss/outlines';
- @import 'scss/borders';
- @import 'scss/border-colors';
- @import 'scss/border-radius';
- @import 'scss/border-style';
- @import 'scss/border-widths';
- @import 'scss/box-shadow';
- @import 'scss/code';
- @import 'scss/coordinates';
- @import 'scss/clears';
- @import 'scss/display';
- @import 'scss/flexbox';
- @import 'scss/floats';
- @import 'scss/font-family';
- @import 'scss/font-style';
- @import 'scss/font-weight';
- @import 'scss/forms';
- @import 'scss/heights';
- @import 'scss/letter-spacing';
- @import 'scss/line-height';
- @import 'scss/links';
- @import 'scss/lists';
- @import 'scss/max-widths';
- @import 'scss/widths';
- @import 'scss/overflow';
- @import 'scss/position';
- @import 'scss/opacity';
- @import 'scss/rotations';
- @import 'scss/skins';
- @import 'scss/skins-pseudo';
- @import 'scss/spacing';
- @import 'scss/negative-margins';
- @import 'scss/tables';
- @import 'scss/text-decoration';
- @import 'scss/text-align';
- @import 'scss/text-transform';
- @import 'scss/type-scale';
- @import 'scss/typography';
- @import 'scss/utilities';
- @import 'scss/visibility';
- @import 'scss/white-space';
- @import 'scss/vertical-align';
- @import 'scss/hovers';
- @import 'scss/z-index';
- @import 'scss/nested';
- @import 'scss/styles';
+ @use 'scss/box-sizing';
+ @use 'scss/aspect-ratios';
+ @use 'scss/images';
+ @use 'scss/background-size';
+ @use 'scss/background-position';
+ @use 'scss/outlines';
+ @use 'scss/borders';
+ @use 'scss/border-colors';
+ @use 'scss/border-radius';
+ @use 'scss/border-style';
+ @use 'scss/border-widths';
+ @use 'scss/box-shadow';
+ @use 'scss/code';
+ @use 'scss/coordinates';
+ @use 'scss/clears';
+ @use 'scss/display';
+ @use 'scss/flexbox';
+ @use 'scss/floats';
+ @use 'scss/font-family';
+ @use 'scss/font-style';
+ @use 'scss/font-weight';
+ @use 'scss/forms';
+ @use 'scss/heights';
+ @use 'scss/letter-spacing';
+ @use 'scss/line-height';
+ @use 'scss/links';
+ @use 'scss/lists';
+ @use 'scss/max-widths';
+ @use 'scss/widths';
+ @use 'scss/overflow';
+ @use 'scss/position';
+ @use 'scss/opacity';
+ @use 'scss/rotations';
+ @use 'scss/skins';
+ @use 'scss/skins-pseudo';
+ @use 'scss/spacing';
+ @use 'scss/negative-margins';
+ @use 'scss/tables';
+ @use 'scss/text-decoration';
+ @use 'scss/text-align';
+ @use 'scss/text-transform';
+ @use 'scss/type-scale';
+ @use 'scss/typography';
+ @use 'scss/utilities';
+ @use 'scss/visibility';
+ @use 'scss/white-space';
+ @use 'scss/vertical-align';
+ @use 'scss/hovers';
+ @use 'scss/z-index';
+ @use 'scss/nested';
+ @use 'scss/styles';

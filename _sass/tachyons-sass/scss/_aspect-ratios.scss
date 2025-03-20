@@ -1,9 +1,8 @@
 
 // Converted Variables
 
-
 // Custom Media Query Variables
-
+@use "../../variables" as *;
 
 /*
 
@@ -57,7 +56,7 @@
     z-index: 100;
 }
 
-@media #{$breakpoint-not-small}{
+@media #{$breakpoint-not-small} {
     .aspect-ratio-ns {
       height: 0;
       position: relative;

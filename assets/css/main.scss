@@ -1,13 +1,11 @@
 ---
 ---
+@use "variables" as *;
+@use "tachyons-sass/tachyons" as *;
+@use "fonts" as *;
+@use "hypha" as *;
+@use "openings" as *;
+@use "dripline" as *;
+@use "utilities" as *;
+@use "activity_pub" as *;
 
-@import
-  "tachyons-sass/tachyons",
-  "variables",
-  "fonts",
-  "hypha",
-  "openings",
-  "dripline",
-  "utilities",
-  "activity_pub"
-;

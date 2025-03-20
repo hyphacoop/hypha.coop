@@ -3,6 +3,7 @@
 
 
 // Custom Media Query Variables
+@use "../../variables" as *;
 
 
 /*
@@ -39,3 +40,5 @@
   .cover-l { background-size: cover!important; }
   .contain-l { background-size: contain!important; }
 }
+
+
