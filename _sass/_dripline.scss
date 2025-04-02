@@ -1,3 +1,6 @@
+@use "variables" as *;
+@use "tachyons-sass/scss/imports" as *;
+
 #dripline, #cosmos {
     h2 {
         @extend .f2-ns;
