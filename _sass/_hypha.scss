@@ -206,8 +206,11 @@ a {
   @extend .link;
   @extend .underline-hover;
 }
-a.no-underline:hover {
-  @extend .no-underline;
+
+a.no-underline, 
+a.no-underline:hover,
+a.no-underline:focus {
+  text-decoration: none;
 }
 
 #what_we_do div.accent:hover,
