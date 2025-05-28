@@ -1,23 +1,29 @@
 <a class="f4 f3-ns accent link underline-hover db dn-l" href="#" aria-label="Close menu">Close menu</a>
-<h2 id="menu-heading" class="clip">Menu</h2>
-<ul aria-labelledby="menu-heading" class="list mv4 mv0-l pa0 f3 ml3-l pl3-l flex flex-column flex-row-l items-end">
+<h2 id="menu-heading" class="clip">Main navigation menu</h2>
+<ul aria-labelledby="menu-heading" class="list mv4 mv0-l pa0 f3 ml3-l pl3-l flex flex-column flex-row-l items-end" role="menubar">
   {% assign pages = site.pages | sort: 'order' %}
   {% assign current_page = page.url %}
   {% assign current_page_slug = page.url | split: '/' %}
   {%- for page in pages -%}
     {% if page.menu_title %}
       {% if page.menu_title == "Work" %}
-        <li class="dropdown-container relative">
+        <li class="dropdown-container relative" role="none">
           <a class="pa3 pv0-l db link underline-hover hover-accent mid-gray {% if current_page_slug[1] == 'work' %}accent underline{% endif %}" 
              href="{{ page.url | relative_url }}" 
-             aria-haspopup="true">
+             role="menuitem"
+             aria-haspopup="true"
+             aria-expanded="false">
             {{ page.menu_title }}&nbsp;&#9662;
           </a>
-          <ul class="dropdown-menu absolute bg-white list pa0 mt1 dn flex-column z-1" aria-label="Work submenu">
+          <ul class="dropdown-menu absolute bg-white list pa0 mt1 dn flex-column z-1" 
+              role="menu" 
+              aria-label="Work submenu">
             {%- for page in pages -%}
               {% if page.work_menu_title %}
-                <li>
-                  <a class="pa3 db link underline-hover hover-accent mid-gray {% if current_page contains page.url %}accent underline{% endif %}" href="{{ page.url | relative_url }}">
+                <li role="none">
+                  <a class="pa3 db link underline-hover hover-accent mid-gray {% if current_page contains page.url %}accent underline{% endif %}" 
+                     href="{{ page.url | relative_url }}"
+                     role="menuitem">
                     {{ page.title }}
                   </a>
                 </li>
@@ -26,9 +32,11 @@
           </ul>
         </li>
       {% else %}
-        <li>
+        <li role="none">
           <a class="pa3 pv0-l db link underline-hover hover-accent mid-gray {% if page.url contains current_page_slug[1] or page.url == current_page %}accent underline{% endif %}" 
-             href="{{ page.url | relative_url }}">
+             href="{{ page.url | relative_url }}"
+             role="menuitem"
+             {% if page.url == current_page %}aria-current="page"{% endif %}>
             {{ page.menu_title }}
           </a>
         </li>
@@ -36,8 +44,10 @@
     {% endif %}
   {%- endfor -%}
   {% if site.openings != empty %}
-    <li>
-      <a class="pa3 pv0-l db link underline-hover hover-accent mid-gray " href="/people#openings">Openings</a>
+    <li role="none">
+      <a class="pa3 pv0-l db link underline-hover hover-accent mid-gray" 
+         href="/people#openings"
+         role="menuitem">Openings</a>
     </li>
   {% endif %}
 </ul>
@@ -101,6 +111,8 @@
         // Only prevent default on mobile
         if (window.innerWidth < 1200) {
           e.preventDefault();
+          const isExpanded = this.getAttribute('aria-expanded') === 'true';
+          this.setAttribute('aria-expanded', !isExpanded);
           this.parentElement.classList.toggle('active');
         }
       });
