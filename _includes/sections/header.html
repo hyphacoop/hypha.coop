@@ -1,14 +1,14 @@
-<div class="flex sans-serif ">
+<div class="flex sans-serif " role="banner">
   <div class="w-90 w-100-ns">
     <a href="{{ "/" | relative_url }}" class="flex flex-wrap items-baseline no-underline " id="hypha-title" aria-label="Go to our home page">
       <h1 class="f4 f3-ns fw9 ttu ma0 accent mr2">Hypha</h1>
       <h2 class=" gray f4 fw5 f3-ns normal ma0">Worker Co-operative</h2></a>
   </div>
-  <nav id="menu" aria-label="Menu" class="dn flex-l flex-column flex-row-l absolute static-l bg-white w-100 items-end ph3 ph0-l right-0 top-0 bottom-0 tl-l pt4 pt0-l z-max">
+  <nav id="menu" aria-label="Main navigation" class="dn flex-l flex-column flex-row-l absolute static-l bg-white w-100 items-end ph3 ph0-l right-0 top-0 bottom-0 tl-l pt4 pt0-l z-max" role="navigation">
     {%- include sections/navigation.html -%}
-    <a href="#" class="dn-l bg-accent top-0 left-0 bottom-0 w-25 backdrop o-60 z-max absolute" tabindex="-1"></a>
+    <a href="#" class="dn-l bg-accent top-0 left-0 bottom-0 w-25 backdrop o-60 z-max absolute" tabindex="-1" aria-hidden="true"></a>
   </nav>
-  <div id="white-space" class="dn vh-95 s0 relative"></div>
+  <div id="white-space" class="dn vh-95 s0 relative" aria-hidden="true"></div>
 </div>
 
 
