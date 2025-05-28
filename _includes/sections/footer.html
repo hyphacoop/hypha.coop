@@ -1,62 +1,68 @@
-<p class="f3 f4-l fw7 lh-copy dark-gray">{{ site.footer }}</p>
-<div class="flex-l items-baseline">
-  <div class="w-100 w-50-l pr5">
-    <ul class="list pl0 flex flex-wrap f5 f4-l items-center">
-      <li class="pr3 pr4-ns mb3"><a href="{{ site.github }}" class="accent link underline-hover" target="_blank"
-          rel="noopener">
-          <img class="w2 h2 w2-5-l h2-5-l grow-large" src="/assets/images/logos/footer/github_logo.svg" alt="GitHub">
-        </a></li>
-      <li class="pr3 pr4-ns mb3"><a href="{{ site.linkedin }}" class="accent link underline-hover" target="_blank"
-          rel="noopener" data-proofer-ignore>
-          <img class="w2 h2 w2-5-l h2-5-l grow-large" src="/assets/images/logos/footer/linkedin_logo.svg" alt="LinkedIn">
-        </a></li>
-      <li class="pr3 pr4-ns mb3"><a href="{{ site.bluesky }}" class="accent link underline-hover" target="_blank"
-          rel="noopener" data-proofer-ignore>
-          <img class="w2 h2 w2-5-l h2-5-l grow-large" src="/assets/images/logos/footer/bluesky_logo.svg" alt="Bluesky">
-        </a></li>
-      <li class="pr3 pr4-ns mb3"><a href="{{ site.mastodon }}" class="accent link underline-hover" target="_blank"
-          rel="noopener me">
-          <img class="w2 h2 w2-5-l h2-5-l grow-large" src="/assets/images/logos/footer/mastodon_logo.svg" alt="Mastodon">
-        </a></li>
-      <li class="pr3 pr4-ns mb3"><a href="{{ site.url }}{{ site.rss }}" class="accent link underline-hover"
-          target="_blank" rel="noopener">
-          <img class="w2 h2 w2-5-l h2-5-l grow-large" src="/assets/images/logos/footer/rss_logo.svg" alt="RSS">
-        </a></li>
-    </ul>
-    <ul class="list pl0 flex flex-wrap f5 f4-l items-center">
-      <li class="pr3"><a href="{{ site.handbook }}" class="accent link underline-hover" target="_blank"
-        rel="noopener">
-        Handbook
-      </a></li>
-    <li class="pr3"><a href="{{ site.newsletter }}" class="accent link underline-hover" target="_blank"
-        rel="noopener">
-        Newsletter
-      </a></li>
-    </ul>
-    <p class="f6 f5-l lh-copy">Data and privacy policies are in our handbook: <a
-        href="https://handbook.hypha.coop/Policies/data.html" target="_blank" class="accent link underline-hover"
-        rel="noopener">How We Use Data</a> and <a href="https://handbook.hypha.coop/Policies/working-open.html"
-        target="_blank" class="accent link underline-hover" rel="noopener">Working Open</a>.</p>
-    <p class="f6 f5-l lh-copy">
-      This site is published using <a href="https://distributed.press/" target="_blank"
-        class="accent link underline-hover" rel="noopener">Distributed Press</a>.
-      You can <a href="https://github.com/hyphacoop/api.distributed.press" target="_blank"
-        class="accent link underline-hover" rel="noopener">use it to publish</a> on the p2p and distributed web too.
-      Distributed Web:
-      <a href="https://ipfs.distributed.press/ipns/hypha.coop{{ page.url }}" class="accent link underline-hover"
-        data-proofer-ignore>ipns://hypha.coop</a>
-    </p>
-    <p class="f6 f5-l lh-copy">This website content is licensed under a <a
-        href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" class="accent link underline-hover"
-        rel="noopener">Creative Commons Attribution-ShareAlike 4.0 International</a> license.</p>
-  </div>
-  <div class="w-100 w-50-l">
-    <h3 class="f4 normal"><span class="accent">⚑</span> Hypha is rooted in Tkaronto (Toronto), Canada.</h3>
+<footer role="contentinfo">
+  <p class="f3 f4-l fw7 lh-copy dark-gray">{{ site.footer }}</p>
+  <div class="flex-l items-baseline">
+    <div class="w-100 w-50-l pr5">
+      <nav aria-label="Social media links">
+        <ul class="list pl0 flex flex-wrap f5 f4-l items-center">
+          <li class="pr3 pr4-ns mb3"><a href="{{ site.github }}" class="accent link underline-hover" target="_blank"
+              rel="noopener" aria-label="Visit our GitHub profile">
+              <img class="w2 h2 w2-5-l h2-5-l grow-large" src="/assets/images/logos/footer/github_logo.svg" alt="GitHub">
+            </a></li>
+          <li class="pr3 pr4-ns mb3"><a href="{{ site.linkedin }}" class="accent link underline-hover" target="_blank"
+              rel="noopener" data-proofer-ignore aria-label="Visit our LinkedIn profile">
+              <img class="w2 h2 w2-5-l h2-5-l grow-large" src="/assets/images/logos/footer/linkedin_logo.svg" alt="LinkedIn">
+            </a></li>
+          <li class="pr3 pr4-ns mb3"><a href="{{ site.bluesky }}" class="accent link underline-hover" target="_blank"
+              rel="noopener" data-proofer-ignore aria-label="Visit our Bluesky profile">
+              <img class="w2 h2 w2-5-l h2-5-l grow-large" src="/assets/images/logos/footer/bluesky_logo.svg" alt="Bluesky">
+            </a></li>
+          <li class="pr3 pr4-ns mb3"><a href="{{ site.mastodon }}" class="accent link underline-hover" target="_blank"
+              rel="noopener me" aria-label="Visit our Mastodon profile">
+              <img class="w2 h2 w2-5-l h2-5-l grow-large" src="/assets/images/logos/footer/mastodon_logo.svg" alt="Mastodon">
+            </a></li>
+          <li class="pr3 pr4-ns mb3"><a href="{{ site.url }}{{ site.rss }}" class="accent link underline-hover"
+              target="_blank" rel="noopener" aria-label="Subscribe to our RSS feed">
+              <img class="w2 h2 w2-5-l h2-5-l grow-large" src="/assets/images/logos/footer/rss_logo.svg" alt="RSS">
+            </a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Footer links">
+        <ul class="list pl0 flex flex-wrap f5 f4-l items-center">
+          <li class="pr3"><a href="{{ site.handbook }}" class="accent link underline-hover" target="_blank"
+            rel="noopener" aria-label="Read our handbook">
+            Handbook
+          </a></li>
+        </ul>
+      </nav>
+      <div role="contentinfo">
+        <p class="f6 f5-l lh-copy">Data and privacy policies are in our handbook: <a
+            href="https://handbook.hypha.coop/Policies/data.html" target="_blank" class="accent link underline-hover"
+            rel="noopener">How We Use Data</a> and <a href="https://handbook.hypha.coop/Policies/working-open.html"
+            target="_blank" class="accent link underline-hover" rel="noopener">Working Open</a>.</p>
+        <p class="f6 f5-l lh-copy">
+          This site is published using <a href="https://distributed.press/" target="_blank"
+            class="accent link underline-hover" rel="noopener">Distributed Press</a>.
+          You can <a href="https://github.com/hyphacoop/api.distributed.press" target="_blank"
+            class="accent link underline-hover" rel="noopener">use it to publish</a> on the p2p and distributed web too.
+          Distributed Web:
+          <a href="https://ipfs.distributed.press/ipns/hypha.coop{{ page.url }}" class="accent link underline-hover"
+            data-proofer-ignore>ipns://hypha.coop</a>
+        </p>
+        <p class="f6 f5-l lh-copy">This website content is licensed under a <a
+            href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" class="accent link underline-hover"
+            rel="noopener">Creative Commons Attribution-ShareAlike 4.0 International</a> license.</p>
+      </div>
+    </div>
+    <div class="w-100 w-50-l">
+      <section aria-labelledby="land-acknowledgement">
+        <h3 id="land-acknowledgement" class="f4 normal"><span class="accent">⚑</span> Hypha is rooted in Tkaronto (Toronto), Canada.</h3>
 
-    <h4 class="f5 measure normal lh-copy gray">
-      Hypha acknowledges the sacred land we work on is the territory of many nations and was the subject of the Dish
-      with One Spoon Wampum Belt Covenant, an agreement to peaceably share and care for the resources around the Great
-      Lakes. Today it is still home to many First Nations, Inuit, and Métis peoples from across Turtle Island.
-    </h4>
+        <h4 class="f5 measure normal lh-copy gray">
+          Hypha acknowledges the sacred land we work on is the territory of many nations and was the subject of the Dish
+          with One Spoon Wampum Belt Covenant, an agreement to peaceably share and care for the resources around the Great
+          Lakes. Today it is still home to many First Nations, Inuit, and Métis peoples from across Turtle Island.
+        </h4>
+      </section>
+    </div>
   </div>
-</div>
+</footer>
