@@ -15,9 +15,16 @@
              aria-expanded="false">
             {{ page.menu_title }}&nbsp;&#9662;
           </a>
-          <ul class="dropdown-menu absolute bg-white list pa0 mt1 dn flex-column z-1" 
+          <ul class="dropdown-menu absolute bg-white list pa0 mt1-nl mb1-nl dn flex-column z-1 ml4-ns" 
               role="menu" 
               aria-label="Work submenu">
+            <li role="none" class="dn-l">
+              <a class="pa3 pl0 db link underline-hover hover-accent mid-gray" 
+                 href="{{ page.url | relative_url }}"
+                 role="menuitem">
+                View all work
+              </a>
+            </li>
             {%- for page in pages -%}
               {% if page.work_menu_title %}
                 <li role="none">
