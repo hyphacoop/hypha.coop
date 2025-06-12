@@ -15,13 +15,20 @@
              aria-expanded="false">
             {{ page.menu_title }}&nbsp;&#9662;
           </a>
-          <ul class="dropdown-menu absolute bg-white list pa0 mt1 dn flex-column z-1" 
+          <ul class="dropdown-menu absolute bg-white list pa0 mt1-nl mb1-nl dn flex-column z-1 ml4-ns" 
               role="menu" 
               aria-label="Work submenu">
+            <li role="none" class="dn-l">
+              <a class="pa3 pl0 db link underline-hover hover-accent mid-gray" 
+                 href="{{ page.url | relative_url }}"
+                 role="menuitem">
+                View all work
+              </a>
+            </li>
             {%- for page in pages -%}
               {% if page.work_menu_title %}
                 <li role="none">
-                  <a class="pa3 db link underline-hover hover-accent mid-gray {% if current_page contains page.url %}accent underline{% endif %}" 
+                  <a class="ml4-nl pa2 pa3-l f4 f3-l lb db link underline-hover hover-accent mid-gray {% if current_page contains page.url %}accent underline{% endif %}" 
                      href="{{ page.url | relative_url }}"
                      role="menuitem">
                     {{ page.title }}
@@ -66,12 +73,13 @@
     }
     
     .dropdown-menu {
-      min-width: 300px;
       top: 100%;
       left: 0;
       margin-top: 0;
-      padding-top: 0.5rem;
       line-height: 0.5;
+    }
+    .dropdown-menu a {
+      width: max-content;
     }
   }
   
@@ -90,13 +98,12 @@
     .dropdown-menu {
       position: static;
       box-shadow: none;
-      border-left: 2px solid #ccc;
       margin-left: 1rem;
       border-radius: 0;
     }
-    
-    .dropdown-menu a {
-      padding-left: 1.5rem;
+
+    .dropdown-menu .lb {
+      border-left: 2px solid #ccc;
     }
   }
 </style>
