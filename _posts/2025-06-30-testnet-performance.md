@@ -1,5 +1,5 @@
 ---
-image: "/assets/images/social/dripline/2025-01-30-testnet-performance.webp"
+image: "/assets/images/social/dripline/2025-06-30-testnet-performance.webp"
 title: This needs a title 
 author: Violet
 date: 2025-06-30
