@@ -7,17 +7,6 @@ acknowledgement:
 excerpt: We used experimental data to increase a blockchain’s transactions per second by 35%.
 
 ---
-
-<figure class="pb4">
-    <div class='flex flex-column items-center justify-center' style="width: 100%;">
-
-
-         <figcaption>
-            Main image goes here
-        </figcaption>
-    </div>
-</figure>
-
 Consider the scale of the global consumer economy: [Mastercard processes about 18 million transactions every single hour. That’s 5000 transactions per second, i.e. about a fifth of the 25,000 TPS (transactions per second) that Visa processes](https://capitaloneshopping.com/research/number-of-credit-card-transactions/). Both of those companies are highly centralized institutions that act as single points of failure for the vast majority of monetary transactions taking place today. Of course, decentralized alternatives exist, but even if those cryptocurrency networks were user-friendly enough for everyday use, they’d have to be heavily optimized before being able to overtake traditional means of settling payments.
 
 Meanwhile, your local dive bar is losing 2-3% of each sale to processing fees. This eats into their already thin margins and makes it harder for them to compete with a chain that can access economies of scale. If we don’t fix this soon, I’ll lose the only lesbian bar with an eight-dollar burger in a fifty-kilometre radius. Luckily, we run the testnets program for the Cosmos Hub, a crypto chain with a $2 billion dollar market cap, and thus have access to a network of [highly-skilled validators](https://testnets.hypha.coop/) that are willing to follow us into various madcap schemes to test out theories for solving the processing scale and performance problem.
@@ -54,7 +43,7 @@ Notice how the top allocator in the application is the per-transaction cache (ca
 <figure class="pb4">
     <div class='flex items-center justify-center' style="width: 100%;">
 
-        <img class="w-100" src="{{ 'assets/images/posts/2025-07-02-rates-of-allocation.png' | relative_url }}" alt="A line graph titled "Rates of Allocation" shows memory allocation rates over time for a Cosmos validator node (perf-val-1) on the perf-testnet. The x-axis spans from 13:00 to 14:05, and the y-axis shows allocation rates from 0 B/s to 200 MB/s. The green line represents the allocation rate, with two significant spikes peaking near 200 MB/s around 13:05 and 13:40. Between 13:25 and 13:35, and again after 14:05, the allocation drops close to zero. A red horizontal line is drawn at the 100 MB/s mark, indicating a threshold or performance target. The data includes labels for chain, environment, instance, job, and moniker."/>
+        <img class="w-100" src="{{ 'assets/images/posts/2025-07-02-rates-of-allocation.png' | relative_url }}" alt="A line graph titled 'Rates of Allocation' shows memory allocation rates over time for a Cosmos validator node (perf-val-1) on the perf-testnet. The x-axis spans from 13:00 to 14:05, and the y-axis shows allocation rates from 0 B/s to 200 MB/s. The green line represents the allocation rate, with two significant spikes peaking near 200 MB/s around 13:05 and 13:40. Between 13:25 and 13:35, and again after 14:05, the allocation drops close to zero. A red horizontal line is drawn at the 100 MB/s mark, indicating a threshold or performance target. The data includes labels for chain, environment, instance, job, and moniker."/>
     </div>
 </figure>
 
