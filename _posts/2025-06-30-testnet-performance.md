@@ -82,7 +82,7 @@ Excited by this, on June 3<sup>rd</sup>, we distributed a special build with the
 </figure>
 
 
-Notice how removing the top allocator in the application results in failures being more than halved. We’ve gone to about 278 successful requests per second, an improvement of about 35% in this benchmark. That, of course, is still only 5.5% of Mastercard, and the numbers get worse if we add more load. The following screenshot is from a benchmark using 9000 users instead of 2000:
+Notice how removing the top allocator in the application results in failures *being more than halved*. We’ve gone to about 278 successful requests per second, an improvement of about 35% in this benchmark. That, of course, is still only 5.5% of Mastercard, and the numbers get worse if we add more load. The following screenshot is from a benchmark using 9000 users instead of 2000:
 
 
 
@@ -98,7 +98,7 @@ Notice how removing the top allocator in the application results in failures bei
 </figure>
 
 
-Note how the successful requests per second have gone down to 552 - 343 = 209. This shows how far we still are from being able to reach the scale of traditional finance organizations. The 552 RPS attempted on this test were enough to overload the locust host that generated them, and yet only represent 11% of the load that Mastercard processes successfully. We think there’re many more opportunities for memory optimizations like the one we’ve shown here. There is almost no reason for any allocations to take place during transaction processing: we should have all the memory already allocated from the previous transaction processed. That might not be enough to take us to Mastercard scale, but it would take us a lot closer. Close enough, maybe, to where it would stop being inconvenient for your local dive to have a crypto address you can deposit to. From there, we will have to keep optimizing if we want to keep drinking. Until then!
+Note how the successful requests per second have gone down to 552 - 343 = 209. This shows how far we still are from being able to reach the scale of traditional finance organizations. The 552 RPS attempted on this test were enough to overload the locust host that generated them, and yet only represent 11% of the load that Mastercard processes *successfully*. We think there’re many more opportunities for memory optimizations like the one we’ve shown here. There is almost no reason for any allocations to take place during transaction processing: we should have all the memory already allocated from the previous transaction processed. That might not be enough to take us to Mastercard scale, but it would take us a lot closer. Close enough, maybe, to where it would stop being inconvenient for your local dive to have a crypto address you can deposit to. From there, we will have to keep optimizing if we want to keep drinking. Until then!
 
 
   
