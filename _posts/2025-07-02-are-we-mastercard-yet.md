@@ -32,10 +32,7 @@ We found about 2000 users, each user sending a new transaction every five second
 
         <img class="w-100" src="{{ 'assets/images/posts/2025-06-30-request-statistics.png' | relative_url }}" alt="A table showing performance statistics for two sets of requests. Each row has the same data: 290,578 total requests, 104,563 failures, an average response time of 412.51 milliseconds (min: 1 ms, max: 3,264 ms), and an average response size of 268.85 bytes. Highlighted in red on the right side are two metrics: RPS (Requests Per Second) at 322.74, and Failures per Second at 116.14."/>
     </div>
-      <figcaption>
-            Caption goes here
-    
-        </figcaption>
+
 </figure>
 
 As you can see, we’re successfully processing about 322 - 116 = 206 transactions per second. That’s 4.1% of Mastercard. When you consider the relative size of either project–Mastercard vs the Cosmos Hub–it’s actually fairly impressive that we’re doing those numbers at all. However, we’re clearly still not at mass-adoption numbers. So, how do we increase throughput? A good starting point for a low-latency high-throughput Golang application is often to optimize memory allocation patterns. An application that asks for a lot of memory then stops using it just as quickly is going to see a lot of garbage collections  (a [garbage collection](https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)) is when a program runs out of memory and has to go looking for chunks of memory it’s no longer using; this can stop execution in its tracks, as the program was trying to allocate new memory for a purpose and now has to stop and find room for it), each of which will take time away from transaction processing. We were able to use validator data to identify some of the biggest allocators in the blockchain:
@@ -44,12 +41,9 @@ As you can see, we’re successfully processing about 322 - 116 = 206 transactio
 <figure class="pb4">
     <div class='flex items-center justify-center' style="width: 100%;">
 
-        <img class="w-100" src="{{ 'assets/images/posts/2025-06-30-allocators-data.png' | relative_url }}" alt="Alt text needed."/>
+        <img class="w-100" src="{{ 'assets/images/posts/2025-06-30-allocators-data.png' | relative_url }}" alt="A flame graph visualization titled "Flame graph for gaiad (alloc_objects)" shows memory allocation data for a Go application, likely a Cosmos SDK-based blockchain node. The left panel lists function symbols ranked by self memory allocation, with cosmossdk.io/store/cachekv.NewStore consuming 2.09 billion samples and a total of 3.50 billion. Other high-allocation functions include github.com/tidwall/btree.NewBTreeGOptions, and various CometBFT, Prometheus, and LevelDB methods. The right panel is a color-coded flame graph showing stack traces and allocation contributions, with tall blocks representing cumulative allocation paths. This visual highlights performance hotspots and memory usage sources within the codebase."/>
     </div>
-      <figcaption>
-            Caption goes here
-    
-        </figcaption>
+  
 </figure>
 
 Notice how the top allocator in the application is the per-transaction cache (cachekv.NewStore). This makes sense: if we’re running a ton of transactions and each needs its own isolated cache, we’ll use a lot of caches. Indeed, the code path most affected by this is runTx, which is responsible for executing a single transaction. Luckily, this is actually fairly easy to fix: all we have to do is reuse the caches, making sure we clear them after each transaction. In other words, the memory remains allocated and ready to be used by the next transaction.
@@ -60,12 +54,8 @@ Notice how the top allocator in the application is the per-transaction cache (ca
 <figure class="pb4">
     <div class='flex items-center justify-center' style="width: 100%;">
 
-        <img class="w-100" src="{{ 'assets/images/posts/2025-06-30-rates-of-allocation.png' | relative_url }}" alt="Alt text needed."/>
+        <img class="w-100" src="{{ 'assets/images/posts/2025-06-30-rates-of-allocation.png' | relative_url }}" alt="A line graph titled "Rates of Allocation" shows memory allocation rates over time for a Cosmos validator node (perf-val-1) on the perf-testnet. The x-axis spans from 13:00 to 14:05, and the y-axis shows allocation rates from 0 B/s to 200 MB/s. The green line represents the allocation rate, with two significant spikes peaking near 200 MB/s around 13:05 and 13:40. Between 13:25 and 13:35, and again after 14:05, the allocation drops close to zero. A red horizontal line is drawn at the 100 MB/s mark, indicating a threshold or performance target. The data includes labels for chain, environment, instance, job, and moniker."/>
     </div>
-      <figcaption>
-            Caption goes here
-    
-        </figcaption>
 </figure>
 
 
@@ -74,12 +64,8 @@ Excited by this, on June 3<sup>rd</sup>, we distributed a special build with the
 <figure class="pb4">
     <div class='flex items-center justify-center' style="width: 100%;">
 
-        <img class="w-100" src="{{ 'assets/images/posts/2025-06-30-request-statistics-1.png' | relative_url }}" alt="Alt text needed."/>
+        <img class="w-100" src="{{ 'assets/images/posts/2025-06-30-request-statistics-1.png' | relative_url }}" alt="A dark-themed table titled “Request Statistics” shows performance data for HTTP POST requests. Two rows are visible: one for the /cosmos/tx/v1beta1/txs endpoint and one labeled “Aggregated.” Both show 289,931 requests, with 38,672 failures. The average response time is 446.57 ms, with a minimum of 3 ms and a maximum of 5038 ms. Average payload size is 252 bytes. The table highlights two metrics on the right: 321.27 requests per second (RPS) and 42.85 failures per second."/>
     </div>
-      <figcaption>
-            Caption goes here
-    
-        </figcaption>
 </figure>
 
 
@@ -90,12 +76,8 @@ Notice how removing the top allocator in the application results in failures *be
 <figure class="pb4">
     <div class='flex items-center justify-center' style="width: 100%;">
 
-        <img class="w-100" src="{{ 'assets/images/posts/2025-06-30-request-statistics-2.png' | relative_url }}" alt="Alt text needed."/>
+        <img class="w-100" src="{{ 'assets/images/posts/2025-06-30-request-statistics-2.png' | relative_url }}" alt="A dark-themed table labeled “Request Statistics” shows two rows of data for POST requests to /cosmos/tx/v1beta1/txs and an aggregated summary. Both rows show 498,763 total requests with 310,527 failures. The average response time is 6037.98 ms, with a minimum of 11 ms and a maximum of 39,155 ms. Average request size is 226.54 bytes. The rightmost columns, highlighted in red, display 552.19 requests per second (RPS) and 343.79 failures per second."/>
     </div>
-      <figcaption>
-            Caption goes here
-    
-        </figcaption>
 </figure>
 
 
