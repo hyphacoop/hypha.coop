@@ -1,10 +1,11 @@
 ---
 image: "/assets/images/social/dripline/2025-06-30-testnet-performance.webp"
-title: This needs a title 
+title: Are we Mastercard yet? A blockchain performance experiment 
 author: Violet
-date: 2025-06-30
+date: 2025-07-02
 acknowledgement: 
-excerpt: Tagline comes here
+excerpt: We used experimental data to increase a blockchain’s transactions per second by 35%.
+
 ---
 
 <figure class="pb4">
