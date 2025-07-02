@@ -29,7 +29,7 @@ We found about 2000 users, each user sending a new transaction every five second
 <figure class="pb4">
     <div class='flex items-center justify-center' style="width: 100%;">
 
-        <img class="w-100" src="{{ 'assets/images/posts/2025-06-30-request-statistics.png' | relative_url }}" alt="Alt text needed."/>
+        <img class="w-100" src="{{ 'assets/images/posts/2025-06-30-request-statistics.png' | relative_url }}" alt="A table showing performance statistics for two sets of requests. Each row has the same data: 290,578 total requests, 104,563 failures, an average response time of 412.51 milliseconds (min: 1 ms, max: 3,264 ms), and an average response size of 268.85 bytes. Highlighted in red on the right side are two metrics: RPS (Requests Per Second) at 322.74, and Failures per Second at 116.14."/>
     </div>
       <figcaption>
             Caption goes here
