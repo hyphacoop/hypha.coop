@@ -1,5 +1,5 @@
 ---
-image: "/assets/images/social/dripline/2025-06-30-testnet-performance.webp"
+image: "/assets/images/social/dripline/2025-07-02-are-we-mastercard-yet.webp"
 title: Are we Mastercard yet? A blockchain performance experiment 
 author: Violet
 date: 2025-07-02
