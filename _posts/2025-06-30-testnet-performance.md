@@ -68,7 +68,7 @@ Notice how the top allocator in the application is the per-transaction cache (ca
 </figure>
 
 
-Excited by this, on June 3<sup>rd</sup>, we distributed a special build with the performance fix to validators and re-ran our load tests from April 22<sup>nd</sup>. The results are highly encouraging. Here’s an example:
+Excited by this, on June 3<sup>rd</sup>, we distributed a special build with the performance fix to validators and re-ran our load tests from April 22<sup>nd</sup>. [The results](https://github.com/hyphacoop/testnets/tree/master/testnet-tuesdays/gameday10/reports) are highly encouraging. Here’s an example:
 
 <figure class="pb4">
     <div class='flex items-center justify-center' style="width: 100%;">
