@@ -154,6 +154,10 @@ notifications:
     action: done
     id: https://staging.hypha.coop/dripline/are-we-mastercard-yet.jsonld
     created_at: 1751490373
+  dripline/are-we-a-credit-card-yet.jsonld:
+    action: done
+    id: https://staging.hypha.coop/dripline/are-we-a-credit-card-yet.jsonld
+    created_at: 1751557685
 actor_url: https://staging.hypha.coop/about.jsonld
 actor: "@dripline@staging.hypha.coop"
 public_key_url: https://staging.hypha.coop/about.jsonld#main-key
