@@ -7,6 +7,20 @@ acknowledgement:
 excerpt: We used experimental data to increase a blockchain’s transactions per second by 35%.
 
 ---
+
+<figure class="pb4">
+    <div class='flex items-center justify-center' style="width: 100%;">
+
+        <img class="w-100" src="{{ 'assets/images/posts/2025-07-03-cityspace.jpg' | relative_url }}" alt="A top-down aerial view of a dense urban cityscape at night, with illuminated skyscrapers, grid-like streets, and glowing windows creating a complex geometric pattern. The image captures the vibrant energy and architectural density of a modern metropolis."/>
+    </div>
+      <figcaption>
+            Photo by <a href="https://www.stocksy.com/JasonDenning">Jason Denning</a> via <a href="https://www.stocksy.com/photo/3030287/city-street-aerial">Stocksy</a>
+    
+        </figcaption>
+</figure>
+
+### {{ page.excerpt }}
+
 Consider the scale of the global consumer economy: [Mastercard processes about 22 million transactions every single hour. That’s 6200 transactions per second, i.e. about two-thirds of the 9,000 TPS (transactions per second) that Visa processes](https://capitaloneshopping.com/research/number-of-credit-card-transactions/). Both of those companies are highly centralized institutions that act as single points of failure for the vast majority of monetary transactions taking place today. Of course, decentralized alternatives exist, but even if those cryptocurrency networks were user-friendly enough for everyday use, they’d have to be heavily optimized before being able to overtake traditional means of settling payments.
 
 Meanwhile, your local dive bar is losing 2-3% of each sale to processing fees. This eats into their already thin margins and makes it harder for them to compete with a chain that can access economies of scale. If we don’t fix this soon, I’ll lose the only lesbian bar with an eight-dollar burger in a fifty-kilometre radius. Luckily, we run the testnets program for the Cosmos Hub, a crypto chain with a $2 billion dollar market cap, and thus have access to a network of [highly-skilled validators](https://testnets.hypha.coop/) that are willing to follow us into various madcap schemes to test out theories for solving scalability and performance issues.
