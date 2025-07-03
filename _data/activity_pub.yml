@@ -148,7 +148,7 @@ notifications:
     created_at: 1738164141
   dripline/are-we-a-credit-card-yet.jsonld:
     action: done
-    id: https://staging.hypha.coop/dripline/are-we-a-credit-card-yet.jsonld
+    id: https://hypha.coop/dripline/are-we-a-credit-card-yet.jsonld
     created_at: 1751557685
 actor_url: https://hypha.coop/about.jsonld
 actor: "@dripline@hypha.coop"
