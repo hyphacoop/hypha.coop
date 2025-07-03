@@ -1,5 +1,5 @@
 ---
-image: "/assets/images/social/dripline/2025-07-03-are-we-mastercard-yet.webp"
+image: "/assets/images/social/dripline/2025-07-03-are-we-a-credit-card-yet.webp"
 title: Are we a credit card yet? A blockchain performance experiment 
 author: Violet
 date: 2025-07-03
