@@ -146,14 +146,6 @@ notifications:
     action: done
     id: https://hypha.coop/dripline/co-operative-cats-and-deliberative-dashboards.jsonld
     created_at: 1738164141
-  dripline/testnet-performance.jsonld:
-    action: done
-    id: https://staging.hypha.coop/dripline/testnet-performance.jsonld
-    created_at: 1751337954
-  dripline/are-we-mastercard-yet.jsonld:
-    action: done
-    id: https://staging.hypha.coop/dripline/are-we-mastercard-yet.jsonld
-    created_at: 1751490373
   dripline/are-we-a-credit-card-yet.jsonld:
     action: done
     id: https://staging.hypha.coop/dripline/are-we-a-credit-card-yet.jsonld
