@@ -2,7 +2,7 @@
 image: "/assets/images/social/dripline/2025-07-02-are-we-mastercard-yet.webp"
 title: Are we Mastercard yet? A blockchain performance experiment 
 author: Violet
-date: 2025-07-02
+date: 2025-07-03
 acknowledgement: 
 excerpt: We used experimental data to increase a blockchain’s transactions per second by 35%.
 
