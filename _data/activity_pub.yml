@@ -150,6 +150,6 @@ notifications:
     action: done
     id: https://hypha.coop/dripline/are-we-a-credit-card-yet.jsonld
     created_at: 1751557685
-actor_url: https://staging.hypha.coop/about.jsonld
-actor: "@dripline@staging.hypha.coop"
-public_key_url: https://staging.hypha.coop/about.jsonld#main-key
+actor_url: https://hypha.coop/about.jsonld
+actor: "@dripline@hypha.coop"
+public_key_url: https://hypha.coop/about.jsonld#main-key
