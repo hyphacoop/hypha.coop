@@ -11,7 +11,7 @@ excerpt: We used experimental data to increase a blockchain’s transactions per
 <figure class="pb4">
     <div class='flex items-center justify-center' style="width: 100%;">
 
-        <img class="w-100" src="{{ 'assets/images/posts/2025-07-03-cityspace.jpg' | relative_url }}" alt="A top-down aerial view of a dense urban cityscape at night, with illuminated skyscrapers, grid-like streets, and glowing windows creating a complex geometric pattern. The image captures the vibrant energy and architectural density of a modern metropolis."/>
+        <img class="w-100" src="{{ 'assets/images/posts/2025-07-03-cityscape.jpg' | relative_url }}" alt="A top-down aerial view of a dense urban cityscape at night, with illuminated skyscrapers, grid-like streets, and glowing windows creating a complex geometric pattern. The image captures the vibrant energy and architectural density of a modern metropolis."/>
     </div>
       <figcaption>
             Photo by <a href="https://www.stocksy.com/JasonDenning">Jason Denning</a> via <a href="https://www.stocksy.com/photo/3030287/city-street-aerial">Stocksy</a>
