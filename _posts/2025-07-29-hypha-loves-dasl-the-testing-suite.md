@@ -1,6 +1,6 @@
 ---
 image: "/assets/images/social/dripline/2025-07-03-are-we-a-credit-card-yet.webp"
-title: Hypha ♥️ DASL: the test suite
+title: "Hypha ♥️ DASL: the test suite"
 author: Cole
 date: 2025-07-29
 acknowledgement: 
