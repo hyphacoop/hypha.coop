@@ -46,9 +46,6 @@ Now that the grant is complete, you can see the final results on [the website](h
 The test suite provides an excellent quality indicator that makes the state of different libraries easy to see, and could help a developer decide which one they’d want to use.
 
 
-Caption: 
-
-
 <figure class="pb4">
     <div class='flex items-center justify-center' style="width: 100%;">
 
