@@ -11,7 +11,7 @@ excerpt: Writing 102 tests for science
 <figure class="pb4">
     <div class='flex items-center justify-center' style="width: 100%;">
 
-        <img class="w-100" src="{{ 'assets/images/posts/2025-07-30-concept-illustration-with-variety-hands-connect-dots-with-lines.png' | relative_url }}" alt="Four illustrated hands of varying skin tones hold and stretch lines linking nodes, forming a tangled network on a pink background."/>
+        <img class="w-100" src="{{ 'assets/images/posts/2025-07-30-concept-illustration-with-variety-hands-connect-dots-with-lines.webp' | relative_url }}" alt="Four illustrated hands of varying skin tones hold and stretch lines linking nodes, forming a tangled network on a pink background."/>
     </div>
       <figcaption>
             Illustration by <a href="https://www.stocksy.com/Iravgust">Iryna Auhustsinovich</a> via <a href="https://www.stocksy.com/illustration/6878950/concept-illustration-with-variety-hands-connect-dots-with-lines?zs=1">Stocksy</a>
