@@ -65,7 +65,7 @@ Three kinds of tests were written: roundtrip, invalid input (the decoder should 
 
 In the tests focused on dag-cbor, there were unfortunately many failures for the official Go and Rust libraries due to non-strict decoding. This is [allowed](https://ipld.io/specs/codecs/dag-cbor/spec/#decode-strictness) by the dag-cbor spec, but ideally a strict decoding option would be available. These test failures have helped identify what level of strictness libraries are adhering to, and therefore which ones would need to be rewritten to support a potentially stricter DASL specification.
 
-This project will continue to support developers in the DASL and IPFS ecosystems. The CI will automatically update the website when new library versions are released, so it will continue to reflect the ecosystem. Developers who are writing new libraries can pull in the test data and use it, while maintainers who I’ve contacted but haven’t made yet made changes will still be able to see which tests pass and fail.
+This project will continue to support developers in the DASL and IPFS ecosystems. The CI will automatically update the website when new library versions are released, so it will continue to reflect the ecosystem. Developers who are writing new libraries can pull in the test data and use it, while maintainers who I’ve contacted but haven’t yet made changes will still be able to see which tests pass and fail.
 
 Thank you to IPFS and DASL team members for all their support on this project: Mosh, Bumblefudge, Robin, and Lidel.
 
