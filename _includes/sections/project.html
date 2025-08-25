@@ -10,7 +10,7 @@
     <h2 class="f3 sans-serif accent">{{ project.title }}</h2>
     <div class="f4">
       {% if project.dripline_post %}
-        <a href='/dripline/{{ project.dripline_post }}' class='accent link underline-hover mb4'>Read the Dripline post</a>
+        <a href='/dripline/{{ project.dripline_post }}' class='accent link mb4'>Read the Dripline post</a>
       {% endif %}
     </div>
     <div class="mb2 f4 lh-copy" id="{{ project.title }}">
@@ -19,7 +19,7 @@
       </div>
       {% if project.content contains "<!-- more -->" %}
         <div class="mt2">
-          <span class="mv0 link accent pointer underline-hover w-fit" tabindex="0" role="button" aria-expanded="false" onclick="expandContent(this)" onkeydown="handleKeydown(event, this)">
+          <span class="mv0 link accent pointer w-fit" tabindex="0" role="button" aria-expanded="false" onclick="expandContent(this)" onkeydown="handleKeydown(event, this)">
             [read more]
           </span>
         </div>

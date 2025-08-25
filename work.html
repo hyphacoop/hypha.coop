@@ -36,7 +36,7 @@ order: 3
     {% if matching_practice_area.size > 0 %}
       <div class="flex flex-column mb3">
         {% if practice.slug %}
-          <a href="/{{ practice.slug }}/" class="underline-hover">
+          <a href="/{{ practice.slug }}/" class="">
         {% endif %}
         <h2 class="f2 sans-serif accent mb3 mt4">
           {{ practice.title }}
@@ -54,7 +54,7 @@ order: 3
             </p>
           {% endif %}
           <p class="measure-wide mt2 mb2 f3">
-            <a href="/{{ practice.slug }}/" class="accent link underline-hover">Read more</a>
+            <a href="/{{ practice.slug }}/" class="accent link">Read more</a>
           </p>
           {% endif %}
       </div>
