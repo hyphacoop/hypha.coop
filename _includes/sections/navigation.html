@@ -1,4 +1,4 @@
-<a class="f4 f3-ns accent link underline-hover db dn-l" href="#" aria-label="Close menu">Close menu</a>
+<a class="f4 f3-ns accent no-underline underline-hover db dn-l" href="#" aria-label="Close menu">Close menu</a>
 <h2 id="menu-heading" class="clip">Main navigation menu</h2>
 <ul aria-labelledby="menu-heading" class="list mv4 mv0-l pa0 f3 ml3-l pl3-l flex flex-column flex-row-l items-end" role="menubar">
   {% assign pages = site.pages | sort: 'order' %}
@@ -8,7 +8,7 @@
     {% if page.menu_title %}
       {% if page.menu_title == "Work" %}
         <li class="dropdown-container relative" role="none">
-          <a class="pa3 pv0-l db link underline-hover hover-accent mid-gray {% if current_page_slug[1] == 'work' %}accent underline{% endif %}" 
+          <a class="pa3 pv0-l db no-underline underline-hover hover-accent mid-gray {% if current_page_slug[1] == 'work' %}accent underline{% endif %}" 
              href="{{ page.url | relative_url }}" 
              role="menuitem"
              aria-haspopup="true"
@@ -19,7 +19,7 @@
               role="menu" 
               aria-label="Work submenu">
             <li role="none" class="dn-l">
-              <a class="pa3 pl0 db link underline-hover hover-accent mid-gray" 
+              <a class="pa3 pl0 db no-underline underline-hover hover-accent mid-gray" 
                  href="{{ page.url | relative_url }}"
                  role="menuitem">
                 View all work
@@ -28,7 +28,7 @@
             {%- for page in pages -%}
               {% if page.work_menu_title %}
                 <li role="none">
-                  <a class="ml4-nl pa2 pa3-l f4 f3-l lb db link underline-hover hover-accent mid-gray {% if current_page contains page.url %}accent underline{% endif %}" 
+                  <a class="ml4-nl pa2 pa3-l f4 f3-l lb db no-underline underline-hover hover-accent mid-gray {% if current_page contains page.url %}accent underline{% endif %}" 
                      href="{{ page.url | relative_url }}"
                      role="menuitem">
                     {{ page.title }}
@@ -40,7 +40,7 @@
         </li>
       {% else %}
         <li role="none">
-          <a class="pa3 pv0-l db link underline-hover hover-accent mid-gray {% if page.url contains current_page_slug[1] or page.url == current_page %}accent underline{% endif %}" 
+          <a class="pa3 pv0-l db no-underline underline-hover hover-accent mid-gray {% if page.url contains current_page_slug[1] or page.url == current_page %}accent underline{% endif %}" 
              href="{{ page.url | relative_url }}"
              role="menuitem"
              {% if page.url == current_page %}aria-current="page"{% endif %}>
@@ -52,13 +52,13 @@
   {%- endfor -%}
   {% if site.openings != empty %}
     <li role="none">
-      <a class="pa3 pv0-l db link underline-hover hover-accent mid-gray" 
+      <a class="pa3 pv0-l db no-underline underline-hover hover-accent mid-gray" 
          href="/people#openings"
          role="menuitem">Openings</a>
     </li>
   {% endif %}
 </ul>
-<p class="gray b sans-serif db dn-l"><span class="dib mr2">Email</span><a class="accent link underline-hover dib sans dn-l normal" href="mailto:{{ site.email-hidden }}">{{ site.email }}</a></p>
+<p class="gray b sans-serif db dn-l"><span class="dib mr2">Email</span><a class="accent no-underline underline-hover dib sans dn-l normal" href="mailto:{{ site.email-hidden }}">{{ site.email }}</a></p>
 
 <!-- CSS for dropdown functionality -->
 <style>

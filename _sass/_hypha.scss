@@ -55,9 +55,7 @@ mark {
   color: $accent-color;
 }
 
-.links-underline-hover a:hover {
-  text-decoration: none;
-}
+
 
 // Menu interaction
 
@@ -204,14 +202,15 @@ p {
 a {
   @extend .accent;
   @extend .link;
-  @extend .underline-hover;
+  text-decoration: underline;
 }
 
-a.no-underline, 
-a.no-underline:hover,
-a.no-underline:focus {
+a:hover,
+a:focus {
   text-decoration: none;
 }
+
+// Removed no-underline class as it's no longer needed
 
 #what_we_do div.accent:hover,
 #values div.accent:hover {
