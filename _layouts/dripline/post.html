@@ -28,6 +28,7 @@ layout: default
   {% if page.activity %}
     {% include activity_pub/interactions.html activity=page.activity profile=site.actor %}
   {% endif %}
+  {%- include sections.html path="newsletter.html" class="mt5" -%}
   <footer class="mt5 bt bw2 b--light-gray">
     <p><a class="link accent underline-hover" href="{% link dripline.html %}">← <span class="gray">Return to Dripline</span></a></p>
   </footer>
