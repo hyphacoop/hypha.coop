@@ -4,7 +4,7 @@ layout: default
 
 <section class="mt4 ph3 ph5-l">
   <div class="mb4 mt5">
-    <a class="sans-serif link underline-hover accent" title="See more blog posts" href="{% link cosmos.html %}">← Back
+    <a class="sans-serif link accent" title="See more blog posts" href="{% link cosmos.html %}">← Back
       to Hypha Does Cosmos</a>
   </div>
   <header class="mt5 mb6 mw8 center">
@@ -13,7 +13,7 @@ layout: default
     <p><strong>{{ page.author | upcase }}</strong></p>
     {% endif %}
     <h3 class="gray f6 f5-l lh-solid mt0">{{ page.date | date: site.date_format }}</h3>
-    <div class="lh-copy mw7 mb4 links-accent links-underline-hover">
+    <div class="lh-copy mw7 mb4 links-accent">
       {% if page.acknowledgement != "" or page.acknowledgement != nil %}
       <p><em>{{ page.acknowledgement | markdownify }}</em></p>
       {% endif %}
@@ -23,7 +23,7 @@ layout: default
     {{ content }}
   </article>
   <footer class="mt5 bt bw2 b--light-gray">
-    <p><a class="link accent underline-hover" href="{% link cosmos.html %}">← <span class="gray">See more blog
+    <p><a class="link accent" href="{% link cosmos.html %}">← <span class="gray">See more blog
           posts</span></a></p>
   </footer>
 </section>
