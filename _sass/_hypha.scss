@@ -3,6 +3,10 @@
 @use "tachyons-sass/scss/imports" as *;
 @use "sass:color";
 
+html {
+  background-color: $white;
+}
+
 .accent {
   color: $accent-color;
 }
