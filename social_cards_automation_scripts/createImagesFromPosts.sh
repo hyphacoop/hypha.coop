@@ -75,15 +75,15 @@ for post in "$POSTS_DIR"/*.md; do
 
     # Check if author is "Hypha" and adjust accordingly
     if [[ "$author" == "Hypha" ]]; then
-        # If author is Hypha, capitalize to HYPHA and use Black font, no left corner branding
+        # If author is Hypha, only show HYPHA on the left
         convert -size 1200x627 xc:"#9900FC" \
                 \( -size 900x500 -background none -fill white -font "$FONTS_DIR/Work_Sans/WorkSans-VariableFont_wght.ttf" -pointsize 64 \
                    label:"$adjusted_title" -gravity center \) -geometry +0+60  -composite \
                 -font "$FONTS_DIR/Work_Sans/WorkSans-Black.ttf" -pointsize 37 -fill white \
-                -gravity southeast -annotate +30+30 "HYPHA" \
+                -gravity southwest -annotate +30+30 "HYPHA" \
                 "$IMAGES_DIR/$(basename "$post" .md).jpg"
     else
-        # If author is not Hypha, add HYPHA in left corner and keep author name normal weight
+        # If author is not Hypha, show HYPHA on left and author name on right
         convert -size 1200x627 xc:"#9900FC" \
                 \( -size 900x500 -background none -fill white -font "$FONTS_DIR/Work_Sans/WorkSans-VariableFont_wght.ttf" -pointsize 64 \
                    label:"$adjusted_title" -gravity center \) -geometry +0+60  -composite \
