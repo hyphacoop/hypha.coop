@@ -156,7 +156,7 @@ notifications:
     created_at: 1753880183
   dripline/in-the-widening-gyre-or-thoughts-on-our-ai-epoch.jsonld:
     action: done
-    id: https://staging.hypha.coop/dripline/in-the-widening-gyre-or-thoughts-on-our-ai-epoch.jsonld
+    id: https://hypha.coop/dripline/in-the-widening-gyre-or-thoughts-on-our-ai-epoch.jsonld
     created_at: 1759333416
 actor_url: https://hypha.coop/about.jsonld
 actor: "@dripline@hypha.coop"
