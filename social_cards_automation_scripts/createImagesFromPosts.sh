@@ -52,7 +52,7 @@ adjust_text() {
 
     # Apply more aggressive wrapping if still necessary
     if [[ $text_width -gt $max_length ]]; then
-        local wrap_width=$((max_length / font_size * 3))  # More aggressive wrapping
+        local wrap_width=$((max_length / font_size * 2))  # Dynamic wrap width based on font size
         adjusted_text=$(echo "$adjusted_text" | fold -w "$wrap_width" -s)  # Wrap text to fit
     fi
 
@@ -67,7 +67,7 @@ for post in "$POSTS_DIR"/*.md; do
     author=$(awk '/^author:/{gsub(/^author: /,""); gsub(/'"'"'/,""); gsub(/"/,""); print; exit}' "$post")
 
     # Adjust title and excerpt to prevent overflow
-    adjusted_title=$(adjust_text "$title" 800 "$FONTS_DIR" "Work_Sans/WorkSans-VariableFont_wght.ttf")
+    adjusted_title=$(adjust_text "$title" 275 "$FONTS_DIR" "Work_Sans/WorkSans-VariableFont_wght.ttf")
 
     # Create an image with the title, excerpt, and branding
     jpg_file="$IMAGES_DIR/$(basename "$post" .md).jpg"
@@ -78,7 +78,7 @@ for post in "$POSTS_DIR"/*.md; do
         # If author is Hypha, capitalize to HYPHA and use Black font, no left corner branding
         convert -size 1200x627 xc:"#9900FC" \
                 \( -size 900x500 -background none -fill white -font "$FONTS_DIR/Work_Sans/WorkSans-VariableFont_wght.ttf" -pointsize 64 \
-                   caption:"$adjusted_title" -gravity center \) -geometry +0+60  -composite \
+                   label:"$adjusted_title" -gravity center \) -geometry +0+60  -composite \
                 -font "$FONTS_DIR/Work_Sans/WorkSans-Black.ttf" -pointsize 37 -fill white \
                 -gravity southeast -annotate +30+30 "HYPHA" \
                 "$IMAGES_DIR/$(basename "$post" .md).jpg"
@@ -86,7 +86,7 @@ for post in "$POSTS_DIR"/*.md; do
         # If author is not Hypha, add HYPHA in left corner and keep author name normal weight
         convert -size 1200x627 xc:"#9900FC" \
                 \( -size 900x500 -background none -fill white -font "$FONTS_DIR/Work_Sans/WorkSans-VariableFont_wght.ttf" -pointsize 64 \
-                   caption:"$adjusted_title" -gravity center \) -geometry +0+60  -composite \
+                   label:"$adjusted_title" -gravity center \) -geometry +0+60  -composite \
                 -font "$FONTS_DIR/Work_Sans/WorkSans-Black.ttf" -pointsize 37 -fill white \
                 -gravity southwest -annotate +30+30 "HYPHA" \
                 -font "$FONTS_DIR/Work_Sans/WorkSans-VariableFont_wght.ttf" -pointsize 37 -fill white \
