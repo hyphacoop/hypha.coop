@@ -9,7 +9,7 @@
 # This script assumes that the markdown files are in the root of the _posts directory
 
 # Directory where your markdown post files are stored
-POSTS_DIR="./"
+POSTS_DIR="../_posts"
 
 # Directory where fonts are stored
 FONTS_DIR="fonts"
@@ -63,27 +63,43 @@ adjust_text() {
 # Loop through each markdown post file
 for post in "$POSTS_DIR"/*.md; do
     # Extract the title, excerpt, and author
-    title=$(awk '/^title:/{gsub(/^title: /,""); gsub(/'"'"'/,""); print; exit}' "$post")
-    author=$(awk '/^author:/{gsub(/^author: /,""); gsub(/'"'"'/,""); print; exit}' "$post")
+    title=$(awk '/^title:/{gsub(/^title: /,""); gsub(/'"'"'/,""); gsub(/"/,""); print; exit}' "$post")
+    author=$(awk '/^author:/{gsub(/^author: /,""); gsub(/'"'"'/,""); gsub(/"/,""); print; exit}' "$post")
 
     # Adjust title and excerpt to prevent overflow
-    adjusted_title=$(adjust_text "$title" 275 "$FONTS_DIR" "/Work_Sans/WorkSans-VariableFont_wght.ttf")
+    adjusted_title=$(adjust_text "$title" 275 "$FONTS_DIR" "Work_Sans/WorkSans-VariableFont_wght.ttf")
 
     # Create an image with the title, excerpt, and branding
     jpg_file="$IMAGES_DIR/$(basename "$post" .md).jpg"
     webp_file="$IMAGES_DIR/$(basename "$post" .md).webp"
 
-    # Create an image with the title, excerpt, and branding
-    convert -size 1200x627 xc:"#9900FC" \
-            \( -size 900x500 -background none -fill white -font "$FONTS_DIR/Work_Sans/WorkSans-VariableFont_wght.ttf" -pointsize 64 \
-               label:"$adjusted_title" -gravity center \) -geometry +0+60  -composite \
-            -font "$FONTS_DIR/Work_Sans/WorkSans-VariableFont_wght.ttf" -pointsize 34 -fill white \
-            -gravity southeast -annotate +30+30 "$author" \
-            "$IMAGES_DIR/$(basename "$post" .md).jpg"
+    # Check if author is "Hypha" and adjust accordingly
+    if [[ "$author" == "Hypha" ]]; then
+        # If author is Hypha, only show HYPHA on the left
+        convert -size 1200x627 xc:"#9900FC" \
+                \( -size 900x500 -background none -fill white -font "$FONTS_DIR/Work_Sans/WorkSans-VariableFont_wght.ttf" -pointsize 64 \
+                   label:"$adjusted_title" -gravity center \) -geometry +0+60  -composite \
+                -font "$FONTS_DIR/Work_Sans/WorkSans-Black.ttf" -pointsize 37 -fill white \
+                -gravity southwest -annotate +30+30 "HYPHA" \
+                "$IMAGES_DIR/$(basename "$post" .md).jpg"
+    else
+        # If author is not Hypha, show HYPHA on left and author name on right
+        convert -size 1200x627 xc:"#9900FC" \
+                \( -size 900x500 -background none -fill white -font "$FONTS_DIR/Work_Sans/WorkSans-VariableFont_wght.ttf" -pointsize 64 \
+                   label:"$adjusted_title" -gravity center \) -geometry +0+60  -composite \
+                -font "$FONTS_DIR/Work_Sans/WorkSans-Black.ttf" -pointsize 37 -fill white \
+                -gravity southwest -annotate +30+30 "HYPHA" \
+                -font "$FONTS_DIR/Work_Sans/WorkSans-VariableFont_wght.ttf" -pointsize 37 -fill white \
+                -gravity southeast -annotate +30+30 "$author" \
+                "$IMAGES_DIR/$(basename "$post" .md).jpg"
+    fi
 
     # Convert JPG to WebP
     cwebp -q 100 "$jpg_file" -o "$webp_file"
 
 done
+
+# Clean up JPG files, keeping only WebP versions
+rm -f "$IMAGES_DIR"/*.jpg
 
 echo "Social cards generated in $IMAGES_DIR"
