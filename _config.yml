@@ -20,6 +20,8 @@ description: >-
   We cultivate collective growth and meaningful livelihoods through learning and building technologies together.
 
 markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
 sass:
   style: compressed
 
