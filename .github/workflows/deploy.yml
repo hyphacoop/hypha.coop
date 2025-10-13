@@ -95,9 +95,11 @@ jobs:
           site_url: hypha.coop
 
       - name: Notify AP
+        if: github.ref == 'refs/heads/master' || (github.event_name == 'pull_request' && github.base_ref == 'master')
         run: bundle exec jekyll notify --key /tmp/secret.key --verbose --trace
 
       - name: Commit ActivityPub Data
+        if: github.ref == 'refs/heads/master' || (github.event_name == 'pull_request' && github.base_ref == 'master')
         uses: EndBug/add-and-commit@v9 
         with:
           add: '_data/activity_pub.yml'
