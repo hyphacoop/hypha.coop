@@ -1,0 +1,127 @@
+// Hypha-themed syntax highlighting
+@use "variables" as *;
+
+// Base code block styling
+.highlight {
+  background-color: $near-white;
+  border-radius: $border-radius-2;
+  padding: $spacing-medium;
+  overflow-x: auto;
+  margin: $spacing-large 0;
+
+  pre {
+    margin: 0;
+    font-family: $code;
+    font-size: 0.9em;
+    line-height: 1.5;
+  }
+}
+
+// Inline code
+code {
+  font-family: $code;
+  background-color: $near-white;
+  padding: 0.1em 0.3em;
+  border-radius: $border-radius-1;
+  font-size: 0.9em;
+}
+
+// Don't double-wrap code blocks
+.highlight code {
+  background-color: transparent;
+  padding: 0;
+}
+
+// Syntax highlighting colors using Hypha brand
+.highlight {
+  // Comments - muted gray
+  .c, .cm, .cp, .c1, .cs { 
+    color: $gray; 
+    font-style: italic; 
+  }
+  
+  // Keywords - primary accent purple
+  .k, .kc, .kd, .kn, .kp, .kr, .kt { 
+    color: $accent-color; 
+    font-weight: 600; 
+  }
+  
+  // Strings - secondary accent green
+  .s, .sb, .sc, .sd, .s2, .se, .sh, .si, .sx, .sr, .s1, .ss { 
+    color: $dark-green; 
+  }
+  
+  // Numbers - orange
+  .m, .mf, .mh, .mi, .il, .mo, .mb, .mx { 
+    color: $orange; 
+  }
+  
+  // Functions - dark blue
+  .n, .na, .nb, .nc, .no, .nd, .ni, .ne, .nf, .nl, .nn, .nx, .py, .nt, .nv { 
+    color: $dark-blue; 
+  }
+  
+  // Operators - mid gray
+  .o, .ow { 
+    color: $mid-gray; 
+  }
+  
+  // Built-in types - light purple
+  .bp { 
+    color: $light-purple; 
+  }
+  
+  // Variables - near black
+  .vc, .vg, .vi { 
+    color: $near-black; 
+  }
+  
+  // Errors - red
+  .err, .gr, .gt { 
+    color: $red; 
+  }
+  
+  // Generic headings - accent
+  .gh { 
+    color: $accent-color; 
+    font-weight: 600; 
+  }
+  
+  // Generic subheadings - dark gray
+  .gu { 
+    color: $dark-gray; 
+    font-weight: 600; 
+  }
+  
+  // Generic inserted - green
+  .gi { 
+    color: $green; 
+    background-color: $washed-green; 
+  }
+  
+  // Generic deleted - red
+  .gd { 
+    color: $red; 
+    background-color: $washed-red; 
+  }
+  
+  // Generic emphasized - italic
+  .ge { 
+    font-style: italic; 
+  }
+  
+  // Generic strong - bold
+  .gs { 
+    font-weight: 600; 
+  }
+  
+  // Generic prompt/output - gray
+  .gp, .go { 
+    color: $gray; 
+  }
+  
+  // Whitespace - nearly invisible
+  .w { 
+    color: $light-gray; 
+  }
+}
