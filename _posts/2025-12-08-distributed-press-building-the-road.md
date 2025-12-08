@@ -1,5 +1,5 @@
 ---
-image: "/assets/images/social/dripline/2025-12-08-distributed-press.webp"
+image: "/assets/images/social/dripline/2025-12-08-distributed-press-building-the-road.webp"
 title: "Distributed Press: Building the Road as We Travel"
 author: Hypha
 date: 2025-12-08
