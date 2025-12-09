@@ -1,15 +1,15 @@
 ---
-image: "/assets/images/social/dripline/2025-12-08-distributed-press-building-the-road.webp"
-title: "Distributed Press: ‘Building the Road as We Travel’*"
+image: "/assets/images/social/dripline/2025-12-09-distributed-press-building-the-road.webp"
+title: "Distributed Press: 'Building the Road as We Travel'*"
 author: Hypha
-date: 2025-12-08
+date: 2025-12-09
 acknowledgement: LLM text is from Gemini 3 Pro, with some light editing
 excerpt: Reflections on building decentralized publishing infrastructure
 ---
 
 <div class="interactive-story-container">
   <iframe 
-    src="/interactive/distributed-press.html" 
+    src="/assets/interactive/distributed-press.html" 
     style="width: 100%; height: 90vh; border: none; border-radius: 1rem; margin-bottom: 3rem;"
     title="Interactive Distributed Press Story"
     scrolling="no">
