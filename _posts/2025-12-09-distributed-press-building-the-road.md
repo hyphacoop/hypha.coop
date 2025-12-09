@@ -19,7 +19,7 @@ excerpt: Reflections on building decentralized publishing infrastructure
   </p>
 </div>
 
-Distributed Press was born where code meets cooperatives. As Hypha's first internally incubated product, it was designed to solve a problem that is increasingly urgent: an unhealthy reliance on centralized publishing tools. But while the technology was ready, the industry wasn't. Between dwindling budgets and institutional inertia, the media world moves slowly.  While Hypha will continue to maintain the [Distributed Press] (https://distributed.press/) architecture, our grant funding from the [Filecoin Foundation for the Decentralized Web (FFDW)](https://ffdweb.org/) has concluded, marking an opportunity to reflect on the project's rewards and challenges.
+Distributed Press was born where code meets cooperatives. As Hypha's first internally incubated product, it was designed to solve a problem that is increasingly urgent: an unhealthy reliance on centralized publishing tools. But while the technology was ready, the industry wasn't. Between dwindling budgets and institutional inertia, the media world moves slowly.  While Hypha will continue to maintain the [Distributed Press](https://distributed.press/) architecture, our grant funding from the [Filecoin Foundation for the Decentralized Web (FFDW)](https://ffdweb.org/) has concluded, marking an opportunity to reflect on the project's rewards and challenges.
 
 ### Defining the Protagonist's Perspective
 
@@ -80,7 +80,7 @@ Firstly, the team delivered on the original vision of an easy to use, decentrali
 > "I really like the last slide call to action: 'Become a pioneer in the new era of content distribution. It may be the ultimate future of publishing.' - don't be afraid to use it often and everywhere. It may become your brand slogan eventually." - Petr
 
 
-Although the social media component of the project shifted as the project matured, the Social Inbox and Social Reader are two very interesting features of the Distributed Press stack. Running against the current dominant social media trends, the [Social Inbox}(https://distributed.press/2023/12/05/announcing-distributed-press-social-inbox-1-0/) and [Social Reader](https://distributed.press/2024/05/03/social-reader-is-out/) embed user control, privacy and care into the world of micro-chat. 
+Although the social media component of the project shifted as the project matured, the Social Inbox and Social Reader are two very interesting features of the Distributed Press stack. Running against the current dominant social media trends, the [Social Inbox](https://distributed.press/2023/12/05/announcing-distributed-press-social-inbox-1-0/) and [Social Reader](https://distributed.press/2024/05/03/social-reader-is-out/) embed user control, privacy and care into the world of micro-chat. 
 
 The Social Reader is a privacy-first personal reader for subscribing to content published on federated social media; we're fond of saying it's for all the lurkers out there. Although it's powered by ActivityPub, you don't need a Mastodon account to use it. It's local-first, running off your own computer. It works offline. (It's what you'll all be using when the next solar flare takes out the power grid for a day or two.)
 
@@ -135,7 +135,7 @@ Through conversations with artists and activists, the team attempts to form a co
 
 ## 2020
 
-**Building the Foundation** - The initial $50,000 from Grant for the Web (Coil, later Interledger) supports the team, comprised of Hypha members and two independent contractors, in creating the proof of concept: both the basic publishing technology and the magazine itself.
+**Building the Foundation** - The initial funds from Grant for the Web (Coil, later Interledger) supports the team, comprised of Hypha members and two independent contractors, in creating the proof of concept: both the basic publishing technology and the magazine itself.
 
 **Call Series Begins** - The team initiates conversations exploring what's usable and promising in the decentralized web space.
 
@@ -153,7 +153,7 @@ Through conversations with artists and activists, the team attempts to form a co
 
 ## July 2022
 
-**Major Funding Secured** - Agreement signed with Filecoin Foundation for the Decentralized Web (FFDW) for $447,313, with four key milestones:
+**Major Funding Secured** - Six-figure agreement signed with Filecoin Foundation for the Decentralized Web (FFDW) with four key milestones:
 
 **Milestone 1: No-Code DWeb Publishing**
 - COMPOST to be published on DWeb through Sutty CMS as a toggle feature  
@@ -161,7 +161,7 @@ Through conversations with artists and activists, the team attempts to form a co
 - White-labeled COMPOST theme
 
 **Milestone 2: Decentralized Social Messages**
-- Web mentions integration into the DWeb
+- Web Mentions integration into the DWeb
 
 **Milestone 3: Versioned Content Discovery and Redundancy**
 - Website version capture (similar to Wayback Machine)  
@@ -194,7 +194,7 @@ Through conversations with artists and activists, the team attempts to form a co
 
 ## May 2023
 
-**COMPOST Issue 3** - Showcases Milestone 1 features with tutorials and workshop materials.
+**COMPOST Issue 3 - “Water Bodies”** is published. This issue showcases sutty’s reusable COMPOST theme.
 
 ## July 2023
 
@@ -216,7 +216,7 @@ Through conversations with artists and activists, the team attempts to form a co
 
 **Milestone 4 Re-Evaluation** - Project pivots based on community feedback, shifting focus toward static site generator integration and micropayment systems for the Fediverse. UX workshop report completed.
 
-> Patterns of online communication and organization are changing, and Distributed Press has pivoted to meet this demand. Typically, people use websites as static repositories of information while social media allows for more fluid two-way conversation. In the coming milestone, the Distributed Press team is aiming to create a space that merges the easy connections of social media with the richer content of static websites. We believe the features highlighted in this milestone will create a more vibrant community ecosystem, while also retaining the safeguards of privacy protection that are required by many of our users…. While the past milestone focused on sending information outwards, Milestone 4 will improve the ability to receive and display interactions with the Fediverse. Citizen journalists using the Sutty CMS will be able to show comments and interactions on their websites, while Social Reader users will be able to see replies on posts. Mastodon users will be able to see most posts retroactively when they follow an account.  (Revised Milestone 4 document, as submitted to FFDW)
+> Patterns of online communication and organization are changing, and Distributed Press has pivoted to meet this demand. Typically, people use websites as static repositories of information while social media allows for more fluid two-way conversation. In the coming milestone, the Distributed Press team is aiming to create a space that merges the easy connections of social media with the richer content of static websites. We believe the features highlighted in this milestone will create a more vibrant community ecosystem, while also retaining the safeguards of privacy protection that are required by many of our users…. While the past milestone focused on sending information outwards, Milestone 4 will improve the ability to receive and display interactions with the Fediverse. Citizen journalists using the Sutty CMS will be able to show comments and interactions on their websites, while Social Reader users will be able to see replies on posts. Mastodon users will be able to see most posts retroactively when they follow an account.  *(Revised Milestone 4 document, as submitted to FFDW)*
 
 ## Summer 2024
 
@@ -228,8 +228,8 @@ Sutty reworks the onboarding flow, with a new Get Started page pointing potentia
 
 ## Spring 2025
 
-**The Final Chapter** - FFDW generously provides a final injection of funds for the project, allowing the team to create an Explore page, an Index of all sites using Distributed Press [explore.distributed.press/](https://explore.distributed.press/). And Sutty launches a Resilience Challenge, offering funding to two social activist organizations ([Desarquivo](https://distributed.press/2025/03/04/distributed-press-resilience-challenge-restoring-desarquivo/) and [TLGB Bolivia](https://distributed.press/2025/03/04/colectivo-tlgb-bolivia-keeping-digital-spaces-alive/))  to help them recover their website and host their content on the distributed web. 
+**The Final Chapter** - FFDW generously provides a final injection of funds for the project, allowing the team to create an [Explore](https://explore.distributed.press/) page, an Index of all sites using Distributed Press. And Sutty launches a Resilience Challenge, offering funding to two social activist organizations ([Desarquivo](https://distributed.press/2025/03/04/distributed-press-resilience-challenge-restoring-desarquivo/) and [TLGB Bolivia](https://distributed.press/2025/03/04/colectivo-tlgb-bolivia-keeping-digital-spaces-alive/))  to help them recover their website and host their content on the distributed web. 
 
 > Distributed Press is an open source publishing tool for the World Wide Web and the Distributed Web. It automates publishing and hosting to decentralized protocols including ActivityPub, Hypercore, IPFS, and Bittorrent.
 
-> This innovative tool enhances any Content Management System (CMS) by integrating peer-to-peer (P2P) and decentralized protocols for efficient content distribution and archiving. We also offer a suite of tools (the Social Inbox and Social Reader) for interacting with the Fediverse via ActivityPub. (From the final report to FFDW)
+> This innovative tool enhances any Content Management System (CMS) by integrating peer-to-peer (P2P) and decentralized protocols for efficient content distribution and archiving. We also offer a suite of tools (the Social Inbox and Social Reader) for interacting with the Fediverse via ActivityPub. *(From the final report to FFDW)*
