@@ -21,6 +21,11 @@
     },
     {
       "year": "2021",
+      "id": "fa-gem",
+      "legend": "Ruby API Client is Born. Sutty writes the ruby api client for the first version of DP, kickstarting conversations about integration and the common grant application."
+    },
+    {
+      "year": "2021",
       "id": "fa-rocket",
       "legend": "Distributed Press v0.1 Released. The first public release of Distributed Press, enabling websites to be published across HTTP, IPFS, and Hypercore protocols."
     },
