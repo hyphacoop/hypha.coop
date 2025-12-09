@@ -26,6 +26,7 @@
     .container {
       margin: 0 auto;
       padding: 2rem;
+      padding-bottom: 3rem;
       min-height: 100vh;
     }
 
@@ -33,12 +34,20 @@
       background: white;
       border-radius: 0.5rem;
       padding: 3rem;
+      padding-bottom: 0.5rem;
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
       display: none;
-      animation: fadeIn 0.5s ease;
       width: 100%;
       max-width: 1200px;
       margin: 0 auto;
+      scrollbar-color: #9900FC #f4f4f4;
+      max-height: calc(100vh - 4rem);
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+    
+    .page.animated {
+      animation: fadeIn 0.5s ease;
     }
 
     .page.active {
@@ -100,6 +109,7 @@
       display: flex;
       gap: 1rem;
       margin-top: 2rem;
+      margin-bottom: 1rem;
       justify-content: space-between;
       align-items: center;
     }
@@ -180,7 +190,7 @@
     .animation-toggle {
       position: fixed;
       top: 3rem;
-      right: 3rem;
+      right: 3.5rem;
       z-index: 1000;
       background: white;
       border: 2px solid #9900FC;
@@ -221,6 +231,8 @@
       gap: 0.75rem;
       margin: 1rem 0;
       font-size: 0.85rem;
+      max-width: 100%;
+      width: 100%;
     }
 
     .swot-box {
@@ -286,13 +298,20 @@
     @media (max-width: 768px) {
       .container {
         padding: 1rem;
+        padding-bottom: 2rem;
       }
 
       .page {
         padding: 1.5rem;
-        max-height: calc(100vh - 2rem);
+        padding-top: 3rem;
+        max-height: 96vh;
         overflow-y: auto;
         overflow-x: hidden;
+      }
+
+      .animation-toggle {
+        top: 2rem;
+        right: 2rem;
       }
 
       h1 {
@@ -351,19 +370,12 @@
         width: 8px;
         height: 8px;
       }
-
-      .animation-toggle {
-        top: 1.5rem;
-        right: 1.5rem;
-        padding: 0.5rem 0.8rem;
-        font-size: 0.8rem;
-      }
     }
   </style>
 </head>
 <body>
   <button class="animation-toggle" onclick="toggleAnimations()" id="animToggle">
-    <span id="animText">Text animations</span>
+    <span id="animText">Animations ON</span>
   </button>
 
   <div class="container">
@@ -448,7 +460,7 @@
       <p>Media organizations know that the centralization of their distribution infrastructure is a looming cliff, but as of now—December 2025—it's still a tomorrow problem.</p>
       <p>Is Distributed Press just ahead of its time? The reality is that when tomorrow finally comes, it's likely that technology will have evolved and someone will put forth a simpler/faster/better solution.</p>
       <p>As Petr, our business development lead, noted in his final report: <em>"Assumption that journalists or publishers care about their work being distributed to DWeb is false."</em></p>
-      <p style="margin-top: 1.5rem; text-align: center; color: #9900FC;"><strong>→ Let's examine this through a SWOT analysis</strong></p>
+      <h3>Let's examine this through a SWOT analysis</h3>      
       <div class="controls">
         <button class="btn" onclick="prevPage()">Previous</button>
         <div class="progress">
@@ -470,8 +482,7 @@
 
     <!-- Page 5: SWOT Analysis -->
     <div class="page" data-page="5">
-      <h2 style="text-align: center;">SWOT Analysis</h2>
-      <p style="text-align: center; font-size: 0.9rem; color: #666; margin-bottom: 1rem;"><em>From the 2025 Distributed Press Marketing Plan</em></p>
+      <h2>SWOT Analysis</h2>
       
       <div class="swot-grid">
         <div class="swot-box swot-strengths">
@@ -650,9 +661,9 @@
       <h2>Redefining Success</h2>
       <div class="typewriter" id="typewriter-10"></div>
       <p>We're figuring this out in real-time. The old startup playbook doesn't apply. The old open-source playbook doesn't quite fit either. It's awkward, and it's contradictory, but it's also necessary. This is the real work.</p>
-      <p style="margin-top: 2rem; text-align: center; color: #9900FC; font-weight: 600;">
+      <h3>
         The goal is to build a town so good that it proves you can have a thriving, sustainable community living on open, public roads.
-      </p>
+      </h3>
       <div class="controls">
         <button class="btn" onclick="prevPage()">Previous</button>
         <div class="progress">
@@ -703,7 +714,10 @@
   <script>
     let currentPage = 1;
     const totalPages = 11;
-    let animationsEnabled = true;
+    
+    // Respect user's motion preferences
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let animationsEnabled = !prefersReducedMotion;
     
     const typewriterTexts = {
       2: "I'm now fully immersed in embodying the perspective of a Distributed Press team member. We just filed our Q3 progress report for the Filecoin Foundation for the Decentralized Web. It's a strange document. Half of it is a progress update on Distributed Press. The other half is, essentially, a justification for our existence. It's an invoice stapled to a manifesto.",
@@ -720,7 +734,7 @@
       
       if (animationsEnabled) {
         toggle.classList.remove('disabled');
-        text.textContent = 'Text animations';
+        text.textContent = 'Animations ON';
         toggle.title = 'Click to disable typewriter animations';
       } else {
         toggle.classList.add('disabled');
@@ -729,6 +743,15 @@
       }
       
       // Re-render current page to apply animation setting
+      const currentPageEl = document.querySelector(`.page[data-page="${currentPage}"]`);
+      if (currentPageEl) {
+        if (animationsEnabled) {
+          currentPageEl.classList.add('animated');
+        } else {
+          currentPageEl.classList.remove('animated');
+        }
+      }
+      
       const currentTypewriter = document.getElementById(`typewriter-${currentPage}`);
       if (currentTypewriter && typewriterTexts[currentPage]) {
         currentTypewriter.textContent = '';
@@ -762,6 +785,13 @@
       const targetPage = document.querySelector(`.page[data-page="${pageNum}"]`);
       if (targetPage) {
         targetPage.classList.add('active');
+        
+        // Add/remove animated class based on animation preference
+        if (animationsEnabled) {
+          targetPage.classList.add('animated');
+        } else {
+          targetPage.classList.remove('animated');
+        }
         
         // Update ALL progress dots across ALL pages
         pages.forEach(page => {
@@ -835,6 +865,18 @@
 
     // Initialize
     initializeProgressDots();
+    
+    // Update toggle button to reflect initial state
+    const toggle = document.getElementById('animToggle');
+    const text = document.getElementById('animText');
+    if (!animationsEnabled) {
+      toggle.classList.add('disabled');
+      text.textContent = 'Animations OFF';
+      toggle.title = 'Animations disabled (respecting your system preference for reduced motion). Click to enable.';
+    } else {
+      toggle.title = 'Click to disable typewriter animations';
+    }
+    
     showPage(1);
   </script>
 </body>
