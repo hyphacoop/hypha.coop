@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Distributed Press: Building the Road as We Travel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, 'avenir next', avenir, helvetica, 'helvetica neue', ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
+      color: #333;
+      line-height: 1.5;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .container {
+      margin: 0 auto;
+      padding: 2rem;
+      padding-bottom: 3rem;
+      min-height: 100vh;
+    }
+
+    .page {
+      background: white;
+      border-radius: 0.5rem;
+      padding: 3rem;
+      padding-bottom: 0.5rem;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+      display: none;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      scrollbar-color: #9900FC #f4f4f4;
+      max-height: calc(100vh - 4rem);
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+    
+    .page.animated {
+      animation: fadeIn 0.5s ease;
+    }
+
+    .page.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h1 {
+      color: #9900FC;
+      font-size: 3rem;
+      margin-bottom: 1.5rem;
+      font-weight: 400;
+      line-height: 1;
+    }
+
+    h2 {
+      color: #9900FC;
+      font-size: 2rem;
+      margin: 1rem 0 0.75rem;
+      font-weight: 400;
+    }
+
+    h3 {
+      color: #9900FC;
+      font-size: 1.5rem;
+      margin: 1.5rem 0 0.5rem;
+      font-weight: 400;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+      color: #333;
+      line-height: 1.5;
+    }
+
+    .typewriter {
+      font-style: italic;
+      color: #555;
+      background: #f4f4f4;
+      padding: 1rem 1.5rem;
+      border-left: 0.25rem solid #9900FC;
+      margin: 1.5rem 0;
+      border-radius: 0.5rem;
+      min-height: 60px;
+    }
+
+    .controls {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .btn {
+      background: #9900FC;
+      color: white;
+      border: none;
+      padding: 0.8rem 2rem;
+      font-size: 1rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-weight: 400;
+    }
+
+    .btn:hover {
+      background: #7a00cc;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(153, 0, 252, 0.4);
+    }
+
+    .btn:disabled {
+      background: #ccc;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    .progress {
+      display: flex;
+      gap: 0.5rem;
+      justify-content: center;
+    }
+
+    .progress-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #ccc;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      border: none;
+      padding: 0;
+    }
+
+    .progress-dot:hover {
+      background: #ddd;
+      transform: scale(1.2);
+    }
+
+    .progress-dot.active {
+      background: #9900FC;
+      transform: scale(1.3);
+    }
+
+    .progress-dot.active:hover {
+      background: #7a00cc;
+      transform: scale(1.4);
+    }
+
+    .timeline-embed {
+      width: 100%;
+      min-height: 600px;
+      border: dotted #9900FC;
+      border-radius: 0.5rem;
+      margin: 1.5rem 0;
+    }
+
+    .note {
+      background: #f4f4f4;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      margin: 1rem 0;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .animation-toggle {
+      position: fixed;
+      top: 3rem;
+      right: 3.5rem;
+      z-index: 1000;
+      background: white;
+      border: 2px solid #9900FC;
+      color: #9900FC;
+      padding: 0.75rem 1.25rem;
+      border-radius: 2rem;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .animation-toggle:hover {
+      background: #9900FC;
+      color: white;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(153, 0, 252, 0.3);
+    }
+
+    .animation-toggle.disabled {
+      background: #f4f4f4;
+      border-color: #ccc;
+      color: #666;
+    }
+
+    .animation-toggle.disabled:hover {
+      background: #e8e8e8;
+      color: #333;
+    }
+
+    .swot-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+      margin: 1rem 0;
+      font-size: 0.85rem;
+      max-width: 100%;
+      width: 100%;
+    }
+
+    .swot-box {
+      background: white;
+      border-radius: 0.4rem;
+      padding: 0.75rem;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .swot-box:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    }
+
+    .swot-box h4 {
+      color: white;
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      padding: 0.4rem 0.75rem;
+      border-radius: 0.3rem;
+      text-align: center;
+    }
+
+    .swot-box ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .swot-box li {
+      padding: 0.3rem 0;
+      font-size: 0.8rem;
+      line-height: 1.3;
+      color: #555;
+      border-bottom: 1px solid #f5f5f5;
+    }
+
+    .swot-box li:last-child {
+      border-bottom: none;
+    }
+
+    .swot-box li::before {
+      content: "•";
+      color: #9900FC;
+      font-weight: bold;
+      display: inline-block;
+      width: 0.8em;
+      margin-right: 0.4rem;
+      font-size: 0.9em;
+    }
+
+    .swot-box {
+      border-top: 3px solid #9900FC;
+    }
+
+    .swot-box h4 {
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 1rem;
+        padding-bottom: 2rem;
+      }
+
+      .page {
+        padding: 1.5rem;
+        padding-top: 3rem;
+        max-height: 96vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+      }
+
+      .animation-toggle {
+        top: 2rem;
+        right: 2rem;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 1.75rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+      .swot-grid {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+        font-size: 0.8rem;
+      }
+
+      .swot-box {
+        padding: 0.6rem;
+      }
+
+      .swot-box h4 {
+        font-size: 0.9rem;
+        padding: 0.3rem 0.5rem;
+      }
+
+      .swot-box li {
+        font-size: 0.75rem;
+        padding: 0.25rem 0;
+      }
+
+      /* Mobile button fixes */
+      .btn {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+        white-space: nowrap;
+      }
+
+      .controls {
+        gap: 0.5rem;
+        margin-top: 1.5rem;
+        flex-wrap: wrap;
+        flex-shrink: 0;
+      }
+
+      .progress {
+        order: 3;
+        width: 100%;
+        margin-top: 0.5rem;
+        justify-content: center;
+      }
+
+      .progress-dot {
+        width: 8px;
+        height: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <button class="animation-toggle" onclick="toggleAnimations()" id="animToggle">
+    <span id="animText">Animations ON</span>
+  </button>
+
+  <div class="container">
+    
+    <!-- Page 1: Introduction -->
+    <div class="page active" data-page="1">
+      <p style="margin-top: 2rem;">Distributed Press was born where code meets cooperatives. As Hypha's first internally incubated product, it was designed to solve a problem that is increasingly urgent: an unhealthy reliance on centralized publishing tools.</p>
+      <p>But while the technology was ready, the industry wasn't. Between dwindling budgets and institutional inertia, the media world moves slowly.</p>
+      <p>While Hypha will continue to maintain the Distributed Press architecture, our grant funding from the Filecoin Foundation for the Decentralized Web (FFDW) has concluded, marking an opportunity to reflect on the project's rewards and challenges.</p>
+      <div class="controls">
+        <button class="btn" onclick="prevPage()" disabled>Previous</button>
+        <div class="progress">
+          <div class="progress-dot active"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+        </div>
+        <button class="btn" onclick="nextPage()">Next</button>
+      </div>
+    </div>
+
+    <!-- Page 2: The Protagonist's Perspective -->
+    <div class="page" data-page="2">
+      <h2>Defining the Protagonist's Perspective</h2>
+      <div class="typewriter" id="typewriter-2"></div>
+      <p>When I sat down to create this post, I tried prompting an LLM for some thought-starters on how to frame the tensions inherent in a complicated multi-year open source software project.</p>
+      <p>In the course of this discussion, the LLM fabricated something it calls "the integrators' curse" (which doesn't exist), supposed that the Distributed Press project was limited by its dependence on open source protocols. While the integrators' curse is bogus, it does touch on real tensions regarding the decentralization of infrastructure and the challenges of working with emergent technology.</p>
+      <div class="controls">
+        <button class="btn" onclick="prevPage()">Previous</button>
+        <div class="progress">
+          <div class="progress-dot"></div>
+          <div class="progress-dot active"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+        </div>
+        <button class="btn" onclick="nextPage()">Next</button>
+      </div>
+    </div>
+
+    <!-- Page 3: The Compromise Question -->
+    <div class="page" data-page="3">
+      <h2>The Compromise Question</h2>
+      <div class="typewriter" id="typewriter-3"></div>
+      <p>Every decentralized project faces these dilemmas. The choices you make define whether you're building the future—or just another platform with better PR.</p>
+      <div class="controls">
+        <button class="btn" onclick="prevPage()">Previous</button>
+        <div class="progress">
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot active"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+        </div>
+        <button class="btn" onclick="nextPage()">Next</button>
+      </div>
+    </div>
+
+    <!-- Page 4: Product-Market Fit -->
+    <div class="page" data-page="4">
+      <h2>The Product-Market Fit Challenge</h2>
+      <p>We built a B2B product (Distributed Press) for a market (publishers, journalists, media) but despite the downward slide toward media censorship in North America, the fit is not yet there.</p>
+      <p>Media organizations know that the centralization of their distribution infrastructure is a looming cliff, but as of now—December 2025—it's still a tomorrow problem.</p>
+      <p>Is Distributed Press just ahead of its time? The reality is that when tomorrow finally comes, it's likely that technology will have evolved and someone will put forth a simpler/faster/better solution.</p>
+      <p>As Petr, our business development lead, noted in his final report: <em>"Assumption that journalists or publishers care about their work being distributed to DWeb is false."</em></p>
+      <h3>Let's examine this through a SWOT analysis</h3>      
+      <div class="controls">
+        <button class="btn" onclick="prevPage()">Previous</button>
+        <div class="progress">
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot active"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+        </div>
+        <button class="btn" onclick="nextPage()">Next</button>
+      </div>
+    </div>
+
+    <!-- Page 5: SWOT Analysis -->
+    <div class="page" data-page="5">
+      <h2>SWOT Analysis</h2>
+      
+      <div class="swot-grid">
+        <div class="swot-box swot-strengths">
+          <h4>💪 Strengths</h4>
+          <ul>
+            <li>Censorship-resistant distribution</li>
+            <li>Decentralized & resilient model</li>
+            <li>Easy CMS integration (Sutty)</li>
+            <li>Aligned with Web3 trends</li>
+            <li>Strong advocacy positioning</li>
+          </ul>
+        </div>
+        
+        <div class="swot-box swot-weaknesses">
+          <h4>⚠️ Weaknesses</h4>
+          <ul>
+            <li>Limited brand awareness</li>
+            <li>Technical complexity</li>
+            <li>Need stronger marketing</li>
+            <li>Unclear monetization model</li>
+          </ul>
+        </div>
+        
+        <div class="swot-box swot-opportunities">
+          <h4>🌟 Opportunities</h4>
+          <ul>
+            <li>Rising censorship concerns</li>
+            <li>Strategic partnerships (digital rights orgs)</li>
+            <li>Nonprofit & advocacy alignment</li>
+            <li>Emerging markets demand</li>
+            <li>Distrust in corporate social media</li>
+          </ul>
+        </div>
+        
+        <div class="swot-box swot-threats">
+          <h4>⚡ Threats</h4>
+          <ul>
+            <li>Early adoption stage</li>
+            <li>Regulatory uncertainty</li>
+            <li>Competition from big tech</li>
+            <li>Security perception concerns</li>
+            <li>Web3 skepticism</li>
+            <li>Slow adoption curve</li>
+          </ul>
+        </div>
+      </div>
+      
+      <p style="margin-top: 1rem; text-align: center; font-size: 0.9rem; color: #666;">
+        But: just because the media isn't there yet doesn't mean they shouldn't be. More than half of humanity lives in countries where press freedom is considered "very serious."
+      </p>
+      
+      <div class="controls">
+        <button class="btn" onclick="prevPage()">Previous</button>
+        <div class="progress">
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot active"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+        </div>
+        <button class="btn" onclick="nextPage()">Next</button>
+      </div>
+    </div>
+
+    <!-- Page 6: Grant Funding Challenge -->
+    <div class="page" data-page="6">
+      <h2>The Grant Funding Challenge</h2>
+      <p>Without a clear product market fit, Distributed Press relies on grants. At Distributed Press, we were incredibly fortunate to work with the amazing FFDW team: they are supportive, thoughtful, and really get the work we're doing.</p>
+      <p>But grant writing is both an art and a science, and the team wasn't able to attract a new funder to the project. Over the past few years at Hypha, we've worked on numerous grant-funded technical projects. Once the funding ends, the projects often end—living in the purgatory of Github or GitLab.</p>
+      <div class="typewriter" id="typewriter-6"></div>
+      <div class="controls">
+        <button class="btn" onclick="prevPage()">Previous</button>
+        <div class="progress">
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot active"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+        </div>
+        <button class="btn" onclick="nextPage()">Next</button>
+      </div>
+    </div>
+
+    <!-- Page 7: Achievements -->
+    <div class="page" data-page="7">
+      <h2>Our Achievements</h2>
+      <p>While Distributed Press may not be poised on the edge of commercial success, the project has been undoubtedly successful in other ways.</p>
+      <h3>Delivered on the Vision</h3>
+      <p>The team delivered on the original vision of an easy to use, decentralized publishing tool. Over <strong>100 sites</strong> are using Distributed Press to share their content via IPFS and Hypercore.</p>
+      <h3>Social Tools</h3>
+      <p>The <strong>Social Reader</strong> is a privacy-first personal reader for subscribing to content published on federated social media. It's local-first, running off your own computer. It works offline.</p>
+      <p>The <strong>Social Inbox</strong> integrates websites with interactions on federated social media platforms like Mastodon, allowing websites to have their own Fediverse account.</p>
+      <div class="controls">
+        <button class="btn" onclick="prevPage()">Previous</button>
+        <div class="progress">
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot active"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+        </div>
+        <button class="btn" onclick="nextPage()">Next</button>
+      </div>
+    </div>
+
+    <!-- Page 8: Roads and Bridges -->
+    <div class="page" data-page="8">
+      <h2>Roads and Bridges</h2>
+      <div class="typewriter" id="typewriter-8"></div>
+      <p>Everyone uses infrastructure, but almost no one wants to maintain it. Our product, Distributed Press, is the "town" we're building at the nexus of three great highways: IPFS, Hypercore, and ActivityPub.</p>
+      <div class="controls">
+        <button class="btn" onclick="prevPage()">Previous</button>
+        <div class="progress">
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot active"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+        </div>
+        <button class="btn" onclick="nextPage()">Next</button>
+      </div>
+    </div>
+
+    <!-- Page 9: The Team -->
+    <div class="page" data-page="9">
+      <h2>The Team</h2>
+      <p>While all of the technical accomplishments are well and good, it's the teamwork and solidarity of the Distributed Press project that stands out as genuine success.</p>
+      <p>For three years, the team spanned numerous timezones, two cooperatives with different working cultures, and a fair amount of team member turnover to deliver on a vision for decentralized publishing.</p>
+      <p>Working on Distributed Press felt <em>good</em>. We always had a check-in at the beginning of our weekly team calls to take a beat and see how everyone was doing.</p>
+      <p><strong>Gracias to fauno, Ania and the whole Sutty team. Thank you to our technical lead Mauve, Akhilesh, Jacky and to the original Distributed Press dreamers, Benedict, Udit and Mai.</strong></p>
+      <div class="controls">
+        <button class="btn" onclick="prevPage()">Previous</button>
+        <div class="progress">
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot active"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+        </div>
+        <button class="btn" onclick="nextPage()">Next</button>
+      </div>
+    </div>
+
+    <!-- Page 10: Redefining Success -->
+    <div class="page" data-page="10">
+      <h2>Redefining Success</h2>
+      <div class="typewriter" id="typewriter-10"></div>
+      <p>We're figuring this out in real-time. The old startup playbook doesn't apply. The old open-source playbook doesn't quite fit either. It's awkward, and it's contradictory, but it's also necessary. This is the real work.</p>
+      <h3>
+        The goal is to build a town so good that it proves you can have a thriving, sustainable community living on open, public roads.
+      </h3>
+      <div class="controls">
+        <button class="btn" onclick="prevPage()">Previous</button>
+        <div class="progress">
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot active"></div>
+          <div class="progress-dot"></div>
+        </div>
+        <button class="btn" onclick="nextPage()">Next</button>
+      </div>
+    </div>
+
+    <!-- Page 11: The Journey Timeline -->
+    <div class="page" data-page="11">
+      <iframe 
+        class="timeline-embed"
+        src="/assets/interactive/timeline/index.html?theme=light" 
+        title="Distributed Press Timeline">
+      </iframe>
+      <div class="controls">
+        <button class="btn" onclick="prevPage()">Previous</button>
+        <div class="progress">
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot"></div>
+          <div class="progress-dot active"></div>
+        </div>
+        <button class="btn" onclick="window.location.reload()">Restart</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    let currentPage = 1;
+    const totalPages = 11;
+    
+    // Respect user's motion preferences
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let animationsEnabled = !prefersReducedMotion;
+    
+    const typewriterTexts = {
+      2: "I'm now fully immersed in embodying the perspective of a Distributed Press team member. We just filed our Q3 progress report for the Filecoin Foundation for the Decentralized Web. It's a strange document. Half of it is a progress update on Distributed Press. The other half is, essentially, a justification for our existence. It's an invoice stapled to a manifesto.",
+      3: "Which compromises are you willing to make? Maybe you add a 'default' server that your company controls, just to make onboarding easier. (Oops, you just centralized it). Maybe you add a feature that users want but that breaks the federated model. (Oops, you just built a moat). Maybe you build a slick, proprietary client for your open protocol, and it's so good no one uses any of the other ones. (Oops, you're the new platform).",
+      6: "They are using a grant-based funding model (which demands short-term, reportable 'progress') to build on protocol-based infrastructure (which requires slow, long-term, consensus-driven change). This is like trying to farm a redwood tree in a quarterly window box.",
+      8: "In Working in Public, Nadia Asparouhova (formerly Eghbal) distills the reality of open-source software with her 'roads and bridges' metaphor. Open-source protocols are infrastructure. They are the digital equivalents of the pipes, roads, and bridges we all use every day.",
+      10: "So what does 'success' even mean for a project like this? I'm pretty sure it's not a valuation. It's not an 'exit.' Maybe success is just... usefulness. Maybe it's resilience. The goal is to build a town so good that it proves, once and for all, that you can have a thriving, vibrant, sustainable community living on open, public roads."
+    };
+
+    function toggleAnimations() {
+      animationsEnabled = !animationsEnabled;
+      const toggle = document.getElementById('animToggle');
+      const text = document.getElementById('animText');
+      
+      if (animationsEnabled) {
+        toggle.classList.remove('disabled');
+        text.textContent = 'Animations ON';
+        toggle.title = 'Click to disable typewriter animations';
+      } else {
+        toggle.classList.add('disabled');
+        text.textContent = 'Animations OFF';
+        toggle.title = 'Click to enable typewriter animations';
+      }
+      
+      // Re-render current page to apply animation setting
+      const currentPageEl = document.querySelector(`.page[data-page="${currentPage}"]`);
+      if (currentPageEl) {
+        if (animationsEnabled) {
+          currentPageEl.classList.add('animated');
+        } else {
+          currentPageEl.classList.remove('animated');
+        }
+      }
+      
+      const currentTypewriter = document.getElementById(`typewriter-${currentPage}`);
+      if (currentTypewriter && typewriterTexts[currentPage]) {
+        currentTypewriter.textContent = '';
+        if (animationsEnabled) {
+          typeWriter(currentTypewriter, typewriterTexts[currentPage]);
+        } else {
+          currentTypewriter.textContent = typewriterTexts[currentPage];
+        }
+      }
+    }
+
+    function typeWriter(element, text, index = 0) {
+      if (!animationsEnabled) {
+        element.textContent = text;
+        return;
+      }
+      
+      if (index < text.length) {
+        element.textContent += text.charAt(index);
+        setTimeout(() => typeWriter(element, text, index + 1), 15); // Faster: 30ms -> 15ms
+      }
+    }
+
+    function showPage(pageNum) {
+      const pages = document.querySelectorAll('.page');
+      
+      // Hide all pages
+      pages.forEach(page => page.classList.remove('active'));
+      
+      // Show target page
+      const targetPage = document.querySelector(`.page[data-page="${pageNum}"]`);
+      if (targetPage) {
+        targetPage.classList.add('active');
+        
+        // Add/remove animated class based on animation preference
+        if (animationsEnabled) {
+          targetPage.classList.add('animated');
+        } else {
+          targetPage.classList.remove('animated');
+        }
+        
+        // Update ALL progress dots across ALL pages
+        pages.forEach(page => {
+          const dots = page.querySelectorAll('.progress-dot');
+          dots.forEach((dot, index) => {
+            if (index === pageNum - 1) {
+              dot.classList.add('active');
+            } else {
+              dot.classList.remove('active');
+            }
+          });
+        });
+        
+        // Scroll to top of page
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        
+        // Trigger typewriter effect if page has one
+        if (typewriterTexts[pageNum]) {
+          const typewriterEl = document.getElementById(`typewriter-${pageNum}`);
+          if (typewriterEl) {
+            typewriterEl.textContent = '';
+            if (animationsEnabled) {
+              typeWriter(typewriterEl, typewriterTexts[pageNum]);
+            } else {
+              typewriterEl.textContent = typewriterTexts[pageNum];
+            }
+          }
+        }
+        
+        // Update button states
+        const prevBtns = document.querySelectorAll('.btn:first-child');
+        const nextBtns = document.querySelectorAll('.btn:last-child');
+        
+        prevBtns.forEach(btn => btn.disabled = pageNum === 1);
+        nextBtns.forEach(btn => btn.disabled = pageNum === totalPages);
+      }
+      
+      currentPage = pageNum;
+    }
+
+    function nextPage() {
+      if (currentPage < totalPages) {
+        showPage(currentPage + 1);
+      }
+    }
+
+    function prevPage() {
+      if (currentPage > 1) {
+        showPage(currentPage - 1);
+      }
+    }
+
+    // Make all progress dots clickable
+    function initializeProgressDots() {
+      const pages = document.querySelectorAll('.page');
+      pages.forEach(page => {
+        const dots = page.querySelectorAll('.progress-dot');
+        dots.forEach((dot, index) => {
+          dot.style.cursor = 'pointer';
+          dot.onclick = () => showPage(index + 1);
+          dot.setAttribute('title', `Go to page ${index + 1}`);
+        });
+      });
+    }
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight') nextPage();
+      if (e.key === 'ArrowLeft') prevPage();
+    });
+
+    // Initialize
+    initializeProgressDots();
+    
+    // Update toggle button to reflect initial state
+    const toggle = document.getElementById('animToggle');
+    const text = document.getElementById('animText');
+    if (!animationsEnabled) {
+      toggle.classList.add('disabled');
+      text.textContent = 'Animations OFF';
+      toggle.title = 'Animations disabled (respecting your system preference for reduced motion). Click to enable.';
+    } else {
+      toggle.title = 'Click to disable typewriter animations';
+    }
+    
+    showPage(1);
+  </script>
+</body>
+</html>
