@@ -60,8 +60,16 @@ Maybe you build a slick, proprietary client for your open protocol, and it's so 
 
 Technical details aside, there is a more significant issue with the project: the all important product-market fit alluded to earlier. We built a B2B product (Distributed Press) for a market (publishers, journalists, media) but despite the downward slide toward media censorship in North America, the fit is not yet there. Media organizations know that the centralization of their distribution infrastructure is a looming cliff, but as of now - December 2025 - it's still a tomorrow problem. Is Distributed Press just ahead of its time? The reality is that when tomorrow finally comes, it's likely that technology will have evolved and someone will put forth a simpler/faster/better solution to evading government or more likely, Big Tech Billionaire control of media infrastructure. Technologists are often accused of offering solutions to problems that don't yet exist; in this case, the issue is real but it's just not pressing enough for media orgs with one eye on the bottom line. It'll be existential–just not yet. As if there were any doubt, Petr, the business development lead we hired in Summer 2024 noted in his final report: "Assumption that journalists or publishers care about their work being distributed to DWeb is false." 
 
-![SWOT Analysis from 2025 Distributed Press Marketing Plan](/assets/images/posts/2025-12-09-distributed-press-swot.png)
-*SWOT from the 2025 Distributed Press Marketing Plan*
+<figure class="pb4">
+    <div class='flex items-center justify-center'>
+
+        <img class="w-100" src="{{ 'assets/images/posts/2025-12-09-distributed-press-swot.png' | relative_url }}" alt="SWOT Analysis from 2025 Distributed Press Marketing Plan"/>
+    </div>
+      <figcaption>
+            SWOT from the 2025 Distributed Press Marketing Plan
+      </figcaption>
+</figure>
+
 
 But: just because the media isn't there yet doesn't mean they shouldn't be. According to the 2025 Reporters Without Borders (RSF) [World Press Freedom Index](https://rsf.org/en/world-press-freedom-index-2025-over-half-worlds-population-red-zones), "more than half of humanity lives in a country where the state of press freedom is considered 'very serious.'" And while the political situation in the US is truly unsettling, most of these people are living in countries outside of North America.
 
@@ -75,7 +83,7 @@ They are using a grant-based funding model (which demands short-term, reportable
 
 While Distributed Press may not be poised on the edge of commercial success, the project has been undoubtedly successful in other ways. To close out this reflection on the project, I want to highlight all of our achievements. 
 
-Firstly, the team delivered on the original vision of an easy to use, decentralized publishing tool. Over [100 sites](https://explore.distributed.press/) are using Distributed Press to share their content via IPFS and Hypercore. It's a point of pride that the awesome teams over at [Fight for the Future](https://www.fightforthefuture.org/) and [DWeb Camp](http://DWeb.org) are using our technology to make their websites more resilient. 
+Firstly, the team delivered on the original vision of an easy to use, decentralized publishing tool. Over [100 sites](https://explore.distributed.press/) are using Distributed Press to share their content via IPFS and Hypercore. It's a point of pride that the awesome teams over at [Fight for the Future](https://www.fightforthefuture.org/) and [DWeb Camp](https://dwebcamp.org/) are using our technology to make their websites more resilient. 
 
 > "I really like the last slide call to action: 'Become a pioneer in the new era of content distribution. It may be the ultimate future of publishing.' - don't be afraid to use it often and everywhere. It may become your brand slogan eventually." - Petr
 
@@ -216,7 +224,7 @@ Through conversations with artists and activists, the team attempts to form a co
 
 **Milestone 4 Re-Evaluation** - Project pivots based on community feedback, shifting focus toward static site generator integration and micropayment systems for the Fediverse. UX workshop report completed.
 
-> Patterns of online communication and organization are changing, and Distributed Press has pivoted to meet this demand. Typically, people use websites as static repositories of information while social media allows for more fluid two-way conversation. In the coming milestone, the Distributed Press team is aiming to create a space that merges the easy connections of social media with the richer content of static websites. We believe the features highlighted in this milestone will create a more vibrant community ecosystem, while also retaining the safeguards of privacy protection that are required by many of our users…. While the past milestone focused on sending information outwards, Milestone 4 will improve the ability to receive and display interactions with the Fediverse. Citizen journalists using the Sutty CMS will be able to show comments and interactions on their websites, while Social Reader users will be able to see replies on posts. Mastodon users will be able to see most posts retroactively when they follow an account.  *(Revised Milestone 4 document, as submitted to FFDW)*
+> Patterns of online communication and organization are changing, and Distributed Press has pivoted to meet this demand. Typically, people use websites as static repositories of information while social media allows for more fluid two-way conversation. In the coming milestone, the Distributed Press team is aiming to create a space that merges the easy connections of social media with the richer content of static websites. We believe the features highlighted in this milestone will create a more vibrant community ecosystem, while also retaining the safeguards of privacy protection that are required by many of our users… While the past milestone focused on sending information outwards, Milestone 4 will improve the ability to receive and display interactions with the Fediverse. Citizen journalists using the Sutty CMS will be able to show comments and interactions on their websites, while Social Reader users will be able to see replies on posts. Mastodon users will be able to see most posts retroactively when they follow an account.  *(Revised Milestone 4 document, as submitted to FFDW)*
 
 ## Summer 2024
 
