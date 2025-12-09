@@ -15,14 +15,9 @@
       "legend": "Grant for the Web funding kickstarts the project. $50,000 goes to building out COMPOST Magazine as a PoC for decentralized publishing, and to develop the bare bones of Distributed Press itself."
     },
     {
-      "year": "2020",
-      "id": "fa-rocket",
-      "legend": "Distributed Press v0.1 Released. The first public release of Distributed Press, enabling websites to be published across HTTP, IPFS, and Hypercore protocols."
-    },
-    {
       "year": "2021",
       "id": "fa-gem",
-      "legend": "January - Ruby API Client is Born. Sutty writes the ruby api client for the first version of DP, kickstarting conversations about integration and the common grant application."
+      "legend": "January - Ruby API Client is Born. Sutty writes the ruby api client for the first version of DP, kickstarting conversations about integration and the common grant application. Distributed Press v0.1 is released."
     },
     {
       "year": "2021",
