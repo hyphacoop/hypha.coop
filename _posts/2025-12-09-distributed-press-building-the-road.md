@@ -140,6 +140,11 @@ Through conversations with artists and activists, the team attempts to form a co
 
 **Call Series Begins** - The team initiates conversations exploring what's usable and promising in the decentralized web space.
 
+## January 2021
+
+**Ruby API Client is Born** - sutty writes the ruby api client for the first version of DP, kickstarting conversations about integration and the common grant application :D Distributed Press v0.1 is released.
+
+
 ## July 2022
 
 **Major Funding Secured** - Agreement signed with Filecoin Foundation for the Decentralized Web (FFDW) for $447,313, with four key milestones:
