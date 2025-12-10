@@ -162,6 +162,10 @@ notifications:
     action: done
     id: https://hypha.coop/dripline/hypha-loves-dasl-the-library.jsonld
     created_at: 1760383612
+  dripline/distributed-press-building-the-road.jsonld:
+    action: done
+    id: https://hypha.coop/dripline/distributed-press-building-the-road.jsonld
+    created_at: 1765294027
 actor_url: https://hypha.coop/about.jsonld
 actor: "@dripline@hypha.coop"
 public_key_url: https://hypha.coop/about.jsonld#main-key

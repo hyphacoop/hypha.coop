@@ -1,0 +1,77 @@
+[
+    {
+      "year": "2018",
+      "id": "fa-seedling",
+      "legend": "DWeb Camp: the Distributed Press seeds are planted. Hypha collaborator Mai and co-founding member Benedict meet, recognizing the contradiction of writing about decentralization while publishing on centralized platforms."
+    },
+    {
+      "year": "2019",
+      "id": "fa-lightbulb",
+      "legend": "The Distributed Press idea is born. Benedict, Mai, and Hypha co-founding member Udit begin developing a tool for decentralized publishing. Through conversations with writers and activists, they land on a magazine as proof-of-concept."
+    },
+    {
+      "year": "2019",
+      "id": "fa-hand-holding-usd",
+      "legend": "Grant for the Web funding kickstarts the project. $50,000 goes to building out COMPOST Magazine as a PoC for decentralized publishing, and to develop the bare bones of Distributed Press itself."
+    },
+    {
+      "year": "2021",
+      "id": "fa-gem",
+      "legend": "January - Ruby API client is born. Sutty writes the ruby api client for the first version of DP, kickstarting conversations about integration and the common grant application. Distributed Press v0.1 is released."
+    },
+    {
+      "year": "2021",
+      "id": "fa-book-open",
+      "legend": "March - COMPOST Issue 01: \"Fertile Ground\". The first issue launches with paid writers (approximately $700 USD each). COMPOST—short for \"commons post\"—publishes creative works reflecting on the web as a digital commons."
+    },
+    {
+      "year": "2021",
+      "id": "fa-newspaper",
+      "legend": "September - COMPOST Issue 02: \"Inoculate\" is published. It asks \"How do we inoculate networks with our consideration and attention, against the flattening, homogenizing forces of the internet?\""
+    },
+    {
+      "year": "2022",
+      "id": "fa-network-wired",
+      "legend": "The project secures crucial funding from the Filecoin Foundation for the Decentralized Web to expand Distributed Press infrastructure and capabilities."
+    },
+    {
+      "year": "2022",
+      "id": "fa-handshake",
+      "legend": "Sutty partnership expands: collaboration with Sutty cooperative to integrate decentralized publishing into Sutty CMS. Members from both co-ops work toward completing the technical roadmap."
+    },
+    {
+      "year": "2023",
+      "id": "fa-code",
+      "legend": "March - Distributed Press V1. is released! Major technical enhancements make Distributed Press more robust and easier to use."
+    },
+    {
+      "year": "2023",
+      "id": "fa-water",
+      "legend": "May - COMPOST Issue 3: \"Water Bodies\" is published. This issue showcases Sutty's reusable COMPOST theme."
+    },
+    {
+      "year": "2023",
+      "id": "fa-inbox",
+      "legend": "December - The Social Inbox launches. Major feature release enabling ActivityPub integration for decentralized social interactions right on your website or blog."
+    },
+    {
+      "year": "2024",
+      "id": "fa-book-reader",
+      "legend": "March - Social Reader launched for local-first p2p content access."
+    },
+    {
+      "year": "2024",
+      "id": "fa-chart-line",
+      "legend": "July - Project shifts to explore financial sustainability and establish new stakeholder partnerships. The Get Started page, an easier onboarding workflow, is introduced."
+    },
+    {
+      "year": "2025",
+      "id": "fa-globe",
+      "legend": "March - The Explore page goes live, an Index of all sites using Distributed Press (100 and counting). Sutty launches a Resilience Challenge, recovering activists' websites and hosting their content on the distributed web."
+    },
+    {
+      "year": "2025",
+      "id": "fa-heart",
+      "legend": "The journey continues: the Distributed Press infrastructure remains available, and the vision of decentralized publishing lives on."
+    }
+]
