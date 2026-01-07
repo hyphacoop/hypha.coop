@@ -11,7 +11,7 @@ source "https://rubygems.org"
 gem "jekyll", "~> 4.4.1"
 gem "html-proofer"
 gem 'nokogiri'
-gem 'ruby-brs'
+# gem 'ruby-brs'
 gem "webrick", "~> 1.9"
 gem 'sutty-liquid', '~> 0.12.2'
 
