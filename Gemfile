@@ -13,7 +13,7 @@ gem "html-proofer"
 gem 'nokogiri'
 gem 'ruby-brs'
 gem "webrick", "~> 1.9"
-gem 'sutty-liquid', '~> 0.12.2'
+gem 'sutty-liquid', '~> 0.13.0'
 
 group :jekyll_plugins do
   gem "jekyll-feed", 
