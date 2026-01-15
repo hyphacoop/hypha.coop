@@ -6,48 +6,14 @@
   {% assign current_page_slug = page.url | split: '/' %}
   {%- for page in pages -%}
     {% if page.menu_title %}
-      {% if page.menu_title == "Work" %}
-        <li class="dropdown-container relative" role="none">
-          <a class="pa3 pv0-l db no-underline underline-hover hover-accent mid-gray {% if current_page_slug[1] == 'work' %}accent underline{% endif %}" 
-             href="{{ page.url | relative_url }}" 
-             role="menuitem"
-             aria-haspopup="true"
-             aria-expanded="false">
-            {{ page.menu_title }}&nbsp;&#9662;
-          </a>
-          <ul class="dropdown-menu absolute bg-white list pa0 mt1-nl mb1-nl dn flex-column z-1 ml4-ns" 
-              role="menu" 
-              aria-label="Work submenu">
-            <li role="none" class="dn-l">
-              <a class="pa3 pl0 db no-underline underline-hover hover-accent mid-gray" 
-                 href="{{ page.url | relative_url }}"
-                 role="menuitem">
-                View all work
-              </a>
-            </li>
-            {%- for page in pages -%}
-              {% if page.work_menu_title %}
-                <li role="none">
-                  <a class="ml4-nl pa2 pa3-l f4 f3-l lb db no-underline underline-hover hover-accent mid-gray {% if current_page contains page.url %}accent underline{% endif %}" 
-                     href="{{ page.url | relative_url }}"
-                     role="menuitem">
-                    {{ page.title }}
-                  </a>
-                </li>
-              {% endif %}
-            {%- endfor -%}
-          </ul>
-        </li>
-      {% else %}
-        <li role="none">
-          <a class="pa3 pv0-l db no-underline underline-hover hover-accent mid-gray {% if page.url contains current_page_slug[1] or page.url == current_page %}accent underline{% endif %}" 
-             href="{{ page.url | relative_url }}"
-             role="menuitem"
-             {% if page.url == current_page %}aria-current="page"{% endif %}>
-            {{ page.menu_title }}
-          </a>
-        </li>
-      {% endif %}
+      <li role="none">
+        <a class="pa3 pv0-l db no-underline underline-hover hover-accent mid-gray {% if page.url contains current_page_slug[1] or page.url == current_page %}accent underline{% endif %}" 
+           href="{{ page.url | relative_url }}"
+           role="menuitem"
+           {% if page.url == current_page %}aria-current="page"{% endif %}>
+          {{ page.menu_title }}
+        </a>
+      </li>
     {% endif %}
   {%- endfor -%}
   {% if site.openings != empty %}
@@ -59,70 +25,3 @@
   {% endif %}
 </ul>
 <p class="gray b sans-serif db dn-l"><span class="dib mr2">Email</span><a class="accent no-underline underline-hover dib sans dn-l normal" href="mailto:{{ site.email-hidden }}">{{ site.email }}</a></p>
-
-<!-- CSS for dropdown functionality -->
-<style>
-  /* Desktop dropdown behavior */
-  @media screen and (min-width: 75em) {
-    .dropdown-container {
-      position: relative;
-    }
-    
-    .dropdown-container:hover .dropdown-menu {
-      display: flex;
-    }
-    
-    .dropdown-menu {
-      top: 100%;
-      left: 0;
-      margin-top: 0;
-      line-height: 0.5;
-    }
-    .dropdown-menu a {
-      width: max-content;
-    }
-  }
-  
-  /* Mobile dropdown behavior */
-  @media screen and (max-width: 75em) {
-    .dropdown-container {
-      display: flex;
-      flex-direction: column;
-      align-items: end;
-    }
-
-    .dropdown-container.active .dropdown-menu {
-      display: flex;
-    }
-    
-    .dropdown-menu {
-      position: static;
-      box-shadow: none;
-      margin-left: 1rem;
-      border-radius: 0;
-    }
-
-    .dropdown-menu .lb {
-      border-left: 2px solid #ccc;
-    }
-  }
-</style>
-
-<!-- JavaScript for mobile dropdown toggle -->
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const dropdownToggle = document.querySelector('.dropdown-container > a');
-    
-    if (dropdownToggle) {
-      dropdownToggle.addEventListener('click', function(e) {
-        // Only prevent default on mobile
-        if (window.innerWidth < 1200) {
-          e.preventDefault();
-          const isExpanded = this.getAttribute('aria-expanded') === 'true';
-          this.setAttribute('aria-expanded', !isExpanded);
-          this.parentElement.classList.toggle('active');
-        }
-      });
-    }
-  });
-</script>
