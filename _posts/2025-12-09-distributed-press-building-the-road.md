@@ -24,17 +24,34 @@ Distributed Press was born where code meets cooperatives. As Hypha's first inter
 ### Defining the Protagonist's Perspective
 
 ```
-I'm now fully immersed in embodying the perspective of a Distributed Press team member. This includes grappling with the real-world challenges, such as funding, open-source model tensions, and the "Protocol Paradox." I've been refining my understanding of Distributed Press. It's not a protocol itself, but a system leveraging IPFS, Hypercore, and ActivityPub. I'm also now crafting a narrative voice: three years in and reflecting on the journey:
+I'm now fully immersed in embodying the perspective of a
+Distributed Press team member. This includes grappling
+with the real-world challenges, such as funding,
+open-source model tensions, and the "Protocol Paradox."
+I've been refining my understanding of Distributed Press.
+It's not a protocol itself, but a system leveraging IPFS,
+Hypercore, and ActivityPub. I'm also now crafting a
+narrative voice: three years in and reflecting on the
+journey:
 
-We just filed our Q3 progress report for the Filecoin Foundation for the Decentralized Web.
+We just filed our Q3 progress report for the Filecoin
+Foundation for the Decentralized Web.
 
-It's a strange document. Half of it is a progress update on Distributed Press, detailing our work on the Social Reader and the Social Inbox. The other half is, essentially, a justification for our existence. It's an invoice stapled to a manifesto.
+It's a strange document. Half of it is a progress update
+on Distributed Press, detailing our work on the Social
+Reader and the Social Inbox. The other half is,
+essentially, a justification for our existence. It's an
+invoice stapled to a manifesto.
 ```
 
 ```
-We are all-in on the idea of "protocols, not platforms." We're choking on the digital monopolies built by the last generation. We know the answer is to build systems that are open, decentralized, and owned by no one.
+We are all-in on the idea of "protocols, not platforms."
+We're choking on the digital monopolies built by the
+last generation. We know the answer is to build systems
+that are open, decentralized, and owned by no one.
 
-But it's one thing to believe in that. It's another thing to build a business on it.
+But it's one thing to believe in that. It's another
+thing to build a business on it.
 ```
 
 When I sat down to create this post, I tried prompting an LLM for some thought-starters on how to frame the tensions inherent in a complicated multi-year open source software project. In the course of this discussion, the LLM fabricated something it calls "the integrators' curse; this challenge (which doesn't exist) supposed that the Distributed Press project was limited by its dependence on open source protocols, making the work to build (or integrate) a user-facing product on top of said protocols all the more challenging. It concluded, rather dramatically, that:
@@ -49,12 +66,18 @@ While the integrators' curse is bogus, it does touch on the tensions regarding t
 ```
 Which compromises are you willing to make?
 
-Maybe you add a "default" server that your company controls, just to make onboarding easier. (Oops, you just centralized it).
+Maybe you add a "default" server that your company
+controls, just to make onboarding easier. 
+(Oops, you just centralized it).
 
-Maybe you add a feature that users want but that breaks the federated model. 
+Maybe you add a feature that users want but that breaks
+the federated model. 
 (Oops, you just built a moat).
 
-Maybe you build a slick, proprietary client for your open protocol, and it's so good no one uses any of the other ones. (Oops, you're the new platform).
+Maybe you build a slick, proprietary client for your
+open protocol, and it's so good no one uses any of the
+other ones. 
+(Oops, you're the new platform).
 ```
 
 
@@ -77,7 +100,11 @@ But: just because the media isn't there yet doesn't mean they shouldn't be. Acco
 Without a clear product market fit, thus impacting potential sales, Distributed Press is reliant on grants to meet its goals. Grant funded technology, as with anything grant-funded, is tough. At Distributed Press, we were incredibly fortunate to work with the amazing FFDW team: they are supportive, thoughtful, and really get the work we're doing. Their reporting structures are efficient and not overly onerous; they were a solid partner throughout this long and constructive phase of the project. But grant writing is both an art and a science, and the Distributed Press team wasn't able to attract a new funder to the project. Over the past few years at Hypha, we've worked on numerous grant-funded technical projects. They have been wonderful, creative and exciting projects to work on, but once the funding ends, the projects also end. They live in the purgatory of Github or GitLab and some of them (depending on subject matter) join the ranks of the [Civic Tech Field Guide Graveyard](https://civictech.guide/graveyard/). Not to say that they can't or won't be revived with the right funder coming on board; we've also resuscitated a few tech projects in our time. At the end of the day, maintaining a steady stream of funding is hard without a dedicated fundraiser on the team, and Hypha doesn't have anyone currently wearing that hat. 
 
 ```
-They are using a grant-based funding model (which demands short-term, reportable "progress") to build on protocol-based infrastructure (which requires slow, long-term, consensus-driven change). This is like trying to farm a redwood tree in a quarterly window box.
+They are using a grant-based funding model (which
+demands short-term, reportable "progress") to build on
+protocol-based infrastructure (which requires slow,
+long-term, consensus-driven change). This is like trying
+to farm a redwood tree in a quarterly window box.
 ``` 
 
 
@@ -96,11 +123,25 @@ Conversely, the Social Inbox is a tool for connecting and conversation; it works
 
 
 ```
-In Working in Public, Nadia Asparouhova (formerly Eghbal) distills the reality of open-source software with her "roads and bridges" metaphor.
+In Working in Public, Nadia Asparouhova (formerly
+Eghbal) distills the reality of open-source software
+with her "roads and bridges" metaphor.
 
-Open-source protocols are infrastructure. They are the digital equivalents of the pipes, roads, and bridges we all use every day. And just like physical infrastructure, everyone uses it, but almost no one wants to maintain it. For a long time, this was a problem for the protocol maintainers themselves. But we're facing a new, second-order version of this problem.
+Open-source protocols are infrastructure. They are the
+digital equivalents of the pipes, roads, and bridges we
+all use every day. And just like physical
+infrastructure, everyone uses it, but almost no one
+wants to maintain it. For a long time, this was a
+problem for the protocol maintainers themselves. But
+we're facing a new, second-order version of this
+problem.
 
-The protocols we build on — IPFS, Hypercore, ActivityPub — are the "roads and bridges." Our product, Distributed Press, is the "town" we're building at the nexus of these three great highways. Our "Social Reader" and "Social Inbox" are the bustling public squares and post offices for this town.
+The protocols we build on — IPFS, Hypercore,
+ActivityPub — are the "roads and bridges." Our product,
+Distributed Press, is the "town" we're building at the
+nexus of these three great highways. Our "Social
+Reader" and "Social Inbox" are the bustling public
+squares and post offices for this town.
 ```
 
 
@@ -110,13 +151,24 @@ Gracias to fauno, Ania and the whole Sutty team. Thank you to our technical lead
 
 
 ```
-So what does "success" even mean for a project like this? I'm pretty sure it's not a valuation. It's not an "exit."
+So what does "success" even mean for a project like
+this? I'm pretty sure it's not a valuation. It's not an
+"exit."
 
-Maybe success is just... usefulness. Maybe it's resilience.
+Maybe success is just... usefulness. Maybe it's
+resilience.
 
-The goal isn't to build a road so good that no one knows who built it. The goal is to build a town so good that it proves, once and for all, that you can have a thriving, vibrant, sustainable community living on open, public roads.
+The goal isn't to build a road so good that no one knows
+who built it. The goal is to build a town so good that
+it proves, once and for all, that you can have a
+thriving, vibrant, sustainable community living on open,
+public roads.
 
-We're figuring this out in real-time. The old startup playbook doesn't apply. The old open-source playbook doesn't quite fit either. It's awkward, and it's contradictory, but it's also necessary. This is the real work.
+We're figuring this out in real-time. The old startup
+playbook doesn't apply. The old open-source playbook
+doesn't quite fit either. It's awkward, and it's
+contradictory, but it's also necessary. This is the real
+work.
 ```
 
 \*[David Herrera](https://library.uniteddiversity.coop/Cooperatives/Mondragon/Mondragon-A_For-profit_Organization_that_Embodies_Catholic_Social_Thought.pdf)
