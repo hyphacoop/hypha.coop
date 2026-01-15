@@ -197,8 +197,14 @@ h2 {
   // border: 1px solid black;
 }
 
-h3 {
-  @extend .accent;
+// Homepage h3 elements should be purple (accent color)
+.root-and-lines h3 {
+  color: $accent-color;
+}
+
+// Newsletter h3 on homepage should be black
+.root-and-lines .newsletter-section h3 {
+  color: $black;
 }
 
 p {
