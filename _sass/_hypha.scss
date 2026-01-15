@@ -197,6 +197,10 @@ h2 {
   // border: 1px solid black;
 }
 
+h3 {
+  @extend .accent;
+}
+
 p {
   @extend .lh-copy;
   @extend .f4;
