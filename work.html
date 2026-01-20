@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Work
-excerpt: "Hypha is a word from Ancient Greek meaning 'web' (plural hyphae); referring to one of the threads that make up the mycelium of a fungus."
+excerpt: "We work with organizations building more trustworthy, democratic digital systems."
 image: "/assets/images/social/work.webp"
 menu_title: Work
 order: 3
@@ -16,55 +16,15 @@ order: 3
         {{ page.title }}
       </h3>
       <div class="f3 measure-wide dark-gray lh-copy mb5">
-        <p class="f4">
-          <em>
-            Hypha is a word from Ancient Greek meaning 'web' (plural hyphae); referring to one of the threads that make up the mycelium of a fungus.
-          </em> 
-        </p>
-        In ecology, hyphae provide sustenance and communication between living organisms. Drawing inspiration from this infinitely adaptive, complex structure, we bring these traits to our work: rooted in knowledge, yet boundless in imagination.
+        We work with organizations building more trustworthy, democratic digital systems. From war crimes documentation to cooperative infrastructure to AI governance, here's what we've been building.
       </div>
     </div>
   </div>
 </header>
 <div class="flex flex-wrap justify-left mb4 pv4">
-  {% assign index_page = site.pages | where: "title", "Home" | first %}
-  {% assign what_we_do = index_page.what_we_do | sort: 'order' %}
-  {% assign works_by_practice_area = site.work | group_by: 'practice_area' %}
-  {% for practice in what_we_do %}
-    {% assign practice_area = practice.title %}
-    {% assign matching_practice_area = works_by_practice_area | where: 'name', practice_area %}
-    {% if matching_practice_area.size > 0 %}
-      <div class="flex flex-column mb3">
-        {% if practice.slug %}
-          <a href="/{{ practice.slug }}/" class="">
-        {% endif %}
-        <h2 class="f2 sans-serif accent mb3 mt4">
-          {{ practice.title }}
-        </h2>
-        {% if practice.slug %}
-          </a>
-        {% endif %}
-
-        {% if practice.slug %}
-          {% capture practice_page_path %}{{ practice.slug }}.html{% endcapture %}
-          {% assign practice_page = site.pages | where: "path", practice_page_path | first %}        
-          {% if practice_page %}
-            <p class="measure-wide mt2 mb2 f3">
-              {{ practice_page.excerpt }}
-            </p>
-          {% endif %}
-          <p class="measure-wide mt2 mb2 f3">
-            <a href="/{{ practice.slug }}/" class="accent link">Read more</a>
-          </p>
-          {% endif %}
-      </div>
-      <div class="flex flex-wrap">
-        {% assign works = matching_practice_area.first.items %}
-        {% for project in works %}
-          {%- include sections/project.html project=project -%}
-        {% endfor %}
-      </div>
-    {% endif %}
+  {% assign sorted_projects = site.work | sort: 'title' %}
+  {% for project in sorted_projects %}
+    {%- include sections/project.html project=project -%}
   {% endfor %}
 </div>
 </section>

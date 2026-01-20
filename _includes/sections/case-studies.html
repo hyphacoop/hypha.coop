@@ -1,0 +1,15 @@
+<div class="mt4 mt5-ns mb4 mr5-l">
+  <h2 class="f2 fw6 mt0 mb4 measure-wide">We are an R&D partner for leaders in finance, culture, and technology.</h2>
+</div>
+
+<div class="flex flex-wrap justify-between mb5">
+  {% assign case_studies = page.case_studies %}
+  {% for study in case_studies %}
+    <div class="w-50-l w-100 pr4-l mb4">
+      <h3 class="f3 fw6 mt0 mb2">{{ study.title }}</h3>
+      <p class="f4 lh-copy mt0">
+        {{ study.description }}
+      </p>
+    </div>
+  {% endfor %}
+</div>

@@ -1,0 +1,18 @@
+<div class="flex justify-start lh-copy mt6-ns mt5 mb4">
+  <div class="mr3">
+    <h2>Our toolkit</h2>
+    <p class="lh-copy f3 measure-wide mt0">
+      Trust isn't a technical challenge: it's a human problem. We build digital systems people can rely on through community input, democratic processes, and shared ownership. But making those human agreements work at internet scale requires expert technical infrastructure. We specialize in:
+    </p>
+  </div>
+</div>
+
+<div class="flex flex-between justify-between flex-wrap">
+  {% assign techniques = page.techniques %}
+  {% for technique in techniques %}
+    <div class="w-third-l w-100 measure flex-column justify-left items-left tl pr4 mb4">
+      <h3 class="f3 mb2">{{ technique.title }}</h3>
+      <p class="pb3 f4 lh-copy">{{ technique.description }}</p>
+    </div>
+  {% endfor %}
+</div>
