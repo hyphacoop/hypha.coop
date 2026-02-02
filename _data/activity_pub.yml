@@ -166,6 +166,10 @@ notifications:
     action: done
     id: https://hypha.coop/dripline/distributed-press-building-the-road.jsonld
     created_at: 1765294027
+  dripline/digital-trust-glossary.jsonld:
+    action: done
+    id: https://hypha.coop/dripline/digital-trust-glossary.jsonld
+    created_at: 1770075875
 actor_url: https://hypha.coop/about.jsonld
 actor: "@dripline@hypha.coop"
 public_key_url: https://hypha.coop/about.jsonld#main-key
