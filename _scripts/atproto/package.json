@@ -1,0 +1,17 @@
+{
+  "name": "hypha-atproto-scripts",
+  "version": "1.0.0",
+  "description": "AT Protocol publishing scripts for Hypha Dripline blog",
+  "type": "module",
+  "scripts": {
+    "publish:publication": "node publish-publication.js",
+    "publish:document": "node publish-document.js",
+    "backfill": "node backfill-posts.js",
+    "publish:new": "node publish-new-posts.js",
+    "sync": "node sync-posts.js"
+  },
+  "dependencies": {
+    "@atproto/api": "^0.15.0",
+    "gray-matter": "^4.0.3"
+  }
+}

@@ -1,0 +1,5 @@
+# AT Protocol Document Records
+# Updated: 2026-01-12T00:00:00.000Z
+# Maps post paths to record keys (rkeys)
+# This file will be populated by the backfill script and updated by GitHub Actions
+

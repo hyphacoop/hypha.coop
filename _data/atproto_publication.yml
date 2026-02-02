@@ -1,0 +1,19 @@
+# AT Protocol Publication Record
+# This file will be populated after running publish-publication.js
+# 
+# To populate:
+#   1. cd _scripts/atproto
+#   2. npm install
+#   3. npm run publish:publication
+#
+# The script also updates .well-known/site.standard.publication with the URI.
+#
+# Environment variables required:
+#   ATPROTO_HANDLE   - Handle for the account (e.g., hypha.coop)
+#   ATPROTO_PASSWORD - App password for authentication
+
+# Placeholder values - will be replaced after running publish-publication.js
+did: "PLACEHOLDER"
+rkey: "self"
+uri: "at://PLACEHOLDER/site.standard.publication/self"
+cid: ""

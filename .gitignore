@@ -6,3 +6,6 @@ _site
 **/id_rsa
 .ruby-version
 *.swp
+
+# Node modules (for ATproto scripts)
+_scripts/atproto/node_modules/
