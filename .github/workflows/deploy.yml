@@ -41,6 +41,11 @@ jobs:
         if: github.ref == 'refs/heads/master' || (github.event_name == 'pull_request' && github.base_ref == 'master')
         run: npm i -g sequoia-cli
 
+      # Add slugs from filenames for Sequoia (date-less paths)
+      - name: Add slugs for Sequoia
+        if: github.ref == 'refs/heads/master' || (github.event_name == 'pull_request' && github.base_ref == 'master')
+        run: node _scripts/sequoia-slug.js
+
       # Publish to AT Protocol (before build so inject can run after)
       - name: Publish to ATProto
         if: github.ref == 'refs/heads/master' || (github.event_name == 'pull_request' && github.base_ref == 'master')
