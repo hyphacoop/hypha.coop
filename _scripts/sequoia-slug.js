@@ -1,7 +1,16 @@
 #!/usr/bin/env node
 /**
- * Add slug to post frontmatter, simulating Jekyll's :title slugify.
+ * Sequoia Slug
+ * 
+ * Add slug to post frontmatter from filename (strip YYYY-MM-DD-), matching Jekyll's default.
  * Run before `sequoia publish` so paths match Jekyll URLs exactly.
+ * 
+ * Usage:
+ *   node sequoia-slug.js
+ * 
+ * Environment variables:
+ *   POSTS_DIR - Directory to search for posts
+ * 
  */
 import fs from 'fs';
 import path from 'path';
@@ -10,33 +19,28 @@ import { fileURLToPath } from 'url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const POSTS_DIR = path.join(__dirname, '../_posts');
 
-function slugify(text) {
-  return String(text)
-    .toLowerCase()
-    .trim()
-    .replace(/[^\w\s-]/g, '')
-    .replace(/[\s_-]+/g, '-')
-    .replace(/^-+|-+$/g, '');
-}
-
-function getFrontmatterValue(fm, key) {
-  const match = fm.match(new RegExp(`^${key}:\\s*(.+)$`, 'm'));
-  return match ? match[1].replace(/^["']|["']$/g, '').trim() : null;
-}
+const JEKYLL_DATE_RE = /^(\d{4}-\d{2}-\d{2})-(.+)$/;
 
 for (const name of fs.readdirSync(POSTS_DIR)) {
   if (!name.endsWith('.md') && !name.endsWith('.mdx')) continue;
+  const base = name.replace(/\.mdx?$/, '');
+  const match = base.match(JEKYLL_DATE_RE);
+  if (!match) continue;
+  const slug = match[2];
+
   const filePath = path.join(POSTS_DIR, name);
   let content = fs.readFileSync(filePath, 'utf8');
   const fmMatch = content.match(/^---\n([\s\S]*?)\n---/);
   if (!fmMatch) continue;
-  const fm = fmMatch[1];
-  if (/^slug:\s/m.test(fm)) continue;
-  const title = getFrontmatterValue(fm, 'title');
-  if (!title) continue;
-  const slug = slugify(title);
-  const newFm = `slug: ${slug}\n${fm}`;
-  content = content.replace(/^---\n[\s\S]*?\n---/, `---\n${newFm}\n---`);
+  let fm = fmMatch[1];
+
+  // Set or overwrite slug to match filename (Jekyll default)
+  if (/^slug:\s/m.test(fm)) {
+    fm = fm.replace(/^slug:\s*.+$/m, `slug: ${slug}`);
+  } else {
+    fm = `slug: ${slug}\n${fm}`;
+  }
+  content = content.replace(/^---\n[\s\S]*?\n---/, `---\n${fm}\n---`);
   fs.writeFileSync(filePath, content);
-  console.log(`Added slug: ${slug} -> ${name}`);
+  console.log(`slug: ${slug} -> ${name}`);
 }
