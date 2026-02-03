@@ -8,6 +8,7 @@
   "publicationUri": "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.publication/3mdw2qys2v42z",
   "pdsUrl": "https://lepista.us-west.host.bsky.network",
   "frontmatter": {
+    "slugField": "slug",
     "description": "excerpt",
     "publishDate": "date",
     "coverImage": "image"
