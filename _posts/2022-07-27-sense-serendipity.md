@@ -5,6 +5,7 @@ author: Andi Argast
 date: 2022-07-28
 acknowledgement: 'Andi is the Strategy Lead at Hypha, and is currently a Probationary Member.'
 excerpt: 'Checking in on the Restructuring Futures Project, a Hypha collaboration'
+atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2tjk24f2r"
 ---
 
 ### {{ page.excerpt }}

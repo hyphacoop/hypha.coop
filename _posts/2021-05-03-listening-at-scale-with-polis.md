@@ -4,6 +4,7 @@ title: 'Listening at Scale with Polis'
 author: Hypha
 date: 2021-05-03
 excerpt: 'Exploring the decision-supporting tool that maps group opinions.'
+atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2tr4qig2j"
 ---
 
 ### {{ page.excerpt }}

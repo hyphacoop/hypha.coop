@@ -5,6 +5,7 @@ author: Hypha & Sutty
 date: 2023-12-05
 acknowledgement: 
 excerpt: 'Our new feature brings social interactions to static websites on the decentralized web.'
+atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2t7qyqf2i"
 ---
 
 <figure class="pb4">

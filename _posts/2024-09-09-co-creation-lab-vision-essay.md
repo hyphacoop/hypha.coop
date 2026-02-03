@@ -5,6 +5,7 @@ author: Hypha
 date: 2024-09-12
 acknowledgement: 
 excerpt: "A vision for reclaiming tech for the arts, culture, and activism through holistic co-creation"
+atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2t2arpf2b"
 ---
 
 <figure class="pb4">

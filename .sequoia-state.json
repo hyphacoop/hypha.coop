@@ -1,0 +1,238 @@
+{
+  "posts": {
+    "_posts/2026-02-02-digital-trust-glossary.md": {
+      "contentHash": "7457f31b1ee964603e40bbd74d890d61b524e06f5858b807661cfad2c53c9d24",
+      "atUri": "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2srmu2m2z",
+      "lastPublished": "2026-02-03T00:05:12.303Z",
+      "slug": "2026-02-02-digital-trust-glossary"
+    },
+    "_posts/2025-12-09-distributed-press-building-the-road.md": {
+      "contentHash": "ebab23d3eb12d2e9bf21a25238e6b8f748295306b6f5fa57be96231c2fe94459",
+      "atUri": "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2sskrbn2t",
+      "lastPublished": "2026-02-03T00:05:13.268Z",
+      "slug": "2025-12-09-distributed-press-building-the-road"
+    },
+    "_posts/2025-10-09-hypha-loves-dasl-the-library.md": {
+      "contentHash": "f8472f586a341c5ad91236408b042a6e6c80d5d7789d9d28cbad7f7b0fcf6f2b",
+      "atUri": "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2stfvau2z",
+      "lastPublished": "2026-02-03T00:05:14.120Z",
+      "slug": "2025-10-09-hypha-loves-dasl-the-library"
+    },
+    "_posts/2025-10-01-in-the-widening-gyre-or-thoughts-on-our-ai-epoch.md": {
+      "contentHash": "7ffc95059426869f8173fb531f864d26f8aa46a4ad3def2e9b560cdd8399a33f",
+      "atUri": "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2sugedp23",
+      "lastPublished": "2026-02-03T00:05:15.183Z",
+      "slug": "2025-10-01-in-the-widening-gyre-or-thoughts-on-our-ai-epoch"
+    },
+    "_posts/2025-07-30-hypha-loves-dasl-the-testing-suite.md": {
+      "contentHash": "a26a55681dc7e709b1857f9048797abef622d90d6be78b1e830b8dd9ae2f7912",
+      "atUri": "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2svao252i",
+      "lastPublished": "2026-02-03T00:05:15.972Z",
+      "slug": "2025-07-30-hypha-loves-dasl-the-testing-suite"
+    },
+    "_posts/2025-07-03-are-we-a-credit-card-yet.md": {
+      "contentHash": "101d382cc14295f73f342b3315cfce93c2957cefbb01e360f42b9c8c50341e69",
+      "atUri": "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2sw22pu2c",
+      "lastPublished": "2026-02-03T00:05:16.872Z",
+      "slug": "2025-07-03-are-we-a-credit-card-yet"
+    },
+    "_posts/2025-01-30-co-operative-cats-and-deliberative-dashboards.md": {
+      "contentHash": "49016ef629bb5019a981a4da78cd2673ac7b17befa081537190ed9d6c7ba9932",
+      "atUri": "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2swuzn623",
+      "lastPublished": "2026-02-03T00:05:17.726Z",
+      "slug": "2025-01-30-co-operative-cats-and-deliberative-dashboards"
+    },
+    "_posts/2024-12-12-dweb-local-first-software-weekend.md": {
+      "contentHash": "e6059e55a5eab3435f26ef5cba612348f8227a959b6da60d604efb5301999817",
+      "atUri": "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2sxpcr62b",
+      "lastPublished": "2026-02-03T00:05:18.637Z",
+      "slug": "2024-12-12-dweb-local-first-software-weekend"
+    },
+    "_posts/2024-11-26-dweb-camp-recap-a-cybernetic-ecology.md": {
+      "contentHash": "e218354c653b14d8e9d244cc1ecc4316e23b7d3f1b2791baf937a2a4ef912b28",
+      "atUri": "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2syjbdn2b",
+      "lastPublished": "2026-02-03T00:05:19.544Z",
+      "slug": "2024-11-26-dweb-camp-recap-a-cybernetic-ecology"
+    },
+    "_posts/2024-10-08-storing-metadata-at-starling-lab.md": {
+      "contentHash": "87ca62be3af1a3eda92df74d907c1f79cc894317557d6013a5a69c7e5d85b204",
+      "atUri": "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2szhn6w23",
+      "lastPublished": "2026-02-03T00:05:20.447Z",
+      "slug": "2024-10-08-storing-metadata-at-starling-lab"
+    },
+    "_posts/2024-09-09-co-creation-lab-vision-essay.md": {
+      "contentHash": "58d72fb4630449af6c5e585f4e06c3c815f1f8bc102095004d22c279dd04b27f",
+      "atUri": "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2t2arpf2b",
+      "lastPublished": "2026-02-03T00:05:21.226Z",
+      "slug": "2024-09-09-co-creation-lab-vision-essay"
+    },
+    "_posts/2024-09-11-museum-membership-futures.md": {
+      "contentHash": "04c3427e1a44a7d1a6202b5269a3fb23fd95152da5bfa6f47809415d1de86ccc",
+      "atUri": "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2t33sd52i",
+      "lastPublished": "2026-02-03T00:05:22.179Z",
+      "slug": "2024-09-11-museum-membership-futures"
+    },
+    "_posts/2024-09-11-cultural-democracy-and-quadratic-voting.md": {
+      "contentHash": "f5f4b21d329969abaaa8f8e559a7d67b875720ee7370b668c4e27909cb9ca403",
+      "atUri": "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2t3viy427",
+      "lastPublished": "2026-02-03T00:05:23.041Z",
+      "slug": "2024-09-11-cultural-democracy-and-quadratic-voting"
+    },
+    "_posts/2024-07-25-running-the-isle.md": {
+      "contentHash": "45e7f9970664da3159ef63b1fb93bc8dea48d0c854582fd3a7e33995c2a2cd23",
+      "atUri": "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2t4qta52b",
+      "lastPublished": "2026-02-03T00:05:23.984Z",
+      "slug": "2024-07-25-running-the-isle"
+    },
+    "_posts/2024-06-24-timewave-interview-with-udit.md": {
+      "contentHash": "cc568db5c6247198a1c4bb3a61be9f348f595d6e17f71f28bfdb77e637683d50",
+      "atUri": "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2t5n5no23",
+      "lastPublished": "2026-02-03T00:05:24.448Z",
+      "slug": "2024-06-24-timewave-interview-with-udit"
+    },
+    "_posts/2024-05-13-social-reader-is-out.md": {
+      "contentHash": "f9447f3b31076c97366c558feef6434ec1075001232eb218f8aa64042c73990e",
+      "atUri": "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2t63qlg25",
+      "lastPublished": "2026-02-03T00:05:25.223Z",
+      "slug": "2024-05-13-social-reader-is-out"
+    },
+    "_posts/2024-02-21-non-fungible-treasures.md": {
+      "contentHash": "5155fbe7832e8143f08d72b6475b7ec3615159a542a312fbc6c17a467ab62e0d",
+      "atUri": "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2t6vf2723",
+      "lastPublished": "2026-02-03T00:05:26.124Z",
+      "slug": "2024-02-21-non-fungible-treasures"
+    },
+    "_posts/2023-11-23-announcing-dp-social-inbox.md": {
+      "contentHash": "3dc29f4a8491a897febe624ebeaef810bb0e2a5c63be984d96c34ddf944c1c86",
+      "atUri": "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2t7qyqf2i",
+      "lastPublished": "2026-02-03T00:05:27.067Z",
+      "slug": "2023-11-23-announcing-dp-social-inbox"
+    },
+    "_posts/2023-08-21-technological-futures-under-the-redwoods.md": {
+      "contentHash": "9fbb0d279fe235ae35ed9aaa28b697bfe6e3632e722d9694ccbb3ba0391b46d8",
+      "atUri": "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2takrib2a",
+      "lastPublished": "2026-02-03T00:05:27.938Z",
+      "slug": "2023-08-21-technological-futures-under-the-redwoods"
+    },
+    "_posts/2023-05-31-strategy-is.md": {
+      "contentHash": "f331ca3ad19d36bc39699036c5feb3d6ee8c249e984a23f7d274036d942ed6dc",
+      "atUri": "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2tbe72f2b",
+      "lastPublished": "2026-02-03T00:05:28.747Z",
+      "slug": "2023-05-31-strategy-is"
+    },
+    "_posts/2023-05-02-distributed-press-v1-announcement.md": {
+      "contentHash": "c53e1af7d576555be4946b7a0c537c1d4e8958e22eb8e99b8904813bb29eb04a",
+      "atUri": "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2tc6uuo25",
+      "lastPublished": "2026-02-03T00:05:29.554Z",
+      "slug": "2023-05-02-distributed-press-v1-announcement"
+    },
+    "_posts/2023-03-01-public-goods.md": {
+      "contentHash": "8fd433b0c0235cd651a6c427f48159e8432017aa58e3f5a09c963d6d022de1bf",
+      "atUri": "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2tcyqtv2r",
+      "lastPublished": "2026-02-03T00:05:30.547Z",
+      "slug": "2023-03-01-public-goods"
+    },
+    "_posts/2023-01-30-hypha-at-starling-lab.md": {
+      "contentHash": "4365fc9f12e8d7a1d2f3262a2ddcd29ab932105f037b8432431a26a0c887dfd3",
+      "atUri": "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2te2kuv2r",
+      "lastPublished": "2026-02-03T00:05:31.564Z",
+      "slug": "2023-01-30-hypha-at-starling-lab"
+    },
+    "_posts/2022-11-30-hypha-reads.md": {
+      "contentHash": "b8f68370a4fff802ee57fb83b932c5ec40d20577abd458d6da3bbbaaef35d90c",
+      "atUri": "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2tetmn52r",
+      "lastPublished": "2026-02-03T00:05:32.409Z",
+      "slug": "2022-11-30-hypha-reads"
+    },
+    "_posts/2022-10-25-p2p-primer-part-4.md": {
+      "contentHash": "06d6c4c8869d3df44657846b6abd3051af36502d341d8cfda13f5c965d1dc74f",
+      "atUri": "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2tfq6cu27",
+      "lastPublished": "2026-02-03T00:05:33.351Z",
+      "slug": "2022-10-25-p2p-primer-part-4"
+    },
+    "_posts/2022-09-26-signal-call-iran-proxy.md": {
+      "contentHash": "103324a520ad6a1319cc3b0fade8b2be5c53798acdfe14f32320352aff0f9f8d",
+      "atUri": "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2tgonvm27",
+      "lastPublished": "2026-02-03T00:05:34.433Z",
+      "slug": "2022-09-26-signal-call-iran-proxy"
+    },
+    "_posts/2022-09-28-gardens-in-the-computer.md": {
+      "contentHash": "e42d0a30c0bfa8925e8a7d008f06e747454456f71604b5303856ecfa35ba2920",
+      "atUri": "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2thmr6w23",
+      "lastPublished": "2026-02-03T00:05:35.359Z",
+      "slug": "2022-09-28-gardens-in-the-computer"
+    },
+    "_posts/2022-08-11-staking-identities.md": {
+      "contentHash": "7abfd9a39755aa4d5f829ed5f98c978eee32b7e0c09b348a40552265d17237eb",
+      "atUri": "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2tiol7f2r",
+      "lastPublished": "2026-02-03T00:05:36.417Z",
+      "slug": "2022-08-11-staking-identities"
+    },
+    "_posts/2022-07-27-sense-serendipity.md": {
+      "contentHash": "c0554f5b6d1069da55fc1a35f7a36940cd8326b1d1e5f5915150be2367c179c0",
+      "atUri": "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2tjk24f2r",
+      "lastPublished": "2026-02-03T00:05:37.259Z",
+      "slug": "2022-07-27-sense-serendipity"
+    },
+    "_posts/2022-06-29-p2p-primer-part-3.md": {
+      "contentHash": "38285246c93f5f054b8f2e0ad3e6633094519f72d93e7b7690db5fbc77dd6e16",
+      "atUri": "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2tkh2cn2t",
+      "lastPublished": "2026-02-03T00:05:38.233Z",
+      "slug": "2022-06-29-p2p-primer-part-3"
+    },
+    "_posts/2022-05-12-debate-over-dweb-vs-web3.md": {
+      "contentHash": "e3a80619374908cf9122c2ad9de16ac2606075ee9b91b3729e3a320805d0b5e0",
+      "atUri": "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2tldod52t",
+      "lastPublished": "2026-02-03T00:05:39.236Z",
+      "slug": "2022-05-12-debate-over-dweb-vs-web3"
+    },
+    "_posts/2022-04-26-p2p-primer-part-2.md": {
+      "contentHash": "35aa12ab3b26f75bad096eadce8f13d0323bdd49cc461ce07bd8e129876445f4",
+      "atUri": "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2tm7lse2c",
+      "lastPublished": "2026-02-03T00:05:40.063Z",
+      "slug": "2022-04-26-p2p-primer-part-2"
+    },
+    "_posts/2022-03-28-p2p-primer-part-1.md": {
+      "contentHash": "b4940170c79d814d17b08de005e71b9b5cb1a203ca80fbd330f150cd6a06682b",
+      "atUri": "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2tn2yc72x",
+      "lastPublished": "2026-02-03T00:05:40.937Z",
+      "slug": "2022-03-28-p2p-primer-part-1"
+    },
+    "_posts/2022-02-08-decentralized-governance-cosmos.md": {
+      "contentHash": "cc398471a85af9c4da0bb1ca81d1a2a242753ab6aabab213327542197c2b71ce",
+      "atUri": "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2tnthdw2j",
+      "lastPublished": "2026-02-03T00:05:41.761Z",
+      "slug": "2022-02-08-decentralized-governance-cosmos"
+    },
+    "_posts/2022-02-07-data-lost-and-found.md": {
+      "contentHash": "c8a95be2652d3a4083c4f642ee53735d9895d24a81062dd1e73d457f83153ffe",
+      "atUri": "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2toldyo2j",
+      "lastPublished": "2026-02-03T00:05:42.618Z",
+      "slug": "2022-02-07-data-lost-and-found"
+    },
+    "_posts/2021-09-07-emergent-practices.md": {
+      "contentHash": "639c118c35d04ba1fec1c71da8d577d7297efd24a63c4df095d8df5a1d2db6d3",
+      "atUri": "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2tpivbz2a",
+      "lastPublished": "2026-02-03T00:05:43.520Z",
+      "slug": "2021-09-07-emergent-practices"
+    },
+    "_posts/2021-07-28-making-change.md": {
+      "contentHash": "b4e5bfc80fb4eeee46d8d4d51fc22ff4c6dd01639960eac37ce25d8b52212b02",
+      "atUri": "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2tqcsfb2a",
+      "lastPublished": "2026-02-03T00:05:44.403Z",
+      "slug": "2021-07-28-making-change"
+    },
+    "_posts/2021-05-03-listening-at-scale-with-polis.md": {
+      "contentHash": "9d07662553c95e4135b74f5a85a6306a0ca7f62401207b1ed7e33d6a173d40c3",
+      "atUri": "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2tr4qig2j",
+      "lastPublished": "2026-02-03T00:05:45.321Z",
+      "slug": "2021-05-03-listening-at-scale-with-polis"
+    },
+    "_posts/2021-02-25-how-we-co-operate.md": {
+      "contentHash": "22b0b167469ede2ed0dae599adfa8fef3497e93bd03f04f949689c37849e79f0",
+      "atUri": "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2trzvs52t",
+      "lastPublished": "2026-02-03T00:05:46.183Z",
+      "slug": "2021-02-25-how-we-co-operate"
+    }
+  }
+}

@@ -5,6 +5,7 @@ author: Cole
 date: 2024-10-10
 acknowledgement: "Cole is a probationary member at Hypha, and a software developer in the Data Provenance practice area."
 excerpt: "Rewriting our data pipeline to use Authenticated Attributes"
+atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2szhn6w23"
 ---
 
 <figure class="pb4">

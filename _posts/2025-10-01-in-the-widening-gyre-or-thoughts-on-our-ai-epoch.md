@@ -6,6 +6,7 @@ date: 2025-10-01
 acknowledgement: 
 excerpt: Text about artificial intelligence mostly written by a human
 
+atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2sugedp23"
 ---
 
 <figure class="pb4">

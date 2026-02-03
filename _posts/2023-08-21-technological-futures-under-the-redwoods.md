@@ -5,6 +5,7 @@ author: Andi Argast
 date: 2023-08-22
 acknowledgement: 
 excerpt: 'Ruminations on DWeb Camp 2023'
+atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2takrib2a"
 ---
 
 

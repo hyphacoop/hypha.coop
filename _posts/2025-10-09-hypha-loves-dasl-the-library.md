@@ -6,6 +6,7 @@ date: 2025-10-09
 acknowledgement: 
 excerpt: Stricter, Stronger, Simpler
 
+atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2stfvau2z"
 ---
 
 <figure class="pb4">

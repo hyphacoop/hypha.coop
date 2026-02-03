@@ -5,6 +5,7 @@ author: Vincent Charlebois
 date: 2024-11-26
 acknowledgement: 
 excerpt: "Reflecting on DWeb Camp 2024"
+atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2syjbdn2b"
 ---
 
 

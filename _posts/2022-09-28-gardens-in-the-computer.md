@@ -5,6 +5,7 @@ author: Garry Ing
 date: 2022-09-24
 acknowledgement: 'Garry is a designer, researcher, and a founding member of Hypha. The Digital Garden was co-produced with Hypha founding member, Dawn Walker.'
 excerpt: 'The Digital Garden is planted with our initial seeds: references to publishing, protocols, RSS, and co-operative approaches.'
+atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2thmr6w23"
 ---
 
 ### {{ page.excerpt }}

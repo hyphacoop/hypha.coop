@@ -5,6 +5,7 @@ author: Hypha
 date: 2023-06-05
 acknowledgement: 
 excerpt: 'Updates on the strategic planning process'
+atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2tbe72f2b"
 ---
 
 <figure>
