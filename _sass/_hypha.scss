@@ -242,3 +242,7 @@ a:focus {
 // @media #{$breakpoint-small} {
   // .flex-wrap-s { flex-wrap: wrap;}
   // }
+
+.read-width {
+  max-width: 70ch
+}
