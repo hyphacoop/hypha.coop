@@ -4,6 +4,7 @@ title: 'In solidarity with Iran: a response to Signal’s community call'
 author: Hypha
 date: 2022-09-26
 excerpt: 'Hypha members weigh in on proxy battles and the importance of  local-first networks'
+atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2tgonvm27"
 ---
 
 ### {{ page.excerpt }}

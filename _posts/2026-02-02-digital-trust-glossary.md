@@ -5,6 +5,7 @@ author: Cole
 date: 2026-02-02
 acknowledgement: 
 excerpt: "Ironing out definitions for integrity, authenticity, privacy, and more"
+atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2srmu2m2z"
 ---
 
 ### {{ page.excerpt }}

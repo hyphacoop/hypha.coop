@@ -5,6 +5,7 @@ author: Hypha
 date: 2024-09-11
 acknowledgement: 
 excerpt: "Helping Basel’s HEK build digital community with the world’s first tokenized museum membership"
+atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2t33sd52i"
 ---
 
 <figure class="pb4">

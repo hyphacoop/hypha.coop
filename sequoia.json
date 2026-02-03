@@ -1,0 +1,15 @@
+{
+  "siteUrl": "https://hypha.coop",
+  "contentDir": "_posts",
+  "imagesDir": "assets/images/social/dripline",
+  "publicDir": ".",
+  "outputDir": "_site",
+  "pathPrefix": "/dripline",
+  "publicationUri": "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.publication/3mdw2qys2v42z",
+  "pdsUrl": "https://lepista.us-west.host.bsky.network",
+  "frontmatter": {
+    "description": "excerpt",
+    "publishDate": "date",
+    "coverImage": "image"
+  }
+}

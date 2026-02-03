@@ -5,6 +5,7 @@ author: Hypha
 date: 2022-02-08
 acknowledgement: ''
 excerpt: 'Our proposal to renovate the Cosmos Hub Discourse Forum as a well-organized space for debate and deliberation'
+atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2tnthdw2j"
 ---
 
 ### {{ page.excerpt }}

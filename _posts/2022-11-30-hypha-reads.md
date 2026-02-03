@@ -5,6 +5,7 @@ author: Hypha
 date: 2022-11-30
 acknowledgement: 'A run-down of what Hypha is reading and thinking about this month'
 excerpt: 'Articles, tweets, and videos that resonated with us this month'
+atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2tetmn52r"
 ---
 
 

@@ -5,6 +5,7 @@ author: Hypha
 date: 2021-07-28
 acknowledgement: 'With thanks to workshop participants who provided advice and feedback during the writing of this article.'
 excerpt: 'Reflections on MozFest session on social transformation and movement tactics'
+atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2tqcsfb2a"
 ---
 ### {{ page.excerpt }}
 

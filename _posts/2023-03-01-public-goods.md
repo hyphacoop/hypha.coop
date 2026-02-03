@@ -5,6 +5,7 @@ author: Andi Argast
 date: 2023-03-01
 acknowledgement: 'Andi is the Strategy Lead at Hypha, and is a probationary member.'
 excerpt: 'Exploring the entanglement of Web3 and public goods'
+atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2tcyqtv2r"
 ---
 
 ### {{ page.excerpt }}

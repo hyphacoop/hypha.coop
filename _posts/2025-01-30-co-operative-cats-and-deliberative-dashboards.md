@@ -5,6 +5,7 @@ author: Andi Argast
 date: 2025-01-30
 acknowledgement: 
 excerpt: A review of recent governance-related projects
+atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2swuzn623"
 ---
 
 <figure class="pb4">

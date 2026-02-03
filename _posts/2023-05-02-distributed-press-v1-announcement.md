@@ -5,6 +5,7 @@ author: Mauve
 date: 2023-04-25
 acknowledgement: 'Mauve is a tech enthusiast with a passion for decentralization. They work on Distributed Press, as well as Agregore, a web browser that combines different peer to peer protocols.'
 excerpt: 'Distributed Press, a tool developed by Hypha, has undergone a major rewrite. We are excited to share the latest version.'
+atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2tc6uuo25"
 ---
 
 <figure>

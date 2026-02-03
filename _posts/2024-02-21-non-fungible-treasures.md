@@ -5,6 +5,7 @@ author: Vincent Charlebois
 date: 2024-02-29
 acknowledgement: 
 excerpt: "Art, Technology, and Collective Storytelling in the Blockchain Era"
+atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2t6vf2723"
 ---
 
 <figure class="pb4">

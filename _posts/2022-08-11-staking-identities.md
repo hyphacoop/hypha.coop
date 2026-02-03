@@ -5,6 +5,7 @@ author: Andi Argast
 date: 2022-08-11
 acknowledgement: 'Andi is the Strategy Lead at Hypha, and is a probationary member.'
 excerpt: 'Can DAOs meet the requirements of the 7 Cooperative Principles?'
+atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2tiol7f2r"
 ---
 
 ### {{ page.excerpt }}
