@@ -6,8 +6,11 @@ layout: default
   <div class="mb4 mt5">
     <a class="sans-serif link accent" title="Return to Dripline" href="{% link dripline.html %}">← Dripline</a>
   </div>
-  <header class="mt5 mb6 mw8 center">
+  <header class="read-width mt5 mb5 center">
     <h1 class="f1-ns f2 sans-serif lh-solid mb3 mt0-l">{{ page.title }}</h1>
+    {% if page.excerpt %}
+    <h2 class="f3 fw6 measure black">{{ page.excerpt }}</h2>
+    {% endif %}
     {% if page.author != "" or page.author != nil %}
     <p><strong>{{ page.author | upcase }}</strong></p>
     {% endif %}
@@ -18,18 +21,15 @@ layout: default
       {% endif %}
     </div>
   </header>
-  <article id="dripline" class="mw8 center">
-    {% if page.excerpt %}
-    <h3>{{ page.excerpt }}</h3>
-    {% endif %}
+  <article id="dripline" class="read-width center">
     {{ content }}
   </article>
   {% if page.activity.inReplyTo %}
-    {% include activity_pub/replying_to.html activity=page.activity.inReplyTo %}
+  {% include activity_pub/replying_to.html activity=page.activity.inReplyTo %}
   {% endif %}
 
   {% if page.activity %}
-    {% include activity_pub/interactions.html activity=page.activity profile=site.actor %}
+  {% include activity_pub/interactions.html activity=page.activity profile=site.actor %}
   {% endif %}
   {%- include sections.html path="newsletter.html" class="mt5" -%}
   <footer class="mt5 bt bw2 b--light-gray">
