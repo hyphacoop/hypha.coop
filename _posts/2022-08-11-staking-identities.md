@@ -8,8 +8,6 @@ excerpt: 'Can DAOs meet the requirements of the 7 Cooperative Principles?'
 atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2tiol7f2r"
 ---
 
-### {{ page.excerpt }}
-
 <figure>
 
 <img

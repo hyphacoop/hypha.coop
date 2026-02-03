@@ -8,8 +8,6 @@ excerpt: 'Part 3 of our P2P Primer'
 atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2tkh2cn2t"
 ---
 
-### {{ page.excerpt }}
-
 <figure>
 
 <img

@@ -8,8 +8,6 @@ excerpt: 'Our proposal to renovate the Cosmos Hub Discourse Forum as a well-orga
 atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2tnthdw2j"
 ---
 
-### {{ page.excerpt }}
-
 What makes the [interchain](https://cosmos.network) unique is its vision for interoperable blockchains that enable a patchwork of self-governing communities with shared economies. The focus on self-governance is important here. Every blockchain has full autonomy over the chain’s treasury, block space, and underlying software. Every blockchain charts its own future, collectively decided by its own community. This promise, where stakeholders participate in bottom-up decision-making, is what makes interchain projects attractive.
 
 The roughly 200K accounts on the [Cosmos Hub](https://hub.cosmos.network/main/hub-overview/overview.html) represent a vibrant community of ATOM holders: validators, delegators, developers, and investors. From node operations and tokenomics to marketing and organizing, ATOM holders bring a range of expertise and lived experiences. Among them, there’s an immense pool of talent and knowledge. **And while the blockchain provides the technical infrastructure to enable the formation of community and capital, what ultimately creates value for us all is our community’s ability to cooperate, tap into our unique strengths, and strategically deploy the resources we hold in common.**

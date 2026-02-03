@@ -20,8 +20,6 @@ atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2sugedp
         </figcaption>
 </figure>
 
-### {{ page.excerpt }}
-
 Despite the mounting noise, a precise definition of 'artificial intelligence,' a clear signal for what these words actually mean, remains elusive. More academic types prefer the specificity of terms such as machine learning and large language models[^1] when talking about the dominant models in use today, while writing aimed at general audiences often eschews definitions altogether, lumping in the above concepts alongside various processes of automation and workflow improvements. While a lack of clarity for terms that are supposedly technical (and therefore, seem like they *should* have some specificity) is nothing new, these "[floating signifiers](https://en.wikipedia.org/wiki/Floating_signifier)" are most evident in new and often highly capitalized technologies. This same definitional slight of hand is also evident when describing Web3 technologies[^2], a space where Hypha members have gained deep expertise and which, like AI, contains polarizing perspectives with trustlessness and technical autonomy on one side and ecological ruin and gross speculation on the other.
 
 As a technology focused co-op, Hypha members' responses to "AI everything", as I like to call it, run the gamut from rapidly ideating a Hypha AI service offering, to using AI as a consistent and crucial coding partner, to tentative curiosity, to distaste for vibe coding and distrust in the dominant models. Unsurprisingly, this reflects the diverse group of people who constitute the Hypha body: we could never have one cohesive response to the juggernaut that is artificial intelligence (whatever you take that term to mean).

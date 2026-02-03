@@ -15,7 +15,6 @@ atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2tc6uuo
 />   
 </figure>
 
-### {{ page.excerpt }}
 Thanks to a grant and support from the [Filecoin Foundation for the Decentralized Web](https://www.ffdweb.org/) and after months of working away on v1 of Distributed.Press, we're happy to announce that it's ready to be tried and tested!
 
 ## What is it?

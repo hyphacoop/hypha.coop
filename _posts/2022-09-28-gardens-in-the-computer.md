@@ -8,7 +8,6 @@ excerpt: 'The Digital Garden is planted with our initial seeds: references to pu
 atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2thmr6w23"
 ---
 
-### {{ page.excerpt }}
 <figure>
 <img src='/assets/images/posts/2022-09-24-garden-01.jpg' alt="a computer monitor in a field with a bouquet of flowers like a gravestone"/>
 <figcaption>Community Memory (<a href="https://www.computerhistory.org/collections/catalog/102680119">source</a>). Courtesy of Gwen Bell, Computer History Museum</figcaption>

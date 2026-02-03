@@ -7,8 +7,6 @@ excerpt: 'Exploring the decision-supporting tool that maps group opinions.'
 atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2tr4qig2j"
 ---
 
-### {{ page.excerpt }}
-
 For the past few years Hypha members have been tracking and contributing to [Polis](https://pol.is/home). 
 Polis is a tool for gathering and displaying what groups of people think, 
 and we've been exploring the emerging civic processes that make use of it. As technologists, 

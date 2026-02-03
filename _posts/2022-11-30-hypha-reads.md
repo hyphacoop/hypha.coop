@@ -9,8 +9,6 @@ atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2tetmn5
 ---
 
 
-### {{ page.excerpt }}
-
 <figure>
 <img src='/assets/images/posts/2022-11-30-paper-tablet.jpg' alt="Paper tablet with bookshelf handmade from colored paper on a yellow background"/>
 <figcaption>

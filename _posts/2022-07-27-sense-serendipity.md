@@ -8,9 +8,6 @@ excerpt: 'Checking in on the Restructuring Futures Project, a Hypha collaboratio
 atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2tjk24f2r"
 ---
 
-### {{ page.excerpt }}
-
-
 How do you create embodied artworks in virtual spaces? Are there alternative operating structures that can support this work outside of the usual arts-centre model? Can digital currencies or tokens sustain these practices? Restructuring Futures (RSF) is an ambitious project that addresses complex questions about tactility, presence, and alternative structures of artistic life-making. Now at the midway point in a two-phase project, we want to pause and gather the threads from the first phase of work and weave together a picture of what was learned and how this will guide the project in the coming months.
 
 *NB: the story of RSF is presented here as linear, but don’t be fooled! Like any design-driven, creative undertaking, the stages loop and progress simultaneously in a chaotic multi-layered stream of ideas, inputs, and explorations.* 

@@ -8,7 +8,6 @@ excerpt: 'Part 4 of our P2p Primer'
 atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2tfq6cu27"
 ---
 
-### {{ page.excerpt }}
 <figure>
 <img src='/assets/images/posts/2022-10-20-stay-connected.jpg' alt="a computer stencil with the words stay connected on the screen on a blue wooden background."/>
 <figcaption>Photo by <a href="https://unsplash.com/@theeastlondonphotographer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ehimetalor Akhere Unuabona</a> on <a href="https://unsplash.com/collections/Y-eond4sz2I/dripline?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>

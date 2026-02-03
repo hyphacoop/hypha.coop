@@ -15,9 +15,6 @@ atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2t3viy4
   </div>
 </figure>
 
-### {{ page.excerpt }}
-
-
 [Furtherfield](https://www.furtherfield.org/) is an art gallery that’s been uniquely located in the heart
 of North London’s Finsbury Park since 2011. When COVID made its indoor
 space unmanageable, the Furtherfield team took it as an opportunity to

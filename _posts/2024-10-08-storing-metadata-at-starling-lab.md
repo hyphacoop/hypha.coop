@@ -19,8 +19,6 @@ atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2szhn6w
         </figcaption>
 </figure>
 
-### {{ page.excerpt }}
-
 Hypha has worked with [The Starling Lab](https://hypha.coop/dripline/hypha-at-starling-lab/) since November 2022 to improve digital authenticity and data integrity in journalism, law, and history. One of the major tasks of the engineering team over the past summer has been to re-architect and build our data processing pipeline, to centre on our new metadata database: Authenticated Attributes.  
 
 The previous data pipeline, termed *Starling Integrity*, had limited capabilities for retrieving authenticated information for public sharing, and did not support updating of archive metadata as new information emerged. For example, when an asset was registered on a blockchain or a related asset was archived, we wanted to make this new information linked to the original asset and discoverable. We found this difficult with Starling Integrity as it was an archiving pipeline that operated only on individual media assets, rather than collections or relationships. The system modeled archives as ZIP files containing well-defined JSON metadata, which while portable, quickly became too opaque and restrictive as we encountered new use cases since its initial development in early 2023.

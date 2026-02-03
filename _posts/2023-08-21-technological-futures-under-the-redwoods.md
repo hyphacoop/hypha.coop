@@ -22,9 +22,6 @@ atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2takrib
 <figcaption>Looking up at DWeb's Camp Navarro</figcaption>
 </figure>
   
-### {{ page.excerpt }}
-  
-  
 Speaking from a plague-tinged future not unlike our own reality, this passage from [Sea of Tranquility](https://anotherstory.ca/item/ihViYpG-txUsUIVMwCpDdQ) resonated when I read it a few weeks after returning from my first [DWeb Camp](https://dwebcamp.org/). A week-long gathering in the California hills, DWeb Camp was a good antidote to the existential dread I sometimes carry; a vital response to the now-is-end-of-the-world feelings that many seem to share in this age of burning forests, warming oceans, and democratic failings. Technology frames my dystopian sentiments and DWeb Camp opened a space to envision different techno-futures than the extractive stare of Big Tech; one in which there are still wisps of the original dream of technology as a [medium for connection](https://www.well.com/about-2/) and [community](https://geocities.restorativland.org/).
 
 Hypha members and collaborators have been involved with DWeb Camp since its inception, and for the first time this year, Hypha was officially recognized as a project partner. For my colleagues, the gathering was equal parts reunion and project updates, both reconnecting with collaborators from around the world, while also seeing the progress of initiatives over the past year — and asking about everyone’s finances in a tough and anxious market. As a first-time participant, it was an exercise in swimming in a sea of introductions to people and projects, catching sessions when I could, and actively letting go of FOMO (one of the first pieces of advice from camp emcee Honey Bear. Side note: DWeb Camp had a weirdly large number of people named Bear.) 

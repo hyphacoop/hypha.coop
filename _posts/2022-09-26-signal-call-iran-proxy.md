@@ -7,8 +7,6 @@ excerpt: 'Hypha members weigh in on proxy battles and the importance of  local-f
 atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2tgonvm27"
 ---
 
-### {{ page.excerpt }}
-
 <figure class="ml0">
 <img src="/assets/images/posts/2022-09-26-signal-01.png" alt="This graph shows a large spike on the y-axis on September 14, which then lowers to a slightly higher baseline than previously"/>
 <figcaption><em><a href="https://explorer.ooni.org/chart/mat?probe_cc=IR&test_name=signal&since=2022-06-25&until=2022-09-25&axis_x=measurement_start_day">Aggregated data collected by OONI</a> (Open Observatory of Network Interference) showing consistent interference with the Signal app in Iran.</em></figcaption>

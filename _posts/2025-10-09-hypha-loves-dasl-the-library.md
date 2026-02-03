@@ -18,8 +18,6 @@ atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2stfvau
     </figcaption>
 </figure>
 
-### {{ page.excerpt }}
-
 Hypha has [continued](https://hypha.coop/dripline/hypha-loves-dasl-the-testing-suite/) to work with the [DASL](https://dasl.ing/) team, this time to create a reference implementation in Go: the aptly named [go-dasl](https://github.com/hyphacoop/go-dasl) library.
 
 A quick refresher: DASL (Data-Addressed Structures & Links) is a set of specifications for working with content-addressing. It's a distillation of ideas in the IPFS ecosystem, simplified to be easier to use and implement. For example DASL has their own [CID specification](https://dasl.ing/cid.html), but the number of codec options is much more limited. DASL irons out ambiguities to create a better developer and user experience.
