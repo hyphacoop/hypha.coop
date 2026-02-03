@@ -5,6 +5,7 @@ author: Cole
 date: 2024-10-10
 acknowledgement: "Cole is a probationary member at Hypha, and a software developer in the Data Provenance practice area."
 excerpt: "Rewriting our data pipeline to use Authenticated Attributes"
+atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2szhn6w23"
 ---
 
 <figure class="pb4">
@@ -17,8 +18,6 @@ excerpt: "Rewriting our data pipeline to use Authenticated Attributes"
     
         </figcaption>
 </figure>
-
-### {{ page.excerpt }}
 
 Hypha has worked with [The Starling Lab](https://hypha.coop/dripline/hypha-at-starling-lab/) since November 2022 to improve digital authenticity and data integrity in journalism, law, and history. One of the major tasks of the engineering team over the past summer has been to re-architect and build our data processing pipeline, to centre on our new metadata database: Authenticated Attributes.  
 

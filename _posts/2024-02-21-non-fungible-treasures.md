@@ -5,6 +5,7 @@ author: Vincent Charlebois
 date: 2024-02-29
 acknowledgement: 
 excerpt: "Art, Technology, and Collective Storytelling in the Blockchain Era"
+atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2t6vf2723"
 ---
 
 <figure class="pb4">
@@ -13,8 +14,6 @@ excerpt: "Art, Technology, and Collective Storytelling in the Blockchain Era"
     </div>
     <figcaption>Hawking Radiation's smart contract ASCII art animated</figcaption>
 </figure>
-
-### {{ page.excerpt }}
 
 Last October, amidst a diverse assembly of artists and thinkers, I took part in an event hosted by [Wild](https://wild.xyz/) in New Orleans. As an artist immersed in the realm of blockchain and smart contract art, the experience was both a great party and social gathering, and a fertile ground for enhancing my ideas on decentralized tools and NFTs in particular.
 

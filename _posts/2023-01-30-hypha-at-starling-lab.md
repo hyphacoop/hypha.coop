@@ -5,10 +5,9 @@ author: Hypha
 date: 2023-01-30
 acknowledgement: 
 excerpt: 'Reviewing 2022 highlights from one of Hypha’s most important collaborators'
+atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2te2kuv2r"
 ---
 
-
-### {{ page.excerpt }}
 
 On November 30, 2022 OpenAI released its ChatGPT, capping a chaotic and somewhat dystopian year with a chatbot capable of engaging in cogent (if very boring) conversation. Immediately following the release of ChatGPT, educators of all kinds began asking questions about what it means for our ability to decipher bot-generated text from human-written prose; in short, how to tell what is “real” and what is synthetic. 
 

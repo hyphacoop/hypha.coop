@@ -5,6 +5,7 @@ author: Hypha & Sutty
 date: 2023-12-05
 acknowledgement: 
 excerpt: 'Our new feature brings social interactions to static websites on the decentralized web.'
+atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2t7qyqf2i"
 ---
 
 <figure class="pb4">
@@ -23,8 +24,6 @@ excerpt: 'Our new feature brings social interactions to static websites on the d
     </a>
     </figcaption>  
 </figure>
-
-### {{ page.excerpt }}
 
 Hypha and [Sutty](https://sutty.nl/) are thrilled to announce the release of the Social Inbox, a new feature of [Distributed.Press](https://distributed.press/) that integrates a website's comment section with federated social media platforms like Mastodon. With the Social Inbox enabled, websites obtain their own account on the Fediverse, allowing it to automatically send out new posts to followers at the time of publication. When other users reply to posts, you can approve them to be published to the site as comments. The Social Inbox allows readers to directly engage with your posts where they already are, and gives publishers the ability to incorporate public dialogue into their websites.
 

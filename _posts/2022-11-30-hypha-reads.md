@@ -5,10 +5,9 @@ author: Hypha
 date: 2022-11-30
 acknowledgement: 'A run-down of what Hypha is reading and thinking about this month'
 excerpt: 'Articles, tweets, and videos that resonated with us this month'
+atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2tetmn52r"
 ---
 
-
-### {{ page.excerpt }}
 
 <figure>
 <img src='/assets/images/posts/2022-11-30-paper-tablet.jpg' alt="Paper tablet with bookshelf handmade from colored paper on a yellow background"/>

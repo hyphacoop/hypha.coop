@@ -5,10 +5,8 @@ author: Mai Ishikawa Sutton
 date: 2022-05-17
 acknowledgement: 'Mai is the Co-founder and Lead Editor of [COMPOST Magazine](https://two.compost.digital/), a core organizer with [DWeb Camp](https://dwebcamp.org/) and works with Hypha on several projects.'
 excerpt: 'What matters in this discussion – in any discussion over a technology really – is who’s designing it, who controls it, and who stands to benefit?'
+atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2tldod52t"
 ---
-
-### {{ page.excerpt }}
-
 
 <img
   src="{{ '/assets/images/posts/2022-05-12-ppl-sitting-unsplash.jpg' | relative_url }}"

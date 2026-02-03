@@ -4,6 +4,7 @@ title: 'How we co-operate'
 author: Hypha
 date: 2021-02-25
 excerpt: 'Notes on incorporation, co-operation, and solidarity from a one year old co-op.'
+atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2trzvs52t"
 ---
 
 ### Notes on incorporation, co-operation, and solidarity from a one year old co-op.

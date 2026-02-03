@@ -5,6 +5,7 @@ author: Andi (Words) & Vincent (Design)
 date: 2025-12-09
 acknowledgement: LLM text is from Gemini 3 Pro, with some light editing
 excerpt: Reflections on building decentralized publishing infrastructure
+atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2sskrbn2t"
 ---
 
 <div class="interactive-story-container">

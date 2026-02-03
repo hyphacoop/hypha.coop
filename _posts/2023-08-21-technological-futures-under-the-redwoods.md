@@ -5,6 +5,7 @@ author: Andi Argast
 date: 2023-08-22
 acknowledgement: 
 excerpt: 'Ruminations on DWeb Camp 2023'
+atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2takrib2a"
 ---
 
 
@@ -20,9 +21,6 @@ excerpt: 'Ruminations on DWeb Camp 2023'
 <img class="mt5 pt1" src="{{ '/assets/images/posts/2023-08-21-Redwood-canopy.webp' | relative_url }}" alt="Redwood Canopy at DWeb's Camp Navarro"/>
 <figcaption>Looking up at DWeb's Camp Navarro</figcaption>
 </figure>
-  
-### {{ page.excerpt }}
-  
   
 Speaking from a plague-tinged future not unlike our own reality, this passage from [Sea of Tranquility](https://anotherstory.ca/item/ihViYpG-txUsUIVMwCpDdQ) resonated when I read it a few weeks after returning from my first [DWeb Camp](https://dwebcamp.org/). A week-long gathering in the California hills, DWeb Camp was a good antidote to the existential dread I sometimes carry; a vital response to the now-is-end-of-the-world feelings that many seem to share in this age of burning forests, warming oceans, and democratic failings. Technology frames my dystopian sentiments and DWeb Camp opened a space to envision different techno-futures than the extractive stare of Big Tech; one in which there are still wisps of the original dream of technology as a [medium for connection](https://www.well.com/about-2/) and [community](https://geocities.restorativland.org/).
 

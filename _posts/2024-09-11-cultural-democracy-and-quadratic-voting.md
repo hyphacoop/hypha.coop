@@ -5,6 +5,7 @@ author: Hypha
 date: 2024-09-11
 acknowledgement: 
 excerpt: "Putting the “public” back in “public art” in one North London park and beyond"
+atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2t3viy427"
 ---
 
 
@@ -13,9 +14,6 @@ excerpt: "Putting the “public” back in “public art” in one North London 
     <img class="w-100" src="{{ '/assets/images/posts/2024-09-11-culturestake-subtitle.webp' | relative_url }}" alt="The phrase 'Collective Cultural Decision-making' is displayed in all uppercase, using a monospaced font."/>
   </div>
 </figure>
-
-### {{ page.excerpt }}
-
 
 [Furtherfield](https://www.furtherfield.org/) is an art gallery that’s been uniquely located in the heart
 of North London’s Finsbury Park since 2011. When COVID made its indoor

@@ -6,6 +6,7 @@ date: 2025-07-03
 acknowledgement: 
 excerpt: We used experimental data to increase a blockchain’s transactions per second by 35%.
 
+atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2sw22pu2c"
 ---
 
 <figure class="pb4">
@@ -18,8 +19,6 @@ excerpt: We used experimental data to increase a blockchain’s transactions per
     
         </figcaption>
 </figure>
-
-### {{ page.excerpt }}
 
 Consider the scale of the global consumer economy: [Mastercard processes about 22 million transactions every single hour. That’s 6200 transactions per second, i.e. about two-thirds of the 9,000 TPS (transactions per second) that Visa processes](https://capitaloneshopping.com/research/number-of-credit-card-transactions/). Both of those companies are highly centralized institutions that act as single points of failure for the vast majority of monetary transactions taking place today. Of course, decentralized alternatives exist, but even if those cryptocurrency networks were user-friendly enough for everyday use, they’d have to be heavily optimized before being able to overtake traditional means of settling payments.
 

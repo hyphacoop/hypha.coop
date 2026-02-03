@@ -6,6 +6,7 @@ date: 2025-10-09
 acknowledgement: 
 excerpt: Stricter, Stronger, Simpler
 
+atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2stfvau2z"
 ---
 
 <figure class="pb4">
@@ -16,8 +17,6 @@ excerpt: Stricter, Stronger, Simpler
         Illustration by <a href="https://www.stocksy.com/Iravgust">Iryna Auhustsinovich</a> via <a href="https://www.stocksy.com/illustration/5204170/group-of--businessman--trying-to-make-puzzle">Stocksy</a>
     </figcaption>
 </figure>
-
-### {{ page.excerpt }}
 
 Hypha has [continued](https://hypha.coop/dripline/hypha-loves-dasl-the-testing-suite/) to work with the [DASL](https://dasl.ing/) team, this time to create a reference implementation in Go: the aptly named [go-dasl](https://github.com/hyphacoop/go-dasl) library.
 

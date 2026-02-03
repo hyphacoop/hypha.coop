@@ -5,9 +5,8 @@ author: Cole
 date: 2026-02-02
 acknowledgement: 
 excerpt: "Ironing out definitions for integrity, authenticity, privacy, and more"
+atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2srmu2m2z"
 ---
-
-### {{ page.excerpt }}
 
 Here at Hypha, we talk about cryptography and digital trust a lot. We keep running into all these different terms in articles online, in your Bluesky posts, in our group chats. What's the difference between integrity and authenticity? Privacy and security? We keep misusing them, and you do too. So we thought it's time to iron out some definitions for all of us.
 

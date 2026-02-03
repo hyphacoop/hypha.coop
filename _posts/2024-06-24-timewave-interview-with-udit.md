@@ -5,6 +5,7 @@ author: Andi & Udit
 date: 2024-07-04
 acknowledgement: 
 excerpt: A quick dive into internet-native organizations and cross-chain protocols
+atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2t5n5no23"
 ---
 
 <figure class='flex flex-column pb6'>

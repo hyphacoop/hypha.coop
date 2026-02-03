@@ -5,6 +5,7 @@ author: Violet
 date: 2024-07-24
 acknowledgement: Violet is a probationary member at Hypha Worker Coop, and a test engineer on the Interchain practice area.
 excerpt: Testing blockchain software at scale
+atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2t4qta52b"
 ---
 
 
@@ -15,8 +16,6 @@ excerpt: Testing blockchain software at scale
     Photo by <a href='https://www.stocksy.com/RonComeau'>Ronnie Comeau</a> via Stocksy
   </figcaption>
 </figure>
-
-### {{ page.excerpt }}
 
 Testing blockchain software can be challenging. A new version of, say, Gaia (which powers the [Cosmos Hub](https://hub.cosmos.network/main)) will be installed in a large array of environments, and needs to work on all of them regardless of how esoteric users' operations become. Blockchains are thus often tested by starting a secondary network, a testnet, that runs the same software as the main blockchain but treats its tokens as funny money with no value. This allows testnet coordinators to run operations on a testnet with low risk.  
 

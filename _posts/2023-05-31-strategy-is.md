@@ -5,6 +5,7 @@ author: Hypha
 date: 2023-06-05
 acknowledgement: 
 excerpt: 'Updates on the strategic planning process'
+atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2tbe72f2b"
 ---
 
 <figure>
@@ -14,8 +15,6 @@ excerpt: 'Updates on the strategic planning process'
 /> 
   <figcaption>Image by Evgeniy Shvets via Stocksy</figcaption>  
 </figure>
-
-### {{ page.excerpt }}
 
 ~~Strategy is a roadmap for your organization. Strategy is a theory of change and some metrics. Strategy is a series of choices to [solve a problem](https://www.ideou.com/blogs/inspiration/strategic-planning-how-to-get-started).~~ 
 

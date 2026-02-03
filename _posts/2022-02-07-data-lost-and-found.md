@@ -5,9 +5,8 @@ author: Hypha
 date: 2022-02-07
 acknowledgement: ''
 excerpt: 'Healing data loss with Matrix’s federated protocols'
+atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2toldyo2j"
 ---
-
-### {{ page.excerpt }}
 
 [Matrix](https://matrix.org/) is a “decentralized real time chat” standard and software – an alternative to existing closed services like Slack – but positioned as having “no single points of control or failure.” We’ve used Matrix extensively within Hypha for our internal chat and while we’re a fan, there are still moments where we are surprised by how a design goal like federation plays out in practice. One such moment was when a failed server upgrade led to data loss and how the [federated](https://web.archive.org/web/20220120223024/https://networkcultures.org/unlikeus/resources/articles/what-is-a-federated-network/) Matrix protocol "healed" the data.
 

@@ -5,6 +5,7 @@ author: Hypha
 date: 2024-12-12
 acknowledgement: 
 excerpt: Supporting local events to build alternative tech futures
+atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2sxpcr62b"
 ---
 
 We're excited to support the first [DWeb Local First weekend](https://lu.ma/2ul5uwdl), a community-driven event in Vancouver, BC focused on exploring and advancing local-first software technologies. This two-day gathering, coming up on January 11-12, 2025, brings together developers, technologists, and DWeb enthusiasts to learn about and work with the principles and applications of local-first software.  

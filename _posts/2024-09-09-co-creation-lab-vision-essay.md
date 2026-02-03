@@ -5,6 +5,7 @@ author: Hypha
 date: 2024-09-12
 acknowledgement: 
 excerpt: "A vision for reclaiming tech for the arts, culture, and activism through holistic co-creation"
+atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2t2arpf2b"
 ---
 
 <figure class="pb4">
@@ -13,8 +14,6 @@ excerpt: "A vision for reclaiming tech for the arts, culture, and activism throu
     </div>
     <figcaption>Diagram of the Co-Creation Lab's focus areas and their interconnections</figcaption>
 </figure>
-
-### {{ page.excerpt }}
 
 “Technology” is often followed by the word “consumption” these days. It’s come to represent a one-way relationship, not a place to create. A broadcast, not a meaningful dialogue. But tech doesn’t have to only mean tracking, algorithms, and endless scrolling. Tools and practices like blockchain, peer-to-peer, open source software, and decentralized governance are putting power back into the hands of people that use it — so they might be shapers of tech not mere users. We at Hypha Worker Co-operative believe building tech that’s community-driven makes for richer futures and we’re dedicated to helping communities leverage these tools.
 

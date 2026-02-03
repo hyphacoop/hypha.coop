@@ -5,6 +5,7 @@ author: Hypha
 date: 2024-09-11
 acknowledgement: 
 excerpt: "Helping Basel’s HEK build digital community with the world’s first tokenized museum membership"
+atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2t33sd52i"
 ---
 
 <figure class="pb4">
@@ -13,8 +14,6 @@ excerpt: "Helping Basel’s HEK build digital community with the world’s first
 <img class="w-100" src="{{ 'assets/images/posts/2024-09-11-friends-of-hek.webp' | relative_url }}" alt="Friends of HEK logo in bold black text with stylized letters, overlaid on a flowing, dotted, multicolored abstract background."/>
     </div>
 </figure>
-
-### {{ page.excerpt }}
 
 Switzerland’s [HEK (House of Electronic Arts)](https://hek.ch/en) has been the leading museum
 for digital art, media, and culture since 2011. As a center of creative

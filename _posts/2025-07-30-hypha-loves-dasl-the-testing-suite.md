@@ -6,6 +6,7 @@ date: 2025-07-30
 acknowledgement: 
 excerpt: Writing 102 tests for science
 
+atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2svao252i"
 ---
 
 <figure class="pb4">
@@ -18,8 +19,6 @@ excerpt: Writing 102 tests for science
     
         </figcaption>
 </figure>
-
-### {{ page.excerpt }}
 
 Recently, Hypha got the exciting opportunity to work on a “red team” project, where we improve software by poking holes in it, twisting it, and seeing what breaks. We had applied for and were accepted to an [IPFS Implementation Grant](https://ipfsgrants.io/utility-grants/), called DASL Testing. After some nice words were written about us on the [IPFS blog](https://blog.ipfs.tech/2025-05-grants/), it was time to get to work.
 
