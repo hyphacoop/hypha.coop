@@ -9,6 +9,7 @@ source "https://rubygems.org"
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
 gem "jekyll", "~> 4.4.1"
+gem "logger"
 gem "html-proofer"
 gem 'nokogiri'
 # gem 'ruby-brs'
