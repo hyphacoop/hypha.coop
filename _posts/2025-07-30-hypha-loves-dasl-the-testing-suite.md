@@ -20,8 +20,6 @@ atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2svao25
         </figcaption>
 </figure>
 
-### {{ page.excerpt }}
-
 Recently, Hypha got the exciting opportunity to work on a “red team” project, where we improve software by poking holes in it, twisting it, and seeing what breaks. We had applied for and were accepted to an [IPFS Implementation Grant](https://ipfsgrants.io/utility-grants/), called DASL Testing. After some nice words were written about us on the [IPFS blog](https://blog.ipfs.tech/2025-05-grants/), it was time to get to work.
 
 For those who are unfamiliar, [DASL](https://dasl.ing/) (Data-Addressed Structures & Links) is a set of specifications for working with content-addressing. It’s a distillation of ideas in the [IPFS](https://ipfs.tech/) ecosystem, simplified to be easier to use and implement. For example they have their own CID specification, but the number of codec options is much more limited. At Hypha we’re excited about this effort, because we have firsthand experience working with IPFS through our partner [Starling Lab](https://www.starlinglab.org/). There’s been several times when everything seemed to be going smoothly, until it turned out a cloud provider was hashing data differently from us and nothing would match. DASL irons out these ambiguities to create a better developer and user experience.

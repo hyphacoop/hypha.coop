@@ -15,8 +15,6 @@ atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2t6vf27
     <figcaption>Hawking Radiation's smart contract ASCII art animated</figcaption>
 </figure>
 
-### {{ page.excerpt }}
-
 Last October, amidst a diverse assembly of artists and thinkers, I took part in an event hosted by [Wild](https://wild.xyz/) in New Orleans. As an artist immersed in the realm of blockchain and smart contract art, the experience was both a great party and social gathering, and a fertile ground for enhancing my ideas on decentralized tools and NFTs in particular.
 
 Wild is a platform celebrating art and creativity in the digital age. Their primary objectives are to empower artists with tools for growth, to provide space for creativity, and to introduce their art to a wider audience. The online residency took place over the summer and concluded with an invitation to attend WILD x NOLA, a three-day event organized for the artists involved in the residency to gather in-person. It helped foster a sense of community that could incubate novel ideas and projects. Beyond a tool for marketing or creating cultural capital, such events help build genuine connections. Despite this experience in New Orleans and the excitement surrounding the opportunities blockchains offer to artists, I find that misconceptions about NFTs still persist.

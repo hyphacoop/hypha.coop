@@ -8,9 +8,6 @@ excerpt: 'What matters in this discussion – in any discussion over a technolog
 atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2tldod52t"
 ---
 
-### {{ page.excerpt }}
-
-
 <img
   src="{{ '/assets/images/posts/2022-05-12-ppl-sitting-unsplash.jpg' | relative_url }}"
   alt="People sitting on the floor under a web of wires"

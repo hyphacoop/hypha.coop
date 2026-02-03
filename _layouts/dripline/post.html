@@ -19,6 +19,9 @@ layout: default
     </div>
   </header>
   <article id="dripline" class="mw8 center">
+    {% if page.excerpt %}
+    <h3>{{ page.excerpt }}</h3>
+    {% endif %}
     {{ content }}
   </article>
   {% if page.activity.inReplyTo %}

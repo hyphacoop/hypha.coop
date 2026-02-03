@@ -15,8 +15,6 @@ atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2t33sd5
     </div>
 </figure>
 
-### {{ page.excerpt }}
-
 Switzerland’s [HEK (House of Electronic Arts)](https://hek.ch/en) has been the leading museum
 for digital art, media, and culture since 2011. As a center of creative
 technology, HEK aims to be at the forefront of what’s relevant,

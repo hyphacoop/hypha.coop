@@ -8,8 +8,6 @@ excerpt: 'A Peer to Peer Primer: Comparing Protocols'
 atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2tn2yc72x"
 ---
 
-### {{ page.excerpt }}
-
 <img
   src="{{ '/assets/images/posts/2022-03-24-logos.png' | relative_url }}"
   alt="A collection of peer to peer logos"

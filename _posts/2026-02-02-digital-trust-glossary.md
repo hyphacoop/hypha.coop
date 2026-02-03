@@ -8,8 +8,6 @@ excerpt: "Ironing out definitions for integrity, authenticity, privacy, and more
 atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2srmu2m2z"
 ---
 
-### {{ page.excerpt }}
-
 Here at Hypha, we talk about cryptography and digital trust a lot. We keep running into all these different terms in articles online, in your Bluesky posts, in our group chats. What's the difference between integrity and authenticity? Privacy and security? We keep misusing them, and you do too. So we thought it's time to iron out some definitions for all of us.
 
 Each of these terms refer to how data (a photo, a DM, a webpage) gets processed, transformed, or handled by computer systems – all with the intent of making the source material or its delivery more trustworthy. We've written these definitions for programmers who have some cryptographic background, or people who already know what a [hash](https://samwho.dev/hashing) and MAC are. If you don't, hit up [Wikipedia](https://en.wikipedia.org/wiki/Message_authentication_code) for the short version or [Crypto 101](https://www.crypto101.io/) for the long version.

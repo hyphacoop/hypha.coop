@@ -27,8 +27,6 @@ atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2syjbdn
         </figcaption>
 </figure>
 
-### {{ page.excerpt }}
-
 Between utopia and realism, these contrasting quotes set the tone for this recap of [DWeb Camp 2024](https://dwebcamp.org/), a tech gathering in the Californian redwoods. DWeb Camp is a space for people to connect, share, and envision the future of the internet, and to explore how the decentralized web can foster healthier relationships with technology. Throughout our week-long gathering, we discussed decentralized governance, transparency, cooperation, ethical AI, and ecological metaphors that could inspire new ways of structuring interactions, embodying trust, human agency, and sustainability.
 
 ### Migration: Moving Together
