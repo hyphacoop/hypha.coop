@@ -17,7 +17,7 @@
         @extend .lh-copy;
 
         li:not(:last-child) {
-            margin-bottom: $spacing-extra-small;
+            margin-bottom: $spacing-medium;
         }
     }
 
