@@ -1,4 +1,5 @@
 ---
+slug: distributed-press-building-the-road
 image: "/assets/images/social/dripline/2025-12-09-distributed-press-building-the-road.webp"
 title: "Distributed Press: 'Building the Road as We Travel'*"
 author: Andi (Words) & Vincent (Design)

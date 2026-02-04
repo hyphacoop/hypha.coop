@@ -1,4 +1,5 @@
 ---
+slug: emergent-practices
 image: "/assets/images/social/dripline/2021-09-07-emergent-practices.webp"
 title: 'Emergent practices from the decentralized co-operative web'
 author: Mai Ishikawa Sutton

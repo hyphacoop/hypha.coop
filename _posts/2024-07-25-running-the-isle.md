@@ -1,4 +1,5 @@
 ---
+slug: running-the-isle
 image: "/assets/images/social/dripline/2024-06-24-timewave-interview-with-udit.webp"
 title: Running the Interchain Security Lightning Experiment
 author: Violet

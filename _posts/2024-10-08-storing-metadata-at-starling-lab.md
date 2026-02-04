@@ -1,4 +1,5 @@
 ---
+slug: storing-metadata-at-starling-lab
 image: "/assets/images/social/dripline/2024-10-08-storing-metadata-at-starling-lab.webp"
 title: "Hypha at the Starling Lab: storing metadata"
 author: Cole

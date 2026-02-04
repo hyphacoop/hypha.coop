@@ -1,4 +1,5 @@
 ---
+slug: signal-call-iran-proxy
 image: "/assets/images/social/dripline/2022-09-26-signal-call-iran-proxy.webp"
 title: 'In solidarity with Iran: a response to Signal’s community call'
 author: Hypha

@@ -1,4 +1,5 @@
 ---
+slug: co-creation-lab-vision-essay
 image: "/assets/images/social/dripline/2024-09-08-co-creation-lab-vision-essay.webp"
 title: Announcing the Co-Creation Lab 
 author: Hypha

@@ -1,4 +1,5 @@
 ---
+slug: cultural-democracy-and-quadratic-voting
 image: "/assets/images/social/dripline/2024-09-11-cultural-democracy-and-quadratic-voting.webp"
 title: Cultural democracy & quadratic voting
 author: Hypha

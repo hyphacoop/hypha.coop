@@ -1,4 +1,5 @@
 ---
+slug: timewave-interview-with-udit
 image: "/assets/images/social/dripline/2024-06-24-timewave-interview-with-udit.webp"
 title: Talking Timewave with Udit Vira
 author: Andi & Udit

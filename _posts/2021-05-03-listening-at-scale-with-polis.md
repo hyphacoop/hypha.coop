@@ -1,4 +1,5 @@
 ---
+slug: listening-at-scale-with-polis
 image: "/assets/images/social/dripline/2021-05-03-listening-at-scale-with-polis.webp"
 title: 'Listening at Scale with Polis'
 author: Hypha

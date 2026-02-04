@@ -1,4 +1,5 @@
 ---
+slug: are-we-a-credit-card-yet
 image: "/assets/images/social/dripline/2025-07-03-are-we-a-credit-card-yet.webp"
 title: Are we a credit card yet? A blockchain performance experiment 
 author: Violet

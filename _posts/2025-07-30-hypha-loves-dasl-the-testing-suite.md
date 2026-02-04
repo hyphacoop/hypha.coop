@@ -1,4 +1,5 @@
 ---
+slug: hypha-loves-dasl-the-testing-suite
 image: "/assets/images/social/dripline/2025-07-30-hypha-loves-dasl-the-testing-suite.webp"
 title: "Hypha ♥️ DASL: the test suite"
 author: Cole

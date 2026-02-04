@@ -1,4 +1,5 @@
 ---
+slug: staking-identities
 image: "/assets/images/social/dripline/2022-08-11-staking-identities.webp"
 title: '‘Staking’ identities: looking at the practicalities of transforming DAOs into co-ops'
 author: Andi Argast

@@ -12,5 +12,6 @@
     "description": "excerpt",
     "publishDate": "date",
     "coverImage": "image"
-  }
+  },
+  "stripDatePrefix": true
 }

@@ -4,5 +4,10 @@ _site
 .jekyll-cache
 .jekyll-metadata
 **/id_rsa
+*.pem
+*.key
+secret.key
 .ruby-version
 *.swp
+/_scripts/atproto/node_modules/
+/node_modules/

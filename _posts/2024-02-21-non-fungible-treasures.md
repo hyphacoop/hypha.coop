@@ -1,4 +1,5 @@
 ---
+slug: non-fungible-treasures
 image: "/assets/images/social/dripline/2024-02-21-non-fungible-treasures.webp"
 title: 'Beyond Tokens: Non-Fungible Treasures for Decentralized Worldbuilding'
 author: Vincent Charlebois

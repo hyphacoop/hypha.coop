@@ -1,4 +1,5 @@
 ---
+slug: making-change
 image: "/assets/images/social/dripline/2021-07-28-making-change.webp"
 title: 'Making change with the decentralized web'
 author: Hypha
