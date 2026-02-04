@@ -1,5 +1,4 @@
 ---
-slug: data-lost-and-found
 image: "/assets/images/social/dripline/2022-02-07-data-lost-and-found.webp"
 title: 'Data Lost and Found in a Distributed System'
 author: Hypha

@@ -1,5 +1,4 @@
 ---
-slug: co-operative-cats-and-deliberative-dashboards
 image: "/assets/images/social/dripline/2025-01-30-co-operative-cats-and-deliberative-dashboards.webp"
 title: Co-operative cats and deliberative dashboards 
 author: Andi Argast

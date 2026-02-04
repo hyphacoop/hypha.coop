@@ -1,5 +1,4 @@
 ---
-slug: social-reader-is-out
 image: "/assets/images/social/dripline/2024-05-13-social-reader-is-out.webp"
 title: 'Social Reader is out!'
 author: Hypha & Sutty

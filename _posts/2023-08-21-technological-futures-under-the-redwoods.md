@@ -1,5 +1,4 @@
 ---
-slug: technological-futures-under-the-redwoods
 image: "/assets/images/social/dripline/2023-08-21-technological-futures-under-the-redwoods.webp"
 title: 'Technological futures under the redwoods'
 author: Andi Argast

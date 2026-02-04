@@ -1,5 +1,4 @@
 ---
-slug: digital-trust-glossary
 image: "/assets/images/social/dripline/2026-02-02-digital-trust-glossary.webp"
 title: "Digital Trust Glossary"
 author: Cole

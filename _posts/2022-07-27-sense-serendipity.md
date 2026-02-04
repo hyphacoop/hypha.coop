@@ -1,5 +1,4 @@
 ---
-slug: sense-serendipity
 image: "/assets/images/social/dripline/2022-07-27-sense-serendipity.webp"
 title: 'Sense and Serendipity'
 author: Andi Argast

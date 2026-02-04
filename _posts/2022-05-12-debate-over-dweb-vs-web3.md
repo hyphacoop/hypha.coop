@@ -1,5 +1,4 @@
 ---
-slug: debate-over-dweb-vs-web3
 image: "/assets/images/social/dripline/2022-05-12-debate-over-dweb-vs-web3.webp"
 title: 'The Debate Over DWeb vs. Web3 & The Decentralized Elephant in the Room'
 author: Mai Ishikawa Sutton

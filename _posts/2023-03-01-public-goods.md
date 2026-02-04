@@ -1,5 +1,4 @@
 ---
-slug: public-goods
 image: "/assets/images/social/dripline/2023-03-01-public-goods.webp"
 title: 'Cyber-visions of altruism'
 author: Andi Argast

@@ -1,5 +1,4 @@
 ---
-slug: in-the-widening-gyre-or-thoughts-on-our-ai-epoch
 image: "/assets/images/social/dripline/2025-10-01-in-the-widening-gyre-or-thoughts-on-our-ai-epoch.webp"
 title: In the widening gyre or thoughts on our AI epoch
 author: Andi Argast

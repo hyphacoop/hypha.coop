@@ -1,5 +1,4 @@
 ---
-slug: hypha-loves-dasl-the-library
 image: "/assets/images/social/dripline/2025-10-09-hypha-loves-dasl-the-library.webp"
 title: "Hypha ♥️ DASL: the library"
 author: Cole

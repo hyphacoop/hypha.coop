@@ -1,5 +1,4 @@
 ---
-slug: dweb-local-first-software-weekend
 image: "/assets/images/social/dripline/2024-12-12-dweb-local-first-software-weekend.webp"
 title: "Hypha Co-op + DWeb Local-First Software Weekend" 
 author: Hypha
