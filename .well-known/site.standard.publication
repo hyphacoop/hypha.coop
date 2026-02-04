@@ -1,7 +1,1 @@
-# AT Protocol Publication Record
-# This file will be populated after running publish-publication.js
-# The content should be the AT-URI of the publication record
-# Example: at://did:plc:xxx/site.standard.publication/rkey
-
-# Replace this placeholder with the actual AT-URI after publishing
-at://PLACEHOLDER/site.standard.publication/self
+at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.publication/3mdw2qys2v42z
