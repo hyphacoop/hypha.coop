@@ -42,10 +42,7 @@ jobs:
         if: github.event_name == 'push' && github.ref == 'refs/heads/master'
         run: npm i -g sequoia-cli
 
-      # Add slugs from filenames for Sequoia (with a script that removes dates from filenames.)
-      - name: Add slugs for Sequoia
-        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
-        run: node _scripts/sequoia-slug.js
+
 
       # Publish to AT Protocol 
       # Only on push to master  (avoids publishing staging content to prod PDS)
