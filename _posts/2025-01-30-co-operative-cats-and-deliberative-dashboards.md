@@ -11,7 +11,7 @@ atUri: "at://did:plc:rxduhzsfgfpl2glle7vagcwl/site.standard.document/3mdw2swuzn6
 <figure class="pb4">
     <div class='flex flex-column items-center justify-center' style="width: 100%;">
 
-    <iframe style="border-radius: 1.5rem;" src="https://hyphacoop.github.io/governance-experiment/timeline/?theme=dark" height="700px" width="100%" scrolling="no" frameborder="0"></iframe>
+    <iframe style="border-radius: 1.5rem;" src="https://hyphacoop.github.io/governance-experiment/timeline/?theme=dark" height="800px" width="100%" scrolling="no" frameborder="0"></iframe>
 
  <figcaption>
             <a href="https://hyphacoop.github.io/governance-experiment/timeline" target="_blank">
