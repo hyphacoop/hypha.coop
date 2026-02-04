@@ -37,18 +37,20 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y libbrotli-dev
 
       # Install Sequoia (AT Protocol / Standard.site)
+      # Only on push to master 
       - name: Install Sequoia
-        if: github.ref == 'refs/heads/master' || (github.event_name == 'pull_request' && github.base_ref == 'master')
+        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
         run: npm i -g sequoia-cli
 
-      # Add slugs from filenames for Sequoia (date-less paths)
+      # Add slugs from filenames for Sequoia (with a script that removes dates from filenames.)
       - name: Add slugs for Sequoia
-        if: github.ref == 'refs/heads/master' || (github.event_name == 'pull_request' && github.base_ref == 'master')
+        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
         run: node _scripts/sequoia-slug.js
 
-      # Publish to AT Protocol (before build so inject can run after)
+      # Publish to AT Protocol 
+      # Only on push to master  (avoids publishing staging content to prod PDS)
       - name: Publish to ATProto
-        if: github.ref == 'refs/heads/master' || (github.event_name == 'pull_request' && github.base_ref == 'master')
+        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
         env:
           ATP_IDENTIFIER: ${{ secrets.ATP_IDENTIFIER }}
           ATP_APP_PASSWORD: ${{ secrets.ATP_APP_PASSWORD }}
@@ -96,7 +98,7 @@ jobs:
 
       # Inject AT URI link tags into built HTML (Standard.site verification)
       - name: Inject Sequoia link tags
-        if: github.ref == 'refs/heads/master' || (github.event_name == 'pull_request' && github.base_ref == 'master')
+        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
         run: sequoia inject
 
       - name: Publish to Distributed Press Staging
