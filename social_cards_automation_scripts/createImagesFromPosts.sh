@@ -93,7 +93,8 @@ for post in "$POSTS_DIR"/*.md; do
         [[ ! -f "$first_image_path" ]] && first_image_path=""
     fi
 
-    jpg_file="$IMAGES_DIR/$(basename "$post" .md).jpg"
+    # JPG only in temp dir (never written to assets); WebP goes to dripline
+    jpg_file=$(mktemp --suffix=.jpg)
     webp_file="$IMAGES_DIR/$(basename "$post" .md).webp"
 
     # Replace emojis for ImageMagick (e.g. ♥️ → "loves")
@@ -104,11 +105,11 @@ for post in "$POSTS_DIR"/*.md; do
         # Top margin = 50px for both title and image; image right aligns with author right (30px inset)
         adjusted_title=$(adjust_text "$title_for_render" 400 "$FONTS_DIR" "Work_Sans/WorkSans-VariableFont_wght.ttf")
 
-        # Long titles (>55 chars) get 10% smaller font for better fit
-        TITLE_FONT_SIZE=56
+        # Long titles (>55 chars) keep smaller font for fit
+        TITLE_FONT_SIZE=64
         LONG_TITLE_CHARS=55
         if [[ ${#title} -gt $LONG_TITLE_CHARS ]]; then
-            TITLE_FONT_SIZE=50   # 56 * 0.9 ≈ 50
+            TITLE_FONT_SIZE=50
         fi
 
         left_half=$(mktemp --suffix=.png)
@@ -117,15 +118,18 @@ for post in "$POSTS_DIR"/*.md; do
         TOP_MARGIN=50   # matches bottom-of-image to bottom-of-HYPHA distance
         SIDE_MARGIN=30  # bottom margin for HYPHA and author
 
-        # Left half: title block centered, pushed 10% right; text left-aligned within block
+        # Left half: title top aligns with image top; pushed 10% right; text left-aligned within block
         TITLE_W=480
         TITLE_OFFSET=60   # 10% of 600px
         # Title left edge = center(300) + offset(60) - half_width(240) = 120
         HYPHA_LEFT_MARGIN=$(( 300 + TITLE_OFFSET - TITLE_W/2 ))
+        # Image top = (627 - IMG_H) / 2; use same for title top alignment
+        IMG_H=439
+        TITLE_TOP=$(( (627 - IMG_H) / 2 ))
 
         convert -size 600x627 xc:"#9900FC" \
                 \( -size ${TITLE_W}x500 -background none -fill white -font "$FONTS_DIR/Work_Sans/WorkSans-VariableFont_wght.ttf" -pointsize $TITLE_FONT_SIZE \
-                   -gravity west caption:"$adjusted_title" \) -gravity center -geometry +${TITLE_OFFSET}+0 -composite \
+                   -gravity northwest caption:"$adjusted_title" \) -gravity northwest -geometry +${HYPHA_LEFT_MARGIN}+${TITLE_TOP} -composite \
                 -font "$FONTS_DIR/Work_Sans/WorkSans-Black.ttf" -pointsize 37 -fill white \
                 -gravity southwest -annotate +${HYPHA_LEFT_MARGIN}+${SIDE_MARGIN} "HYPHA" \
                 "$left_half"
@@ -174,10 +178,8 @@ for post in "$POSTS_DIR"/*.md; do
 
     # Convert JPG to WebP
     cwebp -q 100 "$jpg_file" -o "$webp_file"
+    rm -f "$jpg_file"
 
 done
-
-# Clean up JPG files, keeping only WebP versions
-rm -f "$IMAGES_DIR"/*.jpg
 
 echo "Social cards generated in $IMAGES_DIR"
