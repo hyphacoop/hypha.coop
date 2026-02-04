@@ -1,5 +1,5 @@
 ---
-image: "/assets/images/social/dripline/2026-02-03-why-provenance-matters.webp"
+image: "/assets/images/social/dripline/2026-02-03-who-took-this-photo.webp"
 title: "Who took this photo?"
 author: Udit
 date: 2026-02-03
