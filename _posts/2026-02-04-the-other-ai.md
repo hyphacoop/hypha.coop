@@ -8,7 +8,7 @@ excerpt: "Exploring possibilities in a world of technological foreclosure"
 ---
 
 <figure class="pb4">
-<img src="{{ 'assets/images/posts/2026-02-04-the-other-ai-stocksy.jpg' | relative_url }}" alt="Illustration from Stocksy by Marko Stojanovic" />
+<img src="{{ 'assets/images/posts/2026-02-04-the-other-ai-stocksy.jpg' | relative_url }}" alt="A close-up of a human hand mirroring the open-palm gesture of a weathered, peeling statue. Both hands reach out over a stone basin against a blurred outdoor background." />
 <figcaption>
     <i>
         Photo
