@@ -7,6 +7,23 @@ acknowledgement:
 excerpt: "Exploring possibilities in a world of technological foreclosure"
 ---
 
+<figure class="pb4">
+<img src="{{ 'assets/images/posts/2026-02-04-the-other-ai-stocksy.jpg' | relative_url }}" alt="Illustration from Stocksy by Marko Stojanovic" />
+<figcaption>
+    <i>
+        Photo
+    </i> 
+    by 
+    <a href="https://www.stocksy.com/markostojan">
+        Marko Stojanovic
+    </a>
+    via 
+    <a href="https://www.stocksy.com/">
+        Stocksy
+    </a>
+    </figcaption>  
+</figure>
+
 Over the holiday break, I headed to Vancouver Island where I was born and raised to spend the holidays with my extended family. And while I didn't bring my laptop, I did take a copy of *[Empire of AI](https://karendhao.com/)* so that I could finish it while eating Christmas cookies and relaxing. Despite not being your usual vacation read, it's a great book and recommended for anyone curious about the current arc of AI and how decisions, especially technical decisions, by OpenAI have shaped our current trajectory. (It's also got some good gossipy bits about the OpenAI leadership, if you enjoy that sort of thing.)
 
 While the book [delves](https://arxiv.org/html/2412.11385v1) into frontier models, at Hypha we've been exploring the world of open source AI and thinking through the state of cooperative AI (as in, AI that's developed by or for cooperatives). While I appreciate there is a significant amount of ideological handwringing in the cooperative sector over the replacement and deskilling of workers, this all the more reason for people with varied motivations to build and offer products that focus on more than just profit. It seems unlikely that AI is going to disappear from our workplaces, or disentangle from the code running the platforms and tools we use in our personal lives. So short of a fulsome rejection of digital technologies, which may be an option for some people but not all, I'm advocating for thoughtful approaches to AI in worker-owned organizations. Weaving responsibly-built AI into cooperative workflows need not replace workers, and there is potential for time savings for administrative and operational tasks. While I'm generally wary of 'efficiencies and effectiveness' rhetoric, within the cooperative context in which members can exercise control over the outcomes of doing work faster, the possibilities are more interesting. Cooperatives could decide to move to a four-day work week, for example. Or refocus their work, emphasizing solidarity or care. Each use case would be context specific, and would require thoughtful experimentation. The point is to be creative about how we use technology, not doctrinaire.
