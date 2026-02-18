@@ -27,7 +27,7 @@ To generate your theme, we send that underlying DID through a hashing algorithm 
 
 <figure class="pb4">
     <div class='flex items-center justify-center' style="width: 100%;">
-        <img class="w-100" src="{{ 'assets/images/posts/2026-02-17-we-built-you-a-garden.webp' | relative_url }}" alt="Screenshot showing unique garden themes and flower identicons on spores.garden"/>
+        <img class="w-100" src="{{ 'assets/images/posts/2026-02-18-we-built-you-a-garden.webp' | relative_url }}" alt="Screenshot showing unique garden themes and flower identicons on spores.garden"/>
     </div>
     <figcaption>
         Every instance of spores.garden has a unique colour palette, flower identicon, and isoline background generated from your DID.
