@@ -10,7 +10,7 @@ excerpt: "In fact, we built [digital gardens](https://maggieappleton.com/garden-
 
 Digital gardening is about curating and contextualizing ideas on your own personal site. There are already ATProto apps for posting short-form thoughts, for writing longer pieces, for posting photos and videos, for streaming and for sharing events; in your garden, you can post new content and also repost the best of what you've published elsewhere.
 
-<p class="accent">The vision of spores.garden is a lightly social network of personal websites which let people express themselves as individuals. Thoughts in these gardens are planted, curated, and admired by a network of fellow humans, not by an algorithm.</p>
+The vision of spores.garden is a lightly social network of personal websites which let people express themselves as individuals. Thoughts in these gardens are planted, curated, and admired by a network of fellow humans, not by an algorithm.
 
 The more we dug into this project, the more respect we gained for ATProto; it gave us a lot more to think about than a traditional web project. It was easy enough to build a site generator, but we got to take advantage of some of ATProto's unique properties to add some really fun features to spores.garden: a unique visual identity for each garden, the ability to pull in data from other apps, and semi-social experiences like linking to other gardens or following a trail of breadcrumbs to see what other users are looking at.
 
