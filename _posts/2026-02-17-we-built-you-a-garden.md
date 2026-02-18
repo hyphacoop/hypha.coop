@@ -4,14 +4,13 @@ title: "We built you a garden 🌼"
 author: Lexa
 date: 2026-02-17
 acknowledgement: 
-excerpt: "Digital gardens for everyone on ATProto—yours already exists, it's just waiting for you to plant something"
+excerpt: "In fact, we built [digital gardens](https://maggieappleton.com/garden-history) for everyone on ATProto! Yours already exists—it's just waiting for you to plant something. Check out your corner of the internet [here](https://spores.garden/)."
 ---
 
-In fact, we built [digital gardens](https://maggieappleton.com/garden-history) for **everyone** on ATProto! Yours already exists—it's just waiting for you to plant something. Check out your corner of the internet [here](https://spores.garden/).
 
 Digital gardening is about curating and contextualizing ideas on your own personal site. There are already ATProto apps for posting short-form thoughts, for writing longer pieces, for posting photos and videos, for streaming and for sharing events; in your garden, you can post new content and also repost the best of what you've published elsewhere.
 
-The vision of spores.garden is a lightly social network of personal websites which let people express themselves as individuals. Thoughts in these gardens are planted, curated, and admired by a network of fellow humans, not by an algorithm.
+<p class="accent">The vision of spores.garden is a lightly social network of personal websites which let people express themselves as individuals. Thoughts in these gardens are planted, curated, and admired by a network of fellow humans, not by an algorithm.</p>
 
 The more we dug into this project, the more respect we gained for ATProto; it gave us a lot more to think about than a traditional web project. It was easy enough to build a site generator, but we got to take advantage of some of ATProto's unique properties to add some really fun features to spores.garden: a unique visual identity for each garden, the ability to pull in data from other apps, and semi-social experiences like linking to other gardens or following a trail of breadcrumbs to see what other users are looking at.
 
@@ -27,7 +26,7 @@ To generate your theme, we send that underlying DID through a hashing algorithm 
 
 <figure class="pb4">
     <div class='flex items-center justify-center' style="width: 100%;">
-        <img class="w-100" src="{{ 'assets/images/posts/2026-02-17-we-built-you-a-garden.png' | relative_url }}" alt="Screenshot showing unique garden themes and flower identicons on spores.garden"/>
+        <img class="w-100" src="{{ 'assets/images/posts/2026-02-17-we-built-you-a-garden.webp' | relative_url }}" alt="Screenshot showing unique garden themes and flower identicons on spores.garden"/>
     </div>
     <figcaption>
         Every instance of spores.garden has a unique colour palette, flower identicon, and isoline background generated from your DID.
