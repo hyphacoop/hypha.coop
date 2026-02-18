@@ -109,4 +109,4 @@ Here's how different actors should think about content provenance today:
 * [IEEE biography on Luhn's work](https://spectrum.ieee.org/hans-peter-luhn-and-the-birth-of-the-hashing-algorithm)
 
 
-*Hypha is always looking to [collaborate](http://hypha.coop/work) with leading teams on groundbreaking emerging technology. If that sounds like you, feel free to reach out at hello@hypha.coop*
+*We're always on the lookout for brilliant teams doing bold things with emerging technology. Sound like you? Drop us a line at [{{ site.email }}](mailto:{{ site.email-hidden }})*

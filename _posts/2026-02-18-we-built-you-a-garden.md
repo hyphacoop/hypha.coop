@@ -88,4 +88,4 @@ We chose to build it on ATProto because its features made it a great choice for 
 
 We can't wait to see what you grow! Claim your flower [here](https://spores.garden/).
 
-*Hypha is always looking to [collaborate](http://hypha.coop/work) with leading teams on emerging technology. If that sounds like you, feel free to reach out at hello@hypha.coop*
+*We're always on the lookout for brilliant teams doing bold things with emerging technology. Sound like you? Drop us a line at [{{ site.email }}](mailto:{{ site.email-hidden }})*

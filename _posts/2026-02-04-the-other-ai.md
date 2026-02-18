@@ -62,4 +62,4 @@ Cooperatively-run infrastructure ties to two related points: digital sovereignty
 
 It's 2026 and we are living in strange and uncertain times. The current technological paradigm is not working for many people, and while it's unclear if cooperatively developed, responsible AI can positively bend the arc, we owe it to ourselves to try.
 
-*Hypha is always looking to [collaborate](http://hypha.coop/work) with leading teams on emerging technology. If that sounds like you, feel free to reach out at hello@hypha.coop*
+*We're always on the lookout for brilliant teams doing bold things with emerging technology. Sound like you? Drop us a line at [{{ site.email }}](mailto:{{ site.email-hidden }})*
