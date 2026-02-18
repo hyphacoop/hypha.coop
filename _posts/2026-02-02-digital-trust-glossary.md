@@ -161,5 +161,3 @@ This is mostly speculative. C2PA exists but is not yet widely used or deployed i
 ### In practice
 
 User-facing technologies for this are still being developed. You should be able to edit a photo with Photoshop today and then upload the photo to Adobe's [inspector](https://contentauthenticity.adobe.com/inspect) and see the provenance info, embedded in the image through C2PA. Another option would be to install [Proofmode](https://proofmode.org/) on your phone, which will collect provenance information for your photos.
-
-*We're always on the lookout for brilliant teams doing bold things with emerging technology. Sound like you? Drop us a line at [{{ site.email }}](mailto:{{ site.email-hidden }})*

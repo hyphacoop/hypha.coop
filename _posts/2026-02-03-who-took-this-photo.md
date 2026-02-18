@@ -107,6 +107,3 @@ Here's how different actors should think about content provenance today:
 * This Bluesky thread by Eliot Higgins from Bellingcat captures much of Hypha's views on our information landscape: [Eliot Higgins on Bluesky](https://bsky.app/profile/eliothiggins.bsky.social/post/3md3dxzzadc2z)
 * [C2PA explainer](https://spec.c2pa.org/specifications/specifications/1.0/explainer/Explainer.html)
 * [IEEE biography on Luhn's work](https://spectrum.ieee.org/hans-peter-luhn-and-the-birth-of-the-hashing-algorithm)
-
-
-*We're always on the lookout for brilliant teams doing bold things with emerging technology. Sound like you? Drop us a line at [{{ site.email }}](mailto:{{ site.email-hidden }})*
