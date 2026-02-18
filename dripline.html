@@ -55,7 +55,7 @@ order: 4
         {%- if post.author != "Hypha" -%}{{ post.author }},&nbsp;{%- endif -%}{{
         post.date | date: date_format }}
       </h4>
-      <p class="mt0 f5 mb3 measure lh-copy">{{ post.excerpt }}</p>
+      <div class="mt0 f5 mb3 measure lh-copy">{{ post.excerpt | markdownify }}</div>
     </div>
     {%- endfor -%}
   </article>

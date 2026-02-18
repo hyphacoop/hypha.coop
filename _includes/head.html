@@ -1,6 +1,6 @@
 {%- assign meta_title = page.title | append: ' | ' | append: site.title -%}
 {% if page.collection == "posts" %}{%- assign meta_section = "Dripline: " -%}{% endif %}
-{%- assign meta_description = page.excerpt | default: site.description -%}
+{%- assign meta_description = page.excerpt | default: site.description | markdownify | strip_html | normalize_whitespace -%}
 {%- assign meta_image = page.image | default: "/assets/images/hypha-social.png" | prepend: site.url -%}
 
 <head>
