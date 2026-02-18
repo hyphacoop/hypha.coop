@@ -2,11 +2,12 @@
 image: "/assets/images/social/dripline/2026-02-17-we-built-you-a-garden.webp"
 title: "We built you a garden 🌼"
 author: Lexa
-date: 2026-02-17
+date: 2026-02-18
 acknowledgement: 
-excerpt: "In fact, we built [digital gardens](https://maggieappleton.com/garden-history) for everyone on ATProto! Yours already exists—it's just waiting for you to plant something. Check out your corner of the internet [here](https://spores.garden/)."
+excerpt: "A web of interconnected personal sites built on ATProto for people who want to curate their digital space."
 ---
 
+In fact, we built [digital gardens](https://maggieappleton.com/garden-history) for everyone on ATProto! Yours already exists—it's just waiting for you to plant something. Check out your corner of the internet [here](https://spores.garden/).
 
 Digital gardening is about curating and contextualizing ideas on your own personal site. There are already ATProto apps for posting short-form thoughts, for writing longer pieces, for posting photos and videos, for streaming and for sharing events; in your garden, you can post new content and also repost the best of what you've published elsewhere.
 
