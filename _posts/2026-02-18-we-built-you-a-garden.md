@@ -1,5 +1,5 @@
 ---
-image: "/assets/images/social/dripline/2026-02-17-we-built-you-a-garden.webp"
+image: "/assets/images/social/dripline/2026-02-18-we-built-you-a-garden.webp"
 title: "We built you a garden 🌼"
 author: Lexa
 date: 2026-02-18
