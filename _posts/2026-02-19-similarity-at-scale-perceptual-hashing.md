@@ -4,7 +4,7 @@ title: "Similarity at scale"
 author: Cole
 date: 2026-02-19
 acknowledgement:
-excerpt: "An overview of perceptual hashing: how similar inputs produce similar outputs for matching media beyond exact bits."
+excerpt: "An overview of perceptual hashing"
 ---
 
 Recent Dripline posts have covered what can be built on top of cryptographic hash functions: important concepts like data integrity and content provenance. Having the ability to uniquely refer to and verify an exact piece of data is crucial to building reliable digital content systems. But this can only take us so far. How can we keep track of an image when it's been converted to a different file format? Or compressed? How can we match a song played in a noisy room to its original studio recording? Perceptual hashing answers these questions, and allows provenance information to travel far beyond the exact bits it was originally attached to.
@@ -82,5 +82,3 @@ Even at a small scale, integrating perceptual hashes into content provenance wor
 Any usage of perceptual hashes must take into account their fallibility. Unlike cryptographic hashes, they cannot be relied on as a guarantee. Sometimes dissimilar images will have similar hashes; sometimes similar images will have dissimilar hashes. A good algorithm will reduce these scenarios, but can never eliminate them. A well-designed system (such as one for moderation) will use perceptual hashes as a guide rather than an absolute indicator.
 
 Hypha has been experimenting with open source perceptual hash algorithms, so stay tuned for our next blog post on this topic!
-
-*Hypha is always looking to [collaborate](http://hypha.coop/work) with leading teams on emerging technology. If that sounds like you, feel free to reach out at hello@hypha.coop*
