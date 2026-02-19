@@ -14,11 +14,28 @@ POSTS_DIR="../_posts"
 # Directory where fonts are stored
 FONTS_DIR="fonts"
 
-# Directory where images will be saved
-IMAGES_DIR="img"
+# Directory where social card images are saved (dripline folder used by posts)
+IMAGES_DIR="../assets/images/social/dripline"
+
+# Directory where post images are stored (relative to repo root)
+ASSETS_DIR="../assets/images/posts"
 
 # Create the images directory if it does not exist
 mkdir -p "$IMAGES_DIR"
+
+# Replace emojis with text equivalents (ImageMagick doesn't render emojis)
+replace_emojis_for_render() {
+    local text="$1"
+    # Heart emojis → "loves" (for "Hypha ♥️ DASL" / "Hypha ❤️ DASL" series)
+    echo "$text" | sed 's/♥️/loves/g; s/❤️/loves/g; s/♥/loves/g; s/❤/loves/g'
+}
+
+# Extract first image path from post body (img src or markdown ![]())
+# Returns path like assets/images/posts/filename.jpg or empty if none
+extract_first_image() {
+    local post="$1"
+    grep -oE '/?assets/images/posts/[a-zA-Z0-9_.-]+\.(jpg|jpeg|png|webp|gif)' "$post" 2>/dev/null | head -1 | sed 's|^/||'
+}
 
 # Function to dynamically adjust text to prevent overflow
 adjust_text() {
@@ -65,41 +82,104 @@ for post in "$POSTS_DIR"/*.md; do
     # Extract the title, excerpt, and author
     title=$(awk '/^title:/{gsub(/^title: /,""); gsub(/'"'"'/,""); gsub(/"/,""); print; exit}' "$post")
     author=$(awk '/^author:/{gsub(/^author: /,""); gsub(/'"'"'/,""); gsub(/"/,""); print; exit}' "$post")
+    # Remove parentheticals like (Words), (Design) from author
+    author=$(echo "$author" | sed 's/ ([^)]*)//g' | sed 's/  */ /g' | sed 's/^ *\| *$//g')
 
-    # Adjust title and excerpt to prevent overflow
-    adjusted_title=$(adjust_text "$title" 275 "$FONTS_DIR" "Work_Sans/WorkSans-VariableFont_wght.ttf")
+    # Try to get first image from post body
+    first_image_rel=$(extract_first_image "$post")
+    first_image_path=""
+    if [[ -n "$first_image_rel" ]]; then
+        first_image_path="../$first_image_rel"
+        [[ ! -f "$first_image_path" ]] && first_image_path=""
+    fi
 
-    # Create an image with the title, excerpt, and branding
-    jpg_file="$IMAGES_DIR/$(basename "$post" .md).jpg"
+    # JPG only in temp dir (never written to assets); WebP goes to dripline
+    jpg_file=$(mktemp --suffix=.jpg)
     webp_file="$IMAGES_DIR/$(basename "$post" .md).webp"
 
-    # Check if author is "Hypha" and adjust accordingly
-    if [[ "$author" == "Hypha" ]]; then
-        # If author is Hypha, only show HYPHA on the left
-        convert -size 1200x627 xc:"#9900FC" \
-                \( -size 900x500 -background none -fill white -font "$FONTS_DIR/Work_Sans/WorkSans-VariableFont_wght.ttf" -pointsize 64 \
-                   label:"$adjusted_title" -gravity center \) -geometry +0+60  -composite \
+    # Replace emojis for ImageMagick (e.g. ♥️ → "loves")
+    title_for_render=$(replace_emojis_for_render "$title")
+
+    if [[ -n "$first_image_path" ]]; then
+        # 50/50 layout: alignment based on bottom-of-image to bottom-of-HYPHA margin (50px)
+        # Top margin = 50px for both title and image; image right aligns with author right (30px inset)
+        adjusted_title=$(adjust_text "$title_for_render" 400 "$FONTS_DIR" "Work_Sans/WorkSans-VariableFont_wght.ttf")
+
+        # Long titles (>55 chars) keep smaller font for fit
+        TITLE_FONT_SIZE=64
+        LONG_TITLE_CHARS=55
+        if [[ ${#title} -gt $LONG_TITLE_CHARS ]]; then
+            TITLE_FONT_SIZE=50
+        fi
+
+        left_half=$(mktemp --suffix=.png)
+        right_half=$(mktemp --suffix=.png)
+
+        TOP_MARGIN=50   # matches bottom-of-image to bottom-of-HYPHA distance
+        SIDE_MARGIN=30  # bottom margin for HYPHA and author
+
+        # Left half: title top aligns with image top; pushed 10% right; text left-aligned within block
+        TITLE_W=480
+        TITLE_OFFSET=60   # 10% of 600px
+        # Title left edge = center(300) + offset(60) - half_width(240) = 120
+        HYPHA_LEFT_MARGIN=$(( 300 + TITLE_OFFSET - TITLE_W/2 ))
+        # Image top = (627 - IMG_H) / 2; use same for title top alignment
+        IMG_H=439
+        TITLE_TOP=$(( (627 - IMG_H) / 2 ))
+
+        convert -size 600x627 xc:"#9900FC" \
+                \( -size ${TITLE_W}x500 -background none -fill white -font "$FONTS_DIR/Work_Sans/WorkSans-VariableFont_wght.ttf" -pointsize $TITLE_FONT_SIZE \
+                   -gravity northwest caption:"$adjusted_title" \) -gravity northwest -geometry +${HYPHA_LEFT_MARGIN}+${TITLE_TOP} -composite \
                 -font "$FONTS_DIR/Work_Sans/WorkSans-Black.ttf" -pointsize 37 -fill white \
-                -gravity southwest -annotate +30+30 "HYPHA" \
-                "$IMAGES_DIR/$(basename "$post" .md).jpg"
+                -gravity southwest -annotate +${HYPHA_LEFT_MARGIN}+${SIDE_MARGIN} "HYPHA" \
+                "$left_half"
+
+        # Right half: duotone image centered in container (80% - 12% total = 420x439)
+        duotone_img=$(mktemp --suffix=.png)
+        IMG_W=420
+        IMG_H=439
+        convert "${first_image_path}[0]" -resize ${IMG_W}x${IMG_H}^ -gravity center -extent ${IMG_W}x${IMG_H} \
+                -modulate 100,0 -size 1x256! gradient:"#9900FC"-white -clut "$duotone_img"
+        convert -size 600x627 xc:"#9900FC" "$duotone_img" -gravity center -composite "$right_half"
+        rm -f "$duotone_img"
+
+        # Author right-aligned with image right (90px from right = image margin)
+        if [[ "$author" != "Hypha" ]]; then
+            AUTHOR_RIGHT_MARGIN=$(( (600 - IMG_W) / 2 ))   # 90px, matches image right edge
+            convert "$right_half" -font "$FONTS_DIR/Work_Sans/WorkSans-VariableFont_wght.ttf" -pointsize 37 -fill white \
+                    -gravity southeast -annotate +${AUTHOR_RIGHT_MARGIN}+${SIDE_MARGIN} "$author" "$right_half"
+        fi
+
+        convert "$left_half" "$right_half" +append "$jpg_file"
+        rm -f "$left_half" "$right_half"
     else
-        # If author is not Hypha, show HYPHA on left and author name on right
-        convert -size 1200x627 xc:"#9900FC" \
-                \( -size 900x500 -background none -fill white -font "$FONTS_DIR/Work_Sans/WorkSans-VariableFont_wght.ttf" -pointsize 64 \
-                   label:"$adjusted_title" -gravity center \) -geometry +0+60  -composite \
-                -font "$FONTS_DIR/Work_Sans/WorkSans-Black.ttf" -pointsize 37 -fill white \
-                -gravity southwest -annotate +30+30 "HYPHA" \
-                -font "$FONTS_DIR/Work_Sans/WorkSans-VariableFont_wght.ttf" -pointsize 37 -fill white \
-                -gravity southeast -annotate +30+30 "$author" \
-                "$IMAGES_DIR/$(basename "$post" .md).jpg"
+        # Fallback: existing layout (full-width title, no image)
+        # Use caption for automatic word wrapping (label doesn't wrap)
+        adjusted_title=$(adjust_text "$title_for_render" 900 "$FONTS_DIR" "Work_Sans/WorkSans-VariableFont_wght.ttf")
+
+        if [[ "$author" == "Hypha" ]]; then
+            convert -size 1200x627 xc:"#9900FC" \
+                    \( -size 900x500 -background none -fill white -font "$FONTS_DIR/Work_Sans/WorkSans-VariableFont_wght.ttf" -pointsize 64 \
+                       -gravity center caption:"$adjusted_title" \) -gravity center -composite \
+                    -font "$FONTS_DIR/Work_Sans/WorkSans-Black.ttf" -pointsize 37 -fill white \
+                    -gravity southwest -annotate +30+30 "HYPHA" \
+                    "$jpg_file"
+        else
+            convert -size 1200x627 xc:"#9900FC" \
+                    \( -size 900x500 -background none -fill white -font "$FONTS_DIR/Work_Sans/WorkSans-VariableFont_wght.ttf" -pointsize 64 \
+                       -gravity center caption:"$adjusted_title" \) -gravity center -composite \
+                    -font "$FONTS_DIR/Work_Sans/WorkSans-Black.ttf" -pointsize 37 -fill white \
+                    -gravity southwest -annotate +30+30 "HYPHA" \
+                    -font "$FONTS_DIR/Work_Sans/WorkSans-VariableFont_wght.ttf" -pointsize 37 -fill white \
+                    -gravity southeast -annotate +30+30 "$author" \
+                    "$jpg_file"
+        fi
     fi
 
     # Convert JPG to WebP
     cwebp -q 100 "$jpg_file" -o "$webp_file"
+    rm -f "$jpg_file"
 
 done
-
-# Clean up JPG files, keeping only WebP versions
-rm -f "$IMAGES_DIR"/*.jpg
 
 echo "Social cards generated in $IMAGES_DIR"
