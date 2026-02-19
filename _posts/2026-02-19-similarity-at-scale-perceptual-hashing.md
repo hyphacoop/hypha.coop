@@ -21,10 +21,11 @@ One key property of cryptographic hash functions is that their output is randoml
 
 <figure class="pb4">
     <div class='flex items-center justify-center' style="width: 100%;">
-        <img class="w-100" src="{{ 'assets/images/posts/2026-02-19-perceptual-hashing-image1.png' | relative_url }}" alt="Diagram illustrating the avalanche effect in cryptographic hash functions"/>
+        <img class="w-100" src="{{ 'assets/images/posts/2026-02-19-perceptual-hashing-image3.png' | relative_url }}" alt="The SHA1 hash function exhibits good avalanche effect. When a single bit is changed the hash sum becomes totally different. The hash sums in the diagram are the SHA1 sums of the strings &#34;000&#34;, &#34;001&#34; and &#34;010&#34; encoded in standard ASCII and no trailing new line etc. The difference between 000 and 001 is only one bit even though it is ASCII encoded bytes. Original illustration by David Göthberg, Sweden. Released by David as public domain."/>
     </div>
     <figcaption>
-        Source: <a href="https://en.wikipedia.org/wiki/Avalanche_effect">wiki article</a> or <a href="https://commons.wikimedia.org/wiki/File:Avalanche_effect.svg">commons page</a>. By: David Göthberg. License: public domain.
+        <a href="https://en.wikipedia.org/wiki/Avalanche_effect">Wikipedia article</a> or <a href="https://commons.wikimedia.org/wiki/File:Avalanche_effect.svg">Commons page</a><br>
+        David Göthberg (public domain)
     </figcaption>
 </figure>
 
@@ -32,10 +33,11 @@ Perceptual hashing has the opposite goal: similar inputs should result in simila
 
 <figure class="pb4">
     <div class='flex items-center justify-center' style="width: 100%;">
-        <img class="w-100" src="{{ 'assets/images/posts/2026-02-19-perceptual-hashing-image2.png' | relative_url }}" alt="Similar images have very similar hashes (PDQ hash algorithm)"/>
+        <img class="w-100" src="{{ 'assets/images/posts/2026-02-19-perceptual-hashing-image1.png' | relative_url }}" alt="Side-by-side comparison showing how small image changes affect perceptual hash similarity. Six columns display: (1) original image, (2) JPEG compressed to 20% file size, (3) resized to 75% smaller, (4) noise added to 40% of pixels, (5) cropped by 10 pixels, and (6) a completely different image structure. Each column includes the modified image, a small grid visualization of hash differences (with colored squares marking changed bits), and the resulting hash string with changed characters highlighted. Captions below indicate similarity: JPEG compression shows 2 bits different (99% similarity), resize 10 bits (96%), noise 14 bits (95%), crop 18 bits (93%), and different image structure 120 bits (55% similarity)."/>
     </div>
     <figcaption>
-        Similar images have very similar hashes (PDQ hash algorithm). Source: <a href="https://github.com/darwinium-com/pdqhash">pdqhash</a>. License: Apache 2.0.
+        Similar images have very similar hashes (PDQ hash algorithm)<br>
+        <a href="https://github.com/darwinium-com/pdqhash">pdqhash</a> (Apache 2.0)
     </figcaption>
 </figure>
 
@@ -45,10 +47,10 @@ All these hash functions exist on a spectrum from shallow analysis to deep analy
 
 <figure class="pb4">
     <div class='flex items-center justify-center' style="width: 100%;">
-        <img class="w-100" src="{{ 'assets/images/posts/2026-02-19-perceptual-hashing-image3.png' | relative_url }}" alt="Spectrum of hash functions from shallow to deep analysis"/>
+        <img class="w-100" src="{{ 'assets/images/posts/2026-02-19-perceptual-hashing-image4.png' | relative_url }}" alt="A horizontal diagram showing a spectrum of image comparison techniques from shallow to deep analysis. At the top, arrows indicate increasing depth of image analysis, robustness, recall, and CPU cost toward the right, and shallower analysis, stricter matching, lower cost, and faster processing toward the left. Four labeled sections appear from left to right: &#34;Exact same bits: MD5, SHA-256&#34; &#34;Syntactic: PhotoDNA, dHash/aHash/pHash, PDQ&#34; &#34;Deeper syntactic: GIST, SIFT&#34; &#34;Semantic: Machine-learning algorithms&#34; The rightmost &#34;Semantic&#34; section is darker blue, visually emphasizing higher computational cost and deeper analysis."/>
     </div>
     <figcaption>
-        Source: <a href="https://github.com/facebook/ThreatExchange/blob/main/hashing/hashing.pdf">hashing.pdf</a> page 5. Author: Facebook. License: BSD.
+        <a href="https://github.com/facebook/ThreatExchange/blob/main/hashing/hashing.pdf">Facebook, hashing.pdf</a> page 5 (BSD)
     </figcaption>
 </figure>
 
@@ -60,10 +62,11 @@ For image hashing, there are a variety of methods, but they all boil down to rep
 
 <figure class="pb4">
     <div class='flex items-center justify-center' style="width: 100%;">
-        <img class="w-100" src="{{ 'assets/images/posts/2026-02-19-perceptual-hashing-image4.png' | relative_url }}" alt="Visualization of the PDQ image perceptual hashing algorithm"/>
+        <img class="w-100" src="{{ 'assets/images/posts/2026-02-19-perceptual-hashing-image2.png' | relative_url }}" alt="Step-by-step visual diagram explaining how a perceptual image hash (PDQ/pHash-style) is generated from an image. The process is shown in numbered stages: Original image: A colorful looping ribbon shape on a black background. Resize to max 512×512. Take luminance values (convert to grayscale). Blur using Jarosz filters. Downsample to 64×64. Apply Discrete Cosine Transform (DCT), shown as a matrix of frequency coefficients. Convert DCT values to binary by thresholding against the median, shown as a grid of 0s and 1s. Read the binary values in a specified order (bottom right to top left). Convert the binary string to hexadecimal, producing a final hash value labeled as the &#34;PDQ Hash.&#34; Each stage includes a small visual representation of the intermediate image or matrix transformation."/>
     </div>
     <figcaption>
-        Visualization of the PDQ image perceptual hashing algorithm. Source: <a href="https://github.com/darwinium-com/pdqhash">pdqhash</a>. License: Apache 2.0.
+        Visualization of the PDQ image perceptual hashing algorithm<br>
+        <a href="https://github.com/darwinium-com/pdqhash">pdqhash</a> (Apache 2.0)
     </figcaption>
 </figure>
 
