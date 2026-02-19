@@ -1,0 +1,35 @@
+- name: "Information Integrity & Digital Evidence"
+  projects:
+    - starling-lab
+    - openarchive
+
+- name: "AI Governance & Verifiable Computing"
+  projects:
+    - eqty
+
+- name: "Blockchain Infrastructure & Protocol Development"
+  projects:
+    - cosmos
+    - isle-testnet
+    - loro-testnet
+
+- name: "Cultural Infrastructure & Digital Public Goods"
+  projects:
+    - friends-of-hek
+    - 221a
+    - countermap
+    - culturestake
+
+- name: "Decentralized Publishing & Content Distribution"
+  projects:
+    - distributed-press
+    - compost
+
+- name: "Collaborative Futures & Experimental Practice"
+  projects:
+    - restructuring-futures
+    - sacred-stacks
+
+- name: "Cooperative Infrastructure & Operations"
+  projects:
+    - meet-coop
