@@ -87,5 +87,3 @@ In a world increasingly run by algorithms and monolithic media companies, we wan
 We chose to build it on ATProto because its features made it a great choice for the experience we wanted to create—playful, curated, human. From being able to use someone's DID as the basis for a fun visual identity to the creative social affordances of backlinks enabled by Constellation; it's a rich ecosystem with a lot of potential that we're excited to keep exploring. We've even added some [documentation](https://github.com/hyphacoop/spores.garden/blob/main/docs/layouts.md) for fellow experienced gardeners to add support for their own ATproto projects.
 
 We can't wait to see what you grow! Claim your flower [here](https://spores.garden/).
-
-*Hypha is always looking to [collaborate](http://hypha.coop/work) with leading teams on emerging technology. If that sounds like you, feel free to reach out at hello@hypha.coop*

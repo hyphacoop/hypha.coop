@@ -24,6 +24,7 @@ layout: default
   <article id="dripline" class="read-width center">
     {{ content }}
   </article>
+  {% include sections/dripline-cta.html %}
   {% if page.activity.inReplyTo %}
   {% include activity_pub/replying_to.html activity=page.activity.inReplyTo %}
   {% endif %}
