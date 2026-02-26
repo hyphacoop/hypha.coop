@@ -103,8 +103,7 @@ debate saw itself supplanted by the passive consumption of information, so that
 Habermas could write in 1962 that “The world fashioned by the mass media is a
 public sphere in appearance only”[^11].
 
-Social media only
-makes this worse: returning to the topic in 2022, Habermas writes about a
+Social media only makes this worse: returning to the topic in 2022, Habermas writes about a
 “blurring \[of\] the perception of \[the\] boundary between the private and
 public spheres of life,”[^12] the creation of a
 world of “semi-private, semi-public” echo-chamber spheres, inimical to the
@@ -159,7 +158,7 @@ Here’s an example workflow: I want to understand ATProto. I could spend an hou
 
 <figure class="pb4">
     <div class='flex items-center justify-center' style="width: 100%;">
-        <img class="w-100" src="{{ 'assets/images/posts/2026-02-25-image2.png' | relative_url }}" alt="Public Sphere / New Intelligencer illustration"/>
+        <img class="w-100" src="{{ 'assets/images/posts/2026-02-25-image2.png' | relative_url }}" alt="Post asking for Bluesky accounts to follow: ATproto and Bluesky technical leaders, AI people, Toronto local journalists, and Canadian journalists."/>
     </div>
 </figure>
 
@@ -167,7 +166,7 @@ The robot gives me a dozen key accounts plus five starter packs:
 
 <figure class="pb4">
     <div class='flex items-center justify-center' style="width: 100%;">
-        <img class="w-100" src="{{ 'assets/images/posts/2026-02-25-image4.png' | relative_url }}" alt="Public Sphere / New Intelligencer illustration"/>
+        <img class="w-100" src="{{ 'assets/images/posts/2026-02-25-image4.png' | relative_url }}" alt="Section titled 'ATproto &amp; Bluesky technical thought leadership' explaining that the Bluesky engineering team is accessible on their platform, followed by a 'Core Bluesky team' subsection highlighting @jay.bsky.team (Jay Graber), CEO and co-founder of Bluesky, describing her role in ATproto’s design and her posts about decentralization and protocol strategy."/>
     </div>
 </figure>
 
@@ -175,7 +174,7 @@ Then I turn to the New Intelligencer and added a few categories to my newspaper.
 
 <figure class="pb4">
     <div class='flex items-center justify-center' style="width: 100%;">
-        <img class="w-100" src="{{ 'assets/images/posts/2026-02-25-image1.png' | relative_url }}" alt="Public Sphere / New Intelligencer illustration"/>
+        <img class="w-100" src="{{ 'assets/images/posts/2026-02-25-image1.png' | relative_url }}" alt="Screenshot of JSON configuration defining news categories: 'Technology' (id: tech, max_stories: 5), 'ATProto' (id: tech-atproto, max_stories: 3), and 'AI' (id: tech-ai, max_stories: 3), each with type 'news' and descriptive text."/>
     </div>
 </figure>
 
@@ -183,7 +182,7 @@ Now I get high-signal reports of goings on in the ecosystem:
 
 <figure class="pb4">
     <div class='flex items-center justify-center' style="width: 100%;">
-        <img class="w-100" src="{{ 'assets/images/posts/2026-02-25-image3.png' | relative_url }}" alt="Public Sphere / New Intelligencer illustration"/>
+        <img class="w-100" src="{{ 'assets/images/posts/2026-02-25-image3.png' | relative_url }}" alt="ATPROTO news section showing headline 'Northsky Expands with 225 New Invites, Announces Apps and AppView' (2 posts in story), plus 'Skyreader Launches: RSS Reader Built on ATProto' (5 posts) and 'Opinion: SocialFi Platforms Pivot as ATProto Gains Momentum' (2 posts)."/>
     </div>
 </figure>
 
