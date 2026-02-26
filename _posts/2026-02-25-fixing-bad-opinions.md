@@ -101,9 +101,7 @@ consumption”[^10]. National newspapers, mass media, and
 the advertising industry came together to create a world where coffeehouse
 debate saw itself supplanted by the passive consumption of information, so that
 Habermas could write in 1962 that “The world fashioned by the mass media is a
-public sphere in appearance only”[^11].
-
-Social media only makes this worse: returning to the topic in 2022, Habermas writes about a
+public sphere in appearance only”[^11]. Social media only makes this worse: returning to the topic in 2022, Habermas writes about a
 “blurring \[of\] the perception of \[the\] boundary between the private and
 public spheres of life,”[^12] the creation of a
 world of “semi-private, semi-public” echo-chamber spheres, inimical to the
