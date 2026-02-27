@@ -26,15 +26,54 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: ${{ github.head_ref }}
+          fetch-depth: 0
 
       # Standard checkout for non-PR events
       - name: Checkout repo
         if: github.event_name != 'pull_request'
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       # Install Brotli development headers (Fix for ruby-brs gem)
       - name: Install Brotli dependencies
         run: sudo apt-get update && sudo apt-get install -y libbrotli-dev
+
+      - name: Install social card dependencies
+        if: github.event_name == 'push'
+        run: sudo apt-get install -y imagemagick webp
+
+      - name: Generate social cards for new posts
+        if: github.event_name == 'push'
+        run: |
+          set -euo pipefail
+
+          BEFORE_SHA="${{ github.event.before }}"
+          CURRENT_SHA="${{ github.sha }}"
+          EMPTY_SHA="0000000000000000000000000000000000000000"
+
+          if [[ "$BEFORE_SHA" == "$EMPTY_SHA" ]]; then
+            mapfile -t NEW_POSTS < <(git diff-tree --no-commit-id --name-status -r "$CURRENT_SHA" -- "_posts/*.md" | awk '$1=="A"{print $2}')
+          else
+            mapfile -t NEW_POSTS < <(git diff --name-status "$BEFORE_SHA" "$CURRENT_SHA" -- "_posts/*.md" | awk '$1=="A"{print $2}')
+          fi
+
+          if [[ "${#NEW_POSTS[@]}" -eq 0 ]]; then
+            echo "No newly added posts found. Skipping social card generation."
+            exit 0
+          fi
+
+          printf 'Generating social cards for:\n%s\n' "${NEW_POSTS[@]}"
+          ./social_cards_automation_scripts/createImagesFromPosts.sh "${NEW_POSTS[@]}"
+
+      - name: Commit generated social cards
+        if: github.event_name == 'push'
+        uses: EndBug/add-and-commit@v9
+        with:
+          add: '_posts,assets/images/social/dripline'
+          default_author: github_actions
+          message: 'Generate social cards for new posts'
+          fetch: true
 
       # Install Sequoia (AT Protocol / Standard.site)
       # Only on push to master 
@@ -128,5 +167,4 @@ jobs:
           default_author: github_actions
           message: 'Commit ActivityPub and Sequoia data'
           fetch: true
-
 
