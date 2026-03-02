@@ -1,6 +1,6 @@
 ---
 image: "/assets/images/social/dripline/2023-11-23-announcing-dp-social-inbox.webp"
-title: 'Announcing Distributed.Press Social Inbox 1.0'
+title: 'Announcing Distributed Press Social Inbox 1.0'
 author: Hypha & Sutty
 date: 2023-12-05
 acknowledgement: 
