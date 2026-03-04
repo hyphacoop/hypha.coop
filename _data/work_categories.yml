@@ -12,6 +12,7 @@
     - cosmos
     - isle-testnet
     - loro-testnet
+    - valence
 
 - name: "Cultural Infrastructure & Digital Public Goods"
   projects:
@@ -24,6 +25,7 @@
   projects:
     - distributed-press
     - compost
+    - streamplace
 
 - name: "Collaborative Futures & Experimental Practice"
   projects:
