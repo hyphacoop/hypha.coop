@@ -1,5 +1,5 @@
 ---
-image: "/assets/images/social/dripline/2024-11-22-dweb-camp-recap-a-cybernetic-ecology.webp"
+image: "/assets/images/social/dripline/2024-11-26-dweb-camp-recap-a-cybernetic-ecology.webp"
 title: A Cybernetic Ecology
 author: Vincent Charlebois
 date: 2024-11-26
