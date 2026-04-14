@@ -52,10 +52,10 @@ Pollen is our flagship demo of what Nectar makes possible, created in collaborat
 <figure class="pb4">
     <div class="flex flex-wrap justify-center items-start nl2 nr2">
         <div class="ph2 w-100 w-50-ns mb3 mb0-ns">
-            <img class="w-100" src="{{ 'assets/images/posts/2026-04-14-pollen-nectar-atmosphere-1.png' | relative_url }}" alt="Bluesky post by Rachel Burch reading: &quot;Sheep and lambs near Huckworthy this week, happy Easter.&quot; The post includes a photo of a ewe standing in a grassy field with two lambs beside her. A blue &quot;Claim&quot; button is overlaid in the top-right corner of the image, indicating the browser extension can attach provenance or source information to the post."/>
+            <img class="w-100" src="{{ 'assets/images/posts/2026-04-14-pollen-nectar-atmosphere-1.webp' | relative_url }}" alt="Bluesky post by Rachel Burch reading: &quot;Sheep and lambs near Huckworthy this week, happy Easter.&quot; The post includes a photo of a ewe standing in a grassy field with two lambs beside her. A blue &quot;Claim&quot; button is overlaid in the top-right corner of the image, indicating the browser extension can attach provenance or source information to the post."/>
         </div>
         <div class="ph2 w-100 w-50-ns">
-            <img class="w-100" src="{{ 'assets/images/posts/2026-04-14-pollen-nectar-atmosphere-2.png' | relative_url }}" alt="Darkened Bluesky post with a centered modal titled &quot;Pollen Claim.&quot; The modal displays the same sheep-and-lamb photo above a large empty text box with the placeholder &quot;Describe the provenance of this image...&quot; Below are Cancel and Submit buttons, showing the interface for adding a provenance claim to the image."/>
+            <img class="w-100" src="{{ 'assets/images/posts/2026-04-14-pollen-nectar-atmosphere-2.webp' | relative_url }}" alt="Darkened Bluesky post with a centered modal titled &quot;Pollen Claim.&quot; The modal displays the same sheep-and-lamb photo above a large empty text box with the placeholder &quot;Describe the provenance of this image...&quot; Below are Cancel and Submit buttons, showing the interface for adding a provenance claim to the image."/>
         </div>
     </div>
     <figcaption>
@@ -103,7 +103,7 @@ The final step in using Pollen is displaying that claim, even on different (but 
 
 <figure class="pb4">
     <div class="flex items-center justify-center" style="width: 100%;">
-        <img class="w-100" src="{{ 'assets/images/posts/2026-04-14-pollen-nectar-atmosphere-3.png' | relative_url }}" alt="Bluesky profile page showing a misleading repost by &quot;Mallory Repostor&quot; claiming &quot;TOXIC SPILL turns river neon green in London!!!&quot; above a photo of the bright green Chicago River. Beneath the post is a yellow badge reading &quot;2 claims.&quot; Two claim cards appear below: one from makeworld.space labeled &quot;Test&quot;, and one from News 123 explaining that the Chicago River is dyed green each year for St. Patrick&apos;s Day. Both cards show &quot;95% match&quot; and link to the claimed post."/>
+        <img class="w-100" src="{{ 'assets/images/posts/2026-04-14-pollen-nectar-atmosphere-3.webp' | relative_url }}" alt="Bluesky profile page showing a misleading repost by &quot;Mallory Repostor&quot; claiming &quot;TOXIC SPILL turns river neon green in London!!!&quot; above a photo of the bright green Chicago River. Beneath the post is a yellow badge reading &quot;2 claims.&quot; Two claim cards appear below: one from makeworld.space labeled &quot;Test&quot;, and one from News 123 explaining that the Chicago River is dyed green each year for St. Patrick&apos;s Day. Both cards show &quot;95% match&quot; and link to the claimed post."/>
     </div>
     <figcaption>
         A user’s post is contradicted by a Pollen claim from a news organization (example).
@@ -112,7 +112,7 @@ The final step in using Pollen is displaying that claim, even on different (but 
 
 <figure class="pb4">
     <div class="flex items-center justify-center" style="width: 100%;">
-        <img class="w-100" src="{{ 'assets/images/posts/2026-04-14-pollen-nectar-atmosphere-4.png' | relative_url }}" alt="System diagram showing how Pollen claims work. A &quot;Your PDS&quot; box sends a claim to a &quot;Nectar API Service.&quot; On the client side, a &quot;Pollen Browser Extn.&quot; connects to both bsky.app and the API service. The extension can store a claim back to the user&apos;s PDS, make API calls to Nectar, add a &quot;Claim&quot; button in Bluesky post view, and display claim results inside bsky.app. A sample Bluesky post about the Chicago River turning green for St. Patrick&apos;s Day 2026 is shown with a small &quot;1 claim&quot; badge beneath it."/>
+        <img class="w-100" src="{{ 'assets/images/posts/2026-04-14-pollen-nectar-atmosphere-4.webp' | relative_url }}" alt="System diagram showing how Pollen claims work. A &quot;Your PDS&quot; box sends a claim to a &quot;Nectar API Service.&quot; On the client side, a &quot;Pollen Browser Extn.&quot; connects to both bsky.app and the API service. The extension can store a claim back to the user&apos;s PDS, make API calls to Nectar, add a &quot;Claim&quot; button in Bluesky post view, and display claim results inside bsky.app. A sample Bluesky post about the Chicago River turning green for St. Patrick&apos;s Day 2026 is shown with a small &quot;1 claim&quot; badge beneath it."/>
     </div>
     <figcaption>
         Overview of the Pollen service architecture.
