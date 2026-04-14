@@ -1,5 +1,5 @@
 ---
-image: "/assets/images/social/dripline/2026-04-14-pollen-nectar-atmosphere-conf.webp"
+image: "/assets/images/social/dripline/2026-04-14-pollen-nectar.webp"
 title: "Pollen & Nectar"
 author: Cole
 date: 2026-04-14
