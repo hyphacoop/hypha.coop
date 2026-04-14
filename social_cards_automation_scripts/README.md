@@ -11,5 +11,5 @@ The second script adds the 'image' variable pointing to the image in the post's 
 
 These scripts are a work in progress. Be sure to read the comments before running these scripts.
 You will need to change paths or move the scripts to the adequate folder.
-The editPosts.sh script currently writes duplicated 'image' variables and required some manual editing.
-This duplication should be looked into for full automation and to prevent the currently needed manual fixes.
+The `editPosts.sh` script now updates the `image` field only within the YAML front matter and avoids duplicate keys.
+It still assumes posts live directly in the target directory and that each file already has a valid front matter block.

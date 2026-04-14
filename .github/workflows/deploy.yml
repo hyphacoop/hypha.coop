@@ -12,35 +12,21 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      DP_AP_KEY_PATH: ${{ runner.temp }}/dp-ap-${{ github.run_id }}-${{ github.run_attempt }}.key
     steps:
-      # Get system info
-      - run: ifconfig
-      - run: sudo dmidecode
-      - run: df -h
-      - run: free -m
       - run: echo "GitHub branch is ${{ github.ref }}"
 
-      # Conditional checkout for PRs
-      - name: Checkout PR branch
-        if: github.event_name == 'pull_request'
-        uses: actions/checkout@v4
-        with:
-          ref: ${{ github.head_ref }}
-
-      # Standard checkout for non-PR events
       - name: Checkout repo
-        if: github.event_name != 'pull_request'
-        uses: actions/checkout@v4
-
-      # Install Brotli development headers (Fix for ruby-brs gem)
-      - name: Install Brotli dependencies
-        run: sudo apt-get update && sudo apt-get install -y libbrotli-dev
+        uses: actions/checkout@v4.3.1
+        with:
+          ref: ${{ github.event_name == 'pull_request' && github.head_ref || github.ref }}
 
       # Install Sequoia (AT Protocol / Standard.site)
       # Only on push to master 
       - name: Install Sequoia
         if: github.event_name == 'push' && github.ref == 'refs/heads/master'
-        run: npm i -g sequoia-cli
+        run: npm i -g sequoia-cli@0.5.3
 
 
 
@@ -55,12 +41,13 @@ jobs:
 
       # Build Jekyll Site
       - run: echo "Building Jekyll site"
-      - run: sudo gem install bundler
-      - run: sudo gem install jekyll
-      - run: sudo bundle install
+      - run: gem install bundler
+      - run: gem install jekyll
+      - run: bundle install
 
       - name: Set DP Social URL based on branch
         run: |
+          set -euo pipefail
           if [[ "${{ github.ref }}" == "refs/heads/master" ]] || [[ "${{ github.event_name }}" == "pull_request" && "${{ github.base_ref }}" == "master" ]]; then
             sed -i 's|url: "https://social.dp.chanterelle.xyz"|url: "${{ vars.SOCIAL_DP_PROD }}"|' _config.yml
           elif [[ "${{ github.ref }}" == "refs/heads/staging" ]] || [[ "${{ github.event_name }}" == "pull_request" && "${{ github.base_ref }}" == "staging" ]]; then
@@ -73,13 +60,19 @@ jobs:
         if: >
           github.ref == 'refs/heads/staging' ||
           (github.event_name == 'pull_request' && github.base_ref == 'staging')
-        run: echo ${{ secrets.ENCODED_DP_AP_KEY_STAGING }} | base64 --decode > /tmp/secret.key
+        run: |
+          set -euo pipefail
+          install -m 600 /dev/null "$DP_AP_KEY_PATH"
+          printf '%s' '${{ secrets.ENCODED_DP_AP_KEY_STAGING }}' | base64 --decode > "$DP_AP_KEY_PATH"
 
       - name: Decode Production Key
         if: >
           github.ref == 'refs/heads/master' ||
           (github.event_name == 'pull_request' && github.base_ref == 'master')
-        run: echo ${{ secrets.ENCODED_DP_AP_KEY_PRODUCTION }} | base64 --decode > /tmp/secret.key
+        run: |
+          set -euo pipefail
+          install -m 600 /dev/null "$DP_AP_KEY_PATH"
+          printf '%s' '${{ secrets.ENCODED_DP_AP_KEY_PRODUCTION }}' | base64 --decode > "$DP_AP_KEY_PATH"
 
       - name: Build Jekyll Site for Staging
         if: github.ref == 'refs/heads/staging' || (github.event_name == 'pull_request' && github.base_ref == 'staging')
@@ -118,15 +111,18 @@ jobs:
 
       - name: Notify AP
         if: github.ref == 'refs/heads/master' || (github.event_name == 'pull_request' && github.base_ref == 'master')
-        run: bundle exec jekyll notify --key /tmp/secret.key --verbose --trace
+        run: bundle exec jekyll notify --key "$DP_AP_KEY_PATH" --verbose --trace
 
       - name: Commit ActivityPub and Sequoia Data
         if: github.ref == 'refs/heads/master' || (github.event_name == 'pull_request' && github.base_ref == 'master')
-        uses: EndBug/add-and-commit@v9 
+        uses: EndBug/add-and-commit@a94899bca583c204427a224a7af87c02f9b325d5
         with:
           add: '_data/activity_pub.yml,.sequoia-state.json,_posts'
           default_author: github_actions
           message: 'Commit ActivityPub and Sequoia data'
           fetch: true
 
+      - name: Remove decoded AP key
+        if: always()
+        run: rm -f "$DP_AP_KEY_PATH"
 

@@ -1,36 +1,57 @@
 #!/bin/bash
 
-# This script is a work in progress. 
-# It needs to be fine-tuned to work properly without duplicating the image variable in the front matter.
-# Directory where your markdown post files are stored
-# This script assumes that the markdown files are in the root of the _posts directory
-POSTS_DIR="./"
+set -euo pipefail
 
-# Directory where images are stored
+# This script assumes markdown posts live directly in the target directory.
+POSTS_DIR="${1:-./}"
 IMAGES_DIR="/assets/images/social/dripline"
 
-# Loop through each markdown post file
 for post in "$POSTS_DIR"/*.md; do
-    # Determine the WebP file name from the markdown file name
+    [ -e "$post" ] || continue
+
     webp_file="$(basename "$post" .md).webp"
+    image_value="$IMAGES_DIR/$webp_file"
 
-    # Path to the WebP image to be included in the front matter
-    image_path="image: \"$IMAGES_DIR/$webp_file\""
+    awk -v image_value="$image_value" '
+        BEGIN {
+            in_frontmatter = 0
+            frontmatter_done = 0
+            image_written = 0
+        }
+        NR == 1 && $0 == "---" {
+            in_frontmatter = 1
+            print
+            next
+        }
+        in_frontmatter && $0 == "---" {
+            if (!image_written) {
+                print "image: \"" image_value "\""
+                image_written = 1
+            }
+            in_frontmatter = 0
+            frontmatter_done = 1
+            print
+            next
+        }
+        in_frontmatter && $0 ~ /^image:[[:space:]]*/ {
+            if (!image_written) {
+                print "image: \"" image_value "\""
+                image_written = 1
+            }
+            next
+        }
+        {
+            print
+        }
+        END {
+            if (!frontmatter_done) {
+                exit 2
+            }
+        }
+    ' "$post" > "$post.tmp"
 
-    # Check if the file already contains an 'image:' line
-    if grep -q "^image:" "$post"; then
-        # The file contains an image line, replace it
-        sed -i'' "/^image:/c\\$image_path" "$post"
-    else
-        # No image line, add one. Ensure it's only added within the front matter
-        # Assuming the front matter starts and ends with '---'
-        # This sed command inserts the image path after the first line of ---
-        sed -i'' "/^---$/a\\
-$image_path
-" "$post"
-    fi
-
-    echo "Updated $post with new image path: $image_path"
+    mv "$post.tmp" "$post"
+    echo "Updated $post with image: $image_value"
 done
 
 echo "All markdown files have been updated."
