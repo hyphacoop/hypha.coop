@@ -32,6 +32,14 @@ jobs:
 
       # Publish to AT Protocol 
       # Only on push to master  (avoids publishing staging content to prod PDS)
+      - name: Sync Sequoia state before publish
+        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+        run: sequoia sync --update-frontmatter
+
+      - name: Check for duplicate Sequoia paths
+        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+        run: python3 _scripts/check_sequoia_duplicates.py
+
       - name: Publish to ATProto
         if: github.event_name == 'push' && github.ref == 'refs/heads/master'
         env:
