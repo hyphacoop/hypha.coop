@@ -14,6 +14,10 @@
     - loro-testnet
     - valence
 
+- name: "Civic Technology & Democratic Participation"
+  projects:
+    - maple
+    
 - name: "Cultural Infrastructure & Digital Public Goods"
   projects:
     - friends-of-hek
