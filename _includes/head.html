@@ -6,6 +6,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% if jekyll.environment == "staging" %}<meta name="robots" content="noindex">{% endif %}
   <title>{{ meta_section }}{{ meta_title }}</title>
   <script defer data-domain="hypha.coop" src="https://analytics.hypha.coop/js/script.js"></script>
 
