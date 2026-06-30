@@ -45,6 +45,7 @@ jobs:
 
       - name: Generate social cards for new posts
         if: github.event_name == 'push'
+        continue-on-error: true
         run: |
           set -euo pipefail
 
@@ -53,7 +54,7 @@ jobs:
           EMPTY_SHA="0000000000000000000000000000000000000000"
 
           if [[ "$BEFORE_SHA" == "$EMPTY_SHA" ]]; then
-            mapfile -t NEW_POSTS < <(git diff-tree --no-commit-id --name-status -r "$CURRENT_SHA" -- "_posts/*.md" | awk -F'\t' '$1=="A"{print $2}')
+            mapfile -t NEW_POSTS < <(git log --diff-filter=A --name-only --pretty="" origin/master.."$CURRENT_SHA" -- "_posts/*.md" | sort -u)
           else
             mapfile -t NEW_POSTS < <(git diff --name-status "$BEFORE_SHA" "$CURRENT_SHA" -- "_posts/*.md" | awk -F'\t' '$1=="A"{print $2}')
           fi
@@ -68,6 +69,7 @@ jobs:
 
       - name: Commit generated social cards
         if: github.event_name == 'push'
+        continue-on-error: true
         uses: EndBug/add-and-commit@v9
         with:
           add: '_posts,assets/images/social/dripline'

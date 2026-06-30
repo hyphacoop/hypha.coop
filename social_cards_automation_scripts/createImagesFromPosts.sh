@@ -48,7 +48,7 @@ upsert_image_frontmatter() {
   local tmp_file
   tmp_file="$(mktemp)"
 
-  awk -v image_line="image: \"$image_path\"" '
+  if awk -v image_line="image: \"$image_path\"" '
     BEGIN {in_fm=0; fm_started=0; replaced=0}
     NR==1 && $0=="---" {
       fm_started=1
@@ -80,12 +80,15 @@ upsert_image_frontmatter() {
     END {
       if (fm_started==0) {
         print "Missing frontmatter in " FILENAME > "/dev/stderr"
-        exit 1
+        exit 2
       }
     }
-  ' "$post_file" > "$tmp_file"
-
-  mv "$tmp_file" "$post_file"
+  ' "$post_file" > "$tmp_file"; then
+    mv "$tmp_file" "$post_file"
+  else
+    rm -f "$tmp_file"
+    return 1
+  fi
 }
 
 declare -a posts
@@ -130,25 +133,41 @@ for post in "${posts[@]}"; do
   image_path="$IMAGE_PREFIX/$slug.webp"
 
   if [[ "$author" == "Hypha" || -z "$author" ]]; then
-    "$IMAGEMAGICK_CMD" -size 1200x627 xc:"#9900FC" \
+    if ! "$IMAGEMAGICK_CMD" -size 1200x627 xc:"#9900FC" \
       "$temp_title_img" -gravity center -geometry +0+60 -composite \
       -font "$FONTS_DIR/Work_Sans/WorkSans-Black.ttf" -pointsize 37 -fill white \
       -gravity southwest -annotate +30+30 "HYPHA" \
-      "$jpg_file"
+      "$jpg_file"; then
+      echo "Failed to generate image for $slug" >&2
+      rm -f "$temp_title_img"
+      continue
+    fi
   else
-    "$IMAGEMAGICK_CMD" -size 1200x627 xc:"#9900FC" \
+    if ! "$IMAGEMAGICK_CMD" -size 1200x627 xc:"#9900FC" \
       "$temp_title_img" -gravity center -geometry +0+60 -composite \
       -font "$FONTS_DIR/Work_Sans/WorkSans-Black.ttf" -pointsize 37 -fill white \
       -gravity southwest -annotate +30+30 "HYPHA" \
       -font "$FONTS_DIR/Work_Sans/WorkSans-VariableFont_wght.ttf" -pointsize 37 -fill white \
       -gravity southeast -annotate +30+30 "$author" \
-      "$jpg_file"
+      "$jpg_file"; then
+      echo "Failed to generate image for $slug" >&2
+      rm -f "$temp_title_img"
+      continue
+    fi
   fi
   rm -f "$temp_title_img"
 
-  cwebp -q 100 "$jpg_file" -o "$webp_file" >/dev/null
+  if ! cwebp -q 100 "$jpg_file" -o "$webp_file" >/dev/null 2>&1; then
+    echo "Failed to convert to webp for $slug" >&2
+    rm -f "$jpg_file"
+    continue
+  fi
   rm -f "$jpg_file"
-  upsert_image_frontmatter "$post" "$image_path"
+  
+  if ! upsert_image_frontmatter "$post" "$image_path"; then
+    echo "Skipped updating frontmatter for $(basename "$post") due to missing frontmatter." >&2
+    continue
+  fi
 
   echo "Generated $webp_file and updated $(basename "$post")"
 done
