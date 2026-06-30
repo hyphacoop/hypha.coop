@@ -30,7 +30,10 @@ render_text_image() {
   local font_size=76
 
   while true; do
-    "$IMAGEMAGICK_CMD" -background none -fill white -font "$font_dir/$font_file" -pointsize "$font_size" -size "${max_width}x" -gravity center caption:"$text" "$out_file"
+    if ! "$IMAGEMAGICK_CMD" -background none -fill white -font "$font_dir/$font_file" -pointsize "$font_size" -size "${max_width}x" -gravity center caption:"$text" "$out_file"; then
+      echo "Failed to render caption text for '$text'" >&2
+      return 1
+    fi
     local text_height
     text_height="$(identify -format "%h" "$out_file" 2>/dev/null || echo 9999)"
 
@@ -126,8 +129,13 @@ for post in "${posts[@]}"; do
   fi
 
   temp_title_img="$(mktemp --suffix=.png)"
-  render_text_image "$title" 900 500 "$FONTS_DIR" "Work_Sans/WorkSans-VariableFont_wght.ttf" "$temp_title_img"
   slug="$(basename "$post" .md)"
+  
+  if ! render_text_image "$title" 900 500 "$FONTS_DIR" "Work_Sans/WorkSans-VariableFont_wght.ttf" "$temp_title_img"; then
+    echo "Skipping $slug due to text rendering failure." >&2
+    rm -f "$temp_title_img"
+    continue
+  fi
   jpg_file="$IMAGES_DIR/$slug.jpg"
   webp_file="$IMAGES_DIR/$slug.webp"
   image_path="$IMAGE_PREFIX/$slug.webp"

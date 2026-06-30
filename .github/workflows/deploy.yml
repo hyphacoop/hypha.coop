@@ -54,7 +54,12 @@ jobs:
           EMPTY_SHA="0000000000000000000000000000000000000000"
 
           if [[ "$BEFORE_SHA" == "$EMPTY_SHA" ]]; then
-            mapfile -t NEW_POSTS < <(git log --diff-filter=A --name-only --pretty="" origin/master.."$CURRENT_SHA" -- "_posts/*.md" | sort -u)
+            BASE_REF=$(jq -r '.base_ref // "refs/heads/master"' "$GITHUB_EVENT_PATH" | sed 's|refs/heads/|origin/|')
+            if git rev-parse --verify "$BASE_REF" >/dev/null 2>&1; then
+              mapfile -t NEW_POSTS < <(git log --diff-filter=A --name-only --pretty="" "$BASE_REF..$CURRENT_SHA" -- "_posts/*.md" | grep -v '^$' | sort -u)
+            else
+              mapfile -t NEW_POSTS < <(git log --diff-filter=A --name-only --pretty="" "$CURRENT_SHA" -- "_posts/*.md" | grep -v '^$' | sort -u)
+            fi
           else
             mapfile -t NEW_POSTS < <(git diff --name-status "$BEFORE_SHA" "$CURRENT_SHA" -- "_posts/*.md" | awk -F'\t' '$1=="A"{print $2}')
           fi
