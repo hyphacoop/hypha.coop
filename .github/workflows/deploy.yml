@@ -53,9 +53,9 @@ jobs:
           EMPTY_SHA="0000000000000000000000000000000000000000"
 
           if [[ "$BEFORE_SHA" == "$EMPTY_SHA" ]]; then
-            mapfile -t NEW_POSTS < <(git diff-tree --no-commit-id --name-status -r "$CURRENT_SHA" -- "_posts/*.md" | awk '$1=="A"{print $2}')
+            mapfile -t NEW_POSTS < <(git diff-tree --no-commit-id --name-status -r "$CURRENT_SHA" -- "_posts/*.md" | awk -F'\t' '$1=="A"{print $2}')
           else
-            mapfile -t NEW_POSTS < <(git diff --name-status "$BEFORE_SHA" "$CURRENT_SHA" -- "_posts/*.md" | awk '$1=="A"{print $2}')
+            mapfile -t NEW_POSTS < <(git diff --name-status "$BEFORE_SHA" "$CURRENT_SHA" -- "_posts/*.md" | awk -F'\t' '$1=="A"{print $2}')
           fi
 
           if [[ "${#NEW_POSTS[@]}" -eq 0 ]]; then
