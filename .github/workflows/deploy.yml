@@ -68,18 +68,31 @@ jobs:
             sed -i 's|url: "https://social.dp.chanterelle.xyz"|url: "${{ vars.SOCIAL_DP_STAGING }}"|' _config.yml
           fi
 
-      # Decode the correct key based on the branch
+      # Decode the correct key based on the branch.
+      # Dependabot-triggered PR runs don't receive repository secrets, so fall
+      # back to a throwaway key — it's only used to build; publishing only
+      # happens on push events, which always have the real secrets.
       - name: Decode Staging Key
         if: >
           github.ref == 'refs/heads/staging' ||
           (github.event_name == 'pull_request' && github.base_ref == 'staging')
-        run: echo ${{ secrets.ENCODED_DP_AP_KEY_STAGING }} | base64 --decode > /tmp/secret.key
+        run: |
+          if [ -n "${{ secrets.ENCODED_DP_AP_KEY_STAGING }}" ]; then
+            echo ${{ secrets.ENCODED_DP_AP_KEY_STAGING }} | base64 --decode > /tmp/secret.key
+          else
+            openssl genrsa -out /tmp/secret.key 2048
+          fi
 
       - name: Decode Production Key
         if: >
           github.ref == 'refs/heads/master' ||
           (github.event_name == 'pull_request' && github.base_ref == 'master')
-        run: echo ${{ secrets.ENCODED_DP_AP_KEY_PRODUCTION }} | base64 --decode > /tmp/secret.key
+        run: |
+          if [ -n "${{ secrets.ENCODED_DP_AP_KEY_PRODUCTION }}" ]; then
+            echo ${{ secrets.ENCODED_DP_AP_KEY_PRODUCTION }} | base64 --decode > /tmp/secret.key
+          else
+            openssl genrsa -out /tmp/secret.key 2048
+          fi
 
       - name: Build Jekyll Site for Staging
         if: github.ref == 'refs/heads/staging' || (github.event_name == 'pull_request' && github.base_ref == 'staging')
