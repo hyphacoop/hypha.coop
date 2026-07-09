@@ -10,18 +10,21 @@ Image component
 @param :img_class [String]
 {%- endcomment -%}
 
+{%- capture srcset -%}
+  {%- for pixel_density in site.data.theme.pixel_densities %}
+    {% if include.width %}
+      {%- assign w = include.width | times: pixel_density -%}
+    {% elsif include.height %}
+      {%- assign h = include.height | times: pixel_density -%}
+    {% endif %}
+    {{- include.src | thumbnail: w, h | uri_escape }} {{ pixel_density }}x,
+  {% endfor -%}
+{%- endcapture -%}
+{%- assign srcset = srcset | strip -%}
 <picture class="{{ include.class }}">
-  <source
-    srcset="
-      {%- for pixel_density in site.data.theme.pixel_densities %}
-        {% if include.width %}
-          {%- assign w = include.width | times: pixel_density -%}
-        {% elsif include.height %}
-          {%- assign h = include.height | times: pixel_density -%}
-        {% endif %}
-        {{- include.src | thumbnail: w, h | uri_escape }} {{ pixel_density }}x,
-      {% endfor -%}
-      " />
+  {%- if srcset != "" %}
+  <source srcset="{{ srcset }}" />
+  {%- endif %}
 
   <img
     class="{{ include.img_class }}"
