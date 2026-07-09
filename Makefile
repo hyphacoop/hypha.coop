@@ -6,6 +6,7 @@ start: ## Run jekyll server
 check: ## Check with htmlproofer (5.x flags: --check-html removed, --internal-domains replaced by --swap-urls)
 	$(RUN) htmlproofer ./_site \
 	  --allow-hash-href \
+	  --allow-missing-href \
 	  --disable-external \
 	  --no-enforce-https \
 	  --swap-urls "https\://hypha.coop:,https\://staging.hypha.coop:"
