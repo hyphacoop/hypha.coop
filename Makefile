@@ -3,13 +3,13 @@ RUN = bundle exec
 start: ## Run jekyll server
 	$(RUN) jekyll serve --watch
 
-check: ## Check with htmlproofer
+check: ## Check with htmlproofer (5.x flags: --check-html removed, --internal-domains replaced by --swap-urls)
 	$(RUN) htmlproofer ./_site \
-	  --check-html \
 	  --allow-hash-href \
-	  --disable_external \
-	  --typhoeus-config '{ "headers": { "User-Agent": "Mozilla/5.0 (X11; Linux i686; rv:84.0) Gecko/20100101 Firefox/84.0" } }' \
-	  --internal-domains hypha.coop
+	  --allow-missing-href \
+	  --disable-external \
+	  --no-enforce-https \
+	  --swap-urls "https\://hypha.coop:,https\://staging.hypha.coop:"
 
 build: ## Build for web
 	@if [ "$(JEKYLL_ENV)" = "staging" ]; then \
