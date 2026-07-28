@@ -24,13 +24,13 @@ GEM
     bigdecimal (3.3.1)
     climate_control (1.2.0)
     colorator (1.1.0)
-    concurrent-ruby (1.3.7)
+    concurrent-ruby (1.3.8)
     console (1.36.0)
       fiber-annotation
       fiber-local (~> 1.1)
       json
     crass (1.0.7)
-    csv (3.3.5)
+    csv (3.3.6)
     distributed-press-api-client (0.5.4)
       addressable (~> 2.3, >= 2.3.0)
       climate_control
@@ -137,7 +137,7 @@ GEM
       sass-embedded (~> 1.75)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
-    json (2.20.0)
+    json (2.21.1)
     jwt (2.6.0)
     kramdown (2.5.2)
       rexml (>= 3.4.4)
@@ -149,7 +149,7 @@ GEM
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     logger (1.7.0)
-    loofah (2.25.1)
+    loofah (2.25.2)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
     marcel (1.2.1)
@@ -184,11 +184,11 @@ GEM
     rouge (4.7.0)
     ruby-rc4 (0.1.5)
     safe_yaml (1.0.5)
-    sass-embedded (1.101.0-x86_64-darwin)
+    sass-embedded (1.102.0-x86_64-darwin)
       google-protobuf (~> 4.31)
-    sass-embedded (1.101.0-x86_64-linux-gnu)
+    sass-embedded (1.102.0-x86_64-linux-gnu)
       google-protobuf (~> 4.31)
-    sutty-liquid (0.13.0)
+    sutty-liquid (0.13.2)
       fast_blank (~> 1.0)
       jekyll (~> 4)
       rails-html-sanitizer (~> 1.6.0)
@@ -215,7 +215,7 @@ DEPENDENCIES
   jekyll-feed!
   logger
   nokogiri
-  sutty-liquid (~> 0.13.0)
+  sutty-liquid (~> 0.13.2)
   webrick (~> 1.9)
 
 BUNDLED WITH
