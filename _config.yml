@@ -1,6 +1,8 @@
 title: Hypha
 email: hello@hypha.coop
 email-hidden: "%68%65%6c%6c%6f%40%68%79%70%68%61%2e%63%6f%6f%70"
+security_email: security@hypha.coop
+security_email-hidden: "%73%65%63%75%72%69%74%79%40%68%79%70%68%61%2e%63%6f%6f%70"
 phone: +1 437-887-6936
 address: Toronto, ON
 github: https://github.com/hyphacoop
