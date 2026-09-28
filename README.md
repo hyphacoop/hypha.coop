@@ -35,6 +35,12 @@ We also auto-deploy `staging` branch to [staging.hypha.coop](https://staging.hyp
 
 Staging uses Let's Encrypt staging enviroment to allow for higher limits than their production environment. This allow us to redeploy sites on staging without hitting the limit of Let's Encrypt production. As a result when accessing staging you will be prompted about invalid certificate on your browser. More information on Let's Encrypt staging enviroment [here.](https://letsencrypt.org/docs/staging-environment/)
 
+## 🔒 Security
+
+To report a security vulnerability, email [security@hypha.coop](mailto:security@hypha.coop). See [`.github/SECURITY.md`](./.github/SECURITY.md) and the [security page](https://hypha.coop/security/).
+
+[`.well-known/security.txt`](./.well-known/security.txt) has an `Expires` date that must be renewed at least once a year (RFC 9116 allows at most one year ahead).
+
 ## 📑 Attribution
 
 - `favicon.ico`: [Rorschach Test](https://thenounproject.com/nicky.humphreys/collection/repeat-pattern/?i=871159) by Nicky Knicky from the Noun Project

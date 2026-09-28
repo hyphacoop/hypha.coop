@@ -1,0 +1,47 @@
+---
+layout: default
+title: Security
+excerpt: "If you believe you've found a security vulnerability affecting our website or our work, please email security@hypha.coop."
+---
+<section class="mt2 ph3 ph5-l">
+  <header>
+    <div class="flex-l items-center mv2">
+      <div class="w-100-l">
+        <h3 class="f2 f1-m f-subheadline-l accent normal sans-serif mb4 lh-solid">
+          {{ page.title }}
+        </h3>
+        <p class="f3 measure-wide dark-gray lh-copy mb5">
+          If you believe you've found a security vulnerability affecting this website or our work, please let us know by emailing
+          <a class="accent link" href="mailto:{{ site.security_email-hidden }}">{{ site.security_email }}</a>.
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <div class="measure-wide f4 lh-copy mb5">
+    <h2 class="f3 sans-serif accent normal mt0">What to include</h2>
+    <ul class="lh-copy pl3">
+      <li>A description of the issue and its potential impact.</li>
+      <li>Steps to reproduce it, or a proof of concept.</li>
+      <li>The affected URL, repository, or system.</li>
+      <li>How we can reach you if we have questions.</li>
+    </ul>
+
+    <h2 class="f3 sans-serif accent normal mt4">What to expect</h2>
+    <p>
+      We'll read every report and get back to you. We ask that you keep the details private until we've had a chance to fix the issue.
+    </p>
+
+    <h2 class="f3 sans-serif accent normal mt4">Acting in good faith</h2>
+    <p>
+      Please avoid accessing or changing data that isn't yours, disrupting our services or the people who use them, and social engineering our team or partners.
+    </p>
+
+    <h2 class="f3 sans-serif accent normal mt4">Our open source work</h2>
+    <p>
+      Much of our work is open source and lives on <a class="accent link" href="{{ site.github }}" target="_blank" rel="noopener">GitHub</a>.
+      Please use the same email address to report vulnerabilities in any of it, rather than opening a public issue.
+      For how we handle data more generally, see <a class="accent link" href="https://handbook.hypha.coop/Policies/data.html" target="_blank" rel="noopener">How We Use Data</a> in our handbook.
+    </p>
+  </div>
+</section>
