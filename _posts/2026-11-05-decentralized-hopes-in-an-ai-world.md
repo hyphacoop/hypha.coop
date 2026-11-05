@@ -1,4 +1,5 @@
 ---
+image: "/assets/images/social/dripline/2026-11-05-decentralized-hopes-in-an-ai-world.webp"
 title: "Decentralized hopes in an AI world"
 author: Andi
 date: 2026-11-05
