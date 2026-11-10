@@ -2,7 +2,7 @@
 image: "/assets/images/social/dripline/2026-11-05-decentralization-as-human-rights-defense-in-an-ai-shaped-world.webp"
 title: "Decentralization as Human Rights Defense in an AI-Shaped World"
 author: Andi
-date: 2026-11-05
+date: 2026-11-10
 acknowledgement:
 excerpt: "A retrospective on the Save DWeb Backend project"
 ---
