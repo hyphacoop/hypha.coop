@@ -1,5 +1,5 @@
 ---
-image: "/assets/images/social/dripline/2026-11-05-decentralized-hopes-in-an-ai-world.webp"
+image: "/assets/images/social/dripline/2026-11-05-decentralization-as-human-rights-defense-in-an-ai-shaped-world.webp"
 title: "Decentralization as Human Rights Defense in an AI-Shaped World"
 author: Andi
 date: 2026-11-05
@@ -8,7 +8,7 @@ excerpt: "A retrospective on the Save DWeb Backend project"
 ---
 
 <figure class="pb4">
-<img src="{{ 'assets/images/posts/2026-11-05-decentralized-hopes-in-an-ai-world-stocksy.jpg' | relative_url }}" alt="A black-and-white halftone cutout of a hand holding up a small yellow paper file folder against a plain grey-green background." />
+<img src="{{ 'assets/images/posts/2026-11-05-decentralization-as-human-rights-defense-in-an-ai-shaped-world-stocksy.jpg' | relative_url }}" alt="A black-and-white halftone cutout of a hand holding up a small yellow paper file folder against a plain grey-green background." />
 <figcaption>
     Photo
     by
