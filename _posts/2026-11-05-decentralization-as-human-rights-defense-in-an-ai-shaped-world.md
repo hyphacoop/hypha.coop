@@ -56,6 +56,8 @@ As this [EFF article](https://arc.net/l/quote/ihurpbht) points out:
 
 In other words, people need to be using the tools regularly, not just when there is a crisis, and this work is decidedly in the social, not technical realm. Society is overdue for truly successful technologies: those that prioritize their interests over profits. The open source, human rights-centered ecosystem we have spent over a decade building offers just that. If you'd like to invest in thoughtful, community-driven open-source, privacy-first tools and infrastructure that honor freedom and justice, please get in touch.
 
+*Thanks to Natalie Cadranel, Founder & Executive Director at OpenArchive, for her collaboration on this post and most importantly, on the project.*
+
 ---
 
 **Project Timeline & Key Milestones**
